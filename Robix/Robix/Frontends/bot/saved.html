@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Content - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #863d08 0%, #c85a17 100%);
+            padding: 80px 0 120px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+        }
+
+        .saved-card {
+            background: white;
+            border-radius: 30px;
+            padding: 30px;
+            height: 100%;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            border-left: 6px solid var(--primary-green);
+        }
+
+        .saved-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .type-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: rgba(45, 90, 39, 0.1);
+            color: var(--primary-green);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .btn-modern {
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 100px 0;
+            color: #ccc;
+        }
+
+        .empty-state i {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Saved Content</h1>
+                <p class="lead opacity-75 mb-0 mx-auto" style="max-width: 700px;">Review your favorite tribes, stories, and cultural discoveries in one place.</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="row g-4" id="savedGrid">
+                <!-- Sample Saved Item 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="saved-card">
+                        <span class="type-badge">Tribe</span>
+                        <h4 class="fw-bold mb-2">Bamileke Kingdom</h4>
+                        <p class="text-muted small mb-4">You saved this on May 20, 2026. Explore the rich traditions of the Western Highlands.</p>
+                        <div class="mt-auto d-flex gap-2">
+                            <a href="bot/bamileke_kingdom.html" class="btn btn-success btn-modern flex-grow-1">View</a>
+                            <button class="btn btn-outline-danger btn-modern"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Saved Item 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="saved-card" style="border-left-color: var(--accent-orange);">
+                        <span class="type-badge" style="background: rgba(230, 126, 34, 0.1); color: var(--accent-orange);">Story</span>
+                        <h4 class="fw-bold mb-2">The Talking Python</h4>
+                        <p class="text-muted small mb-4">A fascinating legend about wisdom and survival in the hills of Cameroon.</p>
+                        <div class="mt-auto d-flex gap-2">
+                            <a href="bot/talking_python.html" class="btn btn-success btn-modern flex-grow-1">Read</a>
+                            <button class="btn btn-outline-danger btn-modern"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty State (Hidden by default) -->
+                <div class="col-12 hidden" id="emptyState">
+                    <div class="empty-state">
+                        <i class="fas fa-bookmark"></i>
+                        <h3>No saved content yet</h3>
+                        <p>Explore the app and click the bookmark icon to save items here.</p>
+                        <a href="dashboard.html" class="btn btn-success btn-modern mt-3">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Saved');
+            });
+        });
+    </script>
+</body>
+
+</html>

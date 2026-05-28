@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribes & Ethnic Groups - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --bg-light: #f8f9fa;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
+            padding: 100px 0 140px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+        }
+
+        .tribe-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tribe-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .tribe-img-wrapper {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tribe-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .tribe-card:hover .tribe-img {
+            transform: scale(1.1);
+        }
+
+        .tribe-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--primary-green);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-modern {
+            border-radius: 15px;
+            padding: 12px 25px;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-pill {
+            padding: 10px 25px;
+            border-radius: 50px;
+            border: 2px solid #eee;
+            background: white;
+            color: #666;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+        }
+
+        .filter-pill.active {
+            background: var(--primary-green);
+            border-color: var(--primary-green);
+            color: white;
+            box-shadow: 0 5px 15px rgba(45, 90, 39, 0.3);
+        }
+
+        .filter-pill:hover:not(.active) {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .search-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input-group {
+            position: relative;
+            flex: 1;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 18px 30px 18px 60px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .search-btn {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 0 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+            box-shadow: 0 10px 25px rgba(45, 90, 39, 0.2);
+        }
+
+        .search-btn:hover {
+            background: #1a3a17;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(45, 90, 39, 0.3);
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-green);
+            font-size: 1.2rem;
+            z-index: 10;
+        }
+
+        .region-filter-container {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        #regionFilters {
+            padding: 15px 0;
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: auto;
+            scrollbar-color: var(--primary-green) #eee;
+        }
+
+        #regionFilters::-webkit-scrollbar {
+            height: 8px;
+            display: block;
+        }
+
+        #regionFilters::-webkit-scrollbar-track {
+            background: #eee;
+            border-radius: 10px;
+        }
+
+        #regionFilters::-webkit-scrollbar-thumb {
+            background: var(--primary-green);
+            border-radius: 10px;
+        }
+
+        /* AI Assistant Widget Styles */
+        .ai-assistant-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .ai-toggle-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            box-shadow: 0 10px 25px rgba(45, 90, 39, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .ai-toggle-btn:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .ai-chat-card {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 380px;
+            height: 500px;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            animation: slideInUp 0.3s ease;
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .ai-chat-card.active {
+            display: flex;
+        }
+
+        .ai-chat-header {
+            padding: 20px;
+            background: var(--primary-green);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ai-chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #fdfaf5;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .ai-message {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .ai-bot-message {
+            align-self: flex-start;
+            background: white;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-bottom-left-radius: 2px;
+        }
+
+        .ai-user-message {
+            align-self: flex-end;
+            background: var(--primary-green);
+            color: white;
+            border-bottom-right-radius: 2px;
+        }
+
+        .ai-chat-input-area {
+            padding: 15px;
+            background: white;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+        }
+
+        .ai-chat-input {
+            flex: 1;
+            border: 1px solid #eee;
+            border-radius: 25px;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .ai-chat-input:focus {
+            border-color: var(--primary-green);
+        }
+
+        .ai-send-btn {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .ai-chat-actions {
+            display: flex;
+            gap: 10px;
+            padding: 5px 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ai-action-btn {
+            background: none;
+            border: none;
+            color: #888;
+            font-size: 0.75rem;
+            cursor: pointer;
+            padding: 5px 0;
+        }
+
+        .ai-action-btn:hover {
+            color: var(--primary-green);
+        }
+
+        .status-pill {
+            font-size: 0.75rem;
+            color: #888;
+            padding: 5px 20px;
+            display: none;
+        }
+
+        .status-pill.active {
+            display: block;
+        }
+
+        /* Tribe Detail Modal Styles */
+        .tribe-detail-modal .modal-content {
+            border-radius: 30px;
+            border: none;
+            overflow: hidden;
+        }
+
+        .tribe-detail-header {
+            height: 300px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tribe-detail-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+        }
+
+        .detail-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 20px;
+            border-left: 5px solid var(--primary-green);
+        }
+
+        .detail-section h5 {
+            color: var(--primary-green);
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Beautiful History Cards */
+        .history-card {
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(0,0,0,0.05) !important;
+        }
+
+        .history-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+            border-color: var(--primary-green) !important;
+        }
+
+        .text-truncate-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Tribes & Ethnic Groups</h1>
+                <p class="lead opacity-75 mb-5 mx-auto" style="max-width: 700px;">Explore the vibrant mosaic of over 250 ethnic groups that define Cameroon's unique cultural landscape.</p>
+                
+                <div class="search-wrapper mb-4">
+                    <div class="search-input-group">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search tribes, traditions, or regions..." id="tribeSearch">
+                    </div>
+                    <button class="search-btn" id="searchBtn">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <!-- Filters -->
+            <div class="region-filter-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="d-flex gap-3 overflow-auto pb-3" id="regionFilters">
+                    <div class="filter-pill active" data-region="all">All Groups</div>
+                    <!-- Dynamic regions will be inserted here -->
+                </div>
+            </div>
+
+            <div class="row g-4" id="tribeGrid">
+                <!-- Dynamic tribe cards will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Widget -->
+    <div class="ai-assistant-widget">
+        <div class="ai-chat-card" id="aiChatCard">
+            <div class="ai-chat-header">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fas fa-robot"></i>
+                    <span class="fw-bold">CULTIA Assistant</span>
+                </div>
+                <button class="btn-close btn-close-white" id="closeAiChat"></button>
+            </div>
+            
+            <div class="ai-chat-actions">
+                <button class="ai-action-btn" id="clearHistoryBtn">
+                    <i class="fas fa-trash-alt me-1"></i> Clear History
+                </button>
+                <button class="ai-action-btn" id="viewHistoryBtn" data-bs-toggle="modal" data-bs-target="#historyModal">
+                    <i class="fas fa-history me-1"></i> History
+                </button>
+            </div>
+
+            <div class="status-pill" id="aiStatus">
+                <i class="fas fa-circle-notch fa-spin me-1"></i> Thinking...
+            </div>
+
+            <div class="ai-chat-messages" id="aiChatMessages">
+                <div class="ai-message ai-bot-message">
+                    Hello! I'm CULTIA, your cultural guide. Ask me anything about Cameroon's tribes, regions, or traditions!
+                </div>
+            </div>
+
+            <div class="ai-chat-input-area">
+                <input type="text" class="ai-chat-input" id="aiChatInput" placeholder="Type your message...">
+                <button class="ai-send-btn" id="aiSendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <button class="ai-toggle-btn" id="aiToggleBtn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Modals (Required for history) -->
+    <div class="modal fade tribe-detail-modal" id="tribeDetailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="tribe-detail-header" id="tribeDetailHeader">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="tribe-detail-overlay">
+                        <span class="badge bg-success mb-2" id="tribeDetailRegion">Region</span>
+                        <h2 class="display-4 fw-bold" id="tribeDetailName">Tribe Name</h2>
+                    </div>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <div class="detail-section">
+                        <h5><i class="fas fa-info-circle"></i> Overview</h5>
+                        <p id="tribeDetailOverview" class="lead text-muted"></p>
+                    </div>
+
+                    <div class="detail-grid">
+                        <div class="detail-section">
+                            <h5><i class="fas fa-utensils"></i> Meals & Cuisine</h5>
+                            <div id="tribeDetailMeals"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h5><i class="fas fa-users"></i> Customs & Traditions</h5>
+                            <div id="tribeDetailCulture"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h5><i class="fas fa-calendar-alt"></i> Festivals</h5>
+                            <div id="tribeDetailFestivals"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h5><i class="fas fa-ring"></i> Marriage Traditions</h5>
+                            <div id="tribeDetailMarriage"></div>
+                        </div>
+                        <div class="detail-section">
+                            <h5><i class="fas fa-history"></i> History</h5>
+                            <div id="tribeDetailHistory"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="historyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 rounded-4 shadow">
+                <div class="modal-header border-0 pb-0 px-4 pt-4">
+                    <h5 class="modal-title fw-bold">Conversation History</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div id="historyList">
+                        <!-- History items will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/ai-core.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                document.getElementById('sidebarToggle')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Tribes');
+                document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+
+            // --- Tribe & Region Logic ---
+            let allTribes = [];
+            let currentRegion = 'all';
+
+            async function loadTribes() {
+                try {
+                    // Add timestamp to bypass cache
+                    const response = await fetch(`/api/tribes?t=${Date.now()}`);
+                    const data = await response.json();
+                    allTribes = Object.values(data.tribes);
+                    
+                    renderRegions();
+                    renderTribes();
+                } catch (error) {
+                    console.error('Error loading tribes:', error);
+                }
+            }
+
+            function renderRegions() {
+                const regionFilters = document.getElementById('regionFilters');
+                
+                // Get all unique regions, limited to 10 as requested
+                let regions = [...new Set(allTribes.map(t => t.location?.region || 'Unknown'))].sort();
+                const displayRegions = regions.slice(0, 10);
+                
+                // Clear and re-create "All Groups"
+                regionFilters.innerHTML = '';
+                const allBtn = document.createElement('div');
+                allBtn.className = `filter-pill ${currentRegion === 'all' ? 'active' : ''}`;
+                allBtn.textContent = 'All Groups';
+                allBtn.setAttribute('data-region', 'all');
+                allBtn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+                    allBtn.classList.add('active');
+                    currentRegion = 'all';
+                    document.getElementById('tribeSearch').value = ''; 
+                    renderTribes();
+                });
+                regionFilters.appendChild(allBtn);
+
+                displayRegions.forEach(region => {
+                    const pill = document.createElement('div');
+                    pill.className = `filter-pill ${currentRegion === region ? 'active' : ''}`;
+                    pill.textContent = region;
+                    pill.setAttribute('data-region', region);
+                    pill.addEventListener('click', () => {
+                        document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+                        pill.classList.add('active');
+                        currentRegion = region;
+                        renderTribes();
+                    });
+                    regionFilters.appendChild(pill);
+                });
+            }
+
+            function renderTribes() {
+                const grid = document.getElementById('tribeGrid');
+                const searchTerm = document.getElementById('tribeSearch').value.toLowerCase();
+                
+                grid.innerHTML = '';
+
+                const filtered = allTribes.filter(tribe => {
+                    const matchesRegion = currentRegion === 'all' || (tribe.location?.region === currentRegion);
+                    
+                    const name = (tribe.name || '').toLowerCase();
+                    const overview = (tribe.overview || '').toLowerCase();
+                    const region = (tribe.location?.region || '').toLowerCase();
+                    
+                    // Search in lists too
+                    const customs = (tribe.customs_and_traditions || []).join(' ').toLowerCase();
+                    const meals = (tribe.meals_and_cuisine_list || []).join(' ').toLowerCase();
+                    const festivals = (tribe.festivals_list || []).join(' ').toLowerCase();
+                    
+                    const matchesSearch = name.includes(searchTerm) || 
+                                        overview.includes(searchTerm) ||
+                                        region.includes(searchTerm) ||
+                                        customs.includes(searchTerm) ||
+                                        meals.includes(searchTerm) ||
+                                        festivals.includes(searchTerm);
+                                        
+                    return matchesRegion && matchesSearch;
+                });
+
+                if (filtered.length === 0) {
+                    grid.innerHTML = '<div class="col-12 text-center py-5"><p class="text-muted">No tribes found matching your criteria.</p></div>';
+                    return;
+                }
+
+                filtered.forEach((tribe, index) => {
+                    const col = document.createElement('div');
+                    col.className = 'col-md-6 col-lg-4';
+                    col.setAttribute('data-aos', 'fade-up');
+                    col.setAttribute('data-aos-delay', (index % 3) * 100);
+
+                    // Use tribe.image_url if available, otherwise use a placeholder
+                    const imgPath = tribe.image_url || `image/download (${(index % 8) + 1}).jpeg`;
+                    
+                    col.innerHTML = `
+                        <div class="tribe-card">
+                            <div class="tribe-img-wrapper">
+                                <img src="${imgPath}" class="tribe-img" onerror="this.src='image/download (1).png'">
+                                <span class="tribe-badge">${tribe.location?.region || 'Cameroon'}</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h4 class="fw-bold mb-2">${tribe.name}</h4>
+                                <p class="text-muted small mb-4 flex-grow-1">${tribe.overview.substring(0, 150)}...</p>
+                                <button class="btn btn-modern btn-success w-100 discover-btn" data-tribe="${tribe.name.toLowerCase()}">Discover More</button>
+                            </div>
+                        </div>
+                    `;
+                    grid.appendChild(col);
+
+                    col.querySelector('.discover-btn').addEventListener('click', () => {
+                        showTribeDetails(tribe, imgPath);
+                    });
+                });
+
+                AOS.refresh();
+            }
+
+            function showTribeDetails(tribe, imgPath) {
+                document.getElementById('tribeDetailHeader').style.backgroundImage = `url('${imgPath}')`;
+                document.getElementById('tribeDetailName').textContent = tribe.name;
+                document.getElementById('tribeDetailRegion').textContent = tribe.location?.region || 'Cameroon';
+                document.getElementById('tribeDetailOverview').textContent = tribe.overview;
+                
+                const formatList = (data, fallback) => {
+                    if (!data) return `<p>${fallback}</p>`;
+                    if (Array.isArray(data)) {
+                        return `<ul class="ps-3 mb-0">${data.map(item => `<li class="mb-2">${item}</li>`).join('')}</ul>`;
+                    }
+                    return `<p>${data}</p>`;
+                };
+
+                // Set detail sections
+                document.getElementById('tribeDetailMeals').innerHTML = formatList(tribe.meals_and_cuisine_list || tribe.food_and_cuisine, "Information about traditional meals is being updated.");
+                document.getElementById('tribeDetailCulture').innerHTML = formatList(tribe.customs_and_traditions || tribe.culture?.social_structure || tribe.culture, "Cultural details are being updated.");
+                
+                // Festivals
+                let festivalsContent = "";
+                if (tribe.festivals_list) {
+                    festivalsContent = formatList(tribe.festivals_list);
+                } else if (tribe.traditions?.ceremonies) {
+                    if (Array.isArray(tribe.traditions.ceremonies)) {
+                        festivalsContent = `<ul class="ps-3 mb-0">${tribe.traditions.ceremonies.map(c => `<li class="mb-2"><strong>${c.name}:</strong> ${c.description}</li>`).join('')}</ul>`;
+                    } else {
+                        festivalsContent = `<p>${tribe.traditions.ceremonies}</p>`;
+                    }
+                } else {
+                    festivalsContent = `<p>Information about festivals is being updated.</p>`;
+                }
+                document.getElementById('tribeDetailFestivals').innerHTML = festivalsContent;
+                
+                // Marriage
+                document.getElementById('tribeDetailMarriage').innerHTML = formatList(tribe.marriage || tribe.traditions?.marriage, "Marriage customs details are being updated.");
+                
+                // History
+                document.getElementById('tribeDetailHistory').innerHTML = formatList(tribe.history?.origin || tribe.history, "Historical background is being updated.");
+
+                // Show the modal
+                const modal = new bootstrap.Modal(document.getElementById('tribeDetailModal'));
+                modal.show();
+            }
+
+            // Search logic
+            document.getElementById('tribeSearch').addEventListener('input', renderTribes);
+            document.getElementById('searchBtn').addEventListener('click', renderTribes);
+
+            // --- AI Assistant Logic ---
+            const aiToggleBtn = document.getElementById('aiToggleBtn');
+            const aiChatCard = document.getElementById('aiChatCard');
+            const closeAiChat = document.getElementById('closeAiChat');
+            const aiChatInput = document.getElementById('aiChatInput');
+            const aiSendBtn = document.getElementById('aiSendBtn');
+            const aiChatMessages = document.getElementById('aiChatMessages');
+            const aiStatus = document.getElementById('aiStatus');
+            const clearHistoryBtn = document.getElementById('clearHistoryBtn');
+            const historyList = document.getElementById('historyList');
+
+            function toggleAiChat(show) {
+                if (show === undefined) {
+                    aiChatCard.classList.toggle('active');
+                } else if (show) {
+                    aiChatCard.classList.add('active');
+                } else {
+                    aiChatCard.classList.remove('active');
+                }
+                if (aiChatCard.classList.contains('active')) {
+                    renderHistoryInChat();
+                    aiChatInput.focus();
+                }
+            }
+
+            aiToggleBtn.addEventListener('click', () => toggleAiChat());
+            closeAiChat.addEventListener('click', () => toggleAiChat(false));
+
+            async function sendAiMessage(message) {
+                if (!message.trim()) return;
+
+                // Add user message to UI
+                addMessageToUi(message, 'user');
+                aiChatInput.value = '';
+
+                // Add to history
+                AICore.addMessage('user', message);
+
+                // Show status
+                aiStatus.classList.add('active');
+
+                try {
+                    const data = await AICore.generateResponse(message);
+                    
+                    // Add bot message to UI
+                    addMessageToUi(data.response, 'bot');
+                    
+                    // Add to history
+                    AICore.addMessage('bot', data.response, data.source);
+                } catch (error) {
+                    console.error('Chat error:', error);
+                    addMessageToUi("I'm sorry, I'm having trouble connecting right now.", 'bot');
+                } finally {
+                    aiStatus.classList.remove('active');
+                }
+            }
+
+            function addMessageToUi(content, role) {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = `ai-message ai-${role}-message`;
+                msgDiv.textContent = content;
+                aiChatMessages.appendChild(msgDiv);
+                aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
+            }
+
+            function renderHistoryInChat() {
+                // Only render if empty (initial load)
+                if (aiChatMessages.children.length <= 1) {
+                    const history = AICore.getHistory();
+                    history.forEach(msg => {
+                        addMessageToUi(msg.content, msg.role);
+                    });
+                }
+            }
+
+            function clearHistory() {
+                AICore.clearHistory();
+                aiChatMessages.innerHTML = `
+                    <div class="ai-message ai-bot-message">
+                        History cleared. How can I help you today?
+                    </div>
+                `;
+                renderHistoryModal();
+            }
+
+            function renderHistoryModal() {
+                if (!historyList) return;
+                historyList.innerHTML = '';
+                
+                const history = AICore.getHistory();
+                
+                if (history.length === 0) {
+                    historyList.innerHTML = '<div class="text-center py-4"><p class="text-muted">No history found.</p></div>';
+                    return;
+                }
+
+                // Group into sessions
+                const sessions = [];
+                for (let i = 0; i < history.length; i++) {
+                    if (history[i].role === 'user') {
+                        sessions.push({
+                            user: history[i],
+                            bot: history[i + 1] || null
+                        });
+                    }
+                }
+                sessions.reverse();
+
+                sessions.forEach((session) => {
+                    const item = document.createElement('div');
+                    item.className = 'card border-0 shadow-sm rounded-4 mb-3 history-card';
+                    const timeAgo = AICore.formatTime(session.user.timestamp);
+                    
+                    item.innerHTML = `
+                        <div class="card-body p-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success bg-opacity-10 text-success rounded-pill small">
+                                    <i class="fas fa-clock me-1"></i> ${timeAgo}
+                                </span>
+                                <button class="btn btn-sm btn-link text-danger p-0 delete-session" data-id="${session.user.id}">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                            <div class="fw-bold small text-dark mb-1">${session.user.content}</div>
+                            ${session.bot ? `<div class="text-muted small text-truncate-2">${session.bot.content}</div>` : ''}
+                        </div>
+                    `;
+                    historyList.appendChild(item);
+
+                    item.querySelector('.delete-session').onclick = (e) => {
+                        e.stopPropagation();
+                        deleteSessionFromHistory(session.user.id);
+                    };
+
+                    item.onclick = () => {
+                        // Load this session into chat
+                        aiChatMessages.innerHTML = '';
+                        addMessageToUi(session.user.content, 'user');
+                        if (session.bot) addMessageToUi(session.bot.content, 'bot');
+                        bootstrap.Modal.getInstance(document.getElementById('historyModal')).hide();
+                    };
+                });
+            }
+
+            function deleteSessionFromHistory(userId) {
+                const history = AICore.getHistory();
+                const idx = history.findIndex(m => m.id === userId);
+                if (idx !== -1) {
+                    history.splice(idx, 2);
+                    AICore.saveHistory(history);
+                    renderHistoryModal();
+                }
+            }
+
+            // Sync listener
+            window.addEventListener('storage', (e) => {
+                if (e.key === AICore.SYNC_KEY) {
+                    if (aiChatCard.classList.contains('active')) {
+                        aiChatMessages.innerHTML = '';
+                        renderHistoryInChat();
+                    }
+                }
+            });
+
+            aiSendBtn.addEventListener('click', () => sendAiMessage(aiChatInput.value));
+            aiChatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') sendAiMessage(aiChatInput.value);
+            });
+
+            clearHistoryBtn.addEventListener('click', clearHistory);
+            document.getElementById('viewHistoryBtn').addEventListener('click', renderHistoryModal);
+
+            // Initial load
+            loadTribes();
+        });
+    </script>
+</body>
+
+</html>

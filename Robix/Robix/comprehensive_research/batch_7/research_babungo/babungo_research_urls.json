@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/babungo_people",
+    "type": "main_page",
+    "tribe": "babungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/babungo_tribe",
+    "type": "main_page",
+    "tribe": "babungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/babungo",
+    "type": "main_page",
+    "tribe": "babungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/babungo_ethnic_group",
+    "type": "main_page",
+    "tribe": "babungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "spiritual_beliefs",
+    "search_term": "babungo religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+traditional+religion",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "spiritual_beliefs",
+    "search_term": "babungo traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+religious+practices",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "spiritual_beliefs",
+    "search_term": "babungo religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+economy+trade",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "economy",
+    "search_term": "babungo economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+economic+activities",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "economy",
+    "search_term": "babungo economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+livelihood",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "economy",
+    "search_term": "babungo livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "arts_and_crafts",
+    "search_term": "babungo art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+traditional+arts",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "arts_and_crafts",
+    "search_term": "babungo traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+handicrafts",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "arts_and_crafts",
+    "search_term": "babungo handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+traditional+governance",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "governance",
+    "search_term": "babungo traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+political+system",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "governance",
+    "search_term": "babungo political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+leadership+structure",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "governance",
+    "search_term": "babungo leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+colonial+period",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "colonial_impact",
+    "search_term": "babungo colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+European+colonization",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "colonial_impact",
+    "search_term": "babungo European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+colonial+administration",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "colonial_impact",
+    "search_term": "babungo colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+agriculture+farming",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "subsistence_patterns",
+    "search_term": "babungo agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+food+production",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "subsistence_patterns",
+    "search_term": "babungo food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+traditional+economy",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "subsistence_patterns",
+    "search_term": "babungo traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+modern+challenges",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "challenges",
+    "search_term": "babungo modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+contemporary+issues",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "challenges",
+    "search_term": "babungo contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "challenges",
+    "search_term": "babungo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "cultural_revitalization",
+    "search_term": "babungo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+language+revitalization",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "cultural_revitalization",
+    "search_term": "babungo language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+cultural+revival",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "cultural_revitalization",
+    "search_term": "babungo cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+modern+politics",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "modern_governance",
+    "search_term": "babungo modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+contemporary+governance",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "modern_governance",
+    "search_term": "babungo contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+political+participation",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "modern_governance",
+    "search_term": "babungo political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "pre_contact_history",
+    "search_term": "babungo pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+before+European+contact",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "pre_contact_history",
+    "search_term": "babungo before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+ancient+traditions",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "pre_contact_history",
+    "search_term": "babungo ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "culture",
+    "search_term": "babungo culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+cultural+practices",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "culture",
+    "search_term": "babungo cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+way+of+life",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "culture",
+    "search_term": "babungo way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "oral_traditions",
+    "search_term": "babungo oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+myths+legends",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "oral_traditions",
+    "search_term": "babungo myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+traditional+narratives",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "oral_traditions",
+    "search_term": "babungo traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "social_organization",
+    "search_term": "babungo social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+clan+system+family",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "social_organization",
+    "search_term": "babungo clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+social+hierarchy",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "social_organization",
+    "search_term": "babungo social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "traditional_knowledge",
+    "search_term": "babungo traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "traditional_knowledge",
+    "search_term": "babungo indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "traditional_knowledge",
+    "search_term": "babungo ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "traditional_technology",
+    "search_term": "babungo traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+indigenous+technology",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "traditional_technology",
+    "search_term": "babungo indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+artisan+skills",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "traditional_technology",
+    "search_term": "babungo artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+history+origin+migration",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "history",
+    "search_term": "babungo history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+historical+background",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "history",
+    "search_term": "babungo historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "history",
+    "search_term": "babungo ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+music+dance+songs",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "music_dance",
+    "search_term": "babungo music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+musical+instruments",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "music_dance",
+    "search_term": "babungo musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/babungo+cultural+dances",
+    "type": "category_search",
+    "tribe": "babungo",
+    "category": "music_dance",
+    "search_term": "babungo cultural dances",
+    "priority": "medium"
+  }
+]

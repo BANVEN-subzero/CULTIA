@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamenyam_people",
+    "type": "main_page",
+    "tribe": "bamenyam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamenyam_tribe",
+    "type": "main_page",
+    "tribe": "bamenyam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamenyam",
+    "type": "main_page",
+    "tribe": "bamenyam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamenyam_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamenyam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "spiritual_beliefs",
+    "search_term": "bamenyam religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "spiritual_beliefs",
+    "search_term": "bamenyam traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+religious+practices",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "spiritual_beliefs",
+    "search_term": "bamenyam religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+colonial+period",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "colonial_impact",
+    "search_term": "bamenyam colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+European+colonization",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "colonial_impact",
+    "search_term": "bamenyam European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "colonial_impact",
+    "search_term": "bamenyam colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "subsistence_patterns",
+    "search_term": "bamenyam agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+food+production",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "subsistence_patterns",
+    "search_term": "bamenyam food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "subsistence_patterns",
+    "search_term": "bamenyam traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "cultural_revitalization",
+    "search_term": "bamenyam cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "cultural_revitalization",
+    "search_term": "bamenyam language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "cultural_revitalization",
+    "search_term": "bamenyam cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+modern+politics",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "modern_governance",
+    "search_term": "bamenyam modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "modern_governance",
+    "search_term": "bamenyam contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+political+participation",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "modern_governance",
+    "search_term": "bamenyam political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "pre_contact_history",
+    "search_term": "bamenyam pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "pre_contact_history",
+    "search_term": "bamenyam before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "pre_contact_history",
+    "search_term": "bamenyam ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "oral_traditions",
+    "search_term": "bamenyam oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+myths+legends",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "oral_traditions",
+    "search_term": "bamenyam myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "oral_traditions",
+    "search_term": "bamenyam traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "social_organization",
+    "search_term": "bamenyam social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "social_organization",
+    "search_term": "bamenyam clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "social_organization",
+    "search_term": "bamenyam social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "traditional_knowledge",
+    "search_term": "bamenyam traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "traditional_knowledge",
+    "search_term": "bamenyam indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "traditional_knowledge",
+    "search_term": "bamenyam ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "traditional_technology",
+    "search_term": "bamenyam traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "traditional_technology",
+    "search_term": "bamenyam indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "traditional_technology",
+    "search_term": "bamenyam artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "music_dance",
+    "search_term": "bamenyam music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "music_dance",
+    "search_term": "bamenyam musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamenyam+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamenyam",
+    "category": "music_dance",
+    "search_term": "bamenyam cultural dances",
+    "priority": "medium"
+  }
+]

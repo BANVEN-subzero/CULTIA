@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bakoko_people",
+    "type": "main_page",
+    "tribe": "bakoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakoko_tribe",
+    "type": "main_page",
+    "tribe": "bakoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakoko",
+    "type": "main_page",
+    "tribe": "bakoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakoko_ethnic_group",
+    "type": "main_page",
+    "tribe": "bakoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "spiritual_beliefs",
+    "search_term": "bakoko religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+traditional+religion",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "spiritual_beliefs",
+    "search_term": "bakoko traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+religious+practices",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "spiritual_beliefs",
+    "search_term": "bakoko religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+colonial+period",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "colonial_impact",
+    "search_term": "bakoko colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+European+colonization",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "colonial_impact",
+    "search_term": "bakoko European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+colonial+administration",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "colonial_impact",
+    "search_term": "bakoko colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "subsistence_patterns",
+    "search_term": "bakoko agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+food+production",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "subsistence_patterns",
+    "search_term": "bakoko food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+traditional+economy",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "subsistence_patterns",
+    "search_term": "bakoko traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "cultural_revitalization",
+    "search_term": "bakoko cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+language+revitalization",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "cultural_revitalization",
+    "search_term": "bakoko language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+cultural+revival",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "cultural_revitalization",
+    "search_term": "bakoko cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+modern+politics",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "modern_governance",
+    "search_term": "bakoko modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "modern_governance",
+    "search_term": "bakoko contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+political+participation",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "modern_governance",
+    "search_term": "bakoko political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "pre_contact_history",
+    "search_term": "bakoko pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+before+European+contact",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "pre_contact_history",
+    "search_term": "bakoko before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "pre_contact_history",
+    "search_term": "bakoko ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "oral_traditions",
+    "search_term": "bakoko oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+myths+legends",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "oral_traditions",
+    "search_term": "bakoko myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "oral_traditions",
+    "search_term": "bakoko traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "social_organization",
+    "search_term": "bakoko social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+clan+system+family",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "social_organization",
+    "search_term": "bakoko clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "social_organization",
+    "search_term": "bakoko social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "traditional_knowledge",
+    "search_term": "bakoko traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "traditional_knowledge",
+    "search_term": "bakoko indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "traditional_knowledge",
+    "search_term": "bakoko ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "traditional_technology",
+    "search_term": "bakoko traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "traditional_technology",
+    "search_term": "bakoko indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+artisan+skills",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "traditional_technology",
+    "search_term": "bakoko artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "music_dance",
+    "search_term": "bakoko music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+musical+instruments",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "music_dance",
+    "search_term": "bakoko musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakoko+cultural+dances",
+    "type": "category_search",
+    "tribe": "bakoko",
+    "category": "music_dance",
+    "search_term": "bakoko cultural dances",
+    "priority": "medium"
+  }
+]

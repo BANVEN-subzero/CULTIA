@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Recipes - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .recipe-img-wrapper {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .recipe-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .recipe-card:hover .recipe-img {
+            transform: scale(1.1);
+        }
+
+        .recipe-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            color: var(--primary-green);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .recipe-detail-card {
+            background: white;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.08);
+        }
+
+        .recipe-header-bg {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
+            padding: 80px 40px;
+            color: white;
+            position: relative;
+        }
+
+        .ingredient-item {
+            padding: 15px 25px;
+            background: #f8f9fa;
+            border-radius: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: var(--transition-smooth);
+            border: 1px solid transparent;
+        }
+
+        .ingredient-item:hover {
+            background: white;
+            border-color: var(--primary-green);
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .step-item {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .step-number {
+            width: 45px;
+            height: 45px;
+            background: var(--primary-green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: 800;
+            font-size: 1.2rem;
+            box-shadow: 0 8px 20px rgba(45, 90, 39, 0.3);
+        }
+
+        .video-container {
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            background: #000;
+            aspect-ratio: 16/9;
+        }
+
+        .hidden { display: none !important; }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <div class="container py-5">
+            <!-- List View -->
+            <div id="recipeList" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h1 class="display-3 fw-bold mb-3">Cameroon's <span class="text-success">Culinary Heritage</span></h1>
+                    <p class="lead text-muted mx-auto" style="max-width: 800px;">Explore the rich and diverse flavors of Africa in miniature. From the bitterleaf stews of the Littoral to the spicy soups of the Grassfields.</p>
+                </div>
+
+                <div class="row g-4" id="recipeGrid">
+                    <!-- Recipes will be populated by JS -->
+                </div>
+            </div>
+
+            <!-- Detail View -->
+            <div id="recipeDetail" class="hidden">
+                <div class="recipe-detail-card" data-aos="fade-up">
+                    <div id="recipeDetailContent">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        const recipes = [
+            {
+                id: 1,
+                name: "Ndolé",
+                tribe: "Duala / Bassa",
+                region: "Littoral",
+                image: "image/download (11).jpeg",
+                description: "The national dish of Cameroon. A rich, creamy stew made from bitterleaf, groundnuts, and various meats or seafood.",
+                cookTime: "1h 30m",
+                difficulty: "Hard",
+                ingredients: ["Bitterleaf (Ndolé)", "Groundnuts (peanuts)", "Beef / Fish / Shrimp", "Palm Oil", "Onions", "Garlic & Ginger", "Crayfish"],
+                instructions: ["Wash the bitterleaf multiple times to reduce bitterness.", "Boil the groundnuts and blend into a fine paste.", "Cook the meats until tender.", "Sauté onions and garlic, add groundnut paste and stock.", "Incorporate the bitterleaf and simmer.", "Finish with a hot oil and onion garnish."],
+                video: "https://www.youtube.com/embed/jEitxQwVGi4"
+            },
+            {
+                id: 2,
+                name: "Mbongo Tchobi",
+                tribe: "Bassa",
+                region: "Littoral",
+                image: "image/download (12).jpeg",
+                description: "Known as 'Ebony Sauce', this distinctive black stew uses burnt Mbongo spices to create a unique, aromatic flavor profile.",
+                cookTime: "1h 15m",
+                difficulty: "Medium",
+                ingredients: ["Catfish or Meat", "Mbongo spices (burnt)", "Palm Oil", "Tomatoes & Onions", "Crayfish", "Salt & Pepper"],
+                instructions: ["Clean and season the fish/meat.", "Blend the burnt Mbongo spices with tomatoes and onions.", "Heat palm oil and fry the spice mixture.", "Add meat/fish and a little water.", "Simmer until the sauce thickens and turns deep black.", "Serve with boiled plantains or yams."],
+                video: "https://www.youtube.com/embed/J9NZy1bJK5s"
+            },
+            {
+                id: 3,
+                name: "Water Fufu & Eru",
+                tribe: "Manyu / Bayangi",
+                region: "Southwest",
+                image: "https://i.pinimg.com/736x/67/60/a0/6760a073cda74792dcca26b77308be02.jpg",
+                description: "A legendary combination of finely shredded Eru leaves and waterleaf, served with smooth fermented cassava fufu.",
+                cookTime: "2h 00m",
+                difficulty: "Hard",
+                ingredients: ["Eru leaves", "Waterleaf", "Palm Oil", "Crayfish", "Smoked Fish", "Cow Skin (Kanda)", "Water Fufu"],
+                instructions: ["Boil the cow skin and smoked fish.", "Add shredded waterleaf and simmer.", "Add the Eru leaves and stir well.", "Pour in a generous amount of palm oil.", "Add crayfish and season.", "Prepare water fufu by kneading in boiling water until smooth."],
+                video: "https://www.youtube.com/embed/_bP71Zsn1vo"
+            },
+            {
+                id: 4,
+                name: "Achu & Yellow Soup",
+                tribe: "Ngamba / Bamileke",
+                region: "Northwest / West",
+                image: "https://i.pinimg.com/736x/49/d2/b4/49d2b4c41e19c5213e4feb576beb5bd1.jpg",
+                description: "A royal dish of pounded cocoyams served with a vibrant yellow limestone-based soup and assorted meats.",
+                cookTime: "2h 30m",
+                difficulty: "Expert",
+                ingredients: ["Cocoyams", "Palm Oil", "Limestone (Nikki)", "Achu Spices", "Beef & Tripe", "Crayfish", "Yellow pepper"],
+                instructions: ["Boil cocoyams and pound into a smooth paste.", "Boil meats and reserve the stock.", "Mix warm palm oil with limestone water to create the yellow emulsion.", "Add Achu spices and stock to the emulsion.", "Serve by creating a 'well' in the Achu for the soup."],
+                video: "https://www.youtube.com/embed/4xdjC7wqX7g"
+            },
+            {
+                id: 5,
+                name: "Koki Corn / Koki Beans",
+                tribe: "Bafia / Bamileke",
+                region: "Centre / West",
+                image: "https://i.pinimg.com/736x/4f/ea/e6/4feae6c6308b802dd93adea017321044.jpg",
+                description: "Steamed bean or corn pudding wrapped in banana leaves, known for its bright orange color from palm oil.",
+                cookTime: "1h 45m",
+                difficulty: "Medium",
+                ingredients: ["Black-eyed peas or Corn", "Palm Oil", "Spinach or Cocoyam leaves", "Hot peppers", "Salt", "Banana leaves"],
+                instructions: ["Soak and peel the beans (or grind fresh corn).", "Grind into a paste.", "Warm palm oil and stir into the paste until bright orange.", "Add shredded leaves and peppers.", "Wrap in softened banana leaves and steam for 90 minutes."],
+                video: "https://www.youtube.com/embed/YcWcbrX23Q8"
+            },
+            {
+                id: 6,
+                name: "Poulet DG",
+                tribe: "General / Urban",
+                region: "National",
+                image: "https://i.pinimg.com/1200x/ba/7a/e2/ba7ae2e6fc0f44c6c5d08ed2f2edc268.jpg",
+                description: "The 'Director General' chicken - a celebratory stir-fry of chicken, fried plantains, and vibrant vegetables.",
+                cookTime: "1h 00m",
+                difficulty: "Easy",
+                ingredients: ["Chicken", "Ripe Plantains", "Carrots & Green beans", "Bell peppers", "Onions", "Celery & Parsley", "Oil"],
+                instructions: ["Season and fry or grill the chicken.", "Slice and fry the ripe plantains.", "Sauté vegetables in a large pan.", "Combine chicken and plantains with the vegetables.", "Simmer with herbs for 10 minutes.", "Serve as a complete one-pot meal."],
+                video: "https://www.youtube.com/embed/w_hJcs3Dyq4"
+            },
+            {
+                id: 7,
+                name: "Ekwang",
+                tribe: "Bakweri / Banyang",
+                region: "Southwest",
+                image: "https://i.pinimg.com/736x/4e/2d/d8/4e2dd8496e3f34d3c316fdaa570caf28.jpg",
+                description: "A labor-intensive delicacy made of grated cocoyams wrapped in tender cocoyam leaves and slowly simmered with spices.",
+                cookTime: "2h 30m",
+                difficulty: "Expert",
+                ingredients: ["Cocoyams", "Cocoyam leaves", "Palm Oil", "Smoked Fish & Meat", "Crayfish", "Pepper & Salt", "Country Onion"],
+                instructions: ["Grate cocoyams and season slightly.", "Clean cocoyam leaves and tear into small pieces.", "Wrap a small amount of grated cocoyam in each leaf piece.", "Arrange in a pot lined with leaves.", "Add oil, fish, meat, and spices.", "Cook on low heat until firm and fragrant."],
+                video: "https://www.youtube.com/embed/_CrGYcRaSTg"
+            },
+            {
+                id: 8,
+                name: "Sangah",
+                tribe: "Bassa / Beti",
+                region: "Centre / Littoral",
+                image: "https://i.pinimg.com/1200x/c0/8f/24/c08f249b7caaf005cefcf75bca54bdf8.jpg",
+                description: "A traditional one-pot meal made of maize, cassava leaves, and palm nuts. A perfect blend of sweet and savory.",
+                cookTime: "1h 30m",
+                difficulty: "Medium",
+                ingredients: ["Fresh Maize", "Cassava leaves", "Palm nut pulp", "Sugar (optional)", "Salt"],
+                instructions: ["Extract pulp from boiled palm nuts.", "Boil maize until half-cooked.", "Add finely shredded cassava leaves.", "Pour in the palm nut pulp.", "Cook until the maize is tender and the sauce is thick.", "Serve warm as a comforting traditional meal."],
+                video: "https://www.youtube.com/embed/pXAVZzrKCiE"
+            },
+            {
+                id: 9,
+                name: "Cornchaff",
+                tribe: "Northwest / Southwest",
+                region: "Anglophone Regions",
+                image: "https://i.pinimg.com/736x/33/57/0f/33570f18b1ad8141a871cdb28d63c380.jpg",
+                description: "A hearty and nutritious stew of corn and beans, flavored with palm oil and smoked fish. A staple for students and families.",
+                cookTime: "2h 00m",
+                difficulty: "Easy",
+                ingredients: ["Dry Corn", "Beans", "Palm Oil", "Smoked Fish", "Onions & Garlic", "Crayfish", "Salt & Maggi"],
+                instructions: ["Soak and boil corn until soft.", "Boil beans separately until tender.", "Combine corn and beans in a large pot.", "Add palm oil, onions, and spices.", "Stir in smoked fish and crayfish.", "Simmer until the flavors meld into a thick stew."],
+                video: "https://www.youtube.com/embed/2nC1fMVO5e4"
+            },
+            {
+                id: 10,
+                name: "Okok / Eru",
+                tribe: "Beti / Bassa",
+                region: "Centre / South",
+                image: "https://i.pinimg.com/736x/7c/a4/f9/7ca4f99ede0e509ad8b395f9fbf9e4fd.jpg",
+                description: "A sophisticated dish of Gnetum Africanum leaves cooked with palm nut juice and groundnuts. Distinctly sweet and nutty.",
+                cookTime: "1h 45m",
+                difficulty: "Medium",
+                ingredients: ["Okok leaves", "Palm nut juice", "Groundnuts (roasted & ground)", "Sugar (optional)", "Salt", "Tuber accompaniment"],
+                instructions: ["Wash and shred Okok leaves finely.", "Extract juice from boiled palm nuts.", "Boil the Okok leaves in the palm nut juice.", "Add groundnut paste and stir continuously.", "Cook until the sauce thickens and the oil rises.", "Serve with boiled cassava or yams."],
+                video: "https://www.youtube.com/embed/DqtzFZAZ7Ik"
+            },
+            {
+                id: 11,
+                name: "Mbajia",
+                tribe: "Bamun",
+                region: "West",
+                image: "https://i.pinimg.com/1200x/7d/0f/85/7d0f858711ccd8cde1e7410ead2f9a97.jpg",
+                description: "Traditional Bamun bean cakes, fried to perfection. A popular snack and ceremonial food in the Foumban area.",
+                cookTime: "1h 00m",
+                difficulty: "Medium",
+                ingredients: ["Beans (Black-eyed peas)", "Onions", "Pepper", "Salt", "Vegetable Oil for frying"],
+                instructions: ["Soak and peel the beans.", "Grind beans with onions and peppers into a smooth paste.", "Whisk the paste vigorously to incorporate air.", "Heat oil in a deep pan.", "Scoop small balls of paste into the hot oil.", "Fry until golden brown and crispy."],
+                video: "https://www.youtube.com/embed/abzr5w3PE5I"
+            },
+            {
+                id: 12,
+                name: "Foléré",
+                tribe: "Northern Tribes",
+                region: "North / Far North",
+                image: "https://i.pinimg.com/1200x/7d/9c/28/7d9c284cf4a589c8358848de779b17e8.jpg",
+                description: "A refreshing hibiscus drink often served with traditional snacks. Known for its deep red color and health benefits.",
+                cookTime: "45m",
+                difficulty: "Easy",
+                ingredients: ["Dried Hibiscus petals", "Ginger", "Pineapple peel", "Sugar or Honey", "Mint leaves", "Water"],
+                instructions: ["Wash hibiscus petals thoroughly.", "Boil with ginger and pineapple peels for 20 minutes.", "Strain the liquid into a clean container.", "Add sugar or honey while still warm.", "Add mint leaves and let it cool.", "Serve chilled with ice."],
+                video: "https://www.youtube.com/embed/BWwQLFuuEcU"
+            }
+        ];
+
+        const recipeList = document.getElementById('recipeList');
+        const recipeDetail = document.getElementById('recipeDetail');
+        const recipeGrid = document.getElementById('recipeGrid');
+        const recipeDetailContent = document.getElementById('recipeDetailContent');
+
+        function init() {
+            AOS.init({ duration: 800, once: true });
+            renderRecipes();
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Recipes');
+            });
+        }
+
+        function renderRecipes() {
+            recipeGrid.innerHTML = '';
+            recipes.forEach((r, i) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-6 col-lg-4';
+                col.setAttribute('data-aos', 'fade-up');
+                col.setAttribute('data-aos-delay', i * 100);
+                col.innerHTML = `
+                    <div class="recipe-card" onclick="showDetail(${r.id})">
+                        <div class="recipe-img-wrapper">
+                            <img src="${r.image}" class="recipe-img" onerror="this.src='https://via.placeholder.com/400x300?text=${r.name}'">
+                            <span class="recipe-badge">${r.tribe}</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-2">${r.name}</h4>
+                            <p class="text-muted small mb-4">${r.description}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-light text-dark rounded-pill px-3">${r.cookTime}</span>
+                                <span class="text-success fw-bold">View Recipe <i class="fas fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                recipeGrid.appendChild(col);
+            });
+        }
+
+        function showDetail(id) {
+            const r = recipes.find(x => x.id === id);
+            if (!r) return;
+
+            recipeDetailContent.innerHTML = `
+                <div class="recipe-header-bg">
+                    <button class="btn btn-light rounded-pill px-4 mb-4 fw-bold" onclick="showList()">
+                        <i class="fas fa-arrow-left me-2"></i> Back to Recipes
+                    </button>
+                    <h1 class="display-3 fw-bold mb-2">${r.name}</h1>
+                    <p class="lead opacity-75 mb-4">A traditional masterpiece from the ${r.tribe} people of the ${r.region} region.</p>
+                    <div class="d-flex flex-wrap gap-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-clock fs-4"></i>
+                            <div>
+                                <small class="d-block opacity-75">Cook Time</small>
+                                <strong>${r.cookTime}</strong>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-signal fs-4"></i>
+                            <div>
+                                <small class="d-block opacity-75">Difficulty</small>
+                                <strong>${r.difficulty}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-4 p-md-5">
+                    <div class="row g-5">
+                        <div class="col-lg-5">
+                            <h3 class="fw-bold mb-4">Ingredients</h3>
+                            <div class="ingredients-list">
+                                ${r.ingredients.map(i => `
+                                    <div class="ingredient-item">
+                                        <i class="fas fa-check-circle text-success"></i>
+                                        <span class="fw-bold">${i}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <h3 class="fw-bold mb-4">Preparation Steps</h3>
+                            <div class="steps-list">
+                                ${r.instructions.map((s, i) => `
+                                    <div class="step-item">
+                                        <div class="step-number">${i+1}</div>
+                                        <p class="mb-0 text-muted fs-5">${s}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <h3 class="fw-bold mb-4 text-center">Video Masterclass</h3>
+                        <div class="video-container">
+                            <iframe width="100%" height="100%" src="${r.video}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            recipeList.classList.add('hidden');
+            recipeDetail.classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        function showList() {
+            recipeDetail.classList.add('hidden');
+            recipeList.classList.remove('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+
+</html>

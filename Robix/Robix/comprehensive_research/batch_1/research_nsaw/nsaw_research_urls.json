@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/nsaw_people",
+    "type": "main_page",
+    "tribe": "nsaw",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/nsaw_tribe",
+    "type": "main_page",
+    "tribe": "nsaw",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/nsaw",
+    "type": "main_page",
+    "tribe": "nsaw",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/nsaw_ethnic_group",
+    "type": "main_page",
+    "tribe": "nsaw",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "spiritual_beliefs",
+    "search_term": "nsaw religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+traditional+religion",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "spiritual_beliefs",
+    "search_term": "nsaw traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+religious+practices",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "spiritual_beliefs",
+    "search_term": "nsaw religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+colonial+period",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "colonial_impact",
+    "search_term": "nsaw colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+European+colonization",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "colonial_impact",
+    "search_term": "nsaw European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+colonial+administration",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "colonial_impact",
+    "search_term": "nsaw colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+agriculture+farming",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "subsistence_patterns",
+    "search_term": "nsaw agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+food+production",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "subsistence_patterns",
+    "search_term": "nsaw food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+traditional+economy",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "subsistence_patterns",
+    "search_term": "nsaw traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+cultural+preservation",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "cultural_revitalization",
+    "search_term": "nsaw cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+language+revitalization",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "cultural_revitalization",
+    "search_term": "nsaw language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+cultural+revival",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "cultural_revitalization",
+    "search_term": "nsaw cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+modern+politics",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "modern_governance",
+    "search_term": "nsaw modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+contemporary+governance",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "modern_governance",
+    "search_term": "nsaw contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+political+participation",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "modern_governance",
+    "search_term": "nsaw political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "pre_contact_history",
+    "search_term": "nsaw pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+before+European+contact",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "pre_contact_history",
+    "search_term": "nsaw before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+ancient+traditions",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "pre_contact_history",
+    "search_term": "nsaw ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "oral_traditions",
+    "search_term": "nsaw oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+myths+legends",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "oral_traditions",
+    "search_term": "nsaw myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+traditional+narratives",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "oral_traditions",
+    "search_term": "nsaw traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "social_organization",
+    "search_term": "nsaw social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+clan+system+family",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "social_organization",
+    "search_term": "nsaw clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+social+hierarchy",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "social_organization",
+    "search_term": "nsaw social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "traditional_knowledge",
+    "search_term": "nsaw traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "traditional_knowledge",
+    "search_term": "nsaw indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "traditional_knowledge",
+    "search_term": "nsaw ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "traditional_technology",
+    "search_term": "nsaw traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+indigenous+technology",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "traditional_technology",
+    "search_term": "nsaw indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+artisan+skills",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "traditional_technology",
+    "search_term": "nsaw artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+music+dance+songs",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "music_dance",
+    "search_term": "nsaw music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+musical+instruments",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "music_dance",
+    "search_term": "nsaw musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/nsaw+cultural+dances",
+    "type": "category_search",
+    "tribe": "nsaw",
+    "category": "music_dance",
+    "search_term": "nsaw cultural dances",
+    "priority": "medium"
+  }
+]

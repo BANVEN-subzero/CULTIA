@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/fulani_people",
+    "type": "main_page",
+    "tribe": "fulani",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/fulani_tribe",
+    "type": "main_page",
+    "tribe": "fulani",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/fulani",
+    "type": "main_page",
+    "tribe": "fulani",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/fulani_ethnic_group",
+    "type": "main_page",
+    "tribe": "fulani",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "spiritual_beliefs",
+    "search_term": "fulani religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+traditional+religion",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "spiritual_beliefs",
+    "search_term": "fulani traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+religious+practices",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "spiritual_beliefs",
+    "search_term": "fulani religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+colonial+period",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "colonial_impact",
+    "search_term": "fulani colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+European+colonization",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "colonial_impact",
+    "search_term": "fulani European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+colonial+administration",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "colonial_impact",
+    "search_term": "fulani colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+agriculture+farming",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "subsistence_patterns",
+    "search_term": "fulani agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+food+production",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "subsistence_patterns",
+    "search_term": "fulani food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+traditional+economy",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "subsistence_patterns",
+    "search_term": "fulani traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+cultural+preservation",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "cultural_revitalization",
+    "search_term": "fulani cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+language+revitalization",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "cultural_revitalization",
+    "search_term": "fulani language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+cultural+revival",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "cultural_revitalization",
+    "search_term": "fulani cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+modern+politics",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "modern_governance",
+    "search_term": "fulani modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+contemporary+governance",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "modern_governance",
+    "search_term": "fulani contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+political+participation",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "modern_governance",
+    "search_term": "fulani political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "pre_contact_history",
+    "search_term": "fulani pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+before+European+contact",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "pre_contact_history",
+    "search_term": "fulani before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+ancient+traditions",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "pre_contact_history",
+    "search_term": "fulani ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "oral_traditions",
+    "search_term": "fulani oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+myths+legends",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "oral_traditions",
+    "search_term": "fulani myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+traditional+narratives",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "oral_traditions",
+    "search_term": "fulani traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "social_organization",
+    "search_term": "fulani social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+clan+system+family",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "social_organization",
+    "search_term": "fulani clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+social+hierarchy",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "social_organization",
+    "search_term": "fulani social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "traditional_knowledge",
+    "search_term": "fulani traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "traditional_knowledge",
+    "search_term": "fulani indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "traditional_knowledge",
+    "search_term": "fulani ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "traditional_technology",
+    "search_term": "fulani traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+indigenous+technology",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "traditional_technology",
+    "search_term": "fulani indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+artisan+skills",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "traditional_technology",
+    "search_term": "fulani artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+music+dance+songs",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "music_dance",
+    "search_term": "fulani music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+musical+instruments",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "music_dance",
+    "search_term": "fulani musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fulani+cultural+dances",
+    "type": "category_search",
+    "tribe": "fulani",
+    "category": "music_dance",
+    "search_term": "fulani cultural dances",
+    "priority": "medium"
+  }
+]

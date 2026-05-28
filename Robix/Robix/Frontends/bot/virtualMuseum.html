@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Museum - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-terracotta: #C65D07;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .museum-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 160px;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 60px 60px;
+            margin-bottom: -60px;
+        }
+
+        .exhibit-card {
+            background: white;
+            border-radius: 35px;
+            overflow: hidden;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .exhibit-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 35px 70px rgba(0,0,0,0.12);
+        }
+
+        .exhibit-img-wrapper {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            background: #f8f9fa;
+        }
+
+        .exhibit-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: var(--transition-smooth);
+            padding: 20px;
+        }
+
+        .exhibit-card:hover .exhibit-img {
+            transform: scale(1.05);
+        }
+
+        .exhibit-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent-terracotta);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            box-shadow: 0 5px 15px rgba(198, 93, 7, 0.3);
+        }
+
+        .btn-explore {
+            background: white;
+            color: var(--accent-terracotta);
+            border: 2px solid var(--accent-terracotta);
+            border-radius: 18px;
+            padding: 12px 25px;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+
+        .btn-explore:hover {
+            background: var(--accent-terracotta);
+            color: white;
+            box-shadow: 0 5px 15px rgba(198, 93, 7, 0.3);
+        }
+
+        .museum-intro {
+            background: white;
+            border-radius: 40px;
+            padding: 50px;
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            border-left: 10px solid var(--accent-terracotta);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="museum-hero">
+            <div class="container" data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">Virtual Museum</h1>
+                <p class="lead fs-4 opacity-75">Treasures of Cameroon's Ancient Civilizations</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="museum-intro mb-5" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-3 text-dark">Welcome to the CULTIA Gallery</h2>
+                        <p class="lead text-muted mb-0">Explore the sacred artifacts, royal regalia, and everyday tools that have defined Cameroonian identity for centuries. Each exhibit is a window into the soul of a people.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <i class="fas fa-landmark display-1 opacity-25 text-terracotta"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="museumGrid">
+                <!-- Bamileke Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Bamileke_clothing.jpg/250px-Bamileke_clothing.jpg" class="exhibit-img" alt="Bamileke Artifacts">
+                            <span class="exhibit-badge">Grassfields</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Bamileke Regalia</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Discover the Toghu cloth, Nkwāl masks, and royal stools that represent the intricate social hierarchy and artistic mastery of the Western Highlands.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('bamileke')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bamum Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://substackcdn.com/image/fetch/$s_!gqzz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fbcc5178d-a6a9-4526-8595-c18ca27e5fc2_1159x600.png" class="exhibit-img" alt="Bamum Manuscripts">
+                            <span class="exhibit-badge">Sultanate</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Bamum Chronicles</h3>
+                            <p class="text-muted mb-4 flex-grow-1">The Shumom script, palace archives, and legendary bronze pipes of the Bamum people, showcasing one of Africa's few indigenous writing systems.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('bamum')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nso Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/70/5a/b2/705ab2e775b7ab5cfeed3e6e8fbd67d8.jpg" class="exhibit-img" alt="Nso Ceremonial Items">
+                            <span class="exhibit-badge">Northwest</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Nso Sacred Arts</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Explore the Ntieya cloth and Kwifon staffs—symbols of the powerful secret societies that balance governance in the Nso Kingdom.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('nso')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bassa Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://img.over-blog.com/300x237/2/19/54/40/Le-Hilun-bassa-a.JPG" class="exhibit-img" alt="Bassa Musical Instruments">
+                            <span class="exhibit-badge">Coastal Forest</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Bassa Soul</h3>
+                            <p class="text-muted mb-4 flex-grow-1">The Mvet harp and Nganga drums—the rhythmic heartbeat of the Bassa people used to transmit oral history and ancestral wisdom.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('bassa')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fulani Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Nathaniel_Ajibola_Fulani_Woman_Nigeria.JPG" class="exhibit-img" alt="Fulani Adornments">
+                            <span class="exhibit-badge">Sahel</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Fulani Elegance</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Intricate silver jewelry, leatherwork, and traditional nomadic gear that define the identity of the Sahelian pastoralists.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('fulani')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duala Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://c8.alamy.com/comp/B64MME/pirogue-douala-cameroon-africa-B64MME.jpg" class="exhibit-img" alt="Duala Maritime Tools">
+                            <span class="exhibit-badge">Sawa</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Duala Maritime</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Ceremonial pirogues and Ngondo festival artifacts that celebrate the deep spiritual connection between the Sawa people and the sea.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('duala')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bafut Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/b5/5a/7b/b55a7bb7064c52bda8ed8a214af00097.jpg" class="exhibit-img" alt="Bafut Palace Artifacts">
+                            <span class="exhibit-badge">Northwest</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Bafut Palace Treasures</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Sacred carvings and architectural wonders from the Bafut Palace, one of the oldest and best-preserved royal residences in the Grassfields.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('bafut')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bakweri Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://i.pinimg.com/736x/32/15/23/321523aa9aae701624ab49461048aa31.jpg" class="exhibit-img" alt="Bakweri Deities">
+                            <span class="exhibit-badge">Southwest</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Bakweri Heritage</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Artifacts related to the 'Efasa-Moto' mountain god and the traditional agricultural tools used on the fertile slopes of Mount Cameroon.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('bakweri')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bakossi Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://i.pinimg.com/736x/d9/71/f3/d971f349b2c01dd0257ada054492286a.jpg" class="exhibit-img" alt="Bakossi Forest Spirits">
+                            <span class="exhibit-badge">Manengouba</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Bakossi Forest Arts</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Sacred objects from the Manengouba forest, representing the spirits of the Twin Lakes and the ancestral wisdom of the Bakossi people.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('bakossi')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beti Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/06/1a/44/061a447716dfd52a9f1e65cfee682439.jpg" class="exhibit-img" alt="Beti Ancestral Statues">
+                            <span class="exhibit-badge">Forest Zone</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Beti Ancestral Masks</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Intricate wooden masks and statues used in the 'So' initiation rites, reflecting the spiritual depth of the forest-dwelling Beti-Pahuin groups.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('beti')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kotoko Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://i.pinimg.com/1200x/c1/33/88/c13388a0fa1fd74ec53c094a438cbb94.jpg" class="exhibit-img" alt="Kotoko Bronze">
+                            <span class="exhibit-badge">Far North</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Kotoko Bronzes</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Ancient bronze riders and tiny talismans from the Sao civilization, the ancestors of the Kotoko people living along the Logone River.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('kotoko')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mafa Exhibit -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="exhibit-card">
+                        <div class="exhibit-img-wrapper">
+                            <img src="https://i.pinimg.com/736x/ce/ec/46/ceec4696b66e15a991dae2dd3d2c54f7.jpg" class="exhibit-img" alt="Mafa Terrace Farming Tools">
+                            <span class="exhibit-badge">Mandara Mtns</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Mafa Mandara Arts</h3>
+                            <p class="text-muted mb-4 flex-grow-1">Iron tools and unique pottery from the Mandara Mountains, showcasing the Mafa people's mastery of terrace farming and metallurgy.</p>
+                            <button class="btn btn-explore w-100" onclick="showExhibitDetails('mafa')">View Exhibit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artifact Detail Modal -->
+    <div class="modal fade" id="artifactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 rounded-5 overflow-hidden">
+                <div class="modal-header border-0 p-4 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5 pt-2">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-5">
+                            <div class="artifact-modal-img-wrapper rounded-5 bg-light p-4">
+                                <img src="" id="modalImg" class="img-fluid" alt="Artifact">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2 mb-3" id="modalBadge">Origin</span>
+                            <h2 class="fw-bold mb-3" id="modalTitle">Artifact Title</h2>
+                            <p class="text-muted mb-4 lead" id="modalDesc">Detailed description goes here.</p>
+                            
+                            <div class="artifact-info-grid">
+                                <div class="info-item mb-3">
+                                    <h6 class="fw-bold text-uppercase small text-muted mb-1">Significance</h6>
+                                    <p class="mb-0" id="modalSignificance">Cultural and historical significance.</p>
+                                </div>
+                                <div class="info-item mb-3">
+                                    <h6 class="fw-bold text-uppercase small text-muted mb-1">Materials</h6>
+                                    <p class="mb-0" id="modalMaterials">Wood, Bronze, Beads, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Modal Styles */
+        #artifactModal .modal-content {
+            box-shadow: 0 30px 100px rgba(0,0,0,0.2);
+        }
+        .artifact-modal-img-wrapper {
+            transition: var(--transition-smooth);
+        }
+        .artifact-modal-img-wrapper:hover {
+            transform: scale(1.02);
+        }
+        .artifact-info-grid {
+            border-top: 1px solid #f0f0f0;
+            padding-top: 2rem;
+        }
+        .text-terracotta { color: var(--accent-terracotta); }
+    </style>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/settingsManager.js"></script>
+
+    <script>
+        const exhibitData = {
+            bamileke: {
+                title: "Bamileke Regalia",
+                badge: "Grassfields",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Bamileke_clothing.jpg/250px-Bamileke_clothing.jpg",
+                desc: "The Bamileke people of the Western Highlands are renowned for their intricate social hierarchy and artistic mastery, most visible in their royal regalia.",
+                significance: "These artifacts signify the divine power of the Fon (King) and the complex network of secret societies (like the Elephant Society) that maintain social order.",
+                materials: "Toghu cloth (hand-woven wool), bronze, ivory, and glass beads."
+            },
+            bamum: {
+                title: "Bamum Chronicles",
+                badge: "Sultanate",
+                img: "https://substackcdn.com/image/fetch/$s_!gqzz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fbcc5178d-a6a9-4526-8595-c18ca27e5fc2_1159x600.png",
+                desc: "The Bamum Sultanate is unique for its indigenous Shumom writing system, created by Sultan Njoya in the late 19th century.",
+                significance: "Representing one of Africa's few home-grown scripts, these manuscripts preserved history, medicine, and law independently of external influences.",
+                materials: "Hand-made paper, natural inks, and lost-wax bronze casting for pipes."
+            },
+            nso: {
+                title: "Nso Sacred Arts",
+                badge: "Northwest",
+                img: "https://i0.wp.com/accesspointafrica.org/wp-content/uploads/2022/12/nso.png",
+                desc: "The Nso Kingdom is governed by a balance of power between the Fon and the Kwifon secret society.",
+                significance: "The Ngwerong and Kwifon staffs are not just art; they are physical embodiments of ancestral law and judicial authority.",
+                materials: "Carved wood, leopard skins, and ceremonial iron."
+            },
+            bassa: {
+                title: "Bassa Soul",
+                badge: "Coastal Forest",
+                img: "https://img.over-blog.com/300x237/2/19/54/40/Le-Hilun-bassa-a.JPG",
+                desc: "The Bassa people use musical instruments as a primary tool for storytelling and transmitting oral traditions.",
+                significance: "The Mvet harp is used by 'Bards' to recite epic poems that can last for days, detailing the creation of the world and migration of tribes.",
+                materials: "Raffia stalks, calabash resonators, and animal hide."
+            },
+            fulani: {
+                title: "Fulani Elegance",
+                badge: "Sahel",
+                img: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nathaniel_Ajibola_Fulani_Woman_Nigeria.JPG",
+                desc: "The nomadic Fulani (Mbororo) culture is reflected in their portable wealth—intricate jewelry and leatherwork.",
+                significance: "Jewelry serves as both adornment and a portable bank, with designs indicating lineage, status, and marital milestones.",
+                materials: "Silver, amber, leather, and hand-woven cotton."
+            },
+            duala: {
+                title: "Duala Maritime",
+                badge: "Sawa",
+                img: "https://c8.alamy.com/comp/B64MME/pirogue-douala-cameroon-africa-B64MME.jpg",
+                desc: "The Duala and Sawa peoples have a deep spiritual and economic connection to the Atlantic Ocean.",
+                significance: "The Ngondo festival artifacts celebrate the Jengu (water spirits) who are believed to live in the Wouri River and provide protection.",
+                materials: "Carved wood for pirogues, shells, and nautical fibers."
+            },
+            bafut: {
+                title: "Bafut Palace Treasures",
+                badge: "Northwest",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Bafut_Palace_Cameroon.jpg/300px-Bafut_Palace_Cameroon.jpg",
+                desc: "The Bafut Palace is a UNESCO World Heritage candidate, housing centuries of Grassfields history.",
+                significance: "The Achum (sacred forest) house and the royal artifacts within represent the spiritual heart of the Bafut Kingdom.",
+                materials: "Sacred wood, raffia, and ancestral stones."
+            },
+            bakweri: {
+                title: "Bakweri Heritage",
+                badge: "Southwest",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Mount_Cameroon_from_Buea.jpg/300px-Mount_Cameroon_from_Buea.jpg",
+                desc: "Living on the slopes of Mt. Fako (Cameroon), the Bakweri have a culture deeply tied to the volcano.",
+                significance: "Artifacts used in the 'Efasa-Moto' ceremonies ensure safe passage on the mountain and bountiful harvests.",
+                materials: "Volcanic stone tools, hand-woven baskets, and ceremonial masks."
+            },
+            bakossi: {
+                title: "Bakossi Forest Arts",
+                badge: "Manengouba",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Twin_Lakes_of_Muanenguba.jpg/300px-Twin_Lakes_of_Muanenguba.jpg",
+                desc: "The Bakossi people of the Manengouba Highlands are the guardians of the sacred Twin Lakes.",
+                significance: "These artifacts represent the 'Ahon' society and the spiritual link between the forest and the community.",
+                materials: "Carved forest hardwoods and medicinal plant fibers."
+            },
+            beti: {
+                title: "Beti Ancestral Masks",
+                badge: "Forest Zone",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bulu_statue.jpg/220px-Bulu_statue.jpg",
+                desc: "The Beti people's art is often focused on the 'So' initiation rites and ancestor communication.",
+                significance: "Masks are used by the Zomlo'o (chiefs) to maintain social harmony and contact the spirit world.",
+                materials: "Softwood, natural pigments (kaolin), and animal hair."
+            },
+            kotoko: {
+                title: "Kotoko Bronzes",
+                badge: "Far North",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kotoko_rider.jpg/250px-Kotoko_rider.jpg",
+                desc: "The Kotoko are descendants of the mysterious Sao civilization of Lake Chad.",
+                significance: "Tiny bronze horsemen are worn as talismans for protection and represent the ancient cavalry of the north.",
+                materials: "Lost-wax cast bronze and copper alloys."
+            },
+            mafa: {
+                title: "Mafa Mandara Arts",
+                badge: "Mandara Mtns",
+                img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mafa_village.jpg/300px-Mafa_village.jpg",
+                desc: "The Mafa are masters of terrace farming and complex iron-working in the Mandara Mountains.",
+                significance: "Iron tools and pottery are central to Mafa life, representing their survival in the rugged northern terrain.",
+                materials: "Hand-forged iron and mountain clay pottery."
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            const settingsManager = new SettingsManager();
+            window.settingsManager = settingsManager;
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Museum');
+                if (window.settingsManager) window.settingsManager.initHeaderThemeToggle();
+            });
+        });
+
+        function showExhibitDetails(tribeKey) {
+            const data = exhibitData[tribeKey];
+            if (!data) {
+                alert('Exhibit details not available');
+                return;
+            }
+
+            document.getElementById('modalTitle').textContent = data.title;
+            document.getElementById('modalBadge').textContent = data.badge;
+            document.getElementById('modalImg').src = data.img;
+            document.getElementById('modalDesc').textContent = data.desc;
+            document.getElementById('modalSignificance').textContent = data.significance;
+            document.getElementById('modalMaterials').textContent = data.materials;
+
+            const modal = new bootstrap.Modal(document.getElementById('artifactModal'));
+            modal.show();
+        }
+    </script>
+</body>
+
+</html>

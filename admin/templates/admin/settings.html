@@ -1,0 +1,361 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}Settings{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="header-title">
+        <h1>Settings</h1>
+        <p>Configure your application settings</p>
+    </div>
+</div>
+
+<div class="settings-container">
+    <div class="settings-sidebar">
+        <ul class="settings-menu">
+            <li class="active" data-tab="general">
+                <i class="fas fa-cog"></i> General
+            </li>
+            <li data-tab="appearance">
+                <i class="fas fa-paint-brush"></i> Appearance
+            </li>
+            <li data-tab="email">
+                <i class="fas fa-envelope"></i> Email
+            </li>
+            <li data-tab="security">
+                <i class="fas fa-shield-alt"></i> Security
+            </li>
+            <li data-tab="notifications">
+                <i class="fas fa-bell"></i> Notifications
+            </li>
+            <li data-tab="backup">
+                <i class="fas fa-database"></i> Backup & Restore
+            </li>
+            <li data-tab="advanced">
+                <i class="fas fa-sliders-h"></i> Advanced
+            </li>
+        </ul>
+    </div>
+    
+    <div class="settings-content">
+        <!-- General Settings Tab -->
+        <div class="settings-tab active" id="general-tab">
+            <div class="card">
+                <div class="card-header">
+                    <h3>General Settings</h3>
+                </div>
+                <div class="card-body">
+                    <form id="general-settings-form">
+                        <div class="form-group">
+                            <label for="site-title">Site Title</label>
+                            <input type="text" id="site-title" name="site_title" class="form-control" value="{{ settings.site_title }}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="site-description">Site Description</label>
+                            <textarea id="site-description" name="site_description" class="form-control" rows="3">{{ settings.site_description }}</textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="site-url">Site URL</label>
+                            <input type="url" id="site-url" name="site_url" class="form-control" value="{{ settings.site_url }}">
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Other tabs will be loaded dynamically via JavaScript -->
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.settings-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.settings-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 1rem 0;
+}
+
+.settings-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.settings-menu li {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.2s ease;
+    color: #5c6b7b;
+    font-weight: 500;
+}
+
+.settings-menu li:hover {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+.settings-menu li.active {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border-left: 3px solid #1976d2;
+}
+
+.settings-menu li i {
+    width: 20px;
+    text-align: center;
+}
+
+.settings-content {
+    flex: 1;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #2c3e50;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .settings-container {
+        flex-direction: column;
+    }
+    
+    .settings-sidebar {
+        width: 100%;
+    }
+    
+    .settings-menu {
+        display: flex;
+        overflow-x: auto;
+        padding: 0.5rem 0;
+    }
+    
+    .settings-menu li {
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .settings-menu li.active {
+        border-left: none;
+        border-bottom: 2px solid #1976d2;
+    }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Tab switching functionality
+    const menuItems = document.querySelectorAll('.settings-menu li');
+    const tabs = document.querySelectorAll('.settings-tab');
+    
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const tabId = this.getAttribute('data-tab');
+            
+            // Update active menu item
+            menuItems.forEach(menuItem => menuItem.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Show corresponding tab
+            tabs.forEach(tab => {
+                if (tab.id === `${tabId}-tab`) {
+                    tab.classList.add('active');
+                    // Load tab content dynamically
+                    loadTabContent(tabId);
+                } else {
+                    tab.classList.remove('active');
+                }
+            });
+        });
+    });
+    
+    // Function to load tab content dynamically
+    function loadTabContent(tabId) {
+        const tabContent = document.getElementById(`${tabId}-tab`);
+        
+        // Only load content if it hasn't been loaded yet
+        if (tabContent && !tabContent.dataset.loaded) {
+            fetch(`/admin/settings/${tabId}`)
+                .then(response => response.text())
+                .then(html => {
+                    tabContent.innerHTML = html;
+                    tabContent.dataset.loaded = true;
+                })
+                .catch(error => {
+                    console.error('Error loading tab content:', error);
+                    tabContent.innerHTML = `
+                        <div class="alert alert-danger">
+                            Error loading ${tabId} settings. Please try again.
+                        </div>
+                    `;
+                });
+        }
+    }
+    
+    // Handle form submissions
+    document.addEventListener('submit', function(e) {
+        if (e.target.matches('form')) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            fetch(form.action || window.location.href, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'X-CSRF-Token': ''
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('success', data.message || 'Settings saved successfully!');
+                } else {
+                    showAlert('danger', data.message || 'Error saving settings. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showAlert('danger', 'An error occurred. Please try again.');
+            });
+        }
+    });
+    
+    // Show alert message
+    function showAlert(type, message) {
+        const alert = document.createElement('div');
+        alert.className = `alert alert-${type} alert-dismissible fade show`;
+        alert.role = 'alert';
+        alert.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        
+        // Add alert to the top of the settings content
+        const settingsContent = document.querySelector('.settings-content');
+        settingsContent.insertBefore(alert, settingsContent.firstChild);
+        
+        // Auto-dismiss after 5 seconds
+        setTimeout(() => {
+            alert.classList.remove('show');
+            setTimeout(() => alert.remove(), 150);
+        }, 5000);
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/hausa_people",
+    "type": "main_page",
+    "tribe": "hausa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/hausa_tribe",
+    "type": "main_page",
+    "tribe": "hausa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/hausa",
+    "type": "main_page",
+    "tribe": "hausa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/hausa_ethnic_group",
+    "type": "main_page",
+    "tribe": "hausa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "spiritual_beliefs",
+    "search_term": "hausa religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+traditional+religion",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "spiritual_beliefs",
+    "search_term": "hausa traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+religious+practices",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "spiritual_beliefs",
+    "search_term": "hausa religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "arts_and_crafts",
+    "search_term": "hausa art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+traditional+arts",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "arts_and_crafts",
+    "search_term": "hausa traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+handicrafts",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "arts_and_crafts",
+    "search_term": "hausa handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+traditional+governance",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "governance",
+    "search_term": "hausa traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+political+system",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "governance",
+    "search_term": "hausa political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+leadership+structure",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "governance",
+    "search_term": "hausa leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+colonial+period",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "colonial_impact",
+    "search_term": "hausa colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+European+colonization",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "colonial_impact",
+    "search_term": "hausa European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+colonial+administration",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "colonial_impact",
+    "search_term": "hausa colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+agriculture+farming",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "subsistence_patterns",
+    "search_term": "hausa agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+food+production",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "subsistence_patterns",
+    "search_term": "hausa food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+traditional+economy",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "subsistence_patterns",
+    "search_term": "hausa traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+modern+challenges",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "challenges",
+    "search_term": "hausa modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+contemporary+issues",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "challenges",
+    "search_term": "hausa contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+cultural+preservation",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "challenges",
+    "search_term": "hausa cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+cultural+preservation",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "cultural_revitalization",
+    "search_term": "hausa cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+language+revitalization",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "cultural_revitalization",
+    "search_term": "hausa language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+cultural+revival",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "cultural_revitalization",
+    "search_term": "hausa cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+modern+politics",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "modern_governance",
+    "search_term": "hausa modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+contemporary+governance",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "modern_governance",
+    "search_term": "hausa contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+political+participation",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "modern_governance",
+    "search_term": "hausa political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "pre_contact_history",
+    "search_term": "hausa pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+before+European+contact",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "pre_contact_history",
+    "search_term": "hausa before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+ancient+traditions",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "pre_contact_history",
+    "search_term": "hausa ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "culture",
+    "search_term": "hausa culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+cultural+practices",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "culture",
+    "search_term": "hausa cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+way+of+life",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "culture",
+    "search_term": "hausa way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "oral_traditions",
+    "search_term": "hausa oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+myths+legends",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "oral_traditions",
+    "search_term": "hausa myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+traditional+narratives",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "oral_traditions",
+    "search_term": "hausa traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "social_organization",
+    "search_term": "hausa social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+clan+system+family",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "social_organization",
+    "search_term": "hausa clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+social+hierarchy",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "social_organization",
+    "search_term": "hausa social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "traditional_knowledge",
+    "search_term": "hausa traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "traditional_knowledge",
+    "search_term": "hausa indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "traditional_knowledge",
+    "search_term": "hausa ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "traditional_technology",
+    "search_term": "hausa traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+indigenous+technology",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "traditional_technology",
+    "search_term": "hausa indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+artisan+skills",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "traditional_technology",
+    "search_term": "hausa artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+history+origin+migration",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "history",
+    "search_term": "hausa history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+historical+background",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "history",
+    "search_term": "hausa historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "history",
+    "search_term": "hausa ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+music+dance+songs",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "music_dance",
+    "search_term": "hausa music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+musical+instruments",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "music_dance",
+    "search_term": "hausa musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/hausa+cultural+dances",
+    "type": "category_search",
+    "tribe": "hausa",
+    "category": "music_dance",
+    "search_term": "hausa cultural dances",
+    "priority": "medium"
+  }
+]

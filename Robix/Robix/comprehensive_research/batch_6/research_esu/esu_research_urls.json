@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/esu_people",
+    "type": "main_page",
+    "tribe": "esu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/esu_tribe",
+    "type": "main_page",
+    "tribe": "esu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/esu",
+    "type": "main_page",
+    "tribe": "esu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/esu_ethnic_group",
+    "type": "main_page",
+    "tribe": "esu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "spiritual_beliefs",
+    "search_term": "esu religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+traditional+religion",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "spiritual_beliefs",
+    "search_term": "esu traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+religious+practices",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "spiritual_beliefs",
+    "search_term": "esu religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+economy+trade",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "economy",
+    "search_term": "esu economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+economic+activities",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "economy",
+    "search_term": "esu economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+livelihood",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "economy",
+    "search_term": "esu livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "arts_and_crafts",
+    "search_term": "esu art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+traditional+arts",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "arts_and_crafts",
+    "search_term": "esu traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+handicrafts",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "arts_and_crafts",
+    "search_term": "esu handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+traditional+governance",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "governance",
+    "search_term": "esu traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+political+system",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "governance",
+    "search_term": "esu political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+leadership+structure",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "governance",
+    "search_term": "esu leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+colonial+period",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "colonial_impact",
+    "search_term": "esu colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+European+colonization",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "colonial_impact",
+    "search_term": "esu European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+colonial+administration",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "colonial_impact",
+    "search_term": "esu colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+agriculture+farming",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "subsistence_patterns",
+    "search_term": "esu agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+food+production",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "subsistence_patterns",
+    "search_term": "esu food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+traditional+economy",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "subsistence_patterns",
+    "search_term": "esu traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+modern+challenges",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "challenges",
+    "search_term": "esu modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+contemporary+issues",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "challenges",
+    "search_term": "esu contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+cultural+preservation",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "challenges",
+    "search_term": "esu cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+cultural+preservation",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "cultural_revitalization",
+    "search_term": "esu cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+language+revitalization",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "cultural_revitalization",
+    "search_term": "esu language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+cultural+revival",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "cultural_revitalization",
+    "search_term": "esu cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+modern+politics",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "modern_governance",
+    "search_term": "esu modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+contemporary+governance",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "modern_governance",
+    "search_term": "esu contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+political+participation",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "modern_governance",
+    "search_term": "esu political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "pre_contact_history",
+    "search_term": "esu pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+before+European+contact",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "pre_contact_history",
+    "search_term": "esu before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+ancient+traditions",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "pre_contact_history",
+    "search_term": "esu ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "culture",
+    "search_term": "esu culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+cultural+practices",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "culture",
+    "search_term": "esu cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+way+of+life",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "culture",
+    "search_term": "esu way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "oral_traditions",
+    "search_term": "esu oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+myths+legends",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "oral_traditions",
+    "search_term": "esu myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+traditional+narratives",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "oral_traditions",
+    "search_term": "esu traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "social_organization",
+    "search_term": "esu social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+clan+system+family",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "social_organization",
+    "search_term": "esu clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+social+hierarchy",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "social_organization",
+    "search_term": "esu social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "traditional_knowledge",
+    "search_term": "esu traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "traditional_knowledge",
+    "search_term": "esu indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "traditional_knowledge",
+    "search_term": "esu ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "traditional_technology",
+    "search_term": "esu traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+indigenous+technology",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "traditional_technology",
+    "search_term": "esu indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+artisan+skills",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "traditional_technology",
+    "search_term": "esu artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+history+origin+migration",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "history",
+    "search_term": "esu history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+historical+background",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "history",
+    "search_term": "esu historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "history",
+    "search_term": "esu ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+music+dance+songs",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "music_dance",
+    "search_term": "esu music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+musical+instruments",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "music_dance",
+    "search_term": "esu musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/esu+cultural+dances",
+    "type": "category_search",
+    "tribe": "esu",
+    "category": "music_dance",
+    "search_term": "esu cultural dances",
+    "priority": "medium"
+  }
+]

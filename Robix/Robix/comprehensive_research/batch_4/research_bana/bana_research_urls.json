@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bana_people",
+    "type": "main_page",
+    "tribe": "bana",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bana_tribe",
+    "type": "main_page",
+    "tribe": "bana",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bana",
+    "type": "main_page",
+    "tribe": "bana",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bana_ethnic_group",
+    "type": "main_page",
+    "tribe": "bana",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "spiritual_beliefs",
+    "search_term": "bana religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+traditional+religion",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "spiritual_beliefs",
+    "search_term": "bana traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+religious+practices",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "spiritual_beliefs",
+    "search_term": "bana religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+colonial+period",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "colonial_impact",
+    "search_term": "bana colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+European+colonization",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "colonial_impact",
+    "search_term": "bana European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+colonial+administration",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "colonial_impact",
+    "search_term": "bana colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "subsistence_patterns",
+    "search_term": "bana agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+food+production",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "subsistence_patterns",
+    "search_term": "bana food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+traditional+economy",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "subsistence_patterns",
+    "search_term": "bana traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "cultural_revitalization",
+    "search_term": "bana cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+language+revitalization",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "cultural_revitalization",
+    "search_term": "bana language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+cultural+revival",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "cultural_revitalization",
+    "search_term": "bana cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+modern+politics",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "modern_governance",
+    "search_term": "bana modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "modern_governance",
+    "search_term": "bana contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+political+participation",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "modern_governance",
+    "search_term": "bana political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "pre_contact_history",
+    "search_term": "bana pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+before+European+contact",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "pre_contact_history",
+    "search_term": "bana before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "pre_contact_history",
+    "search_term": "bana ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "oral_traditions",
+    "search_term": "bana oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+myths+legends",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "oral_traditions",
+    "search_term": "bana myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "oral_traditions",
+    "search_term": "bana traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "social_organization",
+    "search_term": "bana social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+clan+system+family",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "social_organization",
+    "search_term": "bana clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "social_organization",
+    "search_term": "bana social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "traditional_knowledge",
+    "search_term": "bana traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "traditional_knowledge",
+    "search_term": "bana indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "traditional_knowledge",
+    "search_term": "bana ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "traditional_technology",
+    "search_term": "bana traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "traditional_technology",
+    "search_term": "bana indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+artisan+skills",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "traditional_technology",
+    "search_term": "bana artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "music_dance",
+    "search_term": "bana music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+musical+instruments",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "music_dance",
+    "search_term": "bana musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bana+cultural+dances",
+    "type": "category_search",
+    "tribe": "bana",
+    "category": "music_dance",
+    "search_term": "bana cultural dances",
+    "priority": "medium"
+  }
+]

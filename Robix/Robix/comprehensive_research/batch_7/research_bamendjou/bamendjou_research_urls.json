@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamendjou_people",
+    "type": "main_page",
+    "tribe": "bamendjou",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamendjou_tribe",
+    "type": "main_page",
+    "tribe": "bamendjou",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamendjou",
+    "type": "main_page",
+    "tribe": "bamendjou",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamendjou_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamendjou",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "spiritual_beliefs",
+    "search_term": "bamendjou religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "spiritual_beliefs",
+    "search_term": "bamendjou traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+religious+practices",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "spiritual_beliefs",
+    "search_term": "bamendjou religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+economy+trade",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "economy",
+    "search_term": "bamendjou economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+economic+activities",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "economy",
+    "search_term": "bamendjou economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+livelihood",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "economy",
+    "search_term": "bamendjou livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "arts_and_crafts",
+    "search_term": "bamendjou art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+traditional+arts",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "arts_and_crafts",
+    "search_term": "bamendjou traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+handicrafts",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "arts_and_crafts",
+    "search_term": "bamendjou handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+traditional+governance",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "governance",
+    "search_term": "bamendjou traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+political+system",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "governance",
+    "search_term": "bamendjou political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+leadership+structure",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "governance",
+    "search_term": "bamendjou leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+colonial+period",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "colonial_impact",
+    "search_term": "bamendjou colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+European+colonization",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "colonial_impact",
+    "search_term": "bamendjou European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "colonial_impact",
+    "search_term": "bamendjou colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "subsistence_patterns",
+    "search_term": "bamendjou agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+food+production",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "subsistence_patterns",
+    "search_term": "bamendjou food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "subsistence_patterns",
+    "search_term": "bamendjou traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+modern+challenges",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "challenges",
+    "search_term": "bamendjou modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "challenges",
+    "search_term": "bamendjou contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "challenges",
+    "search_term": "bamendjou cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "cultural_revitalization",
+    "search_term": "bamendjou cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "cultural_revitalization",
+    "search_term": "bamendjou language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "cultural_revitalization",
+    "search_term": "bamendjou cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+modern+politics",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "modern_governance",
+    "search_term": "bamendjou modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "modern_governance",
+    "search_term": "bamendjou contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+political+participation",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "modern_governance",
+    "search_term": "bamendjou political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "pre_contact_history",
+    "search_term": "bamendjou pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "pre_contact_history",
+    "search_term": "bamendjou before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "pre_contact_history",
+    "search_term": "bamendjou ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "culture",
+    "search_term": "bamendjou culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+cultural+practices",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "culture",
+    "search_term": "bamendjou cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+way+of+life",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "culture",
+    "search_term": "bamendjou way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "oral_traditions",
+    "search_term": "bamendjou oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+myths+legends",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "oral_traditions",
+    "search_term": "bamendjou myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "oral_traditions",
+    "search_term": "bamendjou traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "social_organization",
+    "search_term": "bamendjou social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "social_organization",
+    "search_term": "bamendjou clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "social_organization",
+    "search_term": "bamendjou social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "traditional_knowledge",
+    "search_term": "bamendjou traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "traditional_knowledge",
+    "search_term": "bamendjou indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "traditional_knowledge",
+    "search_term": "bamendjou ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "traditional_technology",
+    "search_term": "bamendjou traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "traditional_technology",
+    "search_term": "bamendjou indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "traditional_technology",
+    "search_term": "bamendjou artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "history",
+    "search_term": "bamendjou history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+historical+background",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "history",
+    "search_term": "bamendjou historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "history",
+    "search_term": "bamendjou ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "music_dance",
+    "search_term": "bamendjou music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "music_dance",
+    "search_term": "bamendjou musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamendjou+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamendjou",
+    "category": "music_dance",
+    "search_term": "bamendjou cultural dances",
+    "priority": "medium"
+  }
+]

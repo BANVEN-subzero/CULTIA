@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bafanji_people",
+    "type": "main_page",
+    "tribe": "bafanji",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafanji_tribe",
+    "type": "main_page",
+    "tribe": "bafanji",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafanji",
+    "type": "main_page",
+    "tribe": "bafanji",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafanji_ethnic_group",
+    "type": "main_page",
+    "tribe": "bafanji",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "spiritual_beliefs",
+    "search_term": "bafanji religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+traditional+religion",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "spiritual_beliefs",
+    "search_term": "bafanji traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+religious+practices",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "spiritual_beliefs",
+    "search_term": "bafanji religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+economy+trade",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "economy",
+    "search_term": "bafanji economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+economic+activities",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "economy",
+    "search_term": "bafanji economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+livelihood",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "economy",
+    "search_term": "bafanji livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "arts_and_crafts",
+    "search_term": "bafanji art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+traditional+arts",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "arts_and_crafts",
+    "search_term": "bafanji traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+handicrafts",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "arts_and_crafts",
+    "search_term": "bafanji handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+traditional+governance",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "governance",
+    "search_term": "bafanji traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+political+system",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "governance",
+    "search_term": "bafanji political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+leadership+structure",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "governance",
+    "search_term": "bafanji leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+colonial+period",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "colonial_impact",
+    "search_term": "bafanji colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+European+colonization",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "colonial_impact",
+    "search_term": "bafanji European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+colonial+administration",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "colonial_impact",
+    "search_term": "bafanji colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "subsistence_patterns",
+    "search_term": "bafanji agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+food+production",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "subsistence_patterns",
+    "search_term": "bafanji food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+traditional+economy",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "subsistence_patterns",
+    "search_term": "bafanji traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+modern+challenges",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "challenges",
+    "search_term": "bafanji modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "challenges",
+    "search_term": "bafanji contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "challenges",
+    "search_term": "bafanji cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "cultural_revitalization",
+    "search_term": "bafanji cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+language+revitalization",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "cultural_revitalization",
+    "search_term": "bafanji language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+cultural+revival",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "cultural_revitalization",
+    "search_term": "bafanji cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+modern+politics",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "modern_governance",
+    "search_term": "bafanji modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "modern_governance",
+    "search_term": "bafanji contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+political+participation",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "modern_governance",
+    "search_term": "bafanji political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "pre_contact_history",
+    "search_term": "bafanji pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+before+European+contact",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "pre_contact_history",
+    "search_term": "bafanji before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "pre_contact_history",
+    "search_term": "bafanji ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "culture",
+    "search_term": "bafanji culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+cultural+practices",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "culture",
+    "search_term": "bafanji cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+way+of+life",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "culture",
+    "search_term": "bafanji way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "oral_traditions",
+    "search_term": "bafanji oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+myths+legends",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "oral_traditions",
+    "search_term": "bafanji myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "oral_traditions",
+    "search_term": "bafanji traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "social_organization",
+    "search_term": "bafanji social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+clan+system+family",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "social_organization",
+    "search_term": "bafanji clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "social_organization",
+    "search_term": "bafanji social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "traditional_knowledge",
+    "search_term": "bafanji traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "traditional_knowledge",
+    "search_term": "bafanji indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "traditional_knowledge",
+    "search_term": "bafanji ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "traditional_technology",
+    "search_term": "bafanji traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "traditional_technology",
+    "search_term": "bafanji indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+artisan+skills",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "traditional_technology",
+    "search_term": "bafanji artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "history",
+    "search_term": "bafanji history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+historical+background",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "history",
+    "search_term": "bafanji historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "history",
+    "search_term": "bafanji ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "music_dance",
+    "search_term": "bafanji music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+musical+instruments",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "music_dance",
+    "search_term": "bafanji musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafanji+cultural+dances",
+    "type": "category_search",
+    "tribe": "bafanji",
+    "category": "music_dance",
+    "search_term": "bafanji cultural dances",
+    "priority": "medium"
+  }
+]

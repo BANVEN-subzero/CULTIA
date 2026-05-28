@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patience & Caution - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(45, 90, 39, 0.9), rgba(26, 58, 22, 0.9)), url('../img/proverbs-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .story-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .proverb-highlight {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            font-style: italic;
+            margin-bottom: 40px;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        .story-section {
+            margin-bottom: 40px;
+            border-left: 4px solid var(--accent-orange);
+            padding-left: 30px;
+        }
+
+        .story-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .story-text {
+            color: #555;
+            line-height: 1.9;
+            font-size: 1.15rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .wisdom-box {
+            background: #f8f9fa;
+            border-radius: 30px;
+            padding: 40px;
+            margin-top: 60px;
+            border: 2px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-3 fw-bold mb-0">Patience & Caution</h1>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="story-container" data-aos="fade-up">
+                <a href="proverbs.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Proverbs
+                </a>
+
+                <div class="proverb-highlight">
+                    "The chameleon looks in both directions before it moves"
+                </div>
+
+                <div class="story-section">
+                    <h3>Deep Meaning</h3>
+                    <p class="story-text">This proverb, widely used across many Cameroonian cultures, draws inspiration from the natural behavior of the chameleon. Known for its slow, deliberate movements and independent eye rotation, the chameleon serves as a perfect metaphor for wisdom and prudence.</p>
+                </div>
+
+                <div class="story-section">
+                    <h3>The Lesson</h3>
+                    <p class="story-text">In a fast-paced world, we are often pressured to make quick decisions. This proverb reminds us that true intelligence is not in speed, but in awareness. By "looking in both directions," we consider the past (experience) and the future (consequences) before taking a single step forward.</p>
+                </div>
+
+                <div class="story-section">
+                    <h3>Application in Life</h3>
+                    <p class="story-text">Whether in leadership, business, or personal relationships, this wisdom encourages us to be thorough. It suggests that being slow and correct is far better than being fast and wrong. It also speaks to the importance of being adaptable, just as the chameleon changes its color to match its environment while maintaining its focus.</p>
+                </div>
+
+                <div class="wisdom-box text-center">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-lightbulb text-warning me-2"></i> Key Takeaway</h4>
+                    <p class="mb-0 text-muted fs-5">Observe everything, analyze deeply, and move only when you are certain of your path. Patience is not just waiting; it is the ability to maintain a calm and focused perspective while preparing for action.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Proverb Wisdom');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/mbo_people",
+    "type": "main_page",
+    "tribe": "mbo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mbo_tribe",
+    "type": "main_page",
+    "tribe": "mbo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mbo",
+    "type": "main_page",
+    "tribe": "mbo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mbo_ethnic_group",
+    "type": "main_page",
+    "tribe": "mbo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "spiritual_beliefs",
+    "search_term": "mbo religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+traditional+religion",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "spiritual_beliefs",
+    "search_term": "mbo traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+religious+practices",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "spiritual_beliefs",
+    "search_term": "mbo religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+colonial+period",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "colonial_impact",
+    "search_term": "mbo colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+European+colonization",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "colonial_impact",
+    "search_term": "mbo European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+colonial+administration",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "colonial_impact",
+    "search_term": "mbo colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+agriculture+farming",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "subsistence_patterns",
+    "search_term": "mbo agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+food+production",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "subsistence_patterns",
+    "search_term": "mbo food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+traditional+economy",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "subsistence_patterns",
+    "search_term": "mbo traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "cultural_revitalization",
+    "search_term": "mbo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+language+revitalization",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "cultural_revitalization",
+    "search_term": "mbo language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+cultural+revival",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "cultural_revitalization",
+    "search_term": "mbo cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+modern+politics",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "modern_governance",
+    "search_term": "mbo modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+contemporary+governance",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "modern_governance",
+    "search_term": "mbo contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+political+participation",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "modern_governance",
+    "search_term": "mbo political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "pre_contact_history",
+    "search_term": "mbo pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+before+European+contact",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "pre_contact_history",
+    "search_term": "mbo before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+ancient+traditions",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "pre_contact_history",
+    "search_term": "mbo ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "oral_traditions",
+    "search_term": "mbo oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+myths+legends",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "oral_traditions",
+    "search_term": "mbo myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+traditional+narratives",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "oral_traditions",
+    "search_term": "mbo traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "social_organization",
+    "search_term": "mbo social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+clan+system+family",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "social_organization",
+    "search_term": "mbo clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+social+hierarchy",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "social_organization",
+    "search_term": "mbo social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "traditional_knowledge",
+    "search_term": "mbo traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "traditional_knowledge",
+    "search_term": "mbo indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "traditional_knowledge",
+    "search_term": "mbo ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "traditional_technology",
+    "search_term": "mbo traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+indigenous+technology",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "traditional_technology",
+    "search_term": "mbo indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+artisan+skills",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "traditional_technology",
+    "search_term": "mbo artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+music+dance+songs",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "music_dance",
+    "search_term": "mbo music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+musical+instruments",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "music_dance",
+    "search_term": "mbo musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbo+cultural+dances",
+    "type": "category_search",
+    "tribe": "mbo",
+    "category": "music_dance",
+    "search_term": "mbo cultural dances",
+    "priority": "medium"
+  }
+]

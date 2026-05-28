@@ -1,0 +1,78 @@
+{
+  "batch_number": 1,
+  "tribes_count": 10,
+  "total_sections": 110,
+  "tribes": [
+    {
+      "tribe": "bamileke",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_bamileke\\bamileke_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_bamileke\\bamileke_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_bamileke\\bamileke_research_urls.json"
+    },
+    {
+      "tribe": "nsaw",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_nsaw\\nsaw_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_nsaw\\nsaw_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_nsaw\\nsaw_research_urls.json"
+    },
+    {
+      "tribe": "bamum",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_bamum\\bamum_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_bamum\\bamum_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_bamum\\bamum_research_urls.json"
+    },
+    {
+      "tribe": "bassa",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_bassa\\bassa_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_bassa\\bassa_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_bassa\\bassa_research_urls.json"
+    },
+    {
+      "tribe": "fulani",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_fulani\\fulani_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_fulani\\fulani_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_fulani\\fulani_research_urls.json"
+    },
+    {
+      "tribe": "duala",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_duala\\duala_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_duala\\duala_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_duala\\duala_research_urls.json"
+    },
+    {
+      "tribe": "beti",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_beti\\beti_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_beti\\beti_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_beti\\beti_research_urls.json"
+    },
+    {
+      "tribe": "grassfields",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_grassfields\\grassfields_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_grassfields\\grassfields_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_grassfields\\grassfields_research_urls.json"
+    },
+    {
+      "tribe": "sawa",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_sawa\\sawa_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_sawa\\sawa_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_sawa\\sawa_research_urls.json"
+    },
+    {
+      "tribe": "north_bantu",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_1\\research_north_bantu\\north_bantu_research_template.json",
+      "guide_file": "comprehensive_research\\batch_1\\research_north_bantu\\north_bantu_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_1\\research_north_bantu\\north_bantu_research_urls.json"
+    }
+  ],
+  "research_instructions": "Research 10 tribes with 110 total sections"
+}

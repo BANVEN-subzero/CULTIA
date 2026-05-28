@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/tupuri_people",
+    "type": "main_page",
+    "tribe": "tupuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/tupuri_tribe",
+    "type": "main_page",
+    "tribe": "tupuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/tupuri",
+    "type": "main_page",
+    "tribe": "tupuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/tupuri_ethnic_group",
+    "type": "main_page",
+    "tribe": "tupuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "spiritual_beliefs",
+    "search_term": "tupuri religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+traditional+religion",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "spiritual_beliefs",
+    "search_term": "tupuri traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+religious+practices",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "spiritual_beliefs",
+    "search_term": "tupuri religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+economy+trade",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "economy",
+    "search_term": "tupuri economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+economic+activities",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "economy",
+    "search_term": "tupuri economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+livelihood",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "economy",
+    "search_term": "tupuri livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "arts_and_crafts",
+    "search_term": "tupuri art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+traditional+arts",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "arts_and_crafts",
+    "search_term": "tupuri traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+handicrafts",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "arts_and_crafts",
+    "search_term": "tupuri handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+traditional+governance",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "governance",
+    "search_term": "tupuri traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+political+system",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "governance",
+    "search_term": "tupuri political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+leadership+structure",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "governance",
+    "search_term": "tupuri leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+colonial+period",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "colonial_impact",
+    "search_term": "tupuri colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+European+colonization",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "colonial_impact",
+    "search_term": "tupuri European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+colonial+administration",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "colonial_impact",
+    "search_term": "tupuri colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+agriculture+farming",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "subsistence_patterns",
+    "search_term": "tupuri agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+food+production",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "subsistence_patterns",
+    "search_term": "tupuri food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+traditional+economy",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "subsistence_patterns",
+    "search_term": "tupuri traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+modern+challenges",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "challenges",
+    "search_term": "tupuri modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+contemporary+issues",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "challenges",
+    "search_term": "tupuri contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+cultural+preservation",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "challenges",
+    "search_term": "tupuri cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+cultural+preservation",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "cultural_revitalization",
+    "search_term": "tupuri cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+language+revitalization",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "cultural_revitalization",
+    "search_term": "tupuri language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+cultural+revival",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "cultural_revitalization",
+    "search_term": "tupuri cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+modern+politics",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "modern_governance",
+    "search_term": "tupuri modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+contemporary+governance",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "modern_governance",
+    "search_term": "tupuri contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+political+participation",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "modern_governance",
+    "search_term": "tupuri political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "pre_contact_history",
+    "search_term": "tupuri pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+before+European+contact",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "pre_contact_history",
+    "search_term": "tupuri before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+ancient+traditions",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "pre_contact_history",
+    "search_term": "tupuri ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "culture",
+    "search_term": "tupuri culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+cultural+practices",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "culture",
+    "search_term": "tupuri cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+way+of+life",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "culture",
+    "search_term": "tupuri way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "oral_traditions",
+    "search_term": "tupuri oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+myths+legends",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "oral_traditions",
+    "search_term": "tupuri myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+traditional+narratives",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "oral_traditions",
+    "search_term": "tupuri traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "social_organization",
+    "search_term": "tupuri social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+clan+system+family",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "social_organization",
+    "search_term": "tupuri clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+social+hierarchy",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "social_organization",
+    "search_term": "tupuri social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "traditional_knowledge",
+    "search_term": "tupuri traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "traditional_knowledge",
+    "search_term": "tupuri indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "traditional_knowledge",
+    "search_term": "tupuri ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "traditional_technology",
+    "search_term": "tupuri traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+indigenous+technology",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "traditional_technology",
+    "search_term": "tupuri indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+artisan+skills",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "traditional_technology",
+    "search_term": "tupuri artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+history+origin+migration",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "history",
+    "search_term": "tupuri history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+historical+background",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "history",
+    "search_term": "tupuri historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "history",
+    "search_term": "tupuri ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+music+dance+songs",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "music_dance",
+    "search_term": "tupuri music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+musical+instruments",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "music_dance",
+    "search_term": "tupuri musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tupuri+cultural+dances",
+    "type": "category_search",
+    "tribe": "tupuri",
+    "category": "music_dance",
+    "search_term": "tupuri cultural dances",
+    "priority": "medium"
+  }
+]

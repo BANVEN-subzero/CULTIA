@@ -1,0 +1,390 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bafut_people",
+    "type": "main_page",
+    "tribe": "bafut",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafut_tribe",
+    "type": "main_page",
+    "tribe": "bafut",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafut",
+    "type": "main_page",
+    "tribe": "bafut",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafut_ethnic_group",
+    "type": "main_page",
+    "tribe": "bafut",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "spiritual_beliefs",
+    "search_term": "bafut religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+traditional+religion",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "spiritual_beliefs",
+    "search_term": "bafut traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+religious+practices",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "spiritual_beliefs",
+    "search_term": "bafut religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+economy+trade",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "economy",
+    "search_term": "bafut economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+economic+activities",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "economy",
+    "search_term": "bafut economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+livelihood",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "economy",
+    "search_term": "bafut livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+traditional+governance",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "governance",
+    "search_term": "bafut traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+political+system",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "governance",
+    "search_term": "bafut political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+leadership+structure",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "governance",
+    "search_term": "bafut leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+colonial+period",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "colonial_impact",
+    "search_term": "bafut colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+European+colonization",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "colonial_impact",
+    "search_term": "bafut European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+colonial+administration",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "colonial_impact",
+    "search_term": "bafut colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "subsistence_patterns",
+    "search_term": "bafut agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+food+production",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "subsistence_patterns",
+    "search_term": "bafut food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+traditional+economy",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "subsistence_patterns",
+    "search_term": "bafut traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+modern+challenges",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "challenges",
+    "search_term": "bafut modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "challenges",
+    "search_term": "bafut contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "challenges",
+    "search_term": "bafut cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "cultural_revitalization",
+    "search_term": "bafut cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+language+revitalization",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "cultural_revitalization",
+    "search_term": "bafut language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+cultural+revival",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "cultural_revitalization",
+    "search_term": "bafut cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+modern+politics",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "modern_governance",
+    "search_term": "bafut modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "modern_governance",
+    "search_term": "bafut contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+political+participation",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "modern_governance",
+    "search_term": "bafut political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "pre_contact_history",
+    "search_term": "bafut pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+before+European+contact",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "pre_contact_history",
+    "search_term": "bafut before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "pre_contact_history",
+    "search_term": "bafut ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "culture",
+    "search_term": "bafut culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+cultural+practices",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "culture",
+    "search_term": "bafut cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+way+of+life",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "culture",
+    "search_term": "bafut way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "oral_traditions",
+    "search_term": "bafut oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+myths+legends",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "oral_traditions",
+    "search_term": "bafut myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "oral_traditions",
+    "search_term": "bafut traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "social_organization",
+    "search_term": "bafut social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+clan+system+family",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "social_organization",
+    "search_term": "bafut clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "social_organization",
+    "search_term": "bafut social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "traditional_knowledge",
+    "search_term": "bafut traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "traditional_knowledge",
+    "search_term": "bafut indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "traditional_knowledge",
+    "search_term": "bafut ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "traditional_technology",
+    "search_term": "bafut traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "traditional_technology",
+    "search_term": "bafut indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+artisan+skills",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "traditional_technology",
+    "search_term": "bafut artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "music_dance",
+    "search_term": "bafut music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+musical+instruments",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "music_dance",
+    "search_term": "bafut musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafut+cultural+dances",
+    "type": "category_search",
+    "tribe": "bafut",
+    "category": "music_dance",
+    "search_term": "bafut cultural dances",
+    "priority": "medium"
+  }
+]

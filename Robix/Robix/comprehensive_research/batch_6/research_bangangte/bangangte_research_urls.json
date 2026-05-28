@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bangangte_people",
+    "type": "main_page",
+    "tribe": "bangangte",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bangangte_tribe",
+    "type": "main_page",
+    "tribe": "bangangte",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bangangte",
+    "type": "main_page",
+    "tribe": "bangangte",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bangangte_ethnic_group",
+    "type": "main_page",
+    "tribe": "bangangte",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "spiritual_beliefs",
+    "search_term": "bangangte religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+traditional+religion",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "spiritual_beliefs",
+    "search_term": "bangangte traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+religious+practices",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "spiritual_beliefs",
+    "search_term": "bangangte religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+economy+trade",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "economy",
+    "search_term": "bangangte economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+economic+activities",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "economy",
+    "search_term": "bangangte economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+livelihood",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "economy",
+    "search_term": "bangangte livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "arts_and_crafts",
+    "search_term": "bangangte art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+traditional+arts",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "arts_and_crafts",
+    "search_term": "bangangte traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+handicrafts",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "arts_and_crafts",
+    "search_term": "bangangte handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+traditional+governance",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "governance",
+    "search_term": "bangangte traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+political+system",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "governance",
+    "search_term": "bangangte political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+leadership+structure",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "governance",
+    "search_term": "bangangte leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+colonial+period",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "colonial_impact",
+    "search_term": "bangangte colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+European+colonization",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "colonial_impact",
+    "search_term": "bangangte European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+colonial+administration",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "colonial_impact",
+    "search_term": "bangangte colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "subsistence_patterns",
+    "search_term": "bangangte agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+food+production",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "subsistence_patterns",
+    "search_term": "bangangte food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+traditional+economy",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "subsistence_patterns",
+    "search_term": "bangangte traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+modern+challenges",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "challenges",
+    "search_term": "bangangte modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "challenges",
+    "search_term": "bangangte contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "challenges",
+    "search_term": "bangangte cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "cultural_revitalization",
+    "search_term": "bangangte cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+language+revitalization",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "cultural_revitalization",
+    "search_term": "bangangte language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+cultural+revival",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "cultural_revitalization",
+    "search_term": "bangangte cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+modern+politics",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "modern_governance",
+    "search_term": "bangangte modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "modern_governance",
+    "search_term": "bangangte contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+political+participation",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "modern_governance",
+    "search_term": "bangangte political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "pre_contact_history",
+    "search_term": "bangangte pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+before+European+contact",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "pre_contact_history",
+    "search_term": "bangangte before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "pre_contact_history",
+    "search_term": "bangangte ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "culture",
+    "search_term": "bangangte culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+cultural+practices",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "culture",
+    "search_term": "bangangte cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+way+of+life",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "culture",
+    "search_term": "bangangte way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "oral_traditions",
+    "search_term": "bangangte oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+myths+legends",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "oral_traditions",
+    "search_term": "bangangte myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "oral_traditions",
+    "search_term": "bangangte traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "social_organization",
+    "search_term": "bangangte social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+clan+system+family",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "social_organization",
+    "search_term": "bangangte clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "social_organization",
+    "search_term": "bangangte social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "traditional_knowledge",
+    "search_term": "bangangte traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "traditional_knowledge",
+    "search_term": "bangangte indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "traditional_knowledge",
+    "search_term": "bangangte ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "traditional_technology",
+    "search_term": "bangangte traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "traditional_technology",
+    "search_term": "bangangte indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+artisan+skills",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "traditional_technology",
+    "search_term": "bangangte artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "history",
+    "search_term": "bangangte history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+historical+background",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "history",
+    "search_term": "bangangte historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "history",
+    "search_term": "bangangte ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "music_dance",
+    "search_term": "bangangte music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+musical+instruments",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "music_dance",
+    "search_term": "bangangte musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bangangte+cultural+dances",
+    "type": "category_search",
+    "tribe": "bangangte",
+    "category": "music_dance",
+    "search_term": "bangangte cultural dances",
+    "priority": "medium"
+  }
+]

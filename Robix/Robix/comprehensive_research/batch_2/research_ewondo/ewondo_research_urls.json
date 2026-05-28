@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/ewondo_people",
+    "type": "main_page",
+    "tribe": "ewondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/ewondo_tribe",
+    "type": "main_page",
+    "tribe": "ewondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/ewondo",
+    "type": "main_page",
+    "tribe": "ewondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/ewondo_ethnic_group",
+    "type": "main_page",
+    "tribe": "ewondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "spiritual_beliefs",
+    "search_term": "ewondo religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+traditional+religion",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "spiritual_beliefs",
+    "search_term": "ewondo traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+religious+practices",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "spiritual_beliefs",
+    "search_term": "ewondo religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+colonial+period",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "colonial_impact",
+    "search_term": "ewondo colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+European+colonization",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "colonial_impact",
+    "search_term": "ewondo European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+colonial+administration",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "colonial_impact",
+    "search_term": "ewondo colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+agriculture+farming",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "subsistence_patterns",
+    "search_term": "ewondo agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+food+production",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "subsistence_patterns",
+    "search_term": "ewondo food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+traditional+economy",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "subsistence_patterns",
+    "search_term": "ewondo traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "cultural_revitalization",
+    "search_term": "ewondo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+language+revitalization",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "cultural_revitalization",
+    "search_term": "ewondo language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+cultural+revival",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "cultural_revitalization",
+    "search_term": "ewondo cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+modern+politics",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "modern_governance",
+    "search_term": "ewondo modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+contemporary+governance",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "modern_governance",
+    "search_term": "ewondo contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+political+participation",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "modern_governance",
+    "search_term": "ewondo political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "pre_contact_history",
+    "search_term": "ewondo pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+before+European+contact",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "pre_contact_history",
+    "search_term": "ewondo before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+ancient+traditions",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "pre_contact_history",
+    "search_term": "ewondo ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "oral_traditions",
+    "search_term": "ewondo oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+myths+legends",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "oral_traditions",
+    "search_term": "ewondo myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+traditional+narratives",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "oral_traditions",
+    "search_term": "ewondo traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "social_organization",
+    "search_term": "ewondo social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+clan+system+family",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "social_organization",
+    "search_term": "ewondo clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+social+hierarchy",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "social_organization",
+    "search_term": "ewondo social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "traditional_knowledge",
+    "search_term": "ewondo traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "traditional_knowledge",
+    "search_term": "ewondo indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "traditional_knowledge",
+    "search_term": "ewondo ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "traditional_technology",
+    "search_term": "ewondo traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+indigenous+technology",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "traditional_technology",
+    "search_term": "ewondo indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+artisan+skills",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "traditional_technology",
+    "search_term": "ewondo artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+music+dance+songs",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "music_dance",
+    "search_term": "ewondo music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+musical+instruments",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "music_dance",
+    "search_term": "ewondo musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ewondo+cultural+dances",
+    "type": "category_search",
+    "tribe": "ewondo",
+    "category": "music_dance",
+    "search_term": "ewondo cultural dances",
+    "priority": "medium"
+  }
+]

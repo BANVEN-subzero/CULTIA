@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/balondo_people",
+    "type": "main_page",
+    "tribe": "balondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/balondo_tribe",
+    "type": "main_page",
+    "tribe": "balondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/balondo",
+    "type": "main_page",
+    "tribe": "balondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/balondo_ethnic_group",
+    "type": "main_page",
+    "tribe": "balondo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "spiritual_beliefs",
+    "search_term": "balondo religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+traditional+religion",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "spiritual_beliefs",
+    "search_term": "balondo traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+religious+practices",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "spiritual_beliefs",
+    "search_term": "balondo religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+economy+trade",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "economy",
+    "search_term": "balondo economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+economic+activities",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "economy",
+    "search_term": "balondo economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+livelihood",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "economy",
+    "search_term": "balondo livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "arts_and_crafts",
+    "search_term": "balondo art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+traditional+arts",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "arts_and_crafts",
+    "search_term": "balondo traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+handicrafts",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "arts_and_crafts",
+    "search_term": "balondo handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+traditional+governance",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "governance",
+    "search_term": "balondo traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+political+system",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "governance",
+    "search_term": "balondo political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+leadership+structure",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "governance",
+    "search_term": "balondo leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+colonial+period",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "colonial_impact",
+    "search_term": "balondo colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+European+colonization",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "colonial_impact",
+    "search_term": "balondo European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+colonial+administration",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "colonial_impact",
+    "search_term": "balondo colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+agriculture+farming",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "subsistence_patterns",
+    "search_term": "balondo agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+food+production",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "subsistence_patterns",
+    "search_term": "balondo food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+traditional+economy",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "subsistence_patterns",
+    "search_term": "balondo traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+modern+challenges",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "challenges",
+    "search_term": "balondo modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+contemporary+issues",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "challenges",
+    "search_term": "balondo contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "challenges",
+    "search_term": "balondo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "cultural_revitalization",
+    "search_term": "balondo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+language+revitalization",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "cultural_revitalization",
+    "search_term": "balondo language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+cultural+revival",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "cultural_revitalization",
+    "search_term": "balondo cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+modern+politics",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "modern_governance",
+    "search_term": "balondo modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+contemporary+governance",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "modern_governance",
+    "search_term": "balondo contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+political+participation",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "modern_governance",
+    "search_term": "balondo political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "pre_contact_history",
+    "search_term": "balondo pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+before+European+contact",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "pre_contact_history",
+    "search_term": "balondo before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+ancient+traditions",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "pre_contact_history",
+    "search_term": "balondo ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "culture",
+    "search_term": "balondo culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+cultural+practices",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "culture",
+    "search_term": "balondo cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+way+of+life",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "culture",
+    "search_term": "balondo way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "oral_traditions",
+    "search_term": "balondo oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+myths+legends",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "oral_traditions",
+    "search_term": "balondo myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+traditional+narratives",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "oral_traditions",
+    "search_term": "balondo traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "social_organization",
+    "search_term": "balondo social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+clan+system+family",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "social_organization",
+    "search_term": "balondo clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+social+hierarchy",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "social_organization",
+    "search_term": "balondo social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "traditional_knowledge",
+    "search_term": "balondo traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "traditional_knowledge",
+    "search_term": "balondo indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "traditional_knowledge",
+    "search_term": "balondo ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "traditional_technology",
+    "search_term": "balondo traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+indigenous+technology",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "traditional_technology",
+    "search_term": "balondo indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+artisan+skills",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "traditional_technology",
+    "search_term": "balondo artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+history+origin+migration",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "history",
+    "search_term": "balondo history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+historical+background",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "history",
+    "search_term": "balondo historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "history",
+    "search_term": "balondo ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+music+dance+songs",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "music_dance",
+    "search_term": "balondo music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+musical+instruments",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "music_dance",
+    "search_term": "balondo musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/balondo+cultural+dances",
+    "type": "category_search",
+    "tribe": "balondo",
+    "category": "music_dance",
+    "search_term": "balondo cultural dances",
+    "priority": "medium"
+  }
+]

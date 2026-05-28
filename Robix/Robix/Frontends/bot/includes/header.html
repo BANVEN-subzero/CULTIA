@@ -1,0 +1,74 @@
+<!-- Header -->
+<header class="content-header shadow-sm bg-white sticky-top px-4 py-3">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-auto d-flex align-items-center gap-3">
+                <button class="btn btn-light d-lg-none" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="h4 mb-0 fw-bold text-dark page-title">{{PAGE_TITLE}}</h1>
+            </div>
+            
+            <div class="col d-flex justify-content-end align-items-center gap-3">
+                <a href="dashboard.html" class="btn btn-outline-secondary btn-sm rounded-pill d-none d-md-flex align-items-center gap-2">
+                    <i class="fas fa-arrow-left"></i> Back to Dashboard
+                </a>
+                
+                <!-- Theme Toggle -->
+                <div class="theme-toggle-wrapper bg-light rounded-pill p-1 d-flex align-items-center shadow-sm" id="headerThemeToggle">
+                    <button class="btn btn-sm rounded-pill px-3 active" data-theme="light">☀️</button>
+                    <button class="btn btn-sm rounded-pill px-3" data-theme="dark">🌙</button>
+                </div>
+
+                <button class="btn btn-success btn-sm rounded-pill px-4 d-flex align-items-center gap-2 shadow-sm" onclick="window.location.href='assistant.html'">
+                    <i class="fas fa-robot"></i>
+                    <span class="d-none d-sm-inline">Switch to Assistant</span>
+                </button>
+
+                <div class="dropdown">
+                    <button class="btn btn-light rounded-circle p-2 shadow-sm" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-circle fs-4 text-success"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 rounded-3">
+                        <li><a class="dropdown-item py-2 px-4" href="settings.html" id="headerProfileLink"><i class="fas fa-user-cog me-2"></i> Profile</a></li>
+                        <li><a class="dropdown-item py-2 px-4" href="gamification.html"><i class="fas fa-medal me-2"></i> Achievements</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item py-2 px-4 text-danger" href="#" id="headerLogoutBtn"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+.content-header {
+    z-index: 900;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-wrapper button {
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle-wrapper button.active {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.dropdown-item {
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background: rgba(25, 135, 84, 0.1);
+    color: #198754;
+    transform: translateX(5px);
+}
+</style>

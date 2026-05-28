@@ -1,0 +1,366 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/baka_people",
+    "type": "main_page",
+    "tribe": "baka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baka_tribe",
+    "type": "main_page",
+    "tribe": "baka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baka",
+    "type": "main_page",
+    "tribe": "baka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baka_ethnic_group",
+    "type": "main_page",
+    "tribe": "baka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "spiritual_beliefs",
+    "search_term": "baka religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+traditional+religion",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "spiritual_beliefs",
+    "search_term": "baka traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+religious+practices",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "spiritual_beliefs",
+    "search_term": "baka religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+economy+trade",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "economy",
+    "search_term": "baka economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+economic+activities",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "economy",
+    "search_term": "baka economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+livelihood",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "economy",
+    "search_term": "baka livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+traditional+governance",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "governance",
+    "search_term": "baka traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+political+system",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "governance",
+    "search_term": "baka political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+leadership+structure",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "governance",
+    "search_term": "baka leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+colonial+period",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "colonial_impact",
+    "search_term": "baka colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+European+colonization",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "colonial_impact",
+    "search_term": "baka European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+colonial+administration",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "colonial_impact",
+    "search_term": "baka colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+agriculture+farming",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "subsistence_patterns",
+    "search_term": "baka agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+food+production",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "subsistence_patterns",
+    "search_term": "baka food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+traditional+economy",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "subsistence_patterns",
+    "search_term": "baka traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+cultural+preservation",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "cultural_revitalization",
+    "search_term": "baka cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+language+revitalization",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "cultural_revitalization",
+    "search_term": "baka language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+cultural+revival",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "cultural_revitalization",
+    "search_term": "baka cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+modern+politics",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "modern_governance",
+    "search_term": "baka modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+contemporary+governance",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "modern_governance",
+    "search_term": "baka contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+political+participation",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "modern_governance",
+    "search_term": "baka political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "pre_contact_history",
+    "search_term": "baka pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+before+European+contact",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "pre_contact_history",
+    "search_term": "baka before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+ancient+traditions",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "pre_contact_history",
+    "search_term": "baka ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "oral_traditions",
+    "search_term": "baka oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+myths+legends",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "oral_traditions",
+    "search_term": "baka myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+traditional+narratives",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "oral_traditions",
+    "search_term": "baka traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "social_organization",
+    "search_term": "baka social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+clan+system+family",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "social_organization",
+    "search_term": "baka clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+social+hierarchy",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "social_organization",
+    "search_term": "baka social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "traditional_knowledge",
+    "search_term": "baka traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "traditional_knowledge",
+    "search_term": "baka indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "traditional_knowledge",
+    "search_term": "baka ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "traditional_technology",
+    "search_term": "baka traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+indigenous+technology",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "traditional_technology",
+    "search_term": "baka indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+artisan+skills",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "traditional_technology",
+    "search_term": "baka artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+history+origin+migration",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "history",
+    "search_term": "baka history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+historical+background",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "history",
+    "search_term": "baka historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "history",
+    "search_term": "baka ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+music+dance+songs",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "music_dance",
+    "search_term": "baka music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+musical+instruments",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "music_dance",
+    "search_term": "baka musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baka+cultural+dances",
+    "type": "category_search",
+    "tribe": "baka",
+    "category": "music_dance",
+    "search_term": "baka cultural dances",
+    "priority": "medium"
+  }
+]

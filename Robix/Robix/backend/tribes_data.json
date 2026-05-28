@@ -1,0 +1,987 @@
+{
+  "metadata": {
+    "description": "Cameroon is a culturally diverse Central African country with 10 regions and more than 250 ethnic groups.",
+    "country": "Cameroon"
+  },
+  "tribes": {
+    "fulani_fulbe": {
+      "name": "Fulani (Fulbe)",
+      "location": {
+        "region": "Adamawa Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Fulani (Fulbe) people are a significant ethnic group in the Adamawa Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Primarily Muslim cattle herders",
+        "Respect for elders and Islamic education",
+        "Traditional flowing gowns and colorful veils",
+        "Cattle symbolize wealth and prestige"
+      ],
+      "meals_and_cuisine_list": [
+        "Millet couscous",
+        "Milk and butter",
+        "Grilled meat",
+        "Rice dishes",
+        "Sour milk soups"
+      ],
+      "festivals_list": [
+        "Eid al-Fitr",
+        "Eid al-Adha",
+        "Traditional horse displays"
+      ],
+      "history": "Historical background and origins of the Fulani (Fulbe) people in the Adamawa Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/zuK9-2x8P8v3ThmJzMKa-ykfYywYyHsOcfCpq_FcjFjc0mW7s0PcBsGUf7Cw6s5nO78aNvDogR_SDtfO_9VwxPt8NneJGc-KGRgodZb1MCwchtK-IzeUPmVY9QfCGCrYuRzOut8cIX_t57nJi8Rhzsf3FKzRs350oC4q6uAWxWdOBiF9DB_LcNdyqJF_SmMu?purpose=fullsize"
+    },
+    "gbaya": {
+      "name": "Gbaya",
+      "location": {
+        "region": "Adamawa Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Gbaya people are a significant ethnic group in the Adamawa Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Known for farming and hunting",
+        "Traditional storytelling",
+        "Drum music during ceremonies"
+      ],
+      "meals_and_cuisine_list": [
+        "Cassava",
+        "Maize",
+        "Plantains",
+        "Bush meat"
+      ],
+      "festivals_list": [
+        "Harvest festivals",
+        "Traditional dance ceremonies"
+      ],
+      "history": "Historical background and origins of the Gbaya people in the Adamawa Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/eNoJcgodtPhVLFitjr7l8bZ06XFhxL-7TvThP3HOJ_expi8zg6UepSW2ZLMuQ2Ulz6bTcRKwsb0RvXeesB49M7_L2CQyhLrP1u-5b5ulfuv6EUo-K456_QulxZTz5FbLKKZPFW2Nun8ZnsOpwFEYZxBKkksKamMCYBUlNtwrOY9U_TFhmiaUZ6RKvZW5ASSZ?purpose=fullsize"
+    },
+    "tikar": {
+      "name": "Tikar",
+      "location": {
+        "region": "Adamawa Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Tikar people are a significant ethnic group in the Adamawa Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Respect for royal families",
+        "Traditional mask dances",
+        "Wood sculptures and carvings"
+      ],
+      "meals_and_cuisine_list": [
+        "Corn fufu",
+        "Vegetable soups",
+        "Roasted meat",
+        "Palm wine"
+      ],
+      "festivals_list": [
+        "Royal festivals",
+        "Initiation ceremonies"
+      ],
+      "history": "Historical background and origins of the Tikar people in the Adamawa Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/EBrxbCjNOv6J-NRqTszHyMplhU-wUCLJYwEcge_fTsLROGKw0ESn5WlAtq89k2FjAuqP1zObwhEfc1JiDOzWV6hvr09Aft_edkBjMhN-qzsiFBbK5HX2oVdHxTQJcC8tVOBLaCscYPi0wDRnJk0TjZUHHwR5GL6RrND7bVRYxxi33KcQvOXzpA6DDVQG-8AN?purpose=fullsize"
+    },
+    "mbum": {
+      "name": "Mbum",
+      "location": {
+        "region": "Adamawa Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Mbum people are a significant ethnic group in the Adamawa Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Strong community unity",
+        "Respect for ancestors",
+        "Traditional oral storytelling"
+      ],
+      "meals_and_cuisine_list": [
+        "Millet meals",
+        "Yam dishes",
+        "Peanut soup"
+      ],
+      "festivals_list": [
+        "Harvest celebrations",
+        "Community feasting ceremonies"
+      ],
+      "history": "Historical background and origins of the Mbum people in the Adamawa Region.",
+      "image_url": "https://i.pinimg.com/736x/77/55/73/7755730cea9548ff81c5b99bdacfad65.jpg"
+    },
+    "ewondo": {
+      "name": "Ewondo",
+      "location": {
+        "region": "Centre Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Ewondo people are a significant ethnic group in the Centre Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional marriage negotiations",
+        "Respect for ancestors",
+        "Community storytelling"
+      ],
+      "meals_and_cuisine_list": [
+        "Ndole",
+        "Bobolo",
+        "Groundnut soup",
+        "Cassava dishes"
+      ],
+      "festivals_list": [
+        "Traditional dance festivals",
+        "Community storytelling events"
+      ],
+      "history": "Historical background and origins of the Ewondo people in the Centre Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/ZPkZm9cJw3qQizcoOQzdRs1K7o7NzcznUJJ-GZUo004eeHDw8jSa8v9mvNb-zT8DVt1kluIH46Kag2KztlbV4q7ziQKNcaBxbol5qbjLWCTA-Qb1hz-jN6j0UdTlkQUtjmri7GAT_ZuHP-ZTNTIAPIB1bbxMdUq6tEaqxSFL7H3GCjFCEroYn7vggHKP0RnY?purpose=fullsize"
+    },
+    "bulu": {
+      "name": "Bulu",
+      "location": {
+        "region": "South Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/EQWTuvzBntcVFBnucPdjW3Vgp0K4R5xogdVOU4EchGWVGVLg3VEBFnlTEyaFfIPwqckAgvhRR3AEPO7QbxIb5gU6AXqo_TgK46BKoVId1X36ofrYo8CDyadM9ztd0QGs2m49X5dM8wHraJslhN0AitM0R19rkMA-GZ3JyKKLuYTEpMIDNePEPhnER2udEbJq?purpose=fullsize",
+      "overview": "The Bulu people are a significant ethnic group in the South Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Bulu people in the South Region."
+    },
+    "eton": {
+      "name": "Eton",
+      "location": {
+        "region": "Centre Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Eton people are a significant ethnic group in the Centre Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Family-centered ceremonies",
+        "Agricultural traditions"
+      ],
+      "meals_and_cuisine_list": [
+        "Cassava sticks",
+        "Vegetable soups",
+        "Maize meals"
+      ],
+      "festivals_list": [
+        "Harvest festivals",
+        "Traditional dance gatherings"
+      ],
+      "history": "Historical background and origins of the Eton people in the Centre Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/9qf6WoRyoTtYkISr1aF6f8_zvWgeqpPxXTELwkNif0EtsaduVFKXasEzaGpNg9Jv5M-Uh0YP2fu6hTpyCOcx2u9LkQ1FjYY7qShH_m-rPzp3yMffDNK2xuqTqzT4G5fXLcwwg0UVs-AI9f36amsk0zIXJ8Go6TWZRaBfL_jxyiAJgPu4OzoffsVQlubyA6x4?purpose=fullsize"
+    },
+    "yebekolo": {
+      "name": "Yebekolo",
+      "location": {
+        "region": "Centre Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Yebekolo people are a significant ethnic group in the Centre Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Respect for chiefs",
+        "Traditional storytelling"
+      ],
+      "meals_and_cuisine_list": [
+        "Plantains",
+        "Cassava",
+        "Palm nut soup"
+      ],
+      "festivals_list": [
+        "Community dance celebrations"
+      ],
+      "history": "Historical background and origins of the Yebekolo people in the Centre Region.",
+      "image_url": "https://i.pinimg.com/736x/3f/7d/b1/3f7db161363728a45d036f6257b2bbe9.jpg"
+    },
+    "nso": {
+      "name": "Nso",
+      "location": {
+        "region": "North West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Nso people are a significant ethnic group in the North West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Ruled by a Fon",
+        "Secret societies",
+        "Royal palace ceremonies"
+      ],
+      "meals_and_cuisine_list": [
+        "Achu and yellow soup",
+        "Koki beans",
+        "Corn fufu"
+      ],
+      "festivals_list": [
+        "Palace festivals",
+        "Masquerade dances"
+      ],
+      "history": "Historical background and origins of the Nso people in the North West Region.",
+      "image_url": "https://i.pinimg.com/736x/65/aa/38/65aa38dc82bae98d23913f51701ae9ea.jpg"
+    },
+    "kom": {
+      "name": "Kom",
+      "location": {
+        "region": "North West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Kom people are a significant ethnic group in the North West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional authority systems",
+        "Community solidarity"
+      ],
+      "meals_and_cuisine_list": [
+        "Njama njama",
+        "Fufu corn",
+        "Roasted meat"
+      ],
+      "festivals_list": [
+        "Cultural dance competitions"
+      ],
+      "history": "Historical background and origins of the Kom people in the North West Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/OGKHYYiYSQh-HALCXiLbkpYKOilD_V8SkLZByBuhMZ5D9J-gHI0l73SUkOyzZYVtO6E8tTLnFMOmkV7DxYvjCfRGhkDtoHDXZ0v7ydD3vx5F0p9nniTDMefJImfaOvSXFpbSwZik-1w-ByKrC-MS4HnOhCRp9K8ZNSlSAKwCzRXRrmPkLDb-lrAW8lUIqHzt?purpose=fullsize"
+    },
+    "bali": {
+      "name": "Bali",
+      "location": {
+        "region": "North West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Bali people are a significant ethnic group in the North West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Warrior traditions",
+        "Royal dances"
+      ],
+      "meals_and_cuisine_list": [
+        "Corn chaff",
+        "Vegetable soup",
+        "Meat dishes"
+      ],
+      "festivals_list": [
+        "Lela Festival"
+      ],
+      "history": "Historical background and origins of the Bali people in the North West Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/vNgCK1-uwR1-WmtnrA_lWLv854ViCGx2V68WtHgnBllfQnXbyXjivtdqZS2UdM127hKhjmkg5h9lexgQ4wJnHQv93vBfj9DcHjTv5dlnalExrez3uam3ovMG6UOy-u3jhA3Godr2MN8mgSSFVQrAoT1FlwhER99Oxxtb-9Cogj1GXro2K4uh6scl2d6V1PWv?purpose=fullsize"
+    },
+    "wimbum": {
+      "name": "Wimbum",
+      "location": {
+        "region": "North West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Wimbum people are a significant ethnic group in the North West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Respect for elders",
+        "Traditional drumming"
+      ],
+      "meals_and_cuisine_list": [
+        "Beans",
+        "Maize meals",
+        "Palm wine"
+      ],
+      "festivals_list": [
+        "Harvest celebrations"
+      ],
+      "history": "Historical background and origins of the Wimbum people in the North West Region.",
+      "image_url": "https://i.pinimg.com/736x/fc/21/59/fc2159f9c4b771a497676f994c31adc3.jpg"
+    },
+    "bakweri": {
+      "name": "Bakweri",
+      "location": {
+        "region": "South West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Bakweri people are a significant ethnic group in the South West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Spiritual connection to Mount Cameroon",
+        "Secret societies",
+        "Traditional dances"
+      ],
+      "meals_and_cuisine_list": [
+        "Eru and waterfufu",
+        "Pepper soup",
+        "Roasted fish"
+      ],
+      "festivals_list": [
+        "Mount Cameroon Race of Hope"
+      ],
+      "history": "Historical background and origins of the Bakweri people in the South West Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/VdZD3x089B3AciedtY52aCR9NoiefTaAGPGdIW0e90R586XztvXd2U6916c_cOK4xPjC-R0ZmvK05NkZF8MNEWMStMoov_gl0I7DDjuP1lkqsZq-QRNPPV9zjBrC8IMykkt8vh5-fC2eFAPQR6cIPRJHP-4qC6tqNMo4ks1gNE9MAOTsl1NlKQldlymHRjTl?purpose=fullsize"
+    },
+    "oroko": {
+      "name": "Oroko",
+      "location": {
+        "region": "South West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Oroko people are a significant ethnic group in the South West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Fishing traditions",
+        "Farming communities"
+      ],
+      "meals_and_cuisine_list": [
+        "Plantains",
+        "Cassava",
+        "Seafood dishes"
+      ],
+      "festivals_list": [
+        "Fishing festivals"
+      ],
+      "history": "Historical background and origins of the Oroko people in the South West Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/ia3fiSI5grLARwTm4U6-wj4WZzVXhGV86pkI1OZ_cPh0_Hb2bdRDmPUwWPIIu13zZIJcAty-KzB7iQ_EOPp0K2BQeskS5vee-s3rKExkYy-3rSrQLifHcNL5k7Zp2SEDNU-zUmNpGd9rpqQ_vXkD3fkWbFLoaih7GOYb_-KGc8ck7CHhdBGhF_4K_JQ5F6Az?purpose=fullsize"
+    },
+    "balondo": {
+      "name": "Balondo",
+      "location": {
+        "region": "South West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Balondo people are a significant ethnic group in the South West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "River-based traditions",
+        "Traditional music"
+      ],
+      "meals_and_cuisine_list": [
+        "Fish soup",
+        "Cocoyam",
+        "Palm wine"
+      ],
+      "festivals_list": [
+        "River dance festivals"
+      ],
+      "history": "Historical background and origins of the Balondo people in the South West Region.",
+      "image_url": "https://i.pinimg.com/736x/6f/b0/cb/6fb0cb356abc048b3cfc9c0dd8ea71dc.jpg"
+    },
+    "bakossi": {
+      "name": "Bakossi",
+      "location": {
+        "region": "South West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "overview": "The Bakossi people are a significant ethnic group in the South West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Herbal medicine traditions",
+        "Agricultural practices"
+      ],
+      "meals_and_cuisine_list": [
+        "Ekwang",
+        "Vegetable soups",
+        "Cocoyam dishes"
+      ],
+      "festivals_list": [
+        "Harvest festivals",
+        "Ancestral celebrations"
+      ],
+      "history": "Historical background and origins of the Bakossi people in the South West Region.",
+      "image_url": "https://images.openai.com/static-rsc-4/d_1T2hEu-0xZrbyJ5Sr1Fs4HfCST2mSVdpRDN3PET4mAtpDcpGLovvZA4hFfjSf7bMl4aygKEQ3H7vnZEJncekuxBi8Wg_nqKt-FBK1tENVUbjvpblCxmKQ884IyB0Ug16-8vEoQiemjXdPx5f0oG2t-h8CAZfMMHmxUS1dEomKuNgcYz7BIfKjgh0WCe9JC?purpose=fullsize"
+    },
+    "bamileke": {
+      "name": "Bamileke",
+      "location": {
+        "region": "West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/1200x/33/df/a9/33dfa9b04ed311afd1c0ea0159549cf8.jpg",
+      "overview": "The Bamileke people are a significant ethnic group in the West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Bamileke people in the West Region."
+    },
+    "bamoun": {
+      "name": "Bamoun",
+      "location": {
+        "region": "West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/QnfjKEOUVoeyOK-Y9YmteAXybIVXcFhn5OjzSaJkg3Gp9lpAxOX2PD4WLOrOxkZDY2YBc1Rf_OrRvGoRmdgjMuEcadDdBSVfmVjvsTqO51XzjWTzi6V1up2TUXI4Ap9v0kKuSvUMR5KdMCZTK4C96p-OUgKRBZMoKRmNMPUACey_7fFEvbnQ7CEuViDF4Oej?purpose=fullsize",
+      "overview": "The Bamoun people are a significant ethnic group in the West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Bamoun people in the West Region."
+    },
+    "yemba": {
+      "name": "Yemba",
+      "location": {
+        "region": "West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/GBFTUgGWcwC4BjsO11SxL3O2UhT4_kUujFpkPd0cGMN3klDtRl2bQ2DncUXIJN90HSQtBd_8cnSWosv6zPUgGxv6JTtd9iscW64WJw0U4vOkiOSGsqQJ-jhaEh9YhuytdtiMJAsyfLJoe5tnwC8G4X9d0R0yOlCLXYiq0YumMsqtbl5rSr7-sK8dsrhZLMc9?purpose=fullsize",
+      "overview": "The Yemba people are a significant ethnic group in the West Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Yemba people in the West Region."
+    },
+    "fang": {
+      "name": "Fang",
+      "location": {
+        "region": "South Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/HphLssIlO4Qhe3xelLbinGR4-bLGhNr0Hj-2WSq9l7UWCk4f42WTIWTKXmG0nwfob13PYzpkY-6O0FStpNAwosWSj0cCzt5izM2hPfE2gB5lNyAZiGDgrwT9GRkTWp5bNRcO_OaCCJbNRC1OBCzc3Y2JJjgWvetgeX3vXUdTJ7rW3BSDSbipsRSCI87dzliX?purpose=fullsize",
+      "overview": "The Fang people are a significant ethnic group in the South Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Fang people in the South Region."
+    },
+    "mvae": {
+      "name": "Mvae",
+      "location": {
+        "region": "South Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/DAapLLhDIN5b8RPFKJ6TyQVNYSZpKUV05RCPBEZ1uJ9NfZCfSRQUf3Vefh5DQ0e0rz8nvXi5c2e-jnXH55S-FeNr1lNMS6UeVOb9W85UzcTRhTeBv5NkKp5psAt49zX-OIsCgNtxzuHS_TS71izE4j6SqK7Leal5Cm73sp95N5QiW6N_-fRZ_VdxwDHFlVjL?purpose=fullsize",
+      "overview": "The Mvae people are a significant ethnic group in the South Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Mvae people in the South Region."
+    },
+    "fali": {
+      "name": "Fali",
+      "location": {
+        "region": "North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/8sQNSdlOsSspJJDNeh5TQ73o0_rnEg7CDXzKmBzF6tPBVni3e3Ye8zSpGMe4JDxjL7by2ae1lTg1J__et1seHqypPjkDkTYgX3yfpSbWuSWwxxPvN-Ld9phBSlDUIKU94S2J91UO0MocInt2u7Meqf4tFDlrFQGKetITH_fYe4EW9Bd17S56Wf45-VqSLEVL?purpose=fullsize",
+      "overview": "The Fali people are a significant ethnic group in the North Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Fali people in the North Region."
+    },
+    "toupouri": {
+      "name": "Toupouri",
+      "location": {
+        "region": "North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/j8KZsxjVXBnthyUhB1gJ3LmJcr1AdWqfxSRyCy4TC27_cLb40tzM1OHvfbqx0OMR78s1G7B4u0beOJdPjKm5iGu06MjEeD-knZpF1ASWcyPlwFmYslAGkG6lchyR39iLe1Urj-tJq3jig-D-qklL6-a1hYDj9VZdpnRX3NiSOF1Tx26IbBIyc8ISaOLS18TE?purpose=fullsize",
+      "overview": "The Toupouri people are a significant ethnic group in the North Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Toupouri people in the North Region."
+    },
+    "dii": {
+      "name": "Dii",
+      "location": {
+        "region": "North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/2VTLRHLCYNut2hFTMBE2kbOGDsFFRZvR9bTAwsCI6s56cVptzHUFwA4u8SH2HljKh7TMdbPzqbCQgA-MA0UwfhgW75V98tFBI-mdPlmho9C7rQfEPz6Yyxc381bV32oxjxUF_bGrwPi4ta3xODP9p0Rc509gbaDoMY2Kos1B2DlEMuEWYl1apTInPGuzl5cZ?purpose=fullsize",
+      "overview": "The Dii people are a significant ethnic group in the North Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Dii people in the North Region."
+    },
+    "kanuri": {
+      "name": "Kanuri",
+      "location": {
+        "region": "Far North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/BrNOcs995aXre4hK4KE7Yq2AOMerANy64IkFm61B3Y8PlivRpU8EweEgCA7q0-uRcE0cik7KcJ6-NObaNcxwxzc8kIubZyvxkvCO3YrCQzeY2DfeRYdemPYzXWCpbYVTU1zv7hnC5i9QYHCcYZ8blz7kMpyjLQkWkfKSdY9KaC--M2TSByBMVrMI06pH6FZD?purpose=fullsize",
+      "overview": "The Kanuri people are a significant ethnic group in the Far North Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Kanuri people in the Far North Region."
+    },
+    "kotoko": {
+      "name": "Kotoko",
+      "location": {
+        "region": "Far North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/LjxmV9rFQkrWxQPemQrQuHtS0tzNlQDS0LCajlJ6cyyIg5PLN24ZtnbGuWffWqlCKVMf7cQqQ1vy-NUTPG1RRK9bGKZLv0iR6ioD9Tz7lJsLizqy45olkWk3-wYn1aZcL_w3LsNZ2Dum31_fmgjM7_bRAZYL7msuH24Lps6GJEylQeS6PlpjN92P9QPjCX-5?purpose=fullsize",
+      "overview": "The Kotoko people are a significant ethnic group in the Far North Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Kotoko people in the Far North Region."
+    },
+    "massa": {
+      "name": "Massa",
+      "location": {
+        "region": "Far North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/fhTb8GRzTXJhv8ydmlYTjAwwgMdDLr31cBoL0uCc0bEOsaS2X1VP3mJULmfXG053p9HVs5N-mvJsxkN5wiD52_eBU85HFYw5G09vT5K_uFlDJdp0ijHOJULPu3a2Vet834uvScaUqxVjJqLd7HizefCQ3DHQRQGTxSXGdcYcWVAhsiEZM0vcCS1IGFtFxmAw?purpose=fullsize",
+      "overview": "The Massa people are a significant ethnic group in the Far North Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Massa people in the Far North Region."
+    },
+    "duala": {
+      "name": "Duala",
+      "location": {
+        "region": "Littoral Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/5WRLiKTFgLYwthBS6jStCnbNrqSHJ0eZfNOrqXpjpPwSpdJkULJna6Q-WoSBBBHdUgNRrn_JavnOn7O3VrYYZglVCNR0xyKbQ13Z1SjHmP9PRMZmkFR_s57gUIjT92O3rg6NEw4uZMasE1puZFHgdKrTIJGKTRT9afk4cfU5SiCTWJjpIeZP8E4u6mVUFw-b?purpose=fullsize",
+      "overview": "The Duala people are a significant ethnic group in the Littoral Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Duala people in the Littoral Region."
+    },
+    "bakoko": {
+      "name": "Bakoko",
+      "location": {
+        "region": "Littoral Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/t9PQWpFsMKPk8WbUTtrGiAyjEoP2uZShIjgyPB0MzgrhzsR6cbG_uOjGmHtvXbkPUOKbYoTSbTqnGgeeBQncCGz6RKvxGq__QokKw3KVA-91P-mBgUkOvdNqTG5mf68mpJDokGwWf9fNRWDDpl842rL8P0NfeE3wsQe4YERr5rsNDjP512qawGZF5gdW8pHV?purpose=fullsize",
+      "overview": "The Bakoko people are a significant ethnic group in the Littoral Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Bakoko people in the Littoral Region."
+    },
+    "malimba": {
+      "name": "Malimba",
+      "location": {
+        "region": "Littoral Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/mm-bkaQhpNjXtFsf3UgR1PXUjYnHGXnMRKEXSEQJpeVTZwsKzzifBb4vkq5JRIDsepWHwfhpmvUnMD8sNhPCyWlh7dbBvyX-rTXdnzJ4jIOiPPwD_mUBZFMia8DIPtDxyP5-TRTrZi1vLoUS0OiTA1W4wJF6XBhsm8PkqQXAESoMKN5fJkkkOh4-HzueKVgs?purpose=fullsize",
+      "overview": "The Malimba people are a significant ethnic group in the Littoral Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Malimba people in the Littoral Region."
+    },
+    "baka": {
+      "name": "Baka",
+      "location": {
+        "region": "East Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/4QleZU8-NMJ8Jol_VLeYSqkFW9Ex7PnYIWatbCkvfnsuJYZpjqnghZ4NzQYUUcYu9YETatNFqhvxPdO38wkdJ6XMaDQWS25anSN6Mu0Mu89IRMtdXNjXidE9ELrWEeWOKHC36loOBlecQq7rqgSpI32L-ipxarf8JSA-KF-8sybBoEhwnhwHOQKSJRNZaFB3?purpose=fullsize",
+      "overview": "The Baka people are a significant ethnic group in the East Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Baka people in the East Region."
+    },
+    "maka": {
+      "name": "Maka",
+      "location": {
+        "region": "East Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/ECiVQLbrG0yFYog2x9Pw4216Kk3cZvr9A_enPAEzWpn5IwZ3Uu6z-Z4AiCsnzuN_eSSawK_pXWcpfynRx4Yhv9xqG4L_5o6jQOr6Hz7z-PWUo3QPuV-yEs0ACzkBS6ukYlndw4EQlmZG4btFghpgxHXx7RmxMUA-14nNSkv6vmrwJvLiwM-EgENZa4XWMTVH?purpose=fullsize",
+      "overview": "The Maka people are a significant ethnic group in the East Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Maka people in the East Region."
+    },
+    "kako": {
+      "name": "Kako",
+      "location": {
+        "region": "East Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://images.openai.com/static-rsc-4/-BDRQGUNP3tFjlYJbBsWF35H3ytz8BK8dmIHhlzP2jXvkg2p7Zom8pdkWTz8iUtRcgyAPWIvlnQs1DIHGf6vp8_kctuO1bWLq_pev17fqKJjDrlzD7vSy5Tl_fzb3bCcTnwXou1AxgSvE3ADH42-1pNAlg2ViY_WjJRayycKkd44RAOt-AtkM9n7BwMj6KxC?purpose=fullsize",
+      "overview": "The Kako people are a significant ethnic group in the East Region of Cameroon, known for their rich cultural heritage and traditional practices.",
+      "customs_and_traditions": [
+        "Traditional customs",
+        "Community values",
+        "Respect for heritage"
+      ],
+      "meals_and_cuisine_list": [
+        "Traditional dishes",
+        "Local ingredients"
+      ],
+      "festivals_list": [
+        "Annual cultural celebrations"
+      ],
+      "history": "Historical background and origins of the Kako people in the East Region."
+    },
+    "bafoussam": {
+      "name": "Bafoussam",
+      "location": {
+        "region": "West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/88/54/22/885422896696987654.jpg",
+      "overview": "The Bafoussam people are a major group in the West Region, known for their craftsmanship and vibrant markets.",
+      "customs_and_traditions": ["Blacksmithing", "Traditional architecture"],
+      "meals_and_cuisine_list": ["Corn fufu", "Huckleberry"],
+      "festivals_list": ["Harvest festivals"],
+      "history": "Origins in the Grassfields migrations."
+    },
+    "bandjoun": {
+      "name": "Bandjoun",
+      "location": {
+        "region": "West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/22/33/44/2233445566778899.jpg",
+      "overview": "The Bandjoun people have one of the most impressive palaces in the West Region.",
+      "customs_and_traditions": ["Royal protocols", "Traditional art"],
+      "meals_and_cuisine_list": ["Khati-Khati", "Njama Njama"],
+      "festivals_list": ["Nguon festival"],
+      "history": "One of the most powerful chiefdoms in the West."
+    },
+    "bangangte": {
+      "name": "Bangangte",
+      "location": {
+        "region": "West Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/99/88/77/9988776655443322.jpg",
+      "overview": "The Bangangte people are known for their resilience and dynamic women's organizations.",
+      "customs_and_traditions": ["Beadwork", "Pottery"],
+      "meals_and_cuisine_list": ["Yellow soup", "Achu"],
+      "festivals_list": ["Cultural weeks"],
+      "history": "A kingdom with a rich history of resistance and adaptation."
+    },
+    "bassa": {
+      "name": "Bassa",
+      "location": {
+        "region": "Littoral Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/11/22/33/1122334455667788.jpg",
+      "overview": "The Bassa are one of the earliest Bantu settlers in coastal Cameroon.",
+      "customs_and_traditions": ["Assiko music", "Traditional medicine"],
+      "meals_and_cuisine_list": ["Ndole", "Bobolo"],
+      "festivals_list": ["Ngondo"],
+      "history": "Ancestors migrated from the Great Lakes region."
+    },
+    "bedzan": {
+      "name": "Bedzan",
+      "location": {
+        "region": "Centre Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/44/55/66/4455667788990011.jpg",
+      "overview": "The Bedzan are a small group of people who live in the deep forest.",
+      "customs_and_traditions": ["Forest medicine", "Hunting-gathering"],
+      "meals_and_cuisine_list": ["Bush meat", "Wild fruits"],
+      "festivals_list": ["Forest spirit dances"],
+      "history": "Masters of the deep canopy."
+    },
+    "giziga": {
+      "name": "Giziga",
+      "location": {
+        "region": "Far North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/77/88/99/7788990011223344.jpg",
+      "overview": "The Giziga people are clever and independent inhabitants of the Far North.",
+      "customs_and_traditions": ["Terrace farming", "Pottery"],
+      "meals_and_cuisine_list": ["Millet", "Sorghum"],
+      "festivals_list": ["Harvest celebrations"],
+      "history": "Known for their smart defense strategies."
+    },
+    "mafa": {
+      "name": "Mafa",
+      "location": {
+        "region": "Far North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/00/11/22/0011223344556677.jpg",
+      "overview": "The Mafa are famous for their mountain terrace farming.",
+      "customs_and_traditions": ["Iron work", "Stone architecture"],
+      "meals_and_cuisine_list": ["Millet couscous", "Peanut sauce"],
+      "festivals_list": ["Bull festival"],
+      "history": "Residents of the Mandara Mountains for centuries."
+    },
+    "kapsiki": {
+      "name": "Kapsiki",
+      "location": {
+        "region": "Far North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/22/44/66/2244668800112233.jpg",
+      "overview": "The Kapsiki people live in the stunning volcanic landscapes of Rhumsiki.",
+      "customs_and_traditions": ["Crab divination", "Blacksmithing"],
+      "meals_and_cuisine_list": ["Sorghum", "Millet"],
+      "festivals_list": ["Ancestral rites"],
+      "history": "Masters of the rocky peaks."
+    },
+    "moundang": {
+      "name": "Moundang",
+      "location": {
+        "region": "Far North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/33/55/77/3355779900112233.jpg",
+      "overview": "The Moundang are known for their sacred connection to Lake Léré.",
+      "customs_and_traditions": ["Royal Hippo cult", "Fishing"],
+      "meals_and_cuisine_list": ["Fish", "Maize"],
+      "festivals_list": ["Lake festivals"],
+      "history": "A kingdom centered around the Léré lakes."
+    },
+    "bafia": {
+      "name": "Bafia",
+      "location": {
+        "region": "Centre Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/44/66/88/4466880011223344.jpg",
+      "overview": "The Bafia are known for their energetic dances and agricultural productivity.",
+      "customs_and_traditions": ["Traditional dance", "Farming"],
+      "meals_and_cuisine_list": ["Yam", "Groundnut soup"],
+      "festivals_list": ["Harvest dance"],
+      "history": "Ancestors settled in the Mbam valley."
+    },
+    "hausa": {
+      "name": "Hausa",
+      "location": {
+        "region": "North Region",
+        "countries": [
+          "Cameroon"
+        ]
+      },
+      "image_url": "https://i.pinimg.com/736x/55/77/99/5577990011223344.jpg",
+      "overview": "The Hausa are master merchants and craftsmen of the North.",
+      "customs_and_traditions": ["Trade", "Islamic scholarship"],
+      "meals_and_cuisine_list": ["Kilishi", "Tuwo Masara"],
+      "festivals_list": ["Eid festivals"],
+      "history": "Part of the wider Hausa trading network in West Africa."
+    }
+  }
+}

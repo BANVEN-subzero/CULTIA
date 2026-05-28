@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bafia_people",
+    "type": "main_page",
+    "tribe": "bafia",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafia_tribe",
+    "type": "main_page",
+    "tribe": "bafia",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafia",
+    "type": "main_page",
+    "tribe": "bafia",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafia_ethnic_group",
+    "type": "main_page",
+    "tribe": "bafia",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "spiritual_beliefs",
+    "search_term": "bafia religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+traditional+religion",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "spiritual_beliefs",
+    "search_term": "bafia traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+religious+practices",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "spiritual_beliefs",
+    "search_term": "bafia religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+colonial+period",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "colonial_impact",
+    "search_term": "bafia colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+European+colonization",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "colonial_impact",
+    "search_term": "bafia European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+colonial+administration",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "colonial_impact",
+    "search_term": "bafia colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "subsistence_patterns",
+    "search_term": "bafia agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+food+production",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "subsistence_patterns",
+    "search_term": "bafia food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+traditional+economy",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "subsistence_patterns",
+    "search_term": "bafia traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "cultural_revitalization",
+    "search_term": "bafia cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+language+revitalization",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "cultural_revitalization",
+    "search_term": "bafia language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+cultural+revival",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "cultural_revitalization",
+    "search_term": "bafia cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+modern+politics",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "modern_governance",
+    "search_term": "bafia modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "modern_governance",
+    "search_term": "bafia contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+political+participation",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "modern_governance",
+    "search_term": "bafia political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "pre_contact_history",
+    "search_term": "bafia pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+before+European+contact",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "pre_contact_history",
+    "search_term": "bafia before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "pre_contact_history",
+    "search_term": "bafia ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "oral_traditions",
+    "search_term": "bafia oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+myths+legends",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "oral_traditions",
+    "search_term": "bafia myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "oral_traditions",
+    "search_term": "bafia traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "social_organization",
+    "search_term": "bafia social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+clan+system+family",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "social_organization",
+    "search_term": "bafia clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "social_organization",
+    "search_term": "bafia social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "traditional_knowledge",
+    "search_term": "bafia traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "traditional_knowledge",
+    "search_term": "bafia indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "traditional_knowledge",
+    "search_term": "bafia ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "traditional_technology",
+    "search_term": "bafia traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "traditional_technology",
+    "search_term": "bafia indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+artisan+skills",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "traditional_technology",
+    "search_term": "bafia artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "music_dance",
+    "search_term": "bafia music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+musical+instruments",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "music_dance",
+    "search_term": "bafia musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafia+cultural+dances",
+    "type": "category_search",
+    "tribe": "bafia",
+    "category": "music_dance",
+    "search_term": "bafia cultural dances",
+    "priority": "medium"
+  }
+]

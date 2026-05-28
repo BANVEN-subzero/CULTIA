@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamungo_people",
+    "type": "main_page",
+    "tribe": "bamungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamungo_tribe",
+    "type": "main_page",
+    "tribe": "bamungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamungo",
+    "type": "main_page",
+    "tribe": "bamungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamungo_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamungo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "spiritual_beliefs",
+    "search_term": "bamungo religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "spiritual_beliefs",
+    "search_term": "bamungo traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+religious+practices",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "spiritual_beliefs",
+    "search_term": "bamungo religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+colonial+period",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "colonial_impact",
+    "search_term": "bamungo colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+European+colonization",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "colonial_impact",
+    "search_term": "bamungo European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "colonial_impact",
+    "search_term": "bamungo colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "subsistence_patterns",
+    "search_term": "bamungo agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+food+production",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "subsistence_patterns",
+    "search_term": "bamungo food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "subsistence_patterns",
+    "search_term": "bamungo traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "cultural_revitalization",
+    "search_term": "bamungo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "cultural_revitalization",
+    "search_term": "bamungo language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "cultural_revitalization",
+    "search_term": "bamungo cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+modern+politics",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "modern_governance",
+    "search_term": "bamungo modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "modern_governance",
+    "search_term": "bamungo contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+political+participation",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "modern_governance",
+    "search_term": "bamungo political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "pre_contact_history",
+    "search_term": "bamungo pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "pre_contact_history",
+    "search_term": "bamungo before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "pre_contact_history",
+    "search_term": "bamungo ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "oral_traditions",
+    "search_term": "bamungo oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+myths+legends",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "oral_traditions",
+    "search_term": "bamungo myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "oral_traditions",
+    "search_term": "bamungo traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "social_organization",
+    "search_term": "bamungo social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "social_organization",
+    "search_term": "bamungo clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "social_organization",
+    "search_term": "bamungo social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "traditional_knowledge",
+    "search_term": "bamungo traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "traditional_knowledge",
+    "search_term": "bamungo indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "traditional_knowledge",
+    "search_term": "bamungo ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "traditional_technology",
+    "search_term": "bamungo traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "traditional_technology",
+    "search_term": "bamungo indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "traditional_technology",
+    "search_term": "bamungo artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "music_dance",
+    "search_term": "bamungo music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "music_dance",
+    "search_term": "bamungo musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamungo+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamungo",
+    "category": "music_dance",
+    "search_term": "bamungo cultural dances",
+    "priority": "medium"
+  }
+]

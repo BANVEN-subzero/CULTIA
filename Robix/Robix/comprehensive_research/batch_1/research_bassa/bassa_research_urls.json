@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bassa_people",
+    "type": "main_page",
+    "tribe": "bassa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bassa_tribe",
+    "type": "main_page",
+    "tribe": "bassa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bassa",
+    "type": "main_page",
+    "tribe": "bassa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bassa_ethnic_group",
+    "type": "main_page",
+    "tribe": "bassa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "spiritual_beliefs",
+    "search_term": "bassa religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+traditional+religion",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "spiritual_beliefs",
+    "search_term": "bassa traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+religious+practices",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "spiritual_beliefs",
+    "search_term": "bassa religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+colonial+period",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "colonial_impact",
+    "search_term": "bassa colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+European+colonization",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "colonial_impact",
+    "search_term": "bassa European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+colonial+administration",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "colonial_impact",
+    "search_term": "bassa colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "subsistence_patterns",
+    "search_term": "bassa agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+food+production",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "subsistence_patterns",
+    "search_term": "bassa food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+traditional+economy",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "subsistence_patterns",
+    "search_term": "bassa traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "cultural_revitalization",
+    "search_term": "bassa cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+language+revitalization",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "cultural_revitalization",
+    "search_term": "bassa language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+cultural+revival",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "cultural_revitalization",
+    "search_term": "bassa cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+modern+politics",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "modern_governance",
+    "search_term": "bassa modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "modern_governance",
+    "search_term": "bassa contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+political+participation",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "modern_governance",
+    "search_term": "bassa political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "pre_contact_history",
+    "search_term": "bassa pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+before+European+contact",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "pre_contact_history",
+    "search_term": "bassa before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "pre_contact_history",
+    "search_term": "bassa ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "oral_traditions",
+    "search_term": "bassa oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+myths+legends",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "oral_traditions",
+    "search_term": "bassa myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "oral_traditions",
+    "search_term": "bassa traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "social_organization",
+    "search_term": "bassa social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+clan+system+family",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "social_organization",
+    "search_term": "bassa clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "social_organization",
+    "search_term": "bassa social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "traditional_knowledge",
+    "search_term": "bassa traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "traditional_knowledge",
+    "search_term": "bassa indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "traditional_knowledge",
+    "search_term": "bassa ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "traditional_technology",
+    "search_term": "bassa traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "traditional_technology",
+    "search_term": "bassa indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+artisan+skills",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "traditional_technology",
+    "search_term": "bassa artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "music_dance",
+    "search_term": "bassa music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+musical+instruments",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "music_dance",
+    "search_term": "bassa musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bassa+cultural+dances",
+    "type": "category_search",
+    "tribe": "bassa",
+    "category": "music_dance",
+    "search_term": "bassa cultural dances",
+    "priority": "medium"
+  }
+]

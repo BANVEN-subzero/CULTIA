@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bulu_people",
+    "type": "main_page",
+    "tribe": "bulu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bulu_tribe",
+    "type": "main_page",
+    "tribe": "bulu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bulu",
+    "type": "main_page",
+    "tribe": "bulu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bulu_ethnic_group",
+    "type": "main_page",
+    "tribe": "bulu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "spiritual_beliefs",
+    "search_term": "bulu religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+traditional+religion",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "spiritual_beliefs",
+    "search_term": "bulu traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+religious+practices",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "spiritual_beliefs",
+    "search_term": "bulu religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+colonial+period",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "colonial_impact",
+    "search_term": "bulu colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+European+colonization",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "colonial_impact",
+    "search_term": "bulu European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+colonial+administration",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "colonial_impact",
+    "search_term": "bulu colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "subsistence_patterns",
+    "search_term": "bulu agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+food+production",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "subsistence_patterns",
+    "search_term": "bulu food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+traditional+economy",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "subsistence_patterns",
+    "search_term": "bulu traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "cultural_revitalization",
+    "search_term": "bulu cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+language+revitalization",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "cultural_revitalization",
+    "search_term": "bulu language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+cultural+revival",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "cultural_revitalization",
+    "search_term": "bulu cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+modern+politics",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "modern_governance",
+    "search_term": "bulu modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "modern_governance",
+    "search_term": "bulu contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+political+participation",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "modern_governance",
+    "search_term": "bulu political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "pre_contact_history",
+    "search_term": "bulu pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+before+European+contact",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "pre_contact_history",
+    "search_term": "bulu before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "pre_contact_history",
+    "search_term": "bulu ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "oral_traditions",
+    "search_term": "bulu oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+myths+legends",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "oral_traditions",
+    "search_term": "bulu myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "oral_traditions",
+    "search_term": "bulu traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "social_organization",
+    "search_term": "bulu social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+clan+system+family",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "social_organization",
+    "search_term": "bulu clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "social_organization",
+    "search_term": "bulu social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "traditional_knowledge",
+    "search_term": "bulu traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "traditional_knowledge",
+    "search_term": "bulu indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "traditional_knowledge",
+    "search_term": "bulu ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "traditional_technology",
+    "search_term": "bulu traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "traditional_technology",
+    "search_term": "bulu indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+artisan+skills",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "traditional_technology",
+    "search_term": "bulu artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "music_dance",
+    "search_term": "bulu music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+musical+instruments",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "music_dance",
+    "search_term": "bulu musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bulu+cultural+dances",
+    "type": "category_search",
+    "tribe": "bulu",
+    "category": "music_dance",
+    "search_term": "bulu cultural dances",
+    "priority": "medium"
+  }
+]

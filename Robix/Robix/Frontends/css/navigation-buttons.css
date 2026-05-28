@@ -1,0 +1,200 @@
+/**
+ * Modern Navigation Buttons
+ * Redesigned back buttons with modern UI/UX principles
+ */
+
+/* Back Button Styles */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.back-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.back-button:hover::before {
+    left: 100%;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.back-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.back-button i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover i {
+    transform: translateX(-3px);
+}
+
+/* Back to Home Variant */
+.back-button.home {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    box-shadow: 0 4px 12px rgba(245, 87, 108, 0.3);
+}
+
+.back-button.home:hover {
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
+
+/* Back to Dashboard Variant */
+.back-button.dashboard {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}
+
+.back-button.dashboard:hover {
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+}
+
+/* Secondary Style (Outline) */
+.back-button.outline {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+    box-shadow: none;
+}
+
+.back-button.outline:hover {
+    background: #667eea;
+    color: white;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* Minimal Style */
+.back-button.minimal {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    box-shadow: none;
+}
+
+.back-button.minimal:hover {
+    background: rgba(102, 126, 234, 0.2);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+}
+
+/* Dark Theme Adjustments */
+.theme-dark .back-button {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.theme-dark .back-button:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.theme-dark .back-button.outline {
+    border-color: #8b9bff;
+    color: #8b9bff;
+}
+
+.theme-dark .back-button.outline:hover {
+    background: #8b9bff;
+    color: #1a1a1a;
+}
+
+.theme-dark .back-button.minimal {
+    background: rgba(139, 155, 255, 0.1);
+    color: #8b9bff;
+}
+
+.theme-dark .back-button.minimal:hover {
+    background: rgba(139, 155, 255, 0.2);
+}
+
+/* Button Container */
+.navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .back-button {
+        padding: 0.65rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .navigation-buttons {
+        flex-direction: column;
+    }
+    
+    .back-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Accessibility */
+.back-button:focus {
+    outline: 3px solid rgba(102, 126, 234, 0.5);
+    outline-offset: 2px;
+}
+
+.back-button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Loading State */
+.back-button.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.back-button.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    margin-left: 0.5rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Icon Animations */
+@keyframes slideLeft {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+}
+
+.back-button:hover .fa-arrow-left,
+.back-button:hover .fa-chevron-left {
+    animation: slideLeft 0.6s ease-in-out infinite;
+}

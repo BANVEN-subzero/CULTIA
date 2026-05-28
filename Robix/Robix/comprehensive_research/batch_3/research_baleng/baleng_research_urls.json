@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/baleng_people",
+    "type": "main_page",
+    "tribe": "baleng",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baleng_tribe",
+    "type": "main_page",
+    "tribe": "baleng",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baleng",
+    "type": "main_page",
+    "tribe": "baleng",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baleng_ethnic_group",
+    "type": "main_page",
+    "tribe": "baleng",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "spiritual_beliefs",
+    "search_term": "baleng religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+traditional+religion",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "spiritual_beliefs",
+    "search_term": "baleng traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+religious+practices",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "spiritual_beliefs",
+    "search_term": "baleng religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+colonial+period",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "colonial_impact",
+    "search_term": "baleng colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+European+colonization",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "colonial_impact",
+    "search_term": "baleng European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+colonial+administration",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "colonial_impact",
+    "search_term": "baleng colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+agriculture+farming",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "subsistence_patterns",
+    "search_term": "baleng agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+food+production",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "subsistence_patterns",
+    "search_term": "baleng food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+traditional+economy",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "subsistence_patterns",
+    "search_term": "baleng traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+cultural+preservation",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "cultural_revitalization",
+    "search_term": "baleng cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+language+revitalization",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "cultural_revitalization",
+    "search_term": "baleng language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+cultural+revival",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "cultural_revitalization",
+    "search_term": "baleng cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+modern+politics",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "modern_governance",
+    "search_term": "baleng modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+contemporary+governance",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "modern_governance",
+    "search_term": "baleng contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+political+participation",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "modern_governance",
+    "search_term": "baleng political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "pre_contact_history",
+    "search_term": "baleng pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+before+European+contact",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "pre_contact_history",
+    "search_term": "baleng before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+ancient+traditions",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "pre_contact_history",
+    "search_term": "baleng ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "oral_traditions",
+    "search_term": "baleng oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+myths+legends",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "oral_traditions",
+    "search_term": "baleng myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+traditional+narratives",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "oral_traditions",
+    "search_term": "baleng traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "social_organization",
+    "search_term": "baleng social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+clan+system+family",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "social_organization",
+    "search_term": "baleng clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+social+hierarchy",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "social_organization",
+    "search_term": "baleng social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "traditional_knowledge",
+    "search_term": "baleng traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "traditional_knowledge",
+    "search_term": "baleng indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "traditional_knowledge",
+    "search_term": "baleng ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "traditional_technology",
+    "search_term": "baleng traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+indigenous+technology",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "traditional_technology",
+    "search_term": "baleng indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+artisan+skills",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "traditional_technology",
+    "search_term": "baleng artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+music+dance+songs",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "music_dance",
+    "search_term": "baleng music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+musical+instruments",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "music_dance",
+    "search_term": "baleng musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baleng+cultural+dances",
+    "type": "category_search",
+    "tribe": "baleng",
+    "category": "music_dance",
+    "search_term": "baleng cultural dances",
+    "priority": "medium"
+  }
+]

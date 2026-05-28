@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/kanuri_people",
+    "type": "main_page",
+    "tribe": "kanuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kanuri_tribe",
+    "type": "main_page",
+    "tribe": "kanuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kanuri",
+    "type": "main_page",
+    "tribe": "kanuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kanuri_ethnic_group",
+    "type": "main_page",
+    "tribe": "kanuri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "spiritual_beliefs",
+    "search_term": "kanuri religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+traditional+religion",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "spiritual_beliefs",
+    "search_term": "kanuri traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+religious+practices",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "spiritual_beliefs",
+    "search_term": "kanuri religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+economy+trade",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "economy",
+    "search_term": "kanuri economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+economic+activities",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "economy",
+    "search_term": "kanuri economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+livelihood",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "economy",
+    "search_term": "kanuri livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "arts_and_crafts",
+    "search_term": "kanuri art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+traditional+arts",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "arts_and_crafts",
+    "search_term": "kanuri traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+handicrafts",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "arts_and_crafts",
+    "search_term": "kanuri handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+traditional+governance",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "governance",
+    "search_term": "kanuri traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+political+system",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "governance",
+    "search_term": "kanuri political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+leadership+structure",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "governance",
+    "search_term": "kanuri leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+colonial+period",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "colonial_impact",
+    "search_term": "kanuri colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+European+colonization",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "colonial_impact",
+    "search_term": "kanuri European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+colonial+administration",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "colonial_impact",
+    "search_term": "kanuri colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+agriculture+farming",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "subsistence_patterns",
+    "search_term": "kanuri agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+food+production",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "subsistence_patterns",
+    "search_term": "kanuri food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+traditional+economy",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "subsistence_patterns",
+    "search_term": "kanuri traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+modern+challenges",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "challenges",
+    "search_term": "kanuri modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+contemporary+issues",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "challenges",
+    "search_term": "kanuri contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "challenges",
+    "search_term": "kanuri cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "cultural_revitalization",
+    "search_term": "kanuri cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+language+revitalization",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "cultural_revitalization",
+    "search_term": "kanuri language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+cultural+revival",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "cultural_revitalization",
+    "search_term": "kanuri cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+modern+politics",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "modern_governance",
+    "search_term": "kanuri modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+contemporary+governance",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "modern_governance",
+    "search_term": "kanuri contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+political+participation",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "modern_governance",
+    "search_term": "kanuri political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "pre_contact_history",
+    "search_term": "kanuri pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+before+European+contact",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "pre_contact_history",
+    "search_term": "kanuri before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+ancient+traditions",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "pre_contact_history",
+    "search_term": "kanuri ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "culture",
+    "search_term": "kanuri culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+cultural+practices",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "culture",
+    "search_term": "kanuri cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+way+of+life",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "culture",
+    "search_term": "kanuri way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "oral_traditions",
+    "search_term": "kanuri oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+myths+legends",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "oral_traditions",
+    "search_term": "kanuri myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+traditional+narratives",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "oral_traditions",
+    "search_term": "kanuri traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "social_organization",
+    "search_term": "kanuri social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+clan+system+family",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "social_organization",
+    "search_term": "kanuri clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+social+hierarchy",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "social_organization",
+    "search_term": "kanuri social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "traditional_knowledge",
+    "search_term": "kanuri traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "traditional_knowledge",
+    "search_term": "kanuri indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "traditional_knowledge",
+    "search_term": "kanuri ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "traditional_technology",
+    "search_term": "kanuri traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+indigenous+technology",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "traditional_technology",
+    "search_term": "kanuri indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+artisan+skills",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "traditional_technology",
+    "search_term": "kanuri artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+music+dance+songs",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "music_dance",
+    "search_term": "kanuri music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+musical+instruments",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "music_dance",
+    "search_term": "kanuri musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kanuri+cultural+dances",
+    "type": "category_search",
+    "tribe": "kanuri",
+    "category": "music_dance",
+    "search_term": "kanuri cultural dances",
+    "priority": "medium"
+  }
+]

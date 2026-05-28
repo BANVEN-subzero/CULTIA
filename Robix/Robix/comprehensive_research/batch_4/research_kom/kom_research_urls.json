@@ -1,0 +1,390 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/kom_people",
+    "type": "main_page",
+    "tribe": "kom",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kom_tribe",
+    "type": "main_page",
+    "tribe": "kom",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kom",
+    "type": "main_page",
+    "tribe": "kom",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kom_ethnic_group",
+    "type": "main_page",
+    "tribe": "kom",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "spiritual_beliefs",
+    "search_term": "kom religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+traditional+religion",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "spiritual_beliefs",
+    "search_term": "kom traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+religious+practices",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "spiritual_beliefs",
+    "search_term": "kom religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+economy+trade",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "economy",
+    "search_term": "kom economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+economic+activities",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "economy",
+    "search_term": "kom economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+livelihood",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "economy",
+    "search_term": "kom livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+traditional+governance",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "governance",
+    "search_term": "kom traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+political+system",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "governance",
+    "search_term": "kom political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+leadership+structure",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "governance",
+    "search_term": "kom leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+colonial+period",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "colonial_impact",
+    "search_term": "kom colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+European+colonization",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "colonial_impact",
+    "search_term": "kom European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+colonial+administration",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "colonial_impact",
+    "search_term": "kom colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+agriculture+farming",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "subsistence_patterns",
+    "search_term": "kom agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+food+production",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "subsistence_patterns",
+    "search_term": "kom food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+traditional+economy",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "subsistence_patterns",
+    "search_term": "kom traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+modern+challenges",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "challenges",
+    "search_term": "kom modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+contemporary+issues",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "challenges",
+    "search_term": "kom contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "challenges",
+    "search_term": "kom cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "cultural_revitalization",
+    "search_term": "kom cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+language+revitalization",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "cultural_revitalization",
+    "search_term": "kom language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+cultural+revival",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "cultural_revitalization",
+    "search_term": "kom cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+modern+politics",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "modern_governance",
+    "search_term": "kom modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+contemporary+governance",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "modern_governance",
+    "search_term": "kom contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+political+participation",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "modern_governance",
+    "search_term": "kom political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "pre_contact_history",
+    "search_term": "kom pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+before+European+contact",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "pre_contact_history",
+    "search_term": "kom before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+ancient+traditions",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "pre_contact_history",
+    "search_term": "kom ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "oral_traditions",
+    "search_term": "kom oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+myths+legends",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "oral_traditions",
+    "search_term": "kom myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+traditional+narratives",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "oral_traditions",
+    "search_term": "kom traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "social_organization",
+    "search_term": "kom social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+clan+system+family",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "social_organization",
+    "search_term": "kom clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+social+hierarchy",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "social_organization",
+    "search_term": "kom social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "traditional_knowledge",
+    "search_term": "kom traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "traditional_knowledge",
+    "search_term": "kom indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "traditional_knowledge",
+    "search_term": "kom ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "traditional_technology",
+    "search_term": "kom traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+indigenous+technology",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "traditional_technology",
+    "search_term": "kom indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+artisan+skills",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "traditional_technology",
+    "search_term": "kom artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+history+origin+migration",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "history",
+    "search_term": "kom history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+historical+background",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "history",
+    "search_term": "kom historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "history",
+    "search_term": "kom ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+music+dance+songs",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "music_dance",
+    "search_term": "kom music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+musical+instruments",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "music_dance",
+    "search_term": "kom musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kom+cultural+dances",
+    "type": "category_search",
+    "tribe": "kom",
+    "category": "music_dance",
+    "search_term": "kom cultural dances",
+    "priority": "medium"
+  }
+]

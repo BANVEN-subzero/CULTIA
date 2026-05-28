@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptability - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image/images (6).png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .proverb-highlight {
+            font-size: 2rem;
+            color: var(--primary-green);
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f8fdf7;
+            border-radius: 30px;
+            border-left: 10px solid var(--primary-green);
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .content-section h3 i {
+            color: var(--primary-green);
+        }
+
+        .content-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">Adaptability</h1>
+                <p class="lead fs-4 opacity-75">Flexibility as a Path to Resilience</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="content-container" data-aos="fade-up">
+                <a href="proverbs.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Proverbs
+                </a>
+
+                <div class="proverb-highlight">
+                    "The wind does not break a tree that can bend"
+                </div>
+
+                <div class="content-section">
+                    <h3><i class="fas fa-info-circle"></i> Origin and Meaning</h3>
+                    <p class="content-text">This profound proverb, found in various forms across Cameroon's forest regions, uses the observation of nature to teach a lesson in survival. It suggests that rigidity and stubbornness often lead to failure or destruction when faced with overwhelming force, whereas flexibility and adaptability allow one to weather the storm and rise again.</p>
+                    <p class="content-text">It teaches that true strength is not found in being unyielding, but in knowing when to compromise, when to listen, and how to adjust to changing circumstances. A tree that "bends" preserves its roots and its life, while the one that stands stiffly against the gale risks being snapped at its trunk.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3><i class="fas fa-landmark"></i> Cultural Context</h3>
+                    <p class="content-text">In traditional Cameroonian diplomacy and conflict resolution, this proverb was often used to encourage elders and leaders to seek middle ground. It highlighted that holding too tightly to an extreme position could tear a family or a village apart. The ability to "bend"—to accommodate different perspectives—was seen as a hallmark of wise and mature leadership.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3><i class="fas fa-lightbulb"></i> Modern Applications</h3>
+                    <p class="content-text">In the 21st century, where change is the only constant, this proverb is more relevant than ever. In professional environments, "agile" thinking is essentially the ability to bend with the wind of market shifts or technological advances. In personal life, it reminds us that emotional resilience comes from accepting change rather than fighting it with rigid expectations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Adaptability');
+            });
+        });
+    </script>
+</body>
+
+</html>

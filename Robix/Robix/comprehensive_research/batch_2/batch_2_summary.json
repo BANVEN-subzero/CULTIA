@@ -1,0 +1,78 @@
+{
+  "batch_number": 2,
+  "tribes_count": 10,
+  "total_sections": 112,
+  "tribes": [
+    {
+      "tribe": "bulu",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_bulu\\bulu_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_bulu\\bulu_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_bulu\\bulu_research_urls.json"
+    },
+    {
+      "tribe": "fang",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_fang\\fang_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_fang\\fang_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_fang\\fang_research_urls.json"
+    },
+    {
+      "tribe": "ewondo",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_ewondo\\ewondo_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_ewondo\\ewondo_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_ewondo\\ewondo_research_urls.json"
+    },
+    {
+      "tribe": "etonde",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_etonde\\etonde_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_etonde\\etonde_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_etonde\\etonde_research_urls.json"
+    },
+    {
+      "tribe": "mbo",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_mbo\\mbo_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_mbo\\mbo_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_mbo\\mbo_research_urls.json"
+    },
+    {
+      "tribe": "oroko",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_oroko\\oroko_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_oroko\\oroko_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_oroko\\oroko_research_urls.json"
+    },
+    {
+      "tribe": "isubu",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_isubu\\isubu_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_isubu\\isubu_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_isubu\\isubu_research_urls.json"
+    },
+    {
+      "tribe": "maka",
+      "missing_count": 11,
+      "template_file": "comprehensive_research\\batch_2\\research_maka\\maka_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_maka\\maka_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_maka\\maka_research_urls.json"
+    },
+    {
+      "tribe": "bafia",
+      "missing_count": 12,
+      "template_file": "comprehensive_research\\batch_2\\research_bafia\\bafia_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_bafia\\bafia_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_bafia\\bafia_research_urls.json"
+    },
+    {
+      "tribe": "baki",
+      "missing_count": 12,
+      "template_file": "comprehensive_research\\batch_2\\research_baki\\baki_research_template.json",
+      "guide_file": "comprehensive_research\\batch_2\\research_baki\\baki_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_2\\research_baki\\baki_research_urls.json"
+    }
+  ],
+  "research_instructions": "Research 10 tribes with 112 total sections"
+}

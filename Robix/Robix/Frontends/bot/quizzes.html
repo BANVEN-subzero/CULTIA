@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/educator.css">
+    <link rel="stylesheet" href="css/assistant.css">
+
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Sidebar and Main Content Layout */
+        #sidebar-container {
+            width: 280px;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .main-content {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: var(--bg-light);
+            transition: margin-left 0.3s ease;
+        }
+
+        /* Adjustments for mobile */
+        @media (max-width: 991.98px) {
+            #sidebar-container {
+                width: 0;
+                position: fixed;
+                left: -280px;
+            }
+            #sidebar-container.show {
+                width: 280px;
+                left: 0;
+            }
+        }
+
+        .quiz-card {
+            background: white;
+            border-radius: 25px;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-color: var(--primary-green);
+        }
+
+        .quiz-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .answer-option {
+            padding: 15px 20px;
+            background: white;
+            border: 2px solid #eee;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .answer-option:hover {
+            border-color: var(--primary-green);
+            background: #f0f4f0;
+        }
+
+        .answer-option.selected {
+            border-color: var(--primary-green);
+            background: #e8f0e8;
+        }
+
+        .answer-option.correct {
+            background: #d1e7dd;
+            border-color: #198754;
+            color: #0f5132;
+        }
+
+        .answer-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #842029;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .max-width-800 {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar Container -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <!-- Header Container -->
+        <div id="header-container"></div>
+
+        <div class="container py-5">
+            <!-- Quiz Selection -->
+            <div id="quizSelection" data-aos="fade-up">
+                <div class="mb-5">
+                    <h1 class="fw-bold h2 mb-2">Knowledge Quizzes</h1>
+                    <p class="text-muted">Test your understanding of Cameroon's history, geography, and diverse traditions.</p>
+                </div>
+                
+                <div class="row g-4" id="quizCategories">
+                    <!-- Categories populated by JS -->
+                </div>
+            </div>
+
+            <!-- Quiz Interface -->
+            <div id="quizInterface" class="hidden">
+                <div class="max-width-800" data-aos="fade-up">
+                    <div class="card quiz-card p-4 p-md-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="flex-grow-1 me-4">
+                                <div class="progress mb-2" style="height: 8px; border-radius: 10px;">
+                                    <div class="progress-bar bg-success" id="progressFill" style="width: 0%"></div>
+                                </div>
+                                <small class="text-muted fw-bold" id="progressText">Question 1 of 10</small>
+                            </div>
+                            <div class="text-end">
+                                <span class="badge bg-success bg-opacity-10 text-success fs-6 px-3 py-2 rounded-pill">
+                                    Score: <span id="currentScore">0</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h3 class="fw-bold mb-4" id="questionText"></h3>
+                        <div id="answersContainer" class="mb-4">
+                            <!-- Answers populated by JS -->
+                        </div>
+
+                        <div id="feedbackMessage" class="alert hidden mb-4 rounded-4"></div>
+
+                        <div class="d-flex gap-3">
+                            <button class="btn btn-success rounded-pill px-4 flex-grow-1 py-3 fw-bold" id="nextQuestionBtn" disabled>Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Results -->
+            <div id="quizResults" class="hidden">
+                <div class="max-width-800" data-aos="zoom-in">
+                    <div class="text-center mb-5">
+                        <div class="display-1 mb-3">🎉</div>
+                        <h1 class="fw-bold">Quiz Complete!</h1>
+                        <p class="text-muted">Great job! Here's your performance summary.</p>
+                    </div>
+
+                    <div class="row g-3 mb-5">
+                        <div class="col-6 col-md-3 text-center">
+                            <div class="bg-white p-4 rounded-4 shadow-sm">
+                                <small class="text-muted d-block mb-1">Score</small>
+                                <h2 class="fw-bold mb-0 text-success"><span id="finalScore">0</span>/<span id="totalQuestions">0</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 text-center">
+                            <div class="bg-white p-4 rounded-4 shadow-sm">
+                                <small class="text-muted d-block mb-1">Accuracy</small>
+                                <h2 class="fw-bold mb-0 text-primary" id="scorePercentage">0%</h2>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 text-center">
+                            <div class="bg-white p-4 rounded-4 shadow-sm">
+                                <small class="text-muted d-block mb-1">Points</small>
+                                <h2 class="fw-bold mb-0 text-warning" id="pointsEarned">0</h2>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 text-center">
+                            <div class="bg-white p-4 rounded-4 shadow-sm">
+                                <small class="text-muted d-block mb-1">Badges</small>
+                                <h2 class="fw-bold mb-0 text-info" id="badgesEarned">0</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Corrections Section -->
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-4">Answers & Corrections</h3>
+                        <div id="correctionsList" class="d-flex flex-column gap-3">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <button class="btn btn-success rounded-pill px-5 py-3 fw-bold" id="restartQuizBtn">Try Again</button>
+                        <button class="btn btn-outline-secondary rounded-pill px-5 py-3 fw-bold" id="homeBtn">Back to All Quizzes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/settingsManager.js"></script>
+
+    <script>
+        let quizzes = {};
+        let currentQuiz = {};
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedOption = null;
+        let userAnswers = []; // Store user answers: {questionIndex, selected, correct, isCorrect, question, explanation}
+
+        const quizSelection = document.getElementById('quizSelection');
+        const quizInterface = document.getElementById('quizInterface');
+        const quizResults = document.getElementById('quizResults');
+        const categoriesContainer = document.getElementById('quizCategories');
+        const questionText = document.getElementById('questionText');
+        const answersContainer = document.getElementById('answersContainer');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const currentScoreElement = document.getElementById('currentScore');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+        const nextQuestionBtn = document.getElementById('nextQuestionBtn');
+        const correctionsList = document.getElementById('correctionsList');
+
+        async function init() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Load Sidebar/Header
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                
+                // Sidebar Logic
+                const sidebar = document.getElementById('sidebar');
+                const sidebarToggle = document.getElementById('sidebarToggle');
+                const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                
+                if (sidebarToggle && sidebar) {
+                    sidebarToggle.addEventListener('click', () => {
+                        sidebar.classList.toggle('collapsed');
+                    });
+                }
+                
+                if (mobileMenuBtn && sidebar) {
+                    mobileMenuBtn.addEventListener('click', () => {
+                        sidebar.classList.toggle('show');
+                    });
+                }
+
+                // Mark active link
+                const currentPath = window.location.pathname.split('/').pop();
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === currentPath) {
+                        link.parentElement.classList.add('active');
+                    }
+                });
+            });
+
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Quizzes');
+                
+                // Initialize Theme Toggle in Header
+                if (window.settingsManager) {
+                    window.settingsManager.initHeaderThemeToggle();
+                }
+            });
+
+            // Fetch Data from API
+            try {
+                const response = await fetch('/api/quizzes', { credentials: 'include' });
+                quizzes = await response.json();
+                renderCategories();
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        function renderCategories() {
+            categoriesContainer.innerHTML = '';
+            Object.values(quizzes).forEach((quiz, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-6 col-lg-4';
+                col.innerHTML = `
+                    <div class="card quiz-card p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div style="background: #f0f4f0; color: #2d5a27; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                ${quiz.icon}
+                            </div>
+                            <div>
+                                <h3 class="h6 fw-bold mb-0">${quiz.name}</h3>
+                                <span class="badge bg-light text-dark border small">${quiz.difficulty}</span>
+                            </div>
+                        </div>
+                        <p class="text-muted small mb-4 flex-grow-1">${quiz.description}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="small fw-bold text-success">${quiz.questions.length} Questions</span>
+                            <button class="btn btn-sm btn-success rounded-pill px-3" onclick="startQuiz('${quiz.id}')">Start</button>
+                        </div>
+                    </div>
+                `;
+                categoriesContainer.appendChild(col);
+            });
+        }
+
+        function startQuiz(id) {
+            currentQuiz = quizzes[id];
+            currentQuestionIndex = 0;
+            score = 0;
+            userAnswers = [];
+            quizSelection.classList.add('hidden');
+            quizResults.classList.add('hidden');
+            quizInterface.classList.remove('hidden');
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            const q = currentQuiz.questions[currentQuestionIndex];
+            selectedOption = null;
+            questionText.textContent = q.question;
+            answersContainer.innerHTML = '';
+            feedbackMessage.classList.add('hidden');
+            nextQuestionBtn.disabled = true;
+
+            q.options.forEach((opt, i) => {
+                const div = document.createElement('div');
+                div.className = 'answer-option';
+                div.innerHTML = `<span class="me-3 opacity-50">${String.fromCharCode(65 + i)}</span> <span>${opt}</span>`;
+                div.onclick = () => selectOption(div, opt);
+                answersContainer.appendChild(div);
+            });
+
+            updateProgress();
+        }
+
+        function selectOption(el, opt) {
+            selectedOption = opt;
+            document.querySelectorAll('.answer-option').forEach(d => d.classList.remove('selected'));
+            el.classList.add('selected');
+            nextQuestionBtn.disabled = false;
+        }
+
+        function updateProgress() {
+            const total = currentQuiz.questions.length;
+            const current = currentQuestionIndex + 1;
+            progressText.textContent = `Question ${current} of ${total}`;
+            progressFill.style.width = `${(current / total) * 100}%`;
+            currentScoreElement.textContent = score;
+        }
+
+        nextQuestionBtn.onclick = () => {
+            const q = currentQuiz.questions[currentQuestionIndex];
+            const isCorrect = selectedOption === q.correct;
+            
+            // Store answer
+            userAnswers.push({
+                question: q.question,
+                selected: selectedOption,
+                correct: q.correct,
+                isCorrect: isCorrect,
+                explanation: q.explanation
+            });
+
+            if (isCorrect) score++;
+
+            currentQuestionIndex++;
+            if (currentQuestionIndex < currentQuiz.questions.length) {
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        };
+
+        function showResults() {
+            quizInterface.classList.add('hidden');
+            quizResults.classList.remove('hidden');
+            
+            const total = currentQuiz.questions.length;
+            const pct = Math.round((score / total) * 100);
+            const points = score * 10;
+            const badgesCount = pct >= 80 ? 1 : 0;
+
+            document.getElementById('finalScore').textContent = score;
+            document.getElementById('totalQuestions').textContent = total;
+            document.getElementById('scorePercentage').textContent = pct + '%';
+            document.getElementById('pointsEarned').textContent = points;
+            document.getElementById('badgesEarned').textContent = badgesCount;
+
+            // Render corrections
+            correctionsList.innerHTML = '';
+            userAnswers.forEach((ans, idx) => {
+                const card = document.createElement('div');
+                card.className = `card p-4 rounded-4 border-start border-4 ${ans.isCorrect ? 'border-success bg-success bg-opacity-10' : 'border-danger bg-danger bg-opacity-10'}`;
+                card.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="fw-bold mb-0">Question ${idx + 1}</h5>
+                        <span class="badge ${ans.isCorrect ? 'bg-success' : 'bg-danger'} rounded-pill">
+                            ${ans.isCorrect ? '<i class="fas fa-check me-1"></i> Correct' : '<i class="fas fa-times me-1"></i> Incorrect'}
+                        </span>
+                    </div>
+                    <p class="mb-3">${ans.question}</p>
+                    <div class="small">
+                        <div class="mb-1"><strong>Your Answer:</strong> <span class="${ans.isCorrect ? 'text-success' : 'text-danger'}">${ans.selected}</span></div>
+                        ${!ans.isCorrect ? `<div class="mb-1"><strong>Correct Answer:</strong> <span class="text-success">${ans.correct}</span></div>` : ''}
+                        <div class="mt-2 text-muted italic"><em>${ans.explanation || ''}</em></div>
+                    </div>
+                `;
+                correctionsList.appendChild(card);
+            });
+
+            // Update Gamification
+            if (window.gamification) {
+                window.gamification.addPoints('quiz', points, {
+                    quizId: currentQuiz.id,
+                    quizName: currentQuiz.name,
+                    score: score,
+                    total: total,
+                    percentage: pct
+                });
+            }
+        }
+
+        document.getElementById('restartQuizBtn').onclick = () => {
+            startQuiz(currentQuiz.id);
+        };
+
+        document.getElementById('homeBtn').onclick = () => {
+            quizResults.classList.add('hidden');
+            quizSelection.classList.remove('hidden');
+        };
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

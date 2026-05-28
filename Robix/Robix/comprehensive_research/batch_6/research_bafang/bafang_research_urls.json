@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bafang_people",
+    "type": "main_page",
+    "tribe": "bafang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafang_tribe",
+    "type": "main_page",
+    "tribe": "bafang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafang",
+    "type": "main_page",
+    "tribe": "bafang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafang_ethnic_group",
+    "type": "main_page",
+    "tribe": "bafang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "spiritual_beliefs",
+    "search_term": "bafang religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+traditional+religion",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "spiritual_beliefs",
+    "search_term": "bafang traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+religious+practices",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "spiritual_beliefs",
+    "search_term": "bafang religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+economy+trade",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "economy",
+    "search_term": "bafang economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+economic+activities",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "economy",
+    "search_term": "bafang economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+livelihood",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "economy",
+    "search_term": "bafang livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "arts_and_crafts",
+    "search_term": "bafang art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+traditional+arts",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "arts_and_crafts",
+    "search_term": "bafang traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+handicrafts",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "arts_and_crafts",
+    "search_term": "bafang handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+traditional+governance",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "governance",
+    "search_term": "bafang traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+political+system",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "governance",
+    "search_term": "bafang political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+leadership+structure",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "governance",
+    "search_term": "bafang leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+colonial+period",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "colonial_impact",
+    "search_term": "bafang colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+European+colonization",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "colonial_impact",
+    "search_term": "bafang European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+colonial+administration",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "colonial_impact",
+    "search_term": "bafang colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "subsistence_patterns",
+    "search_term": "bafang agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+food+production",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "subsistence_patterns",
+    "search_term": "bafang food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+traditional+economy",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "subsistence_patterns",
+    "search_term": "bafang traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+modern+challenges",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "challenges",
+    "search_term": "bafang modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "challenges",
+    "search_term": "bafang contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "challenges",
+    "search_term": "bafang cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "cultural_revitalization",
+    "search_term": "bafang cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+language+revitalization",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "cultural_revitalization",
+    "search_term": "bafang language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+cultural+revival",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "cultural_revitalization",
+    "search_term": "bafang cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+modern+politics",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "modern_governance",
+    "search_term": "bafang modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "modern_governance",
+    "search_term": "bafang contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+political+participation",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "modern_governance",
+    "search_term": "bafang political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "pre_contact_history",
+    "search_term": "bafang pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+before+European+contact",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "pre_contact_history",
+    "search_term": "bafang before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "pre_contact_history",
+    "search_term": "bafang ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "culture",
+    "search_term": "bafang culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+cultural+practices",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "culture",
+    "search_term": "bafang cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+way+of+life",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "culture",
+    "search_term": "bafang way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "oral_traditions",
+    "search_term": "bafang oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+myths+legends",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "oral_traditions",
+    "search_term": "bafang myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "oral_traditions",
+    "search_term": "bafang traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "social_organization",
+    "search_term": "bafang social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+clan+system+family",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "social_organization",
+    "search_term": "bafang clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "social_organization",
+    "search_term": "bafang social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "traditional_knowledge",
+    "search_term": "bafang traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "traditional_knowledge",
+    "search_term": "bafang indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "traditional_knowledge",
+    "search_term": "bafang ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "traditional_technology",
+    "search_term": "bafang traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "traditional_technology",
+    "search_term": "bafang indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+artisan+skills",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "traditional_technology",
+    "search_term": "bafang artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "history",
+    "search_term": "bafang history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+historical+background",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "history",
+    "search_term": "bafang historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "history",
+    "search_term": "bafang ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "music_dance",
+    "search_term": "bafang music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+musical+instruments",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "music_dance",
+    "search_term": "bafang musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafang+cultural+dances",
+    "type": "category_search",
+    "tribe": "bafang",
+    "category": "music_dance",
+    "search_term": "bafang cultural dances",
+    "priority": "medium"
+  }
+]

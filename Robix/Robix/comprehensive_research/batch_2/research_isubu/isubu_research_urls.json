@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/isubu_people",
+    "type": "main_page",
+    "tribe": "isubu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/isubu_tribe",
+    "type": "main_page",
+    "tribe": "isubu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/isubu",
+    "type": "main_page",
+    "tribe": "isubu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/isubu_ethnic_group",
+    "type": "main_page",
+    "tribe": "isubu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "spiritual_beliefs",
+    "search_term": "isubu religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+traditional+religion",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "spiritual_beliefs",
+    "search_term": "isubu traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+religious+practices",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "spiritual_beliefs",
+    "search_term": "isubu religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+colonial+period",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "colonial_impact",
+    "search_term": "isubu colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+European+colonization",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "colonial_impact",
+    "search_term": "isubu European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+colonial+administration",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "colonial_impact",
+    "search_term": "isubu colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+agriculture+farming",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "subsistence_patterns",
+    "search_term": "isubu agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+food+production",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "subsistence_patterns",
+    "search_term": "isubu food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+traditional+economy",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "subsistence_patterns",
+    "search_term": "isubu traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+cultural+preservation",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "cultural_revitalization",
+    "search_term": "isubu cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+language+revitalization",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "cultural_revitalization",
+    "search_term": "isubu language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+cultural+revival",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "cultural_revitalization",
+    "search_term": "isubu cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+modern+politics",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "modern_governance",
+    "search_term": "isubu modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+contemporary+governance",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "modern_governance",
+    "search_term": "isubu contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+political+participation",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "modern_governance",
+    "search_term": "isubu political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "pre_contact_history",
+    "search_term": "isubu pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+before+European+contact",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "pre_contact_history",
+    "search_term": "isubu before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+ancient+traditions",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "pre_contact_history",
+    "search_term": "isubu ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "oral_traditions",
+    "search_term": "isubu oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+myths+legends",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "oral_traditions",
+    "search_term": "isubu myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+traditional+narratives",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "oral_traditions",
+    "search_term": "isubu traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "social_organization",
+    "search_term": "isubu social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+clan+system+family",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "social_organization",
+    "search_term": "isubu clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+social+hierarchy",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "social_organization",
+    "search_term": "isubu social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "traditional_knowledge",
+    "search_term": "isubu traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "traditional_knowledge",
+    "search_term": "isubu indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "traditional_knowledge",
+    "search_term": "isubu ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "traditional_technology",
+    "search_term": "isubu traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+indigenous+technology",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "traditional_technology",
+    "search_term": "isubu indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+artisan+skills",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "traditional_technology",
+    "search_term": "isubu artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+music+dance+songs",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "music_dance",
+    "search_term": "isubu music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+musical+instruments",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "music_dance",
+    "search_term": "isubu musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/isubu+cultural+dances",
+    "type": "category_search",
+    "tribe": "isubu",
+    "category": "music_dance",
+    "search_term": "isubu cultural dances",
+    "priority": "medium"
+  }
+]

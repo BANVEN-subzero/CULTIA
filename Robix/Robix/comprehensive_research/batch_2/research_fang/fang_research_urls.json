@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/fang_people",
+    "type": "main_page",
+    "tribe": "fang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/fang_tribe",
+    "type": "main_page",
+    "tribe": "fang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/fang",
+    "type": "main_page",
+    "tribe": "fang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/fang_ethnic_group",
+    "type": "main_page",
+    "tribe": "fang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "spiritual_beliefs",
+    "search_term": "fang religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+traditional+religion",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "spiritual_beliefs",
+    "search_term": "fang traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+religious+practices",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "spiritual_beliefs",
+    "search_term": "fang religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+colonial+period",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "colonial_impact",
+    "search_term": "fang colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+European+colonization",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "colonial_impact",
+    "search_term": "fang European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+colonial+administration",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "colonial_impact",
+    "search_term": "fang colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+agriculture+farming",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "subsistence_patterns",
+    "search_term": "fang agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+food+production",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "subsistence_patterns",
+    "search_term": "fang food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+traditional+economy",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "subsistence_patterns",
+    "search_term": "fang traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+cultural+preservation",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "cultural_revitalization",
+    "search_term": "fang cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+language+revitalization",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "cultural_revitalization",
+    "search_term": "fang language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+cultural+revival",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "cultural_revitalization",
+    "search_term": "fang cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+modern+politics",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "modern_governance",
+    "search_term": "fang modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+contemporary+governance",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "modern_governance",
+    "search_term": "fang contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+political+participation",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "modern_governance",
+    "search_term": "fang political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "pre_contact_history",
+    "search_term": "fang pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+before+European+contact",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "pre_contact_history",
+    "search_term": "fang before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+ancient+traditions",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "pre_contact_history",
+    "search_term": "fang ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "oral_traditions",
+    "search_term": "fang oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+myths+legends",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "oral_traditions",
+    "search_term": "fang myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+traditional+narratives",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "oral_traditions",
+    "search_term": "fang traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "social_organization",
+    "search_term": "fang social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+clan+system+family",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "social_organization",
+    "search_term": "fang clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+social+hierarchy",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "social_organization",
+    "search_term": "fang social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "traditional_knowledge",
+    "search_term": "fang traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "traditional_knowledge",
+    "search_term": "fang indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "traditional_knowledge",
+    "search_term": "fang ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "traditional_technology",
+    "search_term": "fang traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+indigenous+technology",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "traditional_technology",
+    "search_term": "fang indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+artisan+skills",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "traditional_technology",
+    "search_term": "fang artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+music+dance+songs",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "music_dance",
+    "search_term": "fang music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+musical+instruments",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "music_dance",
+    "search_term": "fang musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/fang+cultural+dances",
+    "type": "category_search",
+    "tribe": "fang",
+    "category": "music_dance",
+    "search_term": "fang cultural dances",
+    "priority": "medium"
+  }
+]

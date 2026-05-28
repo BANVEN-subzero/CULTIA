@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/menka_people",
+    "type": "main_page",
+    "tribe": "menka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/menka_tribe",
+    "type": "main_page",
+    "tribe": "menka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/menka",
+    "type": "main_page",
+    "tribe": "menka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/menka_ethnic_group",
+    "type": "main_page",
+    "tribe": "menka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "spiritual_beliefs",
+    "search_term": "menka religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+traditional+religion",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "spiritual_beliefs",
+    "search_term": "menka traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+religious+practices",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "spiritual_beliefs",
+    "search_term": "menka religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+economy+trade",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "economy",
+    "search_term": "menka economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+economic+activities",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "economy",
+    "search_term": "menka economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+livelihood",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "economy",
+    "search_term": "menka livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "arts_and_crafts",
+    "search_term": "menka art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+traditional+arts",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "arts_and_crafts",
+    "search_term": "menka traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+handicrafts",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "arts_and_crafts",
+    "search_term": "menka handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+traditional+governance",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "governance",
+    "search_term": "menka traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+political+system",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "governance",
+    "search_term": "menka political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+leadership+structure",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "governance",
+    "search_term": "menka leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+colonial+period",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "colonial_impact",
+    "search_term": "menka colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+European+colonization",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "colonial_impact",
+    "search_term": "menka European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+colonial+administration",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "colonial_impact",
+    "search_term": "menka colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+agriculture+farming",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "subsistence_patterns",
+    "search_term": "menka agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+food+production",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "subsistence_patterns",
+    "search_term": "menka food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+traditional+economy",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "subsistence_patterns",
+    "search_term": "menka traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+modern+challenges",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "challenges",
+    "search_term": "menka modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+contemporary+issues",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "challenges",
+    "search_term": "menka contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+cultural+preservation",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "challenges",
+    "search_term": "menka cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+cultural+preservation",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "cultural_revitalization",
+    "search_term": "menka cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+language+revitalization",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "cultural_revitalization",
+    "search_term": "menka language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+cultural+revival",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "cultural_revitalization",
+    "search_term": "menka cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+modern+politics",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "modern_governance",
+    "search_term": "menka modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+contemporary+governance",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "modern_governance",
+    "search_term": "menka contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+political+participation",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "modern_governance",
+    "search_term": "menka political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "pre_contact_history",
+    "search_term": "menka pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+before+European+contact",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "pre_contact_history",
+    "search_term": "menka before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+ancient+traditions",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "pre_contact_history",
+    "search_term": "menka ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "culture",
+    "search_term": "menka culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+cultural+practices",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "culture",
+    "search_term": "menka cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+way+of+life",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "culture",
+    "search_term": "menka way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "oral_traditions",
+    "search_term": "menka oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+myths+legends",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "oral_traditions",
+    "search_term": "menka myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+traditional+narratives",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "oral_traditions",
+    "search_term": "menka traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "social_organization",
+    "search_term": "menka social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+clan+system+family",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "social_organization",
+    "search_term": "menka clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+social+hierarchy",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "social_organization",
+    "search_term": "menka social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "traditional_knowledge",
+    "search_term": "menka traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "traditional_knowledge",
+    "search_term": "menka indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "traditional_knowledge",
+    "search_term": "menka ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "traditional_technology",
+    "search_term": "menka traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+indigenous+technology",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "traditional_technology",
+    "search_term": "menka indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+artisan+skills",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "traditional_technology",
+    "search_term": "menka artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+history+origin+migration",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "history",
+    "search_term": "menka history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+historical+background",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "history",
+    "search_term": "menka historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "history",
+    "search_term": "menka ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+music+dance+songs",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "music_dance",
+    "search_term": "menka music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+musical+instruments",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "music_dance",
+    "search_term": "menka musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/menka+cultural+dances",
+    "type": "category_search",
+    "tribe": "menka",
+    "category": "music_dance",
+    "search_term": "menka cultural dances",
+    "priority": "medium"
+  }
+]

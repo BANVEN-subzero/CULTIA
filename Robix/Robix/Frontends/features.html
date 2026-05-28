@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - CULTIA</title>
+    <link rel="icon" type="image/png" href="img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --earth-brown: #5d4037;
+            --light-cream: #fdfaf5;
+            --dark-text: #2c3e50;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--light-cream);
+            color: var(--dark-text);
+        }
+
+        h1, h2, h3, .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Modern Navbar */
+        .navbar {
+            transition: var(--transition-smooth);
+            padding: 1.2rem 0;
+            background: rgba(253, 250, 245, 0.8) !important;
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .navbar.scrolled {
+            padding: 0.8rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        /* Page Hero */
+        .page-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.05) 0%, rgba(230, 126, 34, 0.05) 100%);
+            text-align: center;
+        }
+
+        .hero-badge {
+            background: rgba(45, 90, 39, 0.1);
+            color: var(--primary-green);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        /* Feature Tabs */
+        .nav-pills .nav-link {
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 700;
+            color: var(--dark-text);
+            transition: var(--transition-smooth);
+            margin: 0 5px;
+            border: 2px solid transparent;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: var(--primary-green) !important;
+            color: white !important;
+            box-shadow: 0 10px 20px rgba(45, 90, 39, 0.2);
+        }
+
+        .nav-pills .nav-link:not(.active):hover {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .feature-card-main {
+            background: white;
+            border-radius: 40px;
+            padding: 50px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.03);
+            margin-top: 40px;
+        }
+
+        .demo-box {
+            background: var(--light-cream);
+            border-radius: 25px;
+            padding: 30px;
+            border-left: 6px solid var(--primary-green);
+            margin: 30px 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .feature-list li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .modern-footer {
+            background: #1a1a1a;
+            color: #d1d1d1;
+            padding: 100px 0 50px;
+            margin-top: 100px;
+            border-radius: 50px 50px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/top.png" alt="CULTIA" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold active" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="explore.html">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-3">
+                    <a href="login.html" class="btn btn-outline-success rounded-pill px-4 fw-bold">Login</a>
+                    <a href="register.html" class="btn btn-success rounded-pill px-4 fw-bold shadow-sm">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="hero-badge" data-aos="fade-down">Innovation in Culture</span>
+            <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">Powerful AI Features</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+                Discover three intelligent modes designed to enhance your cultural learning experience through immersive technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Features -->
+    <section class="py-5">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center mb-5" id="featureTabs" role="tablist" data-aos="fade-up">
+                <li class="nav-item">
+                    <button class="nav-link active" id="educator-tab" data-bs-toggle="pill" data-bs-target="#educator">
+                        <i class="fas fa-chalkboard-teacher me-2"></i> Educator
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="story-tab" data-bs-toggle="pill" data-bs-target="#storyteller">
+                        <i class="fas fa-book-reader me-2"></i> Storyteller
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="assistant-tab" data-bs-toggle="pill" data-bs-target="#assistant">
+                        <i class="fas fa-robot me-2"></i> Assistant
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="featureTabContent">
+                <!-- Educator Mode -->
+                <div class="tab-pane fade show active" id="educator" role="tabpanel">
+                    <div class="feature-card-main" data-aos="zoom-in">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-7">
+                                <h2 class="display-5 fw-bold mb-4">AI Educator Mode</h2>
+                                <p class="lead">Transform your cultural learning experience with our intelligent educator that adapts to your learning style and pace.</p>
+                                
+                                <div class="demo-box">
+                                    <h6 class="fw-bold text-success text-uppercase mb-3"><i class="fas fa-comment-dots me-2"></i> Interaction</h6>
+                                    <p class="mb-2"><strong>You:</strong> "Tell me about the origin of the Nso' tribe."</p>
+                                    <p class="mb-0 italic text-muted"><strong>CULTIA:</strong> "The Nso’ people migrated from Tikari in 1387 following a bloody succession... would you like to explore their linguistic roots?"</p>
+                                </div>
+
+                                <ul class="feature-list row">
+                                    <div class="col-md-6">
+                                        <li>Adaptive Difficulty</li>
+                                        <li>Cultural Context</li>
+                                        <li>Multimedia Lessons</li>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <li>Progress Tracking</li>
+                                        <li>Interactive Quizzes</li>
+                                        <li>Tribe Comparisons</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5 text-center">
+                                <div class="bg-success-subtle p-5 rounded-5">
+                                    <i class="fas fa-graduation-cap display-1 text-success mb-4"></i>
+                                    <h3>Perfect for Students</h3>
+                                    <p class="text-muted">Academic-level research and structured learning paths.</p>
+                                    <a href="register.html" class="btn btn-success rounded-pill w-100 py-3 fw-bold mt-3">Try Educator Mode</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storyteller Mode -->
+                <div class="tab-pane fade" id="storyteller" role="tabpanel">
+                    <div class="feature-card-main">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-7">
+                                <h2 class="display-5 fw-bold mb-4">AI Storyteller Mode</h2>
+                                <p class="lead">Immerse yourself in the rich tapestry of global heritage through captivating legends and folklore brought to life.</p>
+                                
+                                <div class="demo-box">
+                                    <h6 class="fw-bold text-success text-uppercase mb-3"><i class="fas fa-feather-pointed me-2"></i> Folklore</h6>
+                                    <p class="mb-2"><strong>You:</strong> "Tell me a popular folklore from Northern Cameroon."</p>
+                                    <p class="mb-0 italic text-muted"><strong>CULTIA:</strong> "Let me share the tale of the Guere people's pride... Long ago, in the Far North, there was a prosperous village named Guere..."</p>
+                                </div>
+
+                                <ul class="feature-list row">
+                                    <div class="col-md-6">
+                                        <li>Authentic Legends</li>
+                                        <li>Interactive Narrative</li>
+                                        <li>Audio Narration</li>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <li>Visual Accompaniments</li>
+                                        <li>Regional Customization</li>
+                                        <li>Moral Wisdom</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5 text-center">
+                                <div class="bg-warning-subtle p-5 rounded-5">
+                                    <i class="fas fa-journal-whills display-1 text-warning mb-4"></i>
+                                    <h3>Immersive Experience</h3>
+                                    <p class="text-muted">For those who love stories and cultural immersion.</p>
+                                    <a href="register.html" class="btn btn-warning text-white rounded-pill w-100 py-3 fw-bold mt-3">Explore Stories</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assistant Mode -->
+                <div class="tab-pane fade" id="assistant" role="tabpanel">
+                    <div class="feature-card-main">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-7">
+                                <h2 class="display-5 fw-bold mb-4">AI Personal Assistant</h2>
+                                <p class="lead">Your intelligent cultural companion for everyday situations, travel, and business etiquette.</p>
+                                
+                                <div class="demo-box">
+                                    <h6 class="fw-bold text-success text-uppercase mb-3"><i class="fas fa-hand-holding-heart me-2"></i> Guidance</h6>
+                                    <p class="mb-2"><strong>You:</strong> "What is the traditional meal of the Bayangi tribe?"</p>
+                                    <p class="mb-0 italic text-muted"><strong>CULTIA:</strong> "The Bayangi people traditionally eat Eru. Here is the authentic cooking process involving waterleaf and okok..."</p>
+                                </div>
+
+                                <ul class="feature-list row">
+                                    <div class="col-md-6">
+                                        <li>Etiquette Guidance</li>
+                                        <li>Travel Recommendations</li>
+                                        <li>Language Support</li>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <li>Cultural Calendar</li>
+                                        <li>Sensitivity Training</li>
+                                        <li>Cross-Cultural Tips</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5 text-center">
+                                <div class="bg-primary-subtle p-5 rounded-5">
+                                    <i class="fas fa-user-tie display-1 text-primary mb-4"></i>
+                                    <h3>Practical Insights</h3>
+                                    <p class="text-muted">For travelers, business pros, and the curious.</p>
+                                    <a href="register.html" class="btn btn-primary rounded-pill w-100 py-3 fw-bold mt-3">Get Assistance</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo fs-2 fw-bold text-white text-decoration-none d-block mb-4">CULTIA</a>
+                    <p>Bridging cultures through artificial intelligence and preserving heritage for future generations.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4">Platform</h5>
+                    <a href="features.html" class="text-muted d-block mb-2 text-decoration-none">Features</a>
+                    <a href="explore.html" class="text-muted d-block mb-2 text-decoration-none">Explore</a>
+                    <a href="bot/dashboard.html" class="text-muted d-block mb-2 text-decoration-none">Dashboard</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4">Support</h5>
+                    <a href="contact.html" class="text-muted d-block mb-2 text-decoration-none">Contact Us</a>
+                    <a href="#" class="text-muted d-block mb-2 text-decoration-none">Privacy Policy</a>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2025 CULTIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+    </script>
+</body>
+</html>

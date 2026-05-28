@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamessing_people",
+    "type": "main_page",
+    "tribe": "bamessing",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamessing_tribe",
+    "type": "main_page",
+    "tribe": "bamessing",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamessing",
+    "type": "main_page",
+    "tribe": "bamessing",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamessing_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamessing",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "spiritual_beliefs",
+    "search_term": "bamessing religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "spiritual_beliefs",
+    "search_term": "bamessing traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+religious+practices",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "spiritual_beliefs",
+    "search_term": "bamessing religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+colonial+period",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "colonial_impact",
+    "search_term": "bamessing colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+European+colonization",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "colonial_impact",
+    "search_term": "bamessing European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "colonial_impact",
+    "search_term": "bamessing colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "subsistence_patterns",
+    "search_term": "bamessing agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+food+production",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "subsistence_patterns",
+    "search_term": "bamessing food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "subsistence_patterns",
+    "search_term": "bamessing traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "cultural_revitalization",
+    "search_term": "bamessing cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "cultural_revitalization",
+    "search_term": "bamessing language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "cultural_revitalization",
+    "search_term": "bamessing cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+modern+politics",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "modern_governance",
+    "search_term": "bamessing modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "modern_governance",
+    "search_term": "bamessing contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+political+participation",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "modern_governance",
+    "search_term": "bamessing political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "pre_contact_history",
+    "search_term": "bamessing pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "pre_contact_history",
+    "search_term": "bamessing before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "pre_contact_history",
+    "search_term": "bamessing ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "oral_traditions",
+    "search_term": "bamessing oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+myths+legends",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "oral_traditions",
+    "search_term": "bamessing myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "oral_traditions",
+    "search_term": "bamessing traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "social_organization",
+    "search_term": "bamessing social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "social_organization",
+    "search_term": "bamessing clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "social_organization",
+    "search_term": "bamessing social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "traditional_knowledge",
+    "search_term": "bamessing traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "traditional_knowledge",
+    "search_term": "bamessing indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "traditional_knowledge",
+    "search_term": "bamessing ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "traditional_technology",
+    "search_term": "bamessing traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "traditional_technology",
+    "search_term": "bamessing indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "traditional_technology",
+    "search_term": "bamessing artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "music_dance",
+    "search_term": "bamessing music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "music_dance",
+    "search_term": "bamessing musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamessing+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamessing",
+    "category": "music_dance",
+    "search_term": "bamessing cultural dances",
+    "priority": "medium"
+  }
+]

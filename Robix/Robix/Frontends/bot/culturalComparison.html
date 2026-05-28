@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Comparison - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
+            padding: 80px 0 120px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+        }
+
+        .comparison-container {
+            background: white;
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+        }
+
+        .tribe-selector {
+            background: #f8f9fa;
+            border: 2px solid #eee;
+            border-radius: 20px;
+            padding: 15px 25px;
+            font-weight: 700;
+            color: #333;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .tribe-selector:focus {
+            border-color: var(--primary-green);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(45, 90, 39, 0.1);
+            outline: none;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+
+        .comparison-row {
+            background: white;
+            transition: var(--transition-smooth);
+        }
+
+        .comparison-label {
+            width: 200px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 20px 0 0 20px;
+            font-weight: 800;
+            color: var(--primary-green);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            vertical-align: middle;
+        }
+
+        .comparison-value {
+            padding: 25px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            background: #fff;
+            color: #444;
+            line-height: 1.6;
+            width: 40%;
+        }
+
+        .comparison-value:last-child {
+            border-radius: 0 20px 20px 0;
+            border-right: 1px solid #eee;
+        }
+
+        .comparison-value:nth-child(2) {
+            border-left: 1px solid #eee;
+        }
+
+        .tribe-header-card {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            margin-bottom: 30px;
+            border-bottom: 5px solid var(--primary-green);
+        }
+
+        .tribe-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(45, 90, 39, 0.1);
+            color: var(--primary-green);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Cultural Comparison</h1>
+                <p class="lead opacity-75 mb-0 mx-auto" style="max-width: 700px;">Compare the unique traditions, languages, and social structures of Cameroon's diverse ethnic groups side-by-side.</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="comparison-container" data-aos="fade-up">
+                <div class="row g-4 mb-5">
+                    <div class="col-md-5">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Select First Tribe</label>
+                        <select class="tribe-selector" id="tribe1Select">
+                            <option value="bamileke">Bamileke</option>
+                            <option value="bassa">Bassa</option>
+                            <option value="beti">Beti-Pahuin</option>
+                            <option value="douala">Douala</option>
+                            <option value="fulani">Fulani (Peul)</option>
+                            <option value="nso">Lamso</option>
+                            <option value="bamum">Bamum</option>
+                            <option value="bakweri">Bakweri</option>
+                            <option value="bafut">Bafut</option>
+                            <option value="bakossi">Bakossi</option>
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Select Second Tribe</label>
+                        <select class="tribe-selector" id="tribe2Select">
+                            <option value="bassa">Bassa</option>
+                            <option value="bamileke">Bamileke</option>
+                            <option value="beti">Beti-Pahuin</option>
+                            <option value="douala">Douala</option>
+                            <option value="fulani">Fulani (Peul)</option>
+                            <option value="nso">Lamso</option>
+                            <option value="bamum">Bamum</option>
+                            <option value="bakweri">Bakweri</option>
+                            <option value="bafut">Bafut</option>
+                            <option value="bakossi">Bakossi</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button class="btn btn-success w-100 rounded-pill py-3 fw-bold mb-2" id="compareBtn">
+                            <i class="fas fa-exchange-alt me-2"></i>Compare
+                        </button>
+                    </div>
+                </div>
+
+                <div id="comparisonResults" style="display: none;">
+                    <div class="table-responsive">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="text-center">
+                                        <div class="tribe-header-card mx-2">
+                                            <span class="tribe-icon">🏔️</span>
+                                            <h4 class="fw-bold mb-0" id="tribe1Name">Bamileke</h4>
+                                        </div>
+                                    </th>
+                                    <th class="text-center">
+                                        <div class="tribe-header-card mx-2">
+                                            <span class="tribe-icon">�</span>
+                                            <h4 class="fw-bold mb-0" id="tribe2Name">Bassa</h4>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="comparisonBody">
+                                <!-- JS Injected -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Comparison Summary Section -->
+                    <div class="mt-5 p-4 rounded-4 bg-light border-start border-5 border-success">
+                        <h4 class="fw-bold mb-3"><i class="fas fa-lightbulb text-warning me-2"></i>Cultural Insight</h4>
+                        <p id="comparisonInsight" class="lead text-muted mb-0">Select two tribes and click compare to see their unique differences and similarities.</p>
+                    </div>
+                </div>
+
+                <div id="selectPrompt" class="text-center py-5">
+                    <i class="fas fa-hand-pointer display-1 opacity-10 mb-3"></i>
+                    <h3 class="fw-bold text-muted">Ready to Compare?</h3>
+                    <p class="text-muted">Choose two ethnic groups from the dropdowns above and click "Compare" to explore their heritage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/settingsManager.js"></script>
+
+    <script>
+        const tribeData = {
+            bamileke: {
+                name: "Bamileke",
+                icon: "🏔️",
+                region: "Western Highlands",
+                language: "Bamileke languages (Ghomala, Yemba, etc.)",
+                structure: "Centralized chiefdoms ruled by a semi-divine Fon.",
+                food: "Achu (pounded cocoyams) and Yellow Soup",
+                tradition: "Lem Festival and 'Cry-die' funerals",
+                clothing: "Toghu (embroidered royal cloth)"
+            },
+            bassa: {
+                name: "Bassa",
+                icon: "🌳",
+                region: "Littoral & Centre Regions",
+                language: "Bassa language",
+                structure: "Historically segmentary lineages without central kings.",
+                food: "Bassa Ndole or Mintoumba (cassava cake)",
+                tradition: "Mvet epic storytelling and Um Nyobe legacy",
+                clothing: "Traditional wraps and modern Kabba"
+            },
+            beti: {
+                name: "Beti-Pahuin",
+                icon: "🌿",
+                region: "Centre, South & East Regions",
+                language: "Ewondo, Bulu, Fang",
+                structure: "Lineage-based society with influential elders.",
+                food: "Sanga (maize and palm nut stew)",
+                tradition: "So initiation rites and ancestral music",
+                clothing: "Obom (bark cloth) and colorful wraps"
+            },
+            douala: {
+                name: "Douala",
+                icon: "⚓",
+                region: "Littoral Region (Coastal)",
+                language: "Duala language",
+                structure: "Merchant-based social structure with influential kings.",
+                food: "Ndole with Miondo (steamed cassava)",
+                tradition: "Ngondo (Water spirit festival)",
+                clothing: "Sanza and modern Kabba"
+            },
+            fulani: {
+                name: "Fulani",
+                icon: "🐄",
+                region: "North & Adamawa Regions",
+                language: "Fulfulde",
+                structure: "Nomadic or semi-nomadic with Lamidats (Sultanates).",
+                food: "Fura da Nono (Millet and milk)",
+                tradition: "Fantasia (Horse riding displays)",
+                clothing: "Babban riga and colorful turbans"
+            },
+            nso: {
+                name: "Lamso",
+                icon: "🛡️",
+                region: "Northwest Region",
+                language: "Lamso",
+                structure: "Highly structured kingdom with Fon and secret societies.",
+                food: "Khati-Khati (roasted chicken) and Fufu corn",
+                tradition: "Ngiri and Nwerong secret society dances",
+                clothing: "Northwest regalia with feathered caps"
+            },
+            bamum: {
+                name: "Bamum",
+                icon: "👑",
+                region: "West Region (Noun)",
+                language: "Shupamom (unique script)",
+                structure: "Ancient Sultanate with rich royal history.",
+                food: "Koki (steamed bean pudding)",
+                tradition: "Nguon Festival",
+                clothing: "Royal embroidered gowns"
+            },
+            bakweri: {
+                name: "Bakweri",
+                icon: "🌋",
+                region: "Southwest Region (Mt. Cameroon)",
+                language: "Mokpwe",
+                structure: "Community councils and Mount Cameroon deities.",
+                food: "Kwakoko and Bible (grated cocoyam)",
+                tradition: "Mount Cameroon Race of Hope",
+                clothing: "Sawa-style wraps and hats"
+            },
+            bafut: {
+                name: "Bafut",
+                icon: "🏰",
+                region: "Northwest Region",
+                language: "Bafut language",
+                structure: "Powerful Fon with a historic Palace.",
+                food: "Pounded cocoyam and garden egg soup",
+                tradition: "Abin Festival",
+                clothing: "Intricate Grassfields embroidery"
+            },
+            bakossi: {
+                name: "Bakossi",
+                icon: "⛰️",
+                region: "Southwest (Manengouba)",
+                language: "Akosse",
+                structure: "Council of elders and forest spirits.",
+                food: "Ekwang (grated cocoyam and leaves)",
+                tradition: "Manengouba Twin Lakes rituals",
+                clothing: "Forest-style wraps and beads"
+            }
+        };
+
+        const features = [
+            { id: 'region', label: 'Primary Region', icon: 'fa-map-marker-alt' },
+            { id: 'language', label: 'Language Group', icon: 'fa-language' },
+            { id: 'structure', label: 'Social Structure', icon: 'fa-users' },
+            { id: 'food', label: 'Signature Dishes', icon: 'fa-utensils' },
+            { id: 'tradition', label: 'Main Festivals', icon: 'fa-calendar-alt' },
+            { id: 'clothing', label: 'Traditional Attire', icon: 'fa-tshirt' }
+        ];
+
+        function init() {
+            AOS.init({ duration: 800, once: true });
+            
+            const settingsManager = new SettingsManager();
+            window.settingsManager = settingsManager;
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Comparison');
+                if (window.settingsManager) window.settingsManager.initHeaderThemeToggle();
+            });
+
+            document.getElementById('compareBtn').addEventListener('click', () => {
+                document.getElementById('selectPrompt').style.display = 'none';
+                document.getElementById('comparisonResults').style.display = 'block';
+                updateComparison();
+                
+                // Scroll to results
+                document.getElementById('comparisonResults').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        }
+
+        function updateComparison() {
+            const t1Key = document.getElementById('tribe1Select').value;
+            const t2Key = document.getElementById('tribe2Select').value;
+            const t1 = tribeData[t1Key];
+            const t2 = tribeData[t2Key];
+
+            document.getElementById('tribe1Name').textContent = t1.name;
+            document.getElementById('tribe2Name').textContent = t2.name;
+            document.querySelectorAll('.tribe-icon')[0].textContent = t1.icon;
+            document.querySelectorAll('.tribe-icon')[1].textContent = t2.icon;
+
+            const body = document.getElementById('comparisonBody');
+            body.innerHTML = '';
+
+            features.forEach((f, index) => {
+                const row = document.createElement('tr');
+                row.className = 'comparison-row';
+                row.setAttribute('data-aos', 'fade-up');
+                row.setAttribute('data-aos-delay', (index * 100).toString());
+                row.innerHTML = `
+                    <td class="comparison-label">
+                        <div class="feature-icon"><i class="fas ${f.icon}"></i></div>
+                        ${f.label}
+                    </td>
+                    <td class="comparison-value">${t1[f.id]}</td>
+                    <td class="comparison-value">${t2[f.id]}</td>
+                `;
+                body.appendChild(row);
+            });
+
+            // Generate Insight
+            generateInsight(t1, t2);
+            
+            // Refresh AOS for new elements
+            AOS.refresh();
+        }
+
+        function generateInsight(t1, t2) {
+            const insightBox = document.getElementById('comparisonInsight');
+            let insight = "";
+
+            if (t1.region === t2.region) {
+                insight = `Both the ${t1.name} and ${t2.name} share the same geographic roots in the ${t1.region}. This proximity has led to similar architectural styles and agricultural practices, though their languages and specific traditions remain distinct and unique.`;
+            } else {
+                insight = `The ${t1.name} from the ${t1.region} and the ${t2.name} from the ${t2.region} represent the incredible diversity of Cameroon. While one thrives in the ${t1.region.toLowerCase()}, the other has adapted to the ${t2.region.toLowerCase()}, showing how environment shapes culture.`;
+            }
+
+            if (t1.name === "Bamileke" || t2.name === "Bamileke" || t1.name === "Nso" || t2.name === "Nso") {
+                insight += " You'll notice both groups have strong traditional leadership systems with a 'Fon' at the center of social life.";
+            }
+
+            insightBox.textContent = insight;
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/kapsiki_people",
+    "type": "main_page",
+    "tribe": "kapsiki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kapsiki_tribe",
+    "type": "main_page",
+    "tribe": "kapsiki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kapsiki",
+    "type": "main_page",
+    "tribe": "kapsiki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kapsiki_ethnic_group",
+    "type": "main_page",
+    "tribe": "kapsiki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "spiritual_beliefs",
+    "search_term": "kapsiki religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+traditional+religion",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "spiritual_beliefs",
+    "search_term": "kapsiki traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+religious+practices",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "spiritual_beliefs",
+    "search_term": "kapsiki religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+economy+trade",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "economy",
+    "search_term": "kapsiki economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+economic+activities",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "economy",
+    "search_term": "kapsiki economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+livelihood",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "economy",
+    "search_term": "kapsiki livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "arts_and_crafts",
+    "search_term": "kapsiki art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+traditional+arts",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "arts_and_crafts",
+    "search_term": "kapsiki traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+handicrafts",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "arts_and_crafts",
+    "search_term": "kapsiki handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+traditional+governance",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "governance",
+    "search_term": "kapsiki traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+political+system",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "governance",
+    "search_term": "kapsiki political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+leadership+structure",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "governance",
+    "search_term": "kapsiki leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+colonial+period",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "colonial_impact",
+    "search_term": "kapsiki colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+European+colonization",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "colonial_impact",
+    "search_term": "kapsiki European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+colonial+administration",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "colonial_impact",
+    "search_term": "kapsiki colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+agriculture+farming",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "subsistence_patterns",
+    "search_term": "kapsiki agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+food+production",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "subsistence_patterns",
+    "search_term": "kapsiki food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+traditional+economy",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "subsistence_patterns",
+    "search_term": "kapsiki traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+modern+challenges",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "challenges",
+    "search_term": "kapsiki modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+contemporary+issues",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "challenges",
+    "search_term": "kapsiki contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "challenges",
+    "search_term": "kapsiki cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "cultural_revitalization",
+    "search_term": "kapsiki cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+language+revitalization",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "cultural_revitalization",
+    "search_term": "kapsiki language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+cultural+revival",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "cultural_revitalization",
+    "search_term": "kapsiki cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+modern+politics",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "modern_governance",
+    "search_term": "kapsiki modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+contemporary+governance",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "modern_governance",
+    "search_term": "kapsiki contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+political+participation",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "modern_governance",
+    "search_term": "kapsiki political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "pre_contact_history",
+    "search_term": "kapsiki pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+before+European+contact",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "pre_contact_history",
+    "search_term": "kapsiki before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+ancient+traditions",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "pre_contact_history",
+    "search_term": "kapsiki ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "culture",
+    "search_term": "kapsiki culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+cultural+practices",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "culture",
+    "search_term": "kapsiki cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+way+of+life",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "culture",
+    "search_term": "kapsiki way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "oral_traditions",
+    "search_term": "kapsiki oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+myths+legends",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "oral_traditions",
+    "search_term": "kapsiki myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+traditional+narratives",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "oral_traditions",
+    "search_term": "kapsiki traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "social_organization",
+    "search_term": "kapsiki social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+clan+system+family",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "social_organization",
+    "search_term": "kapsiki clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+social+hierarchy",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "social_organization",
+    "search_term": "kapsiki social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "traditional_knowledge",
+    "search_term": "kapsiki traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "traditional_knowledge",
+    "search_term": "kapsiki indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "traditional_knowledge",
+    "search_term": "kapsiki ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "traditional_technology",
+    "search_term": "kapsiki traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+indigenous+technology",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "traditional_technology",
+    "search_term": "kapsiki indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+artisan+skills",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "traditional_technology",
+    "search_term": "kapsiki artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+history+origin+migration",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "history",
+    "search_term": "kapsiki history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+historical+background",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "history",
+    "search_term": "kapsiki historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "history",
+    "search_term": "kapsiki ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+music+dance+songs",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "music_dance",
+    "search_term": "kapsiki music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+musical+instruments",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "music_dance",
+    "search_term": "kapsiki musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kapsiki+cultural+dances",
+    "type": "category_search",
+    "tribe": "kapsiki",
+    "category": "music_dance",
+    "search_term": "kapsiki cultural dances",
+    "priority": "medium"
+  }
+]

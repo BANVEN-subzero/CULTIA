@@ -1,0 +1,366 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bakweri_people",
+    "type": "main_page",
+    "tribe": "bakweri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakweri_tribe",
+    "type": "main_page",
+    "tribe": "bakweri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakweri",
+    "type": "main_page",
+    "tribe": "bakweri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakweri_ethnic_group",
+    "type": "main_page",
+    "tribe": "bakweri",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "spiritual_beliefs",
+    "search_term": "bakweri religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+traditional+religion",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "spiritual_beliefs",
+    "search_term": "bakweri traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+religious+practices",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "spiritual_beliefs",
+    "search_term": "bakweri religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+economy+trade",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "economy",
+    "search_term": "bakweri economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+economic+activities",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "economy",
+    "search_term": "bakweri economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+livelihood",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "economy",
+    "search_term": "bakweri livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+traditional+governance",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "governance",
+    "search_term": "bakweri traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+political+system",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "governance",
+    "search_term": "bakweri political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+leadership+structure",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "governance",
+    "search_term": "bakweri leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+colonial+period",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "colonial_impact",
+    "search_term": "bakweri colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+European+colonization",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "colonial_impact",
+    "search_term": "bakweri European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+colonial+administration",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "colonial_impact",
+    "search_term": "bakweri colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "subsistence_patterns",
+    "search_term": "bakweri agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+food+production",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "subsistence_patterns",
+    "search_term": "bakweri food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+traditional+economy",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "subsistence_patterns",
+    "search_term": "bakweri traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+modern+challenges",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "challenges",
+    "search_term": "bakweri modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "challenges",
+    "search_term": "bakweri contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "challenges",
+    "search_term": "bakweri cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "cultural_revitalization",
+    "search_term": "bakweri cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+language+revitalization",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "cultural_revitalization",
+    "search_term": "bakweri language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+cultural+revival",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "cultural_revitalization",
+    "search_term": "bakweri cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+modern+politics",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "modern_governance",
+    "search_term": "bakweri modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "modern_governance",
+    "search_term": "bakweri contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+political+participation",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "modern_governance",
+    "search_term": "bakweri political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "pre_contact_history",
+    "search_term": "bakweri pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+before+European+contact",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "pre_contact_history",
+    "search_term": "bakweri before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "pre_contact_history",
+    "search_term": "bakweri ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "oral_traditions",
+    "search_term": "bakweri oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+myths+legends",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "oral_traditions",
+    "search_term": "bakweri myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "oral_traditions",
+    "search_term": "bakweri traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "social_organization",
+    "search_term": "bakweri social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+clan+system+family",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "social_organization",
+    "search_term": "bakweri clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "social_organization",
+    "search_term": "bakweri social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "traditional_knowledge",
+    "search_term": "bakweri traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "traditional_knowledge",
+    "search_term": "bakweri indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "traditional_knowledge",
+    "search_term": "bakweri ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "traditional_technology",
+    "search_term": "bakweri traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "traditional_technology",
+    "search_term": "bakweri indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+artisan+skills",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "traditional_technology",
+    "search_term": "bakweri artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "music_dance",
+    "search_term": "bakweri music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+musical+instruments",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "music_dance",
+    "search_term": "bakweri musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakweri+cultural+dances",
+    "type": "category_search",
+    "tribe": "bakweri",
+    "category": "music_dance",
+    "search_term": "bakweri cultural dances",
+    "priority": "medium"
+  }
+]

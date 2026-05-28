@@ -1,0 +1,43 @@
+{
+  "batch_number": 7,
+  "tribes_count": 5,
+  "total_sections": 95,
+  "tribes": [
+    {
+      "tribe": "bamendjou",
+      "missing_count": 19,
+      "template_file": "comprehensive_research\\batch_7\\research_bamendjou\\bamendjou_research_template.json",
+      "guide_file": "comprehensive_research\\batch_7\\research_bamendjou\\bamendjou_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_7\\research_bamendjou\\bamendjou_research_urls.json"
+    },
+    {
+      "tribe": "bandjoun",
+      "missing_count": 19,
+      "template_file": "comprehensive_research\\batch_7\\research_bandjoun\\bandjoun_research_template.json",
+      "guide_file": "comprehensive_research\\batch_7\\research_bandjoun\\bandjoun_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_7\\research_bandjoun\\bandjoun_research_urls.json"
+    },
+    {
+      "tribe": "bayangam",
+      "missing_count": 19,
+      "template_file": "comprehensive_research\\batch_7\\research_bayangam\\bayangam_research_template.json",
+      "guide_file": "comprehensive_research\\batch_7\\research_bayangam\\bayangam_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_7\\research_bayangam\\bayangam_research_urls.json"
+    },
+    {
+      "tribe": "babungo",
+      "missing_count": 19,
+      "template_file": "comprehensive_research\\batch_7\\research_babungo\\babungo_research_template.json",
+      "guide_file": "comprehensive_research\\batch_7\\research_babungo\\babungo_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_7\\research_babungo\\babungo_research_urls.json"
+    },
+    {
+      "tribe": "batanga",
+      "missing_count": 19,
+      "template_file": "comprehensive_research\\batch_7\\research_batanga\\batanga_research_template.json",
+      "guide_file": "comprehensive_research\\batch_7\\research_batanga\\batanga_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_7\\research_batanga\\batanga_research_urls.json"
+    }
+  ],
+  "research_instructions": "Research 5 tribes with 95 total sections"
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CULTIA</title>
+    <link rel="icon" type="image/png" href="img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .auth-wrapper {
+            width: 100%;
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+        .auth-card {
+            background: white;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .auth-side-image {
+            flex: 1;
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.9) 0%, rgba(26, 58, 23, 0.9) 100%), url('img/cmr.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .auth-form-container {
+            flex: 1.2;
+            padding: 80px 60px;
+        }
+
+        .form-control {
+            border-radius: 15px;
+            padding: 15px 20px;
+            border: 2px solid #f0f0f0;
+            background: #f8f9fa;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-green);
+            background: white;
+            box-shadow: none;
+        }
+
+        .btn-auth {
+            border-radius: 15px;
+            padding: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-success-modern {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+        }
+
+        .btn-success-modern:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(45, 90, 39, 0.3);
+            color: white;
+        }
+
+        .social-btn {
+            width: 100%;
+            border-radius: 15px;
+            padding: 12px;
+            border: 2px solid #f0f0f0;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .social-btn:hover {
+            background: #f8f9fa;
+            border-color: #ddd;
+        }
+
+        .floating-label-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--primary-green);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+            transition: var(--transition-smooth);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 991px) {
+            .auth-card {
+                flex-direction: column;
+            }
+            .auth-side-image {
+                padding: 40px;
+                text-align: center;
+            }
+            .auth-form-container {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card" data-aos="zoom-in">
+            <!-- Left Side -->
+            <div class="auth-side-image d-none d-lg-flex">
+                <div class="mb-5">
+                    <img src="img/top.png" height="80" class="mb-4">
+                    <h1 class="display-4 fw-bold">Welcome Back!</h1>
+                    <p class="fs-5 opacity-75">Your journey through Cameroon's rich culture continues here. Sign in to explore more.</p>
+                </div>
+                <div class="mt-auto">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="bg-white bg-opacity-20 p-3 rounded-4">
+                            <i class="fas fa-quote-left fs-3"></i>
+                        </div>
+                        <p class="mb-0 font-italic small opacity-75">"Culture is the widening of the mind and of the spirit."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="auth-form-container">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                
+                <h2 class="fw-bold mb-2">Login to Account</h2>
+                <p class="text-muted mb-4">Please enter your details to sign in.</p>
+
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small text-uppercase text-muted">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="name@company.com" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <label class="form-label fw-bold small text-uppercase text-muted mb-0">Password</label>
+                            <a href="#" class="text-decoration-none small fw-bold text-success">Forgot password?</a>
+                        </div>
+                        <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="mb-4 d-flex align-items-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label small fw-bold text-muted" for="rememberMe">
+                                Keep me logged in
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-auth btn-success-modern w-100 mb-4" id="loginBtn">
+                        Sign In <i class="fas fa-sign-in-alt ms-2"></i>
+                    </button>
+
+                    <div class="text-center mb-4">
+                        <span class="text-muted small">Or continue with</span>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <button type="button" class="social-btn">
+                                <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20">
+                                <span class="small">Google</span>
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="social-btn">
+                                <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" width="20">
+                                <span class="small">Facebook</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="text-center mt-5 mb-0 text-muted small fw-bold">
+                        Don't have an account? <a href="register.html" class="text-success text-decoration-none">Create Account</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Handle login logic
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('loginBtn');
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Signing in...';
+            btn.disabled = true;
+
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password }),
+                    credentials: 'include'
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    // Clear any previous user's local data
+                    const keysToRemove = [
+                        'userPoints', 'userBadges', 'userActivities', 
+                        'gamificationUpdate', 'languageLearningProgress'
+                    ];
+                    keysToRemove.forEach(key => localStorage.removeItem(key));
+                    
+                    localStorage.setItem('user_id', data.user_id);
+                    localStorage.setItem('userId', data.user_id); // for gamification.js
+                    
+                    window.location.href = 'bot/dashboard.html';
+                } else {
+                    alert(data.message || 'Login failed. Please check your credentials.');
+                    btn.innerHTML = 'Sign In';
+                    btn.disabled = false;
+                }
+            } catch (error) {
+                console.error('Login error:', error);
+                alert('An error occurred during login. Please try again later.');
+                btn.innerHTML = 'Sign In';
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+{
+  "tribe_name": "sawa",
+  "research_date": "2024-10-17",
+  "total_categories": 11,
+  "completion_status": "pending",
+  "categories": {
+    "spiritual_beliefs": {
+      "description": "Traditional religion, spiritual practices, ceremonies, beliefs",
+      "research_focus": "Religious beliefs, spiritual practices, sacred rituals, deities",
+      "example_format": "Traditional Bamileke spirituality centers on ancestor worship and belief in a supreme being.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "colonial_impact": {
+      "description": "Information about colonial impact",
+      "research_focus": "Key aspects of colonial impact",
+      "example_format": "Example information about colonial impact",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "subsistence_patterns": {
+      "description": "Food production, agriculture, hunting, fishing, economic base",
+      "research_focus": "How they obtain food and resources, economic activities",
+      "example_format": "Bamileke practice intensive terrace farming of maize, beans, and coffee cultivation.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "cultural_revitalization": {
+      "description": "Information about cultural revitalization",
+      "research_focus": "Key aspects of cultural revitalization",
+      "example_format": "Example information about cultural revitalization",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "modern_governance": {
+      "description": "Information about modern governance",
+      "research_focus": "Key aspects of modern governance",
+      "example_format": "Example information about modern governance",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "pre_contact_history": {
+      "description": "Information about pre contact history",
+      "research_focus": "Key aspects of pre contact history",
+      "example_format": "Example information about pre contact history",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "oral_traditions": {
+      "description": "Information about oral traditions",
+      "research_focus": "Key aspects of oral traditions",
+      "example_format": "Example information about oral traditions",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "social_organization": {
+      "description": "Family structure, clans, kinship systems, social hierarchy",
+      "research_focus": "How society is organized, family relationships, social structure",
+      "example_format": "Bamileke society is organized around patrilineal clans with complex kinship systems.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "traditional_knowledge": {
+      "description": "Information about traditional knowledge",
+      "research_focus": "Key aspects of traditional knowledge",
+      "example_format": "Example information about traditional knowledge",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "traditional_technology": {
+      "description": "Tools, crafts, traditional skills, metalwork, pottery, weaving",
+      "research_focus": "Traditional tools, crafts, technological innovations, artisan skills",
+      "example_format": "Bamileke artisans are renowned for bronze casting, wood carving, and textile production.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "music_dance": {
+      "description": "Traditional music, musical instruments, dance forms, songs",
+      "research_focus": "Musical traditions, instruments, dance styles, ceremonial performances",
+      "example_format": "Bamileke music features drums, xylophones, and elaborate masked dances for ceremonies.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    }
+  }
+}

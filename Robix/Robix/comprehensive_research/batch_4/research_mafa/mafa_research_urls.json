@@ -1,0 +1,390 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/mafa_people",
+    "type": "main_page",
+    "tribe": "mafa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mafa_tribe",
+    "type": "main_page",
+    "tribe": "mafa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mafa",
+    "type": "main_page",
+    "tribe": "mafa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mafa_ethnic_group",
+    "type": "main_page",
+    "tribe": "mafa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "spiritual_beliefs",
+    "search_term": "mafa religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+traditional+religion",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "spiritual_beliefs",
+    "search_term": "mafa traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+religious+practices",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "spiritual_beliefs",
+    "search_term": "mafa religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+economy+trade",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "economy",
+    "search_term": "mafa economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+economic+activities",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "economy",
+    "search_term": "mafa economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+livelihood",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "economy",
+    "search_term": "mafa livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+traditional+governance",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "governance",
+    "search_term": "mafa traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+political+system",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "governance",
+    "search_term": "mafa political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+leadership+structure",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "governance",
+    "search_term": "mafa leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+colonial+period",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "colonial_impact",
+    "search_term": "mafa colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+European+colonization",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "colonial_impact",
+    "search_term": "mafa European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+colonial+administration",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "colonial_impact",
+    "search_term": "mafa colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+agriculture+farming",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "subsistence_patterns",
+    "search_term": "mafa agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+food+production",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "subsistence_patterns",
+    "search_term": "mafa food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+traditional+economy",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "subsistence_patterns",
+    "search_term": "mafa traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+modern+challenges",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "challenges",
+    "search_term": "mafa modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+contemporary+issues",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "challenges",
+    "search_term": "mafa contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+cultural+preservation",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "challenges",
+    "search_term": "mafa cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+cultural+preservation",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "cultural_revitalization",
+    "search_term": "mafa cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+language+revitalization",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "cultural_revitalization",
+    "search_term": "mafa language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+cultural+revival",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "cultural_revitalization",
+    "search_term": "mafa cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+modern+politics",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "modern_governance",
+    "search_term": "mafa modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+contemporary+governance",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "modern_governance",
+    "search_term": "mafa contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+political+participation",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "modern_governance",
+    "search_term": "mafa political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "pre_contact_history",
+    "search_term": "mafa pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+before+European+contact",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "pre_contact_history",
+    "search_term": "mafa before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+ancient+traditions",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "pre_contact_history",
+    "search_term": "mafa ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "oral_traditions",
+    "search_term": "mafa oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+myths+legends",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "oral_traditions",
+    "search_term": "mafa myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+traditional+narratives",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "oral_traditions",
+    "search_term": "mafa traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "social_organization",
+    "search_term": "mafa social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+clan+system+family",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "social_organization",
+    "search_term": "mafa clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+social+hierarchy",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "social_organization",
+    "search_term": "mafa social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "traditional_knowledge",
+    "search_term": "mafa traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "traditional_knowledge",
+    "search_term": "mafa indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "traditional_knowledge",
+    "search_term": "mafa ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "traditional_technology",
+    "search_term": "mafa traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+indigenous+technology",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "traditional_technology",
+    "search_term": "mafa indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+artisan+skills",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "traditional_technology",
+    "search_term": "mafa artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+history+origin+migration",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "history",
+    "search_term": "mafa history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+historical+background",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "history",
+    "search_term": "mafa historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "history",
+    "search_term": "mafa ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+music+dance+songs",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "music_dance",
+    "search_term": "mafa music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+musical+instruments",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "music_dance",
+    "search_term": "mafa musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mafa+cultural+dances",
+    "type": "category_search",
+    "tribe": "mafa",
+    "category": "music_dance",
+    "search_term": "mafa cultural dances",
+    "priority": "medium"
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamumka_people",
+    "type": "main_page",
+    "tribe": "bamumka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamumka_tribe",
+    "type": "main_page",
+    "tribe": "bamumka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamumka",
+    "type": "main_page",
+    "tribe": "bamumka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamumka_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamumka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "spiritual_beliefs",
+    "search_term": "bamumka religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "spiritual_beliefs",
+    "search_term": "bamumka traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+religious+practices",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "spiritual_beliefs",
+    "search_term": "bamumka religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+colonial+period",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "colonial_impact",
+    "search_term": "bamumka colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+European+colonization",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "colonial_impact",
+    "search_term": "bamumka European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "colonial_impact",
+    "search_term": "bamumka colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "subsistence_patterns",
+    "search_term": "bamumka agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+food+production",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "subsistence_patterns",
+    "search_term": "bamumka food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "subsistence_patterns",
+    "search_term": "bamumka traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "cultural_revitalization",
+    "search_term": "bamumka cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "cultural_revitalization",
+    "search_term": "bamumka language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "cultural_revitalization",
+    "search_term": "bamumka cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+modern+politics",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "modern_governance",
+    "search_term": "bamumka modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "modern_governance",
+    "search_term": "bamumka contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+political+participation",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "modern_governance",
+    "search_term": "bamumka political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "pre_contact_history",
+    "search_term": "bamumka pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "pre_contact_history",
+    "search_term": "bamumka before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "pre_contact_history",
+    "search_term": "bamumka ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "oral_traditions",
+    "search_term": "bamumka oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+myths+legends",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "oral_traditions",
+    "search_term": "bamumka myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "oral_traditions",
+    "search_term": "bamumka traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "social_organization",
+    "search_term": "bamumka social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "social_organization",
+    "search_term": "bamumka clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "social_organization",
+    "search_term": "bamumka social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "traditional_knowledge",
+    "search_term": "bamumka traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "traditional_knowledge",
+    "search_term": "bamumka indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "traditional_knowledge",
+    "search_term": "bamumka ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "traditional_technology",
+    "search_term": "bamumka traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "traditional_technology",
+    "search_term": "bamumka indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "traditional_technology",
+    "search_term": "bamumka artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "music_dance",
+    "search_term": "bamumka music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "music_dance",
+    "search_term": "bamumka musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamumka+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamumka",
+    "category": "music_dance",
+    "search_term": "bamumka cultural dances",
+    "priority": "medium"
+  }
+]

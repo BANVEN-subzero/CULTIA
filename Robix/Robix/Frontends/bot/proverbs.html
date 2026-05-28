@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbs & Sayings - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(45, 90, 39, 0.9), rgba(26, 58, 22, 0.9)), url('../img/proverbs-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0 140px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+            position: relative;
+        }
+
+        .proverb-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            height: 100%;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border-bottom: 5px solid transparent;
+        }
+
+        .proverb-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+            border-bottom-color: var(--primary-green);
+        }
+
+        .proverb-icon {
+            font-size: 2.5rem;
+            color: var(--accent-orange);
+            margin-bottom: 20px;
+        }
+
+        .proverb-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #2d3436;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .proverb-meaning {
+            color: #636e72;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .btn-explore {
+            padding: 12px 25px;
+            border-radius: 15px;
+            background: #f8f9fa;
+            color: var(--primary-green);
+            border: 2px solid var(--primary-green);
+            font-weight: 700;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+        }
+
+        .btn-explore:hover {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 18px 30px 18px 60px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-green);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Proverbs & Sayings</h1>
+                <p class="lead opacity-75 mb-5 mx-auto" style="max-width: 700px;">Ancient wisdom distilled into timeless phrases. Explore the philosophical heart of Cameroon's diverse cultures.</p>
+                
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search by theme or keyword..." id="proverbSearch">
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="row g-4" id="proverbGrid">
+                <!-- Proverb 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-eye"></i></div>
+                        <h4 class="fw-bold mb-3">Patience & Caution</h4>
+                        <p class="proverb-text">"The chameleon looks in both directions before it moves"</p>
+                        <p class="proverb-meaning">Wisdom lies in careful observation and patience before taking action.</p>
+                        <a href="patience_caution.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-sun"></i></div>
+                        <h4 class="fw-bold mb-3">Self-Confidence</h4>
+                        <p class="proverb-text">"When the cock crows, the sun is not afraid to rise"</p>
+                        <p class="proverb-meaning">True strength comes from within; do not let others' voices dictate your path.</p>
+                        <a href="self_confidence.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-water"></i></div>
+                        <h4 class="fw-bold mb-3">Gratitude & Origins</h4>
+                        <p class="proverb-text">"The river does not forget its source"</p>
+                        <p class="proverb-meaning">Always remember and honor your roots and those who helped you along the way.</p>
+                        <a href="gratitude_origins.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-tree"></i></div>
+                        <h4 class="fw-bold mb-3">Strong Foundations</h4>
+                        <p class="proverb-text">"When the roots of a tree decay, the branches will fall"</p>
+                        <p class="proverb-meaning">Success is temporary without a solid moral and cultural foundation.</p>
+                        <a href="strong_foundations.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-road"></i></div>
+                        <h4 class="fw-bold mb-3">Experience</h4>
+                        <p class="proverb-text">"One does not show the road to the one who knows it"</p>
+                        <p class="proverb-meaning">Respect the wisdom of those who have already walked the path before you.</p>
+                        <a href="respecting_experience.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-clock"></i></div>
+                        <h4 class="fw-bold mb-3">Time & Opportunity</h4>
+                        <p class="proverb-text">"A canoe does not travel twice in the same water"</p>
+                        <p class="proverb-meaning">Every moment is unique; cherish the opportunities that come your way.</p>
+                        <a href="time_opportunity.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 7 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-users"></i></div>
+                        <h4 class="fw-bold mb-3">Teamwork</h4>
+                        <p class="proverb-text">"One hand does not tie a bundle"</p>
+                        <p class="proverb-meaning">Great tasks require cooperation and the strength of the community.</p>
+                        <a href="teamwork.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 8 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-seedling"></i></div>
+                        <h4 class="fw-bold mb-3">Hope & Patience</h4>
+                        <p class="proverb-text">"The sun that shines for all does not skip the poor man's house"</p>
+                        <p class="proverb-meaning">Maintain hope, for nature's blessings and better times are universal.</p>
+                        <a href="hope.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 9 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-wind"></i></div>
+                        <h4 class="fw-bold mb-3">Adaptability</h4>
+                        <p class="proverb-text">"The wind does not break a tree that can bend"</p>
+                        <p class="proverb-meaning">Flexibility and resilience are key to surviving life's challenges.</p>
+                        <a href="adaptability.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 10 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-comment-dots"></i></div>
+                        <h4 class="fw-bold mb-3">Speaking Up</h4>
+                        <p class="proverb-text">"A child who does not cry will die on its mother's back"</p>
+                        <p class="proverb-meaning">One must voice their needs and speak their truth to receive help or change.</p>
+                        <a href="speaking_up.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 11 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-link"></i></div>
+                        <h4 class="fw-bold mb-3">Staying Connected</h4>
+                        <p class="proverb-text">"A bird that flies off the earth and lands on an anthill is still on the ground"</p>
+                        <p class="proverb-meaning">No matter how high you rise, never lose touch with your basic reality and roots.</p>
+                        <a href="staying_connected.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+
+                <!-- Proverb 12 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="proverb-card">
+                        <div class="proverb-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4 class="fw-bold mb-3">Consequences</h4>
+                        <p class="proverb-text">"He who swallows a large stone must have confidence in his throat"</p>
+                        <p class="proverb-meaning">Be prepared for the outcomes of your bold or risky decisions.</p>
+                        <a href="consequences_choices.html" class="btn-explore">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                document.getElementById('sidebarToggle')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Proverbs');
+                document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+
+            // Search logic
+            const searchInput = document.getElementById('proverbSearch');
+            searchInput.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.proverb-card');
+                cards.forEach(card => {
+                    const text = card.querySelector('.proverb-text').textContent.toLowerCase();
+                    const meaning = card.querySelector('.proverb-meaning').textContent.toLowerCase();
+                    const title = card.querySelector('h4').textContent.toLowerCase();
+                    if(text.includes(term) || meaning.includes(term) || title.includes(term)) {
+                        card.parentElement.style.display = 'block';
+                    } else {
+                        card.parentElement.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

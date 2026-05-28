@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/giziga_people",
+    "type": "main_page",
+    "tribe": "giziga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/giziga_tribe",
+    "type": "main_page",
+    "tribe": "giziga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/giziga",
+    "type": "main_page",
+    "tribe": "giziga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/giziga_ethnic_group",
+    "type": "main_page",
+    "tribe": "giziga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "spiritual_beliefs",
+    "search_term": "giziga religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+traditional+religion",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "spiritual_beliefs",
+    "search_term": "giziga traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+religious+practices",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "spiritual_beliefs",
+    "search_term": "giziga religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "arts_and_crafts",
+    "search_term": "giziga art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+traditional+arts",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "arts_and_crafts",
+    "search_term": "giziga traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+handicrafts",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "arts_and_crafts",
+    "search_term": "giziga handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+traditional+governance",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "governance",
+    "search_term": "giziga traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+political+system",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "governance",
+    "search_term": "giziga political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+leadership+structure",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "governance",
+    "search_term": "giziga leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+colonial+period",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "colonial_impact",
+    "search_term": "giziga colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+European+colonization",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "colonial_impact",
+    "search_term": "giziga European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+colonial+administration",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "colonial_impact",
+    "search_term": "giziga colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+agriculture+farming",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "subsistence_patterns",
+    "search_term": "giziga agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+food+production",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "subsistence_patterns",
+    "search_term": "giziga food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+traditional+economy",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "subsistence_patterns",
+    "search_term": "giziga traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+modern+challenges",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "challenges",
+    "search_term": "giziga modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+contemporary+issues",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "challenges",
+    "search_term": "giziga contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+cultural+preservation",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "challenges",
+    "search_term": "giziga cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+cultural+preservation",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "cultural_revitalization",
+    "search_term": "giziga cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+language+revitalization",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "cultural_revitalization",
+    "search_term": "giziga language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+cultural+revival",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "cultural_revitalization",
+    "search_term": "giziga cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+modern+politics",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "modern_governance",
+    "search_term": "giziga modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+contemporary+governance",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "modern_governance",
+    "search_term": "giziga contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+political+participation",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "modern_governance",
+    "search_term": "giziga political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "pre_contact_history",
+    "search_term": "giziga pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+before+European+contact",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "pre_contact_history",
+    "search_term": "giziga before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+ancient+traditions",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "pre_contact_history",
+    "search_term": "giziga ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "culture",
+    "search_term": "giziga culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+cultural+practices",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "culture",
+    "search_term": "giziga cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+way+of+life",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "culture",
+    "search_term": "giziga way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "oral_traditions",
+    "search_term": "giziga oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+myths+legends",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "oral_traditions",
+    "search_term": "giziga myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+traditional+narratives",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "oral_traditions",
+    "search_term": "giziga traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "social_organization",
+    "search_term": "giziga social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+clan+system+family",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "social_organization",
+    "search_term": "giziga clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+social+hierarchy",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "social_organization",
+    "search_term": "giziga social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "traditional_knowledge",
+    "search_term": "giziga traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "traditional_knowledge",
+    "search_term": "giziga indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "traditional_knowledge",
+    "search_term": "giziga ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "traditional_technology",
+    "search_term": "giziga traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+indigenous+technology",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "traditional_technology",
+    "search_term": "giziga indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+artisan+skills",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "traditional_technology",
+    "search_term": "giziga artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+history+origin+migration",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "history",
+    "search_term": "giziga history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+historical+background",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "history",
+    "search_term": "giziga historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "history",
+    "search_term": "giziga ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+music+dance+songs",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "music_dance",
+    "search_term": "giziga music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+musical+instruments",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "music_dance",
+    "search_term": "giziga musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/giziga+cultural+dances",
+    "type": "category_search",
+    "tribe": "giziga",
+    "category": "music_dance",
+    "search_term": "giziga cultural dances",
+    "priority": "medium"
+  }
+]

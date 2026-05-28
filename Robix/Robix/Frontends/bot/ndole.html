@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndolé of Cameroon - CulturalAI Educator</title>
+    <link rel="stylesheet" href="css/educator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <a href="../index.html" class="logo" style="text-decoration: none;">
+                    <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <span class="logo-text">CulturalAI Educator</span>
+                </a>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger">
+                    <span class="hamburger"></span></span>
+                </button>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="sidebar-nav">
+                <!-- Learn Section -->
+                <div class="nav-section">
+                    <h3 class="section-header">Learn</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-home"></i></span>
+                                <span class="nav-label">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tribesAndEthnicGroups.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-users"></i></span>
+                                <span class="nav-label">Tribes & Ethnic Groups</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="historicalTimelines.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-history"></i></span>
+                                <span class="nav-label">Historical Timelines</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                             <a href="folkloreAndMyths.html" class="nav-link">
+                             <span class="nav-icon"><i class="fas fa-book-open"></i></span>
+                                <span class="nav-label">Folklore & Myths</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="proverbs.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-comment-dots"></i></span>
+                                <span class="nav-label">Proverbs & Sayings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="interactiveLanguageLearning.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-language"></i></span>
+                                <span class="nav-label">Interactive Language Learning</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Engage Section -->
+                <div class="nav-section">
+                    <h3 class="section-header">Engage</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="quizzes.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-puzzle-piece"></i></span>
+                                <span class="nav-label">Quizzes & Challenges</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saved.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-save"></i></span>
+                                <span class="nav-label">Saved Content</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Settings Section -->
+                <div class="nav-section">
+                    <h3 class="section-header">Settings</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="settings.html" class="nav-link">
+                                  <span class="nav-icon"><i class="fas fa-cog"></i></span>
+                                <span class="nav-label">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="logoutBtn">
+                                <span class="nav-icon"><i class="fas fa-sign-out-alt"></i></span>
+                                <span class="nav-label">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Voice Input Button -->
+            <div class="voice-input-container">
+                <button class="voice-btn" id="voiceBtn">
+                    <span class="voice-icon"><i class="fas fa-microphone"></i></span>
+                    <span class="voice-label">Voice Input</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="content-header">
+                <div class="header-left">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h1 class="page-title">Ndolé of Cameroon</h1>
+                </div>
+                <div class="header-right">
+                    <button class="switch-mode-btn" onclick="window.location.href='assistant.html'">
+                        <span class="nav-icon"><i class="fas fa-robot"></i></span>
+                        <span class="switch-label">Switch to Assistant</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Content Body -->
+            <div class="content-body">
+                <div class="section-header-content">
+                    <h2>Ndolé of Cameroon</h2>
+                    <p>A traditional Cameroonian dish with deep cultural significance</p>
+                    <button class="learn-btn" onclick="window.location.href='tribesAndEthnicGroups.html'" style="margin-top: 15px; width: auto;">
+                        <i class="fas fa-arrow-left"></i> Back to Tribes & Ethnic Groups
+                    </button>
+                </div>
+                
+                <div class="content-section active">
+                    <div class="content-grid">
+                        <div class="content-card">
+                            <div class="card-image">
+                                <img src="image/download (11).jpeg" alt="Ndolé of Cameroon" style="width:100%; border-radius: 8px;">
+                            </div>
+                            <div class="card-content">
+                                <h3>Origins and Cultural Significance</h3>
+                                <p>Ndolé is a traditional dish that originates from the Littoral region of Cameroon, particularly associated with the Douala people. This beloved meal holds a special place in Cameroonian cuisine and is recognized throughout the country for its unique flavors and cultural importance.</p>
+                                <p>The dish is more than just food; it represents the rich culinary heritage of the Cameroonian people and is often prepared during special occasions, family gatherings, and celebrations. Its preparation and sharing foster community bonds and cultural identity.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card">
+                            <div class="card-content">
+                                <h3>Ingredients and Preparation</h3>
+                                <p>The main ingredients of Ndolé include:</p>
+                                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                    <li>Bitter leaves (ndolé leaves) - the key ingredient that gives the dish its name</li>
+                                    <li>Fish or meat (often catfish or beef)</li>
+                                    <li>Peanuts or peanut butter</li>
+                                    <li>Onions, garlic, and spices</li>
+                                    <li>Palm oil (a staple in West African cooking)</li>
+                                    <li>Vegetables such as okra, eggplant, or green beans</li>
+                                </ul>
+                                <p>The preparation process involves carefully washing and cooking the bitter leaves to reduce their bitterness, then combining them with the other ingredients to create a rich, flavorful stew. The dish is typically served with rice, plantains, or cassava.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card">
+                            <div class="card-content">
+                                <h3>Cultural Context</h3>
+                                <p>Ndolé reflects the diverse cultural influences in Cameroon, combining indigenous ingredients with cooking techniques that have been passed down through generations. The use of bitter leaves is characteristic of many traditional African dishes and is believed to have health benefits.</p>
+                                <p>The dish represents the resourcefulness of Cameroonian cooks, who transform simple, locally available ingredients into complex and satisfying meals. It also demonstrates the importance of communal cooking and sharing in Cameroonian culture.</p>
+                                <p>In many Cameroonian households, the preparation of Ndolé is a social activity where family members and neighbors come together to help with the various steps, strengthening community ties.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card">
+                            <div class="card-content">
+                                <h3>Regional Variations</h3>
+                                <p>While Ndolé originates from the Littoral region, it has been adopted and adapted by various ethnic groups throughout Cameroon. Different regions may use local varieties of bitter leaves or substitute different proteins based on availability.</p>
+                                <p>In some areas, the dish is made with crayfish or other seafood, reflecting the coastal influences. Inland regions might use different types of meat or incorporate local vegetables that are not found in the coastal areas.</p>
+                                <p>Despite these variations, the essence of Ndolé remains the same - a celebration of local ingredients and traditional cooking methods that connect people to their cultural roots.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Voice Input Modal -->
+    <div class="voice-modal" id="voiceModal">
+        <div class="voice-modal-content">
+            <div class="voice-animation">
+                <div class="voice-circle"></div>
+                <div class="voice-waves">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <h3>Listening...</h3>
+            <p>Ask me anything about cultures, traditions, or history</p>
+            <button class="close-voice-btn" id="closeVoiceBtn">Stop Listening</button>
+        </div>
+    </div>
+
+    <script src="js/educator.js"></script>
+<script src="../js/themeManager.js"></script>
+</body>
+</html>

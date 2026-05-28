@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/beti_people",
+    "type": "main_page",
+    "tribe": "beti",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/beti_tribe",
+    "type": "main_page",
+    "tribe": "beti",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/beti",
+    "type": "main_page",
+    "tribe": "beti",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/beti_ethnic_group",
+    "type": "main_page",
+    "tribe": "beti",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "spiritual_beliefs",
+    "search_term": "beti religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+traditional+religion",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "spiritual_beliefs",
+    "search_term": "beti traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+religious+practices",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "spiritual_beliefs",
+    "search_term": "beti religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+colonial+period",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "colonial_impact",
+    "search_term": "beti colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+European+colonization",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "colonial_impact",
+    "search_term": "beti European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+colonial+administration",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "colonial_impact",
+    "search_term": "beti colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+agriculture+farming",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "subsistence_patterns",
+    "search_term": "beti agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+food+production",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "subsistence_patterns",
+    "search_term": "beti food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+traditional+economy",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "subsistence_patterns",
+    "search_term": "beti traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+cultural+preservation",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "cultural_revitalization",
+    "search_term": "beti cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+language+revitalization",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "cultural_revitalization",
+    "search_term": "beti language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+cultural+revival",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "cultural_revitalization",
+    "search_term": "beti cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+modern+politics",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "modern_governance",
+    "search_term": "beti modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+contemporary+governance",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "modern_governance",
+    "search_term": "beti contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+political+participation",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "modern_governance",
+    "search_term": "beti political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "pre_contact_history",
+    "search_term": "beti pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+before+European+contact",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "pre_contact_history",
+    "search_term": "beti before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+ancient+traditions",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "pre_contact_history",
+    "search_term": "beti ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "oral_traditions",
+    "search_term": "beti oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+myths+legends",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "oral_traditions",
+    "search_term": "beti myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+traditional+narratives",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "oral_traditions",
+    "search_term": "beti traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "social_organization",
+    "search_term": "beti social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+clan+system+family",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "social_organization",
+    "search_term": "beti clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+social+hierarchy",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "social_organization",
+    "search_term": "beti social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "traditional_knowledge",
+    "search_term": "beti traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "traditional_knowledge",
+    "search_term": "beti indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "traditional_knowledge",
+    "search_term": "beti ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "traditional_technology",
+    "search_term": "beti traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+indigenous+technology",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "traditional_technology",
+    "search_term": "beti indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+artisan+skills",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "traditional_technology",
+    "search_term": "beti artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+music+dance+songs",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "music_dance",
+    "search_term": "beti music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+musical+instruments",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "music_dance",
+    "search_term": "beti musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/beti+cultural+dances",
+    "type": "category_search",
+    "tribe": "beti",
+    "category": "music_dance",
+    "search_term": "beti cultural dances",
+    "priority": "medium"
+  }
+]

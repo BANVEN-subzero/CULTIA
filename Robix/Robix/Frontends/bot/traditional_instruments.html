@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Instruments - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/images (7).jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+            border-left: 4px solid var(--primary-green);
+            padding-left: 30px;
+        }
+
+        .content-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">Traditional Instruments</h1>
+                <p class="lead fs-4 opacity-75">The Soulful Melodies of Cameroon</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="content-container" data-aos="fade-up">
+                <a href="tribesAndEthnicGroups.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Tribes
+                </a>
+
+                <div class="content-section">
+                    <h3>Musical Heritage of Cameroon</h3>
+                    <p class="content-text">Cameroon has a rich musical heritage with diverse traditional instruments that reflect the country's cultural diversity. With over 250 ethnic groups, each contributing their unique musical traditions, Cameroon's musical landscape is incredibly varied and vibrant.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>The Balafon: A Melodic Treasure</h3>
+                    <p class="content-text">The balafon is one of the most recognizable traditional instruments in Cameroon. This xylophone consists of wooden keys mounted over gourd resonators, each tuned to produce specific notes. Historically, it served as a means of communication between villages through rhythmic patterns.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>The Mvet: A Cultural Icon</h3>
+                    <p class="content-text">The mvet is a double-sided harp with a calabash resonator that holds special significance among the Beti-Pahuin peoples. It typically has between 5 and 8 strings and is used by griots to accompany epic tales and historical accounts.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Drums: The Heartbeat</h3>
+                    <p class="content-text">Drums, including the ekwe log drum, are the foundation of Cameroonian music. The ekwe is made from a hollowed-out tree trunk and produces different pitches. Drumming is highly sophisticated, with different rhythms conveying specific messages for ceremonies and gatherings.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Other Notable Instruments</h3>
+                    <ul class="content-text">
+                        <li><strong>Flutes:</strong> Made from bamboo, wood, or bone.</li>
+                        <li><strong>String Instruments:</strong> Various types of lyres and fiddles.</li>
+                        <li><strong>Percussion:</strong> Rattles, bells, and friction instruments from natural materials.</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h3>Cultural Preservation</h3>
+                    <p class="content-text">Efforts are being made to preserve these instruments through cultural centers and schools. Many contemporary musicians blend traditional sounds with modern genres, ensuring their enduring relevance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Traditional Instruments');
+            });
+        });
+    </script>
+</body>
+
+</html>

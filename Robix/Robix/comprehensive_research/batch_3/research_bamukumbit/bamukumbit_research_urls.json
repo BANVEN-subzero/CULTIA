@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamukumbit_people",
+    "type": "main_page",
+    "tribe": "bamukumbit",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamukumbit_tribe",
+    "type": "main_page",
+    "tribe": "bamukumbit",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamukumbit",
+    "type": "main_page",
+    "tribe": "bamukumbit",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamukumbit_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamukumbit",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "spiritual_beliefs",
+    "search_term": "bamukumbit religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "spiritual_beliefs",
+    "search_term": "bamukumbit traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+religious+practices",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "spiritual_beliefs",
+    "search_term": "bamukumbit religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+colonial+period",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "colonial_impact",
+    "search_term": "bamukumbit colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+European+colonization",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "colonial_impact",
+    "search_term": "bamukumbit European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "colonial_impact",
+    "search_term": "bamukumbit colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "subsistence_patterns",
+    "search_term": "bamukumbit agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+food+production",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "subsistence_patterns",
+    "search_term": "bamukumbit food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "subsistence_patterns",
+    "search_term": "bamukumbit traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "cultural_revitalization",
+    "search_term": "bamukumbit cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "cultural_revitalization",
+    "search_term": "bamukumbit language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "cultural_revitalization",
+    "search_term": "bamukumbit cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+modern+politics",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "modern_governance",
+    "search_term": "bamukumbit modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "modern_governance",
+    "search_term": "bamukumbit contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+political+participation",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "modern_governance",
+    "search_term": "bamukumbit political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "pre_contact_history",
+    "search_term": "bamukumbit pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "pre_contact_history",
+    "search_term": "bamukumbit before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "pre_contact_history",
+    "search_term": "bamukumbit ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "oral_traditions",
+    "search_term": "bamukumbit oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+myths+legends",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "oral_traditions",
+    "search_term": "bamukumbit myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "oral_traditions",
+    "search_term": "bamukumbit traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "social_organization",
+    "search_term": "bamukumbit social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "social_organization",
+    "search_term": "bamukumbit clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "social_organization",
+    "search_term": "bamukumbit social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "traditional_knowledge",
+    "search_term": "bamukumbit traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "traditional_knowledge",
+    "search_term": "bamukumbit indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "traditional_knowledge",
+    "search_term": "bamukumbit ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "traditional_technology",
+    "search_term": "bamukumbit traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "traditional_technology",
+    "search_term": "bamukumbit indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "traditional_technology",
+    "search_term": "bamukumbit artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "music_dance",
+    "search_term": "bamukumbit music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "music_dance",
+    "search_term": "bamukumbit musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamukumbit+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamukumbit",
+    "category": "music_dance",
+    "search_term": "bamukumbit cultural dances",
+    "priority": "medium"
+  }
+]

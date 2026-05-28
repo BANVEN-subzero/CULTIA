@@ -1,0 +1,366 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/tikar_people",
+    "type": "main_page",
+    "tribe": "tikar",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/tikar_tribe",
+    "type": "main_page",
+    "tribe": "tikar",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/tikar",
+    "type": "main_page",
+    "tribe": "tikar",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/tikar_ethnic_group",
+    "type": "main_page",
+    "tribe": "tikar",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "spiritual_beliefs",
+    "search_term": "tikar religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+traditional+religion",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "spiritual_beliefs",
+    "search_term": "tikar traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+religious+practices",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "spiritual_beliefs",
+    "search_term": "tikar religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+economy+trade",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "economy",
+    "search_term": "tikar economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+economic+activities",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "economy",
+    "search_term": "tikar economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+livelihood",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "economy",
+    "search_term": "tikar livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+traditional+governance",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "governance",
+    "search_term": "tikar traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+political+system",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "governance",
+    "search_term": "tikar political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+leadership+structure",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "governance",
+    "search_term": "tikar leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+colonial+period",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "colonial_impact",
+    "search_term": "tikar colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+European+colonization",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "colonial_impact",
+    "search_term": "tikar European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+colonial+administration",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "colonial_impact",
+    "search_term": "tikar colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+agriculture+farming",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "subsistence_patterns",
+    "search_term": "tikar agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+food+production",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "subsistence_patterns",
+    "search_term": "tikar food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+traditional+economy",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "subsistence_patterns",
+    "search_term": "tikar traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+modern+challenges",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "challenges",
+    "search_term": "tikar modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+contemporary+issues",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "challenges",
+    "search_term": "tikar contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+cultural+preservation",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "challenges",
+    "search_term": "tikar cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+cultural+preservation",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "cultural_revitalization",
+    "search_term": "tikar cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+language+revitalization",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "cultural_revitalization",
+    "search_term": "tikar language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+cultural+revival",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "cultural_revitalization",
+    "search_term": "tikar cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+modern+politics",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "modern_governance",
+    "search_term": "tikar modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+contemporary+governance",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "modern_governance",
+    "search_term": "tikar contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+political+participation",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "modern_governance",
+    "search_term": "tikar political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "pre_contact_history",
+    "search_term": "tikar pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+before+European+contact",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "pre_contact_history",
+    "search_term": "tikar before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+ancient+traditions",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "pre_contact_history",
+    "search_term": "tikar ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "oral_traditions",
+    "search_term": "tikar oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+myths+legends",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "oral_traditions",
+    "search_term": "tikar myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+traditional+narratives",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "oral_traditions",
+    "search_term": "tikar traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "social_organization",
+    "search_term": "tikar social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+clan+system+family",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "social_organization",
+    "search_term": "tikar clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+social+hierarchy",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "social_organization",
+    "search_term": "tikar social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "traditional_knowledge",
+    "search_term": "tikar traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "traditional_knowledge",
+    "search_term": "tikar indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "traditional_knowledge",
+    "search_term": "tikar ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "traditional_technology",
+    "search_term": "tikar traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+indigenous+technology",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "traditional_technology",
+    "search_term": "tikar indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+artisan+skills",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "traditional_technology",
+    "search_term": "tikar artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+music+dance+songs",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "music_dance",
+    "search_term": "tikar music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+musical+instruments",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "music_dance",
+    "search_term": "tikar musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/tikar+cultural+dances",
+    "type": "category_search",
+    "tribe": "tikar",
+    "category": "music_dance",
+    "search_term": "tikar cultural dances",
+    "priority": "medium"
+  }
+]

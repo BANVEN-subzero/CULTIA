@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/grassfields_people",
+    "type": "main_page",
+    "tribe": "grassfields",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/grassfields_tribe",
+    "type": "main_page",
+    "tribe": "grassfields",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/grassfields",
+    "type": "main_page",
+    "tribe": "grassfields",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/grassfields_ethnic_group",
+    "type": "main_page",
+    "tribe": "grassfields",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "spiritual_beliefs",
+    "search_term": "grassfields religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+traditional+religion",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "spiritual_beliefs",
+    "search_term": "grassfields traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+religious+practices",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "spiritual_beliefs",
+    "search_term": "grassfields religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+colonial+period",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "colonial_impact",
+    "search_term": "grassfields colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+European+colonization",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "colonial_impact",
+    "search_term": "grassfields European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+colonial+administration",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "colonial_impact",
+    "search_term": "grassfields colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+agriculture+farming",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "subsistence_patterns",
+    "search_term": "grassfields agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+food+production",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "subsistence_patterns",
+    "search_term": "grassfields food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+traditional+economy",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "subsistence_patterns",
+    "search_term": "grassfields traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+cultural+preservation",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "cultural_revitalization",
+    "search_term": "grassfields cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+language+revitalization",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "cultural_revitalization",
+    "search_term": "grassfields language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+cultural+revival",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "cultural_revitalization",
+    "search_term": "grassfields cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+modern+politics",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "modern_governance",
+    "search_term": "grassfields modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+contemporary+governance",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "modern_governance",
+    "search_term": "grassfields contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+political+participation",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "modern_governance",
+    "search_term": "grassfields political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "pre_contact_history",
+    "search_term": "grassfields pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+before+European+contact",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "pre_contact_history",
+    "search_term": "grassfields before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+ancient+traditions",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "pre_contact_history",
+    "search_term": "grassfields ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "oral_traditions",
+    "search_term": "grassfields oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+myths+legends",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "oral_traditions",
+    "search_term": "grassfields myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+traditional+narratives",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "oral_traditions",
+    "search_term": "grassfields traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "social_organization",
+    "search_term": "grassfields social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+clan+system+family",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "social_organization",
+    "search_term": "grassfields clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+social+hierarchy",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "social_organization",
+    "search_term": "grassfields social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "traditional_knowledge",
+    "search_term": "grassfields traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "traditional_knowledge",
+    "search_term": "grassfields indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "traditional_knowledge",
+    "search_term": "grassfields ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "traditional_technology",
+    "search_term": "grassfields traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+indigenous+technology",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "traditional_technology",
+    "search_term": "grassfields indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+artisan+skills",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "traditional_technology",
+    "search_term": "grassfields artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+music+dance+songs",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "music_dance",
+    "search_term": "grassfields music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+musical+instruments",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "music_dance",
+    "search_term": "grassfields musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/grassfields+cultural+dances",
+    "type": "category_search",
+    "tribe": "grassfields",
+    "category": "music_dance",
+    "search_term": "grassfields cultural dances",
+    "priority": "medium"
+  }
+]

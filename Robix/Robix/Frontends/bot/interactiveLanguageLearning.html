@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Language Learning - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/educator.css">
+    <link rel="stylesheet" href="css/assistant.css">
+
+    <style>
+        :root {
+            --primary-green: #863d08;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Adjust main content for sidebar */
+        .main-content {
+            flex: 1;
+            margin-left: 0;
+            transition: margin-left 0.3s ease;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #miniSidebar.expanded + .main-content {
+            margin-left: 280px;
+        }
+
+        #languageLearningContainer {
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+
+        /* Fix for educator.css conflicts */
+        .tribe-card-v3 {
+            background: white !important;
+            border-radius: 25px !important;
+            padding: 30px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar Container -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <!-- Header Container -->
+        <div id="header-container"></div>
+
+        <div id="languageLearningContainer">
+            <!-- Dynamic Content Injected Here -->
+            <div class="text-center py-5">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-3">Loading your language learning journey...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Essential Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/settingsManager.js"></script>
+    
+    <!-- Original Logic Scripts -->
+    <script src="js/languageData.js"></script>
+    <script src="js/languageDataService.js"></script>
+    <script src="js/languageLearning.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Load Sidebar and Header
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load Sidebar
+            fetch('includes/sidebar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('sidebar-container').innerHTML = data;
+                    
+                    // Initialize Sidebar logic
+                    const sidebar = document.getElementById('sidebar');
+                    const sidebarToggle = document.getElementById('sidebarToggle');
+                    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                    
+                    if (sidebarToggle && sidebar) {
+                        sidebarToggle.addEventListener('click', () => {
+                            sidebar.classList.toggle('collapsed');
+                            // Handle layout shift if needed
+                        });
+                    }
+                    
+                    if (mobileMenuBtn && sidebar) {
+                        mobileMenuBtn.addEventListener('click', () => {
+                            sidebar.classList.toggle('show');
+                        });
+                    }
+
+                    // Mark active link
+                    const currentPath = window.location.pathname.split('/').pop();
+                    const navLinks = document.querySelectorAll('.nav-link');
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === currentPath) {
+                            link.parentElement.classList.add('active');
+                        }
+                    });
+                });
+
+            // Load Header
+            fetch('includes/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Language Learning');
+                    
+                    // Initialize Theme Toggle in Header
+                    if (window.settingsManager) {
+                        window.settingsManager.initHeaderThemeToggle();
+                    }
+                });
+        });
+
+        // Global functions to bridge with class instance
+        let learningSystem;
+        window.addEventListener('load', () => {
+            console.log('Window loaded, initializing learning system...');
+            // Ensure container exists before initializing
+            if (document.getElementById('languageLearningContainer')) {
+                try {
+                    learningSystem = new LanguageLearningSystem();
+                    window.learningSystem = learningSystem;
+                    window.languageLearning = learningSystem;
+                    console.log('Learning system initialized successfully');
+                } catch (error) {
+                    console.error('Error initializing learning system:', error);
+                    document.getElementById('languageLearningContainer').innerHTML = `
+                        <div class="alert alert-danger m-4">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            Error loading language learning module. Please refresh the page.
+                        </div>
+                    `;
+                }
+            } else {
+                console.error('Container languageLearningContainer not found even after window load!');
+            }
+        });
+
+        function renderDashboard() {
+            if (learningSystem) learningSystem.renderDashboard();
+        }
+
+        function startTribeLearning(tribeKey) {
+            if (learningSystem) learningSystem.startTribeLearning(tribeKey);
+        }
+
+        function startLesson(tribeKey, lessonIndex) {
+            if (learningSystem) learningSystem.startLesson(tribeKey, lessonIndex);
+        }
+        
+        function startQuiz(tribeKey, lessonIndex) {
+            if (learningSystem) {
+                learningSystem.startLesson(tribeKey, lessonIndex);
+                setTimeout(() => {
+                    if (learningSystem.currentLesson && learningSystem.currentLesson.lesson.phrases) {
+                        learningSystem.startQuiz(learningSystem.currentLesson.lesson.phrases);
+                    }
+                }, 100);
+            }
+        }
+
+        // Global playAudio for any remaining legacy calls
+        function playAudio(text, tribeKey) {
+            if (window.languageLearning) {
+                window.languageLearning.playAudio(text, tribeKey);
+            }
+        }
+    </script>
+</body>
+</html>

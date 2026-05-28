@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CulturalAI Educator</title>
+    <link rel="stylesheet" href="css/educator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+       <aside class="sidebar" id="sidebar">
+            <!-- Sidebar Header -->
+         <div class="sidebar-header">
+                <a href="../index.html" class="logo" style="text-decoration: none;">
+                    <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <span class="logo-text">CulturalAI Educator</span>
+                </a>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger">
+                    <span class="hamburger"></span></span>
+                </button>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="sidebar-nav">
+                <!-- Learn Section -->
+                <div class="nav-section">
+                    <h3 class="section-header">Learn</h3>
+                    <ul class="nav-list">
+              <li class="nav-item active">
+                            <a href="dashboard.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-home"></i></span>
+                                <span class="nav-label">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tribesAndEthnicGroups.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-users"></i></span>
+                                <span class="nav-label">Tribes & Ethnic Groups</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="historicalTimelines.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-history"></i></span>
+                                <span class="nav-label">Historical Timelines</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                             <a href="folkloreAndMyths.html" class="nav-link">
+                             <span class="nav-icon"><i class="fas fa-book-open"></i></span>
+                                <span class="nav-label">Folklore & Myths</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="proverbs.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-comment-dots"></i></span>
+                                <span class="nav-label">Proverbs & Sayings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="interactiveLanguageLearning.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-language"></i></span>
+                                <span class="nav-label">Interactive Language Learning</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="videoTestimonials.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-video"></i></span>
+                                <span class="nav-label">Video Testimonials</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="virtualMuseum.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-landmark"></i></span>
+                                <span class="nav-label">Virtual Museum</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="culturalComparison.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-balance-scale"></i></span>
+                                <span class="nav-label">Cultural Comparisons</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tribeForumImproved.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-comments"></i></span>
+                                <span class="nav-label">Tribe Forum</span>
+                            </a>
+                        </li>
+                        <!-- New Features -->
+                        <li class="nav-item">
+                            <a href="culturalRecipes.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-utensils"></i></span>
+                                <span class="nav-label">Cultural Recipes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Engage Section -->
+                <div class="nav-section">
+                    <h3 class="section-header">Engage</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="quizzes.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-puzzle-piece"></i></span>
+                                <span class="nav-label">Quizzes & Challenges</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gamification.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-trophy"></i></span>
+                                <span class="nav-label">Achievements</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="saved.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-save"></i></span>
+                                <span class="nav-label">Saved Content</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Settings Section -->
+                <div class="nav-section">
+                    <h3 class="section-header">Settings</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="settings.html" class="nav-link">
+                                  <span class="nav-icon"><i class="fas fa-cog"></i></span>
+                                <span class="nav-label">Settings</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="#" class="nav-link" id="logoutBtn">
+                                <span class="nav-icon"><i class="fas fa-sign-out-alt"></i></span>
+                                <span class="nav-label">Logout</span>
+                            </a>
+                        </li>
+</ul>
+                </div>
+            </nav>
+
+            <!-- Voice Input Button -->
+            <div class="voice-input-container">
+                <button class="voice-btn" id="voiceBtn">
+                    <span class="voice-icon"><i class="fas fa-microphone"></i></span>
+                    <span class="voice-label">Voice Input</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="content-header">
+                <div class="header-left">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h1 class="page-title">Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <button class="switch-mode-btn" onclick="window.location.href='assistant.html'">
+                        <span class="nav-icon"><i class="fas fa-robot"></i></span>
+                        <span class="switch-label">Switch to Assistant</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Content Body -->
+           <div class="content-body">
+    <!-- Dashboard Content -->
+    <div class="dashboard-grid">
+        <div class="stats-card">
+            <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="stat-content">
+                <h3>Learning Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 65%"></div>
+                </div>
+                <p>65% Complete</p>
+            </div>
+        </div>
+        
+        <div class="stats-card">
+            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+            <div class="stat-content">
+                <h3>Achievements</h3>
+                <p class="stat-number">12</p>
+                <p>Badges Earned</p>
+            </div>
+        </div>
+        
+        <div class="stats-card">
+            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+            <div class="stat-content">
+                <h3>Study Time</h3>
+                <p class="stat-number">24h</p>
+                <p>This Week</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+                <div class="recent-content">
+                    <h2>Continue Learning</h2>
+                    <div class="content-grid">
+                        <div class="content-card">
+                            <div class="card-image"><img src="image/images (7).jpeg" alt="image" ></div>
+                            <div class="card-content">
+                                <h3>Ancient Bamileke stories</h3>
+                                <p>Explore the fascinating world of Bamileke cultutre, traditional instruments, chefdom.</p>
+                                <div class="card-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 40%"></div>
+                                    </div>
+                                    <span>40% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card">
+                            <div class="card-image"><img src="image/images (1).png" alt=""></div>
+                            <div class="card-content">
+                                <h3>Bamoun Tradition</h3>
+                                <p>Discover the Bamoun Danse, dresses, and seasonal festivals.</p>
+                                <div class="card-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span>75% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card">
+                            <div class="card-image"><img src="image/download (1).png" alt=""></div>
+                            <div class="card-content">
+                                <h3>Cameroon Art & Crafts</h3>
+                                <p>Learn about traditional Cameroon art forms and their cultural significance.</p>
+                                <div class="card-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 20%"></div>
+                                    </div>
+                                    <span>20% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="recent-activity">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">??</div>
+                            <div class="activity-content">
+                                <h4>Completed: cameroon Folklore</h4>
+                                <p>You finished reading about The Talking Python</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">??</div>
+                            <div class="activity-content">
+                                <h4>Achievement Unlocked: Cultural Explorer</h4>
+                                <p>You've explored 5 different cultural traditions</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">??</div>
+                            <div class="activity-content">
+                                <h4>Quiz Completed: Bamoun Customs</h4>
+                                <p>Score: 8/10 - Great job on Bamoun culture!</p>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Voice Input Modal -->
+    <div class="voice-modal" id="voiceModal">
+        <div class="voice-modal-content">
+            <div class="voice-animation">
+                <div class="voice-circle"></div>
+                <div class="voice-waves">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <h3>Listening...</h3>
+            <p>Ask me anything about cultures, traditions, or history</p>
+            <button class="close-voice-btn" id="closeVoiceBtn">Stop Listening</button>
+        </div>
+    </div>
+
+    <script src="js/educator.js"></script>
+<script src="../js/themeManager.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTIA - Discover Culture Through AI</title>
+    <link rel="icon" type="image/png" href="img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --earth-brown: #5d4037;
+            --light-cream: #fdfaf5;
+            --dark-text: #2c3e50;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--light-cream);
+            color: var(--dark-text);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Modern Navbar */
+        .navbar {
+            transition: var(--transition-smooth);
+            padding: 1.2rem 0;
+            background: rgba(253, 250, 245, 0.8) !important;
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .navbar.scrolled {
+            padding: 0.8rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--dark-text) !important;
+            margin: 0 10px;
+            position: relative;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-green);
+            transition: var(--transition-smooth);
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        .btn-auth {
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-login {
+            border: 2px solid var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        .btn-login:hover {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .btn-register {
+            background: var(--primary-green);
+            color: white;
+            box-shadow: 0 4px 15px rgba(45, 90, 39, 0.3);
+        }
+
+        .btn-register:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(45, 90, 39, 0.4);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 160px 0 100px;
+            background: radial-gradient(circle at top right, rgba(45, 90, 39, 0.05), transparent),
+                        radial-gradient(circle at bottom left, rgba(230, 126, 34, 0.05), transparent);
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--primary-green);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #636e72;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .hero-image-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-image {
+            border-radius: 30px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .hero-image:hover {
+            transform: scale(1.02) rotate(1deg);
+        }
+
+        .floating-card {
+            position: absolute;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            z-index: 2;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            height: 100%;
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(0,0,0,0.03);
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+            border-color: var(--primary-green);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(45, 90, 39, 0.1);
+            color: var(--primary-green);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 25px;
+            transition: var(--transition-smooth);
+        }
+
+        .feature-card:hover .feature-icon {
+            background: var(--primary-green);
+            color: white;
+            transform: rotateY(360deg);
+        }
+
+        /* Mode Section */
+        .mode-section {
+            background: white;
+            border-radius: 50px;
+            margin: 50px 0;
+            padding: 80px 0;
+        }
+
+        .mode-badge {
+            background: rgba(230, 126, 34, 0.1);
+            color: var(--accent-orange);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        /* Footer */
+        .modern-footer {
+            background: #1a1a1a;
+            color: #d1d1d1;
+            padding: 100px 0 50px;
+            margin-top: 100px;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .footer-link {
+            color: #d1d1d1;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .footer-link:hover {
+            color: var(--primary-green);
+            padding-left: 10px;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 991px) {
+            .hero-title { font-size: 3rem; }
+            .navbar-collapse {
+                background: white;
+                padding: 20px;
+                border-radius: 20px;
+                margin-top: 15px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/top.png" alt="CULTIA" height="60" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-3 align-items-center" id="auth-buttons">
+                    <a href="login.html" class="btn btn-auth btn-login">Login</a>
+                    <a href="register.html" class="btn btn-auth btn-register">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="mode-badge">AI-Powered Cultural Preservation</span>
+                    <h1 class="hero-title">Discover <span class="text-accent">Culture</span> Through Intelligence</h1>
+                    <p class="hero-subtitle">Experience the world's rich cultural heritage through our intelligent assistant that educates, tells stories, and preserves traditions for future generations.</p>
+                    <div class="d-flex gap-3">
+                        <a href="register.html" class="btn btn-auth btn-register px-4 py-3">Start Journey</a>
+                        <a href="features.html" class="btn btn-auth btn-login px-4 py-3">Explore Modes</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="hero-image-container">
+                        <img src="bot/IMG-202.jpg" alt="Culture" class="img-fluid hero-image">
+                        <div class="floating-card" style="top: -30px; right: 20px;">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary-subtle p-2 rounded-circle">
+                                    <i class="fas fa-brain text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Smart Insights</h6>
+                                    <small class="text-muted">Powered by AI</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-card" style="bottom: 20px; left: -40px; animation-delay: 2s;">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-warning-subtle p-2 rounded-circle">
+                                    <i class="fas fa-trophy text-warning"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Badges Earned</h6>
+                                    <small class="text-muted">Gamified Learning</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="mode-badge">Interactive Experience</span>
+                <h2 class="display-4 fw-bold">Preserve the Past, <span class="text-success">Shape the Future</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                        <h4>Cultural Recipes</h4>
+                        <p class="text-muted">Explore traditional recipes with step-by-step instructions and videos.</p>
+                        <a href="bot/culturalRecipes.html" class="btn btn-link text-success fw-bold p-0" data-requires-auth="true">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-language"></i></div>
+                        <h4>Language Lab</h4>
+                        <p class="text-muted">Practice pronunciation and learn cultural phrases interactively.</p>
+                        <a href="bot/interactiveLanguageLearning.html" class="btn btn-link text-success fw-bold p-0" data-requires-auth="true">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-scale-balanced"></i></div>
+                        <h4>Comparisons</h4>
+                        <p class="text-muted">Compare traditions and customs between different ethnic groups.</p>
+                        <a href="bot/culturalComparison.html" class="btn btn-link text-success fw-bold p-0" data-requires-auth="true">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-award"></i></div>
+                        <h4>Achievements</h4>
+                        <p class="text-muted">Earn badges and track your progress with our gamification system.</p>
+                        <a href="bot/gamification.html" class="btn btn-link text-success fw-bold p-0" data-requires-auth="true">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modes Section -->
+    <section class="mode-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Three Powerful Ways to <span class="text-success">Connect</span></h2>
+                    <div class="accordion accordion-flush" id="modeAccordion">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mode1">
+                                    <i class="fas fa-chalkboard-teacher me-3 text-success"></i> Educator Mode
+                                </button>
+                            </h2>
+                            <div id="mode1" class="accordion-collapse collapse show" data-bs-parent="#modeAccordion">
+                                <div class="accordion-body text-muted">Learn about different cultures, traditions, and historical contexts through interactive lessons and detailed explanations.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mode2">
+                                    <i class="fas fa-book-reader me-3 text-success"></i> Storyteller Mode
+                                </button>
+                            </h2>
+                            <div id="mode2" class="accordion-collapse collapse" data-bs-parent="#modeAccordion">
+                                <div class="accordion-body text-muted">Immerse yourself in captivating cultural stories, folklore, and legends from around the world.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mode3">
+                                    <i class="fas fa-robot me-3 text-success"></i> AI Personal Assistant
+                                </button>
+                            </h2>
+                            <div id="mode3" class="accordion-collapse collapse" data-bs-parent="#modeAccordion">
+                                <div class="accordion-body text-muted">Get personalized cultural insights, travel recommendations, and cultural etiquette guidance.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in">
+                    <div class="p-5 bg-success rounded-5 shadow-lg text-white text-center">
+                        <i class="fas fa-earth-africa display-1 mb-4"></i>
+                        <h3 class="fw-bold">Ready to Start?</h3>
+                        <p class="mb-4">Join thousands of users exploring global heritage.</p>
+                        <a href="register.html" class="btn btn-light btn-auth px-5">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo">CULTIA</a>
+                    <p>Bridging cultures through artificial intelligence and preserving heritage for future generations.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-facebook-f w-20"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-twitter w-20"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-instagram w-20"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4">Platform</h5>
+                    <a href="features.html" class="footer-link">Features</a>
+                    <a href="explore.html" class="footer-link">Explore</a>
+                    <a href="bot/dashboard.html" class="footer-link">Dashboard</a>
+                    <a href="bot/assistant.html" class="footer-link">AI Assistant</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4">Support</h5>
+                    <a href="contact.html" class="footer-link">Help Center</a>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4">Newsletter</h5>
+                    <p>Get the latest cultural stories and AI updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-dark border-secondary text-white" placeholder="Email address">
+                        <button class="btn btn-success" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2025 CULTIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Auth Logic
+        async function isAuthenticated() {
+            const localId = localStorage.getItem('user_id') || sessionStorage.getItem('user_id');
+            if (localId) return true;
+            try {
+                const res = await fetch('/api/me', { credentials: 'include' });
+                if (!res.ok) return false;
+                const data = await res.json();
+                return !!(data && data.success);
+            } catch (_) {
+                return false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', async function () {
+            // Update UI if logged in
+            const loggedIn = await isAuthenticated();
+            if (loggedIn) {
+                const authBtns = document.getElementById('auth-buttons');
+                authBtns.innerHTML = `
+                    <a href="bot/dashboard.html" class="btn btn-auth btn-register">Dashboard</a>
+                    <a href="#" id="landingLogoutBtn" class="btn btn-auth btn-login">Logout</a>
+                `;
+                
+                document.getElementById('landingLogoutBtn')?.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    // Custom logout modal would go here, using default for now
+                    if(confirm('Logout?')) {
+                        localStorage.removeItem('user_id');
+                        window.location.reload();
+                    }
+                });
+            }
+
+            // Auth Gate
+            document.addEventListener('click', async function (e) {
+                const a = e.target.closest('a[data-requires-auth="true"]');
+                if (!a) return;
+                const ok = await isAuthenticated();
+                if (!ok) {
+                    e.preventDefault();
+                    window.location.href = 'login.html';
+                }
+            }, true);
+        });
+    </script>
+</body>
+
+</html>

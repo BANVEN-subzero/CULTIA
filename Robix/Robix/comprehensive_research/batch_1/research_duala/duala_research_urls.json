@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/duala_people",
+    "type": "main_page",
+    "tribe": "duala",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/duala_tribe",
+    "type": "main_page",
+    "tribe": "duala",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/duala",
+    "type": "main_page",
+    "tribe": "duala",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/duala_ethnic_group",
+    "type": "main_page",
+    "tribe": "duala",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "spiritual_beliefs",
+    "search_term": "duala religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+traditional+religion",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "spiritual_beliefs",
+    "search_term": "duala traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+religious+practices",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "spiritual_beliefs",
+    "search_term": "duala religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+colonial+period",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "colonial_impact",
+    "search_term": "duala colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+European+colonization",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "colonial_impact",
+    "search_term": "duala European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+colonial+administration",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "colonial_impact",
+    "search_term": "duala colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+agriculture+farming",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "subsistence_patterns",
+    "search_term": "duala agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+food+production",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "subsistence_patterns",
+    "search_term": "duala food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+traditional+economy",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "subsistence_patterns",
+    "search_term": "duala traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+cultural+preservation",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "cultural_revitalization",
+    "search_term": "duala cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+language+revitalization",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "cultural_revitalization",
+    "search_term": "duala language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+cultural+revival",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "cultural_revitalization",
+    "search_term": "duala cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+modern+politics",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "modern_governance",
+    "search_term": "duala modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+contemporary+governance",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "modern_governance",
+    "search_term": "duala contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+political+participation",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "modern_governance",
+    "search_term": "duala political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "pre_contact_history",
+    "search_term": "duala pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+before+European+contact",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "pre_contact_history",
+    "search_term": "duala before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+ancient+traditions",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "pre_contact_history",
+    "search_term": "duala ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "oral_traditions",
+    "search_term": "duala oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+myths+legends",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "oral_traditions",
+    "search_term": "duala myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+traditional+narratives",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "oral_traditions",
+    "search_term": "duala traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "social_organization",
+    "search_term": "duala social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+clan+system+family",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "social_organization",
+    "search_term": "duala clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+social+hierarchy",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "social_organization",
+    "search_term": "duala social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "traditional_knowledge",
+    "search_term": "duala traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "traditional_knowledge",
+    "search_term": "duala indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "traditional_knowledge",
+    "search_term": "duala ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "traditional_technology",
+    "search_term": "duala traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+indigenous+technology",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "traditional_technology",
+    "search_term": "duala indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+artisan+skills",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "traditional_technology",
+    "search_term": "duala artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+music+dance+songs",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "music_dance",
+    "search_term": "duala music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+musical+instruments",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "music_dance",
+    "search_term": "duala musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/duala+cultural+dances",
+    "type": "category_search",
+    "tribe": "duala",
+    "category": "music_dance",
+    "search_term": "duala cultural dances",
+    "priority": "medium"
+  }
+]

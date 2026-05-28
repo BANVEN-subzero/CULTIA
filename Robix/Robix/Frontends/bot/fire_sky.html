@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fire in the Sky - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-blue: #1e3c72;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.pinimg.com/1200x/16/aa/2d/16aa2d2f9b539fea642f6457694aedbc.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .story-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .story-section {
+            margin-bottom: 40px;
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 30px;
+        }
+
+        .story-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .story-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .cultural-note {
+            background: rgba(30, 60, 114, 0.05);
+            border-radius: 30px;
+            padding: 40px;
+            margin-top: 60px;
+            border: 1px dashed var(--accent-blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">The Fire in the Sky</h1>
+                <p class="lead fs-4 opacity-75">An Ancient Myth of the Celestial Hearth</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="story-container" data-aos="fade-up">
+                <a href="folkloreAndMyths.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Folklore
+                </a>
+
+                <div class="story-section">
+                    <h3>The Great Dark</h3>
+                    <p class="story-text">Long ago, the people of the Adamawa Highlands lived in a world of perpetual twilight. There was no sun to warm the earth and no moon to guide the travelers at night. The Great Spirit, who lived in the highest peaks, kept the fire of the universe in a massive celestial hearth, invisible to the eyes of mortals.</p>
+                </div>
+
+                <div class="story-section">
+                    <h3>The Eagle's Flight</h3>
+                    <p class="story-text">Seeing the suffering of the people, a brave mountain eagle flew toward the highest peak. It reached the celestial hearth and, with great care, stole a single glowing ember in its talons. As it flew back toward the earth, the ember blazed so brightly that it became the sun. A small piece of the ember broke off and became the moon, providing a softer light for the night.</p>
+                </div>
+
+                <div class="story-section">
+                    <h3>The First Hearth</h3>
+                    <p class="story-text">The eagle brought the remaining heat to the people, teaching them how to build their own hearths. This was the first fire given to humans. In gratitude, the people of the Highlands still look to the eagle as a messenger of the Great Spirit and a bringer of life and light. The sun is seen as the ultimate source of energy, and the moon as the guardian of dreams.</p>
+                </div>
+
+                <div class="cultural-note">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-sun me-2"></i> Cultural Significance</h4>
+                    <p class="mb-0 text-muted">This creation myth reflects the astronomical observations and the spiritual worldview of the Northern peoples. It emphasizes the concept of sacrifice and the vital role of fire in human civilization—for cooking, warmth, and protection. The eagle is a recurring symbol of strength and divine intervention in many Cameroonian folklore traditions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Folklore Detail');
+            });
+        });
+    </script>
+</body>
+
+</html>

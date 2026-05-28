@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/ogeez_people",
+    "type": "main_page",
+    "tribe": "ogeez",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/ogeez_tribe",
+    "type": "main_page",
+    "tribe": "ogeez",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/ogeez",
+    "type": "main_page",
+    "tribe": "ogeez",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/ogeez_ethnic_group",
+    "type": "main_page",
+    "tribe": "ogeez",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "spiritual_beliefs",
+    "search_term": "ogeez religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+traditional+religion",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "spiritual_beliefs",
+    "search_term": "ogeez traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+religious+practices",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "spiritual_beliefs",
+    "search_term": "ogeez religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+economy+trade",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "economy",
+    "search_term": "ogeez economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+economic+activities",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "economy",
+    "search_term": "ogeez economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+livelihood",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "economy",
+    "search_term": "ogeez livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "arts_and_crafts",
+    "search_term": "ogeez art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+traditional+arts",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "arts_and_crafts",
+    "search_term": "ogeez traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+handicrafts",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "arts_and_crafts",
+    "search_term": "ogeez handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+traditional+governance",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "governance",
+    "search_term": "ogeez traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+political+system",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "governance",
+    "search_term": "ogeez political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+leadership+structure",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "governance",
+    "search_term": "ogeez leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+colonial+period",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "colonial_impact",
+    "search_term": "ogeez colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+European+colonization",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "colonial_impact",
+    "search_term": "ogeez European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+colonial+administration",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "colonial_impact",
+    "search_term": "ogeez colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+agriculture+farming",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "subsistence_patterns",
+    "search_term": "ogeez agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+food+production",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "subsistence_patterns",
+    "search_term": "ogeez food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+traditional+economy",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "subsistence_patterns",
+    "search_term": "ogeez traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+modern+challenges",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "challenges",
+    "search_term": "ogeez modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+contemporary+issues",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "challenges",
+    "search_term": "ogeez contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+cultural+preservation",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "challenges",
+    "search_term": "ogeez cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+cultural+preservation",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "cultural_revitalization",
+    "search_term": "ogeez cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+language+revitalization",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "cultural_revitalization",
+    "search_term": "ogeez language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+cultural+revival",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "cultural_revitalization",
+    "search_term": "ogeez cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+modern+politics",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "modern_governance",
+    "search_term": "ogeez modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+contemporary+governance",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "modern_governance",
+    "search_term": "ogeez contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+political+participation",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "modern_governance",
+    "search_term": "ogeez political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "pre_contact_history",
+    "search_term": "ogeez pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+before+European+contact",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "pre_contact_history",
+    "search_term": "ogeez before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+ancient+traditions",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "pre_contact_history",
+    "search_term": "ogeez ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "culture",
+    "search_term": "ogeez culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+cultural+practices",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "culture",
+    "search_term": "ogeez cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+way+of+life",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "culture",
+    "search_term": "ogeez way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "oral_traditions",
+    "search_term": "ogeez oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+myths+legends",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "oral_traditions",
+    "search_term": "ogeez myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+traditional+narratives",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "oral_traditions",
+    "search_term": "ogeez traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "social_organization",
+    "search_term": "ogeez social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+clan+system+family",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "social_organization",
+    "search_term": "ogeez clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+social+hierarchy",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "social_organization",
+    "search_term": "ogeez social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "traditional_knowledge",
+    "search_term": "ogeez traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "traditional_knowledge",
+    "search_term": "ogeez indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "traditional_knowledge",
+    "search_term": "ogeez ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "traditional_technology",
+    "search_term": "ogeez traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+indigenous+technology",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "traditional_technology",
+    "search_term": "ogeez indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+artisan+skills",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "traditional_technology",
+    "search_term": "ogeez artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+history+origin+migration",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "history",
+    "search_term": "ogeez history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+historical+background",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "history",
+    "search_term": "ogeez historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "history",
+    "search_term": "ogeez ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+music+dance+songs",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "music_dance",
+    "search_term": "ogeez music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+musical+instruments",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "music_dance",
+    "search_term": "ogeez musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/ogeez+cultural+dances",
+    "type": "category_search",
+    "tribe": "ogeez",
+    "category": "music_dance",
+    "search_term": "ogeez cultural dances",
+    "priority": "medium"
+  }
+]

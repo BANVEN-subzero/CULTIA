@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - CULTIA</title>
+    <link rel="icon" type="image/png" href="img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --earth-brown: #5d4037;
+            --light-cream: #fdfaf5;
+            --dark-text: #2c3e50;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--light-cream);
+            color: var(--dark-text);
+        }
+
+        h1, h2, h3, .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .navbar {
+            transition: var(--transition-smooth);
+            padding: 1.2rem 0;
+            background: rgba(253, 250, 245, 0.8) !important;
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .navbar.scrolled {
+            padding: 0.8rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .page-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.05) 0%, rgba(230, 126, 34, 0.05) 100%);
+            text-align: center;
+        }
+
+        .explore-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            border: 1px solid rgba(0,0,0,0.03);
+            transition: var(--transition-smooth);
+            height: 100%;
+        }
+
+        .explore-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        .nav-pills .nav-link {
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 700;
+            color: var(--dark-text);
+            transition: var(--transition-smooth);
+            margin: 0 5px;
+            border: 2px solid transparent;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: var(--primary-green) !important;
+            color: white !important;
+            box-shadow: 0 10px 20px rgba(45, 90, 39, 0.2);
+        }
+
+        .story-card-modern {
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-left: 8px solid var(--accent-orange);
+            transition: var(--transition-smooth);
+        }
+
+        .story-card-modern:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+
+        .badge-tag {
+            background: var(--light-cream);
+            color: var(--primary-green);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+
+        .fact-box {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--transition-smooth);
+        }
+
+        .fact-box:hover {
+            border-color: var(--primary-green);
+            background: var(--light-cream);
+        }
+
+        .proverb-card-modern {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+            border: 2px solid var(--light-cream);
+            height: 100%;
+            transition: var(--transition-smooth);
+        }
+
+        .proverb-card-modern:hover {
+            border-color: var(--primary-green);
+            transform: translateY(-5px);
+        }
+
+        .modern-footer {
+            background: #1a1a1a;
+            color: #d1d1d1;
+            padding: 100px 0 50px;
+            margin-top: 100px;
+            border-radius: 50px 50px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/top.png" alt="CULTIA" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold active" href="explore.html">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-3">
+                    <a href="login.html" class="btn btn-outline-success rounded-pill px-4 fw-bold">Login</a>
+                    <a href="register.html" class="btn btn-success rounded-pill px-4 fw-bold shadow-sm">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">Explore Cultural Treasures</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+                Discover the vibrant stories, fascinating facts, and ancient wisdom from the diverse cultures of Cameroon.
+            </p>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="explore-card text-center">
+                        <div class="bg-success-subtle p-3 rounded-circle d-inline-block mb-3">
+                            <i class="fas fa-book-open text-success fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold">Sample Stories</h4>
+                        <p class="small text-muted">Curated narratives with timeless wisdom.</p>
+                        <a href="#stories" class="btn btn-link text-success fw-bold p-0">Explore <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="explore-card text-center">
+                        <div class="bg-warning-subtle p-3 rounded-circle d-inline-block mb-3">
+                            <i class="fas fa-lightbulb text-warning fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold">Cultural Facts</h4>
+                        <p class="small text-muted">Fascinating insights into traditions.</p>
+                        <a href="#facts" class="btn btn-link text-warning fw-bold p-0">Explore <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="explore-card text-center">
+                        <div class="bg-primary-subtle p-3 rounded-circle d-inline-block mb-3">
+                            <i class="fas fa-quote-left text-primary fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold">Proverbs</h4>
+                        <p class="small text-muted">Wisdom of the ages in short sayings.</p>
+                        <a href="#proverbs" class="btn btn-link text-primary fw-bold p-0">Explore <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="explore-card text-center">
+                        <div class="bg-danger-subtle p-3 rounded-circle d-inline-block mb-3">
+                            <i class="fas fa-blog text-danger fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold">Latest Blog</h4>
+                        <p class="small text-muted">Updated articles on global heritage.</p>
+                        <a href="#" class="btn btn-link text-danger fw-bold p-0">Read Blog <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Section -->
+            <div class="py-5">
+                <ul class="nav nav-pills justify-content-center mb-5" id="exploreTabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="stories-tab" data-bs-toggle="pill" data-bs-target="#stories-content">Stories</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="facts-tab" data-bs-toggle="pill" data-bs-target="#facts-content">Facts</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="proverbs-tab" data-bs-toggle="pill" data-bs-target="#proverbs-content">Proverbs</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="exploreTabContent">
+                    <!-- Stories -->
+                    <div class="tab-pane fade show active" id="stories-content" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="story-card-modern" data-aos="fade-up">
+                                    <div class="mb-3">
+                                        <span class="badge-tag">Nso Tribe</span>
+                                        <span class="badge-tag">Traditions</span>
+                                    </div>
+                                    <h3 class="fw-bold mb-3">The JUJUs</h3>
+                                    <p class="text-muted lead">The Jujus, masked spirits, are an important part of Nso culture. They appear on significant occasions to bring magic and spiritual connection...</p>
+                                    <button class="btn btn-success rounded-pill px-4 mt-3">Read Full Story</button>
+                                </div>
+                                <div class="story-card-modern" data-aos="fade-up">
+                                    <div class="mb-3">
+                                        <span class="badge-tag">Bamun Tribe</span>
+                                        <span class="badge-tag">Origins</span>
+                                    </div>
+                                    <h3 class="fw-bold mb-3">Origins of the Bamoun</h3>
+                                    <p class="text-muted lead">Tracing origins back to the 14th-century Tikar Kingdom, this legend tells of the great migration led by the warrior Nchare Yen...</p>
+                                    <button class="btn btn-success rounded-pill px-4 mt-3">Read Full Story</button>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <a href="register.html" class="btn btn-outline-success rounded-pill px-5 py-3 fw-bold">Unlock Full Library</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facts -->
+                    <div class="tab-pane fade" id="facts-content" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-md-6" data-aos="fade-right">
+                                <div class="fact-box">
+                                    <h6 class="text-success fw-bold text-uppercase small mb-2">Food Culture</h6>
+                                    <h5 class="fw-bold">The Art of Nkui</h5>
+                                    <p class="text-muted mb-0">A popular Bamileke traditional dish, this sticky sauce is made from tree bark and celebrated during childbirth ceremonies.</p>
+                                </div>
+                                <div class="fact-box">
+                                    <h6 class="text-success fw-bold text-uppercase small mb-2">Architecture</h6>
+                                    <h5 class="fw-bold">Two-Headed Snake</h5>
+                                    <p class="text-muted mb-0">A powerful symbol in Bamun culture representing the dual power and omnipresence of the King.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6" data-aos="fade-left">
+                                <div class="fact-box">
+                                    <h6 class="text-success fw-bold text-uppercase small mb-2">Spirituality</h6>
+                                    <h5 class="fw-bold">Totem Beliefs</h5>
+                                    <p class="text-muted mb-0">Totems are used in ceremonies to protect lineages and ensure spiritual justice within communities.</p>
+                                </div>
+                                <div class="fact-box">
+                                    <h6 class="text-success fw-bold text-uppercase small mb-2">Festivals</h6>
+                                    <h5 class="fw-bold">Nguon Festival</h5>
+                                    <p class="text-muted mb-0">A unique celebration where the king is put on trial by his people to ensure transparency and food security.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proverbs -->
+                    <div class="tab-pane fade" id="proverbs-content" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-md-4" data-aos="zoom-in">
+                                <div class="proverb-card-modern">
+                                    <i class="fas fa-quote-left text-success display-5 mb-4"></i>
+                                    <p class="lead italic mb-4">"Many have mouths but less have ears."</p>
+                                    <h6 class="fw-bold text-success">Bamileke Proverb</h6>
+                                    <small class="text-muted">Emphasis on listening over speaking.</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="proverb-card-modern">
+                                    <i class="fas fa-quote-left text-success display-5 mb-4"></i>
+                                    <p class="lead italic mb-4">"Little by little, the bird makes its nest."</p>
+                                    <h6 class="fw-bold text-success">Ewondo Proverb</h6>
+                                    <small class="text-muted">A call for patience and consistency.</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="proverb-card-modern">
+                                    <i class="fas fa-quote-left text-success display-5 mb-4"></i>
+                                    <p class="lead italic mb-4">"The river that survives is the one that bends."</p>
+                                    <h6 class="fw-bold text-success">Bassa Proverb</h6>
+                                    <small class="text-muted">Teaching flexibility and adaptation.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo fs-2 fw-bold text-white text-decoration-none d-block mb-4">CULTIA</a>
+                    <p>Bridging cultures through artificial intelligence and preserving heritage for future generations.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4">Platform</h5>
+                    <a href="features.html" class="text-muted d-block mb-2 text-decoration-none">Features</a>
+                    <a href="explore.html" class="text-muted d-block mb-2 text-decoration-none">Explore</a>
+                    <a href="bot/dashboard.html" class="text-muted d-block mb-2 text-decoration-none">Dashboard</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fw-bold mb-4">Support</h5>
+                    <a href="contact.html" class="text-muted d-block mb-2 text-decoration-none">Contact Us</a>
+                    <a href="#" class="text-muted d-block mb-2 text-decoration-none">Privacy Policy</a>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2025 CULTIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+    </script>
+</body>
+</html>
+

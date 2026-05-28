@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamileke Kingdom - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/images (6).png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+            border-left: 4px solid var(--primary-green);
+            padding-left: 30px;
+        }
+
+        .content-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">Bamileke Kingdom</h1>
+                <p class="lead fs-4 opacity-75">Masters of Tradition and Organizational Excellence</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="content-container" data-aos="fade-up">
+                <a href="tribesAndEthnicGroups.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Tribes
+                </a>
+
+                <div class="content-section">
+                    <h3>Social Structure</h3>
+                    <p class="content-text">The Bamileke are known for their highly organized chiefdoms, each led by a Fon (King). These kingdoms are central to the social and political life of the people, with a complex hierarchy of nobles, secret societies, and community leaders.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Cultural Traditions</h3>
+                    <p class="content-text">From the vibrant Nguon festival to the intricate art of the Toghu cloth, Bamileke traditions are rich and varied. They are renowned for their wood carving, beadwork, and powerful traditional dances that celebrate history and spiritual connection.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3>Economic Prowess</h3>
+                    <p class="content-text">Historically, the Bamileke have been master farmers and skilled traders. Today, they continue to be a driving force in Cameroon's economy, known for their entrepreneurship and strong community support systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Tribe Heritage');
+            });
+        });
+    </script>
+</body>
+
+</html>

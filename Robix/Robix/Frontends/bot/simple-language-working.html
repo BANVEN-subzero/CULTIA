@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning - Working Version</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background: linear-gradient(135deg, #863d08 0%, #a0522d 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .tribe-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-top: 4px solid #863d08;
+        }
+        .btn {
+            background: linear-gradient(135deg, #863d08 0%, #a0522d 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0.5rem;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .lesson-btn {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        }
+        .quiz-btn {
+            background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+        }
+        .lesson-interface {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+        }
+        .phrase-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #863d08;
+        }
+        .phrase-native {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #863d08;
+            margin-bottom: 0.5rem;
+        }
+        .pronunciation {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        .translation {
+            color: #333;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 Cameroonian Languages Learning</h1>
+            <p>Learn authentic tribal languages from Cameroon's diverse ethnic groups</p>
+            <button class="btn" onclick="window.open('gamification.html', '_blank')">🏆 View Achievements</button>
+        </div>
+
+        <div id="content">
+            <!-- Dashboard will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        // Simple, working language learning system
+        const tribes = {
+            bamileke: {
+                name: "Bamiléké",
+                region: "West Region",
+                speakers: "3.2 million",
+                difficulty: "intermediate",
+                lessons: [
+                    {
+                        title: "Basic Greetings",
+                        phrases: [
+                            { phrase: "Mbɔ̀ŋ", pronunciation: "mbong", english: "Hello" },
+                            { phrase: "Ŋwà'à", pronunciation: "ngwa-a", english: "Good morning" },
+                            { phrase: "M̀mɛ m̀mɛ", pronunciation: "mmeh mmeh", english: "How are you?" },
+                            { phrase: "Ndɛ̀ŋ", pronunciation: "ndeng", english: "Thank you" }
+                        ]
+                    },
+                    {
+                        title: "Numbers",
+                        phrases: [
+                            { phrase: "Pɛ̀p", pronunciation: "pep", english: "One" },
+                            { phrase: "Bàp", pronunciation: "bap", english: "Two" },
+                            { phrase: "Tàt", pronunciation: "tat", english: "Three" }
+                        ]
+                    }
+                ]
+            },
+            bamum: {
+                name: "Bamum",
+                region: "West Region",
+                speakers: "420,000",
+                difficulty: "advanced",
+                lessons: [
+                    {
+                        title: "Basic Greetings",
+                        phrases: [
+                            { phrase: "Njuɛ", pronunciation: "njueh", english: "Hello" },
+                            { phrase: "Kɛ̀ŋ njuɛ", pronunciation: "keng njueh", english: "Good morning" },
+                            { phrase: "Wù njuɛ kɛ̀", pronunciation: "wu njueh keh", english: "How are you?" }
+                        ]
+                    }
+                ]
+            },
+            fulani: {
+                name: "Fulani (Fulfulde)",
+                region: "North Region", 
+                speakers: "2.8 million",
+                difficulty: "beginner",
+                lessons: [
+                    {
+                        title: "Basic Greetings",
+                        phrases: [
+                            { phrase: "Sannu", pronunciation: "san-nu", english: "Hello" },
+                            { phrase: "Jam waali", pronunciation: "jam wah-li", english: "Good morning" },
+                            { phrase: "No mbadda", pronunciation: "no mbah-da", english: "How are you?" }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        let currentTribe = null;
+        let currentLesson = null;
+
+        function showDashboard() {
+            console.log('Showing dashboard...');
+            let html = '<h2>Choose a Tribal Language to Learn:</h2>';
+            
+            Object.entries(tribes).forEach(([key, tribe]) => {
+                const difficultyColors = {
+                    beginner: '#4caf50',
+                    intermediate: '#ff9800',
+                    advanced: '#f44336'
+                };
+                
+                html += `
+                    <div class="tribe-card" style="border-top-color: ${difficultyColors[tribe.difficulty]};">
+                        <h3>${tribe.name}</h3>
+                        <p>📍 ${tribe.region}</p>
+                        <p>👥 ${tribe.speakers} speakers</p>
+                        <p>📚 ${tribe.lessons.length} lessons available</p>
+                        <p><strong>Difficulty:</strong> <span style="color: ${difficultyColors[tribe.difficulty]};">${tribe.difficulty}</span></p>
+                        <button class="btn" onclick="showLessons('${key}')">🚀 Start Learning</button>
+                    </div>
+                `;
+            });
+            
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function showLessons(tribeKey) {
+            console.log('Showing lessons for:', tribeKey);
+            currentTribe = tribeKey;
+            const tribe = tribes[tribeKey];
+            
+            let html = `
+                <div class="lesson-interface">
+                    <button class="btn" onclick="showDashboard()">← Back to Languages</button>
+                    <h2>${tribe.name} Language Course</h2>
+                    <p>${tribe.region} • ${tribe.speakers} speakers</p>
+                    
+                    <h3>Available Lessons:</h3>
+            `;
+            
+            tribe.lessons.forEach((lesson, index) => {
+                html += `
+                    <div class="tribe-card">
+                        <h4>${index + 1}. ${lesson.title}</h4>
+                        <p>${lesson.phrases.length} phrases to learn</p>
+                        <button class="btn lesson-btn" onclick="startLesson('${tribeKey}', ${index})">📚 Learn</button>
+                        <button class="btn quiz-btn" onclick="startQuiz('${tribeKey}', ${index})">🎯 Quiz</button>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            document.getElementById('content').innerHTML = html;
+            
+            // Award points if gamification exists
+            if (window.gamification) {
+                window.gamification.addPoints('tribe_exploration', 5, {tribe: tribeKey});
+            }
+        }
+
+        function startLesson(tribeKey, lessonIndex) {
+            console.log('Starting lesson:', tribeKey, lessonIndex);
+            currentTribe = tribeKey;
+            currentLesson = lessonIndex;
+            
+            const tribe = tribes[tribeKey];
+            const lesson = tribe.lessons[lessonIndex];
+            
+            let html = `
+                <div class="lesson-interface">
+                    <button class="btn" onclick="showLessons('${tribeKey}')">← Back to Lessons</button>
+                    <h2>${lesson.title}</h2>
+                    <p>Learning ${tribe.name} - ${tribe.region}</p>
+                    
+                    <h3>Phrases to Learn:</h3>
+            `;
+            
+            lesson.phrases.forEach(phrase => {
+                html += `
+                    <div class="phrase-card">
+                        <div class="phrase-native">${phrase.phrase}</div>
+                        <div class="pronunciation">[${phrase.pronunciation}]</div>
+                        <div class="translation">${phrase.english}</div>
+                        <button class="btn" onclick="playAudio('${phrase.phrase}')">🔊 Listen</button>
+                    </div>
+                `;
+            });
+            
+            html += `
+                <div style="margin-top: 2rem;">
+                    <button class="btn quiz-btn" onclick="startQuiz('${tribeKey}', ${lessonIndex})">🎯 Take Quiz</button>
+                    <button class="btn" onclick="completeLesson('${tribeKey}', ${lessonIndex})">✅ Mark Complete</button>
+                </div>
+                </div>
+            `;
+            
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function startQuiz(tribeKey, lessonIndex) {
+            console.log('Starting quiz:', tribeKey, lessonIndex);
+            const tribe = tribes[tribeKey];
+            const lesson = tribe.lessons[lessonIndex];
+            
+            let html = `
+                <div class="lesson-interface">
+                    <button class="btn" onclick="startLesson('${tribeKey}', ${lessonIndex})">← Back to Lesson</button>
+                    <h2>Quiz: ${lesson.title}</h2>
+                    <p>${tribe.name} Language Quiz</p>
+                    
+                    <div id="quiz-content">
+                        <h3>Quiz Questions:</h3>
+            `;
+            
+            lesson.phrases.forEach((phrase, index) => {
+                html += `
+                    <div class="phrase-card">
+                        <p><strong>Question ${index + 1}:</strong> What does "${phrase.phrase}" mean?</p>
+                        <p><strong>Pronunciation:</strong> [${phrase.pronunciation}]</p>
+                        <p><strong>Answer:</strong> ${phrase.english}</p>
+                    </div>
+                `;
+            });
+            
+            html += `
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <button class="btn" onclick="finishQuiz('${tribeKey}', ${lessonIndex})">🏆 Complete Quiz</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function finishQuiz(tribeKey, lessonIndex) {
+            console.log('Finishing quiz:', tribeKey, lessonIndex);
+            const tribe = tribes[tribeKey];
+            const lesson = tribe.lessons[lessonIndex];
+            
+            // Award points
+            if (window.gamification) {
+                window.gamification.addPoints('quiz_completion', 30, {
+                    tribe: tribeKey,
+                    lesson: lesson.title
+                });
+            }
+            
+            let html = `
+                <div class="lesson-interface">
+                    <h2>🏆 Quiz Complete!</h2>
+                    <p>Congratulations! You completed the ${lesson.title} quiz for ${tribe.name}.</p>
+                    <p><strong>Points Earned:</strong> +30 points</p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <button class="btn" onclick="startQuiz('${tribeKey}', ${lessonIndex})">🔄 Retake Quiz</button>
+                        <button class="btn" onclick="showLessons('${tribeKey}')">📚 Back to Lessons</button>
+                        <button class="btn" onclick="window.open('gamification.html', '_blank')">🏆 View Achievements</button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function completeLesson(tribeKey, lessonIndex) {
+            console.log('Completing lesson:', tribeKey, lessonIndex);
+            
+            // Award points
+            if (window.gamification) {
+                window.gamification.addPoints('lesson_completion', 25, {
+                    tribe: tribeKey,
+                    lesson: tribes[tribeKey].lessons[lessonIndex].title
+                });
+            }
+            
+            alert('Lesson completed! +25 points earned.');
+            showLessons(tribeKey);
+        }
+
+        function playAudio(phrase) {
+            console.log('Playing audio for:', phrase);
+            alert(`🔊 Playing pronunciation for: "${phrase}"`);
+            // In a real implementation, this would use text-to-speech
+        }
+
+        // Initialize the app
+        console.log('Language learning app initialized');
+        showDashboard();
+    </script>
+<script src="../js/themeManager.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bafoussam_people",
+    "type": "main_page",
+    "tribe": "bafoussam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafoussam_tribe",
+    "type": "main_page",
+    "tribe": "bafoussam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafoussam",
+    "type": "main_page",
+    "tribe": "bafoussam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bafoussam_ethnic_group",
+    "type": "main_page",
+    "tribe": "bafoussam",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "spiritual_beliefs",
+    "search_term": "bafoussam religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+traditional+religion",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "spiritual_beliefs",
+    "search_term": "bafoussam traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+religious+practices",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "spiritual_beliefs",
+    "search_term": "bafoussam religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+economy+trade",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "economy",
+    "search_term": "bafoussam economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+economic+activities",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "economy",
+    "search_term": "bafoussam economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+livelihood",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "economy",
+    "search_term": "bafoussam livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "arts_and_crafts",
+    "search_term": "bafoussam art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+traditional+arts",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "arts_and_crafts",
+    "search_term": "bafoussam traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+handicrafts",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "arts_and_crafts",
+    "search_term": "bafoussam handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+traditional+governance",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "governance",
+    "search_term": "bafoussam traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+political+system",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "governance",
+    "search_term": "bafoussam political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+leadership+structure",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "governance",
+    "search_term": "bafoussam leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+colonial+period",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "colonial_impact",
+    "search_term": "bafoussam colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+European+colonization",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "colonial_impact",
+    "search_term": "bafoussam European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+colonial+administration",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "colonial_impact",
+    "search_term": "bafoussam colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "subsistence_patterns",
+    "search_term": "bafoussam agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+food+production",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "subsistence_patterns",
+    "search_term": "bafoussam food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+traditional+economy",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "subsistence_patterns",
+    "search_term": "bafoussam traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+modern+challenges",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "challenges",
+    "search_term": "bafoussam modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "challenges",
+    "search_term": "bafoussam contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "challenges",
+    "search_term": "bafoussam cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "cultural_revitalization",
+    "search_term": "bafoussam cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+language+revitalization",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "cultural_revitalization",
+    "search_term": "bafoussam language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+cultural+revival",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "cultural_revitalization",
+    "search_term": "bafoussam cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+modern+politics",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "modern_governance",
+    "search_term": "bafoussam modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "modern_governance",
+    "search_term": "bafoussam contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+political+participation",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "modern_governance",
+    "search_term": "bafoussam political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "pre_contact_history",
+    "search_term": "bafoussam pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+before+European+contact",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "pre_contact_history",
+    "search_term": "bafoussam before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "pre_contact_history",
+    "search_term": "bafoussam ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "culture",
+    "search_term": "bafoussam culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+cultural+practices",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "culture",
+    "search_term": "bafoussam cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+way+of+life",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "culture",
+    "search_term": "bafoussam way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "oral_traditions",
+    "search_term": "bafoussam oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+myths+legends",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "oral_traditions",
+    "search_term": "bafoussam myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "oral_traditions",
+    "search_term": "bafoussam traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "social_organization",
+    "search_term": "bafoussam social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+clan+system+family",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "social_organization",
+    "search_term": "bafoussam clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "social_organization",
+    "search_term": "bafoussam social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "traditional_knowledge",
+    "search_term": "bafoussam traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "traditional_knowledge",
+    "search_term": "bafoussam indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "traditional_knowledge",
+    "search_term": "bafoussam ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "traditional_technology",
+    "search_term": "bafoussam traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "traditional_technology",
+    "search_term": "bafoussam indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+artisan+skills",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "traditional_technology",
+    "search_term": "bafoussam artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "history",
+    "search_term": "bafoussam history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+historical+background",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "history",
+    "search_term": "bafoussam historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "history",
+    "search_term": "bafoussam ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "music_dance",
+    "search_term": "bafoussam music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+musical+instruments",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "music_dance",
+    "search_term": "bafoussam musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bafoussam+cultural+dances",
+    "type": "category_search",
+    "tribe": "bafoussam",
+    "category": "music_dance",
+    "search_term": "bafoussam cultural dances",
+    "priority": "medium"
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamesso_people",
+    "type": "main_page",
+    "tribe": "bamesso",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamesso_tribe",
+    "type": "main_page",
+    "tribe": "bamesso",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamesso",
+    "type": "main_page",
+    "tribe": "bamesso",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamesso_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamesso",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "spiritual_beliefs",
+    "search_term": "bamesso religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "spiritual_beliefs",
+    "search_term": "bamesso traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+religious+practices",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "spiritual_beliefs",
+    "search_term": "bamesso religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+colonial+period",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "colonial_impact",
+    "search_term": "bamesso colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+European+colonization",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "colonial_impact",
+    "search_term": "bamesso European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "colonial_impact",
+    "search_term": "bamesso colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "subsistence_patterns",
+    "search_term": "bamesso agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+food+production",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "subsistence_patterns",
+    "search_term": "bamesso food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "subsistence_patterns",
+    "search_term": "bamesso traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "cultural_revitalization",
+    "search_term": "bamesso cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "cultural_revitalization",
+    "search_term": "bamesso language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "cultural_revitalization",
+    "search_term": "bamesso cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+modern+politics",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "modern_governance",
+    "search_term": "bamesso modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "modern_governance",
+    "search_term": "bamesso contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+political+participation",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "modern_governance",
+    "search_term": "bamesso political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "pre_contact_history",
+    "search_term": "bamesso pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "pre_contact_history",
+    "search_term": "bamesso before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "pre_contact_history",
+    "search_term": "bamesso ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "oral_traditions",
+    "search_term": "bamesso oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+myths+legends",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "oral_traditions",
+    "search_term": "bamesso myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "oral_traditions",
+    "search_term": "bamesso traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "social_organization",
+    "search_term": "bamesso social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "social_organization",
+    "search_term": "bamesso clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "social_organization",
+    "search_term": "bamesso social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "traditional_knowledge",
+    "search_term": "bamesso traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "traditional_knowledge",
+    "search_term": "bamesso indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "traditional_knowledge",
+    "search_term": "bamesso ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "traditional_technology",
+    "search_term": "bamesso traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "traditional_technology",
+    "search_term": "bamesso indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "traditional_technology",
+    "search_term": "bamesso artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "music_dance",
+    "search_term": "bamesso music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "music_dance",
+    "search_term": "bamesso musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamesso+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamesso",
+    "category": "music_dance",
+    "search_term": "bamesso cultural dances",
+    "priority": "medium"
+  }
+]

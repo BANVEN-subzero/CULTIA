@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribal Storyteller - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --amber-warm: #ffbf00;
+            --gold-bright: #ffd700;
+            --crimson-deep: #8b0000;
+            --campfire-glow: rgba(255, 191, 0, 0.1);
+            --text-dark: #2c1810;
+            --bg-paper: #fffcf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #1a0f0a; /* Dark night background */
+            background-image: radial-gradient(circle at 50% 100%, #3d1a0a 0%, #1a0f0a 100%);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: transparent;
+        }
+
+        /* Campfire Atmosphere */
+        .campfire-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            background: radial-gradient(circle at 50% 100%, rgba(255, 140, 0, 0.15) 0%, transparent 70%);
+            z-index: 1;
+            animation: flicker 4s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.02); }
+            100% { opacity: 0.9; transform: scale(0.98); }
+        }
+
+        /* Story Interface Styles */
+        .story-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 3rem 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            scroll-behavior: smooth;
+            z-index: 2;
+        }
+
+        .story-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            padding: 3rem;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            animation: slideUp 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+            position: relative;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .story-title {
+            font-family: 'Crimson Pro', serif;
+            color: var(--amber-warm);
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            text-shadow: 0 2px 15px rgba(255, 191, 0, 0.4);
+        }
+
+        .story-content {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.45rem;
+            line-height: 2;
+            color: #f0e6d2;
+            text-align: justify;
+            white-space: pre-line;
+        }
+
+        .story-meta {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 2.5rem;
+        }
+
+        .tribe-badge {
+            background: linear-gradient(45deg, var(--crimson-deep), #b22222);
+            color: white;
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+        }
+
+        /* Tribe Selection Grid */
+        .selection-panel {
+            padding: 2.5rem 5%;
+            background: linear-gradient(to top, #1a0f0a 90%, transparent);
+            z-index: 100;
+            border-top: 2px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 -20px 50px rgba(0,0,0,0.5);
+        }
+
+        .region-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .region-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            color: #f0e6d2;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .region-btn:hover, .region-btn.active {
+            background: linear-gradient(45deg, var(--amber-warm), var(--gold-bright));
+            color: #2c1810;
+            border-color: var(--amber-warm);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 191, 0, 0.3);
+        }
+
+        .tribe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 20px;
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 15px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--amber-warm) transparent;
+        }
+
+        .tribe-grid::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .tribe-grid::-webkit-scrollbar-thumb {
+            background: var(--amber-warm);
+            border-radius: 10px;
+        }
+
+        .tribe-item {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            padding: 15px 10px;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #f0e6d2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tribe-item i {
+            font-size: 1.2rem;
+            color: var(--gold-bright);
+        }
+
+        .tribe-item:hover {
+            background: rgba(255, 215, 0, 0.15);
+            border-color: var(--amber-warm);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 191, 0, 0.2);
+        }
+
+        .tribe-item.selected {
+            background: var(--amber-warm);
+            color: #2c1810;
+            border-color: var(--amber-warm);
+        }
+
+        .tribe-item.selected i {
+            color: #2c1810;
+        }
+
+        /* Controls */
+        .story-controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        #showSelectionBtn {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: none; /* Hidden by default */
+            background: rgba(255, 191, 0, 0.9);
+            color: #2c1810;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: var(--transition-smooth);
+        }
+
+        #showSelectionBtn:hover {
+            background: var(--gold-bright);
+            transform: translateX(-50%) translateY(-5px);
+        }
+
+        .selection-panel {
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+        }
+
+        .selection-panel.hidden {
+            transform: translateY(100%);
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+        }
+
+        .action-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            color: var(--gold-bright);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .action-btn:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--gold-bright);
+            transform: translateY(-2px);
+        }
+
+        .action-btn.danger:hover {
+            background: rgba(220, 53, 69, 0.1);
+            border-color: #dc3545;
+            color: #dc3545;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+        }
+
+        .back-link:hover {
+            color: var(--amber-warm);
+            transform: translateX(-5px);
+        }
+
+        /* Fire Sparks */
+        .spark {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--amber-warm);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .typing-indicator {
+            color: var(--amber-warm);
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: none;
+            text-align: center;
+        }
+
+        .selection-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .selection-header h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            color: var(--gold-bright);
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="campfire-overlay"></div>
+    
+    <a href="assistant.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Assistant
+    </a>
+
+    <div class="main-content">
+        <button id="showSelectionBtn">
+            <i class="fas fa-plus-circle me-2"></i> Choose Another Tribe
+        </button>
+
+        <div class="story-container" id="storyDisplay">
+            <!-- Initial Welcome -->
+            <div class="text-center mt-5 mb-5" data-aos="fade-down" id="welcomeMessage">
+                <div class="display-1 mb-3">🔥</div>
+                <h1 class="story-title">Gather 'Round the Fire, My Children</h1>
+                <p class="lead" style="color: var(--gold-bright); opacity: 0.9; font-family: 'Crimson Pro', serif; font-size: 1.6rem; font-style: italic;">
+                    "A story is like food; it must be easy to chew so everybody can enjoy it."
+                </p>
+                <p class="text-white-50">Choose a tribe below to hear its ancient legend...</p>
+            </div>
+        </div>
+
+        <div class="selection-panel">
+            <div class="typing-indicator" id="typingIndicator">
+                <i class="fas fa-feather-alt fa-spin me-2"></i> An elder is fixing the wood for your story...
+            </div>
+
+            <div class="selection-header">
+                <h2><i class="fas fa-map-marked-alt me-2"></i> Choose Your Tribe</h2>
+            </div>
+
+            <div class="region-tabs" id="regionTabs">
+                <button class="region-btn active" data-region="all">All Tribes</button>
+                <button class="region-btn" data-region="Grassfields">Grassfields</button>
+                <button class="region-btn" data-region="Coastal">Coastal/Sawa</button>
+                <button class="region-btn" data-region="Forest">Forest/Bantu</button>
+                <button class="region-btn" data-region="Sahel">Sahel/North</button>
+            </div>
+
+            <div class="tribe-grid" id="tribeGrid">
+                <!-- Populated by JS -->
+            </div>
+
+            <div class="story-controls">
+                <button class="action-btn" id="viewHistoryBtn">
+                    <i class="fas fa-history me-2"></i> Tale History
+                </button>
+                <button class="action-btn danger" id="clearHistoryBtn">
+                    <i class="fas fa-fire-extinguisher me-2"></i> Clear Fire
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase/JS Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/ai-core.js"></script>
+    <script src="js/storyteller.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 1000, once: true });
+            
+            // Background Sparks
+            function createSpark() {
+                const spark = document.createElement('div');
+                spark.className = 'spark';
+                const x = Math.random() * window.innerWidth;
+                const y = window.innerHeight;
+                spark.style.left = x + 'px';
+                spark.style.top = y + 'px';
+                
+                document.body.appendChild(spark);
+                
+                const anim = spark.animate([
+                    { transform: 'translate(0, 0) scale(1)', opacity: 1 },
+                    { transform: `translate(${(Math.random() - 0.5) * 200}px, -${window.innerHeight + 100}px) scale(0)`, opacity: 0 }
+                ], {
+                    duration: 3000 + Math.random() * 3000,
+                    easing: 'ease-out'
+                });
+                
+                anim.onfinish = () => spark.remove();
+            }
+            
+            setInterval(createSpark, 300);
+        });
+    </script>
+</body>
+
+</html>

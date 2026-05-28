@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/oroko_people",
+    "type": "main_page",
+    "tribe": "oroko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/oroko_tribe",
+    "type": "main_page",
+    "tribe": "oroko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/oroko",
+    "type": "main_page",
+    "tribe": "oroko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/oroko_ethnic_group",
+    "type": "main_page",
+    "tribe": "oroko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "spiritual_beliefs",
+    "search_term": "oroko religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+traditional+religion",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "spiritual_beliefs",
+    "search_term": "oroko traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+religious+practices",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "spiritual_beliefs",
+    "search_term": "oroko religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+colonial+period",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "colonial_impact",
+    "search_term": "oroko colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+European+colonization",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "colonial_impact",
+    "search_term": "oroko European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+colonial+administration",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "colonial_impact",
+    "search_term": "oroko colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+agriculture+farming",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "subsistence_patterns",
+    "search_term": "oroko agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+food+production",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "subsistence_patterns",
+    "search_term": "oroko food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+traditional+economy",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "subsistence_patterns",
+    "search_term": "oroko traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+cultural+preservation",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "cultural_revitalization",
+    "search_term": "oroko cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+language+revitalization",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "cultural_revitalization",
+    "search_term": "oroko language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+cultural+revival",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "cultural_revitalization",
+    "search_term": "oroko cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+modern+politics",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "modern_governance",
+    "search_term": "oroko modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+contemporary+governance",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "modern_governance",
+    "search_term": "oroko contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+political+participation",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "modern_governance",
+    "search_term": "oroko political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "pre_contact_history",
+    "search_term": "oroko pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+before+European+contact",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "pre_contact_history",
+    "search_term": "oroko before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+ancient+traditions",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "pre_contact_history",
+    "search_term": "oroko ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "oral_traditions",
+    "search_term": "oroko oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+myths+legends",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "oral_traditions",
+    "search_term": "oroko myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+traditional+narratives",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "oral_traditions",
+    "search_term": "oroko traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "social_organization",
+    "search_term": "oroko social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+clan+system+family",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "social_organization",
+    "search_term": "oroko clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+social+hierarchy",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "social_organization",
+    "search_term": "oroko social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "traditional_knowledge",
+    "search_term": "oroko traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "traditional_knowledge",
+    "search_term": "oroko indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "traditional_knowledge",
+    "search_term": "oroko ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "traditional_technology",
+    "search_term": "oroko traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+indigenous+technology",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "traditional_technology",
+    "search_term": "oroko indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+artisan+skills",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "traditional_technology",
+    "search_term": "oroko artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+music+dance+songs",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "music_dance",
+    "search_term": "oroko music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+musical+instruments",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "music_dance",
+    "search_term": "oroko musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/oroko+cultural+dances",
+    "type": "category_search",
+    "tribe": "oroko",
+    "category": "music_dance",
+    "search_term": "oroko cultural dances",
+    "priority": "medium"
+  }
+]

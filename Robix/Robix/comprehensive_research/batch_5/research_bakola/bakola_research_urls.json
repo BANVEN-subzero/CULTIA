@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bakola_people",
+    "type": "main_page",
+    "tribe": "bakola",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakola_tribe",
+    "type": "main_page",
+    "tribe": "bakola",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakola",
+    "type": "main_page",
+    "tribe": "bakola",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakola_ethnic_group",
+    "type": "main_page",
+    "tribe": "bakola",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "spiritual_beliefs",
+    "search_term": "bakola religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+traditional+religion",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "spiritual_beliefs",
+    "search_term": "bakola traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+religious+practices",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "spiritual_beliefs",
+    "search_term": "bakola religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+economy+trade",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "economy",
+    "search_term": "bakola economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+economic+activities",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "economy",
+    "search_term": "bakola economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+livelihood",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "economy",
+    "search_term": "bakola livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "arts_and_crafts",
+    "search_term": "bakola art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+traditional+arts",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "arts_and_crafts",
+    "search_term": "bakola traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+handicrafts",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "arts_and_crafts",
+    "search_term": "bakola handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+traditional+governance",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "governance",
+    "search_term": "bakola traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+political+system",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "governance",
+    "search_term": "bakola political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+leadership+structure",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "governance",
+    "search_term": "bakola leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+colonial+period",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "colonial_impact",
+    "search_term": "bakola colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+European+colonization",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "colonial_impact",
+    "search_term": "bakola European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+colonial+administration",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "colonial_impact",
+    "search_term": "bakola colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "subsistence_patterns",
+    "search_term": "bakola agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+food+production",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "subsistence_patterns",
+    "search_term": "bakola food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+traditional+economy",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "subsistence_patterns",
+    "search_term": "bakola traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "cultural_revitalization",
+    "search_term": "bakola cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+language+revitalization",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "cultural_revitalization",
+    "search_term": "bakola language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+cultural+revival",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "cultural_revitalization",
+    "search_term": "bakola cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+modern+politics",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "modern_governance",
+    "search_term": "bakola modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "modern_governance",
+    "search_term": "bakola contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+political+participation",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "modern_governance",
+    "search_term": "bakola political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "pre_contact_history",
+    "search_term": "bakola pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+before+European+contact",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "pre_contact_history",
+    "search_term": "bakola before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "pre_contact_history",
+    "search_term": "bakola ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "culture",
+    "search_term": "bakola culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+cultural+practices",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "culture",
+    "search_term": "bakola cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+way+of+life",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "culture",
+    "search_term": "bakola way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "oral_traditions",
+    "search_term": "bakola oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+myths+legends",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "oral_traditions",
+    "search_term": "bakola myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "oral_traditions",
+    "search_term": "bakola traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "social_organization",
+    "search_term": "bakola social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+clan+system+family",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "social_organization",
+    "search_term": "bakola clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "social_organization",
+    "search_term": "bakola social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "traditional_knowledge",
+    "search_term": "bakola traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "traditional_knowledge",
+    "search_term": "bakola indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "traditional_knowledge",
+    "search_term": "bakola ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "traditional_technology",
+    "search_term": "bakola traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "traditional_technology",
+    "search_term": "bakola indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+artisan+skills",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "traditional_technology",
+    "search_term": "bakola artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "history",
+    "search_term": "bakola history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+historical+background",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "history",
+    "search_term": "bakola historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "history",
+    "search_term": "bakola ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "music_dance",
+    "search_term": "bakola music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+musical+instruments",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "music_dance",
+    "search_term": "bakola musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakola+cultural+dances",
+    "type": "category_search",
+    "tribe": "bakola",
+    "category": "music_dance",
+    "search_term": "bakola cultural dances",
+    "priority": "medium"
+  }
+]

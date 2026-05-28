@@ -1,0 +1,968 @@
+{
+  "metadata": {
+    "last_updated": "2025-09-29",
+    "version": "2.0"
+  },
+  "quizzes": {
+    "cameroon-history": {
+      "id": "cameroon-history",
+      "name": "Cameroon History",
+      "description": "Test your knowledge about the rich history of Cameroon from ancient kingdoms to independence.",
+      "icon": "📜",
+      "category": "history",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "When did Cameroon gain independence from colonial rule?",
+          "options": ["1957", "1960", "1961", "1965"],
+          "correct": "1960",
+          "explanation": "Cameroon gained independence from France on January 1, 1960, becoming a sovereign nation."
+        },
+        {
+          "id": 2,
+          "question": "Which European country was the first to establish colonies in Cameroon?",
+          "options": ["Britain", "France", "Germany", "Portugal"],
+          "correct": "Germany",
+          "explanation": "Germany was the first European country to establish colonies in Cameroon in 1884, during the Berlin Conference."
+        },
+        {
+          "id": 3,
+          "question": "What was the name of the German colony in Cameroon?",
+          "options": ["Kamerun", "Cameroons", "Cameroun", "Kameroon"],
+          "correct": "Kamerun",
+          "explanation": "The German colony was called Kamerun, which is where the modern name Cameroon originates."
+        },
+        {
+          "id": 4,
+          "question": "Which two countries controlled Cameroon after World War I?",
+          "options": ["France and Britain", "France and Belgium", "Britain and Portugal", "Germany and France"],
+          "correct": "France and Britain",
+          "explanation": "After Germany lost World War I, Cameroon was divided between France and Britain under League of Nations mandates."
+        },
+        {
+          "id": 5,
+          "question": "What major event occurred in Cameroon in 1982?",
+          "options": ["Oil discovery", "Paul Biya became president", "First coup d'état", "Independence day"],
+          "correct": "Paul Biya became president",
+          "explanation": "Paul Biya became president of Cameroon in 1982, taking over from Ahmadou Ahidjo who resigned."
+        },
+        {
+          "id": 6,
+          "question": "Which ancient kingdom was centered in Foumban, West Cameroon?",
+          "options": ["Bamum Kingdom", "Bamileke Kingdom", "Beti Kingdom", "Fang Kingdom"],
+          "correct": "Bamum Kingdom",
+          "explanation": "The Bamum Kingdom was centered in Foumban and was one of the most sophisticated pre-colonial kingdoms in Cameroon."
+        },
+        {
+          "id": 7,
+          "question": "What was the name of the famous Sultan of the Bamum Kingdom who developed a writing system?",
+          "options": ["Sultan Njoya", "Sultan Ibrahim", "Sultan Bello", "Sultan Hamidou"],
+          "correct": "Sultan Njoya",
+          "explanation": "Sultan Njoya of the Bamum Kingdom developed an indigenous writing system in the late 19th century."
+        },
+        {
+          "id": 8,
+          "question": "Which Cameroon leader served as the first president after independence?",
+          "options": ["Paul Biya", "Ahmadou Ahidjo", "John Fru Ndi", "Peter Mafany Musonge"],
+          "correct": "Ahmadou Ahidjo",
+          "explanation": "Ahmadou Ahidjo was the first president of Cameroon after independence, serving from 1960 to 1982."
+        },
+        {
+          "id": 9,
+          "question": "What major conflict affected Cameroon in the 1950s and 1960s?",
+          "options": ["World War II", "The Union Sacrée", "The Kamerun War", "The Bamileke Rebellion"],
+          "correct": "The Kamerun War",
+          "explanation": "The Kamerun War (1955-1961) was a conflict between British Southern Cameroons and Nigeria over the territory's future."
+        },
+        {
+          "id": 10,
+          "question": "When was the Federal Republic of Cameroon established?",
+          "options": ["1957", "1961", "1965", "1972"],
+          "correct": "1961",
+          "explanation": "The Federal Republic of Cameroon was established in 1961 after the unification of French Cameroon and British Southern Cameroons."
+        }
+      ]
+    },
+    "cameroon-geography": {
+      "id": "cameroon-geography",
+      "name": "Cameroon Geography",
+      "description": "Discover the diverse landscapes, climate zones, and natural features of Cameroon.",
+      "icon": "🌍",
+      "category": "geography",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the highest mountain in Cameroon?",
+          "options": ["Mount Cameroon", "Mount Fako", "Adamawa Plateau", "Mount Mandara"],
+          "correct": "Mount Fako",
+          "explanation": "Mount Fako (4,040m) is the highest peak in Cameroon and is located on Mount Cameroon."
+        },
+        {
+          "id": 2,
+          "question": "Which ocean borders Cameroon to the west?",
+          "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Mediterranean Sea"],
+          "correct": "Atlantic Ocean",
+          "explanation": "Cameroon has a coastline along the Atlantic Ocean to the west."
+        },
+        {
+          "id": 3,
+          "question": "How many regions does Cameroon have?",
+          "options": ["8", "10", "12", "14"],
+          "correct": "10",
+          "explanation": "Cameroon is divided into 10 administrative regions."
+        },
+        {
+          "id": 4,
+          "question": "Which major river flows through Cameroon?",
+          "options": ["Niger River", "Congo River", "Benue River", "Zambezi River"],
+          "correct": "Benue River",
+          "explanation": "The Benue River is one of the major rivers in Cameroon and a tributary of the Niger River."
+        },
+        {
+          "id": 5,
+          "question": "What type of climate is found in coastal Cameroon?",
+          "options": ["Desert climate", "Tropical climate", "Temperate climate", "Mediterranean climate"],
+          "correct": "Tropical climate",
+          "explanation": "Coastal Cameroon has a tropical climate with high humidity and rainfall."
+        },
+        {
+          "id": 6,
+          "question": "Which plateau covers much of northern Cameroon?",
+          "options": ["Adamawa Plateau", "Bamenda Plateau", "Koussi Plateau", "Mandara Plateau"],
+          "correct": "Adamawa Plateau",
+          "explanation": "The Adamawa Plateau covers much of northern Cameroon and is part of the larger Adamawa Highlands."
+        },
+        {
+          "id": 7,
+          "question": "What is the approximate area of Cameroon?",
+          "options": ["230,000 km²", "350,000 km²", "475,000 km²", "600,000 km²"],
+          "correct": "475,000 km²",
+          "explanation": "Cameroon covers an area of approximately 475,000 square kilometers."
+        },
+        {
+          "id": 8,
+          "question": "Which mountain range is known for its volcanic activity in Cameroon?",
+          "options": ["Cameroon Line", "Mandara Mountains", "Adamawa Mountains", "Bamenda Mountains"],
+          "correct": "Cameroon Line",
+          "explanation": "The Cameroon Line is a chain of volcanic mountains that includes Mount Cameroon, one of Africa's most active volcanoes."
+        },
+        {
+          "id": 9,
+          "question": "What is the name of the largest lake in Cameroon?",
+          "options": ["Lake Chad", "Lake Nyos", "Lake Barombi Mbo", "Lake Ossa"],
+          "correct": "Lake Chad",
+          "explanation": "Lake Chad is the largest lake in Cameroon, though it's shared with neighboring countries."
+        },
+        {
+          "id": 10,
+          "question": "Which region is known as the 'Roof of Africa'?",
+          "options": ["Adamawa Region", "North Region", "West Region", "Northwest Region"],
+          "correct": "Adamawa Region",
+          "explanation": "The Adamawa Region is often called the 'Roof of Africa' due to its high elevation plateau."
+        }
+      ]
+    },
+    "bamum-legacy": {
+      "id": "bamum-legacy",
+      "name": "Bamum Legacy",
+      "description": "Discover the ancient kingdom and innovations of the Bamum people.",
+      "icon": "📜",
+      "category": "tribes",
+      "difficulty": "advanced",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which Bamum Sultan developed an indigenous writing system?",
+          "options": ["Sultan Njoya", "Sultan Ibrahim", "Sultan Bello", "Sultan Hamidou"],
+          "correct": "Sultan Njoya",
+          "explanation": "Sultan Njoya of Bamum developed an indigenous writing system in the late 19th century."
+        },
+        {
+          "id": 2,
+          "question": "In which Cameroonian city was the Bamum kingdom centered?",
+          "options": ["Bamenda", "Buea", "Foumban", "Kumba"],
+          "correct": "Foumban",
+          "explanation": "The Bamum kingdom was centered in Foumban, West-Central Cameroon."
+        },
+        {
+          "id": 3,
+          "question": "What material were the famous Bamum bronze sculptures made from?",
+          "options": ["Gold", "Silver", "Bronze", "Iron"],
+          "correct": "Bronze",
+          "explanation": "The Bamum were renowned for their bronze sculptures, particularly royal statues and ceremonial objects."
+        },
+        {
+          "id": 4,
+          "question": "What is the 'Nguon' festival commemorating?",
+          "options": ["Installation of Sultan Njoya", "Harvest season", "New year", "Victory in battle"],
+          "correct": "Installation of Sultan Njoya",
+          "explanation": "The Nguon festival commemorates the installation of Sultan Njoya and celebrates Bamum culture."
+        },
+        {
+          "id": 5,
+          "question": "What was the primary contribution of Sultan Njoya to Bamum culture?",
+          "options": ["Military conquests", "Writing system development", "Trade expansion", "Religious reforms"],
+          "correct": "Writing system development",
+          "explanation": "Sultan Njoya's greatest contribution was developing an indigenous writing system for the Bamum language."
+        },
+        {
+          "id": 6,
+          "question": "What is the name of the Bamum royal palace?",
+          "options": ["Palace of the Sultan", "Njoya's Palace", "Fondom Palace", "Royal Residence"],
+          "correct": "Njoya's Palace",
+          "explanation": "Njoya's Palace in Foumban is the royal palace of the Bamum kingdom, now a museum."
+        },
+        {
+          "id": 7,
+          "question": "Which European explorer visited the Bamum kingdom in the early 20th century?",
+          "options": ["David Livingstone", "Henry Morton Stanley", "Gustav Nachtigal", "Mary Kingsley"],
+          "correct": "Gustav Nachtigal",
+          "explanation": "Gustav Nachtigal, a German explorer, visited the Bamum kingdom in the early 1900s."
+        },
+        {
+          "id": 8,
+          "question": "What is the traditional Bamum art of decorating gourds called?",
+          "options": ["Pysanky", "Batik", "Ndebele painting", "Bamum script decoration"],
+          "correct": "Bamum script decoration",
+          "explanation": "The Bamum developed the art of decorating gourds with their indigenous script."
+        },
+        {
+          "id": 9,
+          "question": "What was the name of the Bamum administrative system?",
+          "options": ["Chiefdom", "Fondom", "Emirate", "Kingdom"],
+          "correct": "Fondom",
+          "explanation": "The Bamum kingdom was organized into a fondom system, with various administrative units."
+        },
+        {
+          "id": 10,
+          "question": "Which religion was adopted by the Bamum kingdom under Sultan Njoya?",
+          "options": ["Christianity", "Islam", "Traditional beliefs", "Buddhism"],
+          "correct": "Islam",
+          "explanation": "Sultan Njoya converted to Islam and introduced it to the Bamum kingdom."
+        }
+      ]
+    },
+    "bassa-traditions": {
+      "id": "bassa-traditions",
+      "name": "Bassa Traditions",
+      "description": "Learn about the customs and traditions of the Bassa people of Cameroon.",
+      "icon": "🐟",
+      "category": "tribes",
+      "difficulty": "intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which region is primarily inhabited by the Bassa people?",
+          "options": ["Littoral Region", "North Region", "West Region", "South Region"],
+          "correct": "Littoral Region",
+          "explanation": "The Bassa people primarily inhabit the Littoral Region of Cameroon, particularly around Douala."
+        },
+        {
+          "id": 2,
+          "question": "What is the traditional Bassa staple dish?",
+          "options": ["Ndole", "Mbongo Tchobi", "Fufu", "Eru"],
+          "correct": "Mbongo Tchobi",
+          "explanation": "Mbongo Tchobi is the traditional Bassa dish, a spicy black stew made with fish or meat."
+        },
+        {
+          "id": 3,
+          "question": "What is the name of the Bassa initiation ceremony for young men?",
+          "options": ["Nkwe", "Ngondo", "Mengue", "Ekang"],
+          "correct": "Mengue",
+          "explanation": "Mengue is the traditional Bassa initiation ceremony for young men, marking their transition to adulthood."
+        },
+        {
+          "id": 4,
+          "question": "Which Bassa festival celebrates the arrival of the first rains?",
+          "options": ["Ngondo", "Lem", "Mengue", "First Rain Festival"],
+          "correct": "First Rain Festival",
+          "explanation": "The First Rain Festival celebrates the arrival of the first rains and the beginning of the farming season."
+        },
+        {
+          "id": 5,
+          "question": "What is the traditional Bassa fishing technique?",
+          "options": ["Net fishing", "Line fishing", "Trap fishing", "Poison fishing"],
+          "correct": "Poison fishing",
+          "explanation": "The Bassa traditionally used plant-based poisons to stun fish in rivers for easier capture."
+        },
+        {
+          "id": 6,
+          "question": "What is the name of the traditional Bassa canoe?",
+          "options": ["Pirogue", "Dugout canoe", "Catamaran", "Kayak"],
+          "correct": "Dugout canoe",
+          "explanation": "The Bassa use traditional dugout canoes for fishing and transportation along rivers."
+        },
+        {
+          "id": 7,
+          "question": "Which Bassa tradition involves elaborate beadwork?",
+          "options": ["Wedding ceremonies", "Funeral rites", "Coming of age", "Religious ceremonies"],
+          "correct": "Wedding ceremonies",
+          "explanation": "Bassa wedding ceremonies feature elaborate beadwork as part of traditional attire."
+        },
+        {
+          "id": 8,
+          "question": "What is the traditional Bassa house made of?",
+          "options": ["Brick", "Mud and wood", "Concrete", "Stone"],
+          "correct": "Mud and wood",
+          "explanation": "Traditional Bassa houses are made of mud and wood with thatched roofs."
+        },
+        {
+          "id": 9,
+          "question": "Which Bassa dance is performed during harvest celebrations?",
+          "options": ["Bikutsi", "Makossa", "Ekang", "Bassa Folk Dance"],
+          "correct": "Bassa Folk Dance",
+          "explanation": "The Bassa Folk Dance is performed during harvest celebrations and other festive occasions."
+        },
+        {
+          "id": 10,
+          "question": "What is the traditional Bassa musical instrument?",
+          "options": ["Balafon", "Talking drum", "Flute", "Harp"],
+          "correct": "Talking drum",
+          "explanation": "The talking drum is a traditional Bassa musical instrument used to communicate messages."
+        }
+      ]
+    },
+    "douala-history": {
+      "id": "douala-history",
+      "name": "Douala History & Culture",
+      "description": "Explore the history and culture of the Douala people, Cameroon's coastal ethnic group.",
+      "icon": "⚓",
+      "category": "tribes",
+      "difficulty": "intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the traditional name for the Douala people?",
+          "options": ["Sawa", "Bassa", "Duala", "Wouri"],
+          "correct": "Sawa",
+          "explanation": "The Douala people are traditionally known as the Sawa people, meaning 'coastal dwellers'."
+        },
+        {
+          "id": 2,
+          "question": "Which European nation first established trade relations with the Douala?",
+          "options": ["Britain", "France", "Germany", "Portugal"],
+          "correct": "Germany",
+          "explanation": "Germany established the first formal trade relations with the Douala in the late 19th century."
+        },
+        {
+          "id": 3,
+          "question": "What is the traditional Douala fishing technique using plant poisons called?",
+          "options": ["Tikta", "Makala", "Ngome", "Poto"],
+          "correct": "Tikta",
+          "explanation": "Tikta is the traditional Douala fishing technique using plant-based poisons to stun fish."
+        },
+        {
+          "id": 4,
+          "question": "Which Douala festival celebrates the water spirits?",
+          "options": ["Ngondo", "Lem", "Mengue", "Jengu"],
+          "correct": "Ngondo",
+          "explanation": "The Ngondo festival is the most important Douala celebration, honoring the water spirits."
+        },
+        {
+          "id": 5,
+          "question": "What is the traditional Douala canoe made from?",
+          "options": ["Mahogany", "Ebony", "Iroko", "Mangrove wood"],
+          "correct": "Mangrove wood",
+          "explanation": "Traditional Douala canoes are carved from mangrove wood, which is abundant in their coastal environment."
+        },
+        {
+          "id": 6,
+          "question": "Which Douala tradition involves elaborate masquerades?",
+          "options": ["Weddings", "Funerals", "Initiation ceremonies", "All of the above"],
+          "correct": "All of the above",
+          "explanation": "Douala masquerades are used in various ceremonies including weddings, funerals, and initiations."
+        },
+        {
+          "id": 7,
+          "question": "What is the name of the traditional Douala royal regalia?",
+          "options": ["Regalia of the Sultan", "Crown of the King", "Throne of the Fon", "Paramount Chief's Regalia"],
+          "correct": "Paramount Chief's Regalia",
+          "explanation": "The Paramount Chief's Regalia includes traditional items of authority for Douala rulers."
+        },
+        {
+          "id": 8,
+          "question": "Which Douala custom involves the exchange of gifts during first meetings?",
+          "options": ["Barter system", "Kola nut ceremony", "Gift exchange", "Trade negotiations"],
+          "correct": "Kola nut ceremony",
+          "explanation": "The kola nut ceremony is a traditional Douala custom of exchanging kola nuts as a sign of hospitality."
+        },
+        {
+          "id": 9,
+          "question": "What is the traditional Douala art of decorating calabashes called?",
+          "options": ["Carving", "Painting", "Engraving", "Adornment"],
+          "correct": "Engraving",
+          "explanation": "The Douala traditionally engrave calabashes with intricate patterns for ceremonial use."
+        },
+        {
+          "id": 10,
+          "question": "Which Douala tradition involves the use of traditional medicine?",
+          "options": ["Nganga", "Sangoma", "Shaman", "Herbalist"],
+          "correct": "Nganga",
+          "explanation": "Nganga are traditional healers among the Douala who use herbs and spiritual practices for healing."
+        }
+      ]
+    },
+    "fulani-culture": {
+      "id": "fulani-culture",
+      "name": "Fulani Culture",
+      "description": "Discover the nomadic traditions and culture of the Fulani people in Cameroon.",
+      "icon": "🐄",
+      "category": "tribes",
+      "difficulty": "intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the primary economic activity of the Fulani people?",
+          "options": ["Farming", "Fishing", "Cattle herding", "Trading"],
+          "correct": "Cattle herding",
+          "explanation": "The Fulani are traditionally nomadic pastoralists known for their cattle herding."
+        },
+        {
+          "id": 2,
+          "question": "Which animal is most sacred to the Fulani?",
+          "options": ["Goats", "Sheep", "Cattle", "Horses"],
+          "correct": "Cattle",
+          "explanation": "Cattle are considered sacred to the Fulani and are central to their culture and economy."
+        },
+        {
+          "id": 3,
+          "question": "What is the traditional Fulani dwelling called?",
+          "options": ["Tent", "Hut", "Yurt", "Obu"],
+          "correct": "Tent",
+          "explanation": "The Fulani traditionally live in portable tents made from woven reeds or cloth."
+        },
+        {
+          "id": 4,
+          "question": "Which Fulani tradition involves elaborate body art?",
+          "options": ["Tattooing", "Scarification", "Painting", "Jewelry"],
+          "correct": "Scarification",
+          "explanation": "Scarification is a traditional Fulani practice of creating decorative scars on the body."
+        },
+        {
+          "id": 5,
+          "question": "What is the traditional Fulani language called?",
+          "options": ["Fulfulde", "Hausa", "Fulani", "Peul"],
+          "correct": "Fulfulde",
+          "explanation": "Fulfulde is the traditional language of the Fulani people, spoken across West Africa."
+        },
+        {
+          "id": 6,
+          "question": "Which Fulani custom involves the elaborate decoration of cattle?",
+          "options": ["Branding", "Painting", "Adornment", "Grooming"],
+          "correct": "Adornment",
+          "explanation": "The Fulani adorn their cattle with bells, beads, and paint as a sign of beauty and status."
+        },
+        {
+          "id": 7,
+          "question": "What is the traditional Fulani marriage ceremony called?",
+          "options": ["Wedding", "Nikkah", "Baptism", "Initiation"],
+          "correct": "Nikkah",
+          "explanation": "The traditional Fulani marriage ceremony is called Nikkah, incorporating Islamic traditions."
+        },
+        {
+          "id": 8,
+          "question": "Which Fulani tradition involves seasonal migration?",
+          "options": ["Nomadism", "Transhumance", "Migration", "Movement"],
+          "correct": "Transhumance",
+          "explanation": "Transhumance is the seasonal migration of Fulani herders with their cattle to find grazing land."
+        },
+        {
+          "id": 9,
+          "question": "What is the traditional Fulani musical instrument?",
+          "options": ["Balafon", "Flute", "Talking Drum", "Harp"],
+          "correct": "Flute",
+          "explanation": "The Fulani traditionally play flutes in their musical performances."
+        },
+        {
+          "id": 10,
+          "question": "What is the Fulani initiation ceremony for young boys called?",
+          "options": ["Nkwe", "Mengue", "Slitting", "Circumcision"],
+          "correct": "Slitting",
+          "explanation": "The Fulani practice a form of initiation called 'slitting' for young boys, involving a ceremonial cut."
+        }
+      ]
+    },
+    "beti-people": {
+      "id": "beti-people",
+      "name": "Beti People",
+      "description": "Learn about the Beti ethnic group and their contributions to Cameroonian culture.",
+      "icon": "🏞️",
+      "category": "tribes",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which region is primarily inhabited by the Beti people?",
+          "options": ["Northern Region", "Southern Region", "Central Region", "Western Region"],
+          "correct": "Central Region",
+          "explanation": "The Beti people primarily inhabit the Central Region of Cameroon, including the capital Yaoundé."
+        },
+        {
+          "id": 2,
+          "question": "What is the traditional Beti farming system called?",
+          "options": ["Shifting cultivation", "Monoculture", "Plantation farming", "Terracing"],
+          "correct": "Shifting cultivation",
+          "explanation": "The Beti traditionally practice shifting cultivation, moving their farms to new areas after several years."
+        },
+        {
+          "id": 3,
+          "question": "Which Beti sub-group is known for their royal traditions?",
+          "options": ["Ewondo", "Bulu", "Fang", "Mvae"],
+          "correct": "Ewondo",
+          "explanation": "The Ewondo sub-group of the Beti people are known for their royal traditions and were historically centered in Yaoundé."
+        },
+        {
+          "id": 4,
+          "question": "What is the traditional Beti initiation ceremony called?",
+          "options": ["Nkwe", "Mengue", "Ngondo", "Lem"],
+          "correct": "Nkwe",
+          "explanation": "Nkwe is the traditional Beti initiation ceremony marking the transition from childhood to adulthood."
+        },
+        {
+          "id": 5,
+          "question": "Which traditional Beti musical instrument is made from a hollowed log?",
+          "options": ["Balafon", "Talking drum", "Ekwe", "Flute"],
+          "correct": "Ekwe",
+          "explanation": "Ekwe is a traditional Beti musical instrument made from a hollowed log, used for communication and ceremonies."
+        },
+        {
+          "id": 6,
+          "question": "What is the traditional Beti house called?",
+          "options": ["Rondavel", "Obu", "Tchogol", "Hut"],
+          "correct": "Obu",
+          "explanation": "The traditional Beti house is called an Obu, typically made with mud walls and a thatched roof."
+        },
+        {
+          "id": 7,
+          "question": "Which Beti tradition involves ancestor worship?",
+          "options": ["Islam", "Christianity", "Traditional beliefs", "Buddhism"],
+          "correct": "Traditional beliefs",
+          "explanation": "The Beti people traditionally practice ancestor worship as part of their spiritual beliefs."
+        },
+        {
+          "id": 8,
+          "question": "What is the Beti traditional masked dance called?",
+          "options": ["Ekang", "Bikutsi", "Makossa", "Ngondo"],
+          "correct": "Ekang",
+          "explanation": "Ekang is the traditional Beti masked dance performed during ceremonies and festivals."
+        },
+        {
+          "id": 9,
+          "question": "Which crop is most important in Beti agriculture?",
+          "options": ["Rice", "Cassava", "Yams", "Maize"],
+          "correct": "Cassava",
+          "explanation": "Cassava is the most important crop in Beti agriculture, serving as a staple food."
+        },
+        {
+          "id": 10,
+          "question": "What is the Beti traditional system of governance called?",
+          "options": ["Chiefdom", "Fonship", "Sultanate", "Kingdom"],
+          "correct": "Chiefdom",
+          "explanation": "The Beti traditionally organize themselves into chiefdoms led by chiefs who govern local communities."
+        }
+      ]
+    },
+    "cameroon-economy": {
+      "id": "cameroon-economy",
+      "name": "Cameroon Economy",
+      "description": "Explore the economic sectors, resources, and development of Cameroon.",
+      "icon": "💰",
+      "category": "economy",
+      "difficulty": "intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which sector contributes the most to Cameroon's GDP?",
+          "options": ["Agriculture", "Industry", "Services", "Mining"],
+          "correct": "Services",
+          "explanation": "The services sector contributes the most to Cameroon's GDP, followed by agriculture and industry."
+        },
+        {
+          "id": 2,
+          "question": "What is Cameroon's main agricultural export?",
+          "options": ["Coffee", "Cocoa", "Bananas", "Cotton"],
+          "correct": "Cocoa",
+          "explanation": "Cocoa is Cameroon's main agricultural export, with the country being one of the world's largest cocoa producers."
+        },
+        {
+          "id": 3,
+          "question": "Which oil field is the largest in Cameroon?",
+          "options": ["Rio del Rey", "Bakassi", "Kribi", "Douala"],
+          "correct": "Rio del Rey",
+          "explanation": "The Rio del Rey oil field is the largest oil field in Cameroon, located in the Southwest Region."
+        },
+        {
+          "id": 4,
+          "question": "What is the currency of Cameroon?",
+          "options": ["West African CFA franc", "Central African CFA franc", "Cameroonian franc", "Euro"],
+          "correct": "Central African CFA franc",
+          "explanation": "Cameroon uses the Central African CFA franc (XAF) as its currency."
+        },
+        {
+          "id": 5,
+          "question": "Which port is Cameroon's main seaport?",
+          "options": ["Douala Port", "Limbe Port", "Kribi Port", "Tiko Port"],
+          "correct": "Douala Port",
+          "explanation": "Douala Port is Cameroon's main seaport and the largest in Central Africa."
+        },
+        {
+          "id": 6,
+          "question": "What percentage of Cameroon's population is employed in agriculture?",
+          "options": ["30%", "50%", "70%", "90%"],
+          "correct": "70%",
+          "explanation": "Approximately 70% of Cameroon's population is employed in the agricultural sector."
+        },
+        {
+          "id": 7,
+          "question": "Which mineral is Cameroon a significant producer of?",
+          "options": ["Gold", "Bauxite", "Oil", "All of the above"],
+          "correct": "All of the above",
+          "explanation": "Cameroon produces significant quantities of gold, bauxite, and oil."
+        },
+        {
+          "id": 8,
+          "question": "What is the main industrial sector in Cameroon?",
+          "options": ["Textiles", "Food processing", "Cement", "All of the above"],
+          "correct": "All of the above",
+          "explanation": "Cameroon's main industrial sectors include textiles, food processing, and cement production."
+        },
+        {
+          "id": 9,
+          "question": "Which international organization provides significant aid to Cameroon?",
+          "options": ["World Bank", "IMF", "UNDP", "All of the above"],
+          "correct": "All of the above",
+          "explanation": "Cameroon receives significant aid from the World Bank, IMF, UNDP, and other international organizations."
+        },
+        {
+          "id": 10,
+          "question": "What is Cameroon's main trading partner?",
+          "options": ["France", "China", "Nigeria", "Belgium"],
+          "correct": "France",
+          "explanation": "France is Cameroon's main trading partner due to historical ties from the colonial period."
+        }
+      ]
+    },
+    "cameroon-politics": {
+      "id": "cameroon-politics",
+      "name": "Cameroon Politics",
+      "description": "Understand the political system, governance, and leadership of Cameroon.",
+      "icon": "🏛️",
+      "category": "politics",
+      "difficulty": "intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What type of government does Cameroon have?",
+          "options": ["Presidential republic", "Parliamentary republic", "Constitutional monarchy", "Federal republic"],
+          "correct": "Presidential republic",
+          "explanation": "Cameroon has a presidential republic system of government."
+        },
+        {
+          "id": 2,
+          "question": "Who is the current president of Cameroon?",
+          "options": ["Paul Biya", "John Fru Ndi", "Joshua Chibi", "Jean-Jacques Ekindi"],
+          "correct": "Paul Biya",
+          "explanation": "Paul Biya has been the president of Cameroon since 1982."
+        },
+        {
+          "id": 3,
+          "question": "How many terms can a president serve in Cameroon?",
+          "options": ["2 terms", "3 terms", "No limit", "1 term"],
+          "correct": "No limit",
+          "explanation": "There is no term limit for presidents in Cameroon."
+        },
+        {
+          "id": 4,
+          "question": "What is the name of the lower house of Cameroon's parliament?",
+          "options": ["National Assembly", "Senate", "House of Representatives", "Council of States"],
+          "correct": "National Assembly",
+          "explanation": "The National Assembly is the lower house of Cameroon's bicameral parliament."
+        },
+        {
+          "id": 5,
+          "question": "Which political party has been dominant in Cameroon since independence?",
+          "options": ["Social Democratic Front", "Cameroon People's Democratic Movement", "Union of Cameroonian Populations", "National Union for Democracy and Progress"],
+          "correct": "Cameroon People's Democratic Movement",
+          "explanation": "The Cameroon People's Democratic Movement (CPDM) has been the dominant political party since independence."
+        },
+        {
+          "id": 6,
+          "question": "What is the minimum voting age in Cameroon?",
+          "options": ["16", "18", "21", "25"],
+          "correct": "18",
+          "explanation": "The minimum voting age in Cameroon is 18 years old."
+        },
+        {
+          "id": 7,
+          "question": "Which constitution is currently in effect in Cameroon?",
+          "options": ["1961 Constitution", "1972 Constitution", "1996 Constitution", "2008 Constitution"],
+          "correct": "1972 Constitution",
+          "explanation": "The 1972 Constitution is currently in effect in Cameroon, though it has been amended several times."
+        },
+        {
+          "id": 8,
+          "question": "What is the official name of Cameroon in French?",
+          "options": ["Cameroun", "Cameroon", "Kamerun", "Republic of Cameroon"],
+          "correct": "Cameroun",
+          "explanation": "The official name of Cameroon in French is 'Cameroun'."
+        },
+        {
+          "id": 9,
+          "question": "Which international court has Cameroon been involved with regarding border disputes?",
+          "options": ["International Court of Justice", "African Court on Human and Peoples' Rights", "European Court of Human Rights", "International Criminal Court"],
+          "correct": "International Court of Justice",
+          "explanation": "Cameroon has been involved with the International Court of Justice regarding border disputes with Nigeria."
+        },
+        {
+          "id": 10,
+          "question": "What is the capital city of Cameroon?",
+          "options": ["Douala", "Bamenda", "Yaoundé", "Buea"],
+          "correct": "Yaoundé",
+          "explanation": "Yaoundé is the capital city of Cameroon."
+        }
+      ]
+    },
+    "cameroon-culture": {
+      "id": "cameroon-culture",
+      "name": "Cameroon Culture & Heritage",
+      "description": "Test your knowledge about the rich culture, traditions, and history of Cameroon.",
+      "icon": "🇨🇲",
+      "category": "culture",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What are the two official languages of Cameroon?",
+          "options": ["French and English", "French and German", "English and Portuguese", "French and Spanish"],
+          "correct": "French and English",
+          "explanation": "Cameroon has two official languages: French and English, reflecting its colonial history."
+        },
+        {
+          "id": 2,
+          "question": "Which of these is a traditional Cameroonian music genre?",
+          "options": ["Makossa", "Afrobeat", "Highlife", "Soukous"],
+          "correct": "Makossa",
+          "explanation": "Makossa is a traditional Cameroonian music genre that originated in Douala."
+        },
+        {
+          "id": 3,
+          "question": "What is the traditional Cameroonian wrestling style called?",
+          "options": ["Guelewar", "Dambe", "Lutte", "Wrestling"],
+          "correct": "Guelewar",
+          "explanation": "Guelewar is the traditional Cameroonian wrestling style, particularly popular among the Sawa people."
+        },
+        {
+          "id": 4,
+          "question": "Which Cameroonian artist is known as the 'Grandfather of Makossa'?",
+          "options": ["Manu Dibango", "Francis Cabrel", "Eboa Lotin", "Kalia Bell"],
+          "correct": "Manu Dibango",
+          "explanation": "Manu Dibango is known as the 'Grandfather of Makossa' and helped popularize the genre internationally."
+        },
+        {
+          "id": 5,
+          "question": "What is the traditional Cameroonian dish made from cassava and eru called?",
+          "options": ["Waterfufu and Eru", "Ndole", "Fufu", "Garri"],
+          "correct": "Waterfufu and Eru",
+          "explanation": "Waterfufu and eru is a traditional Cameroonian dish made from cassava and a leafy vegetable called eru."
+        },
+        {
+          "id": 6,
+          "question": "Which ethnic group is known for the Ngondo festival?",
+          "options": ["Bamileke", "Beti", "Sawa", "Fulani"],
+          "correct": "Sawa",
+          "explanation": "The Sawa people are known for the Ngondo festival, a water festival held at the coast."
+        },
+        {
+          "id": 7,
+          "question": "What is the traditional Cameroonian hut style called?",
+          "options": ["Rondavel", "Obu", "Tchogol", "Hut"],
+          "correct": "Rondavel",
+          "explanation": "Rondavel is the traditional Cameroonian hut style, characterized by its round shape and conical roof."
+        },
+        {
+          "id": 8,
+          "question": "Which Cameroonian city is known as the 'economic capital'?",
+          "options": ["Yaoundé", "Bamenda", "Douala", "Buea"],
+          "correct": "Douala",
+          "explanation": "Douala is known as the 'economic capital' of Cameroon due to its port and commercial activities."
+        },
+        {
+          "id": 9,
+          "question": "What is the traditional Cameroonian masked dance called?",
+          "options": ["Ekang", "Bikutsi", "Makossa", "Ngondo"],
+          "correct": "Ekang",
+          "explanation": "Ekang is a traditional Cameroonian masked dance performed during ceremonies and festivals."
+        },
+        {
+          "id": 10,
+          "question": "Which lake in Cameroon is known for its floating villages?",
+          "options": ["Lake Chad", "Lake Nyos", "Lake Barombi Mbo", "Lake Ossa"],
+          "correct": "Lake Ossa",
+          "explanation": "Lake Ossa in Cameroon is known for its floating villages inhabited by the Sawa people."
+        }
+      ]
+    },
+    "bamileke-heritage": {
+      "id": "bamileke-heritage",
+      "name": "Bamileke Heritage",
+      "description": "Explore the rich traditions and history of the Bamileke people.",
+      "icon": "👑",
+      "category": "tribes",
+      "difficulty": "intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the traditional title of a Bamileke ruler?",
+          "options": ["Sultan", "Chief", "Fon", "King"],
+          "correct": "Fon",
+          "explanation": "The traditional ruler of Bamileke chiefdoms is called a Fon."
+        },
+        {
+          "id": 2,
+          "question": "Which of these is a traditional Bamileke textile?",
+          "options": ["Kente", "Toghu", "Mudcloth", "Adire"],
+          "correct": "Toghu",
+          "explanation": "Toghu is a traditional embroidered cloth worn by the Bamileke people during important ceremonies."
+        },
+        {
+          "id": 3,
+          "question": "What is the primary economic activity of the Bamileke people?",
+          "options": ["Fishing", "Nomadic herding", "Agriculture and trade", "Hunting"],
+          "correct": "Agriculture and trade",
+          "explanation": "The Bamileke are known for their agricultural skills and entrepreneurial spirit in trade."
+        },
+        {
+          "id": 4,
+          "question": "In which region of Cameroon do the Bamileke primarily live?",
+          "options": ["Northern Region", "Western Highlands", "Coastal Region", "Eastern Region"],
+          "correct": "Western Highlands",
+          "explanation": "The Bamileke people primarily inhabit the Western Highlands of Cameroon."
+        },
+        {
+          "id": 5,
+          "question": "What is the significance of the 'Lem' festival among the Bamileke?",
+          "options": ["Harvest celebration", "Coming of age", "Wedding ceremony", "Funeral rites"],
+          "correct": "Harvest celebration",
+          "explanation": "The Lem festival is an annual harvest celebration marking the new yam harvest."
+        },
+        {
+          "id": 6,
+          "question": "What is the name of the traditional Bamileke royal dance?",
+          "options": ["Bikutsi", "Makossa", "Ngyem", "Ekang"],
+          "correct": "Ngyem",
+          "explanation": "Ngyem is the traditional royal dance of the Bamileke people, performed during ceremonies."
+        },
+        {
+          "id": 7,
+          "question": "Which Bamileke tradition involves elaborate bronze work?",
+          "options": ["Pottery", "Wood carving", "Bronze casting", "Beadwork"],
+          "correct": "Bronze casting",
+          "explanation": "The Bamileke are renowned for their bronze casting, particularly royal regalia and ceremonial objects."
+        },
+        {
+          "id": 8,
+          "question": "What is the traditional Bamileke coming-of-age ceremony called?",
+          "options": ["Initiation", "Nkwe", "Toghu", "Fonship"],
+          "correct": "Nkwe",
+          "explanation": "Nkwe is the traditional Bamileke initiation ceremony marking the transition to adulthood."
+        },
+        {
+          "id": 9,
+          "question": "Which crop is most associated with Bamileke agriculture?",
+          "options": ["Rice", "Cassava", "Yams", "Maize"],
+          "correct": "Yams",
+          "explanation": "Yams are the most important crop in Bamileke agriculture and are central to their culture."
+        },
+        {
+          "id": 10,
+          "question": "What is the traditional Bamileke house called?",
+          "options": ["Rondavel", "Obu", "Tchogol", "Palaver hut"],
+          "correct": "Tchogol",
+          "explanation": "Tchogol is the traditional Bamileke house, typically rectangular with a thatched roof."
+        }
+      ]
+    },
+    "cameroon-environment": {
+      "id": "cameroon-environment",
+      "name": "Cameroon Environment",
+      "description": "Learn about Cameroon's biodiversity, conservation efforts, and environmental challenges.",
+      "icon": "🌱",
+      "category": "environment",
+      "difficulty": "intermediate",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which national park in Cameroon is known for its mountain gorillas?",
+          "options": ["Waza National Park", "Korup National Park", "Bouba Ndjida National Park", "Cross River National Park"],
+          "correct": "Cross River National Park",
+          "explanation": "Cross River National Park is known for its population of Cross River gorillas, a critically endangered subspecies."
+        },
+        {
+          "id": 2,
+          "question": "What is the main threat to Cameroon's rainforests?",
+          "options": ["Mining", "Logging", "Agriculture", "All of the above"],
+          "correct": "All of the above",
+          "explanation": "Cameroon's rainforests face threats from logging, mining, and agricultural expansion."
+        },
+        {
+          "id": 3,
+          "question": "Which endangered species is found in Cameroon's forests?",
+          "options": ["African Elephant", "Western Lowland Gorilla", "Chimpanzee", "All of the above"],
+          "correct": "All of the above",
+          "explanation": "Cameroon's forests are home to African elephants, western lowland gorillas, and chimpanzees, all of which are endangered."
+        },
+        {
+          "id": 4,
+          "question": "What is Cameroon's largest lake?",
+          "options": ["Lake Chad", "Lake Nyos", "Lake Barombi Mbo", "Lake Ossa"],
+          "correct": "Lake Chad",
+          "explanation": "Lake Chad is Cameroon's largest lake, though it's shared with neighboring countries."
+        },
+        {
+          "id": 5,
+          "question": "Which environmental disaster occurred at Lake Nyos in 1986?",
+          "options": ["Oil spill", "Volcanic eruption", "Gas explosion", "Landslide"],
+          "correct": "Gas explosion",
+          "explanation": "In 1986, a gas explosion at Lake Nyos released a deadly cloud of carbon dioxide, killing over 1,700 people."
+        },
+        {
+          "id": 6,
+          "question": "What percentage of Cameroon is covered by forests?",
+          "options": ["10%", "30%", "50%", "70%"],
+          "correct": "50%",
+          "explanation": "Approximately 50% of Cameroon's land area is covered by forests."
+        },
+        {
+          "id": 7,
+          "question": "Which Cameroon mountain is known for its unique ecosystem?",
+          "options": ["Mount Cameroon", "Mount Fako", "Adamawa Plateau", "Mount Mandara"],
+          "correct": "Mount Cameroon",
+          "explanation": "Mount Cameroon is known for its unique ecosystem with diverse flora and fauna due to its volcanic nature."
+        },
+        {
+          "id": 8,
+          "question": "What is the main conservation area for elephants in Cameroon?",
+          "options": ["Waza National Park", "Korup National Park", "Bouba Ndjida National Park", "Dja Faunal Reserve"],
+          "correct": "Bouba Ndjida National Park",
+          "explanation": "Bouba Ndjida National Park is the main conservation area for elephants in Cameroon."
+        },
+        {
+          "id": 9,
+          "question": "Which Cameroon region has the highest biodiversity?",
+          "options": ["Northern Region", "Southern Region", "Western Region", "Central Region"],
+          "correct": "Southern Region",
+          "explanation": "The Southern Region of Cameroon has the highest biodiversity due to its extensive rainforests and diverse ecosystems."
+        },
+        {
+          "id": 10,
+          "question": "What is Cameroon's main environmental challenge?",
+          "options": ["Desertification", "Deforestation", "Pollution", "Climate change"],
+          "correct": "Deforestation",
+          "explanation": "Deforestation is Cameroon's main environmental challenge, threatening biodiversity and contributing to climate change."
+        }
+      ]
+    }
+  }
+}

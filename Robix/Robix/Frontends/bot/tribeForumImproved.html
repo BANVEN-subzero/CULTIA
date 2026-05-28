@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribe Forum - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
+            padding: 80px 0 120px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+        }
+
+        .search-card {
+            background: white;
+            border-radius: 35px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .form-control, .form-select {
+            border-radius: 15px;
+            padding: 12px 20px;
+            border: 2px solid #f0f0f0;
+            background: #f8f9fa;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-green);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(45, 90, 39, 0.1);
+        }
+
+        .btn-modern {
+            border-radius: 15px;
+            padding: 12px 30px;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+        }
+
+        .tribe-card {
+            background: white;
+            border-radius: 30px;
+            padding: 30px;
+            height: 100%;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            border-top: 5px solid transparent;
+        }
+
+        .tribe-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+            border-top-color: var(--primary-green);
+        }
+
+        .region-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: rgba(45, 90, 39, 0.1);
+            color: var(--primary-green);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .tribe-detail-container {
+            background: white;
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Tribe Forum</h1>
+                <p class="lead opacity-75 mb-0 mx-auto" style="max-width: 700px;">Connect with the history, traditions, and people of over 250 major tribes across Cameroon.</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="search-card mb-5" data-aos="fade-up">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Tribe Name</label>
+                        <input type="text" id="tribeName" class="form-control" placeholder="e.g., Bamileke, Bassa...">
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Region</label>
+                        <select id="tribeRegion" class="form-select">
+                            <option value="">All Regions</option>
+                            <option value="littoral">Littoral</option>
+                            <option value="west">West</option>
+                            <option value="northwest">Northwest</option>
+                            <option value="southwest">Southwest</option>
+                            <option value="north">North</option>
+                            <option value="centre">Centre</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-bold text-muted small text-uppercase">Population</label>
+                        <select id="tribePopulation" class="form-select">
+                            <option value="">All Sizes</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button id="searchTribeBtn" class="btn btn-success btn-modern w-100">
+                            <i class="fas fa-search me-2"></i> Find
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tribe Detail Section -->
+            <div id="tribeInfo" class="tribe-detail-section" data-aos="fade-up">
+                <!-- Content dynamically populated -->
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-12 d-flex justify-content-between align-items-center mb-2">
+                    <h3 class="fw-bold mb-0">Explore Tribes</h3>
+                    <div class="d-flex gap-3 align-items-center">
+                        <span class="text-muted small fw-bold">Sort by:</span>
+                        <select id="tribeSort" class="form-select form-select-sm border-0 bg-transparent fw-bold" style="width: auto;">
+                            <option value="name">Name (A-Z)</option>
+                            <option value="population">Population</option>
+                            <option value="region">Region</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <input type="text" id="tribeFilter" class="form-control" placeholder="Filter tribes by name, region, or description...">
+                </div>
+                <div class="col-12">
+                    <div class="row g-4" id="allTribesGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Logic Scripts -->
+    <link rel="stylesheet" href="css/tribeForumImproved.css">
+    <script src="js/tribeForumImproved.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Forum');
+            });
+        });
+    </script>
+</body>
+
+</html>

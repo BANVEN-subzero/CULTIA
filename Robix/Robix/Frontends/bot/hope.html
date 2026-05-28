@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope & Patience - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image/images (5).png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .proverb-highlight {
+            font-size: 2rem;
+            color: var(--primary-green);
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f8fdf7;
+            border-radius: 30px;
+            border-left: 10px solid var(--primary-green);
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .content-section h3 i {
+            color: var(--primary-green);
+        }
+
+        .content-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">Hope & Patience</h1>
+                <p class="lead fs-4 opacity-75">The Universal Nature of Better Times</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="content-container" data-aos="fade-up">
+                <a href="proverbs.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Proverbs
+                </a>
+
+                <div class="proverb-highlight">
+                    "The sun that shines for all does not skip the poor man's house"
+                </div>
+
+                <div class="content-section">
+                    <h3><i class="fas fa-info-circle"></i> Origin and Meaning</h3>
+                    <p class="content-text">This beautiful proverb from the northern regions of Cameroon uses the most democratic element of nature—the sun—to provide comfort and hope to those facing hardship. It suggests that while social and economic status may divide people, the fundamental blessings of life and the possibility of "brighter days" are universal.</p>
+                    <p class="content-text">It teaches that misfortune is temporary and that everyone, regardless of their current circumstances, is entitled to and will eventually receive their share of life's warmth and success. It is a powerful statement on human dignity and the inevitable cycle of nature.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3><i class="fas fa-landmark"></i> Cultural Context</h3>
+                    <p class="content-text">In many traditional communities, wealth was often seen as a sign of divine favor, which could lead to the marginalization of the poor. This proverb acted as a social equalizer, reminding both the wealthy and the poor that the fundamental forces of the universe do not discriminate. It encouraged the community to maintain a sense of equity and shared humanity.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3><i class="fas fa-lightbulb"></i> Modern Applications</h3>
+                    <p class="content-text">In modern society, this proverb can be applied to the concept of equal opportunity and universal rights. It serves as an inspiration for social justice and a reminder for individuals going through difficult times that their current state does not define their future. It's a call to maintain patience and hope, knowing that the "sun" of opportunity eventually reaches everyone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Hope & Patience');
+            });
+        });
+    </script>
+</body>
+
+</html>

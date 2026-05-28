@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamum_people",
+    "type": "main_page",
+    "tribe": "bamum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamum_tribe",
+    "type": "main_page",
+    "tribe": "bamum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamum",
+    "type": "main_page",
+    "tribe": "bamum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamum_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "spiritual_beliefs",
+    "search_term": "bamum religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "spiritual_beliefs",
+    "search_term": "bamum traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+religious+practices",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "spiritual_beliefs",
+    "search_term": "bamum religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+colonial+period",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "colonial_impact",
+    "search_term": "bamum colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+European+colonization",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "colonial_impact",
+    "search_term": "bamum European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "colonial_impact",
+    "search_term": "bamum colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "subsistence_patterns",
+    "search_term": "bamum agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+food+production",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "subsistence_patterns",
+    "search_term": "bamum food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "subsistence_patterns",
+    "search_term": "bamum traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "cultural_revitalization",
+    "search_term": "bamum cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "cultural_revitalization",
+    "search_term": "bamum language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "cultural_revitalization",
+    "search_term": "bamum cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+modern+politics",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "modern_governance",
+    "search_term": "bamum modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "modern_governance",
+    "search_term": "bamum contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+political+participation",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "modern_governance",
+    "search_term": "bamum political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "pre_contact_history",
+    "search_term": "bamum pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "pre_contact_history",
+    "search_term": "bamum before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "pre_contact_history",
+    "search_term": "bamum ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "oral_traditions",
+    "search_term": "bamum oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+myths+legends",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "oral_traditions",
+    "search_term": "bamum myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "oral_traditions",
+    "search_term": "bamum traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "social_organization",
+    "search_term": "bamum social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "social_organization",
+    "search_term": "bamum clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "social_organization",
+    "search_term": "bamum social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "traditional_knowledge",
+    "search_term": "bamum traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "traditional_knowledge",
+    "search_term": "bamum indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "traditional_knowledge",
+    "search_term": "bamum ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "traditional_technology",
+    "search_term": "bamum traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "traditional_technology",
+    "search_term": "bamum indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "traditional_technology",
+    "search_term": "bamum artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "music_dance",
+    "search_term": "bamum music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "music_dance",
+    "search_term": "bamum musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamum+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamum",
+    "category": "music_dance",
+    "search_term": "bamum cultural dances",
+    "priority": "medium"
+  }
+]

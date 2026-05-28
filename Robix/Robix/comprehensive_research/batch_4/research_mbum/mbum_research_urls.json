@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/mbum_people",
+    "type": "main_page",
+    "tribe": "mbum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mbum_tribe",
+    "type": "main_page",
+    "tribe": "mbum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mbum",
+    "type": "main_page",
+    "tribe": "mbum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mbum_ethnic_group",
+    "type": "main_page",
+    "tribe": "mbum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "spiritual_beliefs",
+    "search_term": "mbum religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+traditional+religion",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "spiritual_beliefs",
+    "search_term": "mbum traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+religious+practices",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "spiritual_beliefs",
+    "search_term": "mbum religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+economy+trade",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "economy",
+    "search_term": "mbum economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+economic+activities",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "economy",
+    "search_term": "mbum economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+livelihood",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "economy",
+    "search_term": "mbum livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "arts_and_crafts",
+    "search_term": "mbum art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+traditional+arts",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "arts_and_crafts",
+    "search_term": "mbum traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+handicrafts",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "arts_and_crafts",
+    "search_term": "mbum handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+traditional+governance",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "governance",
+    "search_term": "mbum traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+political+system",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "governance",
+    "search_term": "mbum political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+leadership+structure",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "governance",
+    "search_term": "mbum leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+colonial+period",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "colonial_impact",
+    "search_term": "mbum colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+European+colonization",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "colonial_impact",
+    "search_term": "mbum European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+colonial+administration",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "colonial_impact",
+    "search_term": "mbum colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+agriculture+farming",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "subsistence_patterns",
+    "search_term": "mbum agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+food+production",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "subsistence_patterns",
+    "search_term": "mbum food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+traditional+economy",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "subsistence_patterns",
+    "search_term": "mbum traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+modern+challenges",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "challenges",
+    "search_term": "mbum modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+contemporary+issues",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "challenges",
+    "search_term": "mbum contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+cultural+preservation",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "challenges",
+    "search_term": "mbum cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+cultural+preservation",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "cultural_revitalization",
+    "search_term": "mbum cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+language+revitalization",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "cultural_revitalization",
+    "search_term": "mbum language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+cultural+revival",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "cultural_revitalization",
+    "search_term": "mbum cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+modern+politics",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "modern_governance",
+    "search_term": "mbum modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+contemporary+governance",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "modern_governance",
+    "search_term": "mbum contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+political+participation",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "modern_governance",
+    "search_term": "mbum political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "pre_contact_history",
+    "search_term": "mbum pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+before+European+contact",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "pre_contact_history",
+    "search_term": "mbum before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+ancient+traditions",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "pre_contact_history",
+    "search_term": "mbum ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "culture",
+    "search_term": "mbum culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+cultural+practices",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "culture",
+    "search_term": "mbum cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+way+of+life",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "culture",
+    "search_term": "mbum way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "oral_traditions",
+    "search_term": "mbum oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+myths+legends",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "oral_traditions",
+    "search_term": "mbum myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+traditional+narratives",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "oral_traditions",
+    "search_term": "mbum traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "social_organization",
+    "search_term": "mbum social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+clan+system+family",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "social_organization",
+    "search_term": "mbum clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+social+hierarchy",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "social_organization",
+    "search_term": "mbum social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "traditional_knowledge",
+    "search_term": "mbum traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "traditional_knowledge",
+    "search_term": "mbum indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "traditional_knowledge",
+    "search_term": "mbum ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "traditional_technology",
+    "search_term": "mbum traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+indigenous+technology",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "traditional_technology",
+    "search_term": "mbum indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+artisan+skills",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "traditional_technology",
+    "search_term": "mbum artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+music+dance+songs",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "music_dance",
+    "search_term": "mbum music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+musical+instruments",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "music_dance",
+    "search_term": "mbum musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mbum+cultural+dances",
+    "type": "category_search",
+    "tribe": "mbum",
+    "category": "music_dance",
+    "search_term": "mbum cultural dances",
+    "priority": "medium"
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/maka_people",
+    "type": "main_page",
+    "tribe": "maka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/maka_tribe",
+    "type": "main_page",
+    "tribe": "maka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/maka",
+    "type": "main_page",
+    "tribe": "maka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/maka_ethnic_group",
+    "type": "main_page",
+    "tribe": "maka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "spiritual_beliefs",
+    "search_term": "maka religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+traditional+religion",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "spiritual_beliefs",
+    "search_term": "maka traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+religious+practices",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "spiritual_beliefs",
+    "search_term": "maka religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+colonial+period",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "colonial_impact",
+    "search_term": "maka colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+European+colonization",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "colonial_impact",
+    "search_term": "maka European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+colonial+administration",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "colonial_impact",
+    "search_term": "maka colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+agriculture+farming",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "subsistence_patterns",
+    "search_term": "maka agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+food+production",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "subsistence_patterns",
+    "search_term": "maka food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+traditional+economy",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "subsistence_patterns",
+    "search_term": "maka traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+cultural+preservation",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "cultural_revitalization",
+    "search_term": "maka cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+language+revitalization",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "cultural_revitalization",
+    "search_term": "maka language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+cultural+revival",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "cultural_revitalization",
+    "search_term": "maka cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+modern+politics",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "modern_governance",
+    "search_term": "maka modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+contemporary+governance",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "modern_governance",
+    "search_term": "maka contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+political+participation",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "modern_governance",
+    "search_term": "maka political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "pre_contact_history",
+    "search_term": "maka pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+before+European+contact",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "pre_contact_history",
+    "search_term": "maka before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+ancient+traditions",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "pre_contact_history",
+    "search_term": "maka ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "oral_traditions",
+    "search_term": "maka oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+myths+legends",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "oral_traditions",
+    "search_term": "maka myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+traditional+narratives",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "oral_traditions",
+    "search_term": "maka traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "social_organization",
+    "search_term": "maka social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+clan+system+family",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "social_organization",
+    "search_term": "maka clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+social+hierarchy",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "social_organization",
+    "search_term": "maka social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "traditional_knowledge",
+    "search_term": "maka traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "traditional_knowledge",
+    "search_term": "maka indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "traditional_knowledge",
+    "search_term": "maka ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "traditional_technology",
+    "search_term": "maka traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+indigenous+technology",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "traditional_technology",
+    "search_term": "maka indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+artisan+skills",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "traditional_technology",
+    "search_term": "maka artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+music+dance+songs",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "music_dance",
+    "search_term": "maka music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+musical+instruments",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "music_dance",
+    "search_term": "maka musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/maka+cultural+dances",
+    "type": "category_search",
+    "tribe": "maka",
+    "category": "music_dance",
+    "search_term": "maka cultural dances",
+    "priority": "medium"
+  }
+]

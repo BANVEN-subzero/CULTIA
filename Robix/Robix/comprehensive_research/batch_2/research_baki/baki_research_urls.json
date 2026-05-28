@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/baki_people",
+    "type": "main_page",
+    "tribe": "baki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baki_tribe",
+    "type": "main_page",
+    "tribe": "baki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baki",
+    "type": "main_page",
+    "tribe": "baki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/baki_ethnic_group",
+    "type": "main_page",
+    "tribe": "baki",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "spiritual_beliefs",
+    "search_term": "baki religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+traditional+religion",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "spiritual_beliefs",
+    "search_term": "baki traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+religious+practices",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "spiritual_beliefs",
+    "search_term": "baki religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+colonial+period",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "colonial_impact",
+    "search_term": "baki colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+European+colonization",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "colonial_impact",
+    "search_term": "baki European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+colonial+administration",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "colonial_impact",
+    "search_term": "baki colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+agriculture+farming",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "subsistence_patterns",
+    "search_term": "baki agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+food+production",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "subsistence_patterns",
+    "search_term": "baki food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+traditional+economy",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "subsistence_patterns",
+    "search_term": "baki traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+cultural+preservation",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "cultural_revitalization",
+    "search_term": "baki cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+language+revitalization",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "cultural_revitalization",
+    "search_term": "baki language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+cultural+revival",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "cultural_revitalization",
+    "search_term": "baki cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+modern+politics",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "modern_governance",
+    "search_term": "baki modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+contemporary+governance",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "modern_governance",
+    "search_term": "baki contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+political+participation",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "modern_governance",
+    "search_term": "baki political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "pre_contact_history",
+    "search_term": "baki pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+before+European+contact",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "pre_contact_history",
+    "search_term": "baki before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+ancient+traditions",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "pre_contact_history",
+    "search_term": "baki ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "oral_traditions",
+    "search_term": "baki oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+myths+legends",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "oral_traditions",
+    "search_term": "baki myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+traditional+narratives",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "oral_traditions",
+    "search_term": "baki traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "social_organization",
+    "search_term": "baki social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+clan+system+family",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "social_organization",
+    "search_term": "baki clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+social+hierarchy",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "social_organization",
+    "search_term": "baki social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "traditional_knowledge",
+    "search_term": "baki traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "traditional_knowledge",
+    "search_term": "baki indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "traditional_knowledge",
+    "search_term": "baki ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "traditional_technology",
+    "search_term": "baki traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+indigenous+technology",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "traditional_technology",
+    "search_term": "baki indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+artisan+skills",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "traditional_technology",
+    "search_term": "baki artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+music+dance+songs",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "music_dance",
+    "search_term": "baki music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+musical+instruments",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "music_dance",
+    "search_term": "baki musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/baki+cultural+dances",
+    "type": "category_search",
+    "tribe": "baki",
+    "category": "music_dance",
+    "search_term": "baki cultural dances",
+    "priority": "medium"
+  }
+]

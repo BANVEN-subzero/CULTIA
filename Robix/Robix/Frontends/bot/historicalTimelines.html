@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Timelines - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-blue: #1e3c72;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 100px 0 140px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        /* Modern Vertical Timeline */
+        .timeline-container {
+            position: relative;
+            padding: 40px 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, transparent, var(--accent-blue), var(--primary-green), transparent);
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            margin-bottom: 80px;
+            position: relative;
+            width: 50%;
+            padding: 0 50px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            text-align: left;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 100%;
+            top: 30px;
+            width: 30px;
+            height: 30px;
+            background: white;
+            border: 5px solid var(--accent-blue);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(30, 60, 114, 0.3);
+            transition: var(--transition-smooth);
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: 0;
+            border-color: var(--primary-green);
+        }
+
+        .timeline-item:hover .timeline-dot {
+            transform: translateX(-50%) scale(1.3);
+            background: var(--accent-blue);
+        }
+
+        .timeline-card {
+            background: white;
+            padding: 35px;
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+            transition: var(--transition-smooth);
+            position: relative;
+            border: none;
+        }
+
+        .timeline-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .timeline-date {
+            display: inline-block;
+            padding: 8px 20px;
+            background: var(--accent-blue);
+            color: white;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.2);
+        }
+
+        .timeline-item:nth-child(even) .timeline-date {
+            background: var(--primary-green);
+            box-shadow: 0 5px 15px rgba(45, 90, 39, 0.2);
+        }
+
+        .timeline-title {
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .timeline-text {
+            color: #636e72;
+            line-height: 1.8;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        @media (max-width: 991px) {
+            .timeline-container::before {
+                left: 40px;
+            }
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 80px;
+                padding-right: 20px;
+                text-align: left !important;
+                margin-bottom: 50px;
+            }
+            .timeline-dot {
+                left: 40px !important;
+            }
+            .timeline-date {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Chronicles of Cameroon</h1>
+                <p class="lead opacity-75 mb-0 mx-auto" style="max-width: 700px;">Journey through the pivotal moments that shaped the destiny of "Africa in Miniature".</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="timeline-container">
+                <!-- 1000 BCE -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">1000 BCE</span>
+                        <h3 class="timeline-title">Iron Age Foundations</h3>
+                        <p class="timeline-text">Archaeological evidence in southern Cameroon reveals the early start of the Iron Age, marking the beginning of sophisticated tool-making and social structures.</p>
+                    </div>
+                </div>
+
+                <!-- 15th Century -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">15th Century</span>
+                        <h3 class="timeline-title">The Rio dos Camarões</h3>
+                        <p class="timeline-text">Portuguese explorer Fernão do Pó arrives at the Wouri River. Impressed by the abundance of ghost shrimps, he names it "Rio dos Camarões", the origin of the name Cameroon.</p>
+                    </div>
+                </div>
+
+                <!-- 1884 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">1884</span>
+                        <h3 class="timeline-title">German Protectorate</h3>
+                        <p class="timeline-text">The Treaty of Germano-Duala is signed, establishing Kamerun as a German protectorate. This period saw major infrastructural developments and the drawing of modern borders.</p>
+                    </div>
+                </div>
+
+                <!-- 1918 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">1918 - 1960</span>
+                        <h3 class="timeline-title">Mandate & Trusteeship</h3>
+                        <p class="timeline-text">Following WWI, Cameroon is divided between France and Britain. This dual colonial heritage profoundly influenced the nation's legal, educational, and linguistic systems.</p>
+                    </div>
+                </div>
+
+                <!-- 1960 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">1960</span>
+                        <h3 class="timeline-title">Sovereign Independence</h3>
+                        <p class="timeline-text">French Cameroon achieves independence on January 1st. Ahmadou Ahidjo becomes the first president, steering the new nation through its foundational years.</p>
+                    </div>
+                </div>
+
+                <!-- 1961 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">1961</span>
+                        <h3 class="timeline-title">The Foumban Unification</h3>
+                        <p class="timeline-text">Following a plebiscite, the British Southern Cameroons joins the Republic of Cameroon to form the Federal Republic of Cameroon, a unique bilingual union.</p>
+                    </div>
+                </div>
+
+                <!-- 1982 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">1982</span>
+                        <h3 class="timeline-title">Leadership Transition</h3>
+                        <p class="timeline-text">President Ahidjo resigns and is succeeded by Paul Biya. This marked the beginning of a new political era focused on "Renewal" and "rigor and moralization".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                document.getElementById('sidebarToggle')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'History');
+                document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

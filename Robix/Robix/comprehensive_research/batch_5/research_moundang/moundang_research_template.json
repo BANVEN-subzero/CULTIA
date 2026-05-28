@@ -1,0 +1,278 @@
+{
+  "tribe_name": "moundang",
+  "research_date": "2024-10-17",
+  "total_categories": 18,
+  "completion_status": "pending",
+  "categories": {
+    "spiritual_beliefs": {
+      "description": "Traditional religion, spiritual practices, ceremonies, beliefs",
+      "research_focus": "Religious beliefs, spiritual practices, sacred rituals, deities",
+      "example_format": "Traditional Bamileke spirituality centers on ancestor worship and belief in a supreme being.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "economy": {
+      "description": "Economic activities, trade, commerce, modern economic participation",
+      "research_focus": "Economic systems, trade, modern economic activities",
+      "example_format": "Bamileke are known for entrepreneurship, trade networks, and coffee production.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "arts_and_crafts": {
+      "description": "Artistic traditions, handicrafts, visual arts, sculptures, pottery",
+      "research_focus": "Traditional arts, crafts, artistic expressions, decorative objects",
+      "example_format": "Bamileke art includes intricate wood masks, bronze sculptures, and colorful textiles.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "governance": {
+      "description": "Traditional leadership, chiefs, political organization, decision-making",
+      "research_focus": "Leadership structure, political system, traditional authority",
+      "example_format": "Bamileke governance centers on the Fon (chief) advised by councils of notables.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "colonial_impact": {
+      "description": "Information about colonial impact",
+      "research_focus": "Key aspects of colonial impact",
+      "example_format": "Example information about colonial impact",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "subsistence_patterns": {
+      "description": "Food production, agriculture, hunting, fishing, economic base",
+      "research_focus": "How they obtain food and resources, economic activities",
+      "example_format": "Bamileke practice intensive terrace farming of maize, beans, and coffee cultivation.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "challenges": {
+      "description": "Modern challenges, contemporary issues, cultural preservation",
+      "research_focus": "Current problems, modernization challenges, cultural preservation",
+      "example_format": "Bamileke face challenges of urbanization, language loss, and cultural preservation.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "cultural_revitalization": {
+      "description": "Information about cultural revitalization",
+      "research_focus": "Key aspects of cultural revitalization",
+      "example_format": "Example information about cultural revitalization",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "modern_governance": {
+      "description": "Information about modern governance",
+      "research_focus": "Key aspects of modern governance",
+      "example_format": "Example information about modern governance",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "pre_contact_history": {
+      "description": "Information about pre contact history",
+      "research_focus": "Key aspects of pre contact history",
+      "example_format": "Example information about pre contact history",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "notable_figures": {
+      "description": "Information about notable figures",
+      "research_focus": "Key aspects of notable figures",
+      "example_format": "Example information about notable figures",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "oral_traditions": {
+      "description": "Information about oral traditions",
+      "research_focus": "Key aspects of oral traditions",
+      "example_format": "Example information about oral traditions",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "social_organization": {
+      "description": "Family structure, clans, kinship systems, social hierarchy",
+      "research_focus": "How society is organized, family relationships, social structure",
+      "example_format": "Bamileke society is organized around patrilineal clans with complex kinship systems.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "traditions": {
+      "description": "Information about traditions",
+      "research_focus": "Key aspects of traditions",
+      "example_format": "Example information about traditions",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "traditional_knowledge": {
+      "description": "Information about traditional knowledge",
+      "research_focus": "Key aspects of traditional knowledge",
+      "example_format": "Example information about traditional knowledge",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "traditional_technology": {
+      "description": "Tools, crafts, traditional skills, metalwork, pottery, weaving",
+      "research_focus": "Traditional tools, crafts, technological innovations, artisan skills",
+      "example_format": "Bamileke artisans are renowned for bronze casting, wood carving, and textile production.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "history": {
+      "description": "Origins, migrations, historical events, founding stories, timeline",
+      "research_focus": "When and how the tribe was established, major historical events",
+      "example_format": "The Bamileke migrated from the Tikar region in the 17th century, establishing over 100 chiefdoms.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    },
+    "music_dance": {
+      "description": "Traditional music, musical instruments, dance forms, songs",
+      "research_focus": "Musical traditions, instruments, dance styles, ceremonial performances",
+      "example_format": "Bamileke music features drums, xylophones, and elaborate masked dances for ceremonies.",
+      "content": "",
+      "sources": [],
+      "research_notes": "",
+      "completion_status": "pending",
+      "quality_check": {
+        "has_2_3_sentences": false,
+        "culturally_respectful": false,
+        "factually_accurate": false,
+        "sources_documented": false
+      }
+    }
+  }
+}

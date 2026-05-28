@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bakossi_people",
+    "type": "main_page",
+    "tribe": "bakossi",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakossi_tribe",
+    "type": "main_page",
+    "tribe": "bakossi",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakossi",
+    "type": "main_page",
+    "tribe": "bakossi",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakossi_ethnic_group",
+    "type": "main_page",
+    "tribe": "bakossi",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "spiritual_beliefs",
+    "search_term": "bakossi religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+traditional+religion",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "spiritual_beliefs",
+    "search_term": "bakossi traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+religious+practices",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "spiritual_beliefs",
+    "search_term": "bakossi religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+economy+trade",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "economy",
+    "search_term": "bakossi economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+economic+activities",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "economy",
+    "search_term": "bakossi economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+livelihood",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "economy",
+    "search_term": "bakossi livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "arts_and_crafts",
+    "search_term": "bakossi art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+traditional+arts",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "arts_and_crafts",
+    "search_term": "bakossi traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+handicrafts",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "arts_and_crafts",
+    "search_term": "bakossi handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+traditional+governance",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "governance",
+    "search_term": "bakossi traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+political+system",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "governance",
+    "search_term": "bakossi political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+leadership+structure",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "governance",
+    "search_term": "bakossi leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+colonial+period",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "colonial_impact",
+    "search_term": "bakossi colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+European+colonization",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "colonial_impact",
+    "search_term": "bakossi European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+colonial+administration",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "colonial_impact",
+    "search_term": "bakossi colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "subsistence_patterns",
+    "search_term": "bakossi agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+food+production",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "subsistence_patterns",
+    "search_term": "bakossi food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+traditional+economy",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "subsistence_patterns",
+    "search_term": "bakossi traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+modern+challenges",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "challenges",
+    "search_term": "bakossi modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "challenges",
+    "search_term": "bakossi contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "challenges",
+    "search_term": "bakossi cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "cultural_revitalization",
+    "search_term": "bakossi cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+language+revitalization",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "cultural_revitalization",
+    "search_term": "bakossi language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+cultural+revival",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "cultural_revitalization",
+    "search_term": "bakossi cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+modern+politics",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "modern_governance",
+    "search_term": "bakossi modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "modern_governance",
+    "search_term": "bakossi contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+political+participation",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "modern_governance",
+    "search_term": "bakossi political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "pre_contact_history",
+    "search_term": "bakossi pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+before+European+contact",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "pre_contact_history",
+    "search_term": "bakossi before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "pre_contact_history",
+    "search_term": "bakossi ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "oral_traditions",
+    "search_term": "bakossi oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+myths+legends",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "oral_traditions",
+    "search_term": "bakossi myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "oral_traditions",
+    "search_term": "bakossi traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "social_organization",
+    "search_term": "bakossi social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+clan+system+family",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "social_organization",
+    "search_term": "bakossi clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "social_organization",
+    "search_term": "bakossi social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "traditional_knowledge",
+    "search_term": "bakossi traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "traditional_knowledge",
+    "search_term": "bakossi indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "traditional_knowledge",
+    "search_term": "bakossi ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "traditional_technology",
+    "search_term": "bakossi traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "traditional_technology",
+    "search_term": "bakossi indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+artisan+skills",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "traditional_technology",
+    "search_term": "bakossi artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "history",
+    "search_term": "bakossi history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+historical+background",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "history",
+    "search_term": "bakossi historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "history",
+    "search_term": "bakossi ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "music_dance",
+    "search_term": "bakossi music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+musical+instruments",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "music_dance",
+    "search_term": "bakossi musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakossi+cultural+dances",
+    "type": "category_search",
+    "tribe": "bakossi",
+    "category": "music_dance",
+    "search_term": "bakossi cultural dances",
+    "priority": "medium"
+  }
+]

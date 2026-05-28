@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bedzan_people",
+    "type": "main_page",
+    "tribe": "bedzan",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bedzan_tribe",
+    "type": "main_page",
+    "tribe": "bedzan",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bedzan",
+    "type": "main_page",
+    "tribe": "bedzan",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bedzan_ethnic_group",
+    "type": "main_page",
+    "tribe": "bedzan",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "spiritual_beliefs",
+    "search_term": "bedzan religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+traditional+religion",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "spiritual_beliefs",
+    "search_term": "bedzan traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+religious+practices",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "spiritual_beliefs",
+    "search_term": "bedzan religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "arts_and_crafts",
+    "search_term": "bedzan art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+traditional+arts",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "arts_and_crafts",
+    "search_term": "bedzan traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+handicrafts",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "arts_and_crafts",
+    "search_term": "bedzan handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+traditional+governance",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "governance",
+    "search_term": "bedzan traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+political+system",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "governance",
+    "search_term": "bedzan political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+leadership+structure",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "governance",
+    "search_term": "bedzan leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+colonial+period",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "colonial_impact",
+    "search_term": "bedzan colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+European+colonization",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "colonial_impact",
+    "search_term": "bedzan European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+colonial+administration",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "colonial_impact",
+    "search_term": "bedzan colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "subsistence_patterns",
+    "search_term": "bedzan agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+food+production",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "subsistence_patterns",
+    "search_term": "bedzan food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+traditional+economy",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "subsistence_patterns",
+    "search_term": "bedzan traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+modern+challenges",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "challenges",
+    "search_term": "bedzan modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "challenges",
+    "search_term": "bedzan contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "challenges",
+    "search_term": "bedzan cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "cultural_revitalization",
+    "search_term": "bedzan cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+language+revitalization",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "cultural_revitalization",
+    "search_term": "bedzan language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+cultural+revival",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "cultural_revitalization",
+    "search_term": "bedzan cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+modern+politics",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "modern_governance",
+    "search_term": "bedzan modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "modern_governance",
+    "search_term": "bedzan contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+political+participation",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "modern_governance",
+    "search_term": "bedzan political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "pre_contact_history",
+    "search_term": "bedzan pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+before+European+contact",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "pre_contact_history",
+    "search_term": "bedzan before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "pre_contact_history",
+    "search_term": "bedzan ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "culture",
+    "search_term": "bedzan culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+cultural+practices",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "culture",
+    "search_term": "bedzan cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+way+of+life",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "culture",
+    "search_term": "bedzan way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "oral_traditions",
+    "search_term": "bedzan oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+myths+legends",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "oral_traditions",
+    "search_term": "bedzan myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "oral_traditions",
+    "search_term": "bedzan traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "social_organization",
+    "search_term": "bedzan social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+clan+system+family",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "social_organization",
+    "search_term": "bedzan clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "social_organization",
+    "search_term": "bedzan social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "traditional_knowledge",
+    "search_term": "bedzan traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "traditional_knowledge",
+    "search_term": "bedzan indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "traditional_knowledge",
+    "search_term": "bedzan ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "traditional_technology",
+    "search_term": "bedzan traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "traditional_technology",
+    "search_term": "bedzan indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+artisan+skills",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "traditional_technology",
+    "search_term": "bedzan artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "history",
+    "search_term": "bedzan history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+historical+background",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "history",
+    "search_term": "bedzan historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "history",
+    "search_term": "bedzan ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "music_dance",
+    "search_term": "bedzan music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+musical+instruments",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "music_dance",
+    "search_term": "bedzan musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bedzan+cultural+dances",
+    "type": "category_search",
+    "tribe": "bedzan",
+    "category": "music_dance",
+    "search_term": "bedzan cultural dances",
+    "priority": "medium"
+  }
+]

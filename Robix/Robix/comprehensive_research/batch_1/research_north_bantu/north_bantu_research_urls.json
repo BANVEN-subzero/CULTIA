@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/north_bantu_people",
+    "type": "main_page",
+    "tribe": "north_bantu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/north_bantu_tribe",
+    "type": "main_page",
+    "tribe": "north_bantu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/north_bantu",
+    "type": "main_page",
+    "tribe": "north_bantu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/north_bantu_ethnic_group",
+    "type": "main_page",
+    "tribe": "north_bantu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "spiritual_beliefs",
+    "search_term": "north_bantu religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+traditional+religion",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "spiritual_beliefs",
+    "search_term": "north_bantu traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+religious+practices",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "spiritual_beliefs",
+    "search_term": "north_bantu religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+colonial+period",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "colonial_impact",
+    "search_term": "north_bantu colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+European+colonization",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "colonial_impact",
+    "search_term": "north_bantu European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+colonial+administration",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "colonial_impact",
+    "search_term": "north_bantu colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+agriculture+farming",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "subsistence_patterns",
+    "search_term": "north_bantu agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+food+production",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "subsistence_patterns",
+    "search_term": "north_bantu food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+traditional+economy",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "subsistence_patterns",
+    "search_term": "north_bantu traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+cultural+preservation",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "cultural_revitalization",
+    "search_term": "north_bantu cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+language+revitalization",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "cultural_revitalization",
+    "search_term": "north_bantu language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+cultural+revival",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "cultural_revitalization",
+    "search_term": "north_bantu cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+modern+politics",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "modern_governance",
+    "search_term": "north_bantu modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+contemporary+governance",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "modern_governance",
+    "search_term": "north_bantu contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+political+participation",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "modern_governance",
+    "search_term": "north_bantu political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "pre_contact_history",
+    "search_term": "north_bantu pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+before+European+contact",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "pre_contact_history",
+    "search_term": "north_bantu before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+ancient+traditions",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "pre_contact_history",
+    "search_term": "north_bantu ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "oral_traditions",
+    "search_term": "north_bantu oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+myths+legends",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "oral_traditions",
+    "search_term": "north_bantu myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+traditional+narratives",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "oral_traditions",
+    "search_term": "north_bantu traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "social_organization",
+    "search_term": "north_bantu social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+clan+system+family",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "social_organization",
+    "search_term": "north_bantu clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+social+hierarchy",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "social_organization",
+    "search_term": "north_bantu social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "traditional_knowledge",
+    "search_term": "north_bantu traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "traditional_knowledge",
+    "search_term": "north_bantu indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "traditional_knowledge",
+    "search_term": "north_bantu ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "traditional_technology",
+    "search_term": "north_bantu traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+indigenous+technology",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "traditional_technology",
+    "search_term": "north_bantu indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+artisan+skills",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "traditional_technology",
+    "search_term": "north_bantu artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+music+dance+songs",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "music_dance",
+    "search_term": "north_bantu music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+musical+instruments",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "music_dance",
+    "search_term": "north_bantu musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/north_bantu+cultural+dances",
+    "type": "category_search",
+    "tribe": "north_bantu",
+    "category": "music_dance",
+    "search_term": "north_bantu cultural dances",
+    "priority": "medium"
+  }
+]

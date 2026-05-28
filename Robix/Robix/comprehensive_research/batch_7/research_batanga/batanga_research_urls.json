@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/batanga_people",
+    "type": "main_page",
+    "tribe": "batanga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/batanga_tribe",
+    "type": "main_page",
+    "tribe": "batanga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/batanga",
+    "type": "main_page",
+    "tribe": "batanga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/batanga_ethnic_group",
+    "type": "main_page",
+    "tribe": "batanga",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "spiritual_beliefs",
+    "search_term": "batanga religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+traditional+religion",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "spiritual_beliefs",
+    "search_term": "batanga traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+religious+practices",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "spiritual_beliefs",
+    "search_term": "batanga religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+economy+trade",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "economy",
+    "search_term": "batanga economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+economic+activities",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "economy",
+    "search_term": "batanga economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+livelihood",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "economy",
+    "search_term": "batanga livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "arts_and_crafts",
+    "search_term": "batanga art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+traditional+arts",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "arts_and_crafts",
+    "search_term": "batanga traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+handicrafts",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "arts_and_crafts",
+    "search_term": "batanga handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+traditional+governance",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "governance",
+    "search_term": "batanga traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+political+system",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "governance",
+    "search_term": "batanga political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+leadership+structure",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "governance",
+    "search_term": "batanga leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+colonial+period",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "colonial_impact",
+    "search_term": "batanga colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+European+colonization",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "colonial_impact",
+    "search_term": "batanga European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+colonial+administration",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "colonial_impact",
+    "search_term": "batanga colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+agriculture+farming",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "subsistence_patterns",
+    "search_term": "batanga agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+food+production",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "subsistence_patterns",
+    "search_term": "batanga food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+traditional+economy",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "subsistence_patterns",
+    "search_term": "batanga traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+modern+challenges",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "challenges",
+    "search_term": "batanga modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+contemporary+issues",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "challenges",
+    "search_term": "batanga contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+cultural+preservation",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "challenges",
+    "search_term": "batanga cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+cultural+preservation",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "cultural_revitalization",
+    "search_term": "batanga cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+language+revitalization",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "cultural_revitalization",
+    "search_term": "batanga language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+cultural+revival",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "cultural_revitalization",
+    "search_term": "batanga cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+modern+politics",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "modern_governance",
+    "search_term": "batanga modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+contemporary+governance",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "modern_governance",
+    "search_term": "batanga contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+political+participation",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "modern_governance",
+    "search_term": "batanga political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "pre_contact_history",
+    "search_term": "batanga pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+before+European+contact",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "pre_contact_history",
+    "search_term": "batanga before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+ancient+traditions",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "pre_contact_history",
+    "search_term": "batanga ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "culture",
+    "search_term": "batanga culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+cultural+practices",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "culture",
+    "search_term": "batanga cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+way+of+life",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "culture",
+    "search_term": "batanga way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "oral_traditions",
+    "search_term": "batanga oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+myths+legends",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "oral_traditions",
+    "search_term": "batanga myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+traditional+narratives",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "oral_traditions",
+    "search_term": "batanga traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "social_organization",
+    "search_term": "batanga social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+clan+system+family",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "social_organization",
+    "search_term": "batanga clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+social+hierarchy",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "social_organization",
+    "search_term": "batanga social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "traditional_knowledge",
+    "search_term": "batanga traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "traditional_knowledge",
+    "search_term": "batanga indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "traditional_knowledge",
+    "search_term": "batanga ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "traditional_technology",
+    "search_term": "batanga traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+indigenous+technology",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "traditional_technology",
+    "search_term": "batanga indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+artisan+skills",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "traditional_technology",
+    "search_term": "batanga artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+history+origin+migration",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "history",
+    "search_term": "batanga history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+historical+background",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "history",
+    "search_term": "batanga historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "history",
+    "search_term": "batanga ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+music+dance+songs",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "music_dance",
+    "search_term": "batanga music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+musical+instruments",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "music_dance",
+    "search_term": "batanga musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/batanga+cultural+dances",
+    "type": "category_search",
+    "tribe": "batanga",
+    "category": "music_dance",
+    "search_term": "batanga cultural dances",
+    "priority": "medium"
+  }
+]

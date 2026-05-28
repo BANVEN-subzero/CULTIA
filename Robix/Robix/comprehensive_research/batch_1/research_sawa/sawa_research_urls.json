@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/sawa_people",
+    "type": "main_page",
+    "tribe": "sawa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/sawa_tribe",
+    "type": "main_page",
+    "tribe": "sawa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/sawa",
+    "type": "main_page",
+    "tribe": "sawa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/sawa_ethnic_group",
+    "type": "main_page",
+    "tribe": "sawa",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "spiritual_beliefs",
+    "search_term": "sawa religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+traditional+religion",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "spiritual_beliefs",
+    "search_term": "sawa traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+religious+practices",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "spiritual_beliefs",
+    "search_term": "sawa religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+colonial+period",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "colonial_impact",
+    "search_term": "sawa colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+European+colonization",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "colonial_impact",
+    "search_term": "sawa European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+colonial+administration",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "colonial_impact",
+    "search_term": "sawa colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+agriculture+farming",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "subsistence_patterns",
+    "search_term": "sawa agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+food+production",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "subsistence_patterns",
+    "search_term": "sawa food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+traditional+economy",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "subsistence_patterns",
+    "search_term": "sawa traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+cultural+preservation",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "cultural_revitalization",
+    "search_term": "sawa cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+language+revitalization",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "cultural_revitalization",
+    "search_term": "sawa language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+cultural+revival",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "cultural_revitalization",
+    "search_term": "sawa cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+modern+politics",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "modern_governance",
+    "search_term": "sawa modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+contemporary+governance",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "modern_governance",
+    "search_term": "sawa contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+political+participation",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "modern_governance",
+    "search_term": "sawa political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "pre_contact_history",
+    "search_term": "sawa pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+before+European+contact",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "pre_contact_history",
+    "search_term": "sawa before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+ancient+traditions",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "pre_contact_history",
+    "search_term": "sawa ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "oral_traditions",
+    "search_term": "sawa oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+myths+legends",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "oral_traditions",
+    "search_term": "sawa myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+traditional+narratives",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "oral_traditions",
+    "search_term": "sawa traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "social_organization",
+    "search_term": "sawa social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+clan+system+family",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "social_organization",
+    "search_term": "sawa clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+social+hierarchy",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "social_organization",
+    "search_term": "sawa social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "traditional_knowledge",
+    "search_term": "sawa traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "traditional_knowledge",
+    "search_term": "sawa indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "traditional_knowledge",
+    "search_term": "sawa ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "traditional_technology",
+    "search_term": "sawa traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+indigenous+technology",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "traditional_technology",
+    "search_term": "sawa indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+artisan+skills",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "traditional_technology",
+    "search_term": "sawa artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+music+dance+songs",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "music_dance",
+    "search_term": "sawa music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+musical+instruments",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "music_dance",
+    "search_term": "sawa musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/sawa+cultural+dances",
+    "type": "category_search",
+    "tribe": "sawa",
+    "category": "music_dance",
+    "search_term": "sawa cultural dances",
+    "priority": "medium"
+  }
+]

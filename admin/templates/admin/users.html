@@ -1,0 +1,813 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}User Management{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="header-title">
+        <h1>User Management</h1>
+        <p>Manage your users and their permissions</p>
+    </div>
+    <div class="header-actions">
+        <a href="{{ url_for('add_user') }}" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Add New User
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">All Users</div>
+        <div class="card-actions">
+            <div class="search-box">
+                <form method="get" action="{{ url_for('users') }}">
+                    <input type="text" id="search-users" name="search" placeholder="Search users..." value="{{ search }}">
+                </form>
+                <i class="fas fa-search"></i>
+            </div>
+            <button class="btn btn-icon" id="refresh-users">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+        </div>
+    </div>
+    
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="data-table" id="users-table">
+                <thead>
+                    <tr>
+                        <th class="select-all">
+                            <input type="checkbox" id="select-all">
+                        </th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Interest</th>
+                        <th>Created</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="user-checkbox" value="{{ user['id'] }}">
+                        </td>
+                        <td>
+                            <div class="user-info">
+                                <img src="{{ url_for('static', filename='images/default-avatar.png') }}" 
+                                     alt="{{ user['first_name'] }}" class="user-avatar">
+                                <div>
+                                    <div class="user-name">{{ user['first_name'] }} {{ user['last_name'] }}</div>
+                                    <div class="user-id">ID: {{ user['id'] }}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>{{ user['email'] }}</td>
+                        <td>{{ user['country'] }}</td>
+                        <td>{{ user['interest'] }}</td>
+                        <td>{{ user['created_at'] }}</td>
+                        <td class="actions">
+                            <a href="{{ url_for('user_achievements', user_id=user['id']) }}" 
+                               class="btn-icon" 
+                               title="Achievements"
+                               style="color: var(--primary-green);">
+                                <i class="fas fa-trophy"></i>
+                            </a>
+                            <a href="{{ url_for('edit_user', user_id=user['id']) }}" 
+                               class="btn-icon" 
+                               title="Edit">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <form method="post" action="{{ url_for('delete_user', user_id=user['id']) }}" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this user? This action cannot be undone.');">
+                                <button type="submit" class="btn-icon btn-delete" title="Delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="7" class="text-center">No users found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="card-footer">
+        <div class="bulk-actions">
+            <select id="bulk-action">
+                <option value="">Bulk Actions</option>
+                <option value="activate">Activate</option>
+                <option value="deactivate">Deactivate</option>
+                <option value="delete">Delete</option>
+                <option value="change_role">Change Role</option>
+            </select>
+            <button id="apply-bulk-action" class="btn btn-sm" disabled>Apply</button>
+        </div>
+        <div class="pagination-info">
+            Showing {{ users|length }} of {{ total_users }} users
+        </div>
+        <div class="pagination">
+            <a class="btn btn-icon" href="{{ url_for('users', page=(1 if page <= 1 else (page - 1)), search=search) }}" {{ 'aria-disabled=true' if page == 1 }}>
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <span>Page {{ page }} of {{ total_pages }}</span>
+            <a class="btn btn-icon" href="{{ url_for('users', page=(total_pages if page >= total_pages else (page + 1)), search=search) }}" {{ 'aria-disabled=true' if page == total_pages or total_pages == 0 }}>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Delete User Modal -->
+<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Deletion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this user? This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirm-delete">Delete User</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+}
+
+.page-header p {
+    margin: 0;
+    color: #7f8c8d;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.search-box {
+    position: relative;
+    width: 250px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #95a5a6;
+}
+
+.filter-dropdown select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+.btn-sm {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.85rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 4px;
+    background: #f5f5f5;
+    color: #7f8c8d;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    margin: 0 0.25rem;
+}
+
+.btn-icon:hover {
+    background: #e0e0e0;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background: #ffebee;
+    color: #e53935;
+}
+
+.btn-deactivate:hover {
+    background: #fff3e0;
+    color: #f39c12;
+}
+
+.btn-activate:hover {
+    background: #e8f5e9;
+    color: #2ecc71;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    font-weight: 600;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+th.select-all {
+    width: 40px;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.user-id {
+    font-size: 0.8rem;
+    color: #95a5a6;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge-primary {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.badge-secondary {
+    background-color: #e0e0e0;
+    color: #616161;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10px;
+}
+
+.status-active {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-inactive {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.actions {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.card-footer {
+    padding: 1rem 1.5rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.bulk-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#bulk-action {
+    padding: 0.4rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pagination button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination button:not(:disabled):hover {
+    background: #f5f5f5;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    overflow-y: auto;
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+    position: relative;
+    width: auto;
+    pointer-events: none;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+}
+
+.modal-footer > :not(:first-child) {
+    margin-left: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .card-actions {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .pagination {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Select/Deselect all checkboxes
+    const selectAllCheckbox = document.getElementById('select-all');
+    const userCheckboxes = document.querySelectorAll('.user-checkbox');
+    const applyBulkActionBtn = document.getElementById('apply-bulk-action');
+    
+    if (selectAllCheckbox) {
+        selectAllCheckbox.addEventListener('change', function() {
+            const isChecked = this.checked;
+            userCheckboxes.forEach(checkbox => {
+                checkbox.checked = isChecked;
+            });
+            updateBulkActionButton();
+        });
+    }
+    
+    // Update select all checkbox when individual checkboxes are clicked
+    userCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            updateSelectAllCheckbox();
+            updateBulkActionButton();
+        });
+    });
+    
+    function updateSelectAllCheckbox() {
+        if (!selectAllCheckbox) return;
+        const allChecked = Array.from(userCheckboxes).every(checkbox => checkbox.checked);
+        const someChecked = Array.from(userCheckboxes).some(checkbox => checkbox.checked);
+        
+        if (allChecked) {
+            selectAllCheckbox.checked = true;
+            selectAllCheckbox.indeterminate = false;
+        } else if (someChecked) {
+            selectAllCheckbox.checked = false;
+            selectAllCheckbox.indeterminate = true;
+        } else {
+            selectAllCheckbox.checked = false;
+            selectAllCheckbox.indeterminate = false;
+        }
+    }
+    
+    function updateBulkActionButton() {
+        if (!applyBulkActionBtn) return;
+        const someChecked = Array.from(userCheckboxes).some(checkbox => checkbox.checked);
+        applyBulkActionBtn.disabled = !someChecked;
+    }
+    
+    // Delete user confirmation
+    const deleteButtons = document.querySelectorAll('.btn-delete[data-user-id]');
+    const deleteModal = document.getElementById('deleteUserModal');
+    const confirmDeleteBtn = document.getElementById('confirm-delete');
+    let userIdToDelete = null;
+    
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            userIdToDelete = this.getAttribute('data-user-id');
+            if (deleteModal) {
+                // Using Bootstrap's modal if available, otherwise implement a simple modal
+                if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+                    const modal = new bootstrap.Modal(deleteModal);
+                    modal.show();
+                } else {
+                    deleteModal.style.display = 'block';
+                    deleteModal.classList.add('show');
+                }
+            }
+        });
+    });
+    
+    if (confirmDeleteBtn) {
+        confirmDeleteBtn.addEventListener('click', function() {
+            if (userIdToDelete) {
+                // Here you would typically make an AJAX request to delete the user
+                console.log('Deleting user with ID:', userIdToDelete);
+                // Example: fetch(`/admin/users/${userIdToDelete}`, { method: 'DELETE' });
+                
+                // Close the modal
+                if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+                    const modal = bootstrap.Modal.getInstance(deleteModal);
+                    modal.hide();
+                } else {
+                    deleteModal.style.display = 'none';
+                    deleteModal.classList.remove('show');
+                }
+                
+                // Optionally remove the user row from the table
+                const userRow = document.querySelector(`.btn-delete[data-user-id="${userIdToDelete}"]`).closest('tr');
+                if (userRow) {
+                    userRow.remove();
+                }
+            }
+        });
+    }
+    
+    // Close modal when clicking the close button or outside the modal
+    const closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            if (deleteModal) {
+                if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+                    const modal = bootstrap.Modal.getInstance(deleteModal);
+                    modal.hide();
+                } else {
+                    deleteModal.style.display = 'none';
+                    deleteModal.classList.remove('show');
+                }
+            }
+        });
+    });
+    
+    // Search functionality
+    const searchInput = document.getElementById('search-users');
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#users-table tbody tr');
+            
+            rows.forEach(row => {
+                const userName = row.querySelector('.user-name')?.textContent.toLowerCase() || '';
+                const userEmail = row.querySelector('td:nth-child(3)')?.textContent.toLowerCase() || '';
+                const userRole = row.querySelector('td:nth-child(4)')?.textContent.toLowerCase() || '';
+                
+                if (userName.includes(searchTerm) || 
+                    userEmail.includes(searchTerm) || 
+                    userRole.includes(searchTerm)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    }
+    
+    // Filter by role
+    const roleFilter = document.getElementById('filter-role');
+    if (roleFilter) {
+        roleFilter.addEventListener('change', function() {
+            const selectedRole = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#users-table tbody tr');
+            
+            rows.forEach(row => {
+                const userRole = row.querySelector('td:nth-child(4)')?.textContent.trim().toLowerCase() || '';
+                
+                if (!selectedRole || userRole === selectedRole) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    }
+    
+    // Refresh button
+    const refreshBtn = document.getElementById('refresh-users');
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', function() {
+            window.location.reload();
+        });
+    }
+    
+    // Bulk actions
+    const bulkActionSelect = document.getElementById('bulk-action');
+    if (bulkActionSelect && applyBulkActionBtn) {
+        applyBulkActionBtn.addEventListener('click', function() {
+            const selectedAction = bulkActionSelect.value;
+            if (!selectedAction) return;
+            
+            const selectedUserIds = [];
+            userCheckboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    selectedUserIds.push(checkbox.value);
+                }
+            });
+            
+            if (selectedUserIds.length === 0) return;
+            
+            switch (selectedAction) {
+                case 'activate':
+                    console.log('Activating users:', selectedUserIds);
+                    // Implement activation logic
+                    break;
+                case 'deactivate':
+                    console.log('Deactivating users:', selectedUserIds);
+                    // Implement deactivation logic
+                    break;
+                case 'delete':
+                    if (confirm(`Are you sure you want to delete ${selectedUserIds.length} user(s)? This action cannot be undone.`)) {
+                        console.log('Deleting users:', selectedUserIds);
+                        // Implement deletion logic
+                    }
+                    break;
+                case 'change_role':
+                    const newRole = prompt('Enter the new role (admin, editor, author, subscriber):');
+                    if (newRole) {
+                        console.log(`Changing role to ${newRole} for users:`, selectedUserIds);
+                        // Implement role change logic
+                    }
+                    break;
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

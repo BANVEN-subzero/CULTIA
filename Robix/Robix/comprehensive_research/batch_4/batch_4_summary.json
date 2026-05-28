@@ -1,0 +1,78 @@
+{
+  "batch_number": 4,
+  "tribes_count": 10,
+  "total_sections": 162,
+  "tribes": [
+    {
+      "tribe": "bana",
+      "missing_count": 12,
+      "template_file": "comprehensive_research\\batch_4\\research_bana\\bana_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_bana\\bana_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_bana\\bana_research_urls.json"
+    },
+    {
+      "tribe": "tikar",
+      "missing_count": 15,
+      "template_file": "comprehensive_research\\batch_4\\research_tikar\\tikar_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_tikar\\tikar_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_tikar\\tikar_research_urls.json"
+    },
+    {
+      "tribe": "bakweri",
+      "missing_count": 15,
+      "template_file": "comprehensive_research\\batch_4\\research_bakweri\\bakweri_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_bakweri\\bakweri_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_bakweri\\bakweri_research_urls.json"
+    },
+    {
+      "tribe": "baka",
+      "missing_count": 16,
+      "template_file": "comprehensive_research\\batch_4\\research_baka\\baka_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_baka\\baka_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_baka\\baka_research_urls.json"
+    },
+    {
+      "tribe": "widikum",
+      "missing_count": 17,
+      "template_file": "comprehensive_research\\batch_4\\research_widikum\\widikum_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_widikum\\widikum_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_widikum\\widikum_research_urls.json"
+    },
+    {
+      "tribe": "kom",
+      "missing_count": 17,
+      "template_file": "comprehensive_research\\batch_4\\research_kom\\kom_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_kom\\kom_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_kom\\kom_research_urls.json"
+    },
+    {
+      "tribe": "bafut",
+      "missing_count": 17,
+      "template_file": "comprehensive_research\\batch_4\\research_bafut\\bafut_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_bafut\\bafut_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_bafut\\bafut_research_urls.json"
+    },
+    {
+      "tribe": "mafa",
+      "missing_count": 17,
+      "template_file": "comprehensive_research\\batch_4\\research_mafa\\mafa_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_mafa\\mafa_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_mafa\\mafa_research_urls.json"
+    },
+    {
+      "tribe": "mbum",
+      "missing_count": 18,
+      "template_file": "comprehensive_research\\batch_4\\research_mbum\\mbum_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_mbum\\mbum_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_mbum\\mbum_research_urls.json"
+    },
+    {
+      "tribe": "giziga",
+      "missing_count": 18,
+      "template_file": "comprehensive_research\\batch_4\\research_giziga\\giziga_research_template.json",
+      "guide_file": "comprehensive_research\\batch_4\\research_giziga\\giziga_research_guide.md",
+      "urls_file": "comprehensive_research\\batch_4\\research_giziga\\giziga_research_urls.json"
+    }
+  ],
+  "research_instructions": "Research 10 tribes with 162 total sections"
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folklore & Myths - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(45, 90, 39, 0.9), rgba(26, 58, 22, 0.9)), url('../img/folklore-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 160px;
+            color: white;
+            border-radius: 0 0 60px 60px;
+            margin-bottom: -60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '"';
+            position: absolute;
+            right: 10%;
+            bottom: -50px;
+            font-size: 300px;
+            opacity: 0.1;
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+
+        .story-card {
+            background: white;
+            border-radius: 35px;
+            padding: 40px;
+            height: 100%;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            border-left: 8px solid var(--primary-green);
+        }
+
+        .story-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 35px 70px rgba(0,0,0,0.1);
+            border-left-color: var(--accent-orange);
+        }
+
+        .story-icon {
+            font-size: 3rem;
+            color: var(--accent-orange);
+            margin-bottom: 25px;
+            display: inline-block;
+            transition: var(--transition-smooth);
+        }
+
+        .story-card:hover .story-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .story-title {
+            font-weight: 800;
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+
+        .story-excerpt {
+            color: #636e72;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+
+        .btn-read {
+            background: #f8f9fa;
+            color: var(--primary-green);
+            border: 2px solid var(--primary-green);
+            border-radius: 18px;
+            padding: 14px 30px;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: fit-content;
+        }
+
+        .btn-read:hover {
+            background: var(--primary-green);
+            color: white;
+            transform: translateX(10px);
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 20px 30px 20px 65px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .search-input:focus {
+            outline: none;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-green);
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Folklore & Myths</h1>
+                <p class="lead opacity-75 mb-5 mx-auto" style="max-width: 700px;">Step into a world where animals speak, rivers hold secrets, and ancestors guide the living through the magic of storytelling.</p>
+                
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search for legends, spirits, or tales..." id="storySearch">
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="row g-4" id="storyGrid">
+                <!-- Story 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-dragon"></i></div>
+                        <h3 class="story-title">The Talking Python</h3>
+                        <p class="story-excerpt">A famous Bamileke legend tells of a python that could speak and helped a village escape famine. This story teaches respect for nature and spiritual connection.</p>
+                        <a href="talking_python.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-magic"></i></div>
+                        <h3 class="story-title">The Magic Mirror</h3>
+                        <p class="story-excerpt">In Bamoun royal lore, there's a tale of a magical mirror owned by a former king that could reveal the hidden truth and expose the dishonest.</p>
+                        <a href="magic_mirror.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-tree"></i></div>
+                        <h3 class="story-title">The Sacred Tree Woman</h3>
+                        <p class="story-excerpt">A generous healer accused of witchcraft who transformed into a sacred tree to continue protecting her people from the jealousy of the village.</p>
+                        <a href="woman_tree.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-dove"></i></div>
+                        <h3 class="story-title">The Messenger Bird</h3>
+                        <p class="story-excerpt">The "Nso'pi" bird, a mystical messenger from the ancestors believed to foretell the transition of the great Fons of the Northwest.</p>
+                        <a href="bird_fon.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-drum"></i></div>
+                        <h3 class="story-title">The Rainmaker's Drum</h3>
+                        <p class="story-excerpt">The Bakossi legend of a magical drum that could command the heavens to open. A tale of responsibility and the power of sound.</p>
+                        <a href="rainmaker_drum.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-water"></i></div>
+                        <h3 class="story-title">The River Goddess</h3>
+                        <p class="story-excerpt">The beautiful "Mami Manyu", a water spirit who protects the Bayangi people and ensures the abundance of the sacred Manyu River.</p>
+                        <a href="river_goddess.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 7 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-water"></i></div>
+                        <h3 class="story-title">The Crocodile of Wouri</h3>
+                        <p class="story-excerpt">A Duala legend about a giant crocodile that guarded the Wouri River and its connection to the Sawa people's origins.</p>
+                        <a href="crocodile_wouri.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 8 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="story-title">The Seven Drummers</h3>
+                        <p class="story-excerpt">A Beti legend about seven mystical drummers whose rhythms could control the forest's animals and spirits.</p>
+                        <a href="forest_drummers.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 9 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-paw"></i></div>
+                        <h3 class="story-title">The Woman and the Snake</h3>
+                        <p class="story-excerpt">A Fulani tale of a woman's wisdom and her encounter with a clever serpent in the northern plains.</p>
+                        <a href="woman_snake.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 10 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-fire"></i></div>
+                        <h3 class="story-title">The Fire in the Sky</h3>
+                        <p class="story-excerpt">An ancient Northern myth explaining the origins of the sun, moon, and the first fire given to humans.</p>
+                        <a href="fire_sky.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 11 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-wind"></i></div>
+                        <h3 class="story-title">Children of the Wind</h3>
+                        <p class="story-excerpt">A Sawa myth about mystical children who arrived on the coastal breeze to bring music and dance to the people.</p>
+                        <a href="wind_children.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Story 12 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="story-card">
+                        <div class="story-icon"><i class="fas fa-gem"></i></div>
+                        <h3 class="story-title">The Lobe River Secret</h3>
+                        <p class="story-excerpt">The Batanga legend of a hidden treasure at the base of the Lobe Falls, guarded by ancestral spirits.</p>
+                        <a href="lobe_river.html" class="btn-read">Read Legend <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                document.getElementById('sidebarToggle')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Folklore');
+                document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+                    document.getElementById('sidebar').classList.toggle('show');
+                });
+            });
+
+            // Search logic
+            const searchInput = document.getElementById('storySearch');
+            searchInput.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.story-card');
+                cards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const desc = card.querySelector('p').textContent.toLowerCase();
+                    if(title.includes(term) || desc.includes(term)) {
+                        card.parentElement.style.display = 'block';
+                    } else {
+                        card.parentElement.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #f8f9fa;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            background: #fdfaf5;
+        }
+
+        .dashboard-hero {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
+            border-radius: 0 0 50px 50px;
+            padding: 80px 0 120px;
+            color: white;
+            margin-bottom: -60px;
+        }
+
+        .stat-card {
+            background: white;
+            border: none;
+            border-radius: 25px;
+            padding: 1.5rem;
+            transition: var(--transition-smooth);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 150px;
+            height: 150px;
+            background: rgba(45, 90, 39, 0.03);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+
+        .content-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .card-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .content-card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--primary-green);
+            backdrop-filter: blur(5px);
+        }
+
+        .progress {
+            height: 8px;
+            border-radius: 10px;
+            background-color: #eee;
+            margin: 10px 0;
+        }
+
+        .btn-modern {
+            border-radius: 15px;
+            padding: 12px 25px;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-modern:hover {
+            transform: scale(1.05);
+        }
+
+        .achievement-mini-card {
+            width: 45px;
+            height: 45px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            border: 1px solid #eee;
+        }
+
+        .achievement-mini-card:hover {
+            background: #f0f4f0;
+            border-color: var(--primary-green);
+            transform: translateY(-3px);
+        }
+
+        .achievement-mini-card.more {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--primary-green);
+        }
+
+        .achievement-icon-sm {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <!-- Header Placeholder -->
+        <div id="header-container"></div>
+
+        <section class="dashboard-hero">
+            <div class="container-fluid px-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8" data-aos="fade-right">
+                        <span id="welcomeBadge" class="badge bg-success bg-opacity-25 text-white border border-white border-opacity-25 px-3 py-2 rounded-pill mb-3">Welcome, Explorer!</span>
+                        <h1 id="welcomeName" class="display-4 fw-bold mb-3">Your Cultural Journey</h1>
+                        <p class="lead opacity-75">Continue exploring the rich heritage of Cameroon and earning badges along the way.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                        <div class="d-flex flex-column align-items-lg-end gap-3">
+                            <div class="text-white">
+                                <span class="fs-1 fw-bold">1,250</span>
+                                <span class="fs-5 opacity-75 ms-2">Total Points</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <div class="bg-white bg-opacity-10 p-3 rounded-4 text-center" style="width: 80px;">
+                                    <div class="h4 mb-0 fw-bold">12</div>
+                                    <small class="opacity-75">Days</small>
+                                </div>
+                                <div class="bg-white bg-opacity-10 p-3 rounded-4 text-center" style="width: 80px;">
+                                    <div class="h4 mb-0 fw-bold">5</div>
+                                    <small class="opacity-75">Badges</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid px-5 py-4">
+            <!-- Stats Row -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-primary bg-opacity-10 text-primary">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h6 class="text-muted mb-1">Stories Read</h6>
+                        <h3 class="fw-bold mb-0">24</h3>
+                        <div class="mt-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" style="width: 70%"></div>
+                            </div>
+                            <small class="text-muted">70% of weekly goal</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-success bg-opacity-10 text-success">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h6 class="text-muted mb-1">Quizzes Passed</h6>
+                        <h3 class="fw-bold mb-0">15</h3>
+                        <div class="mt-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" style="width: 50%"></div>
+                            </div>
+                            <small class="text-muted">50% of monthly goal</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-warning bg-opacity-10 text-warning">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h6 class="text-muted mb-1">Current Level</h6>
+                        <h3 class="fw-bold mb-0">Scholar</h3>
+                        <div class="mt-3 text-warning">
+                            <i class="fas fa-star small"></i>
+                            <i class="fas fa-star small"></i>
+                            <i class="fas fa-star small"></i>
+                            <i class="fas fa-star-half-alt small"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-info bg-opacity-10 text-info">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h6 class="text-muted mb-1">Forum Posts</h6>
+                        <h3 class="fw-bold mb-0">12</h3>
+                        <div class="mt-3">
+                            <small class="text-info fw-bold">+3 today</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="row g-4 mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="fw-bold mb-0">Explore More</h2>
+                        <a href="tribesAndEthnicGroups.html" class="btn btn-link text-success fw-bold text-decoration-none">View All <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Card 1 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="content-card">
+                        <div class="card-img-wrapper">
+                            <img src="image/meld (1).jpg" class="card-img-top" alt="Tribes">
+                            <span class="card-badge">New Discovery</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-2">Tribes & Cultures</h4>
+                            <p class="text-muted mb-4">Discover the fascinating history and traditions of over 250 ethnic groups in Cameroon.</p>
+                            <a href="tribesAndEthnicGroups.html" class="btn btn-modern btn-success w-100">
+                                Explore Tribes <i class="fas fa-chevron-right ms-auto"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content-card">
+                        <div class="card-img-wrapper">
+                            <img src="image/images (11).jpeg" class="card-img-top" alt="Folklore">
+                            <span class="card-badge">Recommended</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-2">Folklore & Myths</h4>
+                            <p class="text-muted mb-4">Immerse yourself in legendary stories and ancestral wisdom passed down through generations.</p>
+                            <a href="folkloreAndMyths.html" class="btn btn-modern btn-outline-success w-100">
+                                Read Stories <i class="fas fa-chevron-right ms-auto"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="content-card border-success border-2">
+                        <div class="card-img-wrapper">
+                            <img src="image/images (12).jpeg" class="card-img-top" alt="Quizzes">
+                            <span class="card-badge bg-warning text-dark">Challenge</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-2">Daily Quiz</h4>
+                            <p class="text-muted mb-4">Test your knowledge and earn double points today on Cameroon history!</p>
+                            <a href="quizzes.html" class="btn btn-modern btn-warning w-100">
+                                Take Quiz <i class="fas fa-chevron-right ms-auto"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity & Leaderboard -->
+            <div class="row g-5">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="bg-white rounded-5 p-5 shadow-sm">
+                        <h4 class="fw-bold mb-4">Recent Activity</h4>
+                        <div class="activity-timeline">
+                            <div class="d-flex gap-3 mb-4">
+                                <div class="flex-shrink-0 bg-success-subtle p-3 rounded-4" style="height: fit-content;">
+                                    <i class="fas fa-medal text-success"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Earned "Culture Keeper" Badge</h6>
+                                    <p class="text-muted small mb-0">You completed 10 lessons in the Bamileke section.</p>
+                                    <small class="text-muted opacity-75">2 hours ago</small>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 mb-4">
+                                <div class="flex-shrink-0 bg-primary-subtle p-3 rounded-4" style="height: fit-content;">
+                                    <i class="fas fa-comment text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Commented in Tribe Forum</h6>
+                                    <p class="text-muted small mb-0">"The history of the Bamum Sultanate is truly inspiring!"</p>
+                                    <small class="text-muted opacity-75">5 hours ago</small>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <div class="flex-shrink-0 bg-warning-subtle p-3 rounded-4" style="height: fit-content;">
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Completed Daily Challenge</h6>
+                                    <p class="text-muted small mb-0">Scored 100% in the Geography Quiz.</p>
+                                    <small class="text-muted opacity-75">Yesterday</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="bg-white rounded-5 p-5 shadow-sm">
+                        <h4 class="fw-bold mb-4">Top Explorers</h4>
+                        <div class="leaderboard">
+                            <div class="d-flex align-items-center gap-3 mb-3 p-3 rounded-4 bg-light border-start border-success border-4">
+                                <span class="fw-bold text-success fs-5">1</span>
+                                <img src="../img/alex.jpg" class="rounded-circle" width="45" height="45">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Alex M.</h6>
+                                    <small class="text-muted">4,250 pts</small>
+                                </div>
+                                <i class="fas fa-crown text-warning"></i>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3 p-3 rounded-4">
+                                <span class="fw-bold text-muted fs-5">2</span>
+                                <img src="../img/annie.jpg" class="rounded-circle" width="45" height="45">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Annie S.</h6>
+                                    <small class="text-muted">3,890 pts</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3 p-3 rounded-4">
+                                <span class="fw-bold text-muted fs-5">3</span>
+                                <img src="../img/roy.jpg" class="rounded-circle" width="45" height="45">
+                                <div class="flex-grow-1">
+                                    <h6 class="fw-bold mb-0">Roy K.</h6>
+                                    <small class="text-muted">3,420 pts</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="gamification.html" class="btn btn-outline-secondary w-100 rounded-pill mt-3">View Leaderboard</a>
+                    </div>
+
+                    <!-- Achievement Counting Side -->
+                    <div class="bg-white rounded-5 p-5 shadow-sm mt-5" data-aos="fade-left">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4 class="fw-bold mb-0">My Achievements</h4>
+                            <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-3" id="badgeCount">0</span>
+                        </div>
+                        <div id="achievementsList" class="achievement-grid">
+                            <!-- Achievements will be loaded here -->
+                            <div class="text-center py-4 text-muted small">
+                                <i class="fas fa-award d-block fs-2 mb-2 opacity-25"></i>
+                                Start exploring to earn your first badge!
+                            </div>
+                        </div>
+                        <a href="gamification.html#badges" class="btn btn-link text-success w-100 mt-3 text-decoration-none fw-bold">View All Badges</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Add Settings Manager -->
+    <script src="js/settingsManager.js"></script>
+    <!-- Add Gamification JS -->
+    <script src="js/gamification.js"></script>
+    <script>
+        // Initialize Gamification and Update UI
+        document.addEventListener('DOMContentLoaded', async () => {
+            const gamification = new GamificationSystem();
+            window.gamification = gamification;
+            
+            // Load user data (this syncs with backend)
+            await gamification.loadUserData();
+            
+            // Fetch login status for name and role
+            try {
+                const response = await fetch('/api/login-status', { credentials: 'include' });
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.success) {
+                        const name = data.first_name || 'Explorer';
+                        // Update Welcome Message
+                        const welcomeBadge = document.getElementById('welcomeBadge');
+                        const welcomeName = document.getElementById('welcomeName');
+                        if (welcomeBadge) welcomeBadge.textContent = `Welcome, ${name}!`;
+                        if (welcomeName) welcomeName.textContent = `Continue Your Journey, ${name}`;
+                        
+                        // Show Admin Link if needed
+                        if (data.role === 'admin') {
+                            const adminLink = document.createElement('a');
+                            adminLink.href = 'admin.html';
+                            adminLink.className = 'btn btn-danger rounded-pill px-4 py-2 ms-3 fw-bold';
+                            adminLink.innerHTML = '<i class="fas fa-user-shield me-2"></i>Admin Panel';
+                            document.querySelector('.dashboard-hero .col-lg-8')?.appendChild(adminLink);
+                        }
+                    }
+                }
+            } catch (e) {
+                console.error('Error fetching login status:', e);
+            }
+
+            // Load Sidebar
+            fetch('includes/sidebar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('sidebar-container').innerHTML = data;
+                    const currentPage = window.location.pathname.split("/").pop();
+                    const activeLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
+                    if (activeLink) activeLink.closest('.nav-item').classList.add('active');
+                    
+                    const sidebarToggle = document.getElementById('sidebarToggle');
+                    const sidebar = document.getElementById('sidebar');
+                    if(sidebarToggle && sidebar) {
+                        sidebarToggle.addEventListener('click', () => sidebar.classList.toggle('show'));
+                    }
+                });
+
+            // Load Header
+            fetch('includes/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    const title = document.title.split(' - ')[0];
+                    document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', title);
+                    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                    if(mobileMenuBtn) {
+                        mobileMenuBtn.addEventListener('click', () => document.getElementById('sidebar').classList.toggle('show'));
+                    }
+                    
+                    // Initialize Theme Toggle in Header
+                    if (window.settingsManager) {
+                        window.settingsManager.initHeaderThemeToggle();
+                    }
+                    
+                    // Load User Profile for Welcome Message
+                    loadUserProfile();
+                });
+
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+
+            // Update Stats UI
+            updateDashboardStats(gamification);
+            updateAchievementsUI(gamification);
+            
+            // Update Leaderboard
+            await gamification.updateLeaderboardUI();
+            
+            // Listen for updates
+            window.addEventListener('gamificationUpdate', () => {
+                updateDashboardStats(gamification);
+                updateAchievementsUI(gamification);
+            });
+        });
+
+        async function loadUserProfile() {
+            try {
+                const response = await fetch('/api/profile', { credentials: 'include' });
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.success) {
+                        const user = data.profile;
+                        const firstName = user.first_name || 'Explorer';
+                        const welcomeBadge = document.getElementById('welcomeBadge');
+                        const welcomeName = document.getElementById('welcomeName');
+                        if (welcomeBadge) welcomeBadge.textContent = `Welcome, ${firstName}!`;
+                        if (welcomeName) welcomeName.textContent = `${firstName}'s Cultural Journey`;
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading profile:', error);
+            }
+        }
+
+        function updateAchievementsUI(gamification) {
+            const list = document.getElementById('achievementsList');
+            const count = document.getElementById('badgeCount');
+            if (!list || !gamification) return;
+
+            count.textContent = gamification.badges.length;
+            
+            if (gamification.badges.length === 0) {
+                list.innerHTML = '<p class="text-muted small">No badges yet. Start exploring!</p>';
+                return;
+            }
+
+            list.innerHTML = `
+                <div class="d-flex flex-wrap gap-2">
+                    ${gamification.badges.slice(0, 6).map(badge => `
+                        <div class="achievement-mini-card" title="${badge.name}: ${badge.description}">
+                            <div class="achievement-icon-sm">
+                                <i class="fas fa-medal text-warning"></i>
+                            </div>
+                        </div>
+                    `).join('')}
+                    ${gamification.badges.length > 6 ? `
+                        <div class="achievement-mini-card more">
+                            +${gamification.badges.length - 6}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function updateDashboardStats(gamification) {
+            if (!gamification) return;
+            
+            const points = gamification.points;
+            const badges = gamification.badges;
+            const activities = gamification.activities;
+            
+            // Update Hero Stats
+            const totalPointsElements = document.querySelectorAll('.dashboard-hero .fs-1.fw-bold');
+            totalPointsElements.forEach(el => el.textContent = points.toLocaleString());
+            
+            const totalBadgesElements = document.querySelectorAll('.dashboard-hero .h4.mb-0.fw-bold');
+            if (totalBadgesElements.length > 1) {
+                totalBadgesElements[1].textContent = badges.length;
+            }
+
+            // Update Stats Cards
+            const quizPassedIcon = document.querySelector('.fa-check-circle');
+            if (quizPassedIcon) {
+                const statCard = quizPassedIcon.closest('.stat-card');
+                const quizPassedElement = statCard.querySelector('h3');
+                const quizCount = activities.filter(a => a.type === 'quiz').length;
+                quizPassedElement.textContent = quizCount;
+                
+                const quizProgress = statCard.querySelector('.progress-bar');
+                if (quizProgress) {
+                    const pct = Math.min((quizCount / 30) * 100, 100);
+                    quizProgress.style.width = pct + '%';
+                    quizProgress.parentElement.nextElementSibling.textContent = Math.round(pct) + '% of monthly goal';
+                }
+            }
+
+            const storiesReadIcon = document.querySelector('.fa-book-open');
+            if (storiesReadIcon) {
+                const statCard = storiesReadIcon.closest('.stat-card');
+                if (statCard) {
+                    const storiesReadElement = statCard.querySelector('h3');
+                    const storyCount = activities.filter(a => a.type === 'topic_visit').length;
+                    storiesReadElement.textContent = storyCount;
+                    
+                    const storyProgress = statCard.querySelector('.progress-bar');
+                    if (storyProgress) {
+                        const pct = Math.min((storyCount / 10) * 100, 100);
+                        storyProgress.style.width = pct + '%';
+                        storyProgress.parentElement.nextElementSibling.textContent = Math.round(pct) + '% of weekly goal';
+                    }
+                }
+            }
+
+            // Update Recent Activity Timeline
+            const activityTimeline = document.querySelector('.activity-timeline');
+            if (activityTimeline && activities.length > 0) {
+                activityTimeline.innerHTML = '';
+                const recentActivities = [...activities].reverse().slice(0, 3);
+                
+                recentActivities.forEach(activity => {
+                    let iconClass = 'fas fa-star text-warning';
+                    let bgClass = 'bg-warning-subtle';
+                    let title = 'Activity Completed';
+                    let desc = '';
+                    
+                    if (activity.type === 'quiz') {
+                        iconClass = 'fas fa-check-circle text-success';
+                        bgClass = 'bg-success-subtle';
+                        title = `Completed Quiz: ${activity.metadata.quizName || 'Cultural Quiz'}`;
+                        desc = `Scored ${activity.metadata.score}/${activity.metadata.total} (${activity.metadata.percentage}%)`;
+                    } else if (activity.type === 'topic_visit') {
+                        iconClass = 'fas fa-book-open text-primary';
+                        bgClass = 'bg-primary-subtle';
+                        title = `Explored Topic: ${activity.metadata.topic || 'Culture'}`;
+                        desc = `You learned about ${activity.metadata.topic || 'new traditions'}.`;
+                    } else if (activity.type === 'lesson') {
+                        iconClass = 'fas fa-language text-info';
+                        bgClass = 'bg-info-subtle';
+                        title = `Language Lesson: ${activity.metadata.tribe || 'Tribal'}`;
+                        desc = `Completed a lesson in ${activity.metadata.tribe}.`;
+                    }
+
+                    const timeStr = activity.timestamp ? new Date(activity.timestamp).toLocaleString() : 'Just now';
+
+                    activityTimeline.innerHTML += `
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="flex-shrink-0 ${bgClass} p-3 rounded-4" style="height: fit-content;">
+                                <i class="${iconClass}"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">${title}</h6>
+                                <p class="text-muted small mb-0">${desc}</p>
+                                <small class="text-muted opacity-75">${timeStr}</small>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

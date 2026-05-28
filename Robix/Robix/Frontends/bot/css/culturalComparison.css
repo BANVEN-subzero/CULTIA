@@ -1,0 +1,464 @@
+/* Cultural Comparison Tool Styles */
+
+.comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.comparison-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comparison-header h1 {
+    color: #863d08;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.comparison-header p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Tribe Selection */
+.tribe-selection {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.selection-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.selection-header h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.selection-header p {
+    color: #666;
+    margin: 0;
+}
+
+.tribe-selection-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.tribe-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tribe-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #eee;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tribe-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #863d08;
+}
+
+.tribe-card.selected {
+    background: #fff8e6;
+    border-color: #863d08;
+    box-shadow: 0 4px 12px rgba(134, 61, 8, 0.1);
+}
+
+.selection-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #863d08;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.tribe-flag {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.tribe-name {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.tribe-region {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.vs-container {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #863d08;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compare-btn {
+    background: #863d08;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px auto;
+    display: block;
+}
+
+.compare-btn:hover {
+    background: #6d3206;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.compare-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Comparison Results */
+.comparison-results {
+    display: none;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.back-to-selection {
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.back-to-selection:hover {
+    background: #e0e0e0;
+}
+
+.comparison-title {
+    text-align: center;
+    color: #863d08;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Tribe Comparison Cards */
+.tribe-comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.tribe-comparison-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tribe-header {
+    background: linear-gradient(135deg, #863d08, #c85a17);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.tribe-header .tribe-flag {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.tribe-header .tribe-name {
+    font-size: 1.8rem;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.tribe-header .tribe-region {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.tribe-details {
+    padding: 25px;
+}
+
+.detail-section {
+    margin-bottom: 25px;
+}
+
+.detail-section:last-child {
+    margin-bottom: 0;
+}
+
+.detail-section h3 {
+    color: #863d08;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.3rem;
+}
+
+.detail-list {
+    padding: 0;
+    margin: 0;
+}
+
+.detail-list li {
+    margin: 0 0 12px 0;
+    padding: 0 0 0 25px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.detail-list li::before {
+    content: "•";
+    color: #863d08;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Comparison Table */
+.comparison-table-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th {
+    background: #863d08;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.comparison-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.comparison-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.comparison-table tr:hover {
+    background: #fff8e6;
+}
+
+.category-cell {
+    font-weight: 600;
+    color: #333;
+    width: 30%;
+}
+
+.tribe-cell {
+    width: 35%;
+}
+
+/* Similarities and Differences */
+.similarities-differences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.similarities-card, .differences-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+.similarities-card h2, .differences-card h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.similarities-card h2 {
+    color: #27ae60;
+}
+
+.differences-card h2 {
+    color: #863d08;
+}
+
+.similarity-item, .difference-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.similarity-item:last-child, .difference-item:last-child {
+    margin-bottom: 0;
+}
+
+.similarity-category, .difference-category {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.similarity-details, .difference-details {
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tribe-selection-grid {
+        gap: 15px;
+    }
+    
+    .tribe-card {
+        padding: 15px;
+        min-height: 140px;
+    }
+    
+    .tribe-flag {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .tribe-name {
+        font-size: 1.2rem;
+    }
+    
+    .tribe-region {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tribe-selection-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .vs-container {
+        order: 2;
+        margin: 15px 0;
+    }
+    
+    .compare-btn {
+        order: 3;
+    }
+    
+    .tribe-comparison-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .similarities-differences {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th, .comparison-table td {
+        padding: 10px 8px;
+    }
+    
+    .comparison-header h1 {
+        font-size: 2rem;
+    }
+    
+    .selection-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .comparison-container {
+        padding: 10px;
+    }
+    
+    .tribe-selection, .comparison-table-container, .similarities-card, .differences-card {
+        padding: 20px;
+    }
+    
+    .tribe-comparison-grid {
+        gap: 20px;
+    }
+    
+    .tribe-header {
+        padding: 20px;
+    }
+    
+    .tribe-details {
+        padding: 20px;
+    }
+    
+    .detail-section h3 {
+        font-size: 1.2rem;
+    }
+}

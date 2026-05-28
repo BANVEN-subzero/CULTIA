@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bandjoun_people",
+    "type": "main_page",
+    "tribe": "bandjoun",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bandjoun_tribe",
+    "type": "main_page",
+    "tribe": "bandjoun",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bandjoun",
+    "type": "main_page",
+    "tribe": "bandjoun",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bandjoun_ethnic_group",
+    "type": "main_page",
+    "tribe": "bandjoun",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "spiritual_beliefs",
+    "search_term": "bandjoun religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+traditional+religion",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "spiritual_beliefs",
+    "search_term": "bandjoun traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+religious+practices",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "spiritual_beliefs",
+    "search_term": "bandjoun religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+economy+trade",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "economy",
+    "search_term": "bandjoun economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+economic+activities",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "economy",
+    "search_term": "bandjoun economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+livelihood",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "economy",
+    "search_term": "bandjoun livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "arts_and_crafts",
+    "search_term": "bandjoun art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+traditional+arts",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "arts_and_crafts",
+    "search_term": "bandjoun traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+handicrafts",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "arts_and_crafts",
+    "search_term": "bandjoun handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+traditional+governance",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "governance",
+    "search_term": "bandjoun traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+political+system",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "governance",
+    "search_term": "bandjoun political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+leadership+structure",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "governance",
+    "search_term": "bandjoun leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+colonial+period",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "colonial_impact",
+    "search_term": "bandjoun colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+European+colonization",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "colonial_impact",
+    "search_term": "bandjoun European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+colonial+administration",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "colonial_impact",
+    "search_term": "bandjoun colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "subsistence_patterns",
+    "search_term": "bandjoun agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+food+production",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "subsistence_patterns",
+    "search_term": "bandjoun food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+traditional+economy",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "subsistence_patterns",
+    "search_term": "bandjoun traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+modern+challenges",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "challenges",
+    "search_term": "bandjoun modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "challenges",
+    "search_term": "bandjoun contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "challenges",
+    "search_term": "bandjoun cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "cultural_revitalization",
+    "search_term": "bandjoun cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+language+revitalization",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "cultural_revitalization",
+    "search_term": "bandjoun language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+cultural+revival",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "cultural_revitalization",
+    "search_term": "bandjoun cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+modern+politics",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "modern_governance",
+    "search_term": "bandjoun modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "modern_governance",
+    "search_term": "bandjoun contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+political+participation",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "modern_governance",
+    "search_term": "bandjoun political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "pre_contact_history",
+    "search_term": "bandjoun pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+before+European+contact",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "pre_contact_history",
+    "search_term": "bandjoun before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "pre_contact_history",
+    "search_term": "bandjoun ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "culture",
+    "search_term": "bandjoun culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+cultural+practices",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "culture",
+    "search_term": "bandjoun cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+way+of+life",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "culture",
+    "search_term": "bandjoun way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "oral_traditions",
+    "search_term": "bandjoun oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+myths+legends",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "oral_traditions",
+    "search_term": "bandjoun myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "oral_traditions",
+    "search_term": "bandjoun traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "social_organization",
+    "search_term": "bandjoun social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+clan+system+family",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "social_organization",
+    "search_term": "bandjoun clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "social_organization",
+    "search_term": "bandjoun social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "traditional_knowledge",
+    "search_term": "bandjoun traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "traditional_knowledge",
+    "search_term": "bandjoun indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "traditional_knowledge",
+    "search_term": "bandjoun ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "traditional_technology",
+    "search_term": "bandjoun traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "traditional_technology",
+    "search_term": "bandjoun indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+artisan+skills",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "traditional_technology",
+    "search_term": "bandjoun artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "history",
+    "search_term": "bandjoun history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+historical+background",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "history",
+    "search_term": "bandjoun historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "history",
+    "search_term": "bandjoun ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "music_dance",
+    "search_term": "bandjoun music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+musical+instruments",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "music_dance",
+    "search_term": "bandjoun musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bandjoun+cultural+dances",
+    "type": "category_search",
+    "tribe": "bandjoun",
+    "category": "music_dance",
+    "search_term": "bandjoun cultural dances",
+    "priority": "medium"
+  }
+]

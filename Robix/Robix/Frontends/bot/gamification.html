@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
+            border-radius: 0 0 50px 50px;
+            padding: 80px 0 120px;
+            color: white;
+            margin-bottom: -60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .badge-card {
+            background: white;
+            border-radius: 35px;
+            padding: 40px;
+            text-align: center;
+            transition: var(--transition-smooth);
+            border: none;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+            height: 100%;
+            position: relative;
+        }
+
+        .badge-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .badge-icon-wrapper {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            border-radius: 50%;
+            background: #f8f9fa;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .badge-card.unlocked .badge-icon-wrapper {
+            background: rgba(45, 90, 39, 0.1);
+            color: var(--primary-green);
+        }
+
+        .badge-card.locked {
+            filter: grayscale(1);
+            opacity: 0.7;
+        }
+
+        .badge-card.locked .badge-icon-wrapper::after {
+            content: '\f023';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: #6c757d;
+            color: white;
+            border-radius: 50%;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid white;
+        }
+
+        .leaderboard-container {
+            background: white;
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+        }
+
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 25px;
+            margin-bottom: 15px;
+            transition: var(--transition-smooth);
+            border: 2px solid transparent;
+        }
+
+        .rank-badge {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-right: 25px;
+            font-size: 1.2rem;
+        }
+
+        .rank-1 { background: #ffd700; color: #1a1a1a; }
+        .rank-2 { background: #c0c0c0; color: #1a1a1a; }
+        .rank-3 { background: #cd7f32; color: #1a1a1a; }
+
+        .reward-box {
+            background: white;
+            border-radius: 35px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div class="container" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h1 class="display-3 fw-bold mb-3">Achievements</h1>
+                        <p id="badgeProgressText" class="lead opacity-75 mb-4">Loading your progress...</p>
+                        <div class="progress bg-white bg-opacity-25" style="height: 12px; max-width: 500px; border-radius: 10px;">
+                            <div id="progressBar" class="progress-bar bg-white rounded-pill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-lg-end mt-5 mt-lg-0">
+                        <div class="d-inline-block bg-white bg-opacity-10 p-4 rounded-5 border border-white border-opacity-10">
+                            <h2 id="totalPoints" class="display-4 fw-bold mb-0">0</h2>
+                            <small class="text-uppercase tracking-wider opacity-75">Total Points Earned</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="row g-4 mb-5" id="badgesGallery">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="fw-bold mb-4">Badges Gallery</h2>
+                </div>
+                <!-- Badges will be loaded here -->
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="fw-bold mb-4">Global Leaderboard</h2>
+                    <div class="leaderboard-container" id="leaderboardList">
+                        <!-- Leaderboard will be loaded here -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-left">
+                    <h2 class="fw-bold mb-4">Rewards Shop</h2>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="reward-box">
+                                <i class="fas fa-user-astronaut display-4 text-primary mb-3"></i>
+                                <h5 class="fw-bold">Elite Avatar</h5>
+                                <p class="text-muted small mb-3">Unlock a special gold-themed avatar for your profile.</p>
+                                <button class="btn btn-outline-primary rounded-pill w-100">Redeem 500 pts</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/gamification.js"></script>
+    <script src="js/settingsManager.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            AOS.init({ duration: 800, once: true });
+            const gamification = new GamificationSystem();
+            window.gamification = gamification;
+            
+            const settingsManager = new SettingsManager();
+            window.settingsManager = settingsManager;
+            
+            await gamification.loadUserData();
+
+            // Load Sidebar & Header
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                const currentPath = window.location.pathname.split('/').pop();
+                const navLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
+                if (navLink) navLink.closest('.nav-item').classList.add('active');
+            });
+
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Achievements');
+                if (window.settingsManager) window.settingsManager.initHeaderThemeToggle();
+            });
+
+            async function updateUI() {
+                // Points & Progress
+                document.getElementById('totalPoints').textContent = gamification.points.toLocaleString();
+                const totalBadges = 20;
+                const earnedCount = gamification.badges.length;
+                document.getElementById('badgeProgressText').textContent = `You've unlocked ${earnedCount}/${totalBadges} badges.`;
+                document.getElementById('progressBar').style.width = (earnedCount / totalBadges * 100) + '%';
+
+                // Badges Gallery
+                const possibleBadges = [
+                    { id: 'first_lesson', name: 'First Steps', desc: 'Completed your first lesson', icon: 'fa-seedling' },
+                    { id: 'first_quiz', name: 'Quiz Starter', desc: 'Completed your first quiz', icon: 'fa-book-open' },
+                    { id: 'quiz_master', name: 'Quiz Master', desc: 'Completed 10 quizzes', icon: 'fa-crown' },
+                    { id: 'expert', name: 'Expert', desc: 'Earned 1000 points', icon: 'fa-fire' }
+                ];
+
+                const gallery = document.getElementById('badgesGallery');
+                const header = gallery.querySelector('.col-12');
+                gallery.innerHTML = '';
+                gallery.appendChild(header);
+
+                possibleBadges.forEach(badge => {
+                    const isUnlocked = gamification.badges.some(b => b.id === badge.id);
+                    const col = document.createElement('div');
+                    col.className = 'col-6 col-md-3';
+                    col.innerHTML = `
+                        <div class="badge-card ${isUnlocked ? 'unlocked' : 'locked'}">
+                            <div class="badge-icon-wrapper"><i class="fas ${badge.icon}"></i></div>
+                            <h4 class="fw-bold mb-2">${badge.name}</h4>
+                            <p class="text-muted small mb-0">${badge.desc}</p>
+                        </div>
+                    `;
+                    gallery.appendChild(col);
+                });
+
+                // Update Leaderboard from Backend
+                const leaderboardContainer = document.getElementById('leaderboardList');
+                if (leaderboardContainer) {
+                    const leaderboardData = await gamification.getLeaderboardData();
+                    leaderboardContainer.innerHTML = '';
+                    
+                    if (!leaderboardData || leaderboardData.length === 0) {
+                        leaderboardContainer.innerHTML = '<div class="text-center p-5 text-muted">No explorers yet.</div>';
+                    } else {
+                        leaderboardData.forEach(user => {
+                            const isTopThree = user.rank <= 3;
+                            const item = document.createElement('div');
+                            item.className = `leaderboard-item ${isTopThree ? 'top-three' : ''} ${user.is_current_user ? 'border-success border-2 shadow-sm' : ''}`;
+                            
+                            let rankDisplay = `<div class="rank-badge ${isTopThree ? 'rank-' + user.rank : 'bg-light'}">${user.rank}</div>`;
+                            
+                            item.innerHTML = `
+                                ${rankDisplay}
+                                <div class="flex-grow-1">
+                                    <h5 class="fw-bold mb-0">${user.is_current_user ? 'You (' + user.name + ')' : user.name}</h5>
+                                    <small class="text-muted">${isTopThree ? 'Master of Traditions' : 'Cultural Explorer'}</small>
+                                </div>
+                                <h4 class="fw-bold ${isTopThree ? 'text-success' : 'text-dark'} mb-0">${user.points.toLocaleString()} <small class="fs-6 text-muted">pts</small></h4>
+                            `;
+                            leaderboardContainer.appendChild(item);
+                        });
+                    }
+                }
+            }
+
+            await updateUI();
+            gamification.onUpdate(updateUI);
+        });
+    </script>
+</body>
+</html>

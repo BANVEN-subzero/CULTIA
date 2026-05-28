@@ -1,0 +1,666 @@
+/* Enhanced Visual Design CSS for CulturalAI */
+/* Implements dynamic color schemes, animations, and interactive elements */
+
+/* Color Palette for Different Ethnic Groups */
+:root {
+  /* Default theme colors */
+  --primary-green: #7EBD3A;
+  --cream: #FFDBAF;
+  --orange: #CA7B42;
+  --brown: #823919;
+  --dark-brown: #521908;
+  
+  /* Additional utility colors */
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --gray: #6c757d;
+  --dark: #212529;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-green), var(--orange));
+  --gradient-warm: linear-gradient(135deg, var(--cream), var(--orange));
+  --gradient-earth: linear-gradient(135deg, var(--brown), var(--dark-brown));
+  
+  /* Tribe-specific colors */
+  --bamileke-color: #8B4513; /* SaddleBrown */
+  --bamum-color: #2E8B57; /* SeaGreen */
+  --bassa-color: #4682B4; /* SteelBlue */
+  --fulani-color: #DAA520; /* GoldenRod */
+  --duala-color: #32CD32; /* LimeGreen */
+  --beti-color: #9932CC; /* DarkOrchid */
+  --grassfields-color: #228B22; /* ForestGreen */
+  --sawa-color: #1E90FF; /* DodgerBlue */
+  
+  /* Animation variables */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Tribe-specific color themes */
+.theme-bamileke {
+  --tribe-primary: var(--bamileke-color);
+  --tribe-gradient: linear-gradient(135deg, #8B4513, #A0522D);
+  --tribe-accent: #CD853F;
+}
+
+.theme-bamum {
+  --tribe-primary: var(--bamum-color);
+  --tribe-gradient: linear-gradient(135deg, #2E8B57, #3CB371);
+  --tribe-accent: #66CDAA;
+}
+
+.theme-bassa {
+  --tribe-primary: var(--bassa-color);
+  --tribe-gradient: linear-gradient(135deg, #4682B4, #5DADE2);
+  --tribe-accent: #87CEEB;
+}
+
+.theme-fulani {
+  --tribe-primary: var(--fulani-color);
+  --tribe-gradient: linear-gradient(135deg, #DAA520, #F0E68C);
+  --tribe-accent: #FFD700;
+}
+
+.theme-duala {
+  --tribe-primary: var(--duala-color);
+  --tribe-gradient: linear-gradient(135deg, #32CD32, #7CFC00);
+  --tribe-accent: #90EE90;
+}
+
+.theme-beti {
+  --tribe-primary: var(--beti-color);
+  --tribe-gradient: linear-gradient(135deg, #9932CC, #BA55D3);
+  --tribe-accent: #DA70D6;
+}
+
+.theme-grassfields {
+  --tribe-primary: var(--grassfields-color);
+  --tribe-gradient: linear-gradient(135deg, #228B22, #32CD32);
+  --tribe-accent: #98FB98;
+}
+
+.theme-sawa {
+  --tribe-primary: var(--sawa-color);
+  --tribe-gradient: linear-gradient(135deg, #1E90FF, #87CEEB);
+  --tribe-accent: #B0E0E6;
+}
+
+/* Dynamic color scheme application */
+body.theme-bamileke {
+  --primary-green: var(--bamileke-color);
+  --gradient-primary: var(--tribe-gradient);
+  --gradient-warm: linear-gradient(135deg, #F4A460, var(--bamileke-color));
+  --gradient-earth: linear-gradient(135deg, var(--bamileke-color), #5D2906);
+}
+
+body.theme-bamum {
+  --primary-green: var(--bamum-color);
+  --gradient-primary: var(--tribe-gradient);
+  --gradient-warm: linear-gradient(135deg, #98FB98, var(--bamum-color));
+  --gradient-earth: linear-gradient(135deg, var(--bamum-color), #194D30);
+}
+
+body.theme-bassa {
+  --primary-green: var(--bassa-color);
+  --gradient-primary: var(--tribe-gradient);
+  --gradient-warm: linear-gradient(135deg, #87CEFA, var(--bassa-color));
+  --gradient-earth: linear-gradient(135deg, var(--bassa-color), #2A4B6E);
+}
+
+/* Dark mode theme */
+body.theme-dark {
+  --white: #121212;
+  --light-gray: #1e1e1e;
+  --gray: #a0a0a0;
+  --dark: #e0e0e0;
+  --dark-brown: #e0e0e0;
+  --brown: #c0c0c0;
+  --cream: #2d2d2d;
+  --primary-green: #5a8a2a;
+  --orange: #a86230;
+}
+
+/* Parallax effect for hero section */
+.parallax-container {
+  perspective: 1px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax-background {
+  transform: translateZ(-1px) scale(2);
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  transform: translateZ(0);
+}
+
+/* Smooth scrolling and scroll animations */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animated transitions for cards and elements */
+.card, .tribe-card, .content-card {
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before, .tribe-card::before, .content-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all var(--transition-slow);
+}
+
+.card:hover::before, .tribe-card:hover::before, .content-card:hover::before {
+  left: 100%;
+}
+
+/* Navbar Enhancements */
+.header {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header.scrolled {
+  padding: 0.3rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.logo img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.nav-menu li {
+  overflow: hidden;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 0;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary-green);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link i {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.nav-link:hover i {
+  transform: scale(1.2) rotate(5deg);
+  color: var(--orange);
+}
+
+/* Hero Section Animations */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(126, 189, 58, 0.05) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero-content h1 {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-content p {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-content .btn {
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating elements animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.card-icon i {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Interactive map container */
+.interactive-map-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(135deg, var(--light-gray), var(--cream));
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 2rem 0;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900"><path d="M401 48c24 20 49 30 83 33 31 3 61-9 86 12 20 17 36 51 40 79 4 28-6 58 2 86 8 29 34 49 40 79 6 31-4 64-12 95-7 28-18 56-18 85 0 34 16 66 6 99-9 31-41 49-60 74-15 20-20 46-35 66-21 28-56 42-84 62-24 17-44 39-72 49-28 10-59 6-88 0-33-7-59-26-89-40-26-12-56-14-78-33-23-20-32-52-47-78-15-27-43-45-55-74-11-28-2-59-7-88-5-29-26-54-31-83-5-28 8-57 12-85 4-29-2-58 8-85 11-30 38-51 55-78 16-25 22-56 44-76 23-21 55-28 83-41 31-15 59-42 94-44 29-1 58 21 85 24z" fill="none" stroke="%238B4513" stroke-width="8" stroke-linejoin="round"/></svg>') no-repeat center;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.map-marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--tribe-primary, var(--primary-green));
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 0 rgba(126, 189, 58, 0.7);
+  animation: pulse 2s infinite;
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.map-marker:hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  box-shadow: 0 0 0 10px rgba(126, 189, 58, 0.3);
+  z-index: 20;
+}
+
+.map-marker::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map-marker.bamileke { top: 30%; left: 40%; background: var(--bamileke-color); }
+.map-marker.bamum { top: 35%; left: 45%; background: var(--bamum-color); }
+.map-marker.bassa { top: 40%; left: 35%; background: var(--bassa-color); }
+.map-marker.fulani { top: 25%; left: 50%; background: var(--fulani-color); }
+.map-marker.duala { top: 45%; left: 30%; background: var(--duala-color); }
+.map-marker.beti { top: 50%; left: 50%; background: var(--beti-color); }
+.map-marker.grassfields { top: 30%; left: 42%; background: var(--grassfields-color); }
+.map-marker.sawa { top: 45%; left: 32%; background: var(--sawa-color); }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(126, 189, 58, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(126, 189, 58, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(126, 189, 58, 0);
+  }
+}
+
+.map-tooltip {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 30;
+  min-width: 200px;
+  transform: translate(-50%, -100%);
+  margin-top: -10px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  pointer-events: none;
+}
+
+.map-tooltip.active {
+  opacity: 1;
+}
+
+.map-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.map-tooltip h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--tribe-primary, var(--primary-green));
+}
+
+.map-tooltip p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+/* Custom illustrations and icons */
+.illustration-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, var(--light-gray), var(--cream));
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.illustration-element {
+  position: absolute;
+  transition: all var(--transition-normal);
+}
+
+/* Dark/light mode toggle */
+.theme-toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.theme-toggle {
+    background: var(--white);
+    border: 2px solid var(--primary-green);
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-normal);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--primary-green);
+    top: 1px;
+    left: 2px;
+    transition: all var(--transition-normal);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+body.theme-dark .theme-toggle::before {
+    transform: translateX(30px);
+    background: #f0f0f0;
+}
+
+.theme-toggle-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.theme-toggle-label.light {
+    left: 8px;
+    color: var(--primary-green);
+}
+
+.theme-toggle-label.dark {
+    right: 8px;
+    color: #333;
+}
+
+body.theme-dark .theme-toggle-label.light {
+    color: #333;
+}
+
+body.theme-dark .theme-toggle-label.dark {
+    color: #f0f0f0;
+}
+
+/* Ensure theme toggle is visible in both light and dark modes */
+body.theme-dark .theme-toggle,
+.theme-toggle.dark-mode {
+    background: #1e1e1e;
+    border: 2px solid #808000; /* Olive Green */
+}
+
+body.theme-dark .theme-toggle::before,
+.theme-toggle.dark-mode::before {
+    transform: translateX(30px);
+    background: #808000; /* Olive Green */
+}
+
+body.theme-dark .theme-toggle-label.light,
+.theme-toggle.dark-mode .theme-toggle-label.light {
+    color: #808000; /* Olive Green */
+}
+
+body.theme-dark .theme-toggle-label.dark,
+.theme-toggle.dark-mode .theme-toggle-label.dark {
+    color: #f0f0f0;
+}
+/* Enhanced animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+/* Responsive adjustments for animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .card::before, .tribe-card::before, .content-card::before {
+    display: none;
+  }
+}
+
+/* Loading animations */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(126, 189, 58, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--primary-green);
+  animation: spin 1s ease-in-out infinite;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(230, 126, 34, 0.3);
+  border-top: 5px solid var(--primary-orange);
+  border-radius: 50%;
+  /* Use transform instead of animation for better performance */
+  animation: spin 1s linear infinite;
+  will-change: transform; /* Hint to browser for optimization */
+}
+
+.spinner-secondary {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(230, 126, 34, 0.3);
+  border-top: 3px solid var(--primary-orange);
+  border-radius: 50%;
+  /* Use transform instead of animation for better performance */
+  animation: spin 1.2s linear infinite;
+  will-change: transform; /* Hint to browser for optimization */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Enhanced button styles */
+.btn-enhanced {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.6s;
+  z-index: -1;
+}
+
+.btn-enhanced:hover::before {
+  left: 100%;
+}
+
+/* Enhanced card hover effects */
+.card-enhanced {
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.card-enhanced:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-enhanced::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.card-enhanced:hover::after {
+  opacity: 1;
+}

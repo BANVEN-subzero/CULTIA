@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/moundang_people",
+    "type": "main_page",
+    "tribe": "moundang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/moundang_tribe",
+    "type": "main_page",
+    "tribe": "moundang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/moundang",
+    "type": "main_page",
+    "tribe": "moundang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/moundang_ethnic_group",
+    "type": "main_page",
+    "tribe": "moundang",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "spiritual_beliefs",
+    "search_term": "moundang religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+traditional+religion",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "spiritual_beliefs",
+    "search_term": "moundang traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+religious+practices",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "spiritual_beliefs",
+    "search_term": "moundang religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+economy+trade",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "economy",
+    "search_term": "moundang economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+economic+activities",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "economy",
+    "search_term": "moundang economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+livelihood",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "economy",
+    "search_term": "moundang livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "arts_and_crafts",
+    "search_term": "moundang art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+traditional+arts",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "arts_and_crafts",
+    "search_term": "moundang traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+handicrafts",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "arts_and_crafts",
+    "search_term": "moundang handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+traditional+governance",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "governance",
+    "search_term": "moundang traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+political+system",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "governance",
+    "search_term": "moundang political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+leadership+structure",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "governance",
+    "search_term": "moundang leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+colonial+period",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "colonial_impact",
+    "search_term": "moundang colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+European+colonization",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "colonial_impact",
+    "search_term": "moundang European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+colonial+administration",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "colonial_impact",
+    "search_term": "moundang colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+agriculture+farming",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "subsistence_patterns",
+    "search_term": "moundang agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+food+production",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "subsistence_patterns",
+    "search_term": "moundang food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+traditional+economy",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "subsistence_patterns",
+    "search_term": "moundang traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+modern+challenges",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "challenges",
+    "search_term": "moundang modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+contemporary+issues",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "challenges",
+    "search_term": "moundang contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+cultural+preservation",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "challenges",
+    "search_term": "moundang cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+cultural+preservation",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "cultural_revitalization",
+    "search_term": "moundang cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+language+revitalization",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "cultural_revitalization",
+    "search_term": "moundang language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+cultural+revival",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "cultural_revitalization",
+    "search_term": "moundang cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+modern+politics",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "modern_governance",
+    "search_term": "moundang modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+contemporary+governance",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "modern_governance",
+    "search_term": "moundang contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+political+participation",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "modern_governance",
+    "search_term": "moundang political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "pre_contact_history",
+    "search_term": "moundang pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+before+European+contact",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "pre_contact_history",
+    "search_term": "moundang before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+ancient+traditions",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "pre_contact_history",
+    "search_term": "moundang ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "oral_traditions",
+    "search_term": "moundang oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+myths+legends",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "oral_traditions",
+    "search_term": "moundang myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+traditional+narratives",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "oral_traditions",
+    "search_term": "moundang traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "social_organization",
+    "search_term": "moundang social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+clan+system+family",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "social_organization",
+    "search_term": "moundang clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+social+hierarchy",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "social_organization",
+    "search_term": "moundang social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "traditional_knowledge",
+    "search_term": "moundang traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "traditional_knowledge",
+    "search_term": "moundang indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "traditional_knowledge",
+    "search_term": "moundang ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "traditional_technology",
+    "search_term": "moundang traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+indigenous+technology",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "traditional_technology",
+    "search_term": "moundang indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+artisan+skills",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "traditional_technology",
+    "search_term": "moundang artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+history+origin+migration",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "history",
+    "search_term": "moundang history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+historical+background",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "history",
+    "search_term": "moundang historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "history",
+    "search_term": "moundang ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+music+dance+songs",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "music_dance",
+    "search_term": "moundang music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+musical+instruments",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "music_dance",
+    "search_term": "moundang musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/moundang+cultural+dances",
+    "type": "category_search",
+    "tribe": "moundang",
+    "category": "music_dance",
+    "search_term": "moundang cultural dances",
+    "priority": "medium"
+  }
+]

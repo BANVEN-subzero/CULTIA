@@ -1,0 +1,390 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/widikum_people",
+    "type": "main_page",
+    "tribe": "widikum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/widikum_tribe",
+    "type": "main_page",
+    "tribe": "widikum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/widikum",
+    "type": "main_page",
+    "tribe": "widikum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/widikum_ethnic_group",
+    "type": "main_page",
+    "tribe": "widikum",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "spiritual_beliefs",
+    "search_term": "widikum religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+traditional+religion",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "spiritual_beliefs",
+    "search_term": "widikum traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+religious+practices",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "spiritual_beliefs",
+    "search_term": "widikum religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+traditional+governance",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "governance",
+    "search_term": "widikum traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+political+system",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "governance",
+    "search_term": "widikum political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+leadership+structure",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "governance",
+    "search_term": "widikum leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+colonial+period",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "colonial_impact",
+    "search_term": "widikum colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+European+colonization",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "colonial_impact",
+    "search_term": "widikum European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+colonial+administration",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "colonial_impact",
+    "search_term": "widikum colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+agriculture+farming",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "subsistence_patterns",
+    "search_term": "widikum agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+food+production",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "subsistence_patterns",
+    "search_term": "widikum food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+traditional+economy",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "subsistence_patterns",
+    "search_term": "widikum traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+modern+challenges",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "challenges",
+    "search_term": "widikum modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+contemporary+issues",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "challenges",
+    "search_term": "widikum contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+cultural+preservation",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "challenges",
+    "search_term": "widikum cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+cultural+preservation",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "cultural_revitalization",
+    "search_term": "widikum cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+language+revitalization",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "cultural_revitalization",
+    "search_term": "widikum language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+cultural+revival",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "cultural_revitalization",
+    "search_term": "widikum cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+modern+politics",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "modern_governance",
+    "search_term": "widikum modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+contemporary+governance",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "modern_governance",
+    "search_term": "widikum contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+political+participation",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "modern_governance",
+    "search_term": "widikum political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "pre_contact_history",
+    "search_term": "widikum pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+before+European+contact",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "pre_contact_history",
+    "search_term": "widikum before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+ancient+traditions",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "pre_contact_history",
+    "search_term": "widikum ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "culture",
+    "search_term": "widikum culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+cultural+practices",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "culture",
+    "search_term": "widikum cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+way+of+life",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "culture",
+    "search_term": "widikum way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "oral_traditions",
+    "search_term": "widikum oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+myths+legends",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "oral_traditions",
+    "search_term": "widikum myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+traditional+narratives",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "oral_traditions",
+    "search_term": "widikum traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "social_organization",
+    "search_term": "widikum social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+clan+system+family",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "social_organization",
+    "search_term": "widikum clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+social+hierarchy",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "social_organization",
+    "search_term": "widikum social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "traditional_knowledge",
+    "search_term": "widikum traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "traditional_knowledge",
+    "search_term": "widikum indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "traditional_knowledge",
+    "search_term": "widikum ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "traditional_technology",
+    "search_term": "widikum traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+indigenous+technology",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "traditional_technology",
+    "search_term": "widikum indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+artisan+skills",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "traditional_technology",
+    "search_term": "widikum artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+history+origin+migration",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "history",
+    "search_term": "widikum history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+historical+background",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "history",
+    "search_term": "widikum historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "history",
+    "search_term": "widikum ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+music+dance+songs",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "music_dance",
+    "search_term": "widikum music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+musical+instruments",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "music_dance",
+    "search_term": "widikum musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/widikum+cultural+dances",
+    "type": "category_search",
+    "tribe": "widikum",
+    "category": "music_dance",
+    "search_term": "widikum cultural dances",
+    "priority": "medium"
+  }
+]

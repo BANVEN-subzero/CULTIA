@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art & Crafts - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-purple: #764ba2;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 100px 0 140px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+            text-align: center;
+        }
+
+        .art-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+            transition: var(--transition-smooth);
+            border: none;
+            height: 100%;
+        }
+
+        .art-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(118, 75, 162, 0.15);
+        }
+
+        .art-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .art-content {
+            padding: 30px;
+        }
+
+        .meta-tag {
+            padding: 6px 15px;
+            background: #f0f0f0;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--accent-purple);
+            font-weight: 700;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .learn-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            width: 100%;
+            transition: var(--transition-smooth);
+        }
+
+        .learn-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(118, 75, 162, 0.3);
+            color: white;
+        }
+
+        .modal-content {
+            border-radius: 40px;
+            border: none;
+            padding: 20px;
+        }
+
+        .modal-header {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .modal-body {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .modal-body h2, .modal-body h3 {
+            color: #1a1a1a;
+            font-weight: 800;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .modal-body ul {
+            padding-left: 20px;
+        }
+
+        .modal-body li {
+            margin-bottom: 10px;
+        }
+
+        .complete-btn {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            width: 100%;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Art & Crafts</h1>
+                <p class="lead opacity-75 mx-auto" style="max-width: 700px;">Explore the soul of Cameroon through its vibrant artistic traditions and master craftsmanship.</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="row g-4" id="artGrid">
+                <!-- Traditional Sculptures -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="art-card">
+                        <img src="image/download (1).png" alt="Traditional Sculptures" class="art-image">
+                        <div class="art-content">
+                            <h3 class="fw-bold mb-3">Traditional Sculptures</h3>
+                            <p class="text-muted mb-4">Explore the intricate wood carvings and bronze sculptures that represent ancestral spirits and royalty.</p>
+                            <div class="mb-4">
+                                <span class="meta-tag"><i class="fas fa-map-marker-alt me-1"></i> Grassfields</span>
+                                <span class="meta-tag"><i class="fas fa-clock me-1"></i> Ancient</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('sculptures')">
+                                <i class="fas fa-book-open me-2"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Textile Arts -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/736x/19/79/69/197969aef0be77687e6db7d5cd2c3978.jpg" alt="Textile Arts" class="art-image">
+                        <div class="art-content">
+                            <h3 class="fw-bold mb-3">Textile & Weaving</h3>
+                            <p class="text-muted mb-4">Learn about traditional weaving techniques, ndop cloth, and vibrant patterns of heritage.</p>
+                            <div class="mb-4">
+                                <span class="meta-tag"><i class="fas fa-map-marker-alt me-1"></i> Bamum Kingdom</span>
+                                <span class="meta-tag"><i class="fas fa-star me-1"></i> UNESCO</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('textiles')">
+                                <i class="fas fa-book-open me-2"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pottery -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/95/8e/18/958e18586e2ead3db6c0af913e89e424.jpg" alt="Pottery" class="art-image">
+                        <div class="art-content">
+                            <h3 class="fw-bold mb-3">Pottery & Ceramics</h3>
+                            <p class="text-muted mb-4">Discover the ancient art of pottery-making, from functional vessels to decorative ritual pieces.</p>
+                            <div class="mb-4">
+                                <span class="meta-tag"><i class="fas fa-map-marker-alt me-1"></i> Nationwide</span>
+                                <span class="meta-tag"><i class="fas fa-fire me-1"></i> Traditional</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('pottery')">
+                                <i class="fas fa-book-open me-2"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beadwork -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/92/cb/27/92cb272faaafe024e013411f9de65ae1.jpg" alt="Beadwork" class="art-image">
+                        <div class="art-content">
+                            <h3 class="fw-bold mb-3">Beadwork & Jewelry</h3>
+                            <p class="text-muted mb-4">Explore the colorful world of traditional beadwork, royal regalia, and symbolic jewelry.</p>
+                            <div class="mb-4">
+                                <span class="meta-tag"><i class="fas fa-crown me-1"></i> Royal</span>
+                                <span class="meta-tag"><i class="fas fa-gem me-1"></i> Precious</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('beadwork')">
+                                <i class="fas fa-book-open me-2"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masks -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/7a/7c/56/7a7c56f70aa89f72e4453143ad1157ef.jpg" alt="Traditional Masks" class="art-image">
+                        <div class="art-content">
+                            <h3 class="fw-bold mb-3">Traditional Masks</h3>
+                            <p class="text-muted mb-4">Learn about ceremonial masks used in rituals, dances, and celebrations across ethnic groups.</p>
+                            <div class="mb-4">
+                                <span class="meta-tag"><i class="fas fa-theater-masks me-1"></i> Ceremonial</span>
+                                <span class="meta-tag"><i class="fas fa-magic me-1"></i> Sacred</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('masks')">
+                                <i class="fas fa-book-open me-2"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basketry -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/2f/97/04/2f970481e92e2566bb29782320c152b3.jpg" alt="Basketry" class="art-image">
+                        <div class="art-content">
+                            <h3 class="fw-bold mb-3">Basketry & Weaving</h3>
+                            <p class="text-muted mb-4">Discover the practical and artistic tradition of basket weaving using natural materials.</p>
+                            <div class="mb-4">
+                                <span class="meta-tag"><i class="fas fa-leaf me-1"></i> Natural</span>
+                                <span class="meta-tag"><i class="fas fa-hands me-1"></i> Handmade</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('basketry')">
+                                <i class="fas fa-book-open me-2"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Modal -->
+    <div class="modal fade" id="artModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fw-bold" id="modalTitle">Art Details</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content injected via JS -->
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="complete-btn" onclick="markComplete()">
+                        <i class="fas fa-check-circle me-2"></i> Mark as Complete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Gamification System -->
+    <script src="js/gamification.js"></script>
+
+    <script>
+        const artDetails = {
+            sculptures: {
+                title: "Traditional Sculptures",
+                content: `
+                    <h2>Traditional Sculptures of Cameroon</h2>
+                    <p>Cameroonian sculptures are renowned worldwide for their intricate craftsmanship and deep cultural significance.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Materials:</strong> Primarily carved from hardwoods like ebony and mahogany</li>
+                        <li><strong>Subjects:</strong> Ancestral figures, royal portraits, and spiritual beings</li>
+                        <li><strong>Techniques:</strong> Hand-carved using traditional tools passed down through generations</li>
+                        <li><strong>Symbolism:</strong> Each sculpture tells a story or represents spiritual concepts</li>
+                    </ul>
+                    <h3>Famous Styles:</h3>
+                    <p><strong>Grassfields Sculptures:</strong> Known for elaborate royal thrones and ceremonial masks</p>
+                    <p><strong>Fang Sculptures:</strong> Characterized by elongated forms and geometric patterns</p>
+                `
+            },
+            textiles: {
+                title: "Textile & Weaving",
+                content: `
+                    <h2>Cameroonian Textile Arts</h2>
+                    <p>The textile traditions of Cameroon showcase vibrant patterns and sophisticated weaving techniques.</p>
+                    <h3>Ndop Cloth:</h3>
+                    <ul>
+                        <li><strong>Origin:</strong> Bamum Kingdom, dating back centuries</li>
+                        <li><strong>Technique:</strong> Resist-dyeing using indigo</li>
+                        <li><strong>Patterns:</strong> Geometric designs with symbolic meanings</li>
+                        <li><strong>Use:</strong> Royal garments and ceremonial occasions</li>
+                    </ul>
+                    <h3>Weaving Traditions:</h3>
+                    <p><strong>Strip Weaving:</strong> Creating long narrow strips that are sewn together</p>
+                    <p><strong>Kente-style Cloth:</strong> Colorful patterns representing proverbs and history</p>
+                `
+            },
+            pottery: {
+                title: "Pottery & Ceramics",
+                content: `
+                    <h2>Pottery & Ceramics</h2>
+                    <p>Pottery-making in Cameroon is an ancient art form, primarily practiced by women.</p>
+                    <h3>Traditional Techniques:</h3>
+                    <ul>
+                        <li><strong>Coil Method:</strong> Building vessels by stacking clay coils</li>
+                        <li><strong>Firing:</strong> Open-air firing using wood and grass</li>
+                        <li><strong>Decoration:</strong> Incised patterns and burnished surfaces</li>
+                    </ul>
+                    <h3>Types of Pottery:</h3>
+                    <p><strong>Water Jars:</strong> Large vessels for storing and cooling water</p>
+                    <p><strong>Ceremonial Vessels:</strong> Decorated pieces for rituals and celebrations</p>
+                `
+            },
+            beadwork: {
+                title: "Beadwork & Jewelry",
+                content: `
+                    <h2>Beadwork & Jewelry</h2>
+                    <p>Beadwork in Cameroon is a symbol of status, wealth, and cultural identity.</p>
+                    <h3>Royal Beadwork:</h3>
+                    <ul>
+                        <li><strong>Materials:</strong> Glass beads, cowrie shells, coral</li>
+                        <li><strong>Colors:</strong> Each color has specific meanings (red = power, blue = peace)</li>
+                    </ul>
+                    <h3>Types of Jewelry:</h3>
+                    <p><strong>Necklaces:</strong> Multi-strand beaded necklaces for ceremonies</p>
+                    <p><strong>Crowns:</strong> Elaborate beaded headpieces for royalty</p>
+                `
+            },
+            masks: {
+                title: "Traditional Masks",
+                content: `
+                    <h2>Traditional Masks</h2>
+                    <p>Masks are central to Cameroonian cultural and spiritual life.</p>
+                    <h3>Types of Masks:</h3>
+                    <ul>
+                        <li><strong>Ancestral Masks:</strong> Represent deceased ancestors</li>
+                        <li><strong>Animal Masks:</strong> Embody spirits of powerful animals</li>
+                        <li><strong>Sacred Nature:</strong> Many masks are considered sacred and can only be worn by initiated members.</li>
+                    </ul>
+                `
+            },
+            basketry: {
+                title: "Basketry & Weaving",
+                content: `
+                    <h2>Basketry & Weaving</h2>
+                    <p>Basket weaving combines functionality with artistic expression.</p>
+                    <h3>Materials Used:</h3>
+                    <ul>
+                        <li><strong>Raffia Palm:</strong> Most common material</li>
+                        <li><strong>Bamboo:</strong> For sturdy baskets</li>
+                        <li><strong>Natural Dyes:</strong> For colored patterns</li>
+                    </ul>
+                    <h3>Techniques:</h3>
+                    <p>Coiling, plaiting, and twining techniques passed through generations.</p>
+                `
+            }
+        };
+
+        let currentSubcategory = '';
+
+        function showDetails(subcategory) {
+            currentSubcategory = subcategory;
+            const details = artDetails[subcategory];
+            document.getElementById('modalTitle').textContent = details.title;
+            document.getElementById('modalBody').innerHTML = details.content;
+            const modal = new bootstrap.Modal(document.getElementById('artModal'));
+            modal.show();
+
+            // Record activity
+            if (window.gamification) {
+                window.gamification.recordActivity('topic_visit', { topic: 'Art & Crafts: ' + details.title });
+            }
+        }
+
+        function markComplete() {
+            // Reward points
+            if (window.gamification) {
+                window.gamification.addPoints('lesson', 50, { topic: 'Art & Crafts: ' + currentSubcategory });
+            }
+            
+            const modal = bootstrap.Modal.getInstance(document.getElementById('artModal'));
+            modal.hide();
+            
+            // Show success alert
+            const alert = document.createElement('div');
+            alert.className = 'alert alert-success position-fixed top-0 end-0 m-4 z-3';
+            alert.style.zIndex = '10000';
+            alert.innerHTML = `<i class="fas fa-check-circle me-2"></i> You've earned 50 points!`;
+            document.body.appendChild(alert);
+            setTimeout(() => alert.remove(), 3000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Art & Crafts');
+            });
+        });
+    </script>
+</body>
+
+</html>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html" class="logo" style="text-decoration: none;">
+                    <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                    <span class="logo-text">CulturalAI Educator</span>
+                </a>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger">
+                    <span class="hamburger"></span></span>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="section-header">Learn</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-home"></i></span>
+                                <span class="nav-label">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tribesAndEthnicGroups.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-users"></i></span>
+                                <span class="nav-label">Tribes & Ethnic Groups</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="interactiveLanguageLearning.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-language"></i></span>
+                                <span class="nav-label">Interactive Language Learning</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h3 class="section-header">Engage</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="quizzes.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-puzzle-piece"></i></span>
+                                <span class="nav-label">Quizzes & Challenges</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gamification.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-trophy"></i></span>
+                                <span class="nav-label">Achievements</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h3 class="section-header">Settings</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="settings.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-cog"></i></span>
+                                <span class="nav-label">Settings</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="#" class="nav-link" id="logoutBtn">
+                                <span class="nav-icon"><i class="fas fa-sign-out-alt"></i></span>
+                                <span class="nav-label">Logout</span>
+                            </a>
+                        </li>
+</ul>
+                </div>
+            </nav>
+
+            <div class="voice-input-container">
+                <button class="voice-btn" id="voiceBtn">
+                    <span class="voice-icon"><i class="fas fa-microphone"></i></span>
+                    <span class="voice-label">Voice Input</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <div class="header-left">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h1 class="page-title">Cameroon Art & Crafts</h1>
+                </div>
+                <div class="header-right">
+                    <a href="dashboard.html" class="back-button dashboard">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </a>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <!-- Hero Section -->
+                <div class="art-hero">
+                    <h1><i class="fas fa-palette"></i> Cameroon Art & Crafts</h1>
+                    <p>Discover the rich artistic heritage of Cameroon through traditional crafts, sculptures, textiles, and contemporary art forms.</p>
+                </div>
+
+                <!-- Art Categories -->
+                <div class="art-grid">
+                    <!-- Traditional Sculptures -->
+                    <div class="art-card">
+                        <img src="image/download (1).png" alt="Traditional Sculptures" class="art-image" onerror="this.src='https://via.placeholder.com/350x250?text=Traditional+Sculptures'">
+                        <div class="art-content">
+                            <h3>Traditional Sculptures</h3>
+                            <p>Explore the intricate wood carvings and bronze sculptures that represent ancestral spirits, royalty, and cultural symbols.</p>
+                            <div class="art-meta">
+                                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Grassfields</span>
+                                <span class="meta-tag"><i class="fas fa-clock"></i> Ancient</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('sculptures')">
+                                <i class="fas fa-book-open"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Textile Arts -->
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/736x/19/79/69/197969aef0be77687e6db7d5cd2c3978.jpg" alt="Textile Arts" class="art-image" onerror="this.src='https://via.placeholder.com/350x250?text=Textile+Arts'">
+                        <div class="art-content">
+                            <h3>Textile & Weaving</h3>
+                            <p>Learn about traditional weaving techniques, ndop cloth, and the vibrant patterns that tell stories of Cameroonian heritage.</p>
+                            <div class="art-meta">
+                                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Bamum Kingdom</span>
+                                <span class="meta-tag"><i class="fas fa-star"></i> UNESCO</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('textiles')">
+                                <i class="fas fa-book-open"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pottery & Ceramics -->
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/95/8e/18/958e18586e2ead3db6c0af913e89e424.jpg" alt="Pottery" class="art-image" onerror="this.src='https://via.placeholder.com/350x250?text=Pottery+%26+Ceramics'">
+                        <div class="art-content">
+                            <h3>Pottery & Ceramics</h3>
+                            <p>Discover the ancient art of pottery-making, from functional vessels to decorative pieces used in ceremonies.</p>
+                            <div class="art-meta">
+                                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Nationwide</span>
+                                <span class="meta-tag"><i class="fas fa-fire"></i> Traditional</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('pottery')">
+                                <i class="fas fa-book-open"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Beadwork -->
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/92/cb/27/92cb272faaafe024e013411f9de65ae1.jpg" alt="Beadwork" class="art-image" onerror="this.src='https://via.placeholder.com/350x250?text=Beadwork'">
+                        <div class="art-content">
+                            <h3>Beadwork & Jewelry</h3>
+                            <p>Explore the colorful world of traditional beadwork, royal regalia, and symbolic jewelry worn by chiefs and notables.</p>
+                            <div class="art-meta">
+                                <span class="meta-tag"><i class="fas fa-crown"></i> Royal</span>
+                                <span class="meta-tag"><i class="fas fa-gem"></i> Precious</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('beadwork')">
+                                <i class="fas fa-book-open"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Masks -->
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/7a/7c/56/7a7c56f70aa89f72e4453143ad1157ef.jpg" alt="Traditional Masks" class="art-image" onerror="this.src='https://via.placeholder.com/350x250?text=Traditional+Masks'">
+                        <div class="art-content">
+                            <h3>Traditional Masks</h3>
+                            <p>Learn about ceremonial masks used in rituals, dances, and cultural celebrations across different ethnic groups.</p>
+                            <div class="art-meta">
+                                <span class="meta-tag"><i class="fas fa-theater-masks"></i> Ceremonial</span>
+                                <span class="meta-tag"><i class="fas fa-magic"></i> Sacred</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('masks')">
+                                <i class="fas fa-book-open"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Basketry -->
+                    <div class="art-card">
+                        <img src="https://i.pinimg.com/1200x/2f/97/04/2f970481e92e2566bb29782320c152b3.jpg" alt="Basketry" class="art-image" onerror="this.src='https://via.placeholder.com/350x250?text=Basketry'">
+                        <div class="art-content">
+                            <h3>Basketry & Weaving</h3>
+                            <p>Discover the practical and artistic tradition of basket weaving, using natural materials to create functional art.</p>
+                            <div class="art-meta">
+                                <span class="meta-tag"><i class="fas fa-leaf"></i> Natural</span>
+                                <span class="meta-tag"><i class="fas fa-hands"></i> Handmade</span>
+                            </div>
+                            <button class="learn-btn" onclick="showDetails('basketry')">
+                                <i class="fas fa-book-open"></i> Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/educator.js"></script>
+    <script src="js/settingsManager.js"></script>
+    <script src="../js/themeManager.js"></script>
+    <script>
+        // Detailed content for each art category
+        const artDetails = {
+            sculptures: {
+                title: "Traditional Sculptures",
+                content: `
+                    <h2>Traditional Sculptures of Cameroon</h2>
+                    <p>Cameroonian sculptures are renowned worldwide for their intricate craftsmanship and deep cultural significance.</p>
+                    
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Materials:</strong> Primarily carved from hardwoods like ebony and mahogany</li>
+                        <li><strong>Subjects:</strong> Ancestral figures, royal portraits, and spiritual beings</li>
+                        <li><strong>Techniques:</strong> Hand-carved using traditional tools passed down through generations</li>
+                        <li><strong>Symbolism:</strong> Each sculpture tells a story or represents spiritual concepts</li>
+                    </ul>
+                    
+                    <h3>Famous Styles:</h3>
+                    <p><strong>Grassfields Sculptures:</strong> Known for elaborate royal thrones and ceremonial masks</p>
+                    <p><strong>Fang Sculptures:</strong> Characterized by elongated forms and geometric patterns</p>
+                    
+                    <h3>Cultural Significance:</h3>
+                    <p>Sculptures serve as intermediaries between the physical and spiritual worlds, often used in ceremonies and rituals.</p>
+                `
+            },
+            textiles: {
+                title: "Textile & Weaving",
+                content: `
+                    <h2>Cameroonian Textile Arts</h2>
+                    <p>The textile traditions of Cameroon showcase vibrant patterns and sophisticated weaving techniques.</p>
+                    
+                    <h3>Ndop Cloth:</h3>
+                    <ul>
+                        <li><strong>Origin:</strong> Bamum Kingdom, dating back centuries</li>
+                        <li><strong>Technique:</strong> Resist-dyeing using indigo</li>
+                        <li><strong>Patterns:</strong> Geometric designs with symbolic meanings</li>
+                        <li><strong>Use:</strong> Royal garments and ceremonial occasions</li>
+                    </ul>
+                    
+                    <h3>Weaving Traditions:</h3>
+                    <p><strong>Strip Weaving:</strong> Creating long narrow strips that are sewn together</p>
+                    <p><strong>Kente-style Cloth:</strong> Colorful patterns representing proverbs and history</p>
+                    
+                    <h3>Modern Applications:</h3>
+                    <p>Contemporary designers incorporate traditional patterns into modern fashion, keeping the heritage alive.</p>
+                `
+            },
+            pottery: {
+                title: "Pottery & Ceramics",
+                content: `
+                    <h2>Pottery & Ceramics</h2>
+                    <p>Pottery-making in Cameroon is an ancient art form, primarily practiced by women.</p>
+                    
+                    <h3>Traditional Techniques:</h3>
+                    <ul>
+                        <li><strong>Coil Method:</strong> Building vessels by stacking clay coils</li>
+                        <li><strong>Firing:</strong> Open-air firing using wood and grass</li>
+                        <li><strong>Decoration:</strong> Incised patterns and burnished surfaces</li>
+                    </ul>
+                    
+                    <h3>Types of Pottery:</h3>
+                    <p><strong>Water Jars:</strong> Large vessels for storing and cooling water</p>
+                    <p><strong>Cooking Pots:</strong> Heat-resistant pots for traditional cooking</p>
+                    <p><strong>Ceremonial Vessels:</strong> Decorated pieces for rituals and celebrations</p>
+                    
+                    <h3>Regional Variations:</h3>
+                    <p>Each ethnic group has distinct pottery styles, shapes, and decoration patterns.</p>
+                `
+            },
+            beadwork: {
+                title: "Beadwork & Jewelry",
+                content: `
+                    <h2>Beadwork & Jewelry</h2>
+                    <p>Beadwork in Cameroon is a symbol of status, wealth, and cultural identity.</p>
+                    
+                    <h3>Royal Beadwork:</h3>
+                    <ul>
+                        <li><strong>Materials:</strong> Glass beads, cowrie shells, coral</li>
+                        <li><strong>Colors:</strong> Each color has specific meanings (red = power, blue = peace)</li>
+                        <li><strong>Patterns:</strong> Geometric designs representing royal lineage</li>
+                    </ul>
+                    
+                    <h3>Types of Jewelry:</h3>
+                    <p><strong>Necklaces:</strong> Multi-strand beaded necklaces for ceremonies</p>
+                    <p><strong>Bracelets:</strong> Worn by chiefs and notables</p>
+                    <p><strong>Crowns:</strong> Elaborate beaded headpieces for royalty</p>
+                    
+                    <h3>Symbolism:</h3>
+                    <p>Beadwork communicates social status, marital status, and tribal affiliation.</p>
+                `
+            },
+            masks: {
+                title: "Traditional Masks",
+                content: `
+                    <h2>Traditional Masks</h2>
+                    <p>Masks are central to Cameroonian cultural and spiritual life.</p>
+                    
+                    <h3>Types of Masks:</h3>
+                    <ul>
+                        <li><strong>Ancestral Masks:</strong> Represent deceased ancestors during ceremonies</li>
+                        <li><strong>Animal Masks:</strong> Embody spirits of powerful animals</li>
+                        <li><strong>Royal Masks:</strong> Worn during coronations and royal events</li>
+                        <li><strong>Dance Masks:</strong> Used in traditional performances</li>
+                    </ul>
+                    
+                    <h3>Materials:</h3>
+                    <p>Wood, raffia, beads, feathers, animal skins, and natural pigments</p>
+                    
+                    <h3>Sacred Nature:</h3>
+                    <p>Many masks are considered sacred and can only be worn by initiated members during specific ceremonies.</p>
+                `
+            },
+            basketry: {
+                title: "Basketry & Weaving",
+                content: `
+                    <h2>Basketry & Weaving</h2>
+                    <p>Basket weaving combines functionality with artistic expression.</p>
+                    
+                    <h3>Materials Used:</h3>
+                    <ul>
+                        <li><strong>Raffia Palm:</strong> Most common material</li>
+                        <li><strong>Bamboo:</strong> For sturdy baskets</li>
+                        <li><strong>Grasses:</strong> Various local grasses</li>
+                        <li><strong>Natural Dyes:</strong> For colored patterns</li>
+                    </ul>
+                    
+                    <h3>Types of Baskets:</h3>
+                    <p><strong>Storage Baskets:</strong> For grains and household items</p>
+                    <p><strong>Market Baskets:</strong> For carrying goods</p>
+                    <p><strong>Decorative Baskets:</strong> Artistic pieces for display</p>
+                    
+                    <h3>Techniques:</h3>
+                    <p>Coiling, plaiting, and twining techniques passed through generations.</p>
+                `
+            }
+        };
+
+        // Show detailed modal
+        function showDetails(subcategory) {
+            const details = artDetails[subcategory];
+            if (!details) return;
+            
+            const isDark = document.body.classList.contains('theme-dark');
+            
+            // Create modal
+            const modal = document.createElement('div');
+            modal.id = 'detailModal';
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.8);
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem;
+                animation: fadeIn 0.3s ease;
+            `;
+            
+            modal.innerHTML = `
+                <div style="
+                    background: ${isDark ? '#2d2d2d' : 'white'};
+                    color: ${isDark ? '#f0f0f0' : '#333'};
+                    border-radius: 20px;
+                    max-width: 800px;
+                    max-height: 90vh;
+                    overflow-y: auto;
+                    padding: 2rem;
+                    position: relative;
+                    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+                ">
+                    <button onclick="closeModal()" style="
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                        background: #f44336;
+                        color: white;
+                        border: none;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">×</button>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        ${details.content}
+                    </div>
+                    
+                    <button onclick="markComplete('art_crafts', '${subcategory}')" style="
+                        width: 100%;
+                        padding: 1rem;
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        color: white;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="fas fa-check-circle"></i> Mark as Complete
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('detailModal');
+            if (modal) modal.remove();
+        }
+
+        function markComplete(category, subcategory) {
+            // Get current progress
+            let progress = JSON.parse(localStorage.getItem('languageLearningProgress') || '{}');
+            
+            if (!progress.tribeProgress) {
+                progress.tribeProgress = {};
+            }
+            
+            if (!progress.tribeProgress[category]) {
+                progress.tribeProgress[category] = {
+                    completed: 0,
+                    total: 6,
+                    percentage: 0,
+                    sections: {}
+                };
+            }
+            
+            // Mark this section as completed
+            if (!progress.tribeProgress[category].sections[subcategory]) {
+                progress.tribeProgress[category].sections[subcategory] = {
+                    completed: true,
+                    timestamp: new Date().toISOString()
+                };
+                
+                // Increment completed count
+                progress.tribeProgress[category].completed++;
+                progress.tribeProgress[category].percentage = Math.round(
+                    (progress.tribeProgress[category].completed / progress.tribeProgress[category].total) * 100
+                );
+            }
+            
+            // Save progress
+            localStorage.setItem('languageLearningProgress', JSON.stringify(progress));
+            
+            // Close modal
+            closeModal();
+            
+            // Show notification
+            showNotification(`Section completed! ${progress.tribeProgress[category].percentage}% of Art & Crafts done`, 'success');
+        }
+        
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.innerHTML = `
+                <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'}"></i>
+                <span>${message}</span>
+            `;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#4caf50' : '#2196F3'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                animation: slideIn 0.3s ease;
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => notification.remove(), 3000);
+        }
+        
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            @keyframes slideIn {
+                from { transform: translateX(400px); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

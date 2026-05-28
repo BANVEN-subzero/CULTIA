@@ -1,0 +1,121 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}User Achievements - {{ user.first_name }} {{ user.last_name }}{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="header-title">
+        <h1>User Achievements</h1>
+        <p>Viewing achievements for {{ user.first_name }} {{ user.last_name }} ({{ user.email }})</p>
+    </div>
+    <div class="header-actions">
+        <a href="{{ url_for('users') }}" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Back to Users
+        </a>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('addAchievementForm').style.display='block';">
+            <i class="fas fa-plus"></i> Grant Achievement / Points
+        </button>
+    </div>
+</div>
+
+<div id="addAchievementForm" class="card" style="display: none; margin-bottom: 2rem; border-top: 4px solid var(--primary-green);">
+    <div class="card-header">
+        <h3 class="card-title">Grant Achievement</h3>
+    </div>
+    <div class="card-body">
+        <form action="{{ url_for('admin_add_achievement', user_id=user.id) }}" method="POST">
+            <div class="form-group">
+                <label>Type</label>
+                <select name="achievement_type" class="form-control">
+                    <option value="admin_granted">Admin Granted</option>
+                    <option value="bonus">Bonus</option>
+                    <option value="correction">Correction</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="achievement_name" class="form-control" required placeholder="e.g. Community Leader">
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" name="achievement_description" class="form-control" placeholder="Optional description">
+            </div>
+            <div class="form-group">
+                <label>Points</label>
+                <input type="number" name="points" class="form-control" value="0" required>
+            </div>
+            <div class="form-actions" style="margin-top: 1rem;">
+                <button type="submit" class="btn btn-success">Grant</button>
+                <button type="button" class="btn btn-secondary" onclick="document.getElementById('addAchievementForm').style.display='none';">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="dashboard-cards" style="margin-bottom: 2rem;">
+    <div class="card" style="text-align: center; padding: 2rem;">
+        <div style="font-size: 3rem; color: var(--primary-green); margin-bottom: 0.5rem;">
+            <i class="fas fa-coins"></i>
+        </div>
+        <div style="font-size: 2.5rem; font-weight: 800;">{{ total_points }}</div>
+        <div style="color: #6b7280; font-weight: 600;">Total Points</div>
+    </div>
+    
+    <div class="card" style="text-align: center; padding: 2rem;">
+        <div style="font-size: 3rem; color: #9b59b6; margin-bottom: 0.5rem;">
+            <i class="fas fa-trophy"></i>
+        </div>
+        <div style="font-size: 2.5rem; font-weight: 800;">{{ achievements|length }}</div>
+        <div style="color: #6b7280; font-weight: 600;">Achievements Earned</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Achievement History</h3>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Achievement Name</th>
+                        <th>Description</th>
+                        <th>Points</th>
+                        <th>Earned At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for achievement in achievements %}
+                    <tr>
+                        <td>
+                            <span class="badge badge-primary">{{ achievement.achievement_type }}</span>
+                        </td>
+                        <td><strong>{{ achievement.achievement_name }}</strong></td>
+                        <td>{{ achievement.achievement_description }}</td>
+                        <td><span style="font-weight: 700; color: var(--primary-green);">+{{ achievement.points }}</span></td>
+                        <td>{{ achievement.earned_at }}</td>
+                        <td>
+                            <form action="{{ url_for('admin_delete_achievement', achievement_id=achievement.id) }}" method="POST" style="display:inline;" onsubmit="return confirm('Delete this achievement?');">
+                                <input type="hidden" name="user_id" value="{{ user.id }}">
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="6" style="text-align: center; padding: 2rem; color: #6b7280;">
+                            No achievements found for this user.
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

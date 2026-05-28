@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/mass_people",
+    "type": "main_page",
+    "tribe": "mass",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mass_tribe",
+    "type": "main_page",
+    "tribe": "mass",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mass",
+    "type": "main_page",
+    "tribe": "mass",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/mass_ethnic_group",
+    "type": "main_page",
+    "tribe": "mass",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "spiritual_beliefs",
+    "search_term": "mass religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+traditional+religion",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "spiritual_beliefs",
+    "search_term": "mass traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+religious+practices",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "spiritual_beliefs",
+    "search_term": "mass religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "arts_and_crafts",
+    "search_term": "mass art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+traditional+arts",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "arts_and_crafts",
+    "search_term": "mass traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+handicrafts",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "arts_and_crafts",
+    "search_term": "mass handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+traditional+governance",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "governance",
+    "search_term": "mass traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+political+system",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "governance",
+    "search_term": "mass political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+leadership+structure",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "governance",
+    "search_term": "mass leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+colonial+period",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "colonial_impact",
+    "search_term": "mass colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+European+colonization",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "colonial_impact",
+    "search_term": "mass European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+colonial+administration",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "colonial_impact",
+    "search_term": "mass colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+agriculture+farming",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "subsistence_patterns",
+    "search_term": "mass agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+food+production",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "subsistence_patterns",
+    "search_term": "mass food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+traditional+economy",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "subsistence_patterns",
+    "search_term": "mass traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+modern+challenges",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "challenges",
+    "search_term": "mass modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+contemporary+issues",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "challenges",
+    "search_term": "mass contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+cultural+preservation",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "challenges",
+    "search_term": "mass cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+cultural+preservation",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "cultural_revitalization",
+    "search_term": "mass cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+language+revitalization",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "cultural_revitalization",
+    "search_term": "mass language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+cultural+revival",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "cultural_revitalization",
+    "search_term": "mass cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+modern+politics",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "modern_governance",
+    "search_term": "mass modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+contemporary+governance",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "modern_governance",
+    "search_term": "mass contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+political+participation",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "modern_governance",
+    "search_term": "mass political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "pre_contact_history",
+    "search_term": "mass pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+before+European+contact",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "pre_contact_history",
+    "search_term": "mass before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+ancient+traditions",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "pre_contact_history",
+    "search_term": "mass ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "culture",
+    "search_term": "mass culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+cultural+practices",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "culture",
+    "search_term": "mass cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+way+of+life",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "culture",
+    "search_term": "mass way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "oral_traditions",
+    "search_term": "mass oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+myths+legends",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "oral_traditions",
+    "search_term": "mass myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+traditional+narratives",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "oral_traditions",
+    "search_term": "mass traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "social_organization",
+    "search_term": "mass social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+clan+system+family",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "social_organization",
+    "search_term": "mass clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+social+hierarchy",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "social_organization",
+    "search_term": "mass social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "traditional_knowledge",
+    "search_term": "mass traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "traditional_knowledge",
+    "search_term": "mass indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "traditional_knowledge",
+    "search_term": "mass ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "traditional_technology",
+    "search_term": "mass traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+indigenous+technology",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "traditional_technology",
+    "search_term": "mass indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+artisan+skills",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "traditional_technology",
+    "search_term": "mass artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+history+origin+migration",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "history",
+    "search_term": "mass history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+historical+background",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "history",
+    "search_term": "mass historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "history",
+    "search_term": "mass ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+music+dance+songs",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "music_dance",
+    "search_term": "mass music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+musical+instruments",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "music_dance",
+    "search_term": "mass musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/mass+cultural+dances",
+    "type": "category_search",
+    "tribe": "mass",
+    "category": "music_dance",
+    "search_term": "mass cultural dances",
+    "priority": "medium"
+  }
+]

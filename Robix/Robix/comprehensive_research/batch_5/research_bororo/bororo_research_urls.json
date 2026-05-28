@@ -1,0 +1,438 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bororo_people",
+    "type": "main_page",
+    "tribe": "bororo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bororo_tribe",
+    "type": "main_page",
+    "tribe": "bororo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bororo",
+    "type": "main_page",
+    "tribe": "bororo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bororo_ethnic_group",
+    "type": "main_page",
+    "tribe": "bororo",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "spiritual_beliefs",
+    "search_term": "bororo religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+traditional+religion",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "spiritual_beliefs",
+    "search_term": "bororo traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+religious+practices",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "spiritual_beliefs",
+    "search_term": "bororo religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+economy+trade",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "economy",
+    "search_term": "bororo economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+economic+activities",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "economy",
+    "search_term": "bororo economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+livelihood",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "economy",
+    "search_term": "bororo livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "arts_and_crafts",
+    "search_term": "bororo art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+traditional+arts",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "arts_and_crafts",
+    "search_term": "bororo traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+handicrafts",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "arts_and_crafts",
+    "search_term": "bororo handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+traditional+governance",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "governance",
+    "search_term": "bororo traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+political+system",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "governance",
+    "search_term": "bororo political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+leadership+structure",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "governance",
+    "search_term": "bororo leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+colonial+period",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "colonial_impact",
+    "search_term": "bororo colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+European+colonization",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "colonial_impact",
+    "search_term": "bororo European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+colonial+administration",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "colonial_impact",
+    "search_term": "bororo colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "subsistence_patterns",
+    "search_term": "bororo agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+food+production",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "subsistence_patterns",
+    "search_term": "bororo food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+traditional+economy",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "subsistence_patterns",
+    "search_term": "bororo traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+modern+challenges",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "challenges",
+    "search_term": "bororo modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "challenges",
+    "search_term": "bororo contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "challenges",
+    "search_term": "bororo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "cultural_revitalization",
+    "search_term": "bororo cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+language+revitalization",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "cultural_revitalization",
+    "search_term": "bororo language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+cultural+revival",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "cultural_revitalization",
+    "search_term": "bororo cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+modern+politics",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "modern_governance",
+    "search_term": "bororo modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "modern_governance",
+    "search_term": "bororo contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+political+participation",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "modern_governance",
+    "search_term": "bororo political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "pre_contact_history",
+    "search_term": "bororo pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+before+European+contact",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "pre_contact_history",
+    "search_term": "bororo before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "pre_contact_history",
+    "search_term": "bororo ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "culture",
+    "search_term": "bororo culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+cultural+practices",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "culture",
+    "search_term": "bororo cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+way+of+life",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "culture",
+    "search_term": "bororo way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "oral_traditions",
+    "search_term": "bororo oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+myths+legends",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "oral_traditions",
+    "search_term": "bororo myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "oral_traditions",
+    "search_term": "bororo traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "social_organization",
+    "search_term": "bororo social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+clan+system+family",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "social_organization",
+    "search_term": "bororo clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "social_organization",
+    "search_term": "bororo social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "traditional_knowledge",
+    "search_term": "bororo traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "traditional_knowledge",
+    "search_term": "bororo indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "traditional_knowledge",
+    "search_term": "bororo ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "traditional_technology",
+    "search_term": "bororo traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "traditional_technology",
+    "search_term": "bororo indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+artisan+skills",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "traditional_technology",
+    "search_term": "bororo artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+history+origin+migration",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "history",
+    "search_term": "bororo history origin migration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+historical+background",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "history",
+    "search_term": "bororo historical background",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+ancient+history+settlement",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "history",
+    "search_term": "bororo ancient history settlement",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "music_dance",
+    "search_term": "bororo music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+musical+instruments",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "music_dance",
+    "search_term": "bororo musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bororo+cultural+dances",
+    "type": "category_search",
+    "tribe": "bororo",
+    "category": "music_dance",
+    "search_term": "bororo cultural dances",
+    "priority": "medium"
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bali_people",
+    "type": "main_page",
+    "tribe": "bali",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bali_tribe",
+    "type": "main_page",
+    "tribe": "bali",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bali",
+    "type": "main_page",
+    "tribe": "bali",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bali_ethnic_group",
+    "type": "main_page",
+    "tribe": "bali",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "spiritual_beliefs",
+    "search_term": "bali religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+traditional+religion",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "spiritual_beliefs",
+    "search_term": "bali traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+religious+practices",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "spiritual_beliefs",
+    "search_term": "bali religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+economy+trade",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "economy",
+    "search_term": "bali economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+economic+activities",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "economy",
+    "search_term": "bali economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+livelihood",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "economy",
+    "search_term": "bali livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "arts_and_crafts",
+    "search_term": "bali art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+traditional+arts",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "arts_and_crafts",
+    "search_term": "bali traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+handicrafts",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "arts_and_crafts",
+    "search_term": "bali handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+traditional+governance",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "governance",
+    "search_term": "bali traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+political+system",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "governance",
+    "search_term": "bali political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+leadership+structure",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "governance",
+    "search_term": "bali leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+colonial+period",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "colonial_impact",
+    "search_term": "bali colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+European+colonization",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "colonial_impact",
+    "search_term": "bali European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+colonial+administration",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "colonial_impact",
+    "search_term": "bali colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "subsistence_patterns",
+    "search_term": "bali agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+food+production",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "subsistence_patterns",
+    "search_term": "bali food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+traditional+economy",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "subsistence_patterns",
+    "search_term": "bali traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+modern+challenges",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "challenges",
+    "search_term": "bali modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+contemporary+issues",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "challenges",
+    "search_term": "bali contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "challenges",
+    "search_term": "bali cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "cultural_revitalization",
+    "search_term": "bali cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+language+revitalization",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "cultural_revitalization",
+    "search_term": "bali language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+cultural+revival",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "cultural_revitalization",
+    "search_term": "bali cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+modern+politics",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "modern_governance",
+    "search_term": "bali modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "modern_governance",
+    "search_term": "bali contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+political+participation",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "modern_governance",
+    "search_term": "bali political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "pre_contact_history",
+    "search_term": "bali pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+before+European+contact",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "pre_contact_history",
+    "search_term": "bali before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "pre_contact_history",
+    "search_term": "bali ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "culture",
+    "search_term": "bali culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+cultural+practices",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "culture",
+    "search_term": "bali cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+way+of+life",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "culture",
+    "search_term": "bali way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "oral_traditions",
+    "search_term": "bali oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+myths+legends",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "oral_traditions",
+    "search_term": "bali myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "oral_traditions",
+    "search_term": "bali traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "social_organization",
+    "search_term": "bali social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+clan+system+family",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "social_organization",
+    "search_term": "bali clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "social_organization",
+    "search_term": "bali social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "traditional_knowledge",
+    "search_term": "bali traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "traditional_knowledge",
+    "search_term": "bali indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "traditional_knowledge",
+    "search_term": "bali ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "traditional_technology",
+    "search_term": "bali traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "traditional_technology",
+    "search_term": "bali indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+artisan+skills",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "traditional_technology",
+    "search_term": "bali artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "music_dance",
+    "search_term": "bali music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+musical+instruments",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "music_dance",
+    "search_term": "bali musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bali+cultural+dances",
+    "type": "category_search",
+    "tribe": "bali",
+    "category": "music_dance",
+    "search_term": "bali cultural dances",
+    "priority": "medium"
+  }
+]

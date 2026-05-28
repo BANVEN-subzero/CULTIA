@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamunka_people",
+    "type": "main_page",
+    "tribe": "bamunka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamunka_tribe",
+    "type": "main_page",
+    "tribe": "bamunka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamunka",
+    "type": "main_page",
+    "tribe": "bamunka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamunka_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamunka",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "spiritual_beliefs",
+    "search_term": "bamunka religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "spiritual_beliefs",
+    "search_term": "bamunka traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+religious+practices",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "spiritual_beliefs",
+    "search_term": "bamunka religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+colonial+period",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "colonial_impact",
+    "search_term": "bamunka colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+European+colonization",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "colonial_impact",
+    "search_term": "bamunka European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "colonial_impact",
+    "search_term": "bamunka colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "subsistence_patterns",
+    "search_term": "bamunka agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+food+production",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "subsistence_patterns",
+    "search_term": "bamunka food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "subsistence_patterns",
+    "search_term": "bamunka traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "cultural_revitalization",
+    "search_term": "bamunka cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "cultural_revitalization",
+    "search_term": "bamunka language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "cultural_revitalization",
+    "search_term": "bamunka cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+modern+politics",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "modern_governance",
+    "search_term": "bamunka modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "modern_governance",
+    "search_term": "bamunka contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+political+participation",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "modern_governance",
+    "search_term": "bamunka political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "pre_contact_history",
+    "search_term": "bamunka pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "pre_contact_history",
+    "search_term": "bamunka before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "pre_contact_history",
+    "search_term": "bamunka ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "oral_traditions",
+    "search_term": "bamunka oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+myths+legends",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "oral_traditions",
+    "search_term": "bamunka myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "oral_traditions",
+    "search_term": "bamunka traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "social_organization",
+    "search_term": "bamunka social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "social_organization",
+    "search_term": "bamunka clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "social_organization",
+    "search_term": "bamunka social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "traditional_knowledge",
+    "search_term": "bamunka traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "traditional_knowledge",
+    "search_term": "bamunka indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "traditional_knowledge",
+    "search_term": "bamunka ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "traditional_technology",
+    "search_term": "bamunka traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "traditional_technology",
+    "search_term": "bamunka indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "traditional_technology",
+    "search_term": "bamunka artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "music_dance",
+    "search_term": "bamunka music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "music_dance",
+    "search_term": "bamunka musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamunka+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamunka",
+    "category": "music_dance",
+    "search_term": "bamunka cultural dances",
+    "priority": "medium"
+  }
+]

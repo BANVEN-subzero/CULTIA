@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bamileke_people",
+    "type": "main_page",
+    "tribe": "bamileke",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamileke_tribe",
+    "type": "main_page",
+    "tribe": "bamileke",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamileke",
+    "type": "main_page",
+    "tribe": "bamileke",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bamileke_ethnic_group",
+    "type": "main_page",
+    "tribe": "bamileke",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "spiritual_beliefs",
+    "search_term": "bamileke religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+traditional+religion",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "spiritual_beliefs",
+    "search_term": "bamileke traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+religious+practices",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "spiritual_beliefs",
+    "search_term": "bamileke religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+colonial+period",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "colonial_impact",
+    "search_term": "bamileke colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+European+colonization",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "colonial_impact",
+    "search_term": "bamileke European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+colonial+administration",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "colonial_impact",
+    "search_term": "bamileke colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "subsistence_patterns",
+    "search_term": "bamileke agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+food+production",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "subsistence_patterns",
+    "search_term": "bamileke food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+traditional+economy",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "subsistence_patterns",
+    "search_term": "bamileke traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "cultural_revitalization",
+    "search_term": "bamileke cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+language+revitalization",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "cultural_revitalization",
+    "search_term": "bamileke language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+cultural+revival",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "cultural_revitalization",
+    "search_term": "bamileke cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+modern+politics",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "modern_governance",
+    "search_term": "bamileke modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "modern_governance",
+    "search_term": "bamileke contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+political+participation",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "modern_governance",
+    "search_term": "bamileke political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "pre_contact_history",
+    "search_term": "bamileke pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+before+European+contact",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "pre_contact_history",
+    "search_term": "bamileke before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "pre_contact_history",
+    "search_term": "bamileke ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "oral_traditions",
+    "search_term": "bamileke oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+myths+legends",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "oral_traditions",
+    "search_term": "bamileke myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "oral_traditions",
+    "search_term": "bamileke traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "social_organization",
+    "search_term": "bamileke social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+clan+system+family",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "social_organization",
+    "search_term": "bamileke clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "social_organization",
+    "search_term": "bamileke social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "traditional_knowledge",
+    "search_term": "bamileke traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "traditional_knowledge",
+    "search_term": "bamileke indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "traditional_knowledge",
+    "search_term": "bamileke ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "traditional_technology",
+    "search_term": "bamileke traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "traditional_technology",
+    "search_term": "bamileke indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+artisan+skills",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "traditional_technology",
+    "search_term": "bamileke artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "music_dance",
+    "search_term": "bamileke music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+musical+instruments",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "music_dance",
+    "search_term": "bamileke musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bamileke+cultural+dances",
+    "type": "category_search",
+    "tribe": "bamileke",
+    "category": "music_dance",
+    "search_term": "bamileke cultural dances",
+    "priority": "medium"
+  }
+]

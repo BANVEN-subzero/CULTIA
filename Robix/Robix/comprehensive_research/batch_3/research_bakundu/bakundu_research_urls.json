@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/bakundu_people",
+    "type": "main_page",
+    "tribe": "bakundu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakundu_tribe",
+    "type": "main_page",
+    "tribe": "bakundu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakundu",
+    "type": "main_page",
+    "tribe": "bakundu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/bakundu_ethnic_group",
+    "type": "main_page",
+    "tribe": "bakundu",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "spiritual_beliefs",
+    "search_term": "bakundu religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+traditional+religion",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "spiritual_beliefs",
+    "search_term": "bakundu traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+religious+practices",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "spiritual_beliefs",
+    "search_term": "bakundu religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+colonial+period",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "colonial_impact",
+    "search_term": "bakundu colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+European+colonization",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "colonial_impact",
+    "search_term": "bakundu European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+colonial+administration",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "colonial_impact",
+    "search_term": "bakundu colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+agriculture+farming",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "subsistence_patterns",
+    "search_term": "bakundu agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+food+production",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "subsistence_patterns",
+    "search_term": "bakundu food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+traditional+economy",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "subsistence_patterns",
+    "search_term": "bakundu traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+cultural+preservation",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "cultural_revitalization",
+    "search_term": "bakundu cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+language+revitalization",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "cultural_revitalization",
+    "search_term": "bakundu language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+cultural+revival",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "cultural_revitalization",
+    "search_term": "bakundu cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+modern+politics",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "modern_governance",
+    "search_term": "bakundu modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+contemporary+governance",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "modern_governance",
+    "search_term": "bakundu contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+political+participation",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "modern_governance",
+    "search_term": "bakundu political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "pre_contact_history",
+    "search_term": "bakundu pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+before+European+contact",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "pre_contact_history",
+    "search_term": "bakundu before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+ancient+traditions",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "pre_contact_history",
+    "search_term": "bakundu ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "oral_traditions",
+    "search_term": "bakundu oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+myths+legends",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "oral_traditions",
+    "search_term": "bakundu myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+traditional+narratives",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "oral_traditions",
+    "search_term": "bakundu traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "social_organization",
+    "search_term": "bakundu social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+clan+system+family",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "social_organization",
+    "search_term": "bakundu clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+social+hierarchy",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "social_organization",
+    "search_term": "bakundu social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "traditional_knowledge",
+    "search_term": "bakundu traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "traditional_knowledge",
+    "search_term": "bakundu indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "traditional_knowledge",
+    "search_term": "bakundu ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "traditional_technology",
+    "search_term": "bakundu traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+indigenous+technology",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "traditional_technology",
+    "search_term": "bakundu indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+artisan+skills",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "traditional_technology",
+    "search_term": "bakundu artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+music+dance+songs",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "music_dance",
+    "search_term": "bakundu music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+musical+instruments",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "music_dance",
+    "search_term": "bakundu musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/bakundu+cultural+dances",
+    "type": "category_search",
+    "tribe": "bakundu",
+    "category": "music_dance",
+    "search_term": "bakundu cultural dances",
+    "priority": "medium"
+  }
+]

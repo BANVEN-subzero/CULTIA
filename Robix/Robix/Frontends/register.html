@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CULTIA</title>
+    <link rel="icon" type="image/png" href="img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            padding: 40px 0;
+        }
+
+        .auth-wrapper {
+            width: 100%;
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+        .auth-card {
+            background: white;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .auth-side-image {
+            flex: 1;
+            background: linear-gradient(135deg, rgba(230, 126, 34, 0.9) 0%, rgba(134, 61, 8, 0.9) 100%), url('img/cmr.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .auth-form-container {
+            flex: 1.2;
+            padding: 60px;
+        }
+
+        .form-control, .form-select {
+            border-radius: 15px;
+            padding: 12px 20px;
+            border: 2px solid #f0f0f0;
+            background: #f8f9fa;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-green);
+            background: white;
+            box-shadow: none;
+        }
+
+        .btn-auth {
+            border-radius: 15px;
+            padding: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-success-modern {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+        }
+
+        .btn-success-modern:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(45, 90, 39, 0.3);
+            color: white;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--primary-green);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            transition: var(--transition-smooth);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .progress-strength {
+            height: 6px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 991px) {
+            .auth-card {
+                flex-direction: column;
+            }
+            .auth-side-image {
+                padding: 40px;
+                text-align: center;
+            }
+            .auth-form-container {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card" data-aos="zoom-in">
+            <!-- Left Side -->
+            <div class="auth-side-image d-none d-lg-flex">
+                <div class="mb-5">
+                    <img src="img/top.png" height="80" class="mb-4">
+                    <h1 class="display-4 fw-bold">Start Your Journey</h1>
+                    <p class="fs-5 opacity-75">Join thousands of explorers discovering the magic of Cameroon's traditions and history.</p>
+                </div>
+                <div class="mt-auto">
+                    <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 p-4 rounded-4 border border-white border-opacity-10">
+                        <div class="bg-white bg-opacity-20 p-3 rounded-circle">
+                            <i class="fas fa-rocket fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 fw-bold">Instant Access</h6>
+                            <p class="mb-0 small opacity-75">Explore all modes immediately</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="auth-form-container">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                
+                <h2 class="fw-bold mb-2">Create Account</h2>
+                <p class="text-muted mb-4">Fill in your details to get started.</p>
+
+                <form id="registerForm">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold small text-uppercase text-muted">First Name</label>
+                            <input type="text" id="first_name" class="form-control" placeholder="John" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold small text-uppercase text-muted">Last Name</label>
+                            <input type="text" id="last_name" class="form-control" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small text-uppercase text-muted">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small text-uppercase text-muted">Country</label>
+                        <input type="text" id="country" class="form-control" placeholder="Cameroon" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small text-uppercase text-muted">Interest Area</label>
+                        <select id="interest" class="form-select" required>
+                            <option selected disabled value="">Select your primary interest</option>
+                            <option value="history">History & Origins</option>
+                            <option value="language">Language & Dialects</option>
+                            <option value="arts">Art & Craftsmanship</option>
+                            <option value="cuisine">Culinary Traditions</option>
+                            <option value="music">Music & Dance</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold small text-uppercase text-muted">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                        <div class="progress progress-strength">
+                            <div id="strengthBar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                            <label class="form-check-label small fw-bold text-muted" for="termsCheck">
+                                I agree to the <a href="#" class="text-success">Terms & Conditions</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-auth btn-success-modern w-100 mb-4" id="registerBtn">
+                        Create Account <i class="fas fa-user-plus ms-2"></i>
+                    </button>
+
+                    <p class="text-center mb-0 text-muted small fw-bold">
+                        Already have an account? <a href="login.html" class="text-success text-decoration-none">Sign In</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Simple strength indicator
+        document.getElementById('password').addEventListener('input', function(e) {
+            const val = e.target.value;
+            const bar = document.getElementById('strengthBar');
+            if(val.length > 8) {
+                bar.style.width = '100%';
+                bar.className = 'progress-bar bg-success';
+            } else if(val.length > 5) {
+                bar.style.width = '60%';
+                bar.className = 'progress-bar bg-warning';
+            } else {
+                bar.style.width = '25%';
+                bar.className = 'progress-bar bg-danger';
+            }
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('registerBtn');
+            const formData = {
+                first_name: document.getElementById('first_name').value,
+                last_name: document.getElementById('last_name').value,
+                email: document.getElementById('email').value,
+                country: document.getElementById('country').value,
+                interest: document.getElementById('interest').value,
+                password: document.getElementById('password').value
+            };
+
+            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Creating Account...';
+            btn.disabled = true;
+            
+            try {
+                const response = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData),
+                    credentials: 'include'
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    // Clear any cached local data from previous sessions
+                    const keysToRemove = [
+                        'userPoints', 'userBadges', 'userActivities', 
+                        'gamificationUpdate', 'languageLearningProgress'
+                    ];
+                    keysToRemove.forEach(key => localStorage.removeItem(key));
+                    
+                    window.location.href = 'bot/dashboard.html';
+                } else {
+                    alert(data.message || 'Registration failed. Please check your information.');
+                    btn.innerHTML = 'Create Account';
+                    btn.disabled = false;
+                }
+            } catch (error) {
+                console.error('Registration error:', error);
+                alert('An error occurred during registration. Please try again later.');
+                btn.innerHTML = 'Create Account';
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+
+</html>

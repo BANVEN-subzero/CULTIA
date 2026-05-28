@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Testimonials - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 80px 0 120px;
+            color: white;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -60px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-info {
+            padding: 25px;
+            flex-grow: 1;
+        }
+
+        .tribe-tag {
+            display: inline-block;
+            padding: 5px 15px;
+            background: rgba(45, 90, 39, 0.1);
+            color: var(--primary-green);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            margin-bottom: 15px;
+        }
+
+        .video-title {
+            font-weight: 800;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .video-desc {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-section text-center">
+            <div class="container" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3">Video Testimonials</h1>
+                <p class="lead opacity-75 mb-0 mx-auto" style="max-width: 700px;">Experience the living history of Cameroon through the voices of its people. Real stories, real traditions, real heritage.</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="row g-4" id="videoGrid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        const testimonials = [
+            {
+                id: 1,
+                title: "Bamileke Cultural Heritage",
+                tribe: "Bamileke People",
+                description: "Learn about the rich traditions of the Bamileke people from a royal family member.",
+                videoUrl: "https://www.youtube.com/watch?v=GhANG9Se8ag",
+                icon: "fa-users"
+            },
+            {
+                id: 2,
+                title: "Bamoun Kingdom Legacy",
+                tribe: "Bamoun Sultanate",
+                description: "Hear stories from the descendants of the Bamoun sultanate about their historical legacy.",
+                videoUrl: "https://www.youtube.com/watch?v=cFRRgXpKvlY",
+                icon: "fa-crown"
+            },
+            {
+                id: 3,
+                title: "Duala River Communities",
+                tribe: "Duala People",
+                description: "Experience the life of fishing communities along the Wouri River from a local perspective.",
+                videoUrl: "https://www.youtube.com/watch?v=TNugLK3Ffgs",
+                icon: "fa-fish"
+            },
+            {
+                id: 4,
+                title: "Fulani Nomadic Traditions",
+                tribe: "Fulani People",
+                description: "Discover the nomadic lifestyle and pastoral traditions of the Fulani people.",
+                videoUrl: "https://www.youtube.com/watch?v=ZS8GaXHP9D4",
+                icon: "fa-mountain"
+            },
+            {
+                id: 5,
+                title: "Bassa Agricultural Practices",
+                tribe: "Bassa People",
+                description: "Learn about traditional farming methods and agricultural practices of the Bassa people.",
+                videoUrl: "https://www.youtube.com/watch?v=jEitxQwVGi4",
+                icon: "fa-leaf"
+            },
+            {
+                id: 6,
+                title: "Grassfields Cultural Diversity",
+                tribe: "Grassfields Region",
+                description: "Explore the diverse cultures of the Grassfields region through the eyes of local elders.",
+                videoUrl: "https://www.youtube.com/watch?v=oLnl-__LYUI",
+                icon: "fa-tree"
+            }
+        ];
+
+        function getYouTubeVideoId(url) {
+            const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
+
+        function init() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Testimonials');
+            });
+
+            renderVideos();
+        }
+
+        function renderVideos() {
+            const grid = document.getElementById('videoGrid');
+            grid.innerHTML = '';
+            testimonials.forEach((v, i) => {
+                const videoId = getYouTubeVideoId(v.videoUrl);
+                const col = document.createElement('div');
+                col.className = 'col-md-6 col-lg-4';
+                col.setAttribute('data-aos', 'fade-up');
+                col.setAttribute('data-aos-delay', i * 100);
+                col.innerHTML = `
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <span class="tribe-tag"><i class="fas ${v.icon} me-2"></i>${v.tribe}</span>
+                            <h4 class="video-title">${v.title}</h4>
+                            <p class="video-desc">${v.description}</p>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(col);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+
+</html>

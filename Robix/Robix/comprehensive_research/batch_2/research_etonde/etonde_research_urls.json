@@ -1,0 +1,294 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/etonde_people",
+    "type": "main_page",
+    "tribe": "etonde",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/etonde_tribe",
+    "type": "main_page",
+    "tribe": "etonde",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/etonde",
+    "type": "main_page",
+    "tribe": "etonde",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/etonde_ethnic_group",
+    "type": "main_page",
+    "tribe": "etonde",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "spiritual_beliefs",
+    "search_term": "etonde religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+traditional+religion",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "spiritual_beliefs",
+    "search_term": "etonde traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+religious+practices",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "spiritual_beliefs",
+    "search_term": "etonde religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+colonial+period",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "colonial_impact",
+    "search_term": "etonde colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+European+colonization",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "colonial_impact",
+    "search_term": "etonde European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+colonial+administration",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "colonial_impact",
+    "search_term": "etonde colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+agriculture+farming",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "subsistence_patterns",
+    "search_term": "etonde agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+food+production",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "subsistence_patterns",
+    "search_term": "etonde food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+traditional+economy",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "subsistence_patterns",
+    "search_term": "etonde traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+cultural+preservation",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "cultural_revitalization",
+    "search_term": "etonde cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+language+revitalization",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "cultural_revitalization",
+    "search_term": "etonde language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+cultural+revival",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "cultural_revitalization",
+    "search_term": "etonde cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+modern+politics",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "modern_governance",
+    "search_term": "etonde modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+contemporary+governance",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "modern_governance",
+    "search_term": "etonde contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+political+participation",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "modern_governance",
+    "search_term": "etonde political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "pre_contact_history",
+    "search_term": "etonde pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+before+European+contact",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "pre_contact_history",
+    "search_term": "etonde before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+ancient+traditions",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "pre_contact_history",
+    "search_term": "etonde ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "oral_traditions",
+    "search_term": "etonde oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+myths+legends",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "oral_traditions",
+    "search_term": "etonde myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+traditional+narratives",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "oral_traditions",
+    "search_term": "etonde traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "social_organization",
+    "search_term": "etonde social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+clan+system+family",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "social_organization",
+    "search_term": "etonde clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+social+hierarchy",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "social_organization",
+    "search_term": "etonde social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "traditional_knowledge",
+    "search_term": "etonde traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "traditional_knowledge",
+    "search_term": "etonde indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "traditional_knowledge",
+    "search_term": "etonde ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "traditional_technology",
+    "search_term": "etonde traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+indigenous+technology",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "traditional_technology",
+    "search_term": "etonde indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+artisan+skills",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "traditional_technology",
+    "search_term": "etonde artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+music+dance+songs",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "music_dance",
+    "search_term": "etonde music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+musical+instruments",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "music_dance",
+    "search_term": "etonde musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/etonde+cultural+dances",
+    "type": "category_search",
+    "tribe": "etonde",
+    "category": "music_dance",
+    "search_term": "etonde cultural dances",
+    "priority": "medium"
+  }
+]

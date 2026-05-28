@@ -1,0 +1,547 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block extra_css %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    .chart-container {
+        position: relative;
+        height: 300px;
+        width: 100%;
+    }
+    .dashboard-header {
+        margin-bottom: 2rem;
+    }
+    .dashboard-header h1 {
+        margin: 0 0 0.5rem 0;
+        color: #2c3e50;
+    }
+    .dashboard-header p {
+        margin: 0;
+        color: #7f8c8d;
+    }
+    .dashboard-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .stat-card {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .stat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #e3f2fd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        color: #2196f3;
+        font-size: 1.5rem;
+    }
+    .stat-info h3 {
+        margin: 0 0 0.25rem 0;
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        font-weight: 500;
+    }
+    .stat-number {
+        margin: 0 0 0.25rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+    .stat-change {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .stat-change.positive {
+        color: #2ecc71;
+    }
+    .stat-change.negative {
+        color: #e74c3c;
+    }
+    .dashboard-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-bottom: 1.5rem;
+    }
+    .card:last-child {
+        margin-bottom: 0;
+    }
+    .card-header {
+        padding: 1.25rem 1.5rem;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-header h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #2c3e50;
+    }
+    .card-body {
+        padding: 1.5rem;
+    }
+    .activity-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .activity-item {
+        display: flex;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .activity-item:last-child {
+        border-bottom: none;
+    }
+    .activity-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #f5f5f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        color: #7f8c8d;
+    }
+    .activity-details {
+        flex: 1;
+    }
+    .activity-text {
+        margin: 0 0 0.25rem 0;
+        color: #2c3e50;
+    }
+    .activity-time {
+        font-size: 0.8rem;
+        color: #95a5a6;
+    }
+    .stat-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .stat-row:last-child {
+        border-bottom: none;
+    }
+    .status-badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .status-up, .status-active {
+        background: #e8f5e9;
+        color: #2e7d32;
+    }
+    .status-down, .status-inactive {
+        background: #ffebee;
+        color: #c62828;
+    }
+    .user-info {
+        display: flex;
+        align-items: center;
+    }
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 0.75rem;
+        object-fit: cover;
+    }
+    .actions {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .btn-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #7f8c8d;
+        background: #f5f5f5;
+        transition: all 0.2s;
+    }
+    .btn-icon:hover {
+        background: #e0e0e0;
+        color: #2c3e50;
+        text-decoration: none;
+    }
+    .btn-delete:hover {
+        background: #ffebee;
+        color: #e53935;
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    th {
+        font-weight: 600;
+        color: #7f8c8d;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    tr:hover {
+        background-color: #f9f9f9;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="dashboard-header" data-aos="fade-down">
+    <div class="header-content">
+        <h1>Admin Command Center</h1>
+        <p class="welcome-text">Welcome back, {{ session.get('username', 'Admin') }}! Full system oversight active.</p>
+    </div>
+    <div class="header-actions">
+        <button class="btn btn-primary rounded-pill px-4" onclick="location.reload()">
+            <i class="fas fa-sync-alt me-2"></i>Refresh Stats
+        </button>
+        <div class="last-updated mt-2 text-muted small">
+            Last updated: {{ now.strftime('%Y-%m-%d %H:%M') }}
+        </div>
+    </div>
+</div>
+
+<div class="dashboard-stats">
+    <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="stat-icon" style="background: rgba(128, 128, 0, 0.1); color: var(--primary-color);">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-info">
+            <h3>Total Users</h3>
+            <p class="stat-number">{{ stats.user_count|default(0) }}</p>
+            <span class="stat-change positive"><i class="fas fa-arrow-up"></i> Growth tracked</span>
+        </div>
+    </div>
+
+    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-icon" style="background: rgba(184, 134, 11, 0.1); color: var(--secondary-color);">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="stat-info">
+            <h3>Active Sessions</h3>
+            <p class="stat-number">{{ stats.active_sessions|default(0) }}</p>
+            <span class="stat-change positive"><i class="fas fa-clock"></i> Real-time</span>
+        </div>
+    </div>
+
+    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="stat-icon" style="background: rgba(205, 92, 92, 0.1); color: var(--accent-color);">
+            <i class="fas fa-clipboard-check"></i>
+        </div>
+        <div class="stat-info">
+            <h3>Quizzes Taken</h3>
+            <p class="stat-number">{{ stats.quizzes_taken|default(0) }}</p>
+            <span class="stat-change positive"><i class="fas fa-check"></i> Engagement</span>
+        </div>
+    </div>
+
+    <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="stat-icon" style="background: rgba(72, 187, 120, 0.1); color: var(--success-color);">
+            <i class="fas fa-trophy"></i>
+        </div>
+        <div class="stat-info">
+            <h3>Total Points</h3>
+            <p class="stat-number">{{ stats.total_points|default(0) }}</p>
+            <span class="stat-change positive"><i class="fas fa-medal"></i> Achievements</span>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mb-4">
+    <div class="col-lg-8" data-aos="fade-up">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-header bg-white py-3">
+                <h3 class="mb-0 fw-bold">User Engagement</h3>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="engagementChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm border-0 rounded-4 h-100">
+            <div class="card-header bg-white py-3">
+                <h3 class="mb-0 fw-bold">Quick Actions</h3>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-3">
+                    <a href="{{ url_for('add_user') }}" class="btn btn-light text-start py-3 rounded-4 border">
+                        <i class="fas fa-user-plus text-success me-3"></i>Create New User
+                    </a>
+                    <button class="btn btn-light text-start py-3 rounded-4 border" onclick="alert('Backup initiated...')">
+                        <i class="fas fa-database text-primary me-3"></i>Backup Database
+                    </a>
+                    <a href="{{ url_for('settings') }}" class="btn btn-light text-start py-3 rounded-4 border">
+                        <i class="fas fa-tools text-warning me-3"></i>System Settings
+                    </a>
+                    <a href="/" class="btn btn-light text-start py-3 rounded-4 border" target="_blank">
+                        <i class="fas fa-external-link-alt text-info me-3"></i>Visit Frontend
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dashboard-content">
+    <div class="recent-activity" data-aos="fade-right">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                <h3 class="mb-0 fw-bold">Recent Activity</h3>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">View All</a>
+            </div>
+            <div class="card-body">
+                <ul class="activity-list p-0 m-0" style="list-style: none;">
+                    {% for activity in recent_activities %}
+                    <li class="activity-item d-flex align-items-start gap-3 mb-4">
+                        <div class="activity-icon rounded-circle bg-light p-2 text-center" style="width: 45px; height: 45px; line-height: 29px;">
+                            <i class="fas {{ activity.icon }} text-primary"></i>
+                        </div>
+                        <div class="activity-details">
+                            <p class="activity-text mb-0 fw-bold text-dark">{{ activity.text }}</p>
+                            <span class="activity-time small text-muted">{{ activity.time }}</span>
+                        </div>
+                    </li>
+                    {% else %}
+                    <li class="text-center py-5 text-muted">
+                        <i class="fas fa-ghost display-4 d-block mb-3 opacity-25"></i>
+                        No recent activities
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-stats" data-aos="fade-left">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+            <div class="card-header bg-white py-3">
+                <h3 class="mb-0 fw-bold">System Health</h3>
+            </div>
+            <div class="card-body">
+                <div class="stat-row d-flex justify-content-between mb-4">
+                    <span class="text-muted">New Users (Today)</span>
+                    <strong class="badge bg-primary rounded-pill px-3">{{ stats.new_users_today|default(0) }}</strong>
+                </div>
+                <div class="stat-row d-flex justify-content-between mb-4">
+                    <span class="text-muted">Admin Users</span>
+                    <strong class="badge bg-secondary rounded-pill px-3">1</strong>
+                </div>
+                <div class="stat-row d-flex justify-content-between mb-4">
+                    <span class="text-muted">Server Status</span>
+                    <span class="badge {{ 'bg-success' if stats.server_status == 'up' else 'bg-danger' }} rounded-pill px-3">
+                        {{ 'Online' if stats.server_status == 'up' else 'Maintenance' }}
+                    </span>
+                </div>
+                <hr class="my-4">
+                <div class="stat-row d-flex justify-content-between">
+                    <span class="text-muted">DB Connections</span>
+                    <span class="text-success fw-bold"><i class="fas fa-circle me-2 small"></i>Active</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if recent_users %}
+<div class="recent-users mt-4" data-aos="fade-up">
+    <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-header bg-white border-bottom py-3 d-flex justify-content-between align-items-center">
+            <h3 class="mb-0 fw-bold">Recently Registered Users</h3>
+            <a href="{{ url_for('users') }}" class="btn btn-sm btn-primary rounded-pill px-3">View All Users</a>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="bg-light">
+                        <tr>
+                            <th class="ps-4">ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Joined</th>
+                            <th class="text-end pe-4">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in recent_users %}
+                        <tr>
+                            <td class="ps-4 text-muted">#{{ user['id'] }}</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="avatar-sm bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">
+                                        {{ user['first_name'][0] }}
+                                    </div>
+                                    <span class="fw-bold">{{ user['first_name'] }} {{ user['last_name'] }}</span>
+                                </div>
+                            </td>
+                            <td>{{ user['email'] }}</td>
+                            <td class="text-muted small">{{ user['created_at'] }}</td>
+                            <td class="text-end pe-4">
+                                <a href="{{ url_for('edit_user', user_id=user['id']) }}" class="btn btn-sm btn-light rounded-circle me-1" title="Edit">
+                                    <i class="fas fa-edit text-primary"></i>
+                                </a>
+                                <form method="post" action="{{ url_for('delete_user', user_id=user['id']) }}" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this user?');">
+                                    <button type="submit" class="btn btn-sm btn-light rounded-circle" title="Delete">
+                                        <i class="fas fa-trash text-danger"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- User Progress Summary -->
+{% if progress_summary %}
+<div class="user-progress-summary mt-4" data-aos="fade-up">
+    <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-header bg-white py-3">
+            <h3 class="mb-0 fw-bold">Top Users by Progress & Achievements</h3>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="bg-light">
+                        <tr>
+                            <th class="ps-4">User</th>
+                            <th>Progress Entries</th>
+                            <th>Achievements</th>
+                            <th>Total Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in progress_summary %}
+                        <tr>
+                            <td class="ps-4">
+                                <div class="user-info">
+                                    <img src="{{ url_for('static', filename='images/default-avatar.png') }}" 
+                                         alt="{{ row.first_name }}" class="user-avatar">
+                                    <span>{{ row.first_name }} {{ row.last_name }}</span>
+                                </div>
+                            </td>
+                            <td>{{ row.progress_entries }}</td>
+                            <td>{{ row.achievements }}</td>
+                            <td>{{ row.total_points }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- Recent Achievements -->
+{% if recent_achievements %}
+<div class="recent-achievements mt-4" data-aos="fade-up">
+    <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-header bg-white py-3">
+            <h3 class="mb-0 fw-bold">Recent Achievements</h3>
+        </div>
+        <div class="card-body">
+            <ul class="activity-list">
+                {% for ach in recent_achievements %}
+                <li class="activity-item d-flex align-items-start gap-3 mb-3">
+                    <div class="activity-icon rounded-circle bg-light p-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-trophy text-warning"></i>
+                    </div>
+                    <div class="activity-details">
+                        <div class="activity-title fw-bold">{{ ach.achievement_name }}</div>
+                        <div class="activity-description small text-muted">
+                            Earned by {{ ach.first_name }} {{ ach.last_name }} ({{ ach.email }})
+                            {% if ach.points %} — {{ ach.points }} points{% endif %}
+                        </div>
+                        <div class="activity-time small text-muted">{{ ach.earned_at }}</div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const ctx = document.getElementById('engagementChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            datasets: [{
+                label: 'Quizzes Taken',
+                data: [12, 19, 3, 5, 2, 3, 15],
+                borderColor: '#CD5C5C',
+                tension: 0.4,
+                fill: true,
+                backgroundColor: 'rgba(205, 92, 92, 0.1)'
+            }, {
+                label: 'New Users',
+                data: [2, 5, 1, 8, 3, 4, 6],
+                borderColor: '#808000',
+                tension: 0.4,
+                fill: true,
+                backgroundColor: 'rgba(128, 128, 0, 0.1)'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom' }
+            },
+            scales: {
+                y: { beginAtZero: true, grid: { display: false } },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+</script>
+{% endblock %}

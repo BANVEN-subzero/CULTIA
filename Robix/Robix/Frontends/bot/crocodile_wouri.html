@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crocodile of Wouri - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-blue: #1e3c72;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.pinimg.com/1200x/ee/bd/05/eebd053c8895440a9c46a84cb4c08c97.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .story-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .story-section {
+            margin-bottom: 40px;
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 30px;
+        }
+
+        .story-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .story-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .cultural-note {
+            background: rgba(30, 60, 114, 0.05);
+            border-radius: 30px;
+            padding: 40px;
+            margin-top: 60px;
+            border: 1px dashed var(--accent-blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">The Crocodile of Wouri</h1>
+                <p class="lead fs-4 opacity-75">A Duala Legend of the Sacred River</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="story-container" data-aos="fade-up">
+                <a href="folkloreAndMyths.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Folklore
+                </a>
+
+                <div class="story-section">
+                    <h3>The Giant Guardian</h3>
+                    <p class="story-text">According to the Duala people, the Wouri River was once home to a mystical, giant crocodile that possessed ancient wisdom. This was no ordinary animal, but a spiritual guardian that had existed since the dawn of the Sawa (coastal) people's history. It was said to have scales as hard as iron and eyes that could see into the souls of men.</p>
+                </div>
+
+                <div class="story-section">
+                    <h3>The Covenant of the Water</h3>
+                    <p class="story-text">The legend tells of a time when the first Duala settlers arrived at the banks of the Wouri. The giant crocodile rose from the depths, not to attack, but to establish a covenant. It promised to protect the people from invaders and ensure the river's bounty, provided they performed annual rituals to honor the water spirits and never killed a crocodile within the river's sacred reaches.</p>
+                </div>
+
+                <div class="story-section">
+                    <h3>The Disappearance</h3>
+                    <p class="story-text">As the centuries passed and the city of Douala grew, the giant crocodile was seen less frequently. The elders say that the noise and pollution of the modern world have driven the spirit deeper into the river's spiritual realm. However, during the Ngondo festival, many still believe that the guardian returns to the surface to bless the divers as they plunge into the depths to communicate with the ancestors.</p>
+                </div>
+
+                <div class="cultural-note">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-water me-2"></i> Cultural Significance</h4>
+                    <p class="mb-0 text-muted">The Crocodile of Wouri represents the deep-seated respect the Duala people have for their aquatic environment. It is the foundation of many taboos regarding the river and serves as a reminder of the historical alliance between the Sawa people and the natural forces of the Atlantic coast. The crocodile remains a common motif in Duala art and traditional regalia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Shared Components
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Folklore Detail');
+            });
+        });
+    </script>
+</body>
+
+</html>

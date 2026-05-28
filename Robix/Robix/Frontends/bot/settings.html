@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .settings-card {
+            background: white;
+            border-radius: 35px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: none;
+        }
+
+        .settings-nav .nav-link {
+            border-radius: 15px;
+            padding: 12px 25px;
+            color: #666;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+            border: 2px solid transparent;
+            margin-right: 10px;
+        }
+
+        .settings-nav .nav-link.active {
+            background: var(--primary-green) !important;
+            color: white !important;
+        }
+
+        .form-label {
+            font-weight: 700;
+            color: #333;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .settings-input {
+            border-radius: 15px;
+            padding: 12px 20px;
+            border: 2px solid #f0f0f0;
+            background: #f8f9fa;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+
+        .settings-input:focus {
+            border-color: var(--primary-green);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(45, 90, 39, 0.1);
+        }
+
+        .profile-avatar-large {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            background: var(--primary-green);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 10px 30px rgba(45, 90, 39, 0.2);
+        }
+
+        .profile-avatar-wrapper {
+            position: relative;
+        }
+
+        .edit-avatar-btn {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            width: 32px;
+            height: 32px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-green);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .edit-avatar-btn:hover {
+            transform: scale(1.1);
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .custom-switch .form-check-input {
+            width: 50px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        .custom-switch .form-check-input:checked {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+        }
+
+        .tab-content {
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Dark Mode Support */
+        [data-theme="dark"] .settings-card {
+            background: #1e2520;
+            color: white;
+        }
+        [data-theme="dark"] .settings-input {
+            background: #2a322c;
+            border-color: #353d37;
+            color: white;
+        }
+        [data-theme="dark"] .form-label {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <div class="container py-5">
+            <!-- Profile Header Card -->
+            <div class="settings-card mb-4" data-aos="fade-up">
+                <div class="d-flex align-items-center gap-4">
+                    <div class="profile-avatar-wrapper">
+                        <div class="profile-avatar-large" id="avatarPlaceholder" style="overflow: hidden;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="edit-avatar-btn" id="avatarUploadBtn"><i class="fas fa-camera"></i></button>
+                        <input type="file" id="avatarInput" accept="image/*" class="d-none">
+                    </div>
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-1" id="displayFullName">Loading...</h3>
+                        <p class="text-muted mb-0" id="displayEmail">Please wait...</p>
+                        <div class="mt-2">
+                            <span class="badge bg-success bg-opacity-10 text-success rounded-pill px-3 py-2">Verified Explorer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Navigation -->
+            <div class="mb-4" data-aos="fade-up">
+                <ul class="nav nav-pills settings-nav" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="account-tab" data-bs-toggle="pill" data-bs-target="#account-pane" type="button">
+                            <i class="fas fa-user-circle me-2"></i>Account
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="security-tab" data-bs-toggle="pill" data-bs-target="#security-pane" type="button">
+                            <i class="fas fa-shield-alt me-2"></i>Security
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="appearance-tab" data-bs-toggle="pill" data-bs-target="#appearance-pane" type="button">
+                            <i class="fas fa-paint-brush me-2"></i>Appearance
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="settings-tab-content">
+                <!-- Account Pane -->
+                <div class="tab-pane fade show active" id="account-pane" role="tabpanel">
+                    <div class="settings-card" data-aos="fade-up">
+                        <h5 class="fw-bold mb-4">Personal Information</h5>
+                        <form id="profileForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control settings-input" id="firstNameInput" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control settings-input" id="lastNameInput" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control settings-input" id="emailInput" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Country</label>
+                                    <input type="text" class="form-control settings-input" id="countryInput" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Interest Area</label>
+                                    <input type="text" class="form-control settings-input" id="interestInput" required>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <button type="submit" class="btn btn-success rounded-pill px-4 py-2 fw-bold">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Security Pane -->
+                <div class="tab-pane fade" id="security-pane" role="tabpanel">
+                    <div class="settings-card mb-4" data-aos="fade-up">
+                        <h5 class="fw-bold mb-4">Change Password</h5>
+                        <form id="passwordForm">
+                            <div class="row g-4">
+                                <div class="col-md-12">
+                                    <label class="form-label">Current Password</label>
+                                    <input type="password" class="form-control settings-input" id="currentPassword" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">New Password</label>
+                                    <input type="password" class="form-control settings-input" id="newPassword" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control settings-input" id="confirmPassword" required>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 fw-bold">Update Password</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="settings-card border border-danger border-opacity-25" data-aos="fade-up">
+                        <h5 class="fw-bold text-danger mb-2">Delete Account</h5>
+                        <p class="text-muted small mb-4">Permanently delete your account and all your data. This cannot be undone.</p>
+                        <button class="btn btn-outline-danger rounded-pill px-4 py-2 fw-bold" id="deleteAccountBtn">Delete My Account</button>
+                    </div>
+                </div>
+
+                <!-- Appearance Pane -->
+                <div class="tab-pane fade" id="appearance-pane" role="tabpanel">
+                    <div class="settings-card" data-aos="fade-up">
+                        <h5 class="fw-bold mb-4">Theme Settings</h5>
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div>
+                                <h6 class="fw-bold mb-1">Dark Mode</h6>
+                                <p class="text-muted small mb-0">Switch to a darker interface for night viewing</p>
+                            </div>
+                            <div class="form-check form-switch custom-switch">
+                                <input class="form-check-input" type="checkbox" id="themeToggle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/settingsManager.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            AOS.init({ duration: 800, once: true });
+            const settings = new SettingsManager();
+
+            // Load Sidebar & Header
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                const currentPath = window.location.pathname.split('/').pop();
+                const navLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
+                if (navLink) navLink.closest('.nav-item').classList.add('active');
+                
+                // Sidebar Toggle
+                const sidebarToggle = document.getElementById('sidebarToggle');
+                const sidebar = document.getElementById('sidebar');
+                if(sidebarToggle && sidebar) {
+                    sidebarToggle.addEventListener('click', () => sidebar.classList.toggle('show'));
+                }
+            });
+
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Settings');
+                
+                // Initialize Theme Toggle in Header
+                if (window.settingsManager) {
+                    window.settingsManager.initHeaderThemeToggle();
+                }
+            });
+
+            // Load Profile Data
+            async function loadProfile() {
+                try {
+                    const response = await fetch('/api/profile', { credentials: 'include' });
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (data.success) {
+                            const user = data.profile;
+                            document.getElementById('displayFullName').textContent = `${user.first_name} ${user.last_name}`;
+                            document.getElementById('displayEmail').textContent = user.email;
+                            
+                            const avatarPlaceholder = document.getElementById('avatarPlaceholder');
+                            if (user.profile_pic) {
+                                avatarPlaceholder.innerHTML = `<img src="${user.profile_pic}" alt="Avatar" style="width: 100%; height: 100%; object-fit: cover;">`;
+                            } else {
+                                const initials = (user.first_name.charAt(0) + (user.last_name ? user.last_name.charAt(0) : '')).toUpperCase();
+                                avatarPlaceholder.innerHTML = `<span class="fw-bold">${initials}</span>`;
+                            }
+
+                            document.getElementById('firstNameInput').value = user.first_name;
+                            document.getElementById('lastNameInput').value = user.last_name || '';
+                            document.getElementById('emailInput').value = user.email;
+                            document.getElementById('countryInput').value = user.country || '';
+                            document.getElementById('interestInput').value = user.interest || '';
+                        } else {
+                            alert(data.message || 'Failed to load profile');
+                        }
+                    } else if (response.status === 401) {
+                        // Session expired, redirect to login
+                        window.location.href = '../login.html';
+                    } else {
+                        const data = await response.json();
+                        alert(data.message || 'Failed to load profile');
+                    }
+                } catch (e) { 
+                    console.error('Error loading profile:', e);
+                    // Don't redirect on network errors, just show alert
+                    alert('Error loading profile. Please check your connection and try again.');
+                }
+            }
+
+            await loadProfile();
+
+            // Avatar Upload
+            const avatarUploadBtn = document.getElementById('avatarUploadBtn');
+            const avatarInput = document.getElementById('avatarInput');
+
+            avatarUploadBtn.onclick = () => avatarInput.click();
+
+            avatarInput.onchange = (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                const reader = new FileReader();
+                reader.onload = async (event) => {
+                    const base64Image = event.target.result;
+                    try {
+                        const response = await fetch('/api/profile/avatar', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ profile_pic: base64Image }),
+                            credentials: 'include'
+                        });
+                        const data = await response.json();
+                        if (data.success) {
+                            alert('Avatar updated successfully!');
+                            loadProfile();
+                            // Also update settingsManager for current session
+                            settings.set('userAvatar', base64Image);
+                        } else {
+                            alert(data.message);
+                        }
+                    } catch (err) {
+                        console.error('Error uploading avatar:', err);
+                        alert('Failed to upload avatar.');
+                    }
+                };
+                reader.readAsDataURL(file);
+            };
+
+            // Form Submissions
+            document.getElementById('profileForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = {
+                    first_name: document.getElementById('firstNameInput').value,
+                    last_name: document.getElementById('lastNameInput').value,
+                    email: document.getElementById('emailInput').value,
+                    country: document.getElementById('countryInput').value,
+                    interest: document.getElementById('interestInput').value
+                };
+                try {
+                    const resp = await fetch('/api/profile', {
+                        method: 'PUT',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify(formData),
+                        credentials: 'include'
+                    });
+                    const res = await resp.json();
+                    if (res.success) { 
+                        alert('Profile updated successfully!'); 
+                        loadProfile(); 
+                    } else { 
+                        alert(res.message || 'Update failed'); 
+                        if (resp.status === 401) window.location.href = '../login.html';
+                    }
+                } catch (err) {
+                    console.error('Profile update error:', err);
+                    alert('Error updating profile. Please check your connection.');
+                }
+            });
+
+            document.getElementById('passwordForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const old_password = document.getElementById('currentPassword').value;
+                const new_password = document.getElementById('newPassword').value;
+                const confirm = document.getElementById('confirmPassword').value;
+
+                if (new_password !== confirm) return alert('Passwords do not match');
+                if (new_password.length < 6) return alert('Password must be at least 6 characters long');
+
+                try {
+                    const resp = await fetch('/api/change-password', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({ old_password, new_password }),
+                        credentials: 'include'
+                    });
+                    const res = await resp.json();
+                    alert(res.message);
+                    if (res.success) e.target.reset();
+                    else if (resp.status === 401) window.location.href = '../login.html';
+                } catch (err) {
+                    console.error('Password change error:', err);
+                    alert('Error changing password. Please try again.');
+                }
+            });
+
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const currentTheme = settings.get('themeMode') || 'light';
+            themeToggle.checked = currentTheme === 'dark';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            if(currentTheme === 'dark') document.body.classList.add('dark-mode');
+
+            themeToggle.addEventListener('change', (e) => {
+                const newTheme = e.target.checked ? 'dark' : 'light';
+                settings.set('themeMode', newTheme);
+                document.documentElement.setAttribute('data-theme', newTheme);
+                document.body.classList.toggle('dark-mode', newTheme === 'dark');
+            });
+
+            // Delete Account
+            document.getElementById('deleteAccountBtn').addEventListener('click', async () => {
+                if (confirm('Delete your account permanently?')) {
+                    const resp = await fetch('/api/delete-account', { method: 'POST', credentials: 'include' });
+                    const res = await resp.json();
+                    if (res.success) { alert('Account deleted.'); window.location.href = 'index.html'; }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

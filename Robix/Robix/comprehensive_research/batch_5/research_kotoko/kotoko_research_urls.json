@@ -1,0 +1,414 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/kotoko_people",
+    "type": "main_page",
+    "tribe": "kotoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kotoko_tribe",
+    "type": "main_page",
+    "tribe": "kotoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kotoko",
+    "type": "main_page",
+    "tribe": "kotoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/kotoko_ethnic_group",
+    "type": "main_page",
+    "tribe": "kotoko",
+    "category": "overview",
+    "priority": "high"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+religion+spiritual+beliefs",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "spiritual_beliefs",
+    "search_term": "kotoko religion spiritual beliefs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+traditional+religion",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "spiritual_beliefs",
+    "search_term": "kotoko traditional religion",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+religious+practices",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "spiritual_beliefs",
+    "search_term": "kotoko religious practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+economy+trade",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "economy",
+    "search_term": "kotoko economy trade",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+economic+activities",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "economy",
+    "search_term": "kotoko economic activities",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+livelihood",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "economy",
+    "search_term": "kotoko livelihood",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+art+crafts+pottery",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "arts_and_crafts",
+    "search_term": "kotoko art crafts pottery",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+traditional+arts",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "arts_and_crafts",
+    "search_term": "kotoko traditional arts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+handicrafts",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "arts_and_crafts",
+    "search_term": "kotoko handicrafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+traditional+governance",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "governance",
+    "search_term": "kotoko traditional governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+political+system",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "governance",
+    "search_term": "kotoko political system",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+leadership+structure",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "governance",
+    "search_term": "kotoko leadership structure",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+colonial+period",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "colonial_impact",
+    "search_term": "kotoko colonial period",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+European+colonization",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "colonial_impact",
+    "search_term": "kotoko European colonization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+colonial+administration",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "colonial_impact",
+    "search_term": "kotoko colonial administration",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+agriculture+farming",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "subsistence_patterns",
+    "search_term": "kotoko agriculture farming",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+food+production",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "subsistence_patterns",
+    "search_term": "kotoko food production",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+traditional+economy",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "subsistence_patterns",
+    "search_term": "kotoko traditional economy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+modern+challenges",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "challenges",
+    "search_term": "kotoko modern challenges",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+contemporary+issues",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "challenges",
+    "search_term": "kotoko contemporary issues",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "challenges",
+    "search_term": "kotoko cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+cultural+preservation",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "cultural_revitalization",
+    "search_term": "kotoko cultural preservation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+language+revitalization",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "cultural_revitalization",
+    "search_term": "kotoko language revitalization",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+cultural+revival",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "cultural_revitalization",
+    "search_term": "kotoko cultural revival",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+modern+politics",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "modern_governance",
+    "search_term": "kotoko modern politics",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+contemporary+governance",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "modern_governance",
+    "search_term": "kotoko contemporary governance",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+political+participation",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "modern_governance",
+    "search_term": "kotoko political participation",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+pre-colonial+history",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "pre_contact_history",
+    "search_term": "kotoko pre-colonial history",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+before+European+contact",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "pre_contact_history",
+    "search_term": "kotoko before European contact",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+ancient+traditions",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "pre_contact_history",
+    "search_term": "kotoko ancient traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+culture+customs+traditions",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "culture",
+    "search_term": "kotoko culture customs traditions",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+cultural+practices",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "culture",
+    "search_term": "kotoko cultural practices",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+way+of+life",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "culture",
+    "search_term": "kotoko way of life",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+oral+traditions+stories",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "oral_traditions",
+    "search_term": "kotoko oral traditions stories",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+myths+legends",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "oral_traditions",
+    "search_term": "kotoko myths legends",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+traditional+narratives",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "oral_traditions",
+    "search_term": "kotoko traditional narratives",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+social+structure+kinship",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "social_organization",
+    "search_term": "kotoko social structure kinship",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+clan+system+family",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "social_organization",
+    "search_term": "kotoko clan system family",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+social+hierarchy",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "social_organization",
+    "search_term": "kotoko social hierarchy",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+traditional+knowledge",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "traditional_knowledge",
+    "search_term": "kotoko traditional knowledge",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+indigenous+wisdom",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "traditional_knowledge",
+    "search_term": "kotoko indigenous wisdom",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+ethnobotany+medicine",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "traditional_knowledge",
+    "search_term": "kotoko ethnobotany medicine",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+traditional+tools+crafts",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "traditional_technology",
+    "search_term": "kotoko traditional tools crafts",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+indigenous+technology",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "traditional_technology",
+    "search_term": "kotoko indigenous technology",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+artisan+skills",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "traditional_technology",
+    "search_term": "kotoko artisan skills",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+music+dance+songs",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "music_dance",
+    "search_term": "kotoko music dance songs",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+musical+instruments",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "music_dance",
+    "search_term": "kotoko musical instruments",
+    "priority": "medium"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Special:Search/kotoko+cultural+dances",
+    "type": "category_search",
+    "tribe": "kotoko",
+    "category": "music_dance",
+    "search_term": "kotoko cultural dances",
+    "priority": "medium"
+  }
+]
