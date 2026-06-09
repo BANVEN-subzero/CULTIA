@@ -236,7 +236,19 @@ def init_db():
             ('woman_snake', 'The Woman and the Snake', 'Fulani', 50),
             ('fire_sky', 'The Fire in the Sky', 'Northern', 50),
             ('wind_children', 'Children of the Wind', 'Sawa', 50),
-            ('lobe_river', 'The Lobe River Secret', 'Batanga', 50)
+            ('lobe_river', 'The Lobe River Secret', 'Batanga', 50),
+            ('mountain_king', 'The Mountain King of Mount Cameroon', 'Bakweri', 50),
+            ('hunter_pact', 'The Hunter''s Pact with the Forest', 'Bulu', 50),
+            ('golden_fish', 'The Golden Fish of Lake Chad', 'Kotoko', 50),
+            ('star_child', 'The Star Child of the Sky', 'Mafa', 50),
+            ('first_cocoyam', 'The First Cocoyam', 'Widikum', 50),
+            ('truth_mask', 'The Mask of Truth', 'Tikar', 50),
+            ('leopard_chief', 'The Leopard and the Chief', 'Mbum', 50),
+            ('spider_wisdom', 'The Wisdom of the Old Spider', 'Efik', 50),
+            ('eternal_queen', 'The Queen Who Refused to Die', 'Bamiléké', 50),
+            ('rain_bride', 'The Rain Bride of the Grassfields', 'Kom', 50),
+            ('healing_leaves', 'The Healing Leaves of the Forest', 'Pygmy', 50),
+            ('ancestor_wells', 'The Wells of the Ancestors', 'Mandara', 50)
         ''')
         
         conn.commit()

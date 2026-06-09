@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wells of the Ancestors - CULTIA</title>
+    <link rel="icon" type="image/png" href="../img/top.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-orange: #e67e22;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-content {
+            flex: 1;
+            background: #fdfaf5;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.pinimg.com/736x/cb/0a/f7/cb0af7814d110bcb2458fb20396bdf95.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: -50px;
+        }
+
+        .story-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 80px 60px 60px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .story-section {
+            margin-bottom: 40px;
+            border-left: 4px solid var(--accent-orange);
+            padding-left: 30px;
+        }
+
+        .story-section h3 {
+            color: #333;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .story-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: white;
+            color: var(--primary-green);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: var(--transition-smooth);
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .cultural-note {
+            background: rgba(230, 126, 34, 0.05);
+            border-radius: 30px;
+            padding: 40px;
+            margin-top: 60px;
+            border: 1px dashed var(--accent-orange);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div id="header-container"></div>
+
+        <section class="hero-banner">
+            <div data-aos="zoom-out">
+                <h1 class="display-2 fw-bold mb-3">The Wells of the Ancestors</h1>
+                <p class="lead fs-4 opacity-75">A Tale of Memory & Community from the Mandara People</p>
+            </div>
+        </section>
+
+        <div class="container py-5">
+            <div class="story-container" data-aos="fade-up">
+                <a href="folkloreAndMyths.html" class="back-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Folklore
+                </a>
+
+                
+                <div class="story-section">
+                    <h3>The First Ancestors</h3>
+                    <p class="story-text">When the first Mandara people came to the land that would be their home, they faced a problem: there was no water. They searched everywhere, digging holes in the earth, but the soil was dry and hard. Desperately, they prayed to their ancestors for guidance.</p>
+                </div>
+                
+                <div class="story-section">
+                    <h3>A Dream of Water</h3>
+                    <p class="story-text">That night, the ancestors appeared in the dreams of the elders. 'Dig where the three baobab trees grow together,' they said, 'and you will find water that will sustain your people for all time.' The next morning, the people found the three baobabs and began to dig.</p>
+                </div>
+                
+                <div class="story-section">
+                    <h3>The Sacred Wells</h3>
+                    <p class="story-text">At the bottom of the hole, they hit water! The people dug deeper and built a well. Then, following more dreams from the ancestors, they dug other wells in sacred places around their land. These became the Wells of the Ancestors—sources of not just water, but also spiritual power.</p>
+                </div>
+                
+                <div class="story-section">
+                    <h3>Living Memory</h3>
+                    <p class="story-text">To this day, the Mandara people honor the Wells of the Ancestors. They are places of community gathering, where people come to collect water, to celebrate festivals, and to remember the ancestors who first cared for the land. The wells remind them that they are part of a long, unbroken chain of life.</p>
+                </div>
+                
+
+                <div class="cultural-note">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-leaf me-2"></i> Cultural Significance</h4>
+                    <p class="mb-0 text-muted">Water is a vital resource, especially in the often-arid Mandara Mountains. Wells have long been central to community life. This legend connects the physical resource of water with the spiritual connection to ancestors, emphasizing the importance of memory, community, and respect for those who came before us.</p>
+                </div>
+                
+        <div id="claimSection" class="bg-light rounded-4 p-5 mb-5 text-center">
+            <div class="mb-3">
+                <i class="fas fa-coins text-warning" style="font-size: 3rem;"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Ready to Claim Your Points?</h4>
+            <p class="text-muted mb-4">Mark this story as completed and earn <strong class="text-success">+50</strong> points!</p>
+            <button id="completeStoryBtn" class="btn btn-success btn-lg rounded-pill px-5">
+                <i class="fas fa-check-circle me-2"></i> Complete Story & Claim Points
+            </button>
+        </div>
+
+        <!-- Beautiful Completion Modal -->
+        <div class="modal fade" id="congratsModal" tabindex="-1" aria-labelledby="congratsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4 border-0 shadow-lg overflow-hidden">
+                    <div class="modal-header bg-gradient text-center" style="background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%); border: none;">
+                        <h5 class="modal-title text-white fw-bold" id="congratsModalLabel">🎉 Congratulations!</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 text-center">
+                        <div class="mb-4">
+                            <div class="mx-auto bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="fas fa-trophy text-success" style="font-size: 3.5rem;"></i>
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-2">Story Completed!</h4>
+                        <p class="text-muted mb-4">You've earned <strong class="text-success" style="font-size: 1.5rem;">+50 points</strong> for completing this story!</p>
+                    </div>
+                    <div class="modal-footer border-0 justify-content-center gap-3">
+                        <button type="button" class="btn btn-secondary rounded-pill px-4" id="continueBtn">
+                            Continue Exploring
+                        </button>
+                        <a href="folkloreAndMyths.html" class="btn btn-success rounded-pill px-4">
+                            Read Another Story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-4">
+            <a href="folkloreAndMyths.html" class="btn btn-outline-success rounded-pill px-5 py-3">
+                <i class="fas fa-arrow-left me-2"></i> Back to Stories
+            </a>
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Settings Manager -->
+    <script src="js/settingsManager.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Gamification System -->
+    <script src="js/gamification.js"></script>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+            
+            // Load Header and Sidebar
+            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+            });
+            fetch('includes/header.html').then(r => r.text()).then(data => {
+                document.getElementById('header-container').innerHTML = data.replace('{PAGE_TITLE}', 'Story');
+                
+                // Initialize Theme Toggle in Header
+                if (window.settingsManager) {
+                    window.settingsManager.initHeaderThemeToggle();
+                }
+            });
+
+            // Complete Story Button
+            const completeBtn = document.getElementById('completeStoryBtn');
+            const claimSection = document.getElementById('claimSection');
+            let congratsModal;
+            
+            // First, check if story is already completed on load
+            async function checkStoryCompletion() {
+                try {
+                    const progressResponse = await fetch('/api/folklore/progress', { credentials: 'include' });
+                    if (progressResponse.ok) {
+                        const progressData = await progressResponse.json();
+                        if (progressData.success && progressData.progress && progressData.progress['ancestor_wells'] && progressData.progress['ancestor_wells'].is_completed) {
+                            // Already completed
+                            if (claimSection) {
+                                claimSection.innerHTML = `
+                                    <div class="p-4">
+                                        <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                                            <div class="bg-success bg-opacity-10 p-3 rounded-3">
+                                                <i class="fas fa-check-circle text-success" style="font-size: 2.5rem;"></i>
+                                            </div>
+                                            <div class="text-start">
+                                                <h6 class="fw-bold mb-0" style="color: #2d5a27;">Story Completed!</h6>
+                                                <p class="text-muted mb-0">+50 points earned</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                                if (completeBtn) {
+                                    completeBtn.disabled = true;
+                                    completeBtn.innerHTML = '<i class="fas fa-check me-2"></i>Already Completed';
+                                    completeBtn.className = 'btn btn-secondary btn-lg rounded-pill px-5';
+                                }
+                            }
+                        }
+                    }
+                } catch (err) {
+                    console.error('Error checking story completion:', err);
+                }
+            }
+            
+            // Initialize modal
+            const modalElement = document.getElementById('congratsModal');
+            if (modalElement && window.bootstrap) {
+                congratsModal = new bootstrap.Modal(modalElement);
+            }
+            
+            checkStoryCompletion();
+            
+            if (completeBtn) {
+                completeBtn.addEventListener('click', async function() {
+                    try {
+                        const response = await fetch(`/api/folklore/progress/ancestor_wells/complete`, {
+                            method: 'POST',
+                            credentials: 'include'
+                        });
+                        
+                        if (response.ok) {
+                            const data = await response.json();
+                            if (data.success && data.points_awarded > 0) {
+                                // Show notification via gamification system
+                                if (window.gamification) {
+                                    window.gamification.points += data.points_awarded;
+                                    window.gamification.updateUI();
+                                    window.gamification.broadcastUpdate();
+                                }
+                                
+                                // Update the section
+                                if (claimSection) {
+                                    claimSection.innerHTML = `
+                                        <div class="p-4">
+                                            <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                                                <div class="bg-success bg-opacity-10 p-3 rounded-3">
+                                                    <i class="fas fa-check-circle text-success" style="font-size: 2.5rem;"></i>
+                                                </div>
+                                                <div class="text-start">
+                                                    <h6 class="fw-bold mb-0" style="color: #2d5a27;">Story Completed!</h6>
+                                                    <p class="text-muted mb-0">+50 points earned</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                    completeBtn.disabled = true;
+                                    completeBtn.innerHTML = '<i class="fas fa-check me-2"></i>Already Completed';
+                                    completeBtn.className = 'btn btn-secondary btn-lg rounded-pill px-5';
+                                }
+                                
+                                // Show modal if available
+                                if (congratsModal) {
+                                    congratsModal.show();
+                                }
+                            } else if (!data.success) {
+                                // Handle already completed gracefully
+                                if (data.message && data.message.includes('already')) {
+                                    if (claimSection) {
+                                        claimSection.innerHTML = `
+                                            <div class="p-4">
+                                                <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+                                                    <div class="bg-success bg-opacity-10 p-3 rounded-3">
+                                                        <i class="fas fa-check-circle text-success" style="font-size: 2.5rem;"></i>
+                                                    </div>
+                                                    <div class="text-start">
+                                                        <h6 class="fw-bold mb-0" style="color: #2d5a27;">Story Completed!</h6>
+                                                        <p class="text-muted mb-0">+50 points earned</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        `;
+                                        completeBtn.disabled = true;
+                                        completeBtn.innerHTML = '<i class="fas fa-check me-2"></i>Already Completed';
+                                        completeBtn.className = 'btn btn-secondary btn-lg rounded-pill px-5';
+                                    }
+                                }
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Error completing story:', error);
+                        alert('Error completing story. Please try again.');
+                    }
+                });
+            }
+
+            // Add continue button listener if modal exists
+            const continueBtn = document.getElementById('continueBtn');
+            if (continueBtn && congratsModal) {
+                continueBtn.addEventListener('click', function() {
+                    congratsModal.hide();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

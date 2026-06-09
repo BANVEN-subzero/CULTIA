@@ -1,18 +1,8 @@
-# Python
 __pycache__/
-*.py[cod]
-
-# Database
-backend/users.db
-backend/users.db.backup
-users.db
+*.pyc
+.env
 *.db
-
-# Logs
-*.log
-chatbot.log
-backend/chatbot.log
-
-# IDEs
-.idea/
-.vscode/
+*.sqlite
+*.sqlite3
+.DS_Store
+node_modules/
