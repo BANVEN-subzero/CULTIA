@@ -15,8 +15,22 @@
     <script>/* Flash prevention */(function(){var t=localStorage.getItem('culturalAI_theme')||localStorage.getItem('themePreference')||'light';if(t==='auto')t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme', t);document.addEventListener('DOMContentLoaded', function(){document.body.classList.add('theme-'+t);});})();</script>
     <style>
         :root {
-            --primary-color: #808000;
-            --secondary-color: #B8860B;
+            {% if settings.admin_theme == 'blue' %}
+                --primary-color: #1e3a8a;
+                --secondary-color: #3b82f6;
+            {% elif settings.admin_theme == 'purple' %}
+                --primary-color: #7c3aed;
+                --secondary-color: #a78bfa;
+            {% else %}
+                --primary-color: #808000;
+                --secondary-color: #B8860B;
+            {% endif %}
+
+            {% if settings.primary_color %}
+                --primary-color: {{ settings.primary_color }};
+                --secondary-color: {{ settings.primary_color }}cc;
+            {% endif %}
+
             --accent-color: #CD5C5C;
             --dark-color: #8B4513;
             --light-color: #F5DEB3;
@@ -78,6 +92,11 @@
                             <i class="fas fa-users"></i> Users
                         </a>
                     </li>
+                    <li class="{% if request.endpoint == 'improvements' %}active{% endif %}">
+                        <a href="{{ url_for('improvements') }}">
+                            <i class="fas fa-rocket"></i> Improvements
+                        </a>
+                    </li>
                     <li class="{% if request.endpoint == 'settings' %}active{% endif %}">
                         <a href="{{ url_for('settings') }}">
                             <i class="fas fa-cog"></i> Settings
@@ -113,7 +132,7 @@
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="#"><i class="fas fa-user"></i> Profile</a>
+                            <a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a>
                             <a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </div>
                     </div>

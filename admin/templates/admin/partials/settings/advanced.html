@@ -1,0 +1,53 @@
+
+<div class="card">
+    <div class="card-header">
+        <h3>Advanced Settings</h3>
+    </div>
+    <div class="card-body">
+        <form id="advanced-settings-form">
+            <div class="form-group">
+                <label for="timezone">Timezone</label>
+                <select id="timezone" name="timezone" class="form-control">
+                    <option value="UTC" {{ 'selected' if settings.timezone == 'UTC' else '' }}>UTC</option>
+                    <option value="Africa/Lagos" {{ 'selected' if settings.timezone == 'Africa/Lagos' else '' }}>Africa/Lagos (WAT)</option>
+                    <option value="Europe/London" {{ 'selected' if settings.timezone == 'Europe/London' else '' }}>Europe/London (GMT)</option>
+                    <option value="America/New_York" {{ 'selected' if settings.timezone == 'America/New_York' else '' }}>America/New_York (EST/EDT)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date_format">Date Format</label>
+                <input type="text" id="date_format" name="date_format" class="form-control" value="{{ settings.date_format or 'Y-m-d' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="time_format">Time Format</label>
+                <input type="text" id="time_format" name="time_format" class="form-control" value="{{ settings.time_format or 'H:i' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="items_per_page">Items Per Page</label>
+                <input type="number" id="items_per_page" name="items_per_page" class="form-control" value="{{ settings.items_per_page or 10 }}" min="5" max="100">
+            </div>
+
+            <div class="form-group">
+                <label for="debug_mode">
+                    <input type="checkbox" id="debug_mode" name="debug_mode" {{ 'checked' if settings.debug_mode else '' }}>
+                    Enable Debug Mode
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="maintenance_mode">
+                    <input type="checkbox" id="maintenance_mode" name="maintenance_mode" {{ 'checked' if settings.maintenance_mode else '' }}>
+                    Put Site in Maintenance Mode
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

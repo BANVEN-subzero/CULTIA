@@ -1,0 +1,62 @@
+
+<div class="card">
+    <div class="card-header">
+        <h3>Email Settings</h3>
+    </div>
+    <div class="card-body">
+        <form id="email-settings-form">
+            <div class="form-group">
+                <label for="mail_driver">Mail Driver</label>
+                <select id="mail_driver" name="mail_driver" class="form-control">
+                    <option value="smtp" {{ 'selected' if settings.mail_driver == 'smtp' else '' }}>SMTP</option>
+                    <option value="sendmail" {{ 'selected' if settings.mail_driver == 'sendmail' else '' }}>Sendmail</option>
+                    <option value="log" {{ 'selected' if settings.mail_driver == 'log' else '' }}>Log Only (for testing)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="smtp_host">SMTP Host</label>
+                <input type="text" id="smtp_host" name="smtp_host" class="form-control" value="{{ settings.smtp_host or 'smtp.example.com' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="smtp_port">SMTP Port</label>
+                <input type="number" id="smtp_port" name="smtp_port" class="form-control" value="{{ settings.smtp_port or 587 }}">
+            </div>
+
+            <div class="form-group">
+                <label for="smtp_encryption">SMTP Encryption</label>
+                <select id="smtp_encryption" name="smtp_encryption" class="form-control">
+                    <option value="tls" {{ 'selected' if settings.smtp_encryption == 'tls' else '' }}>TLS</option>
+                    <option value="ssl" {{ 'selected' if settings.smtp_encryption == 'ssl' else '' }}>SSL</option>
+                    <option value="none" {{ 'selected' if settings.smtp_encryption == 'none' else '' }}>None</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="smtp_username">SMTP Username</label>
+                <input type="text" id="smtp_username" name="smtp_username" class="form-control" value="{{ settings.smtp_username or '' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="smtp_password">SMTP Password</label>
+                <input type="password" id="smtp_password" name="smtp_password" class="form-control" value="{{ settings.smtp_password or '' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="from_email">From Email</label>
+                <input type="email" id="from_email" name="from_email" class="form-control" value="{{ settings.from_email or 'noreply@cultia.com' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="from_name">From Name</label>
+                <input type="text" id="from_name" name="from_name" class="form-control" value="{{ settings.from_name or 'CULTIA' }}">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

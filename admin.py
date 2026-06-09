@@ -368,6 +368,7 @@ def inject_now():
         'app_name': 'CULTIA',
         'app_version': '1.0.0',
         'current_user': user,
+        'settings': app_settings.data,
     }
 
 
@@ -576,11 +577,22 @@ def dashboard():
             
         conn.close()
 
+    # Load improvements count
+    improvements_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'improvements.json')
+    improvements_count = 0
+    if os.path.exists(improvements_file):
+        try:
+            with open(improvements_file, 'r') as f:
+                improvements_count = len(json.load(f))
+        except Exception as e:
+            pass
+    
     stats = {
         'user_count': total_users,
         'active_sessions': active_users,
         'quizzes_taken': quizzes_taken,
         'total_points': total_points_earned,
+        'improvements': improvements_count,
         'new_users_today': 0,
         'pending_approvals': 0,
         'support_tickets': 0,
@@ -614,6 +626,118 @@ def dashboard():
 def statistics():
     return render_template('admin/dashboard.html', stats={}, recent_activities=[])
 
+# Profile page
+@app.route('/admin/profile')
+@login_required
+def profile():
+    user_id = session.get('user_id')
+    user = admin_users_db.get(str(user_id))
+    return render_template('admin/profile.html', user=user)
+
+# Improvements tracking routes
+@app.route('/admin/improvements')
+@login_required
+def improvements():
+    if not session.get('is_admin'):
+        abort(403)
+    
+    # Load improvements from JSON file
+    improvements_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'improvements.json')
+    improvements_list = []
+    if os.path.exists(improvements_file):
+        try:
+            with open(improvements_file, 'r') as f:
+                improvements_list = json.load(f)
+        except Exception as e:
+            print(f"Error loading improvements: {e}")
+    
+    return render_template('admin/improvements.html', improvements=improvements_list)
+
+@app.route('/admin/api/improvements', methods=['POST'])
+@login_required
+def add_improvement():
+    if not session.get('is_admin'):
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    data = request.get_json()
+    
+    improvements_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'improvements.json')
+    improvements_list = []
+    if os.path.exists(improvements_file):
+        try:
+            with open(improvements_file, 'r') as f:
+                improvements_list = json.load(f)
+        except Exception as e:
+            pass
+    
+    new_id = max([item.get('id', 0) for item in improvements_list], default=0) + 1
+    
+    improvement = {
+        'id': new_id,
+        'title': data.get('title', ''),
+        'description': data.get('description', ''),
+        'status': data.get('status', 'Planned'),
+        'date': datetime.utcnow().strftime('%Y-%m-%d')
+    }
+    
+    improvements_list.append(improvement)
+    
+    with open(improvements_file, 'w') as f:
+        json.dump(improvements_list, f, indent=2)
+    
+    return jsonify({'success': True, 'improvement': improvement})
+
+@app.route('/admin/api/improvements/<int:improvement_id>', methods=['PUT'])
+@login_required
+def update_improvement(improvement_id):
+    if not session.get('is_admin'):
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    data = request.get_json()
+    
+    improvements_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'improvements.json')
+    improvements_list = []
+    if os.path.exists(improvements_file):
+        try:
+            with open(improvements_file, 'r') as f:
+                improvements_list = json.load(f)
+        except Exception as e:
+            pass
+    
+    for imp in improvements_list:
+        if imp.get('id') == improvement_id:
+            imp['title'] = data.get('title', imp.get('title'))
+            imp['description'] = data.get('description', imp.get('description'))
+            imp['status'] = data.get('status', imp.get('status'))
+            break
+    
+    with open(improvements_file, 'w') as f:
+        json.dump(improvements_list, f, indent=2)
+    
+    return jsonify({'success': True})
+
+@app.route('/admin/api/improvements/<int:improvement_id>', methods=['DELETE'])
+@login_required
+def delete_improvement_route(improvement_id):
+    if not session.get('is_admin'):
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    improvements_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'improvements.json')
+    improvements_list = []
+    if os.path.exists(improvements_file):
+        try:
+            with open(improvements_file, 'r') as f:
+                improvements_list = json.load(f)
+        except Exception as e:
+            pass
+    
+    improvements_list = [imp for imp in improvements_list if imp.get('id') != improvement_id]
+    
+    with open(improvements_file, 'w') as f:
+        json.dump(improvements_list, f, indent=2)
+    
+    return jsonify({'success': True})
+
 @app.route('/settings')
 @login_required
 def settings():
@@ -621,6 +745,52 @@ def settings():
         abort(403)
 
     return render_template('admin/settings.html', settings=app_settings.data)
+
+
+@app.route('/admin/settings/<tab>')
+@login_required
+def settings_tab(tab):
+    if not session.get('is_admin'):
+        abort(403)
+    
+    valid_tabs = ['general', 'appearance', 'email', 'security', 'notifications', 'backup', 'advanced']
+    if tab not in valid_tabs:
+        abort(404)
+    
+    return render_template(f'admin/partials/settings/{tab}.html', settings=app_settings.data)
+
+
+@app.route('/admin/api/backups', methods=['GET'])
+@login_required
+def list_backups():
+    if not session.get('is_admin'):
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    try:
+        backups = []
+        if os.path.exists(app.config['BACKUP_FOLDER']):
+            files = os.listdir(app.config['BACKUP_FOLDER'])
+            for filename in files:
+                filepath = os.path.join(app.config['BACKUP_FOLDER'], filename)
+                if os.path.isfile(filepath):
+                    stat = os.stat(filepath)
+                    # Determine file type
+                    file_type = 'Unknown'
+                    if filename.endswith('.db'):
+                        file_type = 'SQLite Database'
+                    elif filename.endswith('.sql'):
+                        file_type = 'SQL Dump'
+                        
+                    backups.append({
+                        'filename': filename,
+                        'type': file_type,
+                        'size': stat.st_size,
+                        'created': datetime.fromtimestamp(stat.st_mtime).isoformat()
+                    })
+        backups.sort(key=lambda x: x['created'], reverse=True)
+        return jsonify({'success': True, 'backups': backups})
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)}), 500
 
 # Error handlers
 @app.errorhandler(404)
@@ -871,19 +1041,79 @@ def create_backup():
         return jsonify({'success': False, 'message': 'Unauthorized'}), 403
     
     try:
-        # In a real app, this would create a database backup
-        backup_id = datetime.utcnow().strftime('%Y%m%d_%H%M%S')
-        backup_file = os.path.join(app.config['BACKUP_FOLDER'], f'backup_{backup_id}.sql')
+        import sqlite3
+        import shutil
+        from datetime import datetime
         
-        # Simulate backup creation
-        with open(backup_file, 'w') as f:
-            f.write(f'-- Database backup created at {datetime.utcnow()}\n')
-            f.write('-- This is a simulated backup. In a real app, this would contain your database dump.')
+        backup_id = datetime.utcnow().strftime('%Y%m%d_%H%M%S')
+        
+        # Create backup of main app database
+        backup_db_filename = f'backup_db_{backup_id}.db'
+        backup_db_path = os.path.join(app.config['BACKUP_FOLDER'], backup_db_filename)
+        
+        # Copy the main database file
+        if os.path.exists(MAIN_APP_DB_PATH):
+            shutil.copy2(MAIN_APP_DB_PATH, backup_db_path)
+        
+        # Also create an SQL dump-style backup
+        backup_sql_filename = f'backup_{backup_id}.sql'
+        backup_sql_path = os.path.join(app.config['BACKUP_FOLDER'], backup_sql_filename)
+        
+        with open(backup_sql_path, 'w') as f:
+            f.write(f'-- CULTIA Database Backup\n')
+            f.write(f'-- Created: {datetime.utcnow().isoformat()}\n')
+            f.write(f'-- DB Path: {MAIN_APP_DB_PATH}\n\n')
+            
+            with main_db_lock:
+                conn = sqlite3.connect(MAIN_APP_DB_PATH)
+                cursor = conn.cursor()
+                
+                # Get all table names
+                cursor.execute("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name;")
+                tables = cursor.fetchall()
+                
+                for table in tables:
+                    table_name = table[0]
+                    f.write(f'-- Table: {table_name}\n')
+                    
+                    # Get CREATE TABLE statement
+                    cursor.execute(f"SELECT sql FROM sqlite_master WHERE type='table' AND name='{table_name}';")
+                    create_sql = cursor.fetchone()[0]
+                    f.write(f'{create_sql};\n\n')
+                    
+                    # Get all data
+                    cursor.execute(f"SELECT * FROM {table_name};")
+                    rows = cursor.fetchall()
+                    
+                    # Get column names
+                    cursor.execute(f"PRAGMA table_info({table_name});")
+                    cols = cursor.fetchall()
+                    col_names = [col[1] for col in cols]
+                    
+                    # Insert statements
+                    for row in rows:
+                        vals = []
+                        for val in row:
+                            if val is None:
+                                vals.append('NULL')
+                            elif isinstance(val, str):
+                                # Escape single quotes
+                                escaped = val.replace("'", "''")
+                                vals.append(f"'{escaped}'")
+                            else:
+                                vals.append(str(val))
+                        
+                        f.write(f"INSERT INTO {table_name} ({', '.join(col_names)}) VALUES ({', '.join(vals)});\n")
+                    
+                    f.write('\n')
+                
+                conn.close()
         
         return jsonify({
             'success': True, 
-            'message': 'Backup created successfully',
-            'filename': f'backup_{backup_id}.sql'
+            'message': f'Backup created successfully (2 files: SQL dump + DB file)',
+            'filename': backup_sql_filename,
+            'db_filename': backup_db_filename
         })
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
@@ -908,6 +1138,44 @@ def delete_backup(filename):
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
 
+@app.route('/admin/api/backup/<filename>/restore', methods=['POST'])
+@login_required
+def restore_backup(filename):
+    if not session.get('is_admin'):
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    if '..' in filename or filename.startswith('/'):
+        return jsonify({'success': False, 'message': 'Invalid filename'}), 400
+    
+    filepath = os.path.join(app.config['BACKUP_FOLDER'], filename)
+    if not os.path.exists(filepath):
+        return jsonify({'success': False, 'message': 'Backup file not found'}), 404
+    
+    try:
+        import shutil
+        # Only restore from SQLite database files
+        if filename.endswith('.db'):
+            # Create a backup of current database first
+            timestamp = datetime.utcnow().strftime('%Y%m%d_%H%M%S')
+            backup_current = f'current_db_before_restore_{timestamp}.db'
+            shutil.copy2(MAIN_APP_DB_PATH, os.path.join(app.config['BACKUP_FOLDER'], backup_current))
+            
+            # Now restore the backup
+            shutil.copy2(filepath, MAIN_APP_DB_PATH)
+            
+            return jsonify({
+                'success': True, 
+                'message': f'Successfully restored from {filename}. A backup of current DB was saved as {backup_current}.'
+            })
+        else:
+            return jsonify({
+                'success': False, 
+                'message': 'Restore is only available for SQLite DB (.db) files.'
+            }), 400
+        
+    except Exception as e:
+        return jsonify({'success': False, 'message': str(e)}), 500
+
 @app.route('/admin/api/backup/<filename>/download')
 @login_required
 def download_backup(filename):
@@ -922,7 +1190,7 @@ def download_backup(filename):
         app.config['BACKUP_FOLDER'],
         filename,
         as_attachment=True,
-        download_name=f'backup_{datetime.utcnow().strftime("%Y%m%d")}{os.path.splitext(filename)[1]}'
+        download_name=filename
     )
 
 if __name__ == '__main__':

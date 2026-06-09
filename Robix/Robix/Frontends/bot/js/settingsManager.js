@@ -108,16 +108,71 @@ class SettingsManager {
                 
                 newBtn.addEventListener('click', (e) => {
                     e.preventDefault();
-                    this.logout();
+                    this.showLogoutModal();
                 });
             }
         });
     }
 
     /**
+     * Show custom beautiful logout confirmation modal
+     */
+    showLogoutModal() {
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('logoutModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'logoutModal';
+            modal.className = 'custom-modal-overlay';
+            modal.innerHTML = `
+                <div class="custom-modal-card">
+                    <div class="custom-modal-icon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <h2>Confirm Logout</h2>
+                    <p>Are you sure you want to log out of your session? You will need to sign in again to access your saved progress and achievements.</p>
+                    <div class="custom-modal-actions">
+                        <button class="modal-btn modal-btn-cancel" id="cancelLogout">Cancel</button>
+                        <button class="modal-btn modal-btn-confirm" id="confirmLogout">Logout</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            // Add event listeners for the new buttons
+            document.getElementById('cancelLogout').addEventListener('click', () => this.hideLogoutModal());
+            document.getElementById('confirmLogout').addEventListener('click', () => this.logout());
+            
+            // Close on overlay click
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) this.hideLogoutModal();
+            });
+        }
+
+        // Show modal
+        setTimeout(() => modal.classList.add('active'), 10);
+    }
+
+    /**
+     * Hide the logout modal
+     */
+    hideLogoutModal() {
+        const modal = document.getElementById('logoutModal');
+        if (modal) {
+            modal.classList.remove('active');
+        }
+    }
+
+    /**
      * Clear user data and logout
      */
     async logout() {
+        const confirmBtn = document.getElementById('confirmLogout');
+        if (confirmBtn) {
+            confirmBtn.textContent = 'Logging out...';
+            confirmBtn.disabled = true;
+        }
+
         try {
             const response = await fetch('/api/logout', { 
                 method: 'POST', 
@@ -127,12 +182,16 @@ class SettingsManager {
             // Clear user-specific local storage
             this.clearUserSessionData();
             
-            // Redirect to index
+            // Hide modal
+            this.hideLogoutModal();
+            
+            // Redirect to index.html
             window.location.href = '../index.html';
         } catch (error) {
             console.error('Logout failed:', error);
             // Fallback: still clear data and redirect
             this.clearUserSessionData();
+            this.hideLogoutModal();
             window.location.href = '../index.html';
         }
     }

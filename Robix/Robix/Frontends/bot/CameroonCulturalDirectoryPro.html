@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameroon Cultural Directory - Professional Edition</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --secondary-gold: #d4af37;
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(135deg, #fdfaf5 0%, #f5f3f0 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 50%, #0d1f0c 100%);
+            padding: 100px 0 140px;
+            color: white;
+            border-radius: 0 0 60px 60px;
+            margin-bottom: -60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Ndop_Fabric_Cameroon.jpg') center/cover;
+            opacity: 0.08;
+        }
+
+        .tribe-card {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            border: none;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .tribe-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+        }
+
+        .tribe-img-wrapper {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tribe-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .tribe-card:hover .tribe-img {
+            transform: scale(1.08);
+        }
+
+        .tribe-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--primary-green);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .region-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(45, 90, 39, 0.95);
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: white;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .nav-pills .nav-link {
+            border-radius: 12px;
+            padding: 12px 18px;
+            font-weight: 600;
+            color: #666;
+            background: #f8f9fa;
+            margin: 4px;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-pills .nav-link:hover {
+            color: var(--primary-green);
+            background: rgba(45, 90, 39, 0.08);
+        }
+
+        .nav-pills .nav-link.active {
+            background: linear-gradient(135deg, #2d5a27, #3d7a37);
+            color: white;
+            box-shadow: 0 8px 25px rgba(45, 90, 39, 0.3);
+        }
+
+        .tab-content {
+            background: linear-gradient(180deg, #fafaf7 0%, #ffffff 100%);
+            border-radius: 20px;
+            padding: 1.5rem;
+            min-height: 250px;
+        }
+
+        .section-title {
+            color: var(--primary-green);
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-item {
+            background: white;
+            border-left: 4px solid var(--secondary-gold);
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .highlight-title {
+            font-weight: 700;
+            color: var(--primary-green);
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .search-wrapper {
+            max-width: 750px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            gap: 12px;
+        }
+
+        .search-input-group {
+            position: relative;
+            flex: 1;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 20px 30px 20px 70px;
+            border-radius: 60px;
+            border: none;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+            font-size: 1.15rem;
+            transition: var(--transition-smooth);
+        }
+
+        .search-btn {
+            background: linear-gradient(135deg, #d4af37, #c99b2c);
+            color: white;
+            border: none;
+            padding: 0 40px;
+            border-radius: 60px;
+            font-weight: 800;
+            font-size: 1.05rem;
+            transition: var(--transition-smooth);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.35);
+        }
+
+        .search-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 45px rgba(212, 175, 55, 0.45);
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+            transform: translateY(-2px);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-green);
+            font-size: 1.4rem;
+            z-index: 10;
+        }
+
+        .region-section {
+            margin-bottom: 5rem;
+        }
+
+        .region-header {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.08), rgba(212, 175, 55, 0.06));
+            padding: 2rem 2.5rem;
+            border-radius: 28px;
+            margin-bottom: 2.5rem;
+            border-left: 6px solid var(--primary-green);
+            border-top: 1px solid rgba(45, 90, 39, 0.1);
+            border-bottom: 1px solid rgba(45, 90, 39, 0.1);
+        }
+
+        .region-title {
+            color: var(--primary-green);
+            font-weight: 900;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .filter-pill {
+            padding: 12px 28px;
+            border-radius: 50px;
+            border: 2px solid #e8e8e8;
+            background: white;
+            color: #666;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+            font-size: 0.95rem;
+        }
+
+        .filter-pill.active {
+            background: linear-gradient(135deg, #2d5a27, #3d7a37);
+            border-color: var(--primary-green);
+            color: white;
+            box-shadow: 0 10px 30px rgba(45, 90, 39, 0.35);
+        }
+
+        .filter-pill:hover:not(.active) {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+            background: rgba(45, 90, 39, 0.05);
+        }
+
+        .region-filter-container {
+            position: relative;
+            margin-bottom: 3.5rem;
+        }
+
+        #regionFilters {
+            padding: 1rem 0;
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: auto;
+            scrollbar-color: var(--primary-green) #eee;
+        }
+
+        #regionFilters::-webkit-scrollbar {
+            height: 10px;
+            display: block;
+        }
+
+        #regionFilters::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        #regionFilters::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #2d5a27, #3d7a37);
+            border-radius: 10px;
+        }
+
+        .card-header-hero {
+            padding: 1.75rem;
+            background: linear-gradient(135deg, white 0%, #fdfaf5 100%);
+        }
+
+        .tribe-name {
+            font-weight: 900;
+            font-size: 1.75rem;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .tribe-tagline {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .content-text {
+            color: #444;
+            line-height: 1.75;
+            font-size: 0.98rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section text-center">
+        <div class="container" data-aos="fade-up">
+            <i class="fas fa-landmark" style="font-size: 4rem; margin-bottom: 1.5rem; opacity: 0.9;"></i>
+            <h1 class="display-2 fw-bold mb-3" style="font-weight: 900;">Cameroon Cultural Directory</h1>
+            <p class="lead opacity-85 mb-5 mx-auto" style="max-width: 750px; font-size: 1.25rem;">Explore the rich tapestry of cultures, traditions, and histories of Cameroon's diverse ethnic groups</p>
+            
+            <div class="search-wrapper mb-4">
+                <div class="search-input-group">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search by tribe name, region, tradition, or cuisine..." id="tribeSearch">
+                </div>
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-magic me-2"></i> Explore
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-6" style="padding-top: 5rem; padding-bottom: 5rem;">
+        <div class="region-filter-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex gap-3 overflow-auto pb-3" id="regionFilters">
+                <div class="filter-pill active" data-region="all">
+                    <i class="fas fa-globe-africa me-2"></i>All Regions
+                </div>
+            </div>
+        </div>
+
+        <div id="tribesContainer">
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 800, once: true });
+
+            const data = {
+                "cameroon_tribes_by_region": [
+                    {
+                        "region": "West Region",
+                        "tribes": [
+                            {
+                                "name": "Bamileke",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Danse_traditionnelle_Bamil%C3%A9k%C3%A9.jpg",
+                                "overview": "Vibrant traditional celebration masks and dense grassfields beadwork.",
+                                "highlights": {
+                                    "cultural_heritage": "Rich traditions passed down through dynamic chiefdom governance structures called Chefferies.",
+                                    "traditional_practices": "Customs unique to this community include ancestral skull veneration and complex architectural pillar carving.",
+                                    "community_life": "Vibrant social bonds structured through powerful elite secret societies such as the Kuosi (Elephant Society)."
+                                },
+                                "meals_cuisine": "Koki (savory steamed bean cake prepared with palm oil) and Achu (pounded taro served with a rich yellow soup).",
+                                "festivals": "The biennial multi-day cultural gathering displaying royal masquerades, dance competitions, and arts.",
+                                "marriage_traditions": "Involves rigorous formal introductions, extensive negotiations over the traditional bride price with family elders, and the symbolic handing over of palm wine.",
+                                "history": "Traced back to early migrations from the upper Adamawa plateau down into the rugged high-altitude valleys of western Cameroon."
+                            },
+                            {
+                                "name": "Bamun",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Palais_du_Sultan_des_Bamouns_a_Foumban.jpg",
+                                "overview": "Historic Islamic and local kingdom synthesis famed for royal palace craftsmanship and early script writing.",
+                                "highlights": {
+                                    "cultural_heritage": "Deep artistic heritage led by the supreme Sultan dynasty located at the historic Foumban palace.",
+                                    "traditional_practices": "Highly refined bronze lost-wax casting techniques and elaborate wood carvings of multi-headed serpents.",
+                                    "community_life": "Strong institutional cohesion centered around the palace courtyard and regular assemblies with regional sub-chiefs."
+                                },
+                                "meals_cuisine": "Ndolé served with traditional boiled plantains or dynamic corn couscous accompanied by native leaf stews.",
+                                "festivals": "The grand Nguon Festival, a historic periodic event where the Sultan faces public accountability rituals and spectacular warrior parades.",
+                                "marriage_traditions": "Blends Islamic Nikah protocols with localized Bamun custom presentations, exchange of symbolic kola nuts, and royal lineage blessings.",
+                                "history": "Founded in the late 14th century by King Nchare Yen, developing an exceptional independent empire that invented its own writing script under Sultan Njoya."
+                            },
+                            {
+                                "name": "Menoua",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ndop_Fabric_Cameroon.jpg",
+                                "overview": "A specific highland subgroup of the broader Grassfields culture noted for intense agricultural mastery and intricate textiles.",
+                                "highlights": {
+                                    "cultural_heritage": "Preservation of royal Ndop fabric patterns dyed with indigo using symbolic geometric scripts.",
+                                    "traditional_practices": "Rhythmic execution of the energetic 'Ken' dance performed exclusively using long hand-woven fibers.",
+                                    "community_life": "Organized into locally autonomous village associations and thriving rotational micro-finance networks called tontines."
+                                },
+                                "meals_cuisine": "Condré (savory plantain hotpot seasoned thoroughly with local spices and smoked meats).",
+                                "festivals": "Local chiefdom cultural weeks showcasing historical war dances, specialized handicrafts, and agricultural displays.",
+                                "marriage_traditions": "Characterized by multiple steps of familial consent, presentation of physical gifts to maternal uncles, and festive community feasts.",
+                                "history": "Evolved out of concentrated waves of Grassfields family groups settling around the steep mountainous terrain of modern-day Dschang."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "Centre Region",
+                        "tribes": [
+                            {
+                                "name": "Beti",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Femme_Beti_en_tenue_traditionnelle.jpg",
+                                "overview": "Equatorial forest community celebrated for complex oral epics and dynamic percussive instrumentation.",
+                                "highlights": {
+                                    "cultural_heritage": "Rich oral history kept alive by traveling master storytellers using stringed instruments.",
+                                    "traditional_practices": "Utilization of localized tree bark mixtures and forest elements for community healing and protection ceremonies.",
+                                    "community_life": "Clan-based social structure emphasizing deep mutual assistance across extended forest families."
+                                },
+                                "meals_cuisine": "Sanga (a traditional dish made of fresh corn, palm nut juice, and finely shredded nightshade leaves).",
+                                "festivals": "Periodic forest cultural festivals highlighting fast-paced rhythmic Bikutsi music and dance styles.",
+                                "marriage_traditions": "Requires formal presentation of forest agricultural tools, ancestral blessings, and large family banquets.",
+                                "history": "Part of the extensive Bantu migration phase moving south into the deep primary equatorial rainforest zones."
+                            },
+                            {
+                                "name": "Bassa (Centre)",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Fang_mask_tellem.jpg",
+                                "overview": "Inland forest cluster of the historic Bassa people retaining distinct ancestral connections to the sacred cave of Ngog Lituba.",
+                                "highlights": {
+                                    "cultural_heritage": "Deep spiritual reverence for structural natural monuments and ancient forest sanctuaries.",
+                                    "traditional_practices": "Crafting of expressive, functional wooden implements used in sacred ancestral communication rituals.",
+                                    "community_life": "Strong respect for the authority of the 'Mbombog' lineage spiritual leaders."
+                                },
+                                "meals_cuisine": "Mintoumba (fermented cassava bread mixed with palm oil and steamed in local green leaves).",
+                                "festivals": "Ancestral remembrance gatherings held near rivers or significant historical forest sites.",
+                                "marriage_traditions": "Traditional demands focus heavily on lineage validation, exchange of palm wine containers, and multi-family consensus.",
+                                "history": "Emanated from the legendary cradle of Ngog Lituba cave, expanding across the center and coastal forest zones over centuries."
+                            },
+                            {
+                                "name": "Ewondo",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Ewondo_Elders_Gathering.jpg",
+                                "overview": "The foundational Beti subgroup historically occupying the central plateau of Yaoundé.",
+                                "highlights": {
+                                    "cultural_heritage": "Stewardship of the traditional 'Abbia' gambling stone game featuring beautiful symbolic engravings.",
+                                    "traditional_practices": "Orchestrating synchronized xylophone ensembles during formal community greetings.",
+                                    "community_life": "Structured around village headmen who work in alignment with regional land inheritance systems."
+                                },
+                                "meals_cuisine": "Pounded cassava leaves (Okok) prepared beautifully with peanut paste and unrefined palm oil.",
+                                "festivals": "Feasts celebrating seasonal wild fruit harvests and the historic foundation updates of the Yaoundé chiefdoms.",
+                                "marriage_traditions": "Includes traditional bride pricing rituals emphasizing fabric bundles, salt, and domestic livestock requirements.",
+                                "history": "Established prominent trade routes through the central forest belt before becoming the urban heart of modern political Cameroon."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "Littoral Region",
+                        "tribes": [
+                            {
+                                "name": "Sawa (Coastal Peoples)",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Parade_au_Ngouon_2018.jpg",
+                                "overview": "Water-spirit oriented coastal civilization with unmatched maritime expertise and canoe navigation.",
+                                "highlights": {
+                                    "cultural_heritage": "Spiritual worship and communication with the 'Jengu' water deities.",
+                                    "traditional_practices": "High-stakes elite competitive canoe racing involving massive, hand-carved riverboats.",
+                                    "community_life": "Cohesive coastal hierarchy bound together by maritime laws and shared coastal resources."
+                                },
+                                "meals_cuisine": "Ndolé (bitterleaf stew cooked with crushed peanuts, prawns, and beef, typically eaten with Miondo).",
+                                "festivals": "The massive Ngondo Festival, an annual coastal assembly on the banks of the Wouri River featuring underwater message delivery.",
+                                "marriage_traditions": "Groom's family arrives by water or stylized foot procession presenting ocean catches, fabric, and formal dowry boxes.",
+                                "history": "Inhabited the Atlantic coastal bights for centuries, maintaining early trade contacts with European maritime merchants."
+                            },
+                            {
+                                "name": "Duala",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Femmes_Sawa_en_Kaba.jpg",
+                                "overview": "The principal merchant and aristocratic lineage group along the estuary of the Wouri River.",
+                                "highlights": {
+                                    "cultural_heritage": "Dignified presentation of women clad in volumetric, beautifully tailored Kaba Ngondo dresses.",
+                                    "traditional_practices": "Using complex talking drum systems called 'Mengele' to transmit information across the coastal waters.",
+                                    "community_life": "Centered around aristocratic ruling houses such as King Bell and King Akwa dynasties."
+                                },
+                                "meals_cuisine": "Fish soup served alongside thin, fermented cassava sticks called Miondo.",
+                                "festivals": "Annual royal boat regattas and urban cultural parades celebrating historical independence.",
+                                "marriage_traditions": "Strict compliance with Sawa marital laws, including formal presentations of fine linen clothes and gold jewelry ornaments.",
+                                "history": "Migrated along the coast to settle permanently at the estuary, developing into a powerful trading monopoly by the 18th century."
+                            },
+                            {
+                                "name": "Bassa (Littoral)",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Assiko_Dance_Littoral.jpg",
+                                "overview": "Coastal forest inhabitants renowned across Africa for originating the hyper-rhythmic Assiko guitar dance style.",
+                                "highlights": {
+                                    "cultural_heritage": "Preservation of complex footwork dances matching acoustic pulse strings.",
+                                    "traditional_practices": "Advanced use of indigenous forest medicine extracts for setting bone fractures.",
+                                    "community_life": "Democratic village councils operating under the strict social oversight of traditional elders."
+                                },
+                                "meals_cuisine": "Bongo Tjobi (a rich, jet-black aromatic fish stew cooked with native roasted wild bark seeds).",
+                                "festivals": "Assiko music and dance marathons drawing thousands of performers to celebrate rhythmic storytelling.",
+                                "marriage_traditions": "Deeply traditional processes involving extensive family trees checking for shared lineage before confirmation.",
+                                "history": "Defended their forest domains fiercely during early colonial expansion, producing national liberation figures like Ruben Um Nyobé."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "Northwest Region",
+                        "tribes": [
+                            {
+                                "name": "Kom",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Palais_du_Fon_de_Kom.jpg",
+                                "overview": "High-altitude Grassfield kingdom possessing world-class sacred wood sculptures and complex royal court systems.",
+                                "highlights": {
+                                    "cultural_heritage": "Deep spiritual and physical allegiance to the sacred dynastic statue known as the Afo-A-Kom.",
+                                    "traditional_practices": "Constructing vast, multi-chambered royal palaces utilizing thick organic mountain thatch.",
+                                    "community_life": "Governance run by the supreme 'Fon' alongside the executive judicial secret society called the Kwifoyn."
+                                },
+                                "meals_cuisine": "Pounded corn fufu served with huckleberry leaves (Njama Njama) cooked simply in red palm oil.",
+                                "festivals": "Royal court dance displays where the Fon joins masked masquerades in displaying ancestral dance steps.",
+                                "marriage_traditions": "Requires symbolic gifts of high-quality firewood to the mother-in-law, palm oil jugs, and final Fon registration.",
+                                "history": "Led into the rugged hills of Laikom by a legendary snake trail, establishing one of the most powerful sovereign Grassfields states."
+                            },
+                            {
+                                "name": "Nso",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Toghu_Northwest_Cameroon.jpg",
+                                "overview": "Majestic Grassfields kingdom renowned for producing the iconic hand-embroidered velvet Toghu attire.",
+                                "highlights": {
+                                    "cultural_heritage": "Universal pride in the preservation of hand-stitched bright geometric pattern clothing designs.",
+                                    "traditional_practices": "Ritual pouring of palm wine from specialized gourds during family dynamic prayers.",
+                                    "community_life": "Strong civic alignment with the institutional branches of the royal palace in Kumbo."
+                                },
+                                "meals_cuisine": "Pounded potatoes mixed completely with black beans and seasoned with local oils.",
+                                "festivals": "The Ngonnso Festival, an annual cultural gathering honoring the founding mother of the Nso dynasty.",
+                                "marriage_traditions": "Strict multi-phase process including long courtship checks, extensive cowry or modern gift equivalents, and communal fufu sharing.",
+                                "history": "Founded by Ngonnso, a royal princess who broke away from the Tikar lineage to establish an independent kingdom in Kumbo."
+                            },
+                            {
+                                "name": "Bali",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Lela_Festival_Bali_Nyonga.jpg",
+                                "overview": "Unique Chamba-descended military and cultural kingdom distinguished by specialized languages and warrior wear.",
+                                "highlights": {
+                                    "cultural_heritage": "Distinctive warrior regalia featuring tall feathered headwear and brass armbands.",
+                                    "traditional_practices": "Preservation of the ancestral Chamba speech elements during royal internal rituals.",
+                                    "community_life": "Highly disciplined social structure tracing lineage down through military defensive units."
+                                },
+                                "meals_cuisine": "Vibrant vegetable stews paired with roasted cocoyams and dried bushmeat.",
+                                "festivals": "The Lela Festival, a monumental annual four-day military banner and ancestor veneration dance.",
+                                "marriage_traditions": "Includes ceremonial clothing presentations from the groom's family and traditional dynamic blessings from the village Fon.",
+                                "history": "Migrated dynamically from the upper Benue river valley as cavalry warriors, blending with local populations to form Bali Nyonga."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "Southwest Region",
+                        "tribes": [
+                            {
+                                "name": "Bakweri",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Male_Dance_Bakweri.jpg",
+                                "overview": "The spiritual elephant dance society rooted along the volcanic slopes of Mount Cameroon.",
+                                "highlights": {
+                                    "cultural_heritage": "Sacred male society performing the iconic elephant dance while adorned in natural fiber costumes.",
+                                    "traditional_practices": "Ritual hunting ceremonies deep within the Mount Cameroon forest reserves.",
+                                    "community_life": "Close-knit mountain villages maintaining ancient spiritual connections to the volcano's energy."
+                                },
+                                "meals_cuisine": "Eru vegetable soup cooked with bitterleaf, waterleaf, and served with waterfufu.",
+                                "festivals": "Mount Cameroon ascent rituals and thanksgiving ceremonies for safe climbing expeditions.",
+                                "marriage_traditions": "Involves traditional mountain produce gifts, forest honey offerings, and communal dancing celebrations.",
+                                "history": "Indigenous inhabitants of the volcanic mountain regions, living in harmony with Mount Cameroon for generations."
+                            },
+                            {
+                                "name": "Bakossi",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Lac_m%C3%A2le_et_lac_femelle_du_Mont_Manenguba.jpg",
+                                "overview": "Guardians of the sacred twin crater lakes of Mount Manenguba in the mountainous highlands.",
+                                "highlights": {
+                                    "cultural_heritage": "Deep spiritual connection to the male and female sacred lakes of Mount Manenguba.",
+                                    "traditional_practices": "Ritual offerings and ceremonies performed at the sacred lakes for fertility and prosperity.",
+                                    "community_life": "Mountain village clusters bound by shared reverence for natural landmarks and spiritual sites."
+                                },
+                                "meals_cuisine": "Koki beans and waterfufu with spicy palm nut soup.",
+                                "festivals": "Annual lake purification ceremonies and harvest thanksgiving celebrations.",
+                                "marriage_traditions": "Requires blessings from lake guardians and traditional gifts representing mountain produce.",
+                                "history": "Established settlements around the volcanic crater lakes, developing unique water-centric spiritual practices."
+                            },
+                            {
+                                "name": "Tiv",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Tiv_Traditional_Anger_Fabric.jpg",
+                                "overview": "Distinctive black-and-white striped heritage textiles and vibrant communal farming traditions.",
+                                "highlights": {
+                                    "cultural_heritage": "Signature black-and-white geometric fabric designs with deep symbolic meanings.",
+                                    "traditional_practices": "Communal farming cooperatives and rhythmic harvest songs.",
+                                    "community_life": "Extended family structures with strong clan identities and mutual aid systems."
+                                },
+                                "meals_cuisine": "Yam-based dishes with various vegetable sauces and traditional seasonings.",
+                                "festivals": "Yam harvest festivals celebrating agricultural abundance and community unity.",
+                                "marriage_traditions": "Involves yam presentations, family gatherings, and traditional dance celebrations.",
+                                "history": "Part of the broader Benue-Congo language family, with rich agricultural traditions spanning centuries."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "Adamawa Region",
+                        "tribes": [
+                            {
+                                "name": "Fulani (Fulbe)",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Fantasia_Cameroun.jpg",
+                                "overview": "Majestic northern equestrian culture with flowing grand boubous and ancient pastoral traditions.",
+                                "highlights": {
+                                    "cultural_heritage": "Rich nomadic pastoralist traditions and sophisticated cattle breeding expertise.",
+                                    "traditional_practices": "Equestrian displays, cattle herding techniques, and beautiful griot oral traditions.",
+                                    "community_life": "Pastoralist communities bound by deep respect for cattle and traditional leadership structures."
+                                },
+                                "meals_cuisine": "Fura da nono (fermented milk balls with millet porridge) and grilled meat delicacies.",
+                                "festivals": "Equestrian fantasia festivals showcasing horsemanship skills and colorful regalia.",
+                                "marriage_traditions": "Involves cattle presentations, elaborate clothing ceremonies, and community celebrations.",
+                                "history": "Migrated from the western Sahel, bringing rich pastoralist traditions to northern Cameroon."
+                            },
+                            {
+                                "name": "Tikar",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Artisanat_Tikar_Foumban.jpg",
+                                "overview": "Legendary bronze-smithing artisans and the ancestral royal lineage of many Grassfields kingdoms.",
+                                "highlights": {
+                                    "cultural_heritage": "Masterful bronze lost-wax casting techniques passed down through generations.",
+                                    "traditional_practices": "Metalworking crafts, royal artifacts creation, and traditional governance systems.",
+                                    "community_life": "Artisan communities organized around royal workshops and palace structures."
+                                },
+                                "meals_cuisine": "Corn-based dishes with various stews and locally sourced vegetables.",
+                                "festivals": "Artisan craft festivals celebrating metalworking and traditional arts.",
+                                "marriage_traditions": "Includes bronze craft presentations and royal blessings.",
+                                "history": "Ancestral royal lineage that founded many Grassfields kingdoms, renowned for artistic excellence."
+                            },
+                            {
+                                "name": "Mbum",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Greniers_traditionnels_Mbum.jpg",
+                                "overview": "Traditional grain storage architecture and peaceful agricultural communities of the Adamawa plateau.",
+                                "highlights": {
+                                    "cultural_heritage": "Impressive cylindrical grain storage structures built from local materials.",
+                                    "traditional_practices": "Agricultural techniques, grain preservation methods, and communal farming systems.",
+                                    "community_life": "Peaceful agricultural communities with strong cooperative traditions."
+                                },
+                                "meals_cuisine": "Millet and sorghum-based dishes with traditional sauces and vegetables.",
+                                "festivals": "Harvest thanksgiving festivals and grain storage inauguration ceremonies.",
+                                "marriage_traditions": "Involves agricultural produce gifts and community feasts.",
+                                "history": "Long-standing agricultural communities with sophisticated grain storage technologies."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "Far North Region",
+                        "tribes": [
+                            {
+                                "name": "Kanuri",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Chefferie_Kanuri_Far_North.jpg",
+                                "overview": "Dignified Sahelian court parades with long white protective turbans and ancient imperial traditions.",
+                                "highlights": {
+                                    "cultural_heritage": "Rich imperial history dating back to the ancient Kanem-Bornu empire.",
+                                    "traditional_practices": "Elaborate turban tying techniques, royal court protocols, and Islamic scholarship.",
+                                    "community_life": "Hierarchical social structure with strong traditional leadership and Islamic institutions."
+                                },
+                                "meals_cuisine": "Tuwo (millet porridge) with Miyan Kuka (baobab leaf soup) and Kosai (bean cakes).",
+                                "festivals": "Islamic religious festivals and traditional durbars showcasing royal regalia.",
+                                "marriage_traditions": "Blends Islamic traditions with local Kanuri customs and celebrations.",
+                                "history": "Descendants of the powerful Kanem-Bornu empire, one of Africa's longest-lasting empires."
+                            },
+                            {
+                                "name": "Mandara",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sultanat_de_Mora_Mandara.jpg",
+                                "overview": "Ancient mountain fortress structures, stonework outcroppings, and the historic sultanate of Mora.",
+                                "highlights": {
+                                    "cultural_heritage": "Mountain fortress architecture and ancient stonework techniques.",
+                                    "traditional_practices": "Terrace agriculture, mountain defense systems, and craft traditions.",
+                                    "community_life": "Mountain communities organized around ancient sultanate structures."
+                                },
+                                "meals_cuisine": "Sorghum-based dishes with mountain vegetables and traditional sauces.",
+                                "festivals": "Mountain cultural festivals and sultanate ceremonies.",
+                                "marriage_traditions": "Involves mountain produce and traditional craft presentations.",
+                                "history": "Established ancient mountain sultanates with impressive defensive architecture."
+                            },
+                            {
+                                "name": "Mafa",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Paysage_Mafa_Monts_Mandara.jpg",
+                                "overview": "Beautiful, engineering-focused stone agricultural terraces lining steep mountain walls.",
+                                "highlights": {
+                                    "cultural_heritage": "Remarkable stone terrace engineering for mountain agriculture.",
+                                    "traditional_practices": "Mountain terrace construction, irrigation systems, and agricultural techniques.",
+                                    "community_life": "Close-knit mountain communities with shared terrace maintenance systems."
+                                },
+                                "meals_cuisine": "Sorghum and millet dishes with locally grown mountain vegetables.",
+                                "festivals": "Harvest festivals celebrating successful terrace farming.",
+                                "marriage_traditions": "Includes stone-working demonstrations and agricultural gifts.",
+                                "history": "Developed extraordinary mountain terrace agriculture over centuries of inhabiting the Mandara Mountains."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "East Region",
+                        "tribes": [
+                            {
+                                "name": "Sara",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Pirogues_Sara_Est.jpg",
+                                "overview": "Savanna-edge river fishermen navigating matching hand-carved pirogues across eastern waterways.",
+                                "highlights": {
+                                    "cultural_heritage": "Expert canoe building and river navigation traditions.",
+                                    "traditional_practices": "Fishing techniques, canoe carving, and river-based community life.",
+                                    "community_life": "Riverbank communities with strong fishing cooperatives."
+                                },
+                                "meals_cuisine": "Fresh fish dishes with cassava and local riverbank vegetables.",
+                                "festivals": "River festivals and fishing season opening ceremonies.",
+                                "marriage_traditions": "Involves fish presentations and riverbank celebrations.",
+                                "history": "Long-standing riverine communities with rich fishing and navigation traditions."
+                            },
+                            {
+                                "name": "Gbaya",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Case_traditionnelle_Gbaya.jpg",
+                                "overview": "Earthen-wall residential design concepts native to the southeastern forest edge.",
+                                "highlights": {
+                                    "cultural_heritage": "Unique traditional architecture and earthen building techniques.",
+                                    "traditional_practices": "Hunting, gathering, and traditional iron working.",
+                                    "community_life": "Village communities organized around traditional leadership structures."
+                                },
+                                "meals_cuisine": "Cassava-based dishes with wild game and forest vegetables.",
+                                "festivals": "Hunting festivals and traditional ceremonies.",
+                                "marriage_traditions": "Involves hunting trophies and traditional craft presentations.",
+                                "history": "Indigenous forest communities with rich hunting and gathering traditions."
+                            },
+                            {
+                                "name": "Mandjia",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Recolte_Mandjia_Est.jpg",
+                                "overview": "Savanna transition farming communities processing agricultural crops using hand-woven trays.",
+                                "highlights": {
+                                    "cultural_heritage": "Traditional weaving techniques and agricultural processing methods.",
+                                    "traditional_practices": "Farming, weaving, and communal harvesting practices.",
+                                    "community_life": "Agricultural communities with strong cooperative traditions."
+                                },
+                                "meals_cuisine": "Local staples with traditional sauces and agricultural produce.",
+                                "festivals": "Harvest festivals and weaving competitions.",
+                                "marriage_traditions": "Includes woven craft presentations and agricultural gifts.",
+                                "history": "Agricultural communities with long-standing weaving and farming traditions."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "North Region",
+                        "tribes": [
+                            {
+                                "name": "Mada",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Musiciens_Mada_Nord.jpg",
+                                "overview": "Communal musical wind ensembles playing elongated, masterfully carved wood horns.",
+                                "highlights": {
+                                    "cultural_heritage": "Long wooden horn ensembles and traditional musical traditions.",
+                                    "traditional_practices": "Horn carving, musical performances, and communal ceremonies.",
+                                    "community_life": "Musical communities with strong ensemble traditions."
+                                },
+                                "meals_cuisine": "Sorghum-based dishes with local vegetables and sauces.",
+                                "festivals": "Musical festivals and horn ensemble performances.",
+                                "marriage_traditions": "Involves musical performances and traditional horn presentations.",
+                                "history": "Communities with rich musical and craft traditions spanning centuries."
+                            },
+                            {
+                                "name": "Guiziga",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Danse_Guiziga.jpg",
+                                "overview": "Community members dancing in unison inside local clay-walled compounds during harvest time.",
+                                "highlights": {
+                                    "cultural_heritage": "Vibrant communal dance traditions and clay compound architecture.",
+                                    "traditional_practices": "Communal dances, clay construction, and agricultural traditions.",
+                                    "community_life": "Tight-knit communities with shared compound living arrangements."
+                                },
+                                "meals_cuisine": "Local agricultural staples with traditional sauces.",
+                                "festivals": "Harvest dance festivals and communal celebration events.",
+                                "marriage_traditions": "Includes communal dances and traditional gift exchanges.",
+                                "history": "Communities with rich dance and agricultural traditions."
+                            },
+                            {
+                                "name": "Dagara",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Poterie_Dagara_Nord.jpg",
+                                "overview": "Artisan hands shaping regional patterned earthenware pottery using open fires.",
+                                "highlights": {
+                                    "cultural_heritage": "Traditional pottery making techniques and decorative patterns.",
+                                    "traditional_practices": "Pottery craftsmanship, open-fire techniques, and traditional designs.",
+                                    "community_life": "Artisan communities with shared pottery traditions."
+                                },
+                                "meals_cuisine": "Local staples served in traditional pottery vessels.",
+                                "festivals": "Pottery festivals and craft market events.",
+                                "marriage_traditions": "Includes pottery presentations and craft demonstrations.",
+                                "history": "Artisan communities with long-standing pottery traditions."
+                            }
+                        ]
+                    },
+                    {
+                        "region": "South Region",
+                        "tribes": [
+                            {
+                                "name": "Bulu",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Tambour_d%27avertissement_Bulu.jpg",
+                                "overview": "Deep-forest structural instruments including massive hollowed talking log drums.",
+                                "highlights": {
+                                    "cultural_heritage": "Talking log drum communication systems and forest instrument crafting.",
+                                    "traditional_practices": "Log drum making, forest communication techniques, and oral traditions.",
+                                    "community_life": "Forest communities with rich oral history and communication traditions."
+                                },
+                                "meals_cuisine": "Plantain-based dishes with forest vegetables and game.",
+                                "festivals": "Forest drum festivals and oral history storytelling events.",
+                                "marriage_traditions": "Involves drum performances and forest product presentations.",
+                                "history": "Deep forest communities with sophisticated communication systems."
+                            },
+                            {
+                                "name": "Fang (South)",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Joueur_de_Mvet_Fang.jpg",
+                                "overview": "Orally preserved ancestral history narratives accompanied by the Mvet stringed harp.",
+                                "highlights": {
+                                    "cultural_heritage": "Mvet harp traditions and rich oral history storytelling.",
+                                    "traditional_practices": "Harp playing, oral history preservation, and forest crafts.",
+                                    "community_life": "Communities centered around oral history and musical traditions."
+                                },
+                                "meals_cuisine": "Yam and plantain dishes with forest vegetables and spices.",
+                                "festivals": "Mvet music festivals and oral history celebrations.",
+                                "marriage_traditions": "Involves Mvet performances and oral history blessings.",
+                                "history": "Communities with extraordinary oral history traditions spanning centuries."
+                            },
+                            {
+                                "name": "Pov",
+                                "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Foret_Equatoriale_Sud_Cameroun.jpg",
+                                "overview": "Thick, dense equatorial primary jungle paths characterizing native Pov territories.",
+                                "highlights": {
+                                    "cultural_heritage": "Deep forest knowledge and jungle navigation expertise.",
+                                    "traditional_practices": "Forest hunting, gathering, and traditional ecological knowledge.",
+                                    "community_life": "Forest communities with strong environmental knowledge systems."
+                                },
+                                "meals_cuisine": "Forest-based dishes with local game and jungle vegetables.",
+                                "festivals": "Forest thanksgiving ceremonies and hunting festivals.",
+                                "marriage_traditions": "Involves forest product presentations and jungle survival demonstrations.",
+                                "history": "Indigenous forest communities with deep ecological knowledge."
+                            }
+                        ]
+                    }
+                ]
+            };
+
+            let currentRegion = 'all';
+            let tabCounter = 0;
+
+            function generateUniqueId() {
+                return 'tribe-tab-' + (++tabCounter);
+            }
+
+            function renderRegions() {
+                const regionFilters = document.getElementById('regionFilters');
+                const allBtn = regionFilters.querySelector('[data-region="all"]');
+                
+                data.cameroon_tribes_by_region.forEach(regionData => {
+                    const pill = document.createElement('div');
+                    pill.className = 'filter-pill';
+                    pill.innerHTML = `<i class="fas fa-map-marker-alt me-2"></i>${regionData.region}`;
+                    pill.setAttribute('data-region', regionData.region);
+                    pill.addEventListener('click', () => {
+                        document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+                        pill.classList.add('active');
+                        currentRegion = regionData.region;
+                        document.getElementById('tribeSearch').value = '';
+                        renderTribes();
+                    });
+                    regionFilters.appendChild(pill);
+                });
+
+                allBtn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+                    allBtn.classList.add('active');
+                    currentRegion = 'all';
+                    document.getElementById('tribeSearch').value = '';
+                    renderTribes();
+                });
+            }
+
+            function renderTribes() {
+                const container = document.getElementById('tribesContainer');
+                const searchTerm = document.getElementById('tribeSearch').value.toLowerCase();
+                
+                container.innerHTML = '';
+                let hasResults = false;
+
+                data.cameroon_tribes_by_region.forEach((regionData, regionIndex) => {
+                    const filteredTribes = regionData.tribes.filter(tribe => {
+                        const matchesRegion = currentRegion === 'all' || (regionData.region === currentRegion);
+                        
+                        const name = (tribe.name || '').toLowerCase();
+                        const overview = (tribe.overview || '').toLowerCase();
+                        const region = regionData.region.toLowerCase();
+                        const meals = (tribe.meals_cuisine || '').toLowerCase();
+                        const festivals = (tribe.festivals || '').toLowerCase();
+                        const history = (tribe.history || '').toLowerCase();
+                        
+                        const matchesSearch = name.includes(searchTerm) || 
+                                            overview.includes(searchTerm) ||
+                                            region.includes(searchTerm) ||
+                                            meals.includes(searchTerm) ||
+                                            festivals.includes(searchTerm) ||
+                                            history.includes(searchTerm);
+                                            
+                        return matchesRegion && matchesSearch;
+                    });
+
+                    if (filteredTribes.length > 0) {
+                        hasResults = true;
+                        
+                        const regionSection = document.createElement('div');
+                        regionSection.className = 'region-section';
+                        regionSection.setAttribute('data-aos', 'fade-up');
+                        regionSection.setAttribute('data-aos-delay', (regionIndex * 100));
+                        
+                        regionSection.innerHTML = `
+                            <div class="region-header">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fas fa-map-marked-alt" style="font-size: 2rem; color: var(--primary-green);"></i>
+                                    <h2 class="region-title">${regionData.region}</h2>
+                                </div>
+                            </div>
+                            <div class="row tribe-grid" id="grid-${regionData.region.replace(/\s/g, '-')}"></div>
+                        `;
+                        container.appendChild(regionSection);
+
+                        const grid = regionSection.querySelector('.tribe-grid');
+                        
+                        filteredTribes.forEach((tribe, tribeIndex) => {
+                            const col = document.createElement('div');
+                            col.className = 'col-12';
+                            col.setAttribute('data-aos', 'fade-up');
+                            col.setAttribute('data-aos-delay', (tribeIndex * 150));
+
+                            const overviewId = generateUniqueId();
+                            const highlightsId = generateUniqueId();
+                            const mealsId = generateUniqueId();
+                            const festivalsId = generateUniqueId();
+                            const marriageId = generateUniqueId();
+                            const historyId = generateUniqueId();
+
+                            col.innerHTML = `
+                                <div class="tribe-card">
+                                    <div class="tribe-img-wrapper">
+                                        <img src="${tribe.image_url}" class="tribe-img" alt="${tribe.name}">
+                                        <span class="region-badge"><i class="fas fa-location-dot me-1"></i>${regionData.region}</span>
+                                        <span class="tribe-badge"><i class="fas fa-users me-1"></i>${tribe.name}</span>
+                                    </div>
+                                    <div class="card-header-hero">
+                                        <h2 class="tribe-name">${tribe.name}</h2>
+                                        <p class="tribe-tagline">${tribe.overview}</p>
+                                    </div>
+                                    <div class="p-4 pt-0">
+                                        <ul class="nav nav-pills mb-4 flex-wrap" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#${overviewId}" type="button" role="tab">
+                                                    <i class="fas fa-info-circle me-2"></i>Overview
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#${highlightsId}" type="button" role="tab">
+                                                    <i class="fas fa-star me-2"></i>Highlights
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#${mealsId}" type="button" role="tab">
+                                                    <i class="fas fa-utensils me-2"></i>Meals & Cuisine
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#${festivalsId}" type="button" role="tab">
+                                                    <i class="fas fa-calendar-alt me-2"></i>Festivals
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#${marriageId}" type="button" role="tab">
+                                                    <i class="fas fa-heart me-2"></i>Marriage Traditions
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#${historyId}" type="button" role="tab">
+                                                    <i class="fas fa-book me-2"></i>History
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="${overviewId}" role="tabpanel">
+                                                <h4 class="section-title"><i class="fas fa-info-circle"></i>Overview</h4>
+                                                <p class="content-text">${tribe.overview}</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="${highlightsId}" role="tabpanel">
+                                                <h4 class="section-title"><i class="fas fa-star"></i>Highlights</h4>
+                                                <div class="highlight-item">
+                                                    <div class="highlight-title"><i class="fas fa-crown me-2"></i>Cultural Heritage</div>
+                                                    <p class="mb-0 content-text">${tribe.highlights.cultural_heritage}</p>
+                                                </div>
+                                                <div class="highlight-item">
+                                                    <div class="highlight-title"><i class="fas fa-hands me-2"></i>Traditional Practices</div>
+                                                    <p class="mb-0 content-text">${tribe.highlights.traditional_practices}</p>
+                                                </div>
+                                                <div class="highlight-item">
+                                                    <div class="highlight-title"><i class="fas fa-handshake me-2"></i>Community Life</div>
+                                                    <p class="mb-0 content-text">${tribe.highlights.community_life}</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="${mealsId}" role="tabpanel">
+                                                <h4 class="section-title"><i class="fas fa-utensils"></i>Meals & Cuisine</h4>
+                                                <p class="content-text">${tribe.meals_cuisine}</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="${festivalsId}" role="tabpanel">
+                                                <h4 class="section-title"><i class="fas fa-calendar-alt"></i>Festivals</h4>
+                                                <p class="content-text">${tribe.festivals}</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="${marriageId}" role="tabpanel">
+                                                <h4 class="section-title"><i class="fas fa-heart"></i>Marriage Traditions</h4>
+                                                <p class="content-text">${tribe.marriage_traditions}</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="${historyId}" role="tabpanel">
+                                                <h4 class="section-title"><i class="fas fa-book"></i>History</h4>
+                                                <p class="content-text">${tribe.history}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            grid.appendChild(col);
+                        });
+                    }
+                });
+
+                if (!hasResults) {
+                    container.innerHTML = `
+                        <div class="text-center py-10">
+                            <i class="fas fa-search" style="font-size: 5rem; color: #ccc; margin-bottom: 2rem;"></i>
+                            <h3 style="color: #666; font-weight: 700;">No tribes found</h3>
+                            <p class="text-muted mt-2" style="font-size: 1.1rem;">Try adjusting your search or filter to discover amazing cultures!</p>
+                        </div>
+                    `;
+                }
+
+                AOS.refresh();
+            }
+
+            document.getElementById('tribeSearch').addEventListener('input', renderTribes);
+            document.getElementById('searchBtn').addEventListener('click', renderTribes);
+
+            renderRegions();
+            renderTribes();
+        });
+    </script>
+</body>
+</html>

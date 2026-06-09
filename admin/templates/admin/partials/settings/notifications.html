@@ -1,0 +1,49 @@
+
+<div class="card">
+    <div class="card-header">
+        <h3>Notification Settings</h3>
+    </div>
+    <div class="card-body">
+        <form id="notifications-settings-form">
+            <div class="form-group">
+                <label for="notify_new_user">
+                    <input type="checkbox" id="notify_new_user" name="notify_new_user" {{ 'checked' if settings.notify_new_user else '' }}>
+                    Notify Admin on New User Registration
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="notify_failed_login">
+                    <input type="checkbox" id="notify_failed_login" name="notify_failed_login" {{ 'checked' if settings.notify_failed_login else '' }}>
+                    Notify Admin on Failed Login Attempts
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="notify_password_change">
+                    <input type="checkbox" id="notify_password_change" name="notify_password_change" {{ 'checked' if settings.notify_password_change else '' }}>
+                    Notify User on Password Change
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="in_app_updates">
+                    <input type="checkbox" id="in_app_updates" name="in_app_updates" {{ 'checked' if settings.in_app_updates else '' }}>
+                    Enable In-App Updates Notifications
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="in_app_messages">
+                    <input type="checkbox" id="in_app_messages" name="in_app_messages" {{ 'checked' if settings.in_app_messages else '' }}>
+                    Enable In-App Messages
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

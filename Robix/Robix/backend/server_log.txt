@@ -1,0 +1,8 @@
+=== Starting server ===
+[OK] Gemini API configured as fallback
+[OK] Database: intelligent_tribes_data.json
+[OK] Chatbot ready
+Database initialized
+Starting Flask app on http://0.0.0.0:5000
+ * Serving Flask app 'api'
+ * Debug mode: on

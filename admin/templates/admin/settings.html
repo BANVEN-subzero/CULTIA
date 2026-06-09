@@ -40,37 +40,15 @@
     <div class="settings-content">
         <!-- General Settings Tab -->
         <div class="settings-tab active" id="general-tab">
-            <div class="card">
-                <div class="card-header">
-                    <h3>General Settings</h3>
-                </div>
-                <div class="card-body">
-                    <form id="general-settings-form">
-                        <div class="form-group">
-                            <label for="site-title">Site Title</label>
-                            <input type="text" id="site-title" name="site_title" class="form-control" value="{{ settings.site_title }}">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="site-description">Site Description</label>
-                            <textarea id="site-description" name="site_description" class="form-control" rows="3">{{ settings.site_description }}</textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="site-url">Site URL</label>
-                            <input type="url" id="site-url" name="site_url" class="form-control" value="{{ settings.site_url }}">
-                        </div>
-                        
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">Save Changes</button>
-                            <button type="reset" class="btn btn-secondary">Reset</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            {% include 'admin/partials/settings/general.html' %}
         </div>
         
-        <!-- Other tabs will be loaded dynamically via JavaScript -->
+        <div class="settings-tab" id="appearance-tab"></div>
+        <div class="settings-tab" id="email-tab"></div>
+        <div class="settings-tab" id="security-tab"></div>
+        <div class="settings-tab" id="notifications-tab"></div>
+        <div class="settings-tab" id="backup-tab"></div>
+        <div class="settings-tab" id="advanced-tab"></div>
     </div>
 </div>
 {% endblock %}
@@ -127,6 +105,21 @@
 
 .settings-content {
     flex: 1;
+}
+
+/* Tab visibility styles */
+.settings-tab {
+    display: none;
+}
+
+.settings-tab.active {
+    display: block;
+    animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .card {
@@ -294,6 +287,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then(html => {
                     tabContent.innerHTML = html;
                     tabContent.dataset.loaded = true;
+                    
+                    // Initialize backup tab features if it's the backup tab
+                    if (tabId === 'backup') {
+                        initializeBackupFeatures();
+                    }
                 })
                 .catch(error => {
                     console.error('Error loading tab content:', error);
@@ -312,13 +310,22 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const form = e.target;
             const formData = new FormData(form);
+            const jsonData = {};
             
-            fetch(form.action || window.location.href, {
+            formData.forEach((value, key) => {
+                if (form.querySelector(`[name="${key}"]`).type === 'checkbox') {
+                    jsonData[key] = form.querySelector(`[name="${key}"]`).checked;
+                } else {
+                    jsonData[key] = value;
+                }
+            });
+            
+            fetch('/admin/api/settings', {
                 method: 'POST',
-                body: formData,
+                body: JSON.stringify(jsonData),
                 headers: {
-                    'X-Requested-With': 'XMLHttpRequest',
-                    'X-CSRF-Token': ''
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
                 }
             })
             .then(response => response.json())
@@ -343,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert.role = 'alert';
         alert.innerHTML = `
             ${message}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <button type="button" class="btn-close" onclick="this.parentElement.remove()">×</button>
         `;
         
         // Add alert to the top of the settings content
@@ -352,9 +359,164 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Auto-dismiss after 5 seconds
         setTimeout(() => {
-            alert.classList.remove('show');
-            setTimeout(() => alert.remove(), 150);
+            alert.remove();
         }, 5000);
+    }
+    
+    // Initialize backup tab features
+    function initializeBackupFeatures() {
+        // Load existing backups
+        loadBackups();
+        
+        // Create backup button click handler
+        const createBackupBtn = document.getElementById('create-backup-btn');
+        if (createBackupBtn) {
+            createBackupBtn.addEventListener('click', function() {
+                const btn = this;
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating...';
+                
+                fetch('/admin/api/backup', {
+                    method: 'POST'
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        showAlert('success', data.message);
+                        loadBackups(); // Refresh backup list
+                    } else {
+                        showAlert('danger', data.message);
+                    }
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-download"></i> Create Backup Now';
+                })
+                .catch(error => {
+                    console.error('Error creating backup:', error);
+                    showAlert('danger', 'Error creating backup.');
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fas fa-download"></i> Create Backup Now';
+                });
+            });
+        }
+    }
+    
+    // Load backups
+    function loadBackups() {
+        const backupsList = document.getElementById('backups-list');
+        if (!backupsList) return;
+        
+        fetch('/admin/api/backups')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.backups.length > 0) {
+                    let html = '<ul class="list-group">';
+                    data.backups.forEach(backup => {
+                        let typeIcon = 'fa-file';
+                        let typeColor = 'text-muted';
+                        if (backup.type === 'SQLite Database') {
+                            typeIcon = 'fa-database';
+                            typeColor = 'text-primary';
+                        } else if (backup.type === 'SQL Dump') {
+                            typeIcon = 'fa-file-code';
+                            typeColor = 'text-success';
+                        }
+                        
+                        html += `
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fas ${typeIcon} ${typeColor} mr-2"></i>
+                                    <strong>${backup.filename}</strong>
+                                    <br>
+                                    <small class="text-muted">
+                                        Type: ${backup.type} | 
+                                        Created: ${new Date(backup.created).toLocaleString()} | 
+                                        Size: ${formatFileSize(backup.size)}
+                                    </small>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="/admin/api/backup/${backup.filename}/download" class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-download"></i> Download
+                                    </a>
+                                    ${backup.type === 'SQLite Database' ? `
+                                        <button class="btn btn-sm btn-outline-warning restore-backup-btn" data-filename="${backup.filename}">
+                                            <i class="fas fa-undo"></i> Restore
+                                        </button>
+                                    ` : ''}
+                                    <button class="btn btn-sm btn-outline-danger delete-backup-btn" data-filename="${backup.filename}">
+                                        <i class="fas fa-trash"></i> Delete
+                                    </button>
+                                </div>
+                            </li>
+                        `;
+                    });
+                    html += '</ul>';
+                    backupsList.innerHTML = html;
+                    
+                    // Attach delete and restore handlers
+                    document.querySelectorAll('.delete-backup-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const filename = this.dataset.filename;
+                            if (confirm(`Delete backup "${filename}"?`)) {
+                                fetch(`/admin/api/backup/${filename}`, {
+                                    method: 'DELETE'
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if (data.success) {
+                                        showAlert('success', data.message);
+                                        loadBackups();
+                                    } else {
+                                        showAlert('danger', data.message);
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error deleting backup:', error);
+                                    showAlert('danger', 'Error deleting backup.');
+                                });
+                            }
+                        });
+                    });
+                    
+                    document.querySelectorAll('.restore-backup-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const filename = this.dataset.filename;
+                            if (confirm(`WARNING: This will replace the current database with the backup "${filename}". A backup of your current DB will be created first. Are you sure?`)) {
+                                fetch(`/admin/api/backup/${filename}/restore`, {
+                                    method: 'POST'
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if (data.success) {
+                                        showAlert('success', data.message);
+                                        loadBackups();
+                                    } else {
+                                        showAlert('danger', data.message);
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error restoring backup:', error);
+                                    showAlert('danger', 'Error restoring backup.');
+                                });
+                            }
+                        });
+                    });
+                } else {
+                    backupsList.innerHTML = '<p class="text-muted">No backups yet. Click "Create Backup Now" to get started.</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading backups:', error);
+                backupsList.innerHTML = '<p class="text-danger">Error loading backups.</p>';
+            });
+    }
+    
+    // Helper to format file size
+    function formatFileSize(bytes) {
+        if (bytes === 0) return '0 Bytes';
+        const k = 1024;
+        const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
     }
 });
 </script>

@@ -250,6 +250,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/gamification.js"></script>
     <script src="js/settingsManager.js"></script>
 
     <script>
@@ -275,6 +276,13 @@
 
         async function init() {
             AOS.init({ duration: 800, once: true });
+
+            if (!window.gamification && typeof GamificationSystem !== 'undefined') {
+                window.gamification = new GamificationSystem();
+            }
+            if (window.gamification) {
+                await window.gamification.loadUserData();
+            }
             
             // Load Sidebar/Header
             fetch('includes/sidebar.html').then(r => r.text()).then(data => {
@@ -467,6 +475,25 @@
                     total: total,
                     percentage: pct
                 });
+            }
+
+            saveQuizResult(currentQuiz.id, score, total);
+        }
+
+        async function saveQuizResult(quizId, scoreValue, totalQuestions) {
+            try {
+                await fetch('/api/quiz-results', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        quiz_id: quizId,
+                        score: scoreValue,
+                        total_questions: totalQuestions
+                    }),
+                    credentials: 'include'
+                });
+            } catch (error) {
+                console.warn('Failed to save quiz result:', error);
             }
         }
 

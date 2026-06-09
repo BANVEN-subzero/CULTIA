@@ -221,7 +221,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
             AOS.init({ duration: 800, once: true });
-            const gamification = new GamificationSystem();
+            const gamification = window.gamification || new GamificationSystem();
             window.gamification = gamification;
             
             const settingsManager = new SettingsManager();

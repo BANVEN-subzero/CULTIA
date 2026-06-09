@@ -963,6 +963,366 @@
           "explanation": "Deforestation is Cameroon's main environmental challenge, threatening biodiversity and contributing to climate change."
         }
       ]
+    },
+    "baka-folklore": {
+      "id": "baka-folklore",
+      "name": "Baka Folklore",
+      "description": "Learn about the forest traditions and stories of the Baka people.",
+      "icon": "🌳",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What was the name of the Baka girl who learned to listen to the forest?",
+          "options": ["Mbeya", "Zara", "Ngozi", "Aisha"],
+          "correct": "Mbeya",
+          "explanation": "Mbeya was the Baka girl who learned to communicate with the forest by listening closely."
+        },
+        {
+          "id": 2,
+          "question": "Which tree is considered sacred in the Baka legend?",
+          "options": ["Ceiba tree", "Mangrove tree", "Palm tree", "Baobab tree"],
+          "correct": "Ceiba tree",
+          "explanation": "The sacred ceiba tree spoke to Mbeya and taught her how to listen to the forest."
+        },
+        {
+          "id": 3,
+          "question": "How do the Baka people know where to find food and water?",
+          "options": ["By listening to the forest", "By using modern maps", "By following other animals", "By asking travelers"],
+          "correct": "By listening to the forest",
+          "explanation": "The Baka listen to the leaves, birds, and insects to find their way in the forest."
+        },
+        {
+          "id": 4,
+          "question": "What is the Baka people's relationship with the forest?",
+          "options": ["The forest is their mother, father, and friend", "They fear the forest", "They see the forest as an enemy", "They avoid the forest"],
+          "correct": "The forest is their mother, father, and friend",
+          "explanation": "The Baka have a deep spiritual and practical connection with the forest, which provides for all their needs."
+        },
+        {
+          "id": 5,
+          "question": "What happened when Mbeya listened to the forest?",
+          "options": ["She found her way home", "She got lost forever", "She found a hidden treasure", "She became a forest spirit"],
+          "correct": "She found her way home",
+          "explanation": "By listening to the forest's voice, Mbeya was able to find her way back to her village."
+        }
+      ]
+    },
+    "kapsiki-folklore": {
+      "id": "kapsiki-folklore",
+      "name": "Kapsiki Folklore",
+      "description": "Discover the mountain legends and traditions of the Kapsiki people.",
+      "icon": "⛰️",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the name of the Kapsiki sacred mountain?",
+          "options": ["Rhumsiki", "Mount Cameroon", "Mount Oku", "Mount Kupe"],
+          "correct": "Rhumsiki",
+          "explanation": "Rhumsiki is the sacred mountain of the Kapsiki people, where the mountain spirits reside."
+        },
+        {
+          "id": 2,
+          "question": "What natural disaster struck the Kapsiki people long ago?",
+          "options": ["A great drought", "A great flood", "A great fire", "A great earthquake"],
+          "correct": "A great drought",
+          "explanation": "A terrible drought dried up the rivers and crops, leaving the Kapsiki hungry and thirsty."
+        },
+        {
+          "id": 3,
+          "question": "What did the chief do at dawn on the sacred mountain?",
+          "options": ["Struck a big black rock with his staff", "Prayed silently for 24 hours", "Climbed to the top and sang", "Left a sacrifice for the spirits"],
+          "correct": "Struck a big black rock with his staff",
+          "explanation": "Following the spirit's instructions, the chief struck the sacred rock at dawn, and water began to flow."
+        },
+        {
+          "id": 4,
+          "question": "What kind of homes do the Kapsiki people build?",
+          "options": ["Homes on terraces up the mountain", "Homes in trees", "Homes on water", "Homes underground"],
+          "correct": "Homes on terraces up the mountain",
+          "explanation": "The Kapsiki build their homes on terraces that climb up the steep Mandara Mountains."
+        },
+        {
+          "id": 5,
+          "question": "What do the Kapsiki people do to honor the mountain spirits?",
+          "options": ["Make offerings on the sacred rock", "Hold a fishing festival", "Dance in the streets", "Plant new trees"],
+          "correct": "Make offerings on the sacred rock",
+          "explanation": "The Kapsiki make annual offerings on the sacred rock at Rhumsiki to thank the mountain spirits."
+        }
+      ]
+    },
+    "massa-folklore": {
+      "id": "massa-folklore",
+      "name": "Massa Folklore",
+      "description": "Explore the cattle traditions and stories of the Massa people.",
+      "icon": "🐄",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What animal is most important to the Massa people?",
+          "options": ["Cattle", "Goats", "Sheep", "Horses"],
+          "correct": "Cattle",
+          "explanation": "Cattle are central to Massa culture, economy, and traditions."
+        },
+        {
+          "id": 2,
+          "question": "Where did the Massa's first cattle come from?",
+          "options": ["From Lake Chad, led by a spirit bull", "From a neighboring village", "From a magic seed", "From the forest"],
+          "correct": "From Lake Chad, led by a spirit bull",
+          "explanation": "According to legend, the first cattle came out of Lake Chad, led by a spirit in the shape of a giant bull."
+        },
+        {
+          "id": 3,
+          "question": "Who was the young Massa man who received the cattle?",
+          "options": ["Bako", "Njoya", "Mbeya", "Ngozi"],
+          "correct": "Bako",
+          "explanation": "Bako was the young Massa man who met the spirit bull and received the first cattle."
+        },
+        {
+          "id": 4,
+          "question": "What do the Massa use to decorate their cattle during festivals?",
+          "options": ["Colorful cloth and beads", "Flowers and leaves", "Paint and glitter", "Feathers and shells"],
+          "correct": "Colorful cloth and beads",
+          "explanation": "During festivals, Massa men decorate their cattle with colorful cloth and beads to show their beauty and status."
+        },
+        {
+          "id": 5,
+          "question": "What do the Massa believe about the spirit bull?",
+          "options": ["The spirit bull still watches over them and their herds", "The spirit bull lives in the forest", "The spirit bull returns every full moon", "The spirit bull is a god"],
+          "correct": "The spirit bull still watches over them and their herds",
+          "explanation": "The Massa believe the spirit of the giant bull still watches over them and their herds to this day."
+        }
+      ]
+    },
+    "yamba-folklore": {
+      "id": "yamba-folklore",
+      "name": "Yamba Folklore",
+      "description": "Learn about the peace traditions and sacred pipe of the Yamba people.",
+      "icon": "🕊️",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the Yamba people's most sacred object?",
+          "options": ["The Sacred Pipe of Peace", "A golden crown", "A magic drum", "A stone statue"],
+          "correct": "The Sacred Pipe of Peace",
+          "explanation": "The Sacred Pipe of Peace is the most sacred object of the Yamba people, used to make peace agreements."
+        },
+        {
+          "id": 2,
+          "question": "Who gave the sacred pipe to the Yamba chief?",
+          "options": ["His ancestor", "The king of the elephants", "The spirit of the forest", "The spirit of the lake"],
+          "correct": "His ancestor",
+          "explanation": "The chief's ancestor appeared to him in a dream and gave him the Sacred Pipe of Peace."
+        },
+        {
+          "id": 3,
+          "question": "What happened when the two chiefs smoked the pipe together?",
+          "options": ["They forgot their anger and hatred and made peace", "They fought a final battle", "They became sick", "They turned into animals"],
+          "correct": "They forgot their anger and hatred and made peace",
+          "explanation": "Smoking the pipe together made the two chiefs forget their differences and establish a lasting peace."
+        },
+        {
+          "id": 4,
+          "question": "What is the Yamba people's reputation?",
+          "options": ["Peace-loving", "Warlike", "Nomadic", "Traders"],
+          "correct": "Peace-loving",
+          "explanation": "The Yamba people are known for their peace-loving nature and their respect for elders and ancestors."
+        },
+        {
+          "id": 5,
+          "question": "Where is the Sacred Pipe of Peace kept today?",
+          "options": ["In the chief's palace", "In a museum", "In a sacred cave", "In a forest shrine"],
+          "correct": "In the chief's palace",
+          "explanation": "The Sacred Pipe of Peace is kept in the chief's palace and used to resolve disputes."
+        }
+      ]
+    },
+    "chamba-folklore": {
+      "id": "chamba-folklore",
+      "name": "Chamba Folklore",
+      "description": "Discover the drum traditions and ancestor stories of the Chamba people.",
+      "icon": "🥁",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the most sacred musical instrument of the Chamba people?",
+          "options": ["The Drum of the Ancestors", "The flute", "The balafon", "The talking drum"],
+          "correct": "The Drum of the Ancestors",
+          "explanation": "The Drum of the Ancestors is the Chamba's most sacred instrument, able to call the spirits for help."
+        },
+        {
+          "id": 2,
+          "question": "What did the ancestors give the Chamba chief?",
+          "options": ["A magic drum", "A magic sword", "A magic crown", "A magic shield"],
+          "correct": "A magic drum",
+          "explanation": "The ancestors appeared to the chief in a dream and gave him the Drum of the Ancestors."
+        },
+        {
+          "id": 3,
+          "question": "What happened when the chief played the drum?",
+          "options": ["The ancestors came out to fight alongside the Chamba", "The trees began to grow", "The rivers changed direction", "The enemies fell asleep"],
+          "correct": "The ancestors came out to fight alongside the Chamba",
+          "explanation": "When the chief played the Drum of the Ancestors, the ancestors emerged from the hills to help the Chamba defeat their enemies."
+        },
+        {
+          "id": 4,
+          "question": "Where do the Chamba people live?",
+          "options": ["Adamawa Region", "Littoral Region", "Central Region", "Northwest Region"],
+          "correct": "Adamawa Region",
+          "explanation": "The Chamba people live in the Adamawa Region of Cameroon, known for its rolling hills and plains."
+        },
+        {
+          "id": 5,
+          "question": "What do the Chamba drum music tell?",
+          "options": ["Stories of their history, victories, and love for their land", "Weather forecasts", "Market information", "War plans"],
+          "correct": "Stories of their history, victories, and love for their land",
+          "explanation": "Chamba drum music tells stories of their history, victories, and their deep love for their land and people."
+        }
+      ]
+    },
+    "mousgoum-folklore": {
+      "id": "mousgoum-folklore",
+      "name": "Mousgoum Folklore",
+      "description": "Explore the unique beehive hut traditions of the Mousgoum people.",
+      "icon": "🏠",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What do the Mousgoum call their traditional homes?",
+          "options": ["The Huts of a Thousand Smiles", "Beehive huts", "Mud huts", "Clay houses"],
+          "correct": "The Huts of a Thousand Smiles",
+          "explanation": "The Mousgoum call their traditional homes 'The Huts of a Thousand Smiles' because they bring happiness and comfort."
+        },
+        {
+          "id": 2,
+          "question": "What shape are the Mousgoum's traditional huts?",
+          "options": ["Round, like a beehive", "Square", "Rectangular", "Triangular"],
+          "correct": "Round, like a beehive",
+          "explanation": "The Mousgoum's traditional huts are round and have a high, curved roof, like a beehive."
+        },
+        {
+          "id": 3,
+          "question": "Who learned to build the huts from a spirit?",
+          "options": ["Zara", "Bako", "Mbeya", "Ngozi"],
+          "correct": "Zara",
+          "explanation": "Zara was the Mousgoum woman who learned to build the beehive huts from a spirit in a dream."
+        },
+        {
+          "id": 4,
+          "question": "What is special about the Mousgoum huts?",
+          "options": ["They are cool in summer and warm in winter", "They float on water", "They move around", "They are made of gold"],
+          "correct": "They are cool in summer and warm in winter",
+          "explanation": "The Mousgoum's beehive huts are naturally cool in the summer and warm in the winter."
+        },
+        {
+          "id": 5,
+          "question": "Where do the Mousgoum people live?",
+          "options": ["Far North Region, near the Logone River", "Littoral Region", "Central Region", "Adamawa Region"],
+          "correct": "Far North Region, near the Logone River",
+          "explanation": "The Mousgoum people live in the Far North Region of Cameroon, near the Logone River."
+        }
+      ]
+    },
+    "toupouri-folklore": {
+      "id": "toupouri-folklore",
+      "name": "Toupouri Folklore",
+      "description": "Learn about the river traditions and fish festival of the Toupouri people.",
+      "icon": "🐟",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which river is central to Toupouri life?",
+          "options": ["Benue River", "Logone River", "Wouri River", "Sanaga River"],
+          "correct": "Benue River",
+          "explanation": "The Benue River is the center of life for the Toupouri people, providing water and fish."
+        },
+        {
+          "id": 2,
+          "question": "What is the Toupouri's most important festival?",
+          "options": ["The Festival of the Fish", "The Harvest Festival", "The Rain Festival", "The New Year Festival"],
+          "correct": "The Festival of the Fish",
+          "explanation": "The Festival of the Fish is the most important Toupouri festival, honoring the river spirits."
+        },
+        {
+          "id": 3,
+          "question": "Who appeared to the Toupouri chief in a dream?",
+          "options": ["The spirit of the Benue River", "The king of the elephants", "The spirit of the forest", "His ancestor"],
+          "correct": "The spirit of the Benue River",
+          "explanation": "A beautiful woman, the spirit of the Benue River, appeared to the chief in a dream."
+        },
+        {
+          "id": 4,
+          "question": "What happens during the fishing competition at the festival?",
+          "options": ["The person who catches the biggest fish is honored as a hero", "Everyone fishes at the same time", "Fish are released back into the river", "The best fisher becomes chief"],
+          "correct": "The person who catches the biggest fish is honored as a hero",
+          "explanation": "During the Festival of the Fish, there is a big fishing competition, and the person who catches the biggest fish is honored as a hero."
+        },
+        {
+          "id": 5,
+          "question": "What do the Toupouri do to thank the river spirits?",
+          "options": ["Hold the Festival of the Fish", "Plant trees along the river", "Clean the river banks", "Build a shrine"],
+          "correct": "Hold the Festival of the Fish",
+          "explanation": "The Toupouri hold the Festival of the Fish every year to thank the river spirits for their gifts of water and fish."
+        }
+      ]
+    },
+    "bafia-folklore": {
+      "id": "bafia-folklore",
+      "name": "Bafia Folklore",
+      "description": "Explore the elephant king and nature traditions of the Bafia people.",
+      "icon": "🐘",
+      "category": "folklore",
+      "difficulty": "beginner",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Who is the protector of the Bafia people?",
+          "options": ["The King of the Elephants", "The king of the forest", "The spirit of the lake", "The mountain spirit"],
+          "correct": "The King of the Elephants",
+          "explanation": "The King of the Elephants is the protector of the Bafia people and their land."
+        },
+        {
+          "id": 2,
+          "question": "What did the hunters want to do?",
+          "options": ["Kill the King of the Elephants for his ivory tusks", "Capture the King of the Elephants for a zoo", "Follow the King of the Elephants to find treasure", "Make friends with the King of the Elephants"],
+          "correct": "Kill the King of the Elephants for his ivory tusks",
+          "explanation": "Some greedy hunters wanted to kill the King of the Elephants to get his precious ivory tusks."
+        },
+        {
+          "id": 3,
+          "question": "What did the King of the Elephants do when the hunters came?",
+          "options": ["He made a great rain fall that washed away their tracks and made them lost", "He attacked the hunters", "He hid in a cave", "He called the other elephants for help"],
+          "correct": "He made a great rain fall that washed away their tracks and made them lost",
+          "explanation": "The King of the Elephants made a great rain fall that washed away the hunters' tracks and made them lost in the forest."
+        },
+        {
+          "id": 4,
+          "question": "What do the Bafia people believe about respecting nature?",
+          "options": ["If they respect nature, it will take care of them in return", "Nature is an enemy to be conquered", "Nature must be exploited for profit", "Nature is unimportant"],
+          "correct": "If they respect nature, it will take care of them in return",
+          "explanation": "The Bafia believe that if they respect nature, the forest and animals will take care of them in return."
+        },
+        {
+          "id": 5,
+          "question": "Where do the Bafia people live?",
+          "options": ["Central Region", "Littoral Region", "Adamawa Region", "Northwest Region"],
+          "correct": "Central Region",
+          "explanation": "The Bafia people live in the Central Region of Cameroon, in an area of lush forests and fertile farmland."
+        }
+      ]
     }
   }
 }

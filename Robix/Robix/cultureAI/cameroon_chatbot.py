@@ -819,12 +819,20 @@ class SpeechInterface:
     
     def __init__(self):
         self.logger = logging.getLogger('TribesBot.Speech')
-        self.recognizer = sr.Recognizer() if SR_AVAILABLE else None
-        self.microphone = sr.Microphone() if SR_AVAILABLE else None
-        self.tts_engine = self._init_tts()
+        self.recognizer = None
+        self.microphone = None
         
-        if self.microphone:
-            self._calibrate_microphone()
+        if SR_AVAILABLE:
+            try:
+                self.recognizer = sr.Recognizer()
+                self.microphone = sr.Microphone()
+                self._calibrate_microphone()
+            except Exception as e:
+                self.logger.warning(f"Microphone initialization failed: {e}")
+                self.recognizer = None
+                self.microphone = None
+        
+        self.tts_engine = self._init_tts()
     
     def _init_tts(self):
         """Initialize TTS with optimal settings"""

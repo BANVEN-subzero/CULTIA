@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,11 +20,14 @@
     <!-- AOS Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+    <!-- Main Styles for Modals -->
+    <link href="../css/styles.css" rel="stylesheet">
+    
     <style>
         :root {
             --primary-green: #2d5a27;
-            --bg-light: #f8f9fa;
-            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --bg-light: #fdfaf5;
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         body {
@@ -44,58 +46,56 @@
 
         .hero-section {
             background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
-            padding: 100px 0 140px;
+            padding: 80px 0 100px;
             color: white;
             border-radius: 0 0 50px 50px;
             margin-bottom: -60px;
         }
 
-        .tribe-card {
+        .tribe-widget {
             background: white;
-            border-radius: 30px;
+            border-radius: 20px;
             overflow: hidden;
             border: none;
             transition: var(--transition-smooth);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            cursor: pointer;
         }
 
-        .tribe-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        .tribe-widget:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
         }
 
-        .tribe-img-wrapper {
-            height: 250px;
+        .tribe-widget-img-wrapper {
+            height: 160px;
             overflow: hidden;
             position: relative;
         }
 
-        .tribe-img {
+        .tribe-widget-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: var(--transition-smooth);
         }
 
-        .tribe-card:hover .tribe-img {
+        .tribe-widget:hover .tribe-widget-img {
             transform: scale(1.1);
         }
 
-        .tribe-badge {
+        .tribe-widget-badge {
             position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 6px 18px;
-            border-radius: 50px;
+            top: 12px;
+            right: 12px;
+            background: rgba(45, 90, 39, 0.9);
+            padding: 6px 15px;
+            border-radius: 25px;
             font-weight: 700;
-            font-size: 0.8rem;
-            color: var(--primary-green);
+            font-size: 0.75rem;
+            color: white;
             backdrop-filter: blur(5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .btn-modern {
@@ -153,20 +153,19 @@
         }
 
         .search-btn {
-            background: var(--primary-green);
+            background: linear-gradient(135deg, #d4af37, #c99b2c);
             color: white;
             border: none;
             padding: 0 35px;
             border-radius: 50px;
             font-weight: 700;
             transition: var(--transition-smooth);
-            box-shadow: 0 10px 25px rgba(45, 90, 39, 0.2);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35);
         }
 
         .search-btn:hover {
-            background: #1a3a17;
+            background: var(--primary-green);
             transform: translateY(-2px);
-            box-shadow: 0 15px 30px rgba(45, 90, 39, 0.3);
         }
 
         .search-input:focus {
@@ -187,13 +186,13 @@
 
         .region-filter-container {
             position: relative;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
 
         #regionFilters {
             padding: 15px 0;
             display: flex;
-            gap: 15px;
+            gap: 12px;
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             scrollbar-width: auto;
@@ -215,6 +214,21 @@
             border-radius: 10px;
         }
 
+        .region-header {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.08), rgba(212, 175, 55, 0.05));
+            padding: 1.25rem 1.5rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--primary-green);
+        }
+
+        .region-title {
+            color: var(--primary-green);
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
         /* AI Assistant Widget Styles */
         .ai-assistant-widget {
             position: fixed;
@@ -227,20 +241,20 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background: var(--primary-green);
+            background: linear-gradient(135deg, #2d5a27 0%, #3d7a37 100%);
             color: white;
             border: none;
-            box-shadow: 0 10px 25px rgba(45, 90, 39, 0.3);
+            box-shadow: 0 10px 30px rgba(45, 90, 39, 0.4);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             cursor: pointer;
             transition: var(--transition-smooth);
         }
 
         .ai-toggle-btn:hover {
-            transform: scale(1.1) rotate(5deg);
+            transform: scale(1.15) rotate(5deg);
         }
 
         .ai-chat-card {
@@ -251,7 +265,7 @@
             height: 500px;
             background: white;
             border-radius: 25px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
             display: none;
             flex-direction: column;
             overflow: hidden;
@@ -269,18 +283,40 @@
 
         .ai-chat-header {
             padding: 20px;
-            background: var(--primary-green);
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
             color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        .ai-chat-actions {
+            display: flex;
+            gap: 10px;
+            padding: 8px 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ai-action-btn {
+            background: none;
+            border: none;
+            color: #888;
+            font-size: 0.75rem;
+            cursor: pointer;
+            padding: 5px 0;
+            transition: color 0.2s;
+        }
+
+        .ai-action-btn:hover {
+            color: var(--primary-green);
+        }
+
         .ai-chat-messages {
             flex: 1;
             padding: 20px;
             overflow-y: auto;
-            background: #fdfaf5;
+            background: linear-gradient(135deg, #fdfaf5 0%, #f8f9fa 100%);
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -304,7 +340,7 @@
 
         .ai-user-message {
             align-self: flex-end;
-            background: var(--primary-green);
+            background: linear-gradient(135deg, #2d5a27, #3d7a37);
             color: white;
             border-bottom-right-radius: 2px;
         }
@@ -326,119 +362,22 @@
             outline: none;
         }
 
-        .ai-chat-input:focus {
-            border-color: var(--primary-green);
-        }
-
         .ai-send-btn {
-            background: var(--primary-green);
+            background: linear-gradient(135deg, #d4af37, #c99b2c);
             color: white;
             border: none;
-            width: 38px;
-            height: 38px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            transition: background 0.3s;
         }
 
-        .ai-chat-actions {
-            display: flex;
-            gap: 10px;
-            padding: 5px 20px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #eee;
-        }
-
-        .ai-action-btn {
-            background: none;
-            border: none;
-            color: #888;
-            font-size: 0.75rem;
-            cursor: pointer;
-            padding: 5px 0;
-        }
-
-        .ai-action-btn:hover {
-            color: var(--primary-green);
-        }
-
-        .status-pill {
-            font-size: 0.75rem;
-            color: #888;
-            padding: 5px 20px;
-            display: none;
-        }
-
-        .status-pill.active {
-            display: block;
-        }
-
-        /* Tribe Detail Modal Styles */
-        .tribe-detail-modal .modal-content {
-            border-radius: 30px;
-            border: none;
-            overflow: hidden;
-        }
-
-        .tribe-detail-header {
-            height: 300px;
-            position: relative;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .tribe-detail-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 40px;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-            color: white;
-        }
-
-        .detail-section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 20px;
-            border-left: 5px solid var(--primary-green);
-        }
-
-        .detail-section h5 {
-            color: var(--primary-green);
-            font-weight: 700;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .detail-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        /* Beautiful History Cards */
-        .history-card {
-            transition: var(--transition-smooth);
-            border: 1px solid rgba(0,0,0,0.05) !important;
-        }
-
-        .history-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
-            border-color: var(--primary-green) !important;
-        }
-
-        .text-truncate-2 {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+        .ai-send-btn:hover {
+            background: var(--primary-green);
         }
     </style>
 </head>
@@ -451,15 +390,17 @@
 
         <section class="hero-section text-center">
             <div class="container" data-aos="fade-up">
-                <h1 class="display-3 fw-bold mb-3">Tribes & Ethnic Groups</h1>
-                <p class="lead opacity-75 mb-5 mx-auto" style="max-width: 700px;">Explore the vibrant mosaic of over 250 ethnic groups that define Cameroon's unique cultural landscape.</p>
+                <h1 class="display-4 fw-bold mb-3">Tribes & Ethnic Groups</h1>
+                <p class="lead opacity-75 mb-5 mx-auto" style="max-width: 650px;">Explore the vibrant tapestry of Cameroon's cultures, traditions, and people</p>
                 
                 <div class="search-wrapper mb-4">
                     <div class="search-input-group">
                         <i class="fas fa-search search-icon"></i>
                         <input type="text" class="search-input" placeholder="Search tribes, traditions, or regions..." id="tribeSearch">
                     </div>
-                    <button class="search-btn" id="searchBtn">Search</button>
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search me-2"></i>Search
+                    </button>
                 </div>
             </div>
         </section>
@@ -468,13 +409,15 @@
             <!-- Filters -->
             <div class="region-filter-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="d-flex gap-3 overflow-auto pb-3" id="regionFilters">
-                    <div class="filter-pill active" data-region="all">All Groups</div>
-                    <!-- Dynamic regions will be inserted here -->
+                    <div class="filter-pill active" data-region="all">
+                    <i class="fas fa-globe-africa me-2"></i>All Regions
                 </div>
+                <!-- Dynamic regions will be inserted here -->
+            </div>
             </div>
 
-            <div class="row g-4" id="tribeGrid">
-                <!-- Dynamic tribe cards will be inserted here -->
+            <div id="tribesContainer">
+                <!-- Dynamic tribe sections will be inserted here -->
             </div>
         </div>
     </div>
@@ -492,15 +435,11 @@
             
             <div class="ai-chat-actions">
                 <button class="ai-action-btn" id="clearHistoryBtn">
-                    <i class="fas fa-trash-alt me-1"></i> Clear History
+                    <i class="fas fa-trash-alt me-1"></i>Clear History
                 </button>
                 <button class="ai-action-btn" id="viewHistoryBtn" data-bs-toggle="modal" data-bs-target="#historyModal">
-                    <i class="fas fa-history me-1"></i> History
+                    <i class="fas fa-history me-1"></i>History
                 </button>
-            </div>
-
-            <div class="status-pill" id="aiStatus">
-                <i class="fas fa-circle-notch fa-spin me-1"></i> Thinking...
             </div>
 
             <div class="ai-chat-messages" id="aiChatMessages">
@@ -521,50 +460,7 @@
         </button>
     </div>
 
-    <!-- Modals (Required for history) -->
-    <div class="modal fade tribe-detail-modal" id="tribeDetailModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="tribe-detail-header" id="tribeDetailHeader">
-                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="tribe-detail-overlay">
-                        <span class="badge bg-success mb-2" id="tribeDetailRegion">Region</span>
-                        <h2 class="display-4 fw-bold" id="tribeDetailName">Tribe Name</h2>
-                    </div>
-                </div>
-                <div class="modal-body p-4 p-md-5">
-                    <div class="detail-section">
-                        <h5><i class="fas fa-info-circle"></i> Overview</h5>
-                        <p id="tribeDetailOverview" class="lead text-muted"></p>
-                    </div>
-
-                    <div class="detail-grid">
-                        <div class="detail-section">
-                            <h5><i class="fas fa-utensils"></i> Meals & Cuisine</h5>
-                            <div id="tribeDetailMeals"></div>
-                        </div>
-                        <div class="detail-section">
-                            <h5><i class="fas fa-users"></i> Customs & Traditions</h5>
-                            <div id="tribeDetailCulture"></div>
-                        </div>
-                        <div class="detail-section">
-                            <h5><i class="fas fa-calendar-alt"></i> Festivals</h5>
-                            <div id="tribeDetailFestivals"></div>
-                        </div>
-                        <div class="detail-section">
-                            <h5><i class="fas fa-ring"></i> Marriage Traditions</h5>
-                            <div id="tribeDetailMarriage"></div>
-                        </div>
-                        <div class="detail-section">
-                            <h5><i class="fas fa-history"></i> History</h5>
-                            <div id="tribeDetailHistory"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- History Modal -->
     <div class="modal fade" id="historyModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content border-0 rounded-4 shadow">
@@ -574,7 +470,85 @@
                 </div>
                 <div class="modal-body p-4">
                     <div id="historyList">
-                        <!-- History items will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tribe Detail Modal -->
+    <div class="modal fade tribe-detail-modal" id="tribeDetailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 rounded-4 shadow">
+                <div class="modal-header p-4 border-0">
+                    <div class="d-flex align-items-center gap-3">
+                        <img id="tribeDetailModalImg" src="" style="width: 80px; height: 80px; object-fit: cover; border-radius: 15px;">
+                        <div>
+                            <h4 class="fw-bold mb-0" id="tribeDetailModalName">Tribe Name</h4>
+                            <p class="text-muted mb-0" id="tribeDetailModalRegion">Region</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-0">
+                    <ul class="nav nav-pills mb-4 flex-wrap" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#modal-overview" type="button" role="tab">
+                                <i class="fas fa-info-circle me-2"></i>Overview
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#modal-highlights" type="button" role="tab">
+                                <i class="fas fa-star me-2"></i>Highlights
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#modal-meals" type="button" role="tab">
+                                <i class="fas fa-utensils me-2"></i>Meals & Cuisine
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#modal-festivals" type="button" role="tab">
+                                <i class="fas fa-calendar-alt me-2"></i>Festivals
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#modal-marriage" type="button" role="tab">
+                                <i class="fas fa-heart me-2"></i>Marriage Traditions
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#modal-history" type="button" role="tab">
+                                <i class="fas fa-book me-2"></i>History
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="modal-overview" role="tabpanel">
+                            <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Overview</h5>
+                            <p id="tribeDetailModalOverview" class="text-muted"></p>
+                        </div>
+                        <div class="tab-pane fade" id="modal-highlights" role="tabpanel">
+                            <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Highlights</h5>
+                            <div id="tribeDetailModalHighlights"></div>
+                        </div>
+                        <div class="tab-pane fade" id="modal-meals" role="tabpanel">
+                            <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Meals & Cuisine</h5>
+                            <p id="tribeDetailModalMeals" class="text-muted"></p>
+                        </div>
+                        <div class="tab-pane fade" id="modal-festivals" role="tabpanel">
+                            <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Festivals</h5>
+                            <p id="tribeDetailModalFestivals" class="text-muted"></p>
+                        </div>
+                        <div class="tab-pane fade" id="modal-marriage" role="tabpanel">
+                            <h5 class="fw-bold mb-3" style="color: var(--primary-green);">Marriage Traditions</h5>
+                            <p id="tribeDetailModalMarriage" class="text-muted"></p>
+                        </div>
+                        <div class="tab-pane fade" id="modal-history" role="tabpanel">
+                            <h5 class="fw-bold mb-3" style="color: var(--primary-green);">History</h5>
+                            <p id="tribeDetailModalHistory" class="text-muted"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -583,7 +557,6 @@
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS Animations JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/ai-core.js"></script>
 
@@ -606,182 +579,1062 @@
                 });
             });
 
-            // --- Tribe & Region Logic ---
-            let allTribes = [];
-            let currentRegion = 'all';
+            const data = {
+                cameroon_tribes_by_region: [
+                    {
+                        region: 'West Region',
+                        tribes: [
+                            {
+                                name: 'Bamileke',
+                                image_url: 'https://i.pinimg.com/736x/f0/76/fe/f076fe7135efabc7eba09c49447ee55a.jpg',
+                                overview: 'Vibrant traditional celebration masks and dense grassfields beadwork.',
+                                highlights: {
+                                    cultural_heritage: 'Rich traditions passed down through dynamic chiefdom governance structures called Chefferies.',
+                                    traditional_practices: 'Customs unique to this community include ancestral skull veneration and complex architectural pillar carving.',
+                                    community_life: 'Vibrant social bonds structured through powerful elite secret societies such as the Kuosi (Elephant Society).'
+                                },
+                                meals_cuisine: 'Koki (savory steamed bean cake prepared with palm oil) and Achu (pounded taro served with a rich yellow soup).',
+                                festivals: 'The biennial multi-day cultural gathering displaying royal masquerades, dance competitions, and arts.',
+                                marriage_traditions: 'Involves rigorous formal introductions, extensive negotiations over the traditional bride price with family elders, and the symbolic handing over of palm wine.',
+                                history: 'Traced back to early migrations from the upper Adamawa plateau down into the rugged high-altitude valleys of western Cameroon.'
+                            },
+                            {
+                                name: 'Bamun',
+                                image_url: 'https://i.pinimg.com/736x/b5/a7/a7/b5a7a7b060d3fec2ec10037202a8c9de.jpg',
+                                overview: 'Historic Islamic and local kingdom synthesis famed for royal palace craftsmanship and early script writing.',
+                                highlights: {
+                                    cultural_heritage: 'Deep artistic heritage led by the supreme Sultan dynasty located at the historic Foumban palace.',
+                                    traditional_practices: 'Highly refined bronze lost-wax casting techniques and elaborate wood carvings of multi-headed serpents.',
+                                    community_life: 'Strong institutional cohesion centered around the palace courtyard and regular assemblies with regional sub-chiefs.'
+                                },
+                                meals_cuisine: 'Ndolé served with traditional boiled plantains or dynamic corn couscous accompanied by native leaf stews.',
+                                festivals: 'The grand Nguon Festival, a historic periodic event where the Sultan faces public accountability rituals and spectacular warrior parades.',
+                                marriage_traditions: 'Blends Islamic Nikah protocols with localized Bamun custom presentations, exchange of symbolic kola nuts, and royal lineage blessings.',
+                                history: 'Founded in the late 14th century by King Nchare Yen, developing an exceptional independent empire that invented its own writing script under Sultan Njoya.'
+                            },
+                            {
+                                name: 'Menoua',
+                                image_url: 'https://i.pinimg.com/1200x/e8/60/37/e86037f97802d281731bdcfb61983ec2.jpg',
+                                overview: 'A specific highland subgroup of the broader Grassfields culture noted for intense agricultural mastery and intricate textiles.',
+                                highlights: {
+                                    cultural_heritage: 'Preservation of royal Ndop fabric patterns dyed with indigo using symbolic geometric scripts.',
+                                    traditional_practices: 'Rhythmic execution of the energetic "Ken" dance performed exclusively using long hand-woven fibers.',
+                                    community_life: 'Organized into locally autonomous village associations and thriving rotational micro-finance networks called tontines.'
+                                },
+                                meals_cuisine: 'Condré (savory plantain hotpot seasoned thoroughly with local spices and smoked meats).',
+                                festivals: 'Local chiefdom cultural weeks showcasing historical war dances, specialized handicrafts, and agricultural displays.',
+                                marriage_traditions: 'Characterized by multiple steps of familial consent, presentation of physical gifts to maternal uncles, and festive community feasts.',
+                                history: 'Evolved out of concentrated waves of Grassfields family groups settling around the steep mountainous terrain of modern-day Dschang.'
+                            },
+                            {
+                                name: 'Bafoussam',
+                                image_url: 'https://i.pinimg.com/736x/8e/7f/4a/8e7f4af68e3b883633c729260d2286c7.jpg',
+                                overview: 'Vibrant market town culture with bustling traditional markets and craft workshops.',
+                                highlights: {
+                                    cultural_heritage: 'Rich market traditions and craft cooperative systems.',
+                                    traditional_practices: 'Market day rituals, craft techniques, and community trading systems.',
+                                    community_life: 'Bustling market communities with strong cooperative traditions.'
+                                },
+                                meals_cuisine: 'Ndole with plantains, koki, and local market dishes.',
+                                festivals: 'Market opening ceremonies and annual craft fairs.',
+                                marriage_traditions: 'Involves market stall presentations and community wedding feasts.',
+                                history: 'Evolved as a major market hub connecting western highlands communities.'
+                            },
+                            {
+                                name: 'Bandjoun',
+                                image_url: 'https://i.pinimg.com/1200x/0c/32/56/0c32565037c0e1e096b5c12b2926d721.jpg',
+                                overview: 'Grand chiefdom palace architecture and elaborate royal ceremonies.',
+                                highlights: {
+                                    cultural_heritage: 'Magnificent chiefdom palaces and royal court traditions.',
+                                    traditional_practices: 'Royal ceremonies, palace protocols, and court rituals.',
+                                    community_life: 'Hierarchical community structure with strong royal leadership.'
+                                },
+                                meals_cuisine: 'Royal dishes including special palm oil stews and ceremonial foods.',
+                                festivals: 'Royal coronation anniversaries and chiefdom celebration events.',
+                                marriage_traditions: 'Involves royal blessings and chiefdom wedding protocols.',
+                                history: 'One of the oldest and most powerful Grassfields chiefdoms.'
+                            },
+                            {
+                                name: 'Bangangte',
+                                image_url: 'https://i.pinimg.com/736x/7a/8e/60/7a8e60e8a2738e7c1218fa24d03e3489.jpg',
+                                overview: 'Dynamic youth cultural movements and traditional dance revivals.',
+                                highlights: {
+                                    cultural_heritage: 'Youth-led cultural revival movements and modern traditional fusion.',
+                                    traditional_practices: 'Modernized traditional dances and youth cultural programs.',
+                                    community_life: 'Energetic youth-driven community cultural activities.'
+                                },
+                                meals_cuisine: 'Fusion traditional dishes with modern presentations.',
+                                festivals: 'Youth cultural festivals and traditional dance competitions.',
+                                marriage_traditions: 'Blends traditional customs with modern celebration styles.',
+                                history: 'Emerging as a center for cultural innovation among Grassfields youth.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'Centre Region',
+                        tribes: [
+                            {
+                                name: 'Beti',
+                                image_url: 'https://i.pinimg.com/736x/b5/be/a8/b5bea8b1b1c5323f74bf72700d1e00f2.jpg',
+                                overview: 'Equatorial forest community celebrated for complex oral epics and dynamic percussive instrumentation.',
+                                highlights: {
+                                    cultural_heritage: 'Rich oral history kept alive by traveling master storytellers using stringed instruments.',
+                                    traditional_practices: 'Utilization of localized tree bark mixtures and forest elements for community healing and protection ceremonies.',
+                                    community_life: 'Clan-based social structure emphasizing deep mutual assistance across extended forest families.'
+                                },
+                                meals_cuisine: 'Sanga (a traditional dish made of fresh corn, palm nut juice, and finely shredded nightshade leaves).',
+                                festivals: 'Periodic forest cultural festivals highlighting fast-paced rhythmic Bikutsi music and dance styles.',
+                                marriage_traditions: 'Requires formal presentation of forest agricultural tools, ancestral blessings, and large family banquets.',
+                                history: 'Part of the extensive Bantu migration phase moving south into the deep primary equatorial rainforest zones.'
+                            },
+                            {
+                                name: 'Bassa (Centre)',
+                                image_url: 'https://i.pinimg.com/1200x/3d/d9/ad/3dd9ade25a7173b38996aacbc54b4c7c.jpg',
+                                overview: 'Inland forest cluster of the historic Bassa people retaining distinct ancestral connections to the sacred cave of Ngog Lituba.',
+                                highlights: {
+                                    cultural_heritage: 'Deep spiritual reverence for structural natural monuments and ancient forest sanctuaries.',
+                                    traditional_practices: 'Crafting of expressive, functional wooden implements used in sacred ancestral communication rituals.',
+                                    community_life: 'Strong respect for the authority of the "Mbombog" lineage spiritual leaders.'
+                                },
+                                meals_cuisine: 'Mintoumba (fermented cassava bread mixed with palm oil and steamed in local green leaves).',
+                                festivals: 'Ancestral remembrance gatherings held near rivers or significant historical forest sites.',
+                                marriage_traditions: 'Traditional demands focus heavily on lineage validation, exchange of palm wine containers, and multi-family consensus.',
+                                history: 'Emanated from the legendary cradle of Ngog Lituba cave, expanding across the center and coastal forest zones over centuries.'
+                            },
+                            {
+                                name: 'Ewondo',
+                                image_url: 'https://i.pinimg.com/736x/f2/d7/f4/f2d7f44d01c0c985bd9f4865de745b1b.jpg',
+                                overview: 'The foundational Beti subgroup historically occupying the central plateau of Yaoundé.',
+                                highlights: {
+                                    cultural_heritage: 'Stewardship of the traditional "Abbia" gambling stone game featuring beautiful symbolic engravings.',
+                                    traditional_practices: 'Orchestrating synchronized xylophone ensembles during formal community greetings.',
+                                    community_life: 'Structured around village headmen who work in alignment with regional land inheritance systems.'
+                                },
+                                meals_cuisine: 'Pounded cassava leaves (Okok) prepared beautifully with peanut paste and unrefined palm oil).',
+                                festivals: 'Feasts celebrating seasonal wild fruit harvests and the historic foundation updates of the Yaoundé chiefdoms.',
+                                marriage_traditions: 'Includes traditional bride pricing rituals emphasizing fabric bundles, salt, and domestic livestock requirements.',
+                                history: 'Established prominent trade routes through the central forest belt before becoming the urban heart of modern political Cameroon.'
+                            },
+                            {
+                                name: 'Eton',
+                                image_url: 'https://i.pinimg.com/236x/1a/23/8e/1a238e11d378a9568354a4a9f8d43d6a.jpg',
+                                overview: 'Forest-dwelling community with deep knowledge of medicinal plants.',
+                                highlights: {
+                                    cultural_heritage: 'Traditional medicine and forest botanical knowledge.',
+                                    traditional_practices: 'Herbal medicine preparation and healing ceremonies.',
+                                    community_life: 'Forest communities with strong traditional healer networks.'
+                                },
+                                meals_cuisine: 'Forest-sourced vegetables and medicinal plant-based dishes.',
+                                festivals: 'Healing ceremonies and forest thanksgiving festivals.',
+                                marriage_traditions: 'Involves herbal medicine blessings and forest rituals.',
+                                history: 'Long-standing forest-dwelling community with rich botanical knowledge.'
+                            },
+                            {
+                                name: 'Beti-Pahuin',
+                                image_url: 'https://i.pinimg.com/736x/0f/9a/9a/0f9a9ac21a7a63304e1726f26c4c467c.jpg',
+                                overview: 'Expansive Bantu cultural group with complex clan structures.',
+                                highlights: {
+                                    cultural_heritage: 'Complex clan systems and oral history traditions.',
+                                    traditional_practices: 'Clan ceremonies and oral history preservation.',
+                                    community_life: 'Large clan-based communities with shared traditions.'
+                                },
+                                meals_cuisine: 'Traditional Bantu dishes with clan-specific variations.',
+                                festivals: 'Clan reunions and inter-clan cultural festivals.',
+                                marriage_traditions: 'Involves inter-clan negotiations and alliance-building.',
+                                history: 'Part of the large Beti-Pahuin Bantu language family expansion.'
+                            },
+                            {
+                                name: 'Fang (Centre)',
+                                image_url: 'https://i.pinimg.com/236x/80/03/a7/8003a7f3b57460433734cc77985432fb.jpg',
+                                overview: 'Renowned wood carvers and mask makers of the central forest regions.',
+                                highlights: {
+                                    cultural_heritage: 'Masterful wood carving and mask-making traditions.',
+                                    traditional_practices: 'Wood carving techniques, mask creation, and ceremonial use.',
+                                    community_life: 'Artisan communities with shared carving traditions.'
+                                },
+                                meals_cuisine: 'Cassava-based dishes with forest game and vegetables.',
+                                festivals: 'Mask ceremonies and wood carving festivals.',
+                                marriage_traditions: 'Includes carved wooden gifts and mask performances.',
+                                history: 'Forest communities with rich artistic carving traditions.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'Littoral Region',
+                        tribes: [
+                            {
+                                name: 'Sawa (Coastal Peoples)',
+                                image_url: 'https://i.pinimg.com/1200x/d7/6f/e4/d76fe4bf83386696ca1596bf7371ccbd.jpg',
+                                overview: 'Water-spirit oriented coastal civilization with unmatched maritime expertise and canoe navigation.',
+                                highlights: {
+                                    cultural_heritage: 'Spiritual worship and communication with the "Jengu" water deities.',
+                                    traditional_practices: 'High-stakes elite competitive canoe racing involving massive, hand-carved riverboats.',
+                                    community_life: 'Cohesive coastal hierarchy bound together by maritime laws and shared coastal resources.'
+                                },
+                                meals_cuisine: 'Ndolé (bitterleaf stew cooked with crushed peanuts, prawns, and beef, typically eaten with Miondo).',
+                                festivals: 'The massive Ngondo Festival, an annual coastal assembly on the banks of the Wouri River featuring underwater message delivery.',
+                                marriage_traditions: 'Groom\'s family arrives by water or stylized foot procession presenting ocean catches, fabric, and formal dowry boxes.',
+                                history: 'Inhabited the Atlantic coastal bights for centuries, maintaining early trade contacts with European maritime merchants.'
+                            },
+                            {
+                                name: 'Duala',
+                                image_url: 'https://i.pinimg.com/736x/85/9f/0c/859f0c26765c00630d13fb3ede8c2776.jpg',
+                                overview: 'The principal merchant and aristocratic lineage group along the estuary of the Wouri River.',
+                                highlights: {
+                                    cultural_heritage: 'Dignified presentation of women clad in volumetric, beautifully tailored Kaba Ngondo dresses.',
+                                    traditional_practices: 'Using complex talking drum systems called "Mengele" to transmit information across the coastal waters.',
+                                    community_life: 'Centered around aristocratic ruling houses such as King Bell and King Akwa dynasties.'
+                                },
+                                meals_cuisine: 'Fish soup served alongside thin, fermented cassava sticks called Miondo).',
+                                festivals: 'Annual royal boat regattas and urban cultural parades celebrating historical independence.',
+                                marriage_traditions: 'Strict compliance with Sawa marital laws, including formal presentations of fine linen clothes and gold jewelry ornaments.',
+                                history: 'Migrated along the coast to settle permanently at the estuary, developing into a powerful trading monopoly by the 18th century.'
+                            },
+                            {
+                                name: 'Bassa (Littoral)',
+                                image_url: 'https://i.pinimg.com/1200x/1b/3f/cf/1b3fcfbb7b2c53c3de3dea024892bc6f.jpg',
+                                overview: 'Coastal forest inhabitants renowned across Africa for originating the hyper-rhythmic Assiko guitar dance style.',
+                                highlights: {
+                                    cultural_heritage: 'Preservation of complex footwork dances matching acoustic pulse strings.',
+                                    traditional_practices: 'Advanced use of indigenous forest medicine extracts for setting bone fractures.',
+                                    community_life: 'Democratic village councils operating under the strict social oversight of traditional elders.'
+                                },
+                                meals_cuisine: 'Bongo Tjobi (a rich, jet-black aromatic fish stew cooked with native roasted wild bark seeds).',
+                                festivals: 'Assiko music and dance marathons drawing thousands of performers to celebrate rhythmic storytelling.',
+                                marriage_traditions: 'Deeply traditional processes involving extensive family trees checking for shared lineage before confirmation.',
+                                history: 'Defended their forest domains fiercely during early colonial expansion, producing national liberation figures like Ruben Um Nyobé.'
+                            },
+                            {
+                                name: 'Limba',
+                                image_url: 'https://i.pinimg.com/1200x/1b/7a/17/1b7a1730bda59d3d2757a14902b08d4e.jpg',
+                                overview: 'Coastal fishing communities with distinctive sailing canoe designs.',
+                                highlights: {
+                                    cultural_heritage: 'Canoe building and deep-sea fishing traditions.',
+                                    traditional_practices: 'Canoe construction, fishing techniques, and maritime rituals.',
+                                    community_life: 'Fishing cooperatives and coastal community life.'
+                                },
+                                meals_cuisine: 'Fresh seafood dishes with coastal spices and preparation methods.',
+                                festivals: 'Fishing season festivals and canoe launching ceremonies.',
+                                marriage_traditions: 'Involves fish catches and maritime-themed celebrations.',
+                                history: 'Indigenous coastal fishing communities with generations of maritime expertise.'
+                            },
+                            {
+                                name: 'Wovea',
+                                image_url: 'https://i.pinimg.com/236x/9f/1f/32/9f1f324475294b778d3996b74028c56a.jpg',
+                                overview: 'Island-dwelling communities with unique marine conservation practices.',
+                                highlights: {
+                                    cultural_heritage: 'Marine conservation and island ecosystem knowledge.',
+                                    traditional_practices: 'Sustainable fishing and marine resource management.',
+                                    community_life: 'Island communities with strong marine stewardship traditions.'
+                                },
+                                meals_cuisine: 'Island seafood specialties with traditional preservation methods.',
+                                festivals: 'Marine thanksgiving festivals and island celebration events.',
+                                marriage_traditions: 'Involves marine resource offerings and island ceremonies.',
+                                history: 'Island communities with centuries of sustainable marine resource use.'
+                            },
+                            {
+                                name: 'Bakoko',
+                                image_url: 'https://i.pinimg.com/736x/4d/89/36/4d8936d3882687e621d6a7f83e9b9035.jpg',
+                                overview: 'Mangrove forest dwellers with intricate knowledge of coastal ecosystems.',
+                                highlights: {
+                                    cultural_heritage: 'Mangrove ecosystem knowledge and sustainable harvesting.',
+                                    traditional_practices: 'Mangrove resource use and coastal habitat management.',
+                                    community_life: 'Mangrove forest communities with shared ecological knowledge.'
+                                },
+                                meals_cuisine: 'Mangrove-sourced seafood and forest products.',
+                                festivals: 'Mangrove conservation festivals and coastal celebration events.',
+                                marriage_traditions: 'Involves mangrove forest ceremonies and resource offerings.',
+                                history: 'Long-standing mangrove forest-dwelling communities.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'Northwest Region',
+                        tribes: [
+                            {
+                                name: 'Kom',
+                                image_url: 'https://i.pinimg.com/736x/b8/25/16/b825163bf4b9d50cf7bec84d78a1106b.jpg',
+                                overview: 'High-altitude Grassfield kingdom possessing world-class sacred wood sculptures and complex royal court systems.',
+                                highlights: {
+                                    cultural_heritage: 'Deep spiritual and physical allegiance to the sacred dynastic statue known as the Afo-A-Kom.',
+                                    traditional_practices: 'Constructing vast, multi-chambered royal palaces utilizing thick organic mountain thatch.',
+                                    community_life: 'Governance run by the supreme "Fon" alongside the executive judicial secret society called the Kwifoyn.'
+                                },
+                                meals_cuisine: 'Pounded corn fufu served with huckleberry leaves (Njama Njama) cooked simply in red palm oil).',
+                                festivals: 'Royal court dance displays where the Fon joins masked masquerades in displaying ancestral dance steps.',
+                                marriage_traditions: 'Requires symbolic gifts of high-quality firewood to the mother-in-law, palm oil jugs, and final Fon registration.',
+                                history: 'Led into the rugged hills of Laikom by a legendary snake trail, establishing one of the most powerful sovereign Grassfields states.'
+                            },
+                            {
+                                name: 'Nso',
+                                image_url: 'https://i.pinimg.com/1200x/f2/65/6a/f2656aaf2ecfd1e1a0473d75e5e73f8e.jpg',
+                                overview: 'Majestic Grassfields kingdom renowned for producing the iconic hand-embroidered velvet Toghu attire.',
+                                highlights: {
+                                    cultural_heritage: 'Universal pride in the preservation of hand-stitched bright geometric pattern clothing designs.',
+                                    traditional_practices: 'Ritual pouring of palm wine from specialized gourds during family dynamic prayers.',
+                                    community_life: 'Strong civic alignment with the institutional branches of the royal palace in Kumbo.'
+                                },
+                                meals_cuisine: 'Pounded potatoes mixed completely with black beans and seasoned with local oils).',
+                                festivals: 'The Ngonnso Festival, an annual cultural gathering honoring the founding mother of the Nso dynasty.',
+                                marriage_traditions: 'Strict multi-phase process including long courtship checks, extensive cowry or modern gift equivalents, and communal fufu sharing.',
+                                history: 'Founded by Ngonnso, a royal princess who broke away from the Tikar lineage to establish an independent kingdom in Kumbo.'
+                            },
+                            {
+                                name: 'Bali',
+                                image_url: 'https://i.pinimg.com/736x/65/aa/38/65aa38dc82bae98d23913f51701ae9ea.jpg',
+                                overview: 'Unique Chamba-descended military and cultural kingdom distinguished by specialized languages and warrior wear.',
+                                highlights: {
+                                    cultural_heritage: 'Distinctive warrior regalia featuring tall feathered headwear and brass armbands.',
+                                    traditional_practices: 'Preservation of the ancestral Chamba speech elements during royal internal rituals.',
+                                    community_life: 'Highly disciplined social structure tracing lineage down through military defensive units.'
+                                },
+                                meals_cuisine: 'Vibrant vegetable stews paired with roasted cocoyams and dried bushmeat).',
+                                festivals: 'The Lela Festival, a monumental annual four-day military banner and ancestor veneration dance.',
+                                marriage_traditions: 'Includes ceremonial clothing presentations from the groom\'s family and traditional dynamic blessings from the village Fon.',
+                                history: 'Migrated dynamically from the upper Benue river valley as cavalry warriors, blending with local populations to form Bali Nyonga.'
+                            },
+                            {
+                                name: 'Bafut',
+                                image_url: 'https://i.pinimg.com/736x/6e/0a/9c/6e0a9c12d20a636097808260e524d387.jpg',
+                                overview: 'Powerful Grassfields kingdom with elaborate palace architecture and ceremonies.',
+                                highlights: {
+                                    cultural_heritage: 'Grand palace architecture and royal ceremonial traditions.',
+                                    traditional_practices: 'Royal rituals, palace protocols, and sacred ceremonies.',
+                                    community_life: 'Kingdom structure with strong traditional governance systems.'
+                                },
+                                meals_cuisine: 'Royal dishes and palace feast specialties.',
+                                festivals: 'Annual royal festivals and palace celebration events.',
+                                marriage_traditions: 'Involves royal palace protocols and kingdom wedding ceremonies.',
+                                history: 'One of the most powerful and influential Grassfields kingdoms.'
+                            },
+                            {
+                                name: 'Widikum',
+                                image_url: 'https://i.pinimg.com/736x/5c/33/9c/5c339c0e40c18d3f2623d4347277c3f4.jpg',
+                                overview: 'Mountain-dwelling communities with exceptional farming techniques on steep slopes.',
+                                highlights: {
+                                    cultural_heritage: 'Mountain farming and terrace construction techniques.',
+                                    traditional_practices: 'Slope farming, terracing, and mountain agriculture.',
+                                    community_life: 'Mountain communities with shared farming systems.'
+                                },
+                                meals_cuisine: 'Mountain-grown crops and highland specialty dishes.',
+                                festivals: 'Harvest festivals and mountain celebration events.',
+                                marriage_traditions: 'Involves mountain produce offerings and terrace wedding ceremonies.',
+                                history: 'Mountain communities with centuries of slope farming expertise.'
+                            },
+                            {
+                                name: 'Oku',
+                                image_url: 'https://i.pinimg.com/1200x/1e/82/25/1e82252e0f0e1c6f9e2f6f490e68394f.jpg',
+                                overview: 'Famous sacred forest traditions and unique monkey conservation practices.',
+                                highlights: {
+                                    cultural_heritage: 'Sacred forest conservation and primate coexistence traditions.',
+                                    traditional_practices: 'Forest conservation rituals and wildlife coexistence.',
+                                    community_life: 'Forest guardians with strong conservation traditions.'
+                                },
+                                meals_cuisine: 'Forest-sourced foods and sacred forest products.',
+                                festivals: 'Sacred forest ceremonies and conservation celebration events.',
+                                marriage_traditions: 'Involves sacred forest blessings and conservation-themed rituals.',
+                                history: 'Renowned for sacred forest traditions and primate conservation efforts.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'Southwest Region',
+                        tribes: [
+                            {
+                                name: 'Bakweri',
+                                image_url: 'https://i.pinimg.com/736x/3b/a0/e3/3ba0e39965c72868296e8f34b7e0f327.jpg',
+                                overview: 'The spiritual elephant dance society rooted along the volcanic slopes of Mount Cameroon.',
+                                highlights: {
+                                    cultural_heritage: 'Sacred male society performing the iconic elephant dance while adorned in natural fiber costumes.',
+                                    traditional_practices: 'Ritual hunting ceremonies deep within the Mount Cameroon forest reserves.',
+                                    community_life: 'Close-knit mountain villages maintaining ancient spiritual connections to the volcano\'s energy.'
+                                },
+                                meals_cuisine: 'Eru vegetable soup cooked with bitterleaf, waterleaf, and served with waterfufu).',
+                                festivals: 'Mount Cameroon ascent rituals and thanksgiving ceremonies for safe climbing expeditions.',
+                                marriage_traditions: 'Involves traditional mountain produce gifts, forest honey offerings, and communal dancing celebrations.',
+                                history: 'Indigenous inhabitants of the volcanic mountain regions, living in harmony with Mount Cameroon for generations.'
+                            },
+                            {
+                                name: 'Bakossi',
+                                image_url: 'https://i.pinimg.com/1200x/94/63/c0/9463c0e162654d92f16eac7115bee650.jpg',
+                                overview: 'Guardians of the sacred twin crater lakes of Mount Manenguba in the mountainous highlands.',
+                                highlights: {
+                                    cultural_heritage: 'Deep spiritual connection to the male and female sacred lakes of Mount Manenguba.',
+                                    traditional_practices: 'Ritual offerings and ceremonies performed at the sacred lakes for fertility and prosperity.',
+                                    community_life: 'Mountain village clusters bound by shared reverence for natural landmarks and spiritual sites.'
+                                },
+                                meals_cuisine: 'Koki beans and waterfufu with spicy palm nut soup).',
+                                festivals: 'Annual lake purification ceremonies and harvest thanksgiving celebrations.',
+                                marriage_traditions: 'Requires blessings from lake guardians and traditional gifts representing mountain produce.',
+                                history: 'Established settlements around the volcanic crater lakes, developing unique water-centric spiritual practices.'
+                            },
+                            {
+                                name: 'Tiv',
+                                image_url: 'https://i.pinimg.com/736x/3d/b3/63/3db36336d5dbd33699a938f3f8facfa3.jpg',
+                                overview: 'Distinctive black-and-white striped heritage textiles and vibrant communal farming traditions.',
+                                highlights: {
+                                    cultural_heritage: 'Signature black-and-white geometric fabric designs with deep symbolic meanings.',
+                                    traditional_practices: 'Communal farming cooperatives and rhythmic harvest songs.',
+                                    community_life: 'Extended family structures with strong clan identities and mutual aid systems.'
+                                },
+                                meals_cuisine: 'Yam-based dishes with various vegetable sauces and traditional seasonings).',
+                                festivals: 'Yam harvest festivals celebrating agricultural abundance and community unity.',
+                                marriage_traditions: 'Involves yam presentations, family gatherings, and traditional dance celebrations.',
+                                history: 'Part of the broader Benue-Congo language family, with rich agricultural traditions spanning centuries.'
+                            },
+                            {
+                                name: 'Bayangi',
+                                image_url: 'https://i.pinimg.com/736x/7e/0b/31/7e0b31b828e5c4d7a37c0272d95d369e.jpg',
+                                overview: 'Cross-river forest communities with rich riverbank traditions and fishing expertise.',
+                                highlights: {
+                                    cultural_heritage: 'River fishing and cross-river community traditions.',
+                                    traditional_practices: 'River fishing techniques and cross-river communication systems.',
+                                    community_life: 'Riverbank communities with shared fishing traditions.'
+                                },
+                                meals_cuisine: 'River fish dishes with forest vegetables and spices.',
+                                festivals: 'River festivals and cross-river community events.',
+                                marriage_traditions: 'Involves river crossings and fish-themed celebrations.',
+                                history: 'Long-standing riverine communities with cross-river cultural exchange.'
+                            },
+                            {
+                                name: 'Anyang',
+                                image_url: 'https://i.pinimg.com/236x/c5/84/10/c58410b7f2d4d2b09748da58487c80e0.jpg',
+                                overview: 'Forest communities with exceptional hunting skills and trap-making expertise.',
+                                highlights: {
+                                    cultural_heritage: 'Traditional hunting and trap-making craftsmanship.',
+                                    traditional_practices: 'Hunting techniques, trap construction, and forest knowledge.',
+                                    community_life: 'Hunting communities with shared forest traditions.'
+                                },
+                                meals_cuisine: 'Game meat dishes with forest spices and preparation methods.',
+                                festivals: 'Hunting season festivals and forest celebration events.',
+                                marriage_traditions: 'Involves hunting trophies and forest ceremony blessings.',
+                                history: 'Forest hunting communities with rich trap-making traditions.'
+                            },
+                            {
+                                name: 'Boki',
+                                image_url: 'https://i.pinimg.com/736x/26/8e/18/268e18980487909b51827a1b3f093686.jpg',
+                                overview: 'Rich cultural traditions with distinctive facial markings and body art.',
+                                highlights: {
+                                    cultural_heritage: 'Traditional body art and facial marking traditions.',
+                                    traditional_practices: 'Body art techniques and cultural decoration rituals.',
+                                    community_life: 'Communities with shared body art and decoration traditions.'
+                                },
+                                meals_cuisine: 'Local staples with traditional preparation methods.',
+                                festivals: 'Body art festivals and cultural decoration ceremonies.',
+                                marriage_traditions: 'Involves traditional body art ceremonies and rituals.',
+                                history: 'Communities with long-standing body art and decoration traditions.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'Adamawa Region',
+                        tribes: [
+                            {
+                                name: 'Fulani (Fulbe)',
+                                image_url: 'https://i.pinimg.com/1200x/4c/00/37/4c003709d2d07d82a5552a77226576a1.jpg',
+                                overview: 'Majestic northern equestrian culture with flowing grand boubous and ancient pastoral traditions.',
+                                highlights: {
+                                    cultural_heritage: 'Rich nomadic pastoralist traditions and sophisticated cattle breeding expertise.',
+                                    traditional_practices: 'Equestrian displays, cattle herding techniques, and beautiful griot oral traditions.',
+                                    community_life: 'Pastoralist communities bound by deep respect for cattle and traditional leadership structures.'
+                                },
+                                meals_cuisine: 'Fura da nono (fermented milk balls with millet porridge) and grilled meat delicacies).',
+                                festivals: 'Equestrian fantasia festivals showcasing horsemanship skills and colorful regalia.',
+                                marriage_traditions: 'Involves cattle presentations, elaborate clothing ceremonies, and community celebrations.',
+                                history: 'Migrated from the western Sahel, bringing rich pastoralist traditions to northern Cameroon.'
+                            },
+                            {
+                                name: 'Tikar',
+                                image_url: 'https://i.pinimg.com/736x/6d/69/9a/6d699a8457115996bff756dccb17a678.jpg',
+                                overview: 'Legendary bronze-smithing artisans and the ancestral royal lineage of many Grassfields kingdoms.',
+                                highlights: {
+                                    cultural_heritage: 'Masterful bronze lost-wax casting techniques passed down through generations.',
+                                    traditional_practices: 'Metalworking crafts, royal artifacts creation, and traditional governance systems.',
+                                    community_life: 'Artisan communities organized around royal workshops and palace structures.'
+                                },
+                                meals_cuisine: 'Corn-based dishes with various stews and locally sourced vegetables).',
+                                festivals: 'Artisan craft festivals celebrating metalworking and traditional arts.',
+                                marriage_traditions: 'Includes bronze craft presentations and royal blessings.',
+                                history: 'Ancestral royal lineage that founded many Grassfields kingdoms, renowned for artistic excellence.'
+                            },
+                            {
+                                name: 'Mbum',
+                                image_url: 'https://i.pinimg.com/1200x/dc/80/63/dc8063e0f818a44d2d986be3496e4b20.jpg',
+                                overview: 'Traditional grain storage architecture and peaceful agricultural communities of the Adamawa plateau.',
+                                highlights: {
+                                    cultural_heritage: 'Impressive cylindrical grain storage structures built from local materials.',
+                                    traditional_practices: 'Agricultural techniques, grain preservation methods, and communal farming systems.',
+                                    community_life: 'Peaceful agricultural communities with strong cooperative traditions.'
+                                },
+                                meals_cuisine: 'Millet and sorghum-based dishes with traditional sauces and vegetables).',
+                                festivals: 'Harvest thanksgiving festivals and grain storage inauguration ceremonies.',
+                                marriage_traditions: 'Involves agricultural produce gifts and community feasts.',
+                                history: 'Long-standing agricultural communities with sophisticated grain storage technologies.'
+                            },
+                            {
+                                name: 'Chamba',
+                                image_url: 'https://i.pinimg.com/736x/95/31/8f/95318faf50a9d5955b2ddf547cc4a29e.jpg',
+                                overview: 'Warrior traditions and distinctive hunting regalia with elaborate ornamentation.',
+                                highlights: {
+                                    cultural_heritage: 'Warrior traditions and elaborate hunting regalia.',
+                                    traditional_practices: 'Warrior training, hunting techniques, and craft traditions.',
+                                    community_life: 'Warrior communities with strong defense traditions.'
+                                },
+                                meals_cuisine: 'Hunting expedition foods and warrior feast specialties.',
+                                festivals: 'Warrior celebration events and hunting festivals.',
+                                marriage_traditions: 'Involves warrior ceremonies and hunting trophy presentations.',
+                                history: 'Warrior communities with rich hunting and defense traditions.'
+                            },
+                            {
+                                name: 'Gude',
+                                image_url: 'https://i.pinimg.com/736x/5d/f8/07/5df8073f2d16f7d03e1967f14f2d5c80.jpg',
+                                overview: 'Agricultural communities with advanced soil conservation and terracing techniques.',
+                                highlights: {
+                                    cultural_heritage: 'Soil conservation and advanced agricultural techniques.',
+                                    traditional_practices: 'Terrace farming, soil conservation, and crop rotation.',
+                                    community_life: 'Agricultural communities with shared farming systems.'
+                                },
+                                meals_cuisine: 'High-quality grain dishes with traditional preparation methods.',
+                                festivals: 'Agricultural festivals and soil conservation celebration events.',
+                                marriage_traditions: 'Involves agricultural produce offerings and farming ceremony blessings.',
+                                history: 'Agricultural communities with centuries of soil conservation expertise.'
+                            },
+                            {
+                                name: 'Verre',
+                                image_url: 'https://i.pinimg.com/236x/8e/1b/c1/8e1bc193c40da389fa46ef2cc725659d.jpg',
+                                overview: 'Mountain communities with exceptional basket weaving and textile traditions.',
+                                highlights: {
+                                    cultural_heritage: 'Basket weaving and textile craft traditions.',
+                                    traditional_practices: 'Basket making, textile weaving, and craft techniques.',
+                                    community_life: 'Artisan communities with shared craft traditions.'
+                                },
+                                meals_cuisine: 'Local staples with traditional serving in woven baskets.',
+                                festivals: 'Basket weaving festivals and craft market events.',
+                                marriage_traditions: 'Involves woven basket gifts and craft ceremony presentations.',
+                                history: 'Mountain communities with rich basket weaving traditions.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'Far North Region',
+                        tribes: [
+                            {
+                                name: 'Kanuri',
+                                image_url: 'https://i.pinimg.com/736x/74/fa/3c/74fa3ce0a8f0cc0454ec5dfa965ad0cc.jpg',
+                                overview: 'Dignified Sahelian court parades with long white protective turbans and ancient imperial traditions.',
+                                highlights: {
+                                    cultural_heritage: 'Rich imperial history dating back to the ancient Kanem-Bornu empire.',
+                                    traditional_practices: 'Elaborate turban tying techniques, royal court protocols, and Islamic scholarship.',
+                                    community_life: 'Hierarchical social structure with strong traditional leadership and Islamic institutions.'
+                                },
+                                meals_cuisine: 'Tuwo (millet porridge) with Miyan Kuka (baobab leaf soup) and Kosai (bean cakes).',
+                                festivals: 'Islamic religious festivals and traditional durbars showcasing royal regalia.',
+                                marriage_traditions: 'Blends Islamic traditions with local Kanuri customs and celebrations.',
+                                history: 'Descendants of the powerful Kanem-Bornu empire, one of Africa\'s longest-lasting empires.'
+                            },
+                            {
+                                name: 'Mandara',
+                                image_url: 'https://i.pinimg.com/736x/1b/ea/56/1bea565b20fc501028199819f7153ac7.jpg',
+                                overview: 'Ancient mountain fortress structures, stonework outcroppings, and the historic sultanate of Mora.',
+                                highlights: {
+                                    cultural_heritage: 'Mountain fortress architecture and ancient stonework techniques.',
+                                    traditional_practices: 'Terrace agriculture, mountain defense systems, and craft traditions.',
+                                    community_life: 'Mountain communities organized around ancient sultanate structures.'
+                                },
+                                meals_cuisine: 'Sorghum-based dishes with mountain vegetables and traditional sauces).',
+                                festivals: 'Mountain cultural festivals and sultanate ceremonies.',
+                                marriage_traditions: 'Involves mountain produce and traditional craft presentations.',
+                                history: 'Established ancient mountain sultanates with impressive defensive architecture.'
+                            },
+                            {
+                                name: 'Mafa',
+                                image_url: 'https://i.pinimg.com/736x/7d/d8/5a/7dd85acb18af1a0c56e213a377de1c31.jpg',
+                                overview: 'Beautiful, engineering-focused stone agricultural terraces lining steep mountain walls.',
+                                highlights: {
+                                    cultural_heritage: 'Remarkable stone terrace engineering for mountain agriculture.',
+                                    traditional_practices: 'Mountain terrace construction, irrigation systems, and agricultural techniques.',
+                                    community_life: 'Close-knit mountain communities with shared terrace maintenance systems.'
+                                },
+                                meals_cuisine: 'Sorghum and millet dishes with locally grown mountain vegetables).',
+                                festivals: 'Harvest festivals celebrating successful terrace farming.',
+                                marriage_traditions: 'Includes stone-working demonstrations and agricultural gifts.',
+                                history: 'Developed extraordinary mountain terrace agriculture over centuries of inhabiting the Mandara Mountains.'
+                            },
+                            {
+                                name: 'Kotoko',
+                                image_url: 'https://i.pinimg.com/736x/7e/0f/2c/7e0f2c12c866233082415098921e358f.jpg',
+                                overview: 'Lake Chad fishing communities with unique fishing boat and net designs.',
+                                highlights: {
+                                    cultural_heritage: 'Lake fishing and boat-building traditions.',
+                                    traditional_practices: 'Fishing techniques, boat construction, and net making.',
+                                    community_life: 'Lake shore communities with shared fishing traditions.'
+                                },
+                                meals_cuisine: 'Lake fish specialties with traditional preparation methods.',
+                                festivals: 'Lake fishing festivals and boat launching ceremonies.',
+                                marriage_traditions: 'Involves fish catches and lake celebration events.',
+                                history: 'Lake Chad fishing communities with generations of maritime expertise.'
+                            },
+                            {
+                                name: 'Mundang',
+                                image_url: 'https://i.pinimg.com/236x/35/05/c1/3505c182c5a87505a40f283691a5379f.jpg',
+                                overview: 'Cattle-herding communities with distinctive livestock management practices.',
+                                highlights: {
+                                    cultural_heritage: 'Cattle herding and livestock management traditions.',
+                                    traditional_practices: 'Herding techniques, livestock care, and cattle decoration.',
+                                    community_life: 'Pastoralist communities with shared herding traditions.'
+                                },
+                                meals_cuisine: 'Dairy and meat dishes with traditional preparation methods.',
+                                festivals: 'Cattle festivals and livestock celebration events.',
+                                marriage_traditions: 'Involves cattle presentations and herding ceremony blessings.',
+                                history: 'Cattle-herding communities with rich livestock management traditions.'
+                            },
+                            {
+                                name: 'Tupuri',
+                                image_url: 'https://i.pinimg.com/736x/93/8f/56/938f56629741b8885d7031b42b47c4ec.jpg',
+                                overview: 'Vibrant dance traditions with energetic drum ensembles and rhythmic movements.',
+                                highlights: {
+                                    cultural_heritage: 'Energetic drum ensembles and dance traditions.',
+                                    traditional_practices: 'Drum making, ensemble performances, and dance techniques.',
+                                    community_life: 'Musical communities with shared dance and drum traditions.'
+                                },
+                                meals_cuisine: 'Local staples with traditional preparation methods.',
+                                festivals: 'Dance and drum festivals with energetic performances.',
+                                marriage_traditions: 'Involves drum performances and dance celebration events.',
+                                history: 'Communities with rich dance and drum ensemble traditions.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'East Region',
+                        tribes: [
+                            {
+                                name: 'Sara',
+                                image_url: 'https://i.pinimg.com/236x/44/b9/b8/44b9b88319bf78e7924864db1b07353f.jpg',
+                                overview: 'Savanna-edge river fishermen navigating matching hand-carved pirogues across eastern waterways.',
+                                highlights: {
+                                    cultural_heritage: 'Expert canoe building and river navigation traditions.',
+                                    traditional_practices: 'Fishing techniques, canoe carving, and river-based community life.',
+                                    community_life: 'Riverbank communities with strong fishing cooperatives.'
+                                },
+                                meals_cuisine: 'Fresh fish dishes with cassava and local riverbank vegetables).',
+                                festivals: 'River festivals and fishing season opening ceremonies.',
+                                marriage_traditions: 'Involves fish presentations and riverbank celebrations.',
+                                history: 'Long-standing riverine communities with rich fishing and navigation traditions.'
+                            },
+                            {
+                                name: 'Gbaya',
+                                image_url: 'https://i.pinimg.com/236x/f3/d6/99/f3d699f7c7d8c5f8eb3f7c0707b3f7e2.jpg',
+                                overview: 'Earthen-wall residential design concepts native to the southeastern forest edge.',
+                                highlights: {
+                                    cultural_heritage: 'Unique traditional architecture and earthen building techniques.',
+                                    traditional_practices: 'Hunting, gathering, and traditional iron working.',
+                                    community_life: 'Village communities organized around traditional leadership structures.'
+                                },
+                                meals_cuisine: 'Cassava-based dishes with wild game and forest vegetables).',
+                                festivals: 'Hunting festivals and traditional ceremonies.',
+                                marriage_traditions: 'Involves hunting trophies and traditional craft presentations.',
+                                history: 'Indigenous forest communities with rich hunting and gathering traditions.'
+                            },
+                            {
+                                name: 'Mandjia',
+                                image_url: 'https://i.pinimg.com/1200x/b1/ad/bf/b1adbf33490a79611b1c3c6e62f4c405.jpg',
+                                overview: 'Savanna transition farming communities processing agricultural crops using hand-woven trays.',
+                                highlights: {
+                                    cultural_heritage: 'Traditional weaving techniques and agricultural processing methods.',
+                                    traditional_practices: 'Farming, weaving, and communal harvesting practices.',
+                                    community_life: 'Agricultural communities with strong cooperative traditions.'
+                                },
+                                meals_cuisine: 'Local staples with traditional sauces and agricultural produce).',
+                                festivals: 'Harvest festivals and weaving competitions.',
+                                marriage_traditions: 'Includes woven craft presentations and agricultural gifts.',
+                                history: 'Agricultural communities with long-standing weaving and farming traditions.'
+                            },
+                            {
+                                name: 'Pana',
+                                image_url: 'https://i.pinimg.com/236x/b8/7a/ef/b87aefd957a670d93b634f529f8d52e4.jpg',
+                                overview: 'Deep forest communities with intricate knowledge of rainforest ecosystems.',
+                                highlights: {
+                                    cultural_heritage: 'Rainforest knowledge and sustainable resource use.',
+                                    traditional_practices: 'Forest navigation, resource gathering, and conservation.',
+                                    community_life: 'Forest communities with shared ecological knowledge.'
+                                },
+                                meals_cuisine: 'Forest-sourced foods with traditional preparation methods.',
+                                festivals: 'Forest celebration events and thanksgiving ceremonies.',
+                                marriage_traditions: 'Involves forest ceremony blessings and resource offerings.',
+                                history: 'Deep forest communities with centuries of rainforest knowledge.'
+                            },
+                            {
+                                name: 'Kako',
+                                image_url: 'https://i.pinimg.com/236x/9c/9c/6e/9c9c6e0e7a18241ef766f637a6d1c4a3.jpg',
+                                overview: 'River communities with exceptional canoe-building and river navigation skills.',
+                                highlights: {
+                                    cultural_heritage: 'Canoe building and river navigation traditions.',
+                                    traditional_practices: 'Canoe construction, river navigation, and fishing techniques.',
+                                    community_life: 'River communities with shared canoe and navigation traditions.'
+                                },
+                                meals_cuisine: 'River fish dishes with traditional preparation methods.',
+                                festivals: 'River festivals and canoe launching ceremonies.',
+                                marriage_traditions: 'Involves river ceremony blessings and canoe processions.',
+                                history: 'River communities with rich canoe and navigation traditions.'
+                            },
+                            {
+                                name: 'Mpo',
+                                image_url: 'https://i.pinimg.com/736x/c2/46/2b/c2462bb39c9c9294c51a103269398012.jpg',
+                                overview: 'Forest agriculturalists with advanced agroforestry and multi-cropping systems.',
+                                highlights: {
+                                    cultural_heritage: 'Agroforestry and multi-cropping agricultural systems.',
+                                    traditional_practices: 'Agroforestry techniques, crop diversity, and forest farming.',
+                                    community_life: 'Agricultural communities with shared agroforestry traditions.'
+                                },
+                                meals_cuisine: 'Diverse crop dishes with traditional preparation methods.',
+                                festivals: 'Agricultural festivals and agroforestry celebration events.',
+                                marriage_traditions: 'Involves agricultural produce offerings and farming ceremony blessings.',
+                                history: 'Forest agricultural communities with centuries of agroforestry expertise.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'North Region',
+                        tribes: [
+                            {
+                                name: 'Mada',
+                                image_url: 'https://i.pinimg.com/736x/58/75/54/5875548e47c4a586ff01f17c9b2de4c0.jpg',
+                                overview: 'Communal musical wind ensembles playing elongated, masterfully carved wood horns.',
+                                highlights: {
+                                    cultural_heritage: 'Long wooden horn ensembles and traditional musical traditions.',
+                                    traditional_practices: 'Horn carving, musical performances, and communal ceremonies.',
+                                    community_life: 'Musical communities with strong ensemble traditions.'
+                                },
+                                meals_cuisine: 'Sorghum-based dishes with local vegetables and sauces).',
+                                festivals: 'Musical festivals and horn ensemble performances.',
+                                marriage_traditions: 'Involves musical performances and traditional horn presentations.',
+                                history: 'Communities with rich musical and craft traditions spanning centuries.'
+                            },
+                            {
+                                name: 'Guiziga',
+                                image_url: 'https://i.pinimg.com/736x/96/d0/44/96d044ebdf87825a73ff1539139ef44e.jpg',
+                                overview: 'Community members dancing in unison inside local clay-walled compounds during harvest time.',
+                                highlights: {
+                                    cultural_heritage: 'Vibrant communal dance traditions and clay compound architecture.',
+                                    traditional_practices: 'Communal dances, clay construction, and agricultural traditions.',
+                                    community_life: 'Tight-knit communities with shared compound living arrangements.'
+                                },
+                                meals_cuisine: 'Local agricultural staples with traditional sauces).',
+                                festivals: 'Harvest dance festivals and communal celebration events.',
+                                marriage_traditions: 'Includes communal dances and traditional gift exchanges.',
+                                history: 'Communities with rich dance and agricultural traditions.'
+                            },
+                            {
+                                name: 'Dagara',
+                                image_url: 'https://i.pinimg.com/736x/06/ad/22/06ad228843d62ab4ab3750a2ca46a757.jpg',
+                                overview: 'Artisan hands shaping regional patterned earthenware pottery using open fires.',
+                                highlights: {
+                                    cultural_heritage: 'Traditional pottery making techniques and decorative patterns.',
+                                    traditional_practices: 'Pottery craftsmanship, open-fire techniques, and traditional designs.',
+                                    community_life: 'Artisan communities with shared pottery traditions.'
+                                },
+                                meals_cuisine: 'Local staples served in traditional pottery vessels).',
+                                festivals: 'Pottery festivals and craft market events.',
+                                marriage_traditions: 'Includes pottery presentations and craft demonstrations.',
+                                history: 'Artisan communities with long-standing pottery traditions.'
+                            },
+                            {
+                                name: 'Kapsiki',
+                                image_url: 'https://i.pinimg.com/736x/2c/31/92/2c3192451f26bd435e35d2307935e06b.jpg',
+                                overview: 'Mountain communities with exceptional cliffside architecture and defensive structures.',
+                                highlights: {
+                                    cultural_heritage: 'Cliffside architecture and defensive building techniques.',
+                                    traditional_practices: 'Cliff construction, defense systems, and mountain living.',
+                                    community_life: 'Mountain communities with shared defense and architecture traditions.'
+                                },
+                                meals_cuisine: 'Mountain-grown crops with traditional preparation methods.',
+                                festivals: 'Mountain festivals and architecture celebration events.',
+                                marriage_traditions: 'Involves mountain ceremony blessings and cliffside rituals.',
+                                history: 'Mountain communities with centuries of cliffside architecture expertise.'
+                            },
+                            {
+                                name: 'Podoko',
+                                image_url: 'https://i.pinimg.com/736x/8a/33/87/8a3387e262ef3e7cc6b4f468e99710c1.jpg',
+                                overview: 'Vibrant mask-making traditions with elaborate ceremonial mask designs.',
+                                highlights: {
+                                    cultural_heritage: 'Elaborate mask making and ceremonial traditions.',
+                                    traditional_practices: 'Mask carving, ceremony rituals, and mask performances.',
+                                    community_life: 'Communities with shared mask and ceremony traditions.'
+                                },
+                                meals_cuisine: 'Local staples with traditional preparation methods.',
+                                festivals: 'Mask festivals and ceremony celebration events.',
+                                marriage_traditions: 'Involves mask performances and ceremony blessings.',
+                                history: 'Communities with rich mask-making and ceremony traditions.'
+                            },
+                            {
+                                name: 'Mofu',
+                                image_url: 'https://i.pinimg.com/236x/32/6a/0c/326a0c3057679c22a05d127d65b841d0.jpg',
+                                overview: 'Farming communities with exceptional grain storage and seed preservation practices.',
+                                highlights: {
+                                    cultural_heritage: 'Grain storage and seed preservation traditions.',
+                                    traditional_practices: 'Storage construction, seed preservation, and crop diversity.',
+                                    community_life: 'Agricultural communities with shared storage and seed traditions.'
+                                },
+                                meals_cuisine: 'Diverse grain dishes with traditional preparation methods.',
+                                festivals: 'Seed festivals and storage inauguration events.',
+                                marriage_traditions: 'Involves seed offerings and agricultural ceremony blessings.',
+                                history: 'Communities with centuries of grain storage and seed preservation expertise.'
+                            }
+                        ]
+                    },
+                    {
+                        region: 'South Region',
+                        tribes: [
+                            {
+                                name: 'Bulu',
+                                image_url: 'https://i.pinimg.com/736x/32/08/df/3208df38b6fec89ac90144e19047ab24.jpg',
+                                overview: 'Deep-forest structural instruments including massive hollowed talking log drums.',
+                                highlights: {
+                                    cultural_heritage: 'Talking log drum communication systems and forest instrument crafting.',
+                                    traditional_practices: 'Log drum making, forest communication techniques, and oral traditions.',
+                                    community_life: 'Forest communities with rich oral history and communication traditions.'
+                                },
+                                meals_cuisine: 'Plantain-based dishes with forest vegetables and game).',
+                                festivals: 'Forest drum festivals and oral history storytelling events.',
+                                marriage_traditions: 'Involves drum performances and forest product presentations.',
+                                history: 'Deep forest communities with sophisticated communication systems.'
+                            },
+                            {
+                                name: 'Fang (South)',
+                                image_url: 'https://i.pinimg.com/1200x/23/ac/de/23acde78b2281113d66fcfe75e00fba7.jpg',
+                                overview: 'Orally preserved ancestral history narratives accompanied by the Mvet stringed harp.',
+                                highlights: {
+                                    cultural_heritage: 'Mvet harp traditions and rich oral history storytelling.',
+                                    traditional_practices: 'Harp playing, oral history preservation, and forest crafts.',
+                                    community_life: 'Communities centered around oral history and musical traditions.'
+                                },
+                                meals_cuisine: 'Yam and plantain dishes with forest vegetables and spices).',
+                                festivals: 'Mvet music festivals and oral history celebrations.',
+                                marriage_traditions: 'Involves Mvet performances and oral history blessings.',
+                                history: 'Communities with extraordinary oral history traditions spanning centuries.'
+                            },
+                            {
+                                name: 'Pov',
+                                image_url: 'https://i.pinimg.com/736x/01/f9/bd/01f9bd557f5d1c7857010a50a29af639.jpg',
+                                overview: 'Thick, dense equatorial primary jungle paths characterizing native Pov territories.',
+                                highlights: {
+                                    cultural_heritage: 'Deep forest knowledge and jungle navigation expertise.',
+                                    traditional_practices: 'Forest hunting, gathering, and traditional ecological knowledge.',
+                                    community_life: 'Forest communities with strong environmental knowledge systems.'
+                                },
+                                meals_cuisine: 'Forest-based dishes with local game and jungle vegetables).',
+                                festivals: 'Forest thanksgiving ceremonies and hunting festivals.',
+                                marriage_traditions: 'Involves forest product presentations and jungle survival demonstrations.',
+                                history: 'Indigenous forest communities with deep ecological knowledge.'
+                            },
+                            {
+                                name: 'Fang (South)',
+                                image_url: 'https://i.pinimg.com/736x/4c/47/07/4c4707f5e2d28337b03d1a99988d83ab.jpg',
+                                overview: 'Expansive equatorial forest communities with rich oral history and storytelling traditions.',
+                                highlights: {
+                                    cultural_heritage: 'Oral history and elaborate storytelling traditions.',
+                                    traditional_practices: 'Storytelling, oral history preservation, and forest knowledge.',
+                                    community_life: 'Forest communities with shared storytelling traditions.'
+                                },
+                                meals_cuisine: 'Forest-sourced foods with traditional preparation methods.',
+                                festivals: 'Storytelling festivals and oral history celebration events.',
+                                marriage_traditions: 'Involves storytelling ceremonies and oral history blessings.',
+                                history: 'Forest communities with rich oral history and storytelling traditions.'
+                            },
+                            {
+                                name: 'Beti (South)',
+                                image_url: 'https://i.pinimg.com/736x/4e/03/2c/4e032c0f17155795523f09d425c959e9.jpg',
+                                overview: 'Vibrant Bikutsi music traditions with energetic dance and percussion ensembles.',
+                                highlights: {
+                                    cultural_heritage: 'Bikutsi music and energetic dance traditions.',
+                                    traditional_practices: 'Music performance, dance techniques, and percussion making.',
+                                    community_life: 'Musical communities with shared Bikutsi traditions.'
+                                },
+                                meals_cuisine: 'Local staples with traditional preparation methods.',
+                                festivals: 'Bikutsi music festivals and dance celebration events.',
+                                marriage_traditions: 'Involves Bikutsi performances and music ceremony blessings.',
+                                history: 'Communities with rich Bikutsi music and dance traditions.'
+                            },
+                            {
+                                name: 'Pygmy (Baka)',
+                                image_url: 'https://i.pinimg.com/736x/0c/9a/3f/0c9a3f26c6785c891a2c78629767d6f0.jpg',
+                                overview: 'Indigenous forest hunter-gatherers with extraordinary forest knowledge and survival skills.',
+                                highlights: {
+                                    cultural_heritage: 'Deep forest knowledge and hunter-gatherer traditions.',
+                                    traditional_practices: 'Hunting, gathering, forest navigation, and survival skills.',
+                                    community_life: 'Forest communities with shared hunter-gatherer traditions.'
+                                },
+                                meals_cuisine: 'Forest-sourced foods with traditional preparation methods.',
+                                festivals: 'Forest celebration events and thanksgiving ceremonies.',
+                                marriage_traditions: 'Involves forest ceremony blessings and hunter-gatherer rituals.',
+                                history: 'Indigenous forest communities with thousands of years of forest knowledge.'
+                            }
+                        ]
+                    }
+                ]
+            };
 
-            async function loadTribes() {
-                try {
-                    // Add timestamp to bypass cache
-                    const response = await fetch(`/api/tribes?t=${Date.now()}`);
-                    const data = await response.json();
-                    allTribes = Object.values(data.tribes);
-                    
-                    renderRegions();
-                    renderTribes();
-                } catch (error) {
-                    console.error('Error loading tribes:', error);
-                }
-            }
+            let currentRegion = 'all';
 
             function renderRegions() {
                 const regionFilters = document.getElementById('regionFilters');
+                const allBtn = regionFilters.querySelector('[data-region="all"]');
                 
-                // Get all unique regions, limited to 10 as requested
-                let regions = [...new Set(allTribes.map(t => t.location?.region || 'Unknown'))].sort();
-                const displayRegions = regions.slice(0, 10);
-                
-                // Clear and re-create "All Groups"
-                regionFilters.innerHTML = '';
-                const allBtn = document.createElement('div');
-                allBtn.className = `filter-pill ${currentRegion === 'all' ? 'active' : ''}`;
-                allBtn.textContent = 'All Groups';
-                allBtn.setAttribute('data-region', 'all');
-                allBtn.addEventListener('click', () => {
-                    document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
-                    allBtn.classList.add('active');
-                    currentRegion = 'all';
-                    document.getElementById('tribeSearch').value = ''; 
-                    renderTribes();
-                });
-                regionFilters.appendChild(allBtn);
-
-                displayRegions.forEach(region => {
+                data.cameroon_tribes_by_region.forEach(regionData => {
                     const pill = document.createElement('div');
-                    pill.className = `filter-pill ${currentRegion === region ? 'active' : ''}`;
-                    pill.textContent = region;
-                    pill.setAttribute('data-region', region);
+                    pill.className = 'filter-pill';
+                    pill.innerHTML = `<i class="fas fa-map-marker-alt me-2"></i>${regionData.region}`;
+                    pill.setAttribute('data-region', regionData.region);
                     pill.addEventListener('click', () => {
                         document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
                         pill.classList.add('active');
-                        currentRegion = region;
+                        currentRegion = regionData.region;
+                        document.getElementById('tribeSearch').value = '';
                         renderTribes();
                     });
                     regionFilters.appendChild(pill);
                 });
+
+                allBtn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+                    allBtn.classList.add('active');
+                    currentRegion = 'all';
+                    document.getElementById('tribeSearch').value = '';
+                    renderTribes();
+                });
             }
 
             function renderTribes() {
-                const grid = document.getElementById('tribeGrid');
+                const container = document.getElementById('tribesContainer');
                 const searchTerm = document.getElementById('tribeSearch').value.toLowerCase();
                 
-                grid.innerHTML = '';
+                container.innerHTML = '';
+                let hasResults = false;
 
-                const filtered = allTribes.filter(tribe => {
-                    const matchesRegion = currentRegion === 'all' || (tribe.location?.region === currentRegion);
-                    
-                    const name = (tribe.name || '').toLowerCase();
-                    const overview = (tribe.overview || '').toLowerCase();
-                    const region = (tribe.location?.region || '').toLowerCase();
-                    
-                    // Search in lists too
-                    const customs = (tribe.customs_and_traditions || []).join(' ').toLowerCase();
-                    const meals = (tribe.meals_and_cuisine_list || []).join(' ').toLowerCase();
-                    const festivals = (tribe.festivals_list || []).join(' ').toLowerCase();
-                    
-                    const matchesSearch = name.includes(searchTerm) || 
-                                        overview.includes(searchTerm) ||
-                                        region.includes(searchTerm) ||
-                                        customs.includes(searchTerm) ||
-                                        meals.includes(searchTerm) ||
-                                        festivals.includes(searchTerm);
-                                        
-                    return matchesRegion && matchesSearch;
+                data.cameroon_tribes_by_region.forEach((regionData, regionIndex) => {
+                    const filteredTribes = regionData.tribes.filter(tribe => {
+                        const matchesRegion = currentRegion === 'all' || regionData.region === currentRegion;
+                        
+                        const name = (tribe.name || '').toLowerCase();
+                        const overview = (tribe.overview || '').toLowerCase();
+                        const region = regionData.region.toLowerCase();
+                        
+                        const matchesSearch = name.includes(searchTerm) || 
+                                            overview.includes(searchTerm) ||
+                                            region.includes(searchTerm);
+                                            
+                        return matchesRegion && matchesSearch;
+                    });
+
+                    if (filteredTribes.length > 0) {
+                        hasResults = true;
+                        
+                        const regionSection = document.createElement('div');
+                        regionSection.className = 'mb-5';
+                        regionSection.setAttribute('data-aos', 'fade-up');
+                        
+                        regionSection.innerHTML = `
+                            <div class="region-header">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fas fa-map-marked-alt" style="font-size: 1.5rem; color: var(--primary-green);"></i>
+                                    <h3 class="region-title">${regionData.region}</h3>
+                                </div>
+                            </div>
+                            <div class="row tribe-grid" id="grid-${regionData.region.replace(/\s/g, '-')}"></div>
+                        `;
+                        container.appendChild(regionSection);
+
+                        const grid = regionSection.querySelector('.tribe-grid');
+                        
+                        filteredTribes.forEach((tribe, tribeIndex) => {
+                            const col = document.createElement('div');
+                            col.className = 'col-md-6 col-lg-4';
+                            col.setAttribute('data-aos', 'fade-up');
+                            col.setAttribute('data-aos-delay', (tribeIndex * 100));
+
+                            col.innerHTML = `
+                                <div class="tribe-widget" data-tribe='${encodeURIComponent(JSON.stringify(tribe))}' data-region-name="${regionData.region}">
+                                    <div class="tribe-widget-img-wrapper">
+                                        <img src="${tribe.image_url}" class="tribe-widget-img" alt="${tribe.name}">
+                                        <span class="tribe-widget-badge">${regionData.region}</span>
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="fw-bold mb-1">${tribe.name}</h5>
+                                        <p class="text-muted small mb-0" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${tribe.overview}</p>
+                                    </div>
+                                </div>
+                            `;
+                            grid.appendChild(col);
+                        });
+                    }
                 });
 
-                if (filtered.length === 0) {
-                    grid.innerHTML = '<div class="col-12 text-center py-5"><p class="text-muted">No tribes found matching your criteria.</p></div>';
-                    return;
-                }
-
-                filtered.forEach((tribe, index) => {
-                    const col = document.createElement('div');
-                    col.className = 'col-md-6 col-lg-4';
-                    col.setAttribute('data-aos', 'fade-up');
-                    col.setAttribute('data-aos-delay', (index % 3) * 100);
-
-                    // Use tribe.image_url if available, otherwise use a placeholder
-                    const imgPath = tribe.image_url || `image/download (${(index % 8) + 1}).jpeg`;
-                    
-                    col.innerHTML = `
-                        <div class="tribe-card">
-                            <div class="tribe-img-wrapper">
-                                <img src="${imgPath}" class="tribe-img" onerror="this.src='image/download (1).png'">
-                                <span class="tribe-badge">${tribe.location?.region || 'Cameroon'}</span>
-                            </div>
-                            <div class="card-body p-4 d-flex flex-column">
-                                <h4 class="fw-bold mb-2">${tribe.name}</h4>
-                                <p class="text-muted small mb-4 flex-grow-1">${tribe.overview.substring(0, 150)}...</p>
-                                <button class="btn btn-modern btn-success w-100 discover-btn" data-tribe="${tribe.name.toLowerCase()}">Discover More</button>
-                            </div>
+                if (!hasResults) {
+                    container.innerHTML = `
+                        <div class="text-center py-10">
+                            <i class="fas fa-search" style="font-size: 4rem; color: #ccc; margin-bottom: 1.5rem;"></i>
+                            <h4 style="color: #666; font-weight: 700;">No tribes found</h4>
+                            <p class="text-muted mt-2" style="font-size: 1rem;">Try adjusting your search or filter to discover amazing cultures!</p>
                         </div>
                     `;
-                    grid.appendChild(col);
-
-                    col.querySelector('.discover-btn').addEventListener('click', () => {
-                        showTribeDetails(tribe, imgPath);
-                    });
-                });
+                }
 
                 AOS.refresh();
+
+                // Add click listeners to widgets
+                document.querySelectorAll('.tribe-widget').forEach(widget => {
+                    widget.addEventListener('click', function() {
+                        const tribeData = JSON.parse(decodeURIComponent(this.dataset.tribe));
+                        const regionName = this.dataset.regionName;
+                        showTribeDetails(tribeData, regionName);
+                    });
+                });
             }
 
-            function showTribeDetails(tribe, imgPath) {
-                document.getElementById('tribeDetailHeader').style.backgroundImage = `url('${imgPath}')`;
-                document.getElementById('tribeDetailName').textContent = tribe.name;
-                document.getElementById('tribeDetailRegion').textContent = tribe.location?.region || 'Cameroon';
-                document.getElementById('tribeDetailOverview').textContent = tribe.overview;
+            function showTribeDetails(tribe, regionName) {
+                document.getElementById('tribeDetailModalImg').src = tribe.image_url;
+                document.getElementById('tribeDetailModalName').textContent = tribe.name;
+                document.getElementById('tribeDetailModalRegion').textContent = regionName;
+                document.getElementById('tribeDetailModalOverview').textContent = tribe.overview;
                 
-                const formatList = (data, fallback) => {
-                    if (!data) return `<p>${fallback}</p>`;
-                    if (Array.isArray(data)) {
-                        return `<ul class="ps-3 mb-0">${data.map(item => `<li class="mb-2">${item}</li>`).join('')}</ul>`;
-                    }
-                    return `<p>${data}</p>`;
-                };
+                const highlightsHtml = `
+                    <div class="p-3 mb-2" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #2d5a27;">
+                        <h6 class="fw-bold mb-1" style="color: var(--primary-green);">Cultural Heritage</h6>
+                        <p class="mb-0 text-muted small">${tribe.highlights.cultural_heritage}</p>
+                    </div>
+                    <div class="p-3 mb-2" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #2d5a27;">
+                        <h6 class="fw-bold mb-1" style="color: var(--primary-green);">Traditional Practices</h6>
+                        <p class="mb-0 text-muted small">${tribe.highlights.traditional_practices}</p>
+                    </div>
+                    <div class="p-3" style="background: #f8f9fa; border-radius: 12px; border-left: 4px solid #2d5a27;">
+                        <h6 class="fw-bold mb-1" style="color: var(--primary-green);">Community Life</h6>
+                        <p class="mb-0 text-muted small">${tribe.highlights.community_life}</p>
+                    </div>
+                `;
+                document.getElementById('tribeDetailModalHighlights').innerHTML = highlightsHtml;
+                
+                document.getElementById('tribeDetailModalMeals').textContent = tribe.meals_cuisine;
+                document.getElementById('tribeDetailModalFestivals').textContent = tribe.festivals;
+                document.getElementById('tribeDetailModalMarriage').textContent = tribe.marriage_traditions;
+                document.getElementById('tribeDetailModalHistory').textContent = tribe.history;
 
-                // Set detail sections
-                document.getElementById('tribeDetailMeals').innerHTML = formatList(tribe.meals_and_cuisine_list || tribe.food_and_cuisine, "Information about traditional meals is being updated.");
-                document.getElementById('tribeDetailCulture').innerHTML = formatList(tribe.customs_and_traditions || tribe.culture?.social_structure || tribe.culture, "Cultural details are being updated.");
-                
-                // Festivals
-                let festivalsContent = "";
-                if (tribe.festivals_list) {
-                    festivalsContent = formatList(tribe.festivals_list);
-                } else if (tribe.traditions?.ceremonies) {
-                    if (Array.isArray(tribe.traditions.ceremonies)) {
-                        festivalsContent = `<ul class="ps-3 mb-0">${tribe.traditions.ceremonies.map(c => `<li class="mb-2"><strong>${c.name}:</strong> ${c.description}</li>`).join('')}</ul>`;
-                    } else {
-                        festivalsContent = `<p>${tribe.traditions.ceremonies}</p>`;
-                    }
-                } else {
-                    festivalsContent = `<p>Information about festivals is being updated.</p>`;
-                }
-                document.getElementById('tribeDetailFestivals').innerHTML = festivalsContent;
-                
-                // Marriage
-                document.getElementById('tribeDetailMarriage').innerHTML = formatList(tribe.marriage || tribe.traditions?.marriage, "Marriage customs details are being updated.");
-                
-                // History
-                document.getElementById('tribeDetailHistory').innerHTML = formatList(tribe.history?.origin || tribe.history, "Historical background is being updated.");
-
-                // Show the modal
                 const modal = new bootstrap.Modal(document.getElementById('tribeDetailModal'));
                 modal.show();
             }
 
-            // Search logic
             document.getElementById('tribeSearch').addEventListener('input', renderTribes);
             document.getElementById('searchBtn').addEventListener('click', renderTribes);
 
-            // --- AI Assistant Logic ---
+            renderRegions();
+            renderTribes();
+
+            // AI Assistant Logic
             const aiToggleBtn = document.getElementById('aiToggleBtn');
             const aiChatCard = document.getElementById('aiChatCard');
             const closeAiChat = document.getElementById('closeAiChat');
             const aiChatInput = document.getElementById('aiChatInput');
             const aiSendBtn = document.getElementById('aiSendBtn');
             const aiChatMessages = document.getElementById('aiChatMessages');
-            const aiStatus = document.getElementById('aiStatus');
             const clearHistoryBtn = document.getElementById('clearHistoryBtn');
             const historyList = document.getElementById('historyList');
 
@@ -802,154 +1655,54 @@
             aiToggleBtn.addEventListener('click', () => toggleAiChat());
             closeAiChat.addEventListener('click', () => toggleAiChat(false));
 
-            async function sendAiMessage(message) {
-                if (!message.trim()) return;
-
-                // Add user message to UI
-                addMessageToUi(message, 'user');
-                aiChatInput.value = '';
-
-                // Add to history
-                AICore.addMessage('user', message);
-
-                // Show status
-                aiStatus.classList.add('active');
-
-                try {
-                    const data = await AICore.generateResponse(message);
-                    
-                    // Add bot message to UI
-                    addMessageToUi(data.response, 'bot');
-                    
-                    // Add to history
-                    AICore.addMessage('bot', data.response, data.source);
-                } catch (error) {
-                    console.error('Chat error:', error);
-                    addMessageToUi("I'm sorry, I'm having trouble connecting right now.", 'bot');
-                } finally {
-                    aiStatus.classList.remove('active');
-                }
-            }
-
-            function addMessageToUi(content, role) {
-                const msgDiv = document.createElement('div');
-                msgDiv.className = `ai-message ai-${role}-message`;
-                msgDiv.textContent = content;
-                aiChatMessages.appendChild(msgDiv);
+            function addMessageToUi(text, role) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `ai-message ai-${role}-message`;
+                messageDiv.textContent = text;
+                aiChatMessages.appendChild(messageDiv);
                 aiChatMessages.scrollTop = aiChatMessages.scrollHeight;
             }
 
             function renderHistoryInChat() {
-                // Only render if empty (initial load)
-                if (aiChatMessages.children.length <= 1) {
-                    const history = AICore.getHistory();
-                    history.forEach(msg => {
-                        addMessageToUi(msg.content, msg.role);
-                    });
-                }
-            }
-
-            function clearHistory() {
-                AICore.clearHistory();
-                aiChatMessages.innerHTML = `
-                    <div class="ai-message ai-bot-message">
-                        History cleared. How can I help you today?
-                    </div>
-                `;
-                renderHistoryModal();
-            }
-
-            function renderHistoryModal() {
-                if (!historyList) return;
-                historyList.innerHTML = '';
-                
                 const history = AICore.getHistory();
-                
+                aiChatMessages.innerHTML = '';
                 if (history.length === 0) {
-                    historyList.innerHTML = '<div class="text-center py-4"><p class="text-muted">No history found.</p></div>';
-                    return;
-                }
-
-                // Group into sessions
-                const sessions = [];
-                for (let i = 0; i < history.length; i++) {
-                    if (history[i].role === 'user') {
-                        sessions.push({
-                            user: history[i],
-                            bot: history[i + 1] || null
-                        });
-                    }
-                }
-                sessions.reverse();
-
-                sessions.forEach((session) => {
-                    const item = document.createElement('div');
-                    item.className = 'card border-0 shadow-sm rounded-4 mb-3 history-card';
-                    const timeAgo = AICore.formatTime(session.user.timestamp);
-                    
-                    item.innerHTML = `
-                        <div class="card-body p-3">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-success bg-opacity-10 text-success rounded-pill small">
-                                    <i class="fas fa-clock me-1"></i> ${timeAgo}
-                                </span>
-                                <button class="btn btn-sm btn-link text-danger p-0 delete-session" data-id="${session.user.id}">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                            </div>
-                            <div class="fw-bold small text-dark mb-1">${session.user.content}</div>
-                            ${session.bot ? `<div class="text-muted small text-truncate-2">${session.bot.content}</div>` : ''}
-                        </div>
-                    `;
-                    historyList.appendChild(item);
-
-                    item.querySelector('.delete-session').onclick = (e) => {
-                        e.stopPropagation();
-                        deleteSessionFromHistory(session.user.id);
-                    };
-
-                    item.onclick = () => {
-                        // Load this session into chat
-                        aiChatMessages.innerHTML = '';
-                        addMessageToUi(session.user.content, 'user');
-                        if (session.bot) addMessageToUi(session.bot.content, 'bot');
-                        bootstrap.Modal.getInstance(document.getElementById('historyModal')).hide();
-                    };
-                });
-            }
-
-            function deleteSessionFromHistory(userId) {
-                const history = AICore.getHistory();
-                const idx = history.findIndex(m => m.id === userId);
-                if (idx !== -1) {
-                    history.splice(idx, 2);
-                    AICore.saveHistory(history);
-                    renderHistoryModal();
+                    addMessageToUi("Hello! I'm CULTIA, your cultural guide. Ask me anything about Cameroon's tribes, regions, or traditions!", 'bot');
+                } else {
+                    history.forEach(msg => addMessageToUi(msg.content, msg.role));
                 }
             }
 
-            // Sync listener
-            window.addEventListener('storage', (e) => {
-                if (e.key === AICore.SYNC_KEY) {
-                    if (aiChatCard.classList.contains('active')) {
-                        aiChatMessages.innerHTML = '';
-                        renderHistoryInChat();
-                    }
+            async function sendAiMessage(message) {
+                if (!message.trim()) return;
+                addMessageToUi(message, 'user');
+                aiChatInput.value = '';
+                AICore.addMessage('user', message);
+                try {
+                    const response = await fetch('/api/chat', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ message: message, mode: 'tribes' })
+                    });
+                    const data = await response.json();
+                    addMessageToUi(data.response, 'bot');
+                    AICore.addMessage('bot', data.response, data.source);
+                } catch (error) {
+                    console.error(error);
+                    addMessageToUi("I'm having trouble connecting to the server. Please try again later!", 'bot');
                 }
-            });
+            }
 
             aiSendBtn.addEventListener('click', () => sendAiMessage(aiChatInput.value));
-            aiChatInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') sendAiMessage(aiChatInput.value);
+            aiChatInput.addEventListener('keypress', (e) => e.key === 'Enter' && sendAiMessage(aiChatInput.value));
+
+            clearHistoryBtn.addEventListener('click', () => {
+                if (confirm('Are you sure you want to clear conversation history?')) {
+                    AICore.clearHistory();
+                    renderHistoryInChat();
+                }
             });
-
-            clearHistoryBtn.addEventListener('click', clearHistory);
-            document.getElementById('viewHistoryBtn').addEventListener('click', renderHistoryModal);
-
-            // Initial load
-            loadTribes();
         });
     </script>
 </body>
-
 </html>

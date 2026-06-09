@@ -1,0 +1,138 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<div class="container-fluid" data-aos="fade-up">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-4">
+        <h1 class="h2">Admin Profile</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-body text-center">
+                    <div class="mx-auto mb-3" style="width: 150px; height: 150px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white;">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>{{ user.username if user else 'Admin' }}</h3>
+                    <p class="text-muted">{{ user.email if user else 'admin@example.com' }}</p>
+                    <span class="badge bg-primary" style="font-size: 1rem; padding: 0.5rem 1rem;">
+                        <i class="fas fa-crown me-1"></i> Administrator
+                    </span>
+                </div>
+            </div>
+
+            <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                    <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i> Account Info</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <strong><i class="fas fa-user me-2 text-primary"></i> Username:</strong> 
+                            {{ user.username if user else 'admin' }}
+                        </li>
+                        <li class="mb-3">
+                            <strong><i class="fas fa-envelope me-2 text-success"></i> Email:</strong> 
+                            {{ user.email if user else 'admin@example.com' }}
+                        </li>
+                        <li class="mb-3">
+                            <strong><i class="fas fa-check-circle me-2 text-info"></i> Status:</strong> 
+                            <span class="text-success">Active</span>
+                        </li>
+                        <li class="mb-3">
+                            <strong><i class="fas fa-key me-2 text-warning"></i> Role:</strong> 
+                            Administrator
+                        </li>
+                        {% if user and user.last_login %}
+                        <li class="mb-3">
+                            <strong><i class="fas fa-clock me-2 text-muted"></i> Last Login:</strong> 
+                            {{ user.last_login.strftime('%Y-%m-%d %H:%M') }}
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card shadow-sm mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-header" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                    <h5 class="mb-0"><i class="fas fa-edit me-2"></i> Edit Profile</h5>
+                </div>
+                <div class="card-body">
+                    <form id="profileForm">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Username</label>
+                            <input type="text" class="form-control" value="{{ user.username if user else 'admin' }}" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" value="{{ user.email if user else 'admin@example.com' }}" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">New Password</label>
+                            <input type="password" class="form-control" id="newPassword" placeholder="Enter new password (leave blank to keep current)">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm new password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-save me-2"></i> Save Changes
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="fas fa-shield-alt me-2"></i> Security</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <h6 class="fw-bold mb-0">Two-Factor Authentication</h6>
+                            <small class="text-muted">Add an extra layer of security</small>
+                        </div>
+                        <button class="btn btn-outline-info">
+                            <i class="fas fa-cog me-1"></i> Enable
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="fw-bold mb-0">Session Management</h6>
+                            <small class="text-muted">View and manage active sessions</small>
+                        </div>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-list me-1"></i> View Sessions
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('profileForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const newPass = document.getElementById('newPassword').value;
+    const confirmPass = document.getElementById('confirmPassword').value;
+    
+    if (newPass && newPass !== confirmPass) {
+        alert('Passwords do not match!');
+        return;
+    }
+    
+    if (newPass) {
+        alert('Password updated successfully! (In production, this would save to database)');
+        document.getElementById('newPassword').value = '';
+        document.getElementById('confirmPassword').value = '';
+    } else {
+        alert('Profile updated successfully!');
+    }
+});
+</script>
+{% endblock %}

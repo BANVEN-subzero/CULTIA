@@ -11,6 +11,7 @@ class GamificationSystem {
         this.leaderboard = [];
         this.userId = this.getUserId();
         this.completedQuizIds = new Set();
+        this.completedLessonIds = new Set();
         this.init();
     }
 
@@ -65,6 +66,15 @@ class GamificationSystem {
         return userId;
     }
 
+    isPointTransactionType(type) {
+        return ['points', 'activity', 'quiz_points', 'lesson_points'].includes(type);
+    }
+
+    isBadgeAchievement(achievement) {
+        if (!achievement || !achievement.type) return false;
+        return !this.isPointTransactionType(achievement.type);
+    }
+
     /**
      * Load user data from backend and fallback to localStorage
      */
@@ -74,13 +84,23 @@ class GamificationSystem {
             if (response.ok) {
                 const data = await response.json();
                 if (data.success) {
-                    this.points = data.total_points || 0;
-                    this.badges = data.achievements.map(a => ({
-                        id: a.type,
-                        name: a.name,
-                        description: a.description,
-                        earnedDate: a.earned_at
-                    }));
+                    const achievements = Array.isArray(data.achievements) ? data.achievements : [];
+                    this.points = Number(data.total_points) || 0;
+
+                    const seenBadgeTypes = new Set();
+                    this.badges = achievements
+                        .filter(a => this.isBadgeAchievement(a))
+                        .filter(a => {
+                            if (seenBadgeTypes.has(a.type)) return false;
+                            seenBadgeTypes.add(a.type);
+                            return true;
+                        })
+                        .map(a => ({
+                            id: a.type,
+                            name: a.name,
+                            description: a.description,
+                            earnedDate: a.earned_at
+                        }));
                     
                     const progResp = await fetch('/api/progress', { credentials: 'include' });
                     if (progResp.ok) {
@@ -145,6 +165,11 @@ class GamificationSystem {
             (this.activities || [])
                 .filter(a => a && a.type === 'quiz' && a.metadata && a.metadata.quizId)
                 .map(a => a.metadata.quizId)
+        );
+        this.completedLessonIds = new Set(
+            (this.activities || [])
+                .filter(a => a && a.type === 'lesson' && a.metadata && a.metadata.lessonId)
+                .map(a => a.metadata.lessonId)
         );
     }
 
@@ -215,6 +240,13 @@ class GamificationSystem {
                 if (quizId && this.completedQuizIds.has(quizId)) return;
                 if (quizId) this.completedQuizIds.add(quizId);
                 this.recordActivity('quiz', metadata);
+            }
+
+            if (type === 'lesson') {
+                const lessonId = metadata.lessonId;
+                if (lessonId && this.completedLessonIds.has(lessonId)) return;
+                if (lessonId) this.completedLessonIds.add(lessonId);
+                this.recordActivity('lesson', metadata);
             }
 
             pointsToAdd = points;
@@ -390,4 +422,8 @@ class GamificationSystem {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => { window.gamification = new GamificationSystem(); });
+document.addEventListener('DOMContentLoaded', () => {
+    if (!window.gamification) {
+        window.gamification = new GamificationSystem();
+    }
+});

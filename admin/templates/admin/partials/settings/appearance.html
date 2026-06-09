@@ -1,0 +1,38 @@
+
+<div class="card">
+    <div class="card-header">
+        <h3>Appearance Settings</h3>
+    </div>
+    <div class="card-body">
+        <form id="appearance-settings-form">
+            <div class="form-group">
+                <label for="admin_theme">Admin Panel Theme</label>
+                <select id="admin_theme" name="admin_theme" class="form-control">
+                    <option value="default" {{ 'selected' if settings.admin_theme == 'default' else '' }}>Default (Green)</option>
+                    <option value="blue" {{ 'selected' if settings.admin_theme == 'blue' else '' }}>Blue Theme</option>
+                    <option value="purple" {{ 'selected' if settings.admin_theme == 'purple' else '' }}>Purple Theme</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="primary_color">Primary Color (Hex)</label>
+                <input type="color" id="primary_color" name="primary_color" class="form-control" style="width: 100%; height: 50px;" value="{{ settings.primary_color or '#3498db' }}">
+            </div>
+
+            <div class="form-group">
+                <label for="logo_url">Custom Logo URL</label>
+                <input type="url" id="logo_url" name="logo_url" class="form-control" value="{{ settings.logo_url or '' }}" placeholder="https://example.com/logo.png">
+            </div>
+
+            <div class="form-group">
+                <label for="favicon_url">Custom Favicon URL</label>
+                <input type="url" id="favicon_url" name="favicon_url" class="form-control" value="{{ settings.favicon_url or '' }}" placeholder="https://example.com/favicon.ico">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -21,6 +21,9 @@
     <!-- AOS Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+    <!-- Main Styles -->
+    <link href="../css/styles.css" rel="stylesheet">
+    
     <style>
         :root {
             --primary-green: #2d5a27;
@@ -42,7 +45,7 @@
         }
 
         .hero-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #2d5a27 0%, #1a3a17 100%);
             padding: 80px 0 120px;
             color: white;
             border-radius: 0 0 50px 50px;
@@ -152,7 +155,7 @@
                 title: "Bamoun Kingdom Legacy",
                 tribe: "Bamoun Sultanate",
                 description: "Hear stories from the descendants of the Bamoun sultanate about their historical legacy.",
-                videoUrl: "https://www.youtube.com/watch?v=cFRRgXpKvlY",
+                videoUrl: "https://www.youtube.com/watch?v=8YrwtybvUu4",
                 icon: "fa-crown"
             },
             {
@@ -168,15 +171,15 @@
                 title: "Fulani Nomadic Traditions",
                 tribe: "Fulani People",
                 description: "Discover the nomadic lifestyle and pastoral traditions of the Fulani people.",
-                videoUrl: "https://www.youtube.com/watch?v=ZS8GaXHP9D4",
+                videoUrl: "https://www.youtube.com/watch?v=0E56Jy1VPjg",
                 icon: "fa-mountain"
             },
             {
                 id: 5,
-                title: "Bassa Agricultural Practices",
+                title: "Bassa Cultural Celebrations",
                 tribe: "Bassa People",
-                description: "Learn about traditional farming methods and agricultural practices of the Bassa people.",
-                videoUrl: "https://www.youtube.com/watch?v=jEitxQwVGi4",
+                description: "Learn about traditional festivals, music, and cultural practices of the Bassa people.",
+                videoUrl: "https://www.youtube.com/watch?v=km8X3RfrxnI",
                 icon: "fa-leaf"
             },
             {
@@ -184,13 +187,62 @@
                 title: "Grassfields Cultural Diversity",
                 tribe: "Grassfields Region",
                 description: "Explore the diverse cultures of the Grassfields region through the eyes of local elders.",
-                videoUrl: "https://www.youtube.com/watch?v=oLnl-__LYUI",
+                videoUrl: "https://www.youtube.com/watch?v=fMqt7w-yglk",
                 icon: "fa-tree"
+            },
+            {
+                id: 7,
+                title: "Chamba Ancestral Music",
+                tribe: "Chamba People",
+                description: "Listen to traditional musical performances and learn about the Chamba people's musical heritage.",
+                videoUrl: "https://www.youtube.com/watch?v=-Ipy8GluLhc",
+                icon: "fa-music"
+            },
+            {
+                id: 8,
+                title: "Kom Traditional Festivals",
+                tribe: "Kom People",
+                description: "Experience vibrant traditional festivals and ceremonies from the Kom communities.",
+                videoUrl: "https://www.youtube.com/watch?v=GBKXt4UttNo",
+                icon: "fa-calendar-alt"
+            },
+            {
+                id: 9,
+                title: "Tikar Artistry & Craftsmanship",
+                tribe: "Tikar People",
+                description: "Discover the exceptional pottery, bronze work, and craftsmanship of the Tikar artisans.",
+                videoUrl: "https://www.youtube.com/shorts/1FEurHpdAuI",
+                icon: "fa-hammer"
+            },
+            {
+                id: 10,
+                title: "Mafa Mountain Villages",
+                tribe: "Mafa People",
+                description: "Explore the terraced agricultural landscapes and unique architecture of Mafa mountain communities.",
+                videoUrl: "https://www.youtube.com/watch?v=uVcjnC0-AXk",
+                icon: "fa-home"
+            },
+            {
+                id: 11,
+                title: "Beti-Pahuin (Fang) Traditions",
+                tribe: "Beti-Pahuin (Bulu, Ewondo, Fang)",
+                description: "Experience the cultural traditions, dances, and daily life of the Beti-Pahuin peoples of southern Cameroon.",
+                videoUrl: "https://www.youtube.com/watch?v=MGVJn0FV0uU",
+                icon: "fa-glass-cheers"
+            },
+            {
+                id: 12,
+                title: "Ngemba Traditional Dances",
+                tribe: "Ngemba People",
+                description: "Watch vibrant traditional dance performances and cultural celebrations from the Ngemba communities.",
+                videoUrl: "https://www.youtube.com/watch?v=WuYmTVAlxsE",
+                icon: "fa-drum"
             }
         ];
 
         function getYouTubeVideoId(url) {
-            const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+            // Match regular URLs, embed URLs, and shorts URLs
+            const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|shorts\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
             const match = url.match(regex);
             return match ? match[1] : null;
         }
@@ -198,13 +250,32 @@
         function init() {
             AOS.init({ duration: 800, once: true });
             
-            // Shared Components
-            fetch('includes/sidebar.html').then(r => r.text()).then(data => {
-                document.getElementById('sidebar-container').innerHTML = data;
-            });
-            fetch('includes/header.html').then(r => r.text()).then(data => {
-                document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Testimonials');
-            });
+            // Load Sidebar
+            fetch('includes/sidebar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('sidebar-container').innerHTML = data;
+                    const currentPage = window.location.pathname.split("/").pop();
+                    const activeLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
+                    if (activeLink) activeLink.closest('.nav-item').classList.add('active');
+                    
+                    const sidebarToggle = document.getElementById('sidebarToggle');
+                    const sidebar = document.getElementById('sidebar');
+                    if(sidebarToggle && sidebar) {
+                        sidebarToggle.addEventListener('click', () => sidebar.classList.toggle('show'));
+                    }
+                });
+
+            // Load Header
+            fetch('includes/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data.replace('{{PAGE_TITLE}}', 'Testimonials');
+                    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+                    if(mobileMenuBtn) {
+                        mobileMenuBtn.addEventListener('click', () => document.getElementById('sidebar').classList.toggle('show'));
+                    }
+                });
 
             renderVideos();
         }

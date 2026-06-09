@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Tribe Cards Redesign",
+    "description": "Updated tribe cards to compact widgets with modal details",
+    "status": "Completed",
+    "date": "2026-05-30"
+  },
+  {
+    "id": 2,
+    "title": "Beautiful Logout Modal",
+    "description": "Added custom confirmation modal for logout",
+    "status": "Completed",
+    "date": "2026-05-30"
+  },
+  {
+    "id": 3,
+    "title": "Admin Improvements Panel",
+    "description": "Added section for tracking platform changes",
+    "status": "In Progress",
+    "date": "2026-05-30"
+  }
+]

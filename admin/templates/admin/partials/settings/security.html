@@ -1,0 +1,91 @@
+
+<div class="card">
+    <div class="card-header">
+        <h3>Security Settings</h3>
+    </div>
+    <div class="card-body">
+        <form id="security-settings-form">
+            <div class="form-group">
+                <label for="allow_registration">
+                    <input type="checkbox" id="allow_registration" name="allow_registration" {{ 'checked' if settings.allow_registration else '' }}>
+                    Allow New User Registration
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="remember_me">
+                    <input type="checkbox" id="remember_me" name="remember_me" {{ 'checked' if settings.remember_me else '' }}>
+                    Allow "Remember Me" Login
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="login_attempts">Maximum Login Attempts Before Lockout</label>
+                <input type="number" id="login_attempts" name="login_attempts" class="form-control" value="{{ settings.login_attempts or 5 }}" min="1">
+            </div>
+
+            <div class="form-group">
+                <label for="lockout_time">Lockout Duration (Minutes)</label>
+                <input type="number" id="lockout_time" name="lockout_time" class="form-control" value="{{ settings.lockout_time or 30 }}" min="1">
+            </div>
+
+            <div class="form-group">
+                <label for="min_password_length">Minimum Password Length</label>
+                <input type="number" id="min_password_length" name="min_password_length" class="form-control" value="{{ settings.min_password_length or 8 }}" min="4">
+            </div>
+
+            <div class="form-group">
+                <label for="require_uppercase">
+                    <input type="checkbox" id="require_uppercase" name="require_uppercase" {{ 'checked' if settings.require_uppercase else '' }}>
+                    Require Uppercase Letter
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="require_lowercase">
+                    <input type="checkbox" id="require_lowercase" name="require_lowercase" {{ 'checked' if settings.require_lowercase else '' }}>
+                    Require Lowercase Letter
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="require_number">
+                    <input type="checkbox" id="require_number" name="require_number" {{ 'checked' if settings.require_number else '' }}>
+                    Require Number
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="require_special_char">
+                    <input type="checkbox" id="require_special_char" name="require_special_char" {{ 'checked' if settings.require_special_char else '' }}>
+                    Require Special Character
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="password_expiry">Password Expiry (Days, 0 to Disable)</label>
+                <input type="number" id="password_expiry" name="password_expiry" class="form-control" value="{{ settings.password_expiry or 90 }}" min="0">
+            </div>
+
+            <div class="form-group">
+                <label for="enable_2fa">
+                    <input type="checkbox" id="enable_2fa" name="enable_2fa" {{ 'checked' if settings.enable_2fa else '' }}>
+                    Enable Two-Factor Authentication (2FA)
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="two_factor_method">2FA Method</label>
+                <select id="two_factor_method" name="two_factor_method" class="form-control">
+                    <option value="authenticator" {{ 'selected' if settings.two_factor_method == 'authenticator' else '' }}>Authenticator App</option>
+                    <option value="email" {{ 'selected' if settings.two_factor_method == 'email' else '' }}>Email</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

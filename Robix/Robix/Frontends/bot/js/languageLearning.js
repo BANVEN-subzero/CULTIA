@@ -1663,7 +1663,12 @@ class LanguageLearningSystem {
             }
             
             if (window.gamification) {
-                window.gamification.addPoints(10, `Studied: ${this.currentLesson.lesson.title}`);
+                const lessonId = `${this.currentLesson.tribeKey}_lesson_${this.currentLesson.lessonIndex}`;
+                window.gamification.addPoints('lesson', 10, {
+                    lessonId: lessonId,
+                    lessonTitle: this.currentLesson.lesson.title,
+                    tribe: this.currentLesson.tribeKey
+                });
             }
             
             this.startQuiz(phrases);
@@ -2315,18 +2320,26 @@ class LanguageLearningSystem {
         let pointsAwarded = 0;
         if (window.gamification && percentage >= 70) {
             pointsAwarded = Math.floor(10 + (percentage / 100) * 40); // 10-50 points based on score
+            const quizId = `${this.currentLesson.tribeKey}_lesson_${this.currentLesson.lessonIndex}_quiz`;
             window.gamification.addPoints('quiz', pointsAwarded, {
+                quizId: quizId,
+                lessonId: lessonId,
+                quizName: `${this.currentLesson.lesson.title} Quiz`,
                 tribe: this.currentLesson.tribeKey,
-                lesson: this.currentLesson.lesson.title,
-                score: percentage,
+                lessonTitle: this.currentLesson.lesson.title,
+                score: score,
+                total: total,
                 percentage: percentage
             });
             
             // Bonus points for perfect score
             if (percentage === 100) {
                 window.gamification.addPoints('quiz', 20, {
+                    quizId: `${quizId}_perfect_bonus`,
+                    lessonId: lessonId,
+                    quizName: `${this.currentLesson.lesson.title} Perfect Bonus`,
                     tribe: this.currentLesson.tribeKey,
-                    lesson: this.currentLesson.lesson.title,
+                    lessonTitle: this.currentLesson.lesson.title,
                     percentage: 100
                 });
                 pointsAwarded += 20;
