@@ -70,6 +70,18 @@ CULTURE_INTROS = [
     "You know, this is one of the most interesting aspects of our cultures! ",
 ]
 
+# Poetic, kid-friendly intros for Gemini responses
+POETIC_KID_INTROS = [
+    "Hello, dear friend! Let's explore something beautiful today... ",
+    "Welcome, little explorer! Come closer and listen... ",
+    "Greetings! Let's walk together through Cameroon's wonderful cultures... ",
+    "Hi there! Get ready to hear something amazing... ",
+    "Oh, what a lovely question! Let's learn together... ",
+    "Dear one, let's discover something wonderful about Cameroon... ",
+    "Come close, my friend, and hear a story of our people... ",
+    "Hello, sweet explorer! Let's open the book of cultures together... ",
+]
+
 # Warm, human-like transitions instead of robotic phrases
 HUMAN_TRANSITIONS = [
     "What I've learned is that ",
@@ -101,18 +113,24 @@ def call_gemini_fallback(user_input):
     ]
     
     system_instruction = (
-        "You are CULTIA, a warm, knowledgeable, and passionate cultural companion "
+        "You are CULTIA, a warm, gentle, and loving cultural companion "
         "who specializes in Cameroonian tribal cultures, traditions, history, languages, "
-        "and ethnic groups. Your mission is to educate, inspire, and connect people with "
-        "the rich cultural heritage of Cameroon.\n"
+        "and ethnic groups. Your mission is to educate, inspire, and connect children and "
+        "people of all ages with the rich cultural heritage of Cameroon.\n"
         "CRITICAL RULES:\n"
         "1. ABSOLUTELY NO markdown formatting (no asterisks, no hashes, no bold/italic markers)\n"
-        "2. Use only plain, conversational text\n"
+        "2. Use only plain, simple, friendly, conversational text that is easy for children to understand\n"
         "3. Focus ONLY on Cameroonian cultures and tribes\n"
         "4. Be specific, detailed, and culturally authentic\n"
         "5. If the question is about a specific aspect (e.g., meals, rituals, music), "
         "focus ONLY on that aspect unless explicitly asked for a general summary\n"
-        "6. Use warm, engaging language, like a friendly expert"
+        "6. Use very warm, kind, and gentle language, like a caring elder sharing stories\n"
+        "7. ALWAYS START YOUR RESPONSE WITH A SOFT, POETIC, KID-FRIENDLY INTRO PHRASE like one of these:\n"
+        "   - Hello, dear friend! Let's explore something beautiful today\n"
+        "   - Welcome, little explorer! Come closer and listen\n"
+        "   - Greetings! Let's walk together through Cameroon's wonderful cultures\n"
+        "   - Hi there! Get ready to hear something amazing\n"
+        "   - Oh, what a lovely question! Let's learn together\n"
     )
     
     for model_name in models_to_test:
@@ -131,7 +149,9 @@ def call_gemini_fallback(user_input):
             )
             if response and hasattr(response, 'text') and response.text:
                 print(f"[OK] Gemini fallback successful using {model_name}")
-                return response.text.strip()
+                # Add random poetic, kid-friendly intro
+                intro = random.choice(POETIC_KID_INTROS)
+                return f"{intro}{response.text.strip()}"
             
         except Exception as e:
             print(f"[WARN] Gemini error with {model_name}: {type(e).__name__}: {e}")
@@ -157,11 +177,17 @@ def gemini_enhance_local(local_response, user_input):
         You are CULTIA's assistant for lightly enhancing local responses.
         IMPORTANT RULES:
         1. You MUST PRESERVE EVERY SINGLE FACT from the original response (NO changing, NO omitting facts, NO inventing anything new).
-        2. Add a warm, friendly, conversational opening sentence.
-        3. Make the original text slightly more engaging but keep all original content.
+        2. ALWAYS START WITH A SOFT, POETIC, KID-FRIENDLY INTRO PHRASE like one of these:
+           - Hello, dear friend! Let's explore something beautiful today
+           - Welcome, little explorer! Come closer and listen
+           - Greetings! Let's walk together through Cameroon's wonderful cultures
+           - Hi there! Get ready to hear something amazing
+           - Oh, what a lovely question! Let's learn together
+        3. Make the original text slightly more engaging, simple, and kid-friendly but keep ALL original content!
         4. Do NOT cut off early - respond with the ENTIRE enhanced response, including all original facts!
         5. No markdown, no asterisks, no hashtags.
         6. Stay culturally appropriate and authentic to Cameroonian context.
+        7. Use only simple, easy to understand words for children!
     """
 
     for model_name in models_to_test:
@@ -183,7 +209,9 @@ Original local response to enhance:
             )
             if response and hasattr(response, 'text') and response.text:
                 print("[OK] Local response enhanced successfully")
-                return response.text.strip()
+                # Add random poetic, kid-friendly intro
+                intro = random.choice(POETIC_KID_INTROS)
+                return f"{intro}{response.text.strip()}"
 
         except Exception as e:
             print(f"[WARN] Failed to enhance with {model_name}: {type(e).__name__}: {e}")
