@@ -1265,13 +1265,21 @@ class LanguageLearningSystem {
                         <div class="pronunciation">[${phrase.pronunciation}]</div>
                         ${hasTribeAudio ? `
                             <div style="font-size:0.8rem; color:#27AE60; font-weight:600; margin-bottom:0.5rem;">
-                                <i class="fas fa-check-circle"></i> Custom voice (tribe-specific)
+                                <i class="fas fa-check-circle"></i> Tribe-specific custom voice active
                             </div>
                         ` : (hasGlobalOnly ? `
                             <div style="font-size:0.8rem; color:#F39C12; font-weight:600; margin-bottom:0.5rem;">
-                                <i class="fas fa-globe"></i> Global custom voice active
+                                <i class="fas fa-globe"></i> Your global custom voice active
                             </div>
-                        ` : '')}
+                        ` : (this.useGlobalVoice ? `
+                            <div style="font-size:0.8rem; color:#666; font-weight:500; margin-bottom:0.5rem;">
+                                <i class="fas fa-microphone-slash"></i> No custom voice yet
+                            </div>
+                        ` : `
+                            <div style="font-size:0.8rem; color:#666; font-weight:500; margin-bottom:0.5rem;">
+                                <i class="fas fa-microphone-slash"></i> Global voice disabled
+                            </div>
+                        `)}
                         <div class="action-buttons">
                             <button class="audio-btn-v2 ${(hasTribeAudio || hasGlobalOnly) ? 'custom-audio' : ''}" onclick="event.stopPropagation(); window.languageLearning.playAudio('${this.escapeForOnclick(phrase.phrase)}', '${this.escapeForOnclick(this.currentLesson.tribeKey)}')" title="Listen">
                                 <i class="fas fa-volume-up"></i>
