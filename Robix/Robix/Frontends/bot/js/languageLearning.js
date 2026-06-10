@@ -22,6 +22,7 @@ class LanguageLearningSystem {
         this.completedLessons = new Set();
         this.userProgress = this.loadProgress();
         this.customAudio = this.loadCustomAudio();
+        this.useGlobalVoice = this.loadGlobalVoiceSetting();
         // Initialize language data service only if available
         try {
             this.languageDataService = typeof LanguageDataService !== 'undefined' ? new LanguageDataService() : null;
@@ -369,6 +370,8 @@ class LanguageLearningSystem {
         const container = document.getElementById('languageLearningContainer');
         if (!container) return;
 
+        const customAudioCount = Object.keys(this.customAudio || {}).length;
+
         const html = `
             <div class="dashboard-content-v3">
                 <!-- Restored Theme Header -->
@@ -376,7 +379,7 @@ class LanguageLearningSystem {
                     <div style="position: absolute; right: -50px; top: -50px; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
                     <h1 class="display-4 fw-bold mb-3">Language Learning</h1>
                     <p class="lead opacity-75 mb-4" style="max-width: 600px;">Master authentic tribal languages from Cameroon's diverse ethnic groups. Start your linguistic journey today.</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 flex-wrap">
                         <div class="bg-white bg-opacity-10 p-3 rounded-4 backdrop-blur shadow-sm">
                             <div class="h3 fw-bold mb-0">${Object.keys(this.tribes).length}</div>
                             <div class="small opacity-75 text-uppercase fw-bold">Languages</div>
@@ -385,8 +388,71 @@ class LanguageLearningSystem {
                             <div class="h3 fw-bold mb-0">${this.getTotalLessons()}</div>
                             <div class="small opacity-75 text-uppercase fw-bold">Lessons</div>
                         </div>
+                        ${customAudioCount > 0 ? `
+                        <div class="bg-white bg-opacity-10 p-3 rounded-4 backdrop-blur shadow-sm" id="customAudioStats">
+                            <div class="h3 fw-bold mb-0">${customAudioCount}</div>
+                            <div class="small opacity-75 text-uppercase fw-bold">Custom Voices</div>
+                        </div>` : ''}
                     </div>
                 </div>
+
+                <!-- Global Voice Toggle -->
+                <div class="mb-4 p-4 rounded-4 bg-white shadow-sm border border-opacity-10" style="border: 2px solid #f0f4f0;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <div style="width:50px; height:50px; background:linear-gradient(135deg, #F39C12, #E67E22); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-globe-americas text-white" style="font-size:1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Global Custom Voice</h5>
+                                <p class="text-muted mb-0 small">Use your custom recordings across all tribes (when no tribe-specific one exists)</p>
+                            </div>
+                        </div>
+                        <label class="custom-switch mb-0" style="cursor:pointer;">
+                            <input type="checkbox" id="globalVoiceToggle" ${this.useGlobalVoice ? 'checked' : ''} onchange="window.languageLearning.toggleGlobalVoice()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                ${customAudioCount > 0 ? `
+                <div class="mb-4 p-4 rounded-4 bg-white shadow-sm border border-opacity-10" style="border: 2px solid #f0f4f0;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <div style="width:50px; height:50px; background:linear-gradient(135deg, #2d5a27, #863d08); border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-microphone-alt text-white" style="font-size:1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Your Custom Recordings</h5>
+                                <p class="text-muted mb-0 small">You have ${customAudioCount} custom pronunciation${customAudioCount !== 1 ? 's' : ''} saved.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-light" onclick="window.languageLearning.showRecordingsManager()">
+                                <i class="fas fa-cog me-2"></i>Manage
+                            </button>
+                            <button class="btn btn-outline-danger" onclick="window.languageLearning.confirmDeleteAllRecordings()">
+                                <i class="fas fa-trash-alt me-2"></i>Delete All
+                            </button>
+                        </div>
+                    </div>
+                </div>` : `
+                <div class="mb-4 p-4 rounded-4 bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <div style="width:50px; height:50px; background:#f0f4f0; border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                                <i class="fas fa-microphone-alt" style="font-size:1.5rem; color:#2d5a27;"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Record Your Own Voice</h5>
+                                <p class="text-muted mb-0 small">Record your own authentic pronunciations while learning.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="badge bg-success text-white">New Feature</span>
+                        </div>
+                    </div>
+                </div>`}
 
                 <div class="section-header-v3">
                     <h2 class="fw-bold h3">Choose a Language</h2>
@@ -535,6 +601,50 @@ class LanguageLearningSystem {
                 .btn-learn:hover {
                     background: #1a3a17;
                     transform: scale(1.1);
+                }
+
+                /* Custom Switch */
+                .custom-switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 60px;
+                    height: 30px;
+                }
+                .custom-switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    transition: .4s;
+                    border-radius: 34px;
+                }
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 22px;
+                    width: 22px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    transition: .4s;
+                    border-radius: 50%;
+                }
+                input:checked + .slider {
+                    background-color: #2d5a27;
+                }
+                input:focus + .slider {
+                    box-shadow: 0 0 1px #2d5a27;
+                }
+                input:checked + .slider:before {
+                    transform: translateX(30px);
                 }
                 
                 @keyframes fadeIn {
@@ -1144,15 +1254,30 @@ class LanguageLearningSystem {
     }
 
     renderFlashcards(phrases) {
-        return phrases.map((phrase, index) => `
+        return phrases.map((phrase, index) => {
+            const hasTribeAudio = !!(this.getCustomAudioUrl(phrase.phrase, this.currentLesson.tribeKey));
+            const hasGlobalOnly = !hasTribeAudio && this.isGlobalRecording(phrase.phrase);
+            return `
             <div class="flashcard ${index === 0 ? 'active' : ''}" data-index="${index}">
                 <div class="flashcard-inner">
                     <div class="flashcard-front">
                         <div class="phrase-native">${phrase.phrase}</div>
                         <div class="pronunciation">[${phrase.pronunciation}]</div>
+                        ${hasTribeAudio ? `
+                            <div style="font-size:0.8rem; color:#27AE60; font-weight:600; margin-bottom:0.5rem;">
+                                <i class="fas fa-check-circle"></i> Custom voice (tribe-specific)
+                            </div>
+                        ` : (hasGlobalOnly ? `
+                            <div style="font-size:0.8rem; color:#F39C12; font-weight:600; margin-bottom:0.5rem;">
+                                <i class="fas fa-globe"></i> Global custom voice active
+                            </div>
+                        ` : '')}
                         <div class="action-buttons">
-                            <button class="audio-btn-v2" onclick="event.stopPropagation(); window.languageLearning.playAudio('${this.escapeForOnclick(phrase.phrase)}', '${this.escapeForOnclick(this.currentLesson.tribeKey)}')" title="Listen">
+                            <button class="audio-btn-v2 ${(hasTribeAudio || hasGlobalOnly) ? 'custom-audio' : ''}" onclick="event.stopPropagation(); window.languageLearning.playAudio('${this.escapeForOnclick(phrase.phrase)}', '${this.escapeForOnclick(this.currentLesson.tribeKey)}')" title="Listen">
                                 <i class="fas fa-volume-up"></i>
+                            </button>
+                            <button class="audio-btn-v2 record-btn" onclick="event.stopPropagation(); window.languageLearning.openRecorderModal('${this.escapeForOnclick(phrase.phrase)}', '${this.escapeForOnclick(this.currentLesson.tribeKey)}')" title="Record your custom pronunciation">
+                                <i class="fas fa-microphone-alt"></i>
                             </button>
                             <button class="audio-btn-v2 mic-btn" onclick="event.stopPropagation(); window.languageLearning.verifyPronunciation('${this.escapeForOnclick(phrase.phrase)}', this)" title="Practice Speaking">
                                 <i class="fas fa-microphone"></i>
@@ -1178,11 +1303,13 @@ class LanguageLearningSystem {
                     </div>
                 </div>
             </div>
-        `).join('') + `
+        `}).join('') + `
             <style>
                 .action-buttons {
                     display: flex;
                     gap: 15px;
+                    flex-wrap: wrap;
+                    justify-content: center;
                 }
                 .audio-btn-v2 {
                     width: 60px;
@@ -1199,6 +1326,18 @@ class LanguageLearningSystem {
                     background: #2d5a27;
                     color: white;
                     transform: translateY(-3px);
+                }
+                .audio-btn-v2.custom-audio {
+                    background: linear-gradient(135deg, #2d5a27 0%, #863d08 100%);
+                    color: white;
+                    box-shadow: 0 4px 10px rgba(45,90,39,0.3);
+                }
+                .audio-btn-v2.record-btn {
+                    background: linear-gradient(135deg, #F39C12 0%, #E67E22 100%);
+                    color: white;
+                }
+                .audio-btn-v2.record-btn:hover {
+                    background: linear-gradient(135deg, #E67E22 0%, #D35400 100%);
                 }
                 .audio-btn-v2.recording {
                     background: #ff4757;
@@ -1382,10 +1521,40 @@ class LanguageLearningSystem {
             .replace(/\r/g, '\\r');
     }
 
+    loadGlobalVoiceSetting() {
+        try {
+            const saved = localStorage.getItem('languageLearningUseGlobalVoice');
+            return saved ? JSON.parse(saved) : true;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    saveGlobalVoiceSetting() {
+        try {
+            localStorage.setItem('languageLearningUseGlobalVoice', JSON.stringify(this.useGlobalVoice));
+        } catch (e) { /* ignore */ }
+    }
+
+    toggleGlobalVoice() {
+        this.useGlobalVoice = !this.useGlobalVoice;
+        this.saveGlobalVoiceSetting();
+        this.renderDashboard();
+        this.showNotification(`Global voice ${this.useGlobalVoice ? 'enabled' : 'disabled'}`, 'success');
+    }
+
     loadCustomAudio() {
         try {
             const raw = localStorage.getItem('languageLearningCustomAudio');
-            return raw ? (JSON.parse(raw) || {}) : {};
+            if (!raw) return {};
+            const data = JSON.parse(raw) || {};
+            // Convert old string format to new object format for backward compatibility
+            Object.keys(data).forEach(key => {
+                if (typeof data[key] === 'string') {
+                    data[key] = { url: data[key], isGlobal: false };
+                }
+            });
+            return data;
         } catch (e) {
             return {};
         }
@@ -1403,9 +1572,30 @@ class LanguageLearningSystem {
         return `${(tribeKey || 'default').toString().toLowerCase()}::${(text || '').toString()}`;
     }
 
+    getGlobalAudioKey(text) {
+        return `global::${(text || '').toString()}`;
+    }
+
+    isGlobalRecording(text) {
+        const globalKey = this.getGlobalAudioKey(text);
+        return !!(this.customAudio[globalKey] && this.customAudio[globalKey].url);
+    }
+
     getCustomAudioUrl(text, tribeKey) {
-        const key = this.getCustomAudioKey(text, tribeKey);
-        return (this.customAudio && this.customAudio[key]) ? this.customAudio[key] : null;
+        // First check for tribe-specific recording
+        const tribeKeyFull = this.getCustomAudioKey(text, tribeKey);
+        if (this.customAudio[tribeKeyFull] && this.customAudio[tribeKeyFull].url) {
+            return this.customAudio[tribeKeyFull].url;
+        }
+        // If global is enabled, check for global recording
+        if (this.useGlobalVoice) {
+            const globalKey = this.getGlobalAudioKey(text);
+            if (this.customAudio[globalKey] && this.customAudio[globalKey].url) {
+                return this.customAudio[globalKey].url;
+            }
+        }
+        // No custom recording found
+        return null;
     }
 
     ensureRecorderModal() {
@@ -1434,14 +1624,23 @@ class LanguageLearningSystem {
                     <div style="font-weight:600;">Phrase</div>
                     <div id="pronunciationRecorderPhrase" style="margin-top:0.25rem; padding:0.75rem; background:#f6f6f6; border-radius:10px; word-break: break-word;"></div>
                 </div>
+                <div style="margin-top: 1rem; padding: 0.75rem; background: #fffbf0; border: 1px solid #f0e7c5; border-radius: 8px;">
+                    <label style="display:flex; gap: 0.5rem; align-items: center; cursor:pointer; margin:0;">
+                        <input type="checkbox" id="useGlobalCheckbox">
+                        <div style="flex:1;">
+                            <div style="font-weight:600; font-size:0.9rem;">Use as global voice</div>
+                            <div style="font-size:0.8rem; color:#666;">Apply this pronunciation to all tribes (when no tribe-specific one exists)</div>
+                        </div>
+                    </label>
+                </div>
                 <div style="display:flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
                     <button id="startRecordingBtn" style="background:#863d08; color:white; border:none; padding:0.65rem 1rem; border-radius:10px; cursor:pointer;">Start</button>
                     <button id="stopRecordingBtn" disabled style="background:#999; color:white; border:none; padding:0.65rem 1rem; border-radius:10px; cursor:not-allowed;">Stop</button>
-                    <button id="saveRecordingBtn" disabled style="background:#4caf50; color:white; border:none; padding:0.65rem 1rem; border-radius:10px; cursor:not-allowed;">Save</button>
+                    <button id="saveRecordingBtn" disabled style="background:#27AE60; color:white; border:none; padding:0.65rem 1rem; border-radius:10px; cursor:not-allowed;">Save</button>
                     <button id="playRecordingBtn" disabled style="background:#c85a17; color:white; border:none; padding:0.65rem 1rem; border-radius:10px; cursor:not-allowed;">Play</button>
                 </div>
                 <div style="margin-top: 0.75rem; font-size:0.9rem; color:#666;">
-                    After saving, the 🔊 Listen button will use your recording for this phrase on this tribe.
+                    After saving, your voice will be used for this phrase.
                 </div>
                 <audio id="recordingPreview" controls style="width:100%; margin-top: 0.75rem; display:none;"></audio>
             </div>
@@ -1471,6 +1670,7 @@ class LanguageLearningSystem {
         const saveBtn = modal.querySelector('#saveRecordingBtn');
         const playBtn = modal.querySelector('#playRecordingBtn');
         const preview = modal.querySelector('#recordingPreview');
+        const useGlobalCheckbox = modal.querySelector('#useGlobalCheckbox');
 
         // reset state
         saveBtn.disabled = true;
@@ -1481,6 +1681,7 @@ class LanguageLearningSystem {
         preview.style.display = 'none';
         preview.removeAttribute('src');
         preview.load();
+        useGlobalCheckbox.checked = false;
 
         startBtn.disabled = false;
         startBtn.style.cursor = 'pointer';
@@ -1599,14 +1800,25 @@ class LanguageLearningSystem {
 
         const text = modal.dataset.text || '';
         const tribeKey = modal.dataset.tribeKey || '';
-        const key = this.getCustomAudioKey(text, tribeKey);
+        const useGlobalCheckbox = modal.querySelector('#useGlobalCheckbox');
+        const isGlobal = useGlobalCheckbox.checked;
 
         const reader = new FileReader();
         reader.onload = () => {
-            this.customAudio[key] = reader.result;
+            if (isGlobal) {
+                const globalKey = this.getGlobalAudioKey(text);
+                this.customAudio[globalKey] = { url: reader.result, isGlobal: true };
+                this.showNotification('Saved as global voice! 🌍', 'success');
+            } else {
+                const tribeSpecificKey = this.getCustomAudioKey(text, tribeKey);
+                this.customAudio[tribeSpecificKey] = { url: reader.result, isGlobal: false };
+                this.showNotification('Saved for this tribe! 🎉', 'success');
+            }
             this.saveCustomAudio();
-            this.showNotification('Recording saved for this phrase.', 'success');
             this.closeRecorderModal();
+            if (this.currentLesson && this.currentLesson.lesson && this.renderLearningInterface) {
+                this.renderLearningInterface(this.currentLesson.lesson);
+            }
         };
         reader.onerror = () => {
             this.showNotification('Failed to save recording.', 'error');
@@ -1971,6 +2183,35 @@ class LanguageLearningSystem {
     }
     
     showNotification(message, type = 'info') {
+        // Add CSS animations if not present
+        if (!document.getElementById('notificationAnimations')) {
+            const style = document.createElement('style');
+            style.id = 'notificationAnimations';
+            style.textContent = `
+                @keyframes slideIn {
+                    from {
+                        transform: translateX(400px);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+                @keyframes slideOut {
+                    from {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                    to {
+                        transform: translateX(400px);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
         // Create notification element
         const notification = document.createElement('div');
         notification.className = `notification notification-${type}`;
@@ -2009,6 +2250,164 @@ class LanguageLearningSystem {
                 }
             }, 300);
         }, 3000);
+    }
+
+    showRecordingsManager() {
+        const container = document.getElementById('languageLearningContainer');
+        if (!container) return;
+
+        const recordingsList = Object.entries(this.customAudio || {}).map(([key, data], index) => {
+            const isGlobal = typeof data === 'object' && data.isGlobal;
+            const dataUrl = typeof data === 'object' ? data.url : data;
+
+            let tribeText = 'General';
+            let phraseText = key;
+            if (key.startsWith('global::')) {
+                phraseText = key.replace('global::', '');
+                tribeText = '🌍 Global';
+            } else {
+                const parts = key.split('::');
+                tribeText = parts[0] ? `${parts[0][0].toUpperCase() + parts[0].slice(1)}` : 'General';
+                phraseText = parts.slice(1).join('::');
+            }
+
+            return { index, key, tribeText, phraseText, dataUrl, isGlobal };
+        });
+
+        const html = `
+            <div class="dashboard-content-v3">
+                <div class="mb-5 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                        <button class="btn btn-light" onclick="window.languageLearning.renderDashboard()">
+                            <i class="fas fa-arrow-left me-2"></i>Back
+                        </button>
+                        <div>
+                            <h1 class="fw-bold mb-0">Manage Custom Recordings</h1>
+                            <p class="text-muted mb-0">${recordingsList.length} custom pronunciation${recordingsList.length !== 1 ? 's' : ''} saved</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-danger" onclick="window.languageLearning.confirmDeleteAllRecordings()">
+                        <i class="fas fa-trash-alt me-2"></i>Delete All
+                    </button>
+                </div>
+
+                <div class="recordings-list">
+                    ${recordingsList.length === 0 ? `
+                        <div class="text-center py-5">
+                            <i class="fas fa-microphone-alt" style="font-size:4rem; color:#ddd; margin-bottom:1rem;"></i>
+                            <p class="text-muted">No custom recordings yet.</p>
+                        </div>
+                    ` : recordingsList.map(item => `
+                        <div class="recording-item p-4 mb-3 bg-white rounded-4 shadow-sm border" data-key="${this.escapeForOnclick(item.key)}">
+                            <div class="d-flex justify-content-between align-items-start gap-4">
+                                <div class="flex-1">
+                                    <h5 class="fw-bold mb-2">
+                                        ${item.phraseText}
+                                        ${item.isGlobal ? `<span class="badge bg-warning text-dark ms-2" style="font-size:0.7rem;">Global</span>` : ''}
+                                    </h5>
+                                    <p class="text-muted mb-0 small"><strong>Tribe:</strong> ${item.tribeText}</p>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-light" onclick="window.languageLearning.playRecording('${this.escapeForOnclick(item.key)}')">
+                                        <i class="fas fa-play me-2"></i>Play
+                                    </button>
+                                    ${!item.isGlobal ? `
+                                    <button class="btn btn-warning text-dark" onclick="window.languageLearning.toggleRecordingGlobal('${this.escapeForOnclick(item.key)}')" title="Make global">
+                                        <i class="fas fa-globe"></i>
+                                    </button>
+                                    ` : ''}
+                                    <button class="btn btn-outline-danger" onclick="window.languageLearning.deleteRecording('${this.escapeForOnclick(item.key)}')">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <style>
+                .recordings-list {
+                    animation: fadeIn 0.5s ease;
+                }
+                .recording-item {
+                    transition: all 0.2s ease;
+                }
+                .recording-item:hover {
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                }
+            </style>
+        `;
+
+        container.innerHTML = html;
+    }
+
+    toggleRecordingGlobal(key) {
+        const data = this.customAudio[key];
+        if (!data) return;
+
+        if (key.startsWith('global::')) {
+            // Move from global to tribe-general
+            const phrase = key.replace('global::', '');
+            const newKey = `default::${phrase}`;
+            this.customAudio[newKey] = { url: typeof data === 'object' ? data.url : data, isGlobal: false };
+            delete this.customAudio[key];
+        } else {
+            // Convert to global
+            const phrase = key.split('::').slice(1).join('::');
+            const globalKey = `global::${phrase}`;
+            this.customAudio[globalKey] = { url: typeof data === 'object' ? data.url : data, isGlobal: true };
+            delete this.customAudio[key];
+        }
+
+        this.saveCustomAudio();
+        this.showNotification('Recording updated!', 'success');
+        this.showRecordingsManager();
+    }
+
+    playRecording(key) {
+        let dataUrl = this.customAudio[key];
+        if (typeof dataUrl === 'object') {
+            dataUrl = dataUrl.url;
+        }
+
+        if (!dataUrl) {
+            this.showNotification('Recording not found.', 'error');
+            return;
+        }
+
+        try {
+            const audio = new Audio(dataUrl);
+            audio.play().catch(() => {
+                this.showNotification('Unable to play recording.', 'error');
+            });
+        } catch (e) {
+            this.showNotification('Failed to play recording.', 'error');
+        }
+    }
+
+    deleteRecording(key) {
+        if (confirm('Are you sure you want to delete this recording?')) {
+            delete this.customAudio[key];
+            this.saveCustomAudio();
+            this.showNotification('Recording deleted.', 'success');
+            this.showRecordingsManager();
+        }
+    }
+
+    confirmDeleteAllRecordings() {
+        const count = Object.keys(this.customAudio || {}).length;
+        if (count === 0) {
+            this.showNotification('No recordings to delete.', 'info');
+            return;
+        }
+
+        if (confirm(`Are you sure you want to delete all ${count} custom recording${count !== 1 ? 's' : ''}? This cannot be undone.`)) {
+            this.customAudio = {};
+            this.saveCustomAudio();
+            this.showNotification('All recordings deleted.', 'success');
+            this.renderDashboard();
+        }
     }
 
     startQuiz(phrases) {
