@@ -1577,23 +1577,34 @@ class LanguageLearningSystem {
     }
 
     isGlobalRecording(text) {
+        if (!this.useGlobalVoice) return false;
         const globalKey = this.getGlobalAudioKey(text);
         return !!(this.customAudio[globalKey] && this.customAudio[globalKey].url);
     }
 
     getCustomAudioUrl(text, tribeKey) {
+        console.log('[getCustomAudioUrl] Checking for text:', text, 'tribeKey:', tribeKey, 'useGlobalVoice:', this.useGlobalVoice);
+        console.log('[getCustomAudioUrl] customAudio:', this.customAudio);
+        
         // First check for tribe-specific recording
         const tribeKeyFull = this.getCustomAudioKey(text, tribeKey);
+        console.log('[getCustomAudioUrl] Checking tribe key:', tribeKeyFull);
         if (this.customAudio[tribeKeyFull] && this.customAudio[tribeKeyFull].url) {
+            console.log('[getCustomAudioUrl] Found tribe-specific audio!');
             return this.customAudio[tribeKeyFull].url;
         }
+        
         // If global is enabled, check for global recording
         if (this.useGlobalVoice) {
             const globalKey = this.getGlobalAudioKey(text);
+            console.log('[getCustomAudioUrl] Checking global key:', globalKey);
             if (this.customAudio[globalKey] && this.customAudio[globalKey].url) {
+                console.log('[getCustomAudioUrl] Found global audio!');
                 return this.customAudio[globalKey].url;
             }
         }
+        
+        console.log('[getCustomAudioUrl] No custom audio found');
         // No custom recording found
         return null;
     }
@@ -1911,7 +1922,9 @@ class LanguageLearningSystem {
     }
 
     playAudio(text, tribeKey = null) {
+        console.log('[playAudio] Called with text:', text, 'tribeKey:', tribeKey);
         const customUrl = this.getCustomAudioUrl(text, tribeKey);
+        console.log('[playAudio] customUrl:', customUrl);
         if (customUrl) {
             try {
                 const audio = new Audio(customUrl);
@@ -1920,6 +1933,7 @@ class LanguageLearningSystem {
                 });
                 return;
             } catch (e) {
+                console.error('[playAudio] Error playing custom audio:', e);
                 // fallback to TTS below
             }
         }
