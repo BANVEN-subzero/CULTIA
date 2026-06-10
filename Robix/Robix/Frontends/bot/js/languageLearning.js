@@ -1701,10 +1701,6 @@ class LanguageLearningSystem {
 
         const phraseBox = modal.querySelector('#pronunciationRecorderPhrase');
         phraseBox.textContent = text || '';
-        
-        // Check "Use as global voice" by default
-        const useGlobalCheckbox = modal.querySelector('#useGlobalCheckbox');
-        useGlobalCheckbox.checked = true;
 
         const startBtn = modal.querySelector('#startRecordingBtn');
         const stopBtn = modal.querySelector('#stopRecordingBtn');
@@ -1722,7 +1718,7 @@ class LanguageLearningSystem {
         preview.style.display = 'none';
         preview.removeAttribute('src');
         preview.load();
-        useGlobalCheckbox.checked = false;
+        useGlobalCheckbox.checked = true; // Check "Use as global voice" by default
 
         startBtn.disabled = false;
         startBtn.style.cursor = 'pointer';
