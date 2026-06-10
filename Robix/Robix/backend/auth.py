@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import threading
 
 auth_bp = Blueprint('auth', __name__)
-DB_PATH = os.path.join(os.path.dirname(__file__), 'users.db')
+DB_PATH = os.path.join(os.environ.get('DATA_DIR', os.path.dirname(__file__)), 'users.db')
 
 db_lock = threading.Lock()  # Thread lock to prevent database locking issues
 
