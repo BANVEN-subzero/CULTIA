@@ -434,6 +434,9 @@ class LanguageLearningSystem {
                             <button class="btn btn-outline-danger" onclick="window.languageLearning.confirmDeleteAllRecordings()">
                                 <i class="fas fa-trash-alt me-2"></i>Delete All
                             </button>
+                            <button class="btn btn-info text-white" onclick="window.languageLearning.showTtsInfo()">
+                                <i class="fas fa-info-circle me-2"></i>TTS Training
+                            </button>
                         </div>
                     </div>
                 </div>` : `
@@ -448,8 +451,11 @@ class LanguageLearningSystem {
                                 <p class="text-muted mb-0 small">Record your own authentic pronunciations while learning.</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="d-flex gap-2">
                             <span class="badge bg-success text-white">New Feature</span>
+                            <button class="btn btn-info text-white" onclick="window.languageLearning.showTtsInfo()">
+                                <i class="fas fa-info-circle me-2"></i>TTS Training
+                            </button>
                         </div>
                     </div>
                 </div>`}
@@ -1695,6 +1701,10 @@ class LanguageLearningSystem {
 
         const phraseBox = modal.querySelector('#pronunciationRecorderPhrase');
         phraseBox.textContent = text || '';
+        
+        // Check "Use as global voice" by default
+        const useGlobalCheckbox = modal.querySelector('#useGlobalCheckbox');
+        useGlobalCheckbox.checked = true;
 
         const startBtn = modal.querySelector('#startRecordingBtn');
         const stopBtn = modal.querySelector('#stopRecordingBtn');
@@ -2307,6 +2317,37 @@ class LanguageLearningSystem {
 
             return { index, key, tribeText, phraseText, dataUrl, isGlobal };
         });
+        
+        // Separate into global and tribe-specific
+        const globalRecordings = recordingsList.filter(item => item.isGlobal);
+        const tribeRecordings = recordingsList.filter(item => !item.isGlobal);
+
+        const renderRecordingItem = (item) => `
+            <div class="recording-item p-4 mb-3 bg-white rounded-4 shadow-sm border" data-key="${this.escapeForOnclick(item.key)}">
+                <div class="d-flex justify-content-between align-items-start gap-4">
+                    <div class="flex-1">
+                        <h5 class="fw-bold mb-2">
+                            ${item.phraseText}
+                            ${item.isGlobal ? `<span class="badge bg-warning text-dark ms-2" style="font-size:0.7rem;">Global</span>` : ''}
+                        </h5>
+                        <p class="text-muted mb-0 small"><strong>Tribe:</strong> ${item.tribeText}</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-light" onclick="window.languageLearning.playRecording('${this.escapeForOnclick(item.key)}')">
+                            <i class="fas fa-play me-2"></i>Play
+                        </button>
+                        ${!item.isGlobal ? `
+                        <button class="btn btn-warning text-dark" onclick="window.languageLearning.toggleRecordingGlobal('${this.escapeForOnclick(item.key)}')" title="Make global">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        ` : ''}
+                        <button class="btn btn-outline-danger" onclick="window.languageLearning.deleteRecording('${this.escapeForOnclick(item.key)}')">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
 
         const html = `
             <div class="dashboard-content-v3">
@@ -2324,40 +2365,34 @@ class LanguageLearningSystem {
                         <i class="fas fa-trash-alt me-2"></i>Delete All
                     </button>
                 </div>
-
-                <div class="recordings-list">
-                    ${recordingsList.length === 0 ? `
-                        <div class="text-center py-5">
-                            <i class="fas fa-microphone-alt" style="font-size:4rem; color:#ddd; margin-bottom:1rem;"></i>
-                            <p class="text-muted">No custom recordings yet.</p>
+                
+                <!-- Global Voices Section -->
+                ${globalRecordings.length > 0 ? `
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-3">🌍 Global Voices (Used Across All Tribes)</h3>
+                        <div class="recordings-list mb-4">
+                            ${globalRecordings.map(renderRecordingItem).join('')}
                         </div>
-                    ` : recordingsList.map(item => `
-                        <div class="recording-item p-4 mb-3 bg-white rounded-4 shadow-sm border" data-key="${this.escapeForOnclick(item.key)}">
-                            <div class="d-flex justify-content-between align-items-start gap-4">
-                                <div class="flex-1">
-                                    <h5 class="fw-bold mb-2">
-                                        ${item.phraseText}
-                                        ${item.isGlobal ? `<span class="badge bg-warning text-dark ms-2" style="font-size:0.7rem;">Global</span>` : ''}
-                                    </h5>
-                                    <p class="text-muted mb-0 small"><strong>Tribe:</strong> ${item.tribeText}</p>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <button class="btn btn-light" onclick="window.languageLearning.playRecording('${this.escapeForOnclick(item.key)}')">
-                                        <i class="fas fa-play me-2"></i>Play
-                                    </button>
-                                    ${!item.isGlobal ? `
-                                    <button class="btn btn-warning text-dark" onclick="window.languageLearning.toggleRecordingGlobal('${this.escapeForOnclick(item.key)}')" title="Make global">
-                                        <i class="fas fa-globe"></i>
-                                    </button>
-                                    ` : ''}
-                                    <button class="btn btn-outline-danger" onclick="window.languageLearning.deleteRecording('${this.escapeForOnclick(item.key)}')">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </div>
-                            </div>
+                    </div>
+                ` : ''}
+                
+                <!-- Tribe-Specific Voices Section -->
+                ${tribeRecordings.length > 0 ? `
+                    <div class="mb-5">
+                        <h3 class="fw-bold mb-3">🎭 Tribe-Specific Voices (Override Global)</h3>
+                        <div class="recordings-list">
+                            ${tribeRecordings.map(renderRecordingItem).join('')}
                         </div>
-                    `).join('')}
-                </div>
+                    </div>
+                ` : ''}
+                
+                <!-- Empty State -->
+                ${recordingsList.length === 0 ? `
+                    <div class="text-center py-5">
+                        <i class="fas fa-microphone-alt" style="font-size:4rem; color:#ddd; margin-bottom:1rem;"></i>
+                        <p class="text-muted">No custom recordings yet.</p>
+                    </div>
+                ` : ''}
             </div>
 
             <style>
@@ -2442,6 +2477,69 @@ class LanguageLearningSystem {
             this.showNotification('All recordings deleted.', 'success');
             this.renderDashboard();
         }
+    }
+    
+    showTtsInfo() {
+        const modalId = 'ttsInfoModal';
+        let modal = document.getElementById(modalId);
+        if (modal) modal.remove();
+        
+        modal = document.createElement('div');
+        modal.id = modalId;
+        modal.style.cssText = `
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100001;
+            padding: 1rem;
+        `;
+        
+        modal.innerHTML = `
+            <div style="background: white; max-width: 600px; width: 100%; border-radius: 16px; padding: 2rem; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+                    <h2 style="margin: 0; color: #2d5a27;">Custom TTS Training Options</h2>
+                    <button onclick="document.getElementById('${modalId}').remove()" style="border: none; background: none; font-size: 1.5rem; cursor: pointer; color: #666;">&times;</button>
+                </div>
+                
+                <div style="color: #444; line-height: 1.7;">
+                    <p style="margin-bottom: 1rem;">
+                        <strong>Option 1: Manual Recordings (Current)</strong><br>
+                        Record individual phrases to create your custom voice. Perfect for authentic, personal pronunciations!
+                    </p>
+                    
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;">
+                        <h4 style="margin-top: 0; color: #2d5a27;">Option 2: AI TTS Model Training (Future)</h4>
+                        <p style="margin-bottom: 0.5rem;">To train a full AI TTS model from your voice, you'd need:</p>
+                        <ul style="margin: 0; padding-left: 1.25rem;">
+                            <li>15-30 minutes of clean audio recordings</li>
+                            <li>Services like ElevenLabs, Coqui, or AWS Polly</li>
+                            <li>Export as WAV/MP3 and upload</li>
+                        </ul>
+                        <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; color: #666;">
+                            <em>This feature isn't implemented yet, but your manual recordings are a great start!</em>
+                        </p>
+                    </div>
+                    
+                    <p style="margin: 0;">
+                        <strong>Pro Tip:</strong> For now, just keep recording phrases you use often! Each recording helps make the app more authentic.
+                    </p>
+                </div>
+                
+                <div style="margin-top: 2rem; display: flex; justify-content: flex-end;">
+                    <button onclick="document.getElementById('${modalId}').remove()" style="background: #2d5a27; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 10px; cursor: pointer; font-weight: 600;">
+                        Got it!
+                    </button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.remove();
+        });
     }
 
     startQuiz(phrases) {
