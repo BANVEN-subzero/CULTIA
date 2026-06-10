@@ -1257,29 +1257,41 @@ class LanguageLearningSystem {
         return phrases.map((phrase, index) => {
             const hasTribeAudio = !!(this.getCustomAudioUrl(phrase.phrase, this.currentLesson.tribeKey));
             const hasGlobalOnly = !hasTribeAudio && this.isGlobalRecording(phrase.phrase);
+            
+            let statusHtml = '';
+            if (hasTribeAudio) {
+                statusHtml = `
+                    <div style="font-size:0.8rem; color:#27AE60; font-weight:600; margin-bottom:0.5rem;">
+                        <i class="fas fa-check-circle"></i> Tribe-specific custom voice active
+                    </div>
+                `;
+            } else if (hasGlobalOnly) {
+                statusHtml = `
+                    <div style="font-size:0.8rem; color:#F39C12; font-weight:600; margin-bottom:0.5rem;">
+                        <i class="fas fa-globe"></i> Your global custom voice active
+                    </div>
+                `;
+            } else if (this.useGlobalVoice) {
+                statusHtml = `
+                    <div style="font-size:0.8rem; color:#666; font-weight:500; margin-bottom:0.5rem;">
+                        <i class="fas fa-microphone-slash"></i> No custom voice yet
+                    </div>
+                `;
+            } else {
+                statusHtml = `
+                    <div style="font-size:0.8rem; color:#666; font-weight:500; margin-bottom:0.5rem;">
+                        <i class="fas fa-microphone-slash"></i> Global voice disabled
+                    </div>
+                `;
+            }
+            
             return `
             <div class="flashcard ${index === 0 ? 'active' : ''}" data-index="${index}">
                 <div class="flashcard-inner">
                     <div class="flashcard-front">
                         <div class="phrase-native">${phrase.phrase}</div>
                         <div class="pronunciation">[${phrase.pronunciation}]</div>
-                        ${hasTribeAudio ? `
-                            <div style="font-size:0.8rem; color:#27AE60; font-weight:600; margin-bottom:0.5rem;">
-                                <i class="fas fa-check-circle"></i> Tribe-specific custom voice active
-                            </div>
-                        ` : (hasGlobalOnly ? `
-                            <div style="font-size:0.8rem; color:#F39C12; font-weight:600; margin-bottom:0.5rem;">
-                                <i class="fas fa-globe"></i> Your global custom voice active
-                            </div>
-                        ` : (this.useGlobalVoice ? `
-                            <div style="font-size:0.8rem; color:#666; font-weight:500; margin-bottom:0.5rem;">
-                                <i class="fas fa-microphone-slash"></i> No custom voice yet
-                            </div>
-                        ` : `
-                            <div style="font-size:0.8rem; color:#666; font-weight:500; margin-bottom:0.5rem;">
-                                <i class="fas fa-microphone-slash"></i> Global voice disabled
-                            </div>
-                        `)}
+                        ${statusHtml}
                         <div class="action-buttons">
                             <button class="audio-btn-v2 ${(hasTribeAudio || hasGlobalOnly) ? 'custom-audio' : ''}" onclick="event.stopPropagation(); window.languageLearning.playAudio('${this.escapeForOnclick(phrase.phrase)}', '${this.escapeForOnclick(this.currentLesson.tribeKey)}')" title="Listen">
                                 <i class="fas fa-volume-up"></i>
